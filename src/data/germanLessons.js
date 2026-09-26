@@ -1,0 +1,1656 @@
+// German Lessons Data: Lesson 1 & Lesson 2 (No Swahili, pure layman English with relatable Kenyan analogies)
+
+export const LESSON_1_ITEMS = [
+  {
+    id: "hallo",
+    german: "Hallo!",
+    english: "Hello!",
+    pronunciation: "HAH-lo",
+    audioText: "Hallo!",
+    category: "greeting",
+    badge: "Anytime / Universal",
+    icon: "👋",
+    kenyanAnalogy: "Just like shouting a cheerful 'Hello!' or 'Hey!' to your neighbor across the fence. Simple, friendly, and works anytime, anywhere, with anyone!",
+    memoryTrick: "Sounds almost identical to English 'Hello', just start with a round 'Ha-llo'!",
+    imageType: "wave"
+  },
+  {
+    id: "guten-morgen",
+    german: "Guten Morgen!",
+    english: "Good morning!",
+    pronunciation: "GOO-ten MOR-gen",
+    audioText: "Guten Morgen!",
+    category: "time-morning",
+    badge: "Morning (6 AM - 11 AM)",
+    icon: "☕",
+    kenyanAnalogy: "Like waking up at dawn to the rooster crowing, pouring a steaming cup of Kenyan spiced tea with warm mandazi, and wishing your family a bright morning.",
+    memoryTrick: "'Morgen' sounds just like 'Morning'! Guten = Good. Guten Morgen = Good morning!",
+    imageType: "morning-sun"
+  },
+  {
+    id: "guten-tag",
+    german: "Guten Tag!",
+    english: "Good day!",
+    pronunciation: "GOO-ten TAHK",
+    audioText: "Guten Tag!",
+    category: "time-day",
+    badge: "Daytime (11 AM - 5 PM)",
+    icon: "☀️",
+    kenyanAnalogy: "Used during the daytime when the sun is up, you are out shopping, at work, or entering an office or bank. It is the polite daytime greeting!",
+    memoryTrick: "'Tag' means Day (pronounced 'Tahk'). Guten Tag = Good day!",
+    imageType: "bright-day"
+  },
+  {
+    id: "guten-abend",
+    german: "Guten Abend!",
+    english: "Good evening!",
+    pronunciation: "GOO-ten AH-bent",
+    audioText: "Guten Abend!",
+    category: "time-evening",
+    badge: "Evening (5 PM - 10 PM)",
+    icon: "🌆",
+    kenyanAnalogy: "When the sun is setting over the hills, you have arrived back home after the daily hustle, and the family is gathered around the dinner table.",
+    memoryTrick: "'Abend' is evening. As soon as daylight fades into dusk, switch to Guten Abend!",
+    imageType: "sunset"
+  },
+  {
+    id: "gute-nacht",
+    german: "Gute Nacht!",
+    english: "Good night!",
+    pronunciation: "GOO-teh NAHKHT",
+    audioText: "Gute Nacht!",
+    category: "time-night",
+    badge: "Bedtime only!",
+    icon: "🌙",
+    kenyanAnalogy: "Right before tucking under the warm blanket and mosquito net, switching off the lights, and closing your eyes to sleep peacefully.",
+    memoryTrick: "Notice: No 'n' at the end! It is 'Gute', not 'Guten'. Gentle and smooth for bedtime!",
+    imageType: "moon-stars"
+  },
+  {
+    id: "gruss-gott",
+    german: "Grüß Gott!",
+    english: "Hello! (Bavaria & Austria)",
+    pronunciation: "GROOSS GOT",
+    audioText: "Grüß Gott!",
+    category: "greeting",
+    badge: "Southern Germany & Austria",
+    icon: "🙏",
+    kenyanAnalogy: "Like greeting elders upcountry: 'God bless you!' (Gott = God). In Bavaria and Austria, this is the traditional, deeply respectful hello.",
+    memoryTrick: "The funny letter 'ß' is just a double 'ss'. Read it as 'Grooss Gott'!",
+    imageType: "alps-mountain"
+  },
+  {
+    id: "gruss-sie-dich",
+    german: "Grüß Sie! / Grüß dich!",
+    english: "Hello! (Formal / Informal)",
+    pronunciation: "GROOSS ZEE / GROOSS DIKH",
+    audioText: "Grüß Sie! Grüß dich!",
+    category: "greeting",
+    badge: "Respectful (Sie) vs Casual (dich)",
+    icon: "🤝",
+    kenyanAnalogy: "'Grüß Sie' is for someone you respect highly (like your boss, an elder, or doctor). 'Grüß dich' is for your buddy or classmate!",
+    memoryTrick: "'Sie' is pronounced like 'Zee' (like Zebra). When you see 'Sie', think of high respect!",
+    imageType: "handshake"
+  },
+  {
+    id: "servus",
+    german: "Servus!",
+    english: "Hello! OR Bye!",
+    pronunciation: "ZER-voos",
+    audioText: "Servus!",
+    category: "greeting-farewell",
+    badge: "Switzerland & Southern Germany",
+    icon: "🥨",
+    kenyanAnalogy: "This is a two-in-one magical word! You say it when you arrive, and you also say it when you leave. Like waving both ways!",
+    memoryTrick: "One single word does both jobs: Hello and Goodbye!",
+    imageType: "servus-hat"
+  },
+  {
+    id: "tschuus",
+    german: "Tschüs!",
+    english: "Bye!",
+    pronunciation: "CHOOS",
+    audioText: "Tschüs!",
+    category: "farewell",
+    badge: "Everyday Casual Goodbye",
+    icon: "🎈",
+    kenyanAnalogy: "Like saying a quick, cheerful 'Bye bye! Catch you later!' as you hop off the matatu or step out of a shop.",
+    memoryTrick: "Pronounced like 'Choos'. Short, cheerful, and bouncy!",
+    imageType: "wave-bye"
+  },
+  {
+    id: "ciao",
+    german: "Ciao!",
+    english: "Bye!",
+    pronunciation: "CHOW",
+    audioText: "Ciao!",
+    category: "farewell",
+    badge: "International Favorite",
+    icon: "✨",
+    kenyanAnalogy: "Everyone in town knows 'Ciao!'. Germans borrowed it from Italian for a super stylish, friendly goodbye.",
+    memoryTrick: "Sounds like 'Chow' (food), but means goodbye!",
+    imageType: "ciao-smile"
+  },
+  {
+    id: "auf-wiedersehen",
+    german: "Auf Wiedersehen!",
+    english: "See you again! (In person)",
+    pronunciation: "OWF VEE-der-zay-en",
+    audioText: "Auf Wiedersehen!",
+    category: "farewell-eyes",
+    badge: "Face-to-Face with Eyes 👀",
+    icon: "👀",
+    kenyanAnalogy: "When you are standing face-to-face with someone, looking into each other's eyes, and waving goodbye: 'Until we see each other again!'",
+    memoryTrick: "'SEHEN' means TO SEE with your eyes 👀! Only use this when meeting in person!",
+    imageType: "eye-see"
+  },
+  {
+    id: "auf-wiederhoeren",
+    german: "Auf Wiederhören!",
+    english: "Bye! (On the telephone)",
+    pronunciation: "OWF VEE-der-her-en",
+    audioText: "Auf Wiederhören!",
+    category: "farewell-phone",
+    badge: "On the Phone Only 📞",
+    icon: "📞",
+    kenyanAnalogy: "When talking on your Safaricom or Airtel phone, you cannot see the person with your eyes—you can only HEAR their voice through the receiver! So Germans say: 'Until we hear each other again!'",
+    memoryTrick: "'HÖREN' means TO HEAR with your ears 👂! On the phone, you only hear, so WiederHÖREN!",
+    imageType: "phone-ring"
+  },
+  {
+    id: "bis-bald",
+    german: "Bis bald!",
+    english: "See you soon!",
+    pronunciation: "BIS BALT",
+    audioText: "Bis bald!",
+    category: "farewell-soon",
+    badge: "Soon (Maybe tomorrow)",
+    icon: "⏳",
+    kenyanAnalogy: "Parting with someone you will see very soon, like your next-door estate neighbor: 'See you soon!'",
+    memoryTrick: "'Bis' = Until. 'Bald' = Soon. Bis bald!",
+    imageType: "clock-sand"
+  },
+  {
+    id: "bis-spaeter",
+    german: "Bis später!",
+    english: "See you later!",
+    pronunciation: "BIS SHPAY-ter",
+    audioText: "Bis später!",
+    category: "farewell-later",
+    badge: "Later today",
+    icon: "🕒",
+    kenyanAnalogy: "Saying bye to a colleague during lunch break: 'See you later this afternoon!'",
+    memoryTrick: "'Später' sounds like 'Later'! The 'sp' sounds like 'shp'. Bis später!",
+    imageType: "clock-later"
+  }
+];
+
+export const TIME_OF_DAY_STAGES = [
+  {
+    id: 'morning',
+    timeLabel: 'Morning (6:00 AM - 11:00 AM)',
+    german: 'Guten Morgen!',
+    english: 'Good morning!',
+    kenyanScene: 'Rooster crowing, hot spiced tea boiling on the stove, sun rising over Mount Kenya.',
+    skyClass: 'from-amber-200 via-orange-100 to-sky-200',
+    icon: '🌅'
+  },
+  {
+    id: 'day',
+    timeLabel: 'Daytime (11:00 AM - 5:00 PM)',
+    german: 'Guten Tag!',
+    english: 'Good day!',
+    kenyanScene: 'Bright sunshine, bustling market street, visiting an office or greeting folks in town.',
+    skyClass: 'from-sky-400 via-blue-200 to-emerald-100',
+    icon: '☀️'
+  },
+  {
+    id: 'evening',
+    timeLabel: 'Evening (5:00 PM - 10:00 PM)',
+    german: 'Guten Abend!',
+    english: 'Good evening!',
+    kenyanScene: 'Golden sunset dusk, heading home from work, sitting down for warm dinner.',
+    skyClass: 'from-purple-900 via-indigo-600 to-orange-400',
+    icon: '🌆'
+  },
+  {
+    id: 'night',
+    timeLabel: 'Bedtime (10:00 PM+)',
+    german: 'Gute Nacht!',
+    english: 'Good night!',
+    kenyanScene: 'Quiet starry night, switching off the lights, tucking under the warm blanket to sleep.',
+    skyClass: 'from-slate-950 via-slate-900 to-indigo-950',
+    icon: '🌙'
+  }
+];
+
+export const MATATU_GAME_QUESTIONS = [
+  {
+    scenario: "It is 8:00 AM in the morning. An elder boards the bus heading to work. How do you greet them in German?",
+    hint: "Think of morning tea time!",
+    options: [
+      { text: "Guten Morgen!", correct: true, explain: "Spot on! Morning greeting is 'Guten Morgen!' (Good morning!)" },
+      { text: "Gute Nacht!", correct: false, explain: "No, Gute Nacht is only for bedtime when going to sleep!" },
+      { text: "Guten Abend!", correct: false, explain: "No, Guten Abend is for evening sunset!" }
+    ]
+  },
+  {
+    scenario: "You are on a phone call with your friend Wanjiku. As you finish the phone call, what do Germans say?",
+    hint: "On the phone, you can only HEAR (hören) with your ears, you cannot see them!",
+    options: [
+      { text: "Auf Wiederhören!", correct: true, explain: "Brilliant! Over the phone you say WiederHÖREN (to hear again)!" },
+      { text: "Auf Wiedersehen!", correct: false, explain: "Sehen is for seeing in person face-to-face!" },
+      { text: "Guten Morgen!", correct: false, explain: "That is morning greeting, not ending a call!" }
+    ]
+  },
+  {
+    scenario: "You bump into your neighbor face-to-face at the market at noon. As you part ways looking into each other's eyes, what do you say?",
+    hint: "You see each other with your eyes (sehen)!",
+    options: [
+      { text: "Auf Wiedersehen!", correct: true, explain: "Exactly! 'Sehen' means to see with your eyes face-to-face!" },
+      { text: "Auf Wiederhören!", correct: false, explain: "Wiederhören is telephone only!" },
+      { text: "Gute Nacht!", correct: false, explain: "No sleeping at noon!" }
+    ]
+  },
+  {
+    scenario: "It is 6:30 PM in the evening, the sun has set and you arrive home to meet family. Which greeting fits?",
+    hint: "Evening time before dinner!",
+    options: [
+      { text: "Guten Abend!", correct: true, explain: "Excellent! 'Guten Abend' is Good evening!" },
+      { text: "Guten Morgen!", correct: false, explain: "Guten Morgen is early morning!" },
+      { text: "Servus!", correct: false, explain: "Servus is used in the southern mountains, but standard evening is Guten Abend!" }
+    ]
+  },
+  {
+    scenario: "A little child is heading to bed to sleep. What do you say right before switching off the light?",
+    hint: "Remember: This one has NO letter 'n' at the end!",
+    options: [
+      { text: "Gute Nacht!", correct: true, explain: "Great! 'Gute Nacht' = Good night! No letter 'n'!" },
+      { text: "Guten Tag!", correct: false, explain: "Guten Tag is daytime!" },
+      { text: "Bis später!", correct: false, explain: "Bis später means see you later today!" }
+    ]
+  },
+  {
+    scenario: "You want to say a quick, friendly, bouncy goodbye to your buddy on the street (like 'Catch you later!'):",
+    hint: "Pronounced like 'Choos'!",
+    options: [
+      { text: "Tschüs!", correct: true, explain: "Wonderful! 'Tschüs!' is the sweet, everyday casual goodbye!" },
+      { text: "Grüß Gott!", correct: false, explain: "That is a traditional hello, not goodbye!" },
+      { text: "Guten Abend!", correct: false, explain: "That is good evening!" }
+    ]
+  }
+];
+
+export const LESSON_2_ITEMS = [
+  {
+    id: "danke-group",
+    german: "Danke! / Danke schön! / Vielen Dank!",
+    english: "Thanks! / Thank you very much!",
+    pronunciation: "DAHN-keh / DAHN-keh shurn / FEE-len dahnk",
+    audioText: "Danke! Danke schön! Vielen Dank!",
+    category: "polite-thanks",
+    badge: "Saying Thank You",
+    icon: "🙏",
+    kenyanAnalogy: "Like when the grocery vendor gives you extra sweet bananas, or the cashier gives you your exact balance. 'Danke' is thanks, 'Vielen Dank' is thank you very much!",
+    memoryTrick: "'Dank' is like English 'Thanks'. 'Vielen' means 'many' — many thanks!",
+    imageType: "gift-thanks"
+  },
+  {
+    id: "bitte-welcome",
+    german: "Bitte / Bitte schön!",
+    english: "You are welcome!",
+    pronunciation: "BIT-teh / BIT-teh shurn",
+    audioText: "Bitte! Bitte schön!",
+    category: "polite-welcome",
+    badge: "You're Welcome",
+    icon: "🤗",
+    kenyanAnalogy: "When someone says 'Thank you' to you after you help them carry a bag, you warmly reply with a smile: 'You are most welcome!'",
+    memoryTrick: "'Bitte' is the polite twin of 'Danke'. When they say Danke, you immediately reply Bitte!",
+    imageType: "smile-welcome"
+  },
+  {
+    id: "bitte-please",
+    german: "Bitte!",
+    english: "Please!",
+    pronunciation: "BIT-teh",
+    audioText: "Bitte!",
+    category: "polite-please",
+    badge: "Saying Please",
+    icon: "🤲",
+    kenyanAnalogy: "Like asking politely for the salt across the dining table, or asking the driver to stop at the next stage: 'Please!'",
+    memoryTrick: "Notice: 'Bitte' means BOTH 'Please' AND 'You are welcome'! It is the ultimate polite magic word!",
+    imageType: "polite-hands"
+  },
+  {
+    id: "entschuldigen-sie",
+    german: "Entschuldigen Sie, bitte!",
+    english: "Excuse me please! (Formal)",
+    pronunciation: "ent-SHOOL-di-gen zee, BIT-teh",
+    audioText: "Entschuldigen Sie, bitte!",
+    category: "apology-formal",
+    badge: "Formal (Elders / Strangers / Boss)",
+    icon: "🎩",
+    kenyanAnalogy: "When you want to ask a police officer, an elder, or an official for directions with deep respect: 'Excuse me sir, please!'",
+    memoryTrick: "Has 'Sie' (Zee) in the middle. Remember: 'Sie' always means high respect!",
+    imageType: "formal-bow"
+  },
+  {
+    id: "entschuldigung",
+    german: "Entschuldigung, bitte!",
+    english: "Excuse me please! (Informal / Quick)",
+    pronunciation: "ent-SHOOL-di-goong, BIT-teh",
+    audioText: "Entschuldigung, bitte!",
+    category: "apology-informal",
+    badge: "Casual / Everyday Street",
+    icon: "🚶",
+    kenyanAnalogy: "When you accidentally bump into someone on a crowded pavement, or trying to squeeze through a busy supermarket aisle: 'Excuse me please!'",
+    memoryTrick: "Ends in '-ung' like a friendly quick cough. Short and handy on the street!",
+    imageType: "crowd-walk"
+  },
+  {
+    id: "es-tut-mir-leid",
+    german: "Es tut mir leid!",
+    english: "I am sorry.",
+    pronunciation: "es toot meer LYT",
+    audioText: "Es tut mir leid!",
+    category: "apology-heart",
+    badge: "Heartfelt Apology",
+    icon: "❤️‍🩹",
+    kenyanAnalogy: "When you spill tea on the table or break a cup, and you genuinely feel remorse: 'I am so sorry, forgive me!'",
+    memoryTrick: "Literally means 'It hurts me'. Like saying my heart feels pain for this mistake!",
+    imageType: "sorry-heart"
+  },
+  {
+    id: "wie-bitte",
+    german: "Wie bitte? / Noch einmal, bitte!",
+    english: "I beg your pardon! / Once again please!",
+    pronunciation: "vee BIT-teh? / nokh IYN-mahl, BIT-teh",
+    audioText: "Wie bitte? Noch einmal, bitte!",
+    category: "repeat-request",
+    badge: "Didn't hear clearly?",
+    icon: "👂",
+    kenyanAnalogy: "When the network breaks up during a phone call, or someone speaks too fast: 'Pardon? Could you say that one more time please?'",
+    memoryTrick: "'Wie' = How? 'Noch einmal' = One more time! Super handy for beginners!",
+    imageType: "ear-listen"
+  },
+  {
+    id: "bitte-wiederholen-sie",
+    german: "Bitte wiederholen Sie!",
+    english: "Please repeat!",
+    pronunciation: "BIT-teh vee-der-HOH-len zee",
+    audioText: "Bitte wiederholen Sie!",
+    category: "repeat-formal",
+    badge: "Polite Request to Repeat",
+    icon: "🔁",
+    kenyanAnalogy: "In a class or meeting when the speaker explains something and you raise your hand: 'Please repeat that, sir/madam!'",
+    memoryTrick: "'Wieder' means AGAIN (like in Wiedersehen!). Wiederholen = repeat!",
+    imageType: "repeat-loop"
+  },
+  {
+    id: "sprechen-sie-deutsch",
+    german: "Sprechen Sie Deutsch / Englisch?",
+    english: "Do you speak German / English?",
+    pronunciation: "SHPREKH-en zee DOYCH / ENG-lish?",
+    audioText: "Sprechen Sie Deutsch? Sprechen Sie Englisch?",
+    category: "language-ask",
+    badge: "Asking Languages",
+    icon: "💬",
+    kenyanAnalogy: "Approaching someone at the airport or hotel: 'Excuse me, do you speak English? Or do you speak German?'",
+    memoryTrick: "'Sprechen' sounds like 'Speaking'! Deutsch = German. Englisch = English.",
+    imageType: "speech-dialog"
+  },
+  {
+    id: "ich-spreche-deutsch",
+    german: "Ich spreche etwas / kein Deutsch.",
+    english: "I speak a bit of / I don't speak German.",
+    pronunciation: "ikh SHPREKH-eh ET-vahs / kyn DOYCH",
+    audioText: "Ich spreche etwas Deutsch. Ich spreche kein Deutsch.",
+    category: "language-reply",
+    badge: "Stating Your Level",
+    icon: "🤏",
+    kenyanAnalogy: "Telling someone honestly: 'I only know a tiny bit of German (etwas)!' or smiling: 'I don't speak German at all (kein)!'",
+    memoryTrick: "'Etwas' = a little bit 🤏. 'Kein' = zero, none 🚫!",
+    imageType: "pinch-hand"
+  },
+  {
+    id: "ich-verstehe-nicht",
+    german: "Ich verstehe nicht.",
+    english: "I don't understand.",
+    pronunciation: "ikh fer-SHTAY-eh nikht",
+    audioText: "Ich verstehe nicht.",
+    category: "comprehension",
+    badge: "Don't Panic!",
+    icon: "🤷",
+    kenyanAnalogy: "When someone says something confusing and you gently shake your head with a calm smile: 'I don't understand.' No shame at all!",
+    memoryTrick: "'Nicht' = Not. Ich verstehe nicht = I understand not!",
+    imageType: "shrug-calm"
+  },
+  {
+    id: "ich-weiss-nicht",
+    german: "Ich weiß nicht. / Keine Ahnung!",
+    english: "I don't know. / No idea!",
+    pronunciation: "ikh VYSS nikht / KY-neh AH-noong",
+    audioText: "Ich weiß nicht. Keine Ahnung!",
+    category: "knowledge",
+    badge: "I Don't Know / No Clue",
+    icon: "❓",
+    kenyanAnalogy: "When someone on the street asks you for a specific house number, and you honestly have zero clue: 'I don't know / I have no idea!'",
+    memoryTrick: "'Keine Ahnung' literally means 'Zero idea' — Germans use this every single day!",
+    imageType: "question-shrug"
+  },
+  {
+    id: "einen-moment-bitte",
+    german: "Einen Moment, bitte!",
+    english: "Just a moment, please!",
+    pronunciation: "IYN-en moh-MENT, BIT-teh",
+    audioText: "Einen Moment, bitte!",
+    category: "wait-polite",
+    badge: "Hold on a sec",
+    icon: "⏱️",
+    kenyanAnalogy: "When you are searching your bag for your ID or counting coins at the cashier: 'Just one moment please, let me check!'",
+    memoryTrick: "Looks and sounds almost 100% like English: 'One moment, please!'",
+    imageType: "clock-stop"
+  },
+  {
+    id: "ja-nein-vielleicht",
+    german: "Ja / Nein / Vielleicht",
+    english: "Yes / No / Maybe",
+    pronunciation: "YAH / NYN / fee-LYKHT",
+    audioText: "Ja. Nein. Vielleicht.",
+    category: "answers-core",
+    badge: "The Big 3 Answers",
+    icon: "🚦",
+    kenyanAnalogy: "Green light, Red light, Yellow light! Green = Ja (Yes!), Red = Nein (No!), Yellow = Vielleicht (Maybe, let me think!).",
+    memoryTrick: "Ja sounds like 'Yah!'. Nein sounds like 'Nine'. Vielleicht is 'Fee-lycht' (Maybe)!",
+    imageType: "traffic-light"
+  }
+];
+
+export const LESSON_2_SCENARIO_QUESTIONS = [
+  {
+    scenario: "You are at a bakery counter and the lady hands you your fresh warm bread. What is the warmest way to say 'Thank you very much'?",
+    hint: "Think of 'many thanks'!",
+    options: [
+      { text: "Vielen Dank!", correct: true, explain: "Perfect! 'Vielen Dank!' means 'Thank you very much!'" },
+      { text: "Es tut mir leid!", correct: false, explain: "'Es tut mir leid' means 'I am sorry' (you didn't do anything wrong!)." },
+      { text: "Ich weiß nicht.", correct: false, explain: "That means 'I don't know'." }
+    ]
+  },
+  {
+    scenario: "Someone in a meeting speaks very fast in German and you couldn't catch what they said. How do you politely say 'I beg your pardon / Once again please'?",
+    hint: "Use the short question with 'bitte'!",
+    options: [
+      { text: "Wie bitte? / Noch einmal, bitte!", correct: true, explain: "Spot on! 'Wie bitte?' means 'Pardon?' and 'Noch einmal, bitte!' means 'Once again please!'" },
+      { text: "Ja / Nein", correct: false, explain: "That just means yes or no." },
+      { text: "Keine Ahnung!", correct: false, explain: "'Keine Ahnung' means 'No idea!'." }
+    ]
+  },
+  {
+    scenario: "You need to search your pocket for your bus ticket, so you ask the ticket inspector to wait just one second:",
+    hint: "Sounds almost like English 'One moment please'!",
+    options: [
+      { text: "Einen Moment, bitte!", correct: true, explain: "Excellent! 'Einen Moment, bitte!' = 'Just a moment, please!'" },
+      { text: "Ich verstehe nicht.", correct: false, explain: "That means 'I don't understand'." },
+      { text: "Danke schön!", correct: false, explain: "That means 'Thank you!'" }
+    ]
+  },
+  {
+    scenario: "You accidentally step on someone's foot in a crowded store. What heartfelt apology do you give?",
+    hint: "Literally means 'my heart feels pain for this'!",
+    options: [
+      { text: "Es tut mir leid!", correct: true, explain: "Wonderful! 'Es tut mir leid!' is the genuine, sincere 'I am sorry!'" },
+      { text: "Vielleicht", correct: false, explain: "'Vielleicht' means 'Maybe'." },
+      { text: "Bitte schön!", correct: false, explain: "'Bitte schön' means 'You are welcome'." }
+    ]
+  },
+  {
+    scenario: "A tourist approaches you and asks a question in German. You only know a little bit of German. What do you tell them?",
+    hint: "'Etwas' means a small little bit!",
+    options: [
+      { text: "Ich spreche etwas Deutsch.", correct: true, explain: "Great job! 'Ich spreche etwas Deutsch' = 'I speak a bit of German.'" },
+      { text: "Keine Ahnung!", correct: false, explain: "That means 'No idea!'." },
+      { text: "Gute Nacht!", correct: false, explain: "That is bedtime 'Good night!'" }
+    ]
+  },
+  {
+    scenario: "A visitor asks you: 'Where is the nearest post office in this neighborhood?' but you are completely new here and have no clue at all:",
+    hint: "The popular German street phrase with zero clue!",
+    options: [
+      { text: "Keine Ahnung! / Ich weiß nicht.", correct: true, explain: "Exactly! 'Keine Ahnung!' means 'No idea!' and 'Ich weiß nicht' means 'I don't know'." },
+      { text: "Danke schön!", correct: false, explain: "That is thank you." },
+      { text: "Bitte wiederholen Sie!", correct: false, explain: "That means please repeat." }
+    ]
+  }
+];
+
+export const LESSON_3_ITEMS = [
+  {
+    id: "num-0",
+    number: 0,
+    german: "0 - null",
+    english: "Zero",
+    pronunciation: "NOOL",
+    audioText: "null",
+    category: "single-digits",
+    badge: "Number 0",
+    icon: "0️⃣",
+    kenyanAnalogy: "Like a zero balance on your phone before you top up airtime! In German, zero is called 'null'.",
+    memoryTrick: "Sounds like 'null and void'! Null = Zero.",
+    imageType: "number-0"
+  },
+  {
+    id: "num-1",
+    number: 1,
+    german: "1 - eins",
+    english: "One",
+    pronunciation: "AYNS",
+    audioText: "eins",
+    category: "single-digits",
+    badge: "Number 1",
+    icon: "1️⃣",
+    kenyanAnalogy: "Buying a single 1 shilling sweet or 1 ripe banana at the fruit stall: 'eins'!",
+    memoryTrick: "Sounds like Einstein! Eins = One.",
+    imageType: "number-1"
+  },
+  {
+    id: "num-2",
+    number: 2,
+    german: "2 - zwei",
+    english: "Two",
+    pronunciation: "TSVY",
+    audioText: "zwei",
+    category: "single-digits",
+    badge: "Number 2 (Z = TS sound!)",
+    icon: "2️⃣",
+    kenyanAnalogy: "A pair of shoes or two samosas for breakfast: 'zwei'!",
+    memoryTrick: "CRITICAL SOUND SECRET: In German, the letter 'Z' sounds like 'TS' (like the end of cats, pots, mats!). So 'zwei' sounds like 'TSVY'!",
+    imageType: "number-2"
+  },
+  {
+    id: "num-3",
+    number: 3,
+    german: "3 - drei",
+    english: "Three",
+    pronunciation: "DRY",
+    audioText: "drei",
+    category: "single-digits",
+    badge: "Number 3",
+    icon: "3️⃣",
+    kenyanAnalogy: "A 3-legged traditional wooden stool: 'drei'!",
+    memoryTrick: "Sounds just like the English word 'dry' (like dry season). Drei = Three!",
+    imageType: "number-3"
+  },
+  {
+    id: "num-4",
+    number: 4,
+    german: "4 - vier",
+    english: "Four",
+    pronunciation: "FEER",
+    audioText: "vier",
+    category: "single-digits",
+    badge: "Number 4 (V = F sound!)",
+    icon: "4️⃣",
+    kenyanAnalogy: "The four wheels of a matatu on the road: 'vier'!",
+    memoryTrick: "CRITICAL SOUND SECRET: German 'V' sounds like 'F'! So 'vier' sounds like 'FEER'. Vier = Four!",
+    imageType: "number-4"
+  },
+  {
+    id: "num-5",
+    number: 5,
+    german: "5 - fünf",
+    english: "Five",
+    pronunciation: "FEWNF",
+    audioText: "fünf",
+    category: "single-digits",
+    badge: "Number 5",
+    icon: "5️⃣",
+    kenyanAnalogy: "The five fingers on your hand when giving a high-five: 'fünf'!",
+    memoryTrick: "Has two dots (umlaut ü) on top: round your lips as if to whistle and say 'fewnf'!",
+    imageType: "number-5"
+  },
+  {
+    id: "num-6",
+    number: 6,
+    german: "6 - sechs",
+    english: "Six",
+    pronunciation: "ZEKS",
+    audioText: "sechs",
+    category: "single-digits",
+    badge: "Number 6 (S = Z sound!)",
+    icon: "6️⃣",
+    kenyanAnalogy: "A half-dozen eggs in a carton: 'sechs'!",
+    memoryTrick: "CRITICAL SOUND SECRET: German 'S' at the start sounds like 'Z' (like Zebra). So 'sechs' sounds like 'ZEKS'!",
+    imageType: "number-6"
+  },
+  {
+    id: "num-7",
+    number: 7,
+    german: "7 - sieben",
+    english: "Seven",
+    pronunciation: "ZEE-ben",
+    audioText: "sieben",
+    category: "single-digits",
+    badge: "Number 7",
+    icon: "7️⃣",
+    kenyanAnalogy: "The 7 days of the week from Monday to Sunday: 'sieben'!",
+    memoryTrick: "Starts with 'sie' (Zee) and ends with 'ben'. Sieben = Seven!",
+    imageType: "number-7"
+  },
+  {
+    id: "num-8",
+    number: 8,
+    german: "8 - acht",
+    english: "Eight",
+    pronunciation: "AHKHT",
+    audioText: "acht",
+    category: "single-digits",
+    badge: "Number 8",
+    icon: "8️⃣",
+    kenyanAnalogy: "The 8 legs of a spider crawling on the wall: 'acht'!",
+    memoryTrick: "Sounds like 'Achtung' or 'Ah-kht'. Very close to 'eight'!",
+    imageType: "number-8"
+  },
+  {
+    id: "num-9",
+    number: 9,
+    german: "9 - neun",
+    english: "Nine",
+    pronunciation: "NOYN",
+    audioText: "neun",
+    category: "single-digits",
+    badge: "Number 9 (EU = OI sound!)",
+    icon: "9️⃣",
+    kenyanAnalogy: "One step before reaching ten: 'neun'!",
+    memoryTrick: "CRITICAL SOUND SECRET: 'EU' in German sounds like 'OI' (like oil, coin, boy). So 'neun' sounds like 'NOYN'!",
+    imageType: "number-9"
+  },
+  {
+    id: "num-10",
+    number: 10,
+    german: "10 - zehn",
+    english: "Ten",
+    pronunciation: "TSAYN",
+    audioText: "zehn",
+    category: "single-digits",
+    badge: "Number 10 (Z = TS sound!)",
+    icon: "🔟",
+    kenyanAnalogy: "A 10 shilling coin in your pocket: 'zehn'!",
+    memoryTrick: "'Z' sounds like 'TS'. So say 'TSAYN'! Zehn = Ten.",
+    imageType: "number-10"
+  },
+  {
+    id: "num-11",
+    number: 11,
+    german: "11 - elf",
+    english: "Eleven",
+    pronunciation: "ELF",
+    audioText: "elf",
+    category: "teens",
+    badge: "Number 11",
+    icon: "1️⃣1️⃣",
+    kenyanAnalogy: "The 11 players on a football team taking the pitch!",
+    memoryTrick: "Exactly like the magical forest creature 'an elf'! Elf = 11.",
+    imageType: "number-11"
+  },
+  {
+    id: "num-12",
+    number: 12,
+    german: "12 - zwölf",
+    english: "Twelve",
+    pronunciation: "TSVERLF",
+    audioText: "zwölf",
+    category: "teens",
+    badge: "Number 12",
+    icon: "1️⃣2️⃣",
+    kenyanAnalogy: "12 hours on the clock face, or a full dozen bread rolls: 'zwölf'!",
+    memoryTrick: "Starts with 'zw' (TSV) like zwei, ends with 'ölf'. Zwölf = Twelve!",
+    imageType: "number-12"
+  },
+  {
+    id: "num-13",
+    number: 13,
+    german: "13 - dreizehn",
+    english: "Thirteen",
+    pronunciation: "DRY-tsayn",
+    audioText: "dreizehn",
+    category: "teens",
+    badge: "13 = drei (3) + zehn (10)",
+    icon: "1️⃣3️⃣",
+    kenyanAnalogy: "Building numbers like Lego blocks! 3 (drei) + 10 (zehn) = 13 (dreizehn)!",
+    memoryTrick: "Say 3 first, then add 10! Drei + Zehn = Dreizehn.",
+    imageType: "number-13"
+  },
+  {
+    id: "num-14",
+    number: 14,
+    german: "14 - vierzehn",
+    english: "Fourteen",
+    pronunciation: "FEER-tsayn",
+    audioText: "vierzehn",
+    category: "teens",
+    badge: "14 = vier (4) + zehn (10)",
+    icon: "1️⃣4️⃣",
+    kenyanAnalogy: "A 14-seater matatu van full of passengers: 4 (vier) + 10 (zehn) = 14 (vierzehn)!",
+    memoryTrick: "Vier (4) + Zehn (10) = Vierzehn (14)!",
+    imageType: "number-14"
+  },
+  {
+    id: "num-15",
+    number: 15,
+    german: "15 - fünfzehn",
+    english: "Fifteen",
+    pronunciation: "FEWNF-tsayn",
+    audioText: "fünfzehn",
+    category: "teens",
+    badge: "15 = fünf (5) + zehn (10)",
+    icon: "1️⃣5️⃣",
+    kenyanAnalogy: "Quarter of an hour (15 minutes): 5 (fünf) + 10 (zehn) = 15 (fünfzehn)!",
+    memoryTrick: "Fünf (5) + Zehn (10) = Fünfzehn (15)!",
+    imageType: "number-15"
+  },
+  {
+    id: "num-16",
+    number: 16,
+    german: "16 - sechzehn (!)",
+    english: "Sixteen (Watch the missing 's'!)",
+    pronunciation: "ZEKH-tsayn",
+    audioText: "sechzehn",
+    category: "teens-special",
+    badge: "Special: sech<s> + zehn",
+    icon: "⚡1️⃣6️⃣",
+    kenyanAnalogy: "WARNING: Sneaky number alert! Six is 'sechs' with an 's' at the end. But for 16, the 's' gets kicked out! It becomes 'sechzehn' (not sechszahn).",
+    memoryTrick: "Slide Rule: sech<s> + zehn = sechzehn! The 's' takes a holiday!",
+    imageType: "number-16"
+  },
+  {
+    id: "num-17",
+    number: 17,
+    german: "17 - siebzehn (!)",
+    english: "Seventeen (Watch the missing 'en'!)",
+    pronunciation: "ZEEP-tsayn",
+    audioText: "siebzehn",
+    category: "teens-special",
+    badge: "Special: sieb<en> + zehn",
+    icon: "⚡1️⃣7️⃣",
+    kenyanAnalogy: "WARNING: Another sneaky number! Seven is 'sieben'. But for 17, the 'en' drops off! It becomes 'siebzehn' (not siebenzehn).",
+    memoryTrick: "Slide Rule: sieb<en> + zehn = siebzehn! Cut off the tail 'en'!",
+    imageType: "number-17"
+  },
+  {
+    id: "num-18",
+    number: 18,
+    german: "18 - achtzehn",
+    english: "Eighteen",
+    pronunciation: "AHKHT-tsayn",
+    audioText: "achtzehn",
+    category: "teens",
+    badge: "18 = acht (8) + zehn (10)",
+    icon: "1️⃣8️⃣",
+    kenyanAnalogy: "Back to normal rules: 8 (acht) + 10 (zehn) = 18 (achtzehn)!",
+    memoryTrick: "Acht (8) + Zehn (10) = Achtzehn (18)!",
+    imageType: "number-18"
+  },
+  {
+    id: "num-19",
+    number: 19,
+    german: "19 - neunzehn",
+    english: "Nineteen",
+    pronunciation: "NOYN-tsayn",
+    audioText: "neunzehn",
+    category: "teens",
+    badge: "19 = neun (9) + zehn (10)",
+    icon: "1️⃣9️⃣",
+    kenyanAnalogy: "The last teen number before twenty: 9 (neun) + 10 (zehn) = 19 (neunzehn)!",
+    memoryTrick: "Neun (9) + Zehn (10) = Neunzehn (19)!",
+    imageType: "number-19"
+  },
+  {
+    id: "num-20",
+    number: 20,
+    german: "20 - zwanzig",
+    english: "Twenty",
+    pronunciation: "TSVAN-tsikh",
+    audioText: "zwanzig",
+    category: "tens",
+    badge: "Number 20 (-IG = -ICH sound!)",
+    icon: "2️⃣0️⃣",
+    kenyanAnalogy: "A shiny 20 shilling coin! You have made it to twenty: 'zwanzig'!",
+    memoryTrick: "CRITICAL SOUND SECRET: In German, '-ig' at the end of numbers sounds like '-ich' (soft 'tsikh'). So pronounce it 'TSVAN-tsikh'!",
+    imageType: "number-20"
+  },
+  {
+    id: "num-handy",
+    number: 999,
+    german: "Meine Handynummer ist...",
+    english: "My mobile number is...",
+    pronunciation: "MY-neh HAHN-dee-noo-mer ist",
+    audioText: "Meine Handynummer ist: null eins acht sieben, sechs drei zwei, neun vier fünf.",
+    category: "phone",
+    badge: "Slide Example: 0187 - 632 - 945",
+    icon: "📱",
+    kenyanAnalogy: "Like reading out your Safaricom or M-Pesa line digit by digit! And Germans call a mobile phone a 'Handy' because it is hand-held and handy!",
+    memoryTrick: "Handy = Mobile Phone! Handynummer = Mobile number.",
+    imageType: "phone-dial"
+  }
+];
+
+export const LESSON_3_SCENARIOS = [
+  {
+    scenario: "What is the German word for the number 2, and what sound does the letter 'Z' make?",
+    hint: "Think of the end of the word 'cats' or 'pots'!",
+    options: [
+      { text: "zwei (pronounced 'TSVY')", correct: true, explain: "Spot on! 'Z' in German always makes the 'TS' sound (like in pots, mats). So 2 is 'zwei' (TSVY)!" },
+      { text: "drei", correct: false, explain: "'drei' is 3." },
+      { text: "vier", correct: false, explain: "'vier' is 4." }
+    ]
+  },
+  {
+    scenario: "Look at the number 16 (sixteen). Which letter from 'sechs' gets dropped when adding 'zehn'?",
+    hint: "Check slide rule: sech<s> + zehn!",
+    options: [
+      { text: "The letter 's' drops -> sechzehn", correct: true, explain: "Brilliant! Six is 'sechs', but sixteen drops the 's' and becomes 'sechzehn'!" },
+      { text: "The letter 'z' drops", correct: false, explain: "No, the 'z' in zehn stays." },
+      { text: "Nothing drops, it is sechszahn", correct: false, explain: "Incorrect, the 's' is dropped." }
+    ]
+  },
+  {
+    scenario: "Look at the number 17 (seventeen). What part of 'sieben' gets dropped?",
+    hint: "Check slide rule: sieb<en> + zehn!",
+    options: [
+      { text: "The 'en' drops -> siebzehn", correct: true, explain: "Exactly! Seven is 'sieben', but 17 drops the 'en' and becomes 'siebzehn'!" },
+      { text: "The whole word changes to elf", correct: false, explain: "Elf is 11!" },
+      { text: "It stays siebenzehn", correct: false, explain: "In German, the 'en' is removed to make it smoother to pronounce." }
+    ]
+  },
+  {
+    scenario: "Why do Germans call a mobile phone a 'Handy'?",
+    hint: "Think about where you hold it!",
+    options: [
+      { text: "Because it fits in your hand and is handy to carry!", correct: true, explain: "Yes! 'Handy' is the everyday German word for a mobile/cell phone!" },
+      { text: "Because it has hand-written messages", correct: false, explain: "No, it's just the modern slang word for cell phone." },
+      { text: "Because it weighs as much as a hand", correct: false, explain: "No, just a friendly German term!" }
+    ]
+  },
+  {
+    scenario: "How do you read the phone number digits '0 - 1 - 4' in German?",
+    hint: "0 = null, 1 = eins, 4 = vier!",
+    options: [
+      { text: "null - eins - vier", correct: true, explain: "Perfect! 0 is 'null', 1 is 'eins', and 4 is 'vier'!" },
+      { text: "zwei - drei - zehn", correct: false, explain: "That is 2, 3, 10." },
+      { text: "elf - zwölf - zwanzig", correct: false, explain: "That is 11, 12, 20." }
+    ]
+  },
+  {
+    scenario: "How is the number 20 (zwanzig) pronounced at the end?",
+    hint: "Remember the slide rule: -IG = -ICH!",
+    options: [
+      { text: "TSVAN-tsikh (soft -ich ending)", correct: true, explain: "Awesome! In German numbers, '-ig' at the end sounds like a soft '-ich' ('TSVAN-tsikh')!" },
+      { text: "ZWAN-zig with a hard 'g'", correct: false, explain: "Standard German uses the soft '-ich' sound for '-ig' at the end of numbers." },
+      { text: "ZEHN", correct: false, explain: "Zehn is 10!" }
+    ]
+  }
+];
+
+export const LESSON_4_ITEMS = [
+  {
+    id: "num-21",
+    number: 21,
+    german: "21 - einundzwanzig",
+    english: "Twenty-One (One-and-Twenty)",
+    pronunciation: "AYN-oond-tsvan-tsikh",
+    audioText: "einundzwanzig",
+    category: "twenties",
+    badge: "21 = ein<s> + und + zwanzig",
+    icon: "2️⃣1️⃣",
+    kenyanAnalogy: "Like counting out fare: 1 shilling and 20 shillings! Notice that the 's' in 'eins' drops: it is 'ein-und-zwanzig'!",
+    memoryTrick: "BACKWARDS RULE: Germans say the ONES digit first, then 'und' (and), then the TENS! ein + und + zwanzig.",
+    imageType: "number-21"
+  },
+  {
+    id: "num-22",
+    number: 22,
+    german: "22 - zweiundzwanzig",
+    english: "Twenty-Two (Two-and-Twenty)",
+    pronunciation: "TSVY-oond-tsvan-tsikh",
+    audioText: "zweiundzwanzig",
+    category: "twenties",
+    badge: "22 = zwei + und + zwanzig",
+    icon: "2️⃣2️⃣",
+    kenyanAnalogy: "Two and twenty! 'zwei' (2) + 'und' (and) + 'zwanzig' (20).",
+    memoryTrick: "zwei + und + zwanzig = zweiundzwanzig!",
+    imageType: "number-22"
+  },
+  {
+    id: "num-23",
+    number: 23,
+    german: "23 - dreiundzwanzig",
+    english: "Twenty-Three (Three-and-Twenty)",
+    pronunciation: "DRY-oond-tsvan-tsikh",
+    audioText: "dreiundzwanzig",
+    category: "twenties",
+    badge: "23 = drei + und + zwanzig",
+    icon: "2️⃣3️⃣",
+    kenyanAnalogy: "Three and twenty! drei (3) + und + zwanzig (20).",
+    memoryTrick: "drei + und + zwanzig = dreiundzwanzig!",
+    imageType: "number-23"
+  },
+  {
+    id: "num-24",
+    number: 24,
+    german: "24 - vierundzwanzig",
+    english: "Twenty-Four (Four-and-Twenty)",
+    pronunciation: "FEER-oond-tsvan-tsikh",
+    audioText: "vierundzwanzig",
+    category: "twenties",
+    badge: "24 = vier + und + zwanzig",
+    icon: "2️⃣4️⃣",
+    kenyanAnalogy: "24 hours in a full day: vier (4) + und + zwanzig (20).",
+    memoryTrick: "vier + und + zwanzig = vierundzwanzig!",
+    imageType: "number-24"
+  },
+  {
+    id: "num-25",
+    number: 25,
+    german: "25 - fünfundzwanzig",
+    english: "Twenty-Five (Five-and-Twenty)",
+    pronunciation: "FEWNF-oond-tsvan-tsikh",
+    audioText: "fünfundzwanzig",
+    category: "twenties",
+    badge: "25 = fünf + und + zwanzig",
+    icon: "2️⃣5️⃣",
+    kenyanAnalogy: "Paying 25 bob for a short stage matatu hop: fünf (5) + und + zwanzig (20)!",
+    memoryTrick: "fünf + und + zwanzig = fünfundzwanzig!",
+    imageType: "number-25"
+  },
+  {
+    id: "num-26",
+    number: 26,
+    german: "26 - sechsundzwanzig",
+    english: "Twenty-Six (Six-and-Twenty)",
+    pronunciation: "ZEKS-oond-tsvan-tsikh",
+    audioText: "sechsundzwanzig",
+    category: "twenties",
+    badge: "26 = sechs + und + zwanzig",
+    icon: "2️⃣6️⃣",
+    kenyanAnalogy: "Six and twenty! Here the 's' in sechs stays safe: sechs + und + zwanzig.",
+    memoryTrick: "sechs + und + zwanzig = sechsundzwanzig!",
+    imageType: "number-26"
+  },
+  {
+    id: "num-27",
+    number: 27,
+    german: "27 - siebenundzwanzig",
+    english: "Twenty-Seven (Seven-and-Twenty)",
+    pronunciation: "ZEE-ben-oond-tsvan-tsikh",
+    audioText: "siebenundzwanzig",
+    category: "twenties",
+    badge: "27 = sieben + und + zwanzig",
+    icon: "2️⃣7️⃣",
+    kenyanAnalogy: "Seven and twenty! sieben + und + zwanzig.",
+    memoryTrick: "sieben + und + zwanzig = siebenundzwanzig!",
+    imageType: "number-27"
+  },
+  {
+    id: "num-28",
+    number: 28,
+    german: "28 - achtundzwanzig",
+    english: "Twenty-Eight (Eight-and-Twenty)",
+    pronunciation: "AHKHT-oond-tsvan-tsikh",
+    audioText: "achtundzwanzig",
+    category: "twenties",
+    badge: "28 = acht + und + zwanzig",
+    icon: "2️⃣8️⃣",
+    kenyanAnalogy: "Eight and twenty days in February! acht + und + zwanzig.",
+    memoryTrick: "acht + und + zwanzig = achtundzwanzig!",
+    imageType: "number-28"
+  },
+  {
+    id: "num-29",
+    number: 29,
+    german: "29 - neunundzwanzig",
+    english: "Twenty-Nine (Nine-and-Twenty)",
+    pronunciation: "NOYN-oond-tsvan-tsikh",
+    audioText: "neunundzwanzig",
+    category: "twenties",
+    badge: "29 = neun + und + zwanzig",
+    icon: "2️⃣9️⃣",
+    kenyanAnalogy: "Nine and twenty! One step before thirty.",
+    memoryTrick: "neun + und + zwanzig = neunundzwanzig!",
+    imageType: "number-29"
+  },
+  {
+    id: "num-30",
+    number: 30,
+    german: "30 - dreißig (!)",
+    english: "Thirty (Special: Uses 'ß' instead of 'z'!)",
+    pronunciation: "DRY-sikh",
+    audioText: "dreißig",
+    category: "tens",
+    badge: "Special: -ßig instead of -zig!",
+    icon: "⚡3️⃣0️⃣",
+    kenyanAnalogy: "WARNING: The rebel number! While 20 is 'zwanzig' and 40 is 'vierzig' with a 'z', thirty uses the Eszett 'ß': 'dreißig'!",
+    memoryTrick: "ß = ss! Say 'DRY-sikh'. Only 30 uses 'ß', all other tens use 'z'!",
+    imageType: "number-30"
+  },
+  {
+    id: "num-31",
+    number: 31,
+    german: "31 - einunddreißig",
+    english: "Thirty-One (One-and-Thirty)",
+    pronunciation: "AYN-oond-dry-sikh",
+    audioText: "einunddreißig",
+    category: "thirties",
+    badge: "31 Days in a Month",
+    icon: "3️⃣1️⃣",
+    kenyanAnalogy: "31 days on a calendar month: ein (1) + und + dreißig (30)!",
+    memoryTrick: "Same backwards rule: ein + und + dreißig!",
+    imageType: "number-31"
+  },
+  {
+    id: "num-40",
+    number: 40,
+    german: "40 - vierzig",
+    english: "Forty",
+    pronunciation: "FEER-tsikh",
+    audioText: "vierzig",
+    category: "tens",
+    badge: "Number 40",
+    icon: "4️⃣0️⃣",
+    kenyanAnalogy: "40 days in the wilderness: vier (4) + zig = vierzig!",
+    memoryTrick: "vier + zig = vierzig. (V = F sound!)",
+    imageType: "number-40"
+  },
+  {
+    id: "num-50",
+    number: 50,
+    german: "50 - fünfzig",
+    english: "Fifty",
+    pronunciation: "FEWNF-tsikh",
+    audioText: "fünfzig",
+    category: "tens",
+    badge: "Number 50",
+    icon: "5️⃣0️⃣",
+    kenyanAnalogy: "A copper 50 shilling coin or 50 bob airtime voucher: fünf (5) + zig = fünfzig!",
+    memoryTrick: "fünf + zig = fünfzig!",
+    imageType: "number-50"
+  },
+  {
+    id: "num-60",
+    number: 60,
+    german: "60 - sechzig (!)",
+    english: "Sixty (Notice missing 's'!)",
+    pronunciation: "ZEKH-tsikh",
+    audioText: "sechzig",
+    category: "tens",
+    badge: "Special: sech<s> + zig",
+    icon: "⚡6️⃣0️⃣",
+    kenyanAnalogy: "60 minutes in an hour. Just like in 16 (sechzehn), the 's' in 'sechs' drops off again! It becomes 'sechzig'!",
+    memoryTrick: "sech<s> + zig = sechzig! No 's'!",
+    imageType: "number-60"
+  },
+  {
+    id: "num-70",
+    number: 70,
+    german: "70 - siebzig (!)",
+    english: "Seventy (Notice missing 'en'!)",
+    pronunciation: "ZEEP-tsikh",
+    audioText: "siebzig",
+    category: "tens",
+    badge: "Special: sieb<en> + zig",
+    icon: "⚡7️⃣0️⃣",
+    kenyanAnalogy: "Just like in 17 (siebzehn), the 'en' drops off again! It becomes 'siebzig'!",
+    memoryTrick: "sieb<en> + zig = siebzig! No 'en'!",
+    imageType: "number-70"
+  },
+  {
+    id: "num-80",
+    number: 80,
+    german: "80 - achtzig",
+    english: "Eighty",
+    pronunciation: "AHKHT-tsikh",
+    audioText: "achtzig",
+    category: "tens",
+    badge: "Number 80",
+    icon: "8️⃣0️⃣",
+    kenyanAnalogy: "acht (8) + zig = achtzig!",
+    memoryTrick: "acht + zig = achtzig!",
+    imageType: "number-80"
+  },
+  {
+    id: "num-90",
+    number: 90,
+    german: "90 - neunzig",
+    english: "Ninety",
+    pronunciation: "NOYN-tsikh",
+    audioText: "neunzig",
+    category: "tens",
+    badge: "Number 90",
+    icon: "9️⃣0️⃣",
+    kenyanAnalogy: "neun (9) + zig = neunzig! (EU = OI sound!).",
+    memoryTrick: "neun + zig = neunzig!",
+    imageType: "number-90"
+  },
+  {
+    id: "num-100",
+    number: 100,
+    german: "100 - (ein)hundert",
+    english: "One Hundred (Hundred)",
+    pronunciation: "AYN-hoon-dert",
+    audioText: "einhundert",
+    category: "hundred",
+    badge: "Number 100",
+    icon: "💯",
+    kenyanAnalogy: "A crisp 100 shilling note! Just like English says 'a hundred' or 'one hundred', Germans say 'hundert' or 'einhundert'!",
+    memoryTrick: "Almost 100% identical to English 'hundred'!",
+    imageType: "number-100"
+  }
+];
+
+export const LESSON_4_SCENARIOS = [
+  {
+    scenario: "In German, how do they build two-digit numbers like 25 (twenty-five)?",
+    hint: "Think about the backwards arrow in the slide!",
+    options: [
+      { text: "They say the ONES digit first, then 'und' (and), then the tens: 'fünfundzwanzig' (5 and 20)", correct: true, explain: "Spot on! In German, you say the last digit first: 5 and 20 (fünfundzwanzig)!" },
+      { text: "They say 20 first, then 5 like in English", correct: false, explain: "No, English says twenty-five, but German flips it backwards: five-and-twenty!" },
+      { text: "They multiply 2 times 5", correct: false, explain: "No math operations, just joining with 'und'!" }
+    ]
+  },
+  {
+    scenario: "What happens to the number 'eins' (1) when saying 21 (einundzwanzig)?",
+    hint: "Look at the slide: ein<s> + und + zwanzig!",
+    options: [
+      { text: "The letter 's' drops off -> einundzwanzig", correct: true, explain: "Brilliant! You say 'ein-und-zwanzig', never 'eins-und-zwanzig'!" },
+      { text: "The letter 'n' drops off", correct: false, explain: "No, the 'n' stays." },
+      { text: "Nothing drops off", correct: false, explain: "The 's' drops off to make speech smooth!" }
+    ]
+  },
+  {
+    scenario: "Which tens number is the unique rebel that ends in '-ßig' instead of '-zig'?",
+    hint: "20 is zwanzig, 40 is vierzig, but this one has the Eszett 'ß'!",
+    options: [
+      { text: "30 (dreißig)", correct: true, explain: "Exactly! Thirty is the ONLY tens number with 'ß': 'dreißig'. All other tens use 'z' (vierzig, fünfzig, etc.)!" },
+      { text: "50 (fünfzig)", correct: false, explain: "Fünfzig uses 'z'." },
+      { text: "80 (achtzig)", correct: false, explain: "Achtzig uses 'z'." }
+    ]
+  },
+  {
+    scenario: "Look at the numbers 60 (sechzig) and 70 (siebzig). What happens to 'sechs' and 'sieben'?",
+    hint: "Just like in 16 and 17 from Lesson 3!",
+    options: [
+      { text: "60 drops the 's' (sechzig) and 70 drops 'en' (siebzig)", correct: true, explain: "Perfect memory! Just like 16 & 17, 60 becomes 'sechzig' and 70 becomes 'siebzig'!" },
+      { text: "They stay unchanged as sechszig and siebenzik", correct: false, explain: "Both letters drop off for smooth pronunciation." },
+      { text: "They become irregular like zwölf", correct: false, explain: "They follow the drop rule!" }
+    ]
+  },
+  {
+    scenario: "How do Germans say the number 100?",
+    hint: "Sounds almost identical to English 'hundred'!",
+    options: [
+      { text: "hundert or einhundert", correct: true, explain: "Awesome! You can simply say 'hundert' or 'einhundert' (a hundred or one hundred)!" },
+      { text: "tausend", correct: false, explain: "Tausend means 1,000!" },
+      { text: "nullzig", correct: false, explain: "That does not exist in German." }
+    ]
+  },
+  {
+    scenario: "If an item at the market costs 45 shillings, how would the German seller say 45?",
+    hint: "Remember: 5 (fünf) + und (and) + 40 (vierzig)!",
+    options: [
+      { text: "fünfundvierzig", correct: true, explain: "Superb! 5 (fünf) + und + 40 (vierzig) = fünfundvierzig!" },
+      { text: "vierzigundfünf", correct: false, explain: "German always puts the ones digit first!" },
+      { text: "fünfvier", correct: false, explain: "You must connect them with 'und'!" }
+    ]
+  }
+];
+
+export const LESSON_5_ITEMS = [
+  {
+    id: "let-a",
+    letter: "A",
+    german: "A - Apfel",
+    english: "Apple (Letter name: aa)",
+    pronunciation: "AH (Word: AHP-fel)",
+    audioText: "A. Apfel.",
+    category: "alphabet-vowels",
+    badge: "Letter A • aa",
+    icon: "🍎",
+    kenyanAnalogy: "Like biting into a sweet crisp apple! A is called 'aa' like opening your mouth at the doctor.",
+    memoryTrick: "A for Apfel! Letter name is simply 'aa'."
+  },
+  {
+    id: "let-b",
+    letter: "B",
+    german: "B - Banane",
+    english: "Banana (Letter name: bay)",
+    pronunciation: "BAY (Word: bah-NAH-neh)",
+    audioText: "B. Banane.",
+    category: "alphabet-standard",
+    badge: "Letter B • bay",
+    icon: "🍌",
+    kenyanAnalogy: "Buying a sweet yellow banana at the fruit stall! B is pronounced 'bay'.",
+    memoryTrick: "B = Bay. Banane = Banana!"
+  },
+  {
+    id: "let-c",
+    letter: "C",
+    german: "C - Couch",
+    english: "Couch / Sofa (Letter name: tsay)",
+    pronunciation: "TSAY (Word: kowtch)",
+    audioText: "C. Couch.",
+    category: "alphabet-standard",
+    badge: "Letter C • tsay",
+    icon: "🛋️",
+    kenyanAnalogy: "Relaxing on your living room sofa after work! C is named 'tsay'.",
+    memoryTrick: "C = Tsay. Couch = sofa!"
+  },
+  {
+    id: "let-d",
+    letter: "D",
+    german: "D - Deutschland",
+    english: "Germany (Letter name: day)",
+    pronunciation: "DAY (Word: DOYCH-lahnt)",
+    audioText: "D. Deutschland.",
+    category: "alphabet-standard",
+    badge: "Letter D • day",
+    icon: "🇩🇪",
+    kenyanAnalogy: "Deutschland is the country of Germany itself! D is named 'day'.",
+    memoryTrick: "D = Day. Deutschland = Germany!"
+  },
+  {
+    id: "let-e",
+    letter: "E",
+    german: "E - Elefant",
+    english: "Elephant (Letter name: ey)",
+    pronunciation: "AY (Word: eh-leh-FAHNT)",
+    audioText: "E. Elefant.",
+    category: "alphabet-vowels",
+    badge: "Letter E • ey",
+    icon: "🐘",
+    kenyanAnalogy: "The majestic elephant in the national park! E is called 'ey'.",
+    memoryTrick: "E = Ey. Elefant = Elephant!"
+  },
+  {
+    id: "let-f",
+    letter: "F",
+    german: "F - Fisch",
+    english: "Fish (Letter name: eff)",
+    pronunciation: "EFF (Word: fish)",
+    audioText: "F. Fisch.",
+    category: "alphabet-standard",
+    badge: "Letter F • eff",
+    icon: "🐟",
+    kenyanAnalogy: "Fresh fish from Lake Victoria! F is called 'eff', just like in English.",
+    memoryTrick: "F = Eff. Fisch = Fish!"
+  },
+  {
+    id: "let-g",
+    letter: "G",
+    german: "G - Gitarre",
+    english: "Guitar (Letter name: gay)",
+    pronunciation: "GAY (Word: gee-TAH-reh)",
+    audioText: "G. Gitarre.",
+    category: "alphabet-standard",
+    badge: "Letter G • gay",
+    icon: "🎸",
+    kenyanAnalogy: "Strumming an acoustic guitar at an evening gathering! G is named 'gay'.",
+    memoryTrick: "G = Gay (hard G). Gitarre = Guitar!"
+  },
+  {
+    id: "let-h",
+    letter: "H",
+    german: "H - Haus",
+    english: "House (Letter name: ha)",
+    pronunciation: "HAH (Word: hows)",
+    audioText: "H. Haus.",
+    category: "alphabet-standard",
+    badge: "Letter H • ha",
+    icon: "🏠",
+    kenyanAnalogy: "Coming home to your family house! H is named 'ha'.",
+    memoryTrick: "H = Ha. Haus = House!"
+  },
+  {
+    id: "let-i",
+    letter: "I",
+    german: "I - Igel",
+    english: "Hedgehog (Letter name: ee)",
+    pronunciation: "EE (Word: EE-gel)",
+    audioText: "I. Igel.",
+    category: "alphabet-vowels",
+    badge: "Letter I • e",
+    icon: "🦔",
+    kenyanAnalogy: "A cute little spiky hedgehog! Note: the letter 'I' is called 'ee' in German.",
+    memoryTrick: "I = Ee sound. Igel = hedgehog!"
+  },
+  {
+    id: "let-j",
+    letter: "J",
+    german: "J - Joghurt",
+    english: "Yoghurt (Letter name: yott)",
+    pronunciation: "YOTT (Word: YOH-goort)",
+    audioText: "J. Joghurt.",
+    category: "alphabet-special-sound",
+    badge: "Tricky: J = Y sound!",
+    icon: "🥣",
+    kenyanAnalogy: "Drinking fresh strawberry yoghurt! CRITICAL: In German, the letter 'J' sounds like an English 'Y'!",
+    memoryTrick: "Slide Rule: J has the sound of 'Y'! Letter name: 'yott'. Joghurt = Yoghurt!"
+  },
+  {
+    id: "let-k",
+    letter: "K",
+    german: "K - Kaffee",
+    english: "Coffee (Letter name: ka)",
+    pronunciation: "KAH (Word: KAH-fay)",
+    audioText: "K. Kaffee.",
+    category: "alphabet-standard",
+    badge: "Letter K • ka",
+    icon: "☕",
+    kenyanAnalogy: "A hot rich cup of roasted coffee! K is called 'ka'.",
+    memoryTrick: "K = Ka. Kaffee = Coffee!"
+  },
+  {
+    id: "let-l",
+    letter: "L",
+    german: "L - Liebe",
+    english: "Love (Letter name: ell)",
+    pronunciation: "ELL (Word: LEE-beh)",
+    audioText: "L. Liebe.",
+    category: "alphabet-standard",
+    badge: "Letter L • ell",
+    icon: "❤️",
+    kenyanAnalogy: "Warm love and affection for your family! L is called 'ell'.",
+    memoryTrick: "L = Ell. Liebe = Love!"
+  },
+  {
+    id: "let-m",
+    letter: "M",
+    german: "M - Mann",
+    english: "Man (Letter name: emm)",
+    pronunciation: "EMM (Word: mahn)",
+    audioText: "M. Mann.",
+    category: "alphabet-standard",
+    badge: "Letter M • emm",
+    icon: "👨",
+    kenyanAnalogy: "A gentleman in a nice suit! M is called 'emm'.",
+    memoryTrick: "M = Emm. Mann = Man!"
+  },
+  {
+    id: "let-n",
+    letter: "N",
+    german: "N - Nagel",
+    english: "Nail (Letter name: en)",
+    pronunciation: "ENN (Word: NAH-gel)",
+    audioText: "N. Nagel.",
+    category: "alphabet-standard",
+    badge: "Letter N • en",
+    icon: "🔨",
+    kenyanAnalogy: "A carpenter driving a steel nail into timber! N is called 'en'.",
+    memoryTrick: "N = En. Nagel = Nail!"
+  },
+  {
+    id: "let-o",
+    letter: "O",
+    german: "O - Orange",
+    english: "Orange (Letter name: o)",
+    pronunciation: "OH (Word: oh-RAHN-zheh)",
+    audioText: "O. Orange.",
+    category: "alphabet-vowels",
+    badge: "Letter O • o",
+    icon: "🍊",
+    kenyanAnalogy: "Juicy ripe orange slice! O is called 'o' with round lips.",
+    memoryTrick: "O = Oh. Orange = Orange!"
+  },
+  {
+    id: "let-p",
+    letter: "P",
+    german: "P - Pinguin",
+    english: "Penguin (Letter name: pay)",
+    pronunciation: "PAY (Word: PING-veen)",
+    audioText: "P. Pinguin.",
+    category: "alphabet-standard",
+    badge: "Letter P • pay",
+    icon: "🐧",
+    kenyanAnalogy: "A cute waddling penguin! P is called 'pay'.",
+    memoryTrick: "P = Pay. Pinguin = Penguin!"
+  },
+  {
+    id: "let-q",
+    letter: "Q",
+    german: "Q - Quiz",
+    english: "Quiz / Puzzle (Letter name: ku)",
+    pronunciation: "KOO (Word: kviss)",
+    audioText: "Q. Quiz.",
+    category: "alphabet-standard",
+    badge: "Letter Q • ku",
+    icon: "🧩",
+    kenyanAnalogy: "A fun puzzle game! Q is called 'ku' (koo).",
+    memoryTrick: "Q = Ku. Quiz = Quiz!"
+  },
+  {
+    id: "let-r",
+    letter: "R",
+    german: "R - Rot",
+    english: "Red (Letter name: err)",
+    pronunciation: "AIR (Word: roht)",
+    audioText: "R. Rot.",
+    category: "alphabet-standard",
+    badge: "Letter R • err",
+    icon: "🔴",
+    kenyanAnalogy: "The bright red color on the flag! R is called 'err'.",
+    memoryTrick: "R = Err. Rot = Red!"
+  },
+  {
+    id: "let-s",
+    letter: "S",
+    german: "S - Sonne",
+    english: "Sun (Letter name: ess)",
+    pronunciation: "ESS (Word: ZON-neh)",
+    audioText: "S. Sonne.",
+    category: "alphabet-standard",
+    badge: "Letter S • ess (starts with Z sound)",
+    icon: "☀️",
+    kenyanAnalogy: "The bright golden sun shining above! Note: S at the start sounds like 'Z' (Zonne!).",
+    memoryTrick: "S = Ess. Sonne = Sun!"
+  },
+  {
+    id: "let-t",
+    letter: "T",
+    german: "T - Tee",
+    english: "Tea (Letter name: tay)",
+    pronunciation: "TAY (Word: tay)",
+    audioText: "T. Tee.",
+    category: "alphabet-standard",
+    badge: "Letter T • tay",
+    icon: "🍵",
+    kenyanAnalogy: "A steaming hot cup of Kenyan morning tea! T is called 'tay'.",
+    memoryTrick: "T = Tay. Tee = Tea!"
+  },
+  {
+    id: "let-u",
+    letter: "U",
+    german: "U - Uhr",
+    english: "Clock / Watch (Letter name: oo)",
+    pronunciation: "OO (Word: oor)",
+    audioText: "U. Uhr.",
+    category: "alphabet-vowels",
+    badge: "Letter U • oo",
+    icon: "⏰",
+    kenyanAnalogy: "The clock on the wall ticking the time! U is called 'oo'.",
+    memoryTrick: "U = Oo. Uhr = Clock / Watch!"
+  },
+  {
+    id: "let-v",
+    letter: "V",
+    german: "V - Vogel",
+    english: "Bird (Letter name: fau)",
+    pronunciation: "FOW (Word: FOH-gel)",
+    audioText: "V. Vogel.",
+    category: "alphabet-special-sound",
+    badge: "Tricky: V = F sound!",
+    icon: "🐦",
+    kenyanAnalogy: "A yellow canary bird flying in the garden! CRITICAL: In German, 'V' makes the 'F' sound! Vogel = Fogel!",
+    memoryTrick: "Slide Rule: V has the sound of 'F'! Letter name: 'fau'."
+  },
+  {
+    id: "let-w",
+    letter: "W",
+    german: "W - Wolke",
+    english: "Cloud (Letter name: way)",
+    pronunciation: "VAY (Word: VOL-keh)",
+    audioText: "W. Wolke.",
+    category: "alphabet-special-sound",
+    badge: "Tricky: W = V sound!",
+    icon: "☁️",
+    kenyanAnalogy: "A fluffy white cloud in the blue sky! CRITICAL: German 'W' makes the English 'V' sound (like Volkswagen = Folksvagen!).",
+    memoryTrick: "Slide Rule: W has the sound of 'V'! Letter name: 'way'."
+  },
+  {
+    id: "let-x",
+    letter: "X",
+    german: "X - Xylofon",
+    english: "Xylophone (Letter name: iks)",
+    pronunciation: "IKS (Word: ksee-loh-FOHN)",
+    audioText: "X. Xylofon.",
+    category: "alphabet-standard",
+    badge: "Letter X • iks",
+    icon: "🎶",
+    kenyanAnalogy: "Playing colorful music bars on a xylophone! X is named 'iks'.",
+    memoryTrick: "X = Iks. Xylofon = Xylophone!"
+  },
+  {
+    id: "let-y",
+    letter: "Y",
+    german: "Y - Yak",
+    english: "Yak (Letter name: upsilon)",
+    pronunciation: "OOP-si-lon (Word: yahk)",
+    audioText: "Y. Yak.",
+    category: "alphabet-standard",
+    badge: "Letter Y • upsilon",
+    icon: "🐂",
+    kenyanAnalogy: "A sturdy mountain yak animal with long horns! Y is called 'upsilon'.",
+    memoryTrick: "Y = Upsilon. Yak = Yak!"
+  },
+  {
+    id: "let-z",
+    letter: "Z",
+    german: "Z - Zebra",
+    english: "Zebra (Letter name: tset)",
+    pronunciation: "TSET (Word: TSAY-brah)",
+    audioText: "Z. Zebra.",
+    category: "alphabet-special-sound",
+    badge: "Tricky: Z = TS sound!",
+    icon: "🦓",
+    kenyanAnalogy: "A striped zebra grazing in the savannah! CRITICAL: 'Z' sounds like 'TS' (like mats, pots). Zebra = Tsaybra!",
+    memoryTrick: "Slide Rule: Z = TS! Letter name: 'tset'."
+  },
+  {
+    id: "let-ae",
+    letter: "Ä",
+    german: "Ä - Bär",
+    english: "Bear (A-Umlaut, name: eyyy)",
+    pronunciation: "AY (Word: bayr)",
+    audioText: "Ä. Bär.",
+    category: "alphabet-umlauts",
+    badge: "Special 1: Ä (A-Umlaut)",
+    icon: "🐻",
+    kenyanAnalogy: "A big brown bear! Ä sounds like the 'ai' in 'air' or 'bear'. Bär sounds just like English 'bear'!",
+    memoryTrick: "Ä = A with two dots on top. Sounds like 'eyyy'!"
+  },
+  {
+    id: "let-oe",
+    letter: "Ö",
+    german: "Ö - Öl",
+    english: "Oil (O-Umlaut, name: eyo)",
+    pronunciation: "UR (Word: url)",
+    audioText: "Ö. Öl.",
+    category: "alphabet-umlauts",
+    badge: "Special 2: Ö (O-Umlaut)",
+    icon: "🫒",
+    kenyanAnalogy: "Cooking oil or olive oil in bottles! Round your lips into an 'O' and try to say 'E': 'Öl'!",
+    memoryTrick: "Ö = O with two dots on top. Sounds like 'eyo'!"
+  },
+  {
+    id: "let-ue",
+    letter: "Ü",
+    german: "Ü - fünf",
+    english: "Five (U-Umlaut, name: eyu)",
+    pronunciation: "EW (Word: fewnf)",
+    audioText: "Ü. fünf.",
+    category: "alphabet-umlauts",
+    badge: "Special 3: Ü (U-Umlaut)",
+    icon: "5️⃣",
+    kenyanAnalogy: "The number 5! Round your lips as if to whistle and say 'ee': 'fünf'!",
+    memoryTrick: "Ü = U with two dots on top. Sounds like 'eyu'!"
+  },
+  {
+    id: "let-ss",
+    letter: "ß",
+    german: "ß - Fuß",
+    english: "Foot (Eszett / Sharp S)",
+    pronunciation: "ESS-TSET (Word: fooss)",
+    audioText: "Eszett. Fuß.",
+    category: "alphabet-eszett",
+    badge: "Special 4: ß (Double S)",
+    icon: "🦶",
+    kenyanAnalogy: "Walking on your foot! 'Fuß' means foot. Notice: NO German word ever begins with 'ß'! It only lives inside or at the end of words.",
+    memoryTrick: "Slide Rule: No letter begins with 'ß'! It sounds like a sharp double 'ss'!"
+  }
+];
+
+export const LESSON_5_SCENARIOS = [
+  {
+    scenario: "How many letters are in the German alphabet according to your slide?",
+    hint: "26 English letters PLUS the 4 special ones!",
+    options: [
+      { text: "30 characters (26 standard + ä + ö + ü + ß)", correct: true, explain: "Spot on! The German alphabet has 30 characters: 26 standard + 3 Umlauts (ä, ö, ü) + 1 Eszett (ß)!" },
+      { text: "26 characters only", correct: false, explain: "German adds 4 special extra characters!" },
+      { text: "36 characters", correct: false, explain: "Just 30 in total!" }
+    ]
+  },
+  {
+    scenario: "What English sound does the German letter 'J' make in words like 'Joghurt'?",
+    hint: "Check the slide: j has the sound of...",
+    options: [
+      { text: "Sound of 'Y' (like yogurt, yes, yellow)", correct: true, explain: "Brilliant! In German, 'J' always sounds like an English 'Y'!" },
+      { text: "Sound of 'J' like jump", correct: false, explain: "German 'J' never makes the hard jump sound; it sounds like 'Y'!" },
+      { text: "Sound of 'K'", correct: false, explain: "No, J = Y!" }
+    ]
+  },
+  {
+    scenario: "What sound does the German letter 'V' make in words like 'Vogel' (bird)?",
+    hint: "Check the slide: v has the sound of...",
+    options: [
+      { text: "Sound of 'F' (Vogel = Fogel)", correct: true, explain: "Exactly! In German, 'V' sounds like an English 'F'!" },
+      { text: "Sound of 'V' like vase", correct: false, explain: "German 'V' is pronounced with an 'F' sound!" },
+      { text: "Sound of 'W'", correct: false, explain: "No, V = F!" }
+    ]
+  },
+  {
+    scenario: "What sound does the German letter 'W' make in words like 'Wolke' (cloud)?",
+    hint: "Check the slide: w has the sound of...",
+    options: [
+      { text: "Sound of 'V' (Wolke = Volke)", correct: true, explain: "Perfect! German 'W' sounds like English 'V' (just like in Volkswagen: Folks-vah-gen)!" },
+      { text: "Sound of 'W' like water", correct: false, explain: "German 'W' uses the English 'V' sound!" },
+      { text: "Sound of 'B'", correct: false, explain: "No, W = V!" }
+    ]
+  },
+  {
+    scenario: "Can any German word begin with the letter 'ß' (Eszett)?",
+    hint: "Check the last bullet point on the slide!",
+    options: [
+      { text: "No, NO German word ever begins with 'ß'!", correct: true, explain: "Awesome! 'ß' only ever appears in the middle or end of words (like Fuß, dreißig, Grüß Gott)!" },
+      { text: "Yes, many words start with ß", correct: false, explain: "The slide explicitly states: 'no letter begins with ß'!" },
+      { text: "Only names start with ß", correct: false, explain: "No word ever starts with ß." }
+    ]
+  },
+  {
+    scenario: "How is the German word for foot (Fuß) pronounced?",
+    hint: "Remember: ß = double ss!",
+    options: [
+      { text: "fooss (rhymes with moose / goose)", correct: true, explain: "Superb! 'ß' is a sharp double 'ss', so Fuß sounds like 'fooss'!" },
+      { text: "fub (with a letter b)", correct: false, explain: "'ß' is NOT a letter B, it is a double S!" },
+      { text: "fuz (with a buzzing z)", correct: false, explain: "It is a crisp 'ss' sound!" }
+    ]
+  }
+];
+
+
