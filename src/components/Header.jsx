@@ -17,6 +17,7 @@ export default function Header({
     if (currentLesson === 3) msg = "null, eins, zwei, drei, vier, fünf! Meine Handynummer ist...";
     if (currentLesson === 4) msg = "einundzwanzig, dreißig, sechzig, siebzig, einhundert!";
     if (currentLesson === 5) msg = "Das Alphabet: A, B, C, D, E, F, G! Joghurt, Vogel, Wolke, Fuß!";
+    if (currentLesson === 6) msg = "Hallo! Mein Name ist Monika Schmidt. Ich wohne in Berlin und ich spreche Deutsch!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -63,11 +64,20 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson6NavItems = [
+    { id: 'cards', label: '📖 Lesson 6 Cards', sub: 'Name, Origin, Age & Job' },
+    { id: 'builder', label: '🆔 Profile Builder', sub: 'Custom German ID & Audio' },
+    { id: 'game6', label: '🎮 Intro Quiz Game', sub: 'Self-Introduction Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
   if (currentLesson === 4) navItems = lesson4NavItems;
   if (currentLesson === 5) navItems = lesson5NavItems;
+  if (currentLesson === 6) navItems = lesson6NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -192,6 +202,20 @@ export default function Header({
               }`}
             >
               🔤 5: Das Alphabet
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(6);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 6
+                  ? 'bg-sky-700 text-white shadow-md scale-102 ring-2 ring-sky-300'
+                  : 'bg-white text-stone-700 hover:bg-sky-100 border border-sky-300'
+              }`}
+            >
+              🤝 6: Sich Vorstellen
             </button>
           </div>
 

@@ -1653,4 +1653,221 @@ export const LESSON_5_SCENARIOS = [
   }
 ];
 
+export const LESSON_6_ITEMS = [
+  {
+    id: "intro-name-3ways",
+    german: "Ich heiße Monika. / Ich bin Monika. / Mein Name ist Monika.",
+    english: "My name is Monika. (3 ways to state your name!)",
+    pronunciation: "ikh HY-seh... / ikh bin... / myn NAH-meh ist...",
+    audioText: "Ich heiße Monika. Ich bin Monika. Mein Name ist Monika.",
+    category: "identity-name",
+    badge: "3 Ways to Say Your Name",
+    icon: "🏷️",
+    kenyanAnalogy: "Like introducing yourself at a gathering: You can say 'I am called...', 'I am...', or 'My name is...'! In German, all 3 work beautifully.",
+    memoryTrick: "'heißen' = to be called (notice the 'ß' = ss: 'HY-seh'). 'Ich bin' = I am."
+  },
+  {
+    id: "intro-surname",
+    german: "Mein Familienname ist Schmidt.",
+    english: "My surname / family name is Schmidt.",
+    pronunciation: "myn fah-MEE-lee-en-nah-meh ist shmit",
+    audioText: "Mein Familienname ist Schmidt. Mein Name ist Monika Schmidt.",
+    category: "identity-name",
+    badge: "Surname / Family Name",
+    icon: "📜",
+    kenyanAnalogy: "Giving your official family or clan surname on a passport application form: 'Familienname' literally means Family Name!",
+    memoryTrick: "Familie (Family) + Name (Name) = Familienname!"
+  },
+  {
+    id: "intro-origin",
+    german: "Ich komme aus Deutschland / Kenia.",
+    english: "I am from Germany / Kenya.",
+    pronunciation: "ikh KOM-meh ows DOYCH-lahnt / KEHN-yah",
+    audioText: "Ich komme aus Deutschland. Ich komme aus Kenia.",
+    category: "identity-origin",
+    badge: "Where You Come From",
+    icon: "🌍",
+    kenyanAnalogy: "Telling someone your home country or county: 'I come from Kenya / Deutschland!'",
+    memoryTrick: "'komme aus' = come out of / from. Sounds like English 'come out'!"
+  },
+  {
+    id: "intro-residence",
+    german: "Ich wohne in Berlin / Nairobi.",
+    english: "I live in Berlin / Nairobi.",
+    pronunciation: "ikh VOH-neh in bair-LEEN / ny-ROH-bee",
+    audioText: "Ich wohne in Berlin. Ich wohne in Nairobi.",
+    category: "identity-origin",
+    badge: "Where You Currently Live",
+    icon: "🏡",
+    kenyanAnalogy: "Telling a friend where your current house or flat is located: 'I live in Nairobi / Berlin!'",
+    memoryTrick: "'wohne in' = reside in. (Remember: German W makes the 'V' sound: 'VOH-neh'!)."
+  },
+  {
+    id: "intro-languages",
+    german: "Ich spreche Deutsch und Englisch.",
+    english: "I speak German and English. (Also: Ich kann...)",
+    pronunciation: "ikh SHPREKH-eh DOYCH oond ENG-lish",
+    audioText: "Ich spreche Deutsch und Englisch. Ich kann Deutsch und Englisch.",
+    category: "identity-skills",
+    badge: "Languages You Speak",
+    icon: "🗣️",
+    kenyanAnalogy: "Stating the languages you converse in: 'Ich spreche' (I speak) or 'Ich kann' (I can / I know).",
+    memoryTrick: "'spreche' = speaking. 'kann' = can / know."
+  },
+  {
+    id: "intro-age",
+    german: "Ich bin 23 Jahre alt.",
+    english: "I am 23 years old.",
+    pronunciation: "ikh bin DRY-oond-tsvan-tsikh YAH-reh ahlt",
+    audioText: "Ich bin dreiundzwanzig Jahre alt.",
+    category: "identity-age",
+    badge: "Stating Your Age",
+    icon: "🎂",
+    kenyanAnalogy: "Like blowing out birthday candles: Plug in any number you learned in Lessons 3 & 4! 'Jahre alt' = years old.",
+    memoryTrick: "Jahre = Years (J = Y sound: 'YAH-reh'). Alt = Old (sounds like adult/old)!"
+  },
+  {
+    id: "intro-student",
+    german: "Ich bin Student (Studentin).",
+    english: "I am a college/university student (masculine / feminine).",
+    pronunciation: "ikh bin shtoo-DENT (shtoo-DEN-tin)",
+    audioText: "Ich bin Student. Ich bin Studentin.",
+    category: "identity-job",
+    badge: "Male: Student • Female: Studentin",
+    icon: "🎓",
+    kenyanAnalogy: "Attending college or campus! In German, ladies add '-in' to their title: a male is 'Student', a female is 'Studentin'.",
+    memoryTrick: "The '-in' Golden Rule: Add '-in' for women! Student -> Studentin."
+  },
+  {
+    id: "intro-schueler",
+    german: "Ich bin Schüler / Schülerin.",
+    english: "I am a school student (masculine / feminine).",
+    pronunciation: "ikh bin SHEW-ler / SHEW-leh-rin",
+    audioText: "Ich bin Schüler. Ich bin Schülerin.",
+    category: "identity-job",
+    badge: "Primary / High School Student",
+    icon: "🎒",
+    kenyanAnalogy: "Wearing a school uniform and carrying a backpack to class! Male = Schüler, Female = Schülerin.",
+    memoryTrick: "Schüler = School pupil! (Has the Ü umlaut: 'SHEW-ler')."
+  },
+  {
+    id: "intro-lehrer",
+    german: "Ich bin Lehrer / Lehrerin.",
+    english: "I am a teacher (masculine / feminine).",
+    pronunciation: "ikh bin LAY-rer / LAY-reh-rin",
+    audioText: "Ich bin Lehrer. Ich bin Lehrerin.",
+    category: "identity-job",
+    badge: "Male: Lehrer • Female: Lehrerin",
+    icon: "🧑‍🏫",
+    kenyanAnalogy: "Standing in front of the classroom with chalk! Male teacher = Lehrer, Female teacher = Lehrerin.",
+    memoryTrick: "Notice: German does NOT say 'I am *a* teacher'. They just say 'Ich bin Lehrer' directly!"
+  },
+  {
+    id: "intro-marital",
+    german: "Ich bin ledig / verheiratet.",
+    english: "I am single / married.",
+    pronunciation: "ikh bin LAY-dikh / fer-HY-rah-tet",
+    audioText: "Ich bin ledig. Ich bin verheiratet.",
+    category: "identity-status",
+    badge: "Single (ledig) • Married (verheiratet)",
+    icon: "💍",
+    kenyanAnalogy: "Checking your status on a passport or census form: 'ledig' (single) or 'verheiratet' (married with a ring!).",
+    memoryTrick: "ledig = solo/single (-ig sounds like -ich!). verheiratet = married (heiraten = to marry)."
+  },
+  {
+    id: "intro-one-child",
+    german: "Ich habe ein Kind.",
+    english: "I have one child.",
+    pronunciation: "ikh HAH-beh ayn kint",
+    audioText: "Ich habe ein Kind.",
+    category: "identity-family",
+    badge: "1 Child (Kind)",
+    icon: "👶",
+    kenyanAnalogy: "Holding your baby or toddler in your arms: 'Kind' means child (just like kindergarten = children's garden)!",
+    memoryTrick: "Kindergarten = garden of 'Kind' (child)!"
+  },
+  {
+    id: "intro-children",
+    german: "Ich habe zwei / drei... / keine Kinder.",
+    english: "I have two / three... / no children.",
+    pronunciation: "ikh HAH-beh tsvy / dry... / KY-neh KIN-der",
+    audioText: "Ich habe zwei Kinder. Ich habe keine Kinder.",
+    category: "identity-family",
+    badge: "Plural: Kinder • None: keine Kinder",
+    icon: "👨‍👩‍👧‍👦",
+    kenyanAnalogy: "Counting your little ones around the dinner table, or saying 'I don't have children yet' (keine Kinder)!",
+    memoryTrick: "Kind = 1 child. Kinder = children! 'keine' = zero / none."
+  },
+  {
+    id: "intro-hobbies",
+    german: "Meine Hobbys sind fernsehen und Musik hören.",
+    english: "My hobbies are watching TV and listening to music.",
+    pronunciation: "MY-neh HOB-bees zint FAIRN-zay-en oond MOO-zeek HUR-en",
+    audioText: "Meine Hobbys sind fernsehen und Musik hören.",
+    category: "identity-hobbies",
+    badge: "Free Time & Fun",
+    icon: "📺 🎵",
+    kenyanAnalogy: "Relaxing on Sunday afternoon: kicking back to watch your favorite show (fernsehen) and listening to sweet music through your earphones (Musik hören)!",
+    memoryTrick: "fern = far, sehen = to see (seeing things from far away = television!). Musik hören = hearing music!"
+  }
+];
+
+export const LESSON_6_SCENARIOS = [
+  {
+    scenario: "What are the 3 natural ways to introduce your name in German?",
+    hint: "Think of 'I am called', 'I am', and 'My name is'!",
+    options: [
+      { text: "Ich heiße... / Ich bin... / Mein Name ist...", correct: true, explain: "Spot on! All 3 mean 'My name is / I am' and are 100% natural in German!" },
+      { text: "Ich komme... / Ich wohne... / Ich habe...", correct: false, explain: "Those mean come, live, have." },
+      { text: "Auf Wiedersehen / Guten Tag / Bitte", correct: false, explain: "Those are greetings and farewells." }
+    ]
+  },
+  {
+    scenario: "In German, how do women's job and role titles differ from men's (like Student vs Studentin)?",
+    hint: "Think of the golden lady suffix from the slide!",
+    options: [
+      { text: "Women simply add '-in' to the end (Lehrer -> Lehrerin, Student -> Studentin)", correct: true, explain: "Brilliant! The '-in' suffix turns any male title into female: Studentin, Lehrerin, Schülerin!" },
+      { text: "Women use a completely different word", correct: false, explain: "No, German uses the simple '-in' rule." },
+      { text: "Women add '-frau' at the end of every word", correct: false, explain: "Standard professional titles use '-in'." }
+    ]
+  },
+  {
+    scenario: "How do you say 'I am single' versus 'I am married' in German?",
+    hint: "Look at the slide: ledig / verheiratet!",
+    options: [
+      { text: "Ich bin ledig (single) / Ich bin verheiratet (married)", correct: true, explain: "Exactly! 'ledig' = single, and 'verheiratet' = married!" },
+      { text: "Ich bin Kind / Ich bin Kinder", correct: false, explain: "Those mean child / children." },
+      { text: "Ich bin Student / Ich bin Lehrer", correct: false, explain: "Those are occupations." }
+    ]
+  },
+  {
+    scenario: "Why is television called 'fernsehen' in German?",
+    hint: "Break the word into two: 'fern' (far) + 'sehen' (to see)!",
+    options: [
+      { text: "Because 'fern' means far away, and 'sehen' means to see (seeing far away = television!)", correct: true, explain: "Wonderful! Just like Greek 'tele-vision' (tele = far, vision = see), Germans literally say 'fern-sehen'!" },
+      { text: "Because it makes funny sounds", correct: false, explain: "It's literally 'far-seeing'!" },
+      { text: "Because it was invented by Mr. Fern", correct: false, explain: "No, 'fern' is the German word for far!" }
+    ]
+  },
+  {
+    scenario: "If you have 2 children, which phrase is correct?",
+    hint: "1 child is 'Kind', multiple children is 'Kinder'!",
+    options: [
+      { text: "Ich habe zwei Kinder.", correct: true, explain: "Perfect! 1 is 'ein Kind', 2 or more is 'zwei Kinder' (plural)!" },
+      { text: "Ich habe zwei Kind.", correct: false, explain: "For 2 or more, you must use the plural 'Kinder'!" },
+      { text: "Ich bin zwei Kinder.", correct: false, explain: "That would mean 'I am two children' instead of 'I have' (habe)!" }
+    ]
+  },
+  {
+    scenario: "How do you say: 'I live in Nairobi, but I come from Germany'?",
+    hint: "'wohne in' = live in, 'komme aus' = come from!",
+    options: [
+      { text: "Ich wohne in Nairobi, aber ich komme aus Deutschland.", correct: true, explain: "Outstanding! 'wohne in' is where you currently reside, and 'komme aus' is where you are from originally!" },
+      { text: "Ich heiße Nairobi, ich bin Deutschland.", correct: false, explain: "That would mean your name is Nairobi!" },
+      { text: "Ich spreche Nairobi.", correct: false, explain: "Nairobi is a city, not a language." }
+    ]
+  }
+];
+
+
 

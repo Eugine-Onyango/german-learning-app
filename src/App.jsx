@@ -16,16 +16,19 @@ import Lesson4TensLadder from './components/Lesson4TensLadder';
 import Lesson4Game from './components/Lesson4Game';
 import Lesson5AlphabetSoundboard from './components/Lesson5AlphabetSoundboard';
 import Lesson5Game from './components/Lesson5Game';
+import Lesson6ProfileBuilder from './components/Lesson6ProfileBuilder';
+import Lesson6Game from './components/Lesson6Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
   LESSON_3_ITEMS,
   LESSON_4_ITEMS,
-  LESSON_5_ITEMS
+  LESSON_5_ITEMS,
+  LESSON_6_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(5); // Default to Lesson 5 as requested, easy switch to 1, 2, 3, 4
+  const [currentLesson, setCurrentLesson] = useState(6); // Default to Lesson 6 as requested, easy switch to 1, 2, 3, 4, 5
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -34,13 +37,15 @@ export default function App() {
   if (currentLesson === 3) activeItems = LESSON_3_ITEMS;
   if (currentLesson === 4) activeItems = LESSON_4_ITEMS;
   if (currentLesson === 5) activeItems = LESSON_5_ITEMS;
+  if (currentLesson === 6) activeItems = LESSON_6_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
     if (currentLesson === 2) return "Lesson 2: Häufige Redemittel (Common Everyday Phrases)";
     if (currentLesson === 3) return "Lesson 3: Zahlen 0 - 20 & Meine Handynummer (Numbers & Mobile)";
     if (currentLesson === 4) return "Lesson 4: Zahlen 21 - 100 & The Backwards Rule (Numbers 21 to 100)";
-    return "Lesson 5: Das Alphabet (A bis Z) - The 30 German Characters & Sounds";
+    if (currentLesson === 5) return "Lesson 5: Das Alphabet (A bis Z) - The 30 German Characters & Sounds";
+    return "Lesson 6: Sich vorstellen (Introducing Yourself) - Name, Origin, Job & Family";
   };
 
   const getLessonDesc = () => {
@@ -56,7 +61,10 @@ export default function App() {
     if (currentLesson === 4) {
       return "The famous German 'Backwards Rule' (saying ones before tens: 1-and-20), the 30 'dreißig' rebel rule with 'ß', the drops in 60 (sechzig) and 70 (siebzig), and 100 (ein)hundert!";
     }
-    return "The German alphabet has 30 characters: 26 standard letters + 3 Umlauts (ä, ö, ü) + 1 Eszett (ß). Discover the 4 sound shapeshifters: J = Y, V = F, W = V, and why no letter starts with ß!";
+    if (currentLesson === 5) {
+      return "The German alphabet has 30 characters: 26 standard letters + 3 Umlauts (ä, ö, ü) + 1 Eszett (ß). Discover the 4 sound shapeshifters: J = Y, V = F, W = V, and why no letter starts with ß!";
+    }
+    return "Master introducing yourself: 3 ways to say your name (Ich heiße / Ich bin / Mein Name ist), origin (komme aus), residence (wohne in), age (Jahre alt), the '-in' rule for women's professions (Studentin, Lehrerin), marital status (ledig / verheiratet), children (Kind / Kinder), and hobbies!";
   };
 
   return (
@@ -138,6 +146,15 @@ export default function App() {
 
         {currentLesson === 5 && activeTab === 'game5' && (
           <Lesson5Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 6 Specific Modules */}
+        {currentLesson === 6 && activeTab === 'builder' && (
+          <Lesson6ProfileBuilder isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 6 && activeTab === 'game6' && (
+          <Lesson6Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
