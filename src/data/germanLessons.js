@@ -2241,6 +2241,151 @@ export const LESSON_8_SCENARIOS = [
   }
 ];
 
+export const LESSON_9_ITEMS = [
+  {
+    id: "l9-pronouns-trio",
+    german: "Die Personalpronomen: ich, du, Sie",
+    english: "The 3 Core Pronouns: ich (I), du (you - informal), Sie (You - formal)",
+    pronunciation: "ikh (I), doo (you), ZEE (You formal)",
+    audioText: "ich, du, Sie. Ich heiße Martin. Wo wohnen Sie? Woher kommst du?",
+    category: "pronouns",
+    badge: "The 3 Pronouns",
+    icon: "👤 👥 🎩",
+    kenyanAnalogy: "Like talking about yourself (ich = I), chatting with your homeboy (du = you), or addressing a distinguished guest (Sie = You respectful)!",
+    memoryTrick: "ich = 1st person (Me!). du = 2nd person (casual buddy). Sie = 2nd person (formal respect with capital S)!"
+  },
+  {
+    id: "l9-endings-formula",
+    german: "Die Verb-Endungen: ich (-e), du (-st), Sie (-en)",
+    english: "The Golden Verb Endings: ich takes -e, du takes -st, Sie takes -en",
+    pronunciation: "ich (-e), du (-st), Sie (-en)",
+    audioText: "ich wohn-e, du wohn-st, Sie wohn-en.",
+    category: "verb-endings",
+    badge: "The Golden Tail Formula",
+    icon: "🎨 👗",
+    kenyanAnalogy: "Think of verbs dressing up to match who is doing the action: 'ich' puts on a neat '-e' shirt, 'du' puts on a sporty '-st' cap, and 'Sie' wears a classy '-en' gown!",
+    memoryTrick: "ich -> -e | du -> -st | Sie -> -en! Chant it 3 times: e, st, en!"
+  },
+  {
+    id: "l9-verb-wohnen",
+    german: "wohnen (to live): ich wohne, du wohnst, Sie wohnen",
+    english: "To live: I live (ich wohne), you live (du wohnst), You live (Sie wohnen)",
+    pronunciation: "VOH-nen: ikh VOH-neh, doo VOHNST, ZEE VOH-nen",
+    audioText: "wohnen. ich wohne, du wohnst, Sie wohnen. Ich wohne in Berlin. Wo wohnst du? Wo wohnen Sie?",
+    category: "conjugation-table",
+    badge: "wohnen = to live",
+    icon: "🏡",
+    kenyanAnalogy: "Talking about where you stay: 'Ich wohne in Berlin' (I live), 'Wo wohnst du?' (Where do you live?), 'Wo wohnen Sie?' (Where do you live, sir?).",
+    memoryTrick: "Stem is 'wohn-'. Add: -e (ich wohne), -st (du wohnst), -en (Sie wohnen)!"
+  },
+  {
+    id: "l9-verb-kommen",
+    german: "kommen (to come): ich komme, du kommst, Sie kommen",
+    english: "To come: I come (ich komme), you come (du kommst), You come (Sie kommen)",
+    pronunciation: "KOM-men: ikh KOM-meh, doo KOMST, ZEE KOM-men",
+    audioText: "kommen. ich komme, du kommst, Sie kommen. Ich komme aus Deutschland. Woher kommst du? Woher kommen Sie?",
+    category: "conjugation-table",
+    badge: "kommen = to come",
+    icon: "🌍 ✈️",
+    kenyanAnalogy: "Where you travel from: 'Ich komme aus Kenya' (I come), 'Woher kommst du?' (Where do you come from, buddy?), 'Woher kommen Sie?' (Where do you come from, elder?).",
+    memoryTrick: "Stem is 'komm-'. Add: -e (ich komme), -st (du kommst), -en (Sie kommen)!"
+  },
+  {
+    id: "l9-verb-heissen",
+    german: "heißen (to be called): ich heiße, du heißt (!), Sie heißen",
+    english: "To be called: I am called (ich heiße), you are called (du heißt), You are called (Sie heißen)",
+    pronunciation: "HY-sen: ikh HY-seh, doo HYST, ZEE HY-sen",
+    audioText: "heißen. ich heiße, du heißt, Sie heißen. Ich heiße Martin. Wie heißt du? Wie heißen Sie?",
+    category: "conjugation-special",
+    badge: "Special Rule: ß + t (No extra s!)",
+    icon: "⚡ 🏷️",
+    kenyanAnalogy: "WARNING: Look closely at 'du heißt'! Because the Eszett 'ß' already sounds like a double 'ss', German doesn't add another 's'. It just adds a single 't'!",
+    memoryTrick: "Slide Rule: Since 'ß' = 'ss', du adds ONLY '-t' (du heißt), not '-st'! You avoid writing three s's in a row!"
+  },
+  {
+    id: "l9-verb-sprechen",
+    german: "sprechen (to speak): ich spreche, du sprichst (!), Sie sprechen",
+    english: "To speak: I speak (ich spreche), you speak (du sprichst), You speak (Sie sprechen)",
+    pronunciation: "SHPREKH-en: ikh SHPREKH-eh, doo SHPRIKHST, ZEE SHPREKH-en",
+    audioText: "sprechen. ich spreche, du sprichst, Sie sprechen. Ich spreche Deutsch. Welche Sprachen sprichst du?",
+    category: "conjugation-special",
+    badge: "Special Rule: e -> i Vowel Shift",
+    icon: "🗣️ ✨",
+    kenyanAnalogy: "MAGIC SHIFTER: Look at 'du sprichst'! For 'du', the inside letter 'e' changes into an 'i'! 'ich spreche' with an E, but 'du sprichst' with an I!",
+    memoryTrick: "Slide Rule: Vowel shifts from 'e' to 'i' for du: du spr-i-chst!"
+  },
+  {
+    id: "l9-summary-rule",
+    german: "Die 3 Goldenen Regeln der Konjugation",
+    english: "The 3 Golden Rules of Conjugation: ich -> -e, du -> -st, Sie -> -en",
+    pronunciation: "dee dry GOHL-deh-nen RAY-geln",
+    audioText: "Verb-Endung für ich ist minus e. Verb-Endung für du ist minus s t. Verb-Endung für Sie ist minus e n.",
+    category: "grammar-summary",
+    badge: "Slide At-a-Glance Summary",
+    icon: "📋 ✅",
+    kenyanAnalogy: "Every time you hear 'ich', expect an '-e' at the end of the verb. Every time you hear 'du', listen for the '-st'. Every time you hear 'Sie', expect the full '-en'!",
+    memoryTrick: "ich = -e | du = -st | Sie = -en | Exceptions: du heißt (just -t), du sprichst (e -> i)!"
+  }
+];
+
+export const LESSON_9_SCENARIOS = [
+  {
+    scenario: "What verb ending does the pronoun 'ich' (I) ALWAYS give to regular German verbs?",
+    hint: "Think of 'ich wohne', 'ich komme', 'ich heiße'!",
+    options: [
+      { text: "The ending '-e' (ich wohne, ich komme, ich heiße)", correct: true, explain: "Spot on! The pronoun 'ich' always pairs with the ending '-e'!" },
+      { text: "The ending '-st'", correct: false, explain: "'-st' belongs to 'du'!" },
+      { text: "The ending '-en'", correct: false, explain: "'-en' belongs to 'Sie' and the base infinitive." }
+    ]
+  },
+  {
+    scenario: "What verb ending does the informal pronoun 'du' (you) usually give to verbs?",
+    hint: "Think of 'du wohnst', 'du kommst'!",
+    options: [
+      { text: "The ending '-st' (du wohnst, du kommst)", correct: true, explain: "Brilliant! The informal pronoun 'du' loves the '-st' tail!" },
+      { text: "The ending '-e'", correct: false, explain: "'-e' is for 'ich'!" },
+      { text: "The ending '-ing'", correct: false, explain: "German does not have an '-ing' ending." }
+    ]
+  },
+  {
+    scenario: "What verb ending does the formal respectful pronoun 'Sie' (You) take?",
+    hint: "Think of 'wohnen Sie', 'kommen Sie', 'heißen Sie'!",
+    options: [
+      { text: "The ending '-en' (Sie wohnen, Sie kommen, Sie heißen)", correct: true, explain: "Exactly! Formal 'Sie' always keeps the smooth '-en' ending!" },
+      { text: "The ending '-st'", correct: false, explain: "'-st' is for 'du'!" },
+      { text: "The ending '-t'", correct: false, explain: "'-t' is for he/she or special stems." }
+    ]
+  },
+  {
+    scenario: "Look at the verb 'heißen' (to be called). Why is the 'du' form 'du heißt' instead of 'du heißst'?",
+    hint: "Remember: 'ß' already sounds like double 'ss'!",
+    options: [
+      { text: "Because 'ß' already has the 'ss' sound, so adding another 's' is unnecessary — only '-t' is added!", correct: true, explain: "Perfect! Since 'ß' = 'ss', German doesn't write three 's' sounds in a row, so 'du' only takes '-t' ('du heißt')!" },
+      { text: "Because Germans forgot how to spell it", correct: false, explain: "It's an intentional rule to keep pronunciation clean and smooth." },
+      { text: "Because 'heißen' is not a real verb", correct: false, explain: "'heißen' is one of the most common verbs in German!" }
+    ]
+  },
+  {
+    scenario: "Look at the verb 'sprechen' (to speak). What special change happens when pairing with 'du'?",
+    hint: "Check the slide: ich spreche vs du spr...chst!",
+    options: [
+      { text: "The vowel 'e' changes into 'i' -> du sprichst!", correct: true, explain: "Awesome! 'sprechen' has a vowel change: the 'e' becomes 'i' for 'du' ('du sprichst')!" },
+      { text: "The word stays identical to 'ich spreche'", correct: false, explain: "The vowel changes from e to i!" },
+      { text: "The 's' at the start drops off", correct: false, explain: "The start stays unchanged; only the vowel shifts." }
+    ]
+  },
+  {
+    scenario: "How would Martin say: 'I live in Berlin, but you (informal) come from Munich'?",
+    hint: "ich + wohn... | du + komm...!",
+    options: [
+      { text: "Ich wohne in Berlin, aber du kommst aus München.", correct: true, explain: "Outstanding! 'ich' takes '-e' (wohne), and 'du' takes '-st' (kommst)!" },
+      { text: "Ich wohnst in Berlin, aber du wohne aus München.", correct: false, explain: "The endings are swapped backwards!" },
+      { text: "Ich wohnen in Berlin, aber du kommen aus München.", correct: false, explain: "Those are the infinitive / 'Sie' forms, not 'ich' and 'du'!" }
+    ]
+  }
+];
+
+
 
 
 

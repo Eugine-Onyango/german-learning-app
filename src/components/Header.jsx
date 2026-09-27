@@ -20,6 +20,7 @@ export default function Header({
     if (currentLesson === 6) msg = "Hallo! Mein Name ist Monika Schmidt. Ich wohne in Berlin und ich spreche Deutsch!";
     if (currentLesson === 7) msg = "Wie heißen Sie? Wie heißt du? Woher kommen Sie? Wo wohnst du?";
     if (currentLesson === 8) msg = "Ich wohne in Berlin. Heute bin ich in Berlin. Haben Sie Zeit? Verstehen Sie mich?";
+    if (currentLesson === 9) msg = "ich wohne, du wohnst, Sie wohnen. ich komme, du kommst, Sie kommen. ich heiße, du heißt!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -90,6 +91,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson9NavItems = [
+    { id: 'cards', label: '📖 Lesson 9 Cards', sub: 'Pronouns & Endings' },
+    { id: 'studio', label: '👗 Verb Studio', sub: 'Interactive Tail Dressing' },
+    { id: 'game9', label: '🎮 Conjugation Quiz', sub: 'Tail Matcher Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -98,6 +107,7 @@ export default function Header({
   if (currentLesson === 6) navItems = lesson6NavItems;
   if (currentLesson === 7) navItems = lesson7NavItems;
   if (currentLesson === 8) navItems = lesson8NavItems;
+  if (currentLesson === 9) navItems = lesson9NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -264,6 +274,20 @@ export default function Header({
               }`}
             >
               🚂 8: Satzstruktur
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(9);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 9
+                  ? 'bg-emerald-600 text-white shadow-md scale-102 ring-2 ring-emerald-300'
+                  : 'bg-white text-stone-700 hover:bg-emerald-100 border border-emerald-300'
+              }`}
+            >
+              👗 9: Verb-Endungen
             </button>
           </div>
 
