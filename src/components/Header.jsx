@@ -22,6 +22,7 @@ export default function Header({
     if (currentLesson === 8) msg = "Ich wohne in Berlin. Heute bin ich in Berlin. Haben Sie Zeit? Verstehen Sie mich?";
     if (currentLesson === 9) msg = "ich wohne, du wohnst, Sie wohnen. ich komme, du kommst, Sie kommen. ich heiße, du heißt!";
     if (currentLesson === 10) msg = "Personalpronomen: ich, du, er, sie, es, wir, ihr, Sie! Das ist Michael, er wohnt in London.";
+    if (currentLesson === 11) msg = "haben und sein: Ich habe Zeit, du hast Zeit, er hat Zeit. Ich bin glücklich, du bist glücklich, wir sind glücklich!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -108,6 +109,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson11NavItems = [
+    { id: 'cards', label: '📖 Lesson 11 Cards', sub: 'haben & sein Essentials' },
+    { id: 'palace', label: '👑 Twin Palace', sub: 'sein & haben Conjugation Studio' },
+    { id: 'game11', label: '🎮 Royal Quest Quiz', sub: 'Conjugation & Subjekt Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -118,6 +127,7 @@ export default function Header({
   if (currentLesson === 8) navItems = lesson8NavItems;
   if (currentLesson === 9) navItems = lesson9NavItems;
   if (currentLesson === 10) navItems = lesson10NavItems;
+  if (currentLesson === 11) navItems = lesson11NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -312,6 +322,20 @@ export default function Header({
               }`}
             >
               👥 10: Pronomen
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(11);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 11
+                  ? 'bg-amber-700 text-white shadow-md scale-102 ring-2 ring-amber-400'
+                  : 'bg-white text-stone-700 hover:bg-amber-100 border border-amber-300'
+              }`}
+            >
+              👑 11: haben & sein
             </button>
           </div>
 

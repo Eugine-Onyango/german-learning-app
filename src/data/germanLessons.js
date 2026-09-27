@@ -2541,6 +2541,163 @@ export const LESSON_10_SCENARIOS = [
   }
 ];
 
+export const LESSON_11_ITEMS = [
+  {
+    id: "l11-two-kings",
+    german: "Hilfsverben: sein (to be) & haben (to have)",
+    english: "The Two Royal Helping Verbs: sein (who you are) & haben (what you own)",
+    pronunciation: "ZYN (to be) oond HAH-ben (to have)",
+    audioText: "Hilfsverben: sein und haben. Ich bin, ich habe.",
+    category: "royal-verbs-intro",
+    badge: "The 2 Royal Pillar Verbs",
+    icon: "👑 💎",
+    kenyanAnalogy: "Like the two most powerful tools in your pocket: 'sein' tells WHO you are (name, age, feelings, married), and 'haben' tells WHAT you have (family, car, house, time, pets)!",
+    memoryTrick: "sein = State of being (I am, you are). haben = Having & holding in your hands!"
+  },
+  {
+    id: "l11-sein-table",
+    german: "sein: bin, bist, ist, sind, seid, sind",
+    english: "to be: I am (bin), you are (bist), he/she/it is (ist), we are (sind), you all are (seid), they/You are (sind)",
+    pronunciation: "bin, bist, ist, zint, zyt, zint",
+    audioText: "ich bin, du bist, er ist, sie ist, es ist, wir sind, ihr seid, Sie sind, sie sind.",
+    category: "sein-conjugation",
+    badge: "Full Table: sein",
+    icon: "👑 ✨",
+    kenyanAnalogy: "The shape-shifter verb! Just like in English 'to be' turns into 'am, is, are', in German 'sein' turns into 'bin, bist, ist, sind, seid'!",
+    memoryTrick: "ich bin | du bist | er/sie/es ist | wir sind | ihr seid | Sie/sie sind!"
+  },
+  {
+    id: "l11-haben-table",
+    german: "haben: habe, hast, hat, haben, habt, haben",
+    english: "to have: I have (habe), you have (hast), he/she/it has (hat), we have (haben), you all have (habt), they/You have (haben)",
+    pronunciation: "HAH-beh, hahst, haht, HAH-ben, hahpt, HAH-ben",
+    audioText: "ich habe, du hast, er hat, sie hat, es hat, wir haben, ihr habt, Sie haben, sie haben.",
+    category: "haben-conjugation",
+    badge: "Full Table: haben",
+    icon: "💎 🤲",
+    kenyanAnalogy: "Notice the smooth rhythm: 'ich habe', but for 'du' and 'er/sie/es', the 'b' disappears: 'du hast' and 'er hat'!",
+    memoryTrick: "Drop the 'b' for du and er/sie/es: du hast, er hat! (Just like English has / have)!"
+  },
+  {
+    id: "l11-sein-feelings-status",
+    german: "Wir sind glücklich. / Seid ihr glücklich? / Bist du verliebt?",
+    english: "We are happy. / Are you all happy? / Are you in love?",
+    pronunciation: "veer zint GLEWK-likh. zyt eer GLEWK-likh? bist doo fair-LEEPT?",
+    audioText: "Wir sind glücklich. Seid ihr glücklich? Bist du verliebt? Er ist verheiratet.",
+    category: "sein-examples",
+    badge: "Feelings & Status with sein",
+    icon: "😊 ❤️",
+    kenyanAnalogy: "Expressing emotions and relationships: 'glücklich' = happy. 'verliebt' = in love with butterflies in your stomach! 'verheiratet' = married!",
+    memoryTrick: "Use 'sein' for feelings, age, and relationship status: Wir sind glücklich!"
+  },
+  {
+    id: "l11-sein-home-neighbors",
+    german: "Frau Schmidt, sind Sie zu Hause? / Meine Nachbarn sind sehr nett.",
+    english: "Frau Schmidt, are you at home? / My neighbors are very nice.",
+    pronunciation: "frow shmit, zint ZEE tsoo HOW-zeh? / MY-neh NAHKH-bahn zint zair net.",
+    audioText: "Frau Schmidt, sind Sie zu Hause? Meine Nachbarn sind sehr nett. Sabine ist Lehrerin.",
+    category: "sein-examples",
+    badge: "Location & Identity with sein",
+    icon: "🏡 🧑‍🏫",
+    kenyanAnalogy: "Visiting someone: 'zu Hause' = at home. Describing people: 'sehr nett' = very nice and welcoming! 'Sabine ist Lehrerin' = Sabine is a teacher.",
+    memoryTrick: "zu Hause = at home. sehr nett = very nice!"
+  },
+  {
+    id: "l11-haben-family-pets",
+    german: "Maria hat eine Tochter. / Meine Eltern haben einen Hund.",
+    english: "Maria has a daughter. / My parents have a dog.",
+    pronunciation: "mah-REE-ah haht EYE-neh TOKH-ter. MY-neh EL-tairn HAH-ben EYE-nen hoont.",
+    audioText: "Maria hat eine Tochter. Meine Eltern haben einen Hund. Wir haben ein Auto.",
+    category: "haben-examples",
+    badge: "Family & Possessions with haben",
+    icon: "👧 🐕 🚗",
+    kenyanAnalogy: "Talking about your family tree and pets: 'Maria hat eine Tochter' (1 daughter), 'Meine Eltern haben einen Hund' (My parents have a dog)!",
+    memoryTrick: "Tochter = daughter. Hund = dog (sounds like hound!). Auto = car!"
+  },
+  {
+    id: "l11-haben-time-moment",
+    german: "Frau Schmidt, haben Sie einen Moment? / Er hat keine Zeit.",
+    english: "Frau Schmidt, do you have a moment? / He has no time.",
+    pronunciation: "frow shmit, HAH-ben ZEE EYE-nen moh-MENT? / air haht KY-neh TSYT.",
+    audioText: "Frau Schmidt, haben Sie einen Moment? Er hat keine Zeit. Ich habe ein Haus. Hast du eine Freundin?",
+    category: "haben-examples",
+    badge: "Time & Relationships with haben",
+    icon: "⏱️ ⏳",
+    kenyanAnalogy: "Asking for someone's attention politely: 'Haben Sie einen Moment?' (Do you have a moment?). When someone is rushing: 'Er hat keine Zeit' (He has no time)!",
+    memoryTrick: "einen Moment = a moment. keine Zeit = zero time!"
+  },
+  {
+    id: "l11-subject-spotter",
+    german: "Das Subjekt im Satz (Identifying the Subject)",
+    english: "Who is doing the action? Ich habe ein Auto (Ich = Subjekt). Sind Sie verheiratet? (Sie = Subjekt).",
+    pronunciation: "dahs zoop-YEKT: ikh HAH-beh ayn OW-toh",
+    audioText: "Ich habe ein Auto. Ich ist das Subjekt. Sind Sie verheiratet? Sie ist das Subjekt.",
+    category: "grammar-subject",
+    badge: "The Subjekt Spotter",
+    icon: "🎯 🔍",
+    kenyanAnalogy: "The captain of the sentence! Ask: 'WHO has the car?' $\rightarrow$ 'Ich' (Subject). Ask: 'WHO is married?' $\rightarrow$ 'Sie' (Subject)!",
+    memoryTrick: "The Subjekt decides what clothes the verb wears!"
+  }
+];
+
+export const LESSON_11_SCENARIOS = [
+  {
+    scenario: "How do you conjugate the verb 'sein' (to be) for the pronoun 'wir' (we)?",
+    hint: "Think of slide 6: 'Wir ______ glücklich' (We are happy)!",
+    options: [
+      { text: "sind (Wir sind glücklich)", correct: true, explain: "Spot on! 'wir sind' means 'we are' (Wir sind glücklich)!" },
+      { text: "seid", correct: false, explain: "'seid' goes with 'ihr' (ihr seid)." },
+      { text: "bin", correct: false, explain: "'bin' goes with 'ich' (ich bin)." }
+    ]
+  },
+  {
+    scenario: "Look at the verb 'haben' (to have). What happens to the letter 'b' when pairing with 'du' and 'er/sie/es'?",
+    hint: "Notice 'du hast' and 'er hat'!",
+    options: [
+      { text: "The letter 'b' drops out -> du hast, er hat", correct: true, explain: "Brilliant! The 'b' drops out for du (hast) and er/sie/es (hat) to make speech smooth!" },
+      { text: "The whole word changes into 'sind'", correct: false, explain: "'sind' is from 'sein', not 'haben'!" },
+      { text: "Nothing drops, it is 'du habst'", correct: false, explain: "'du habst' is incorrect in German; it is 'du hast'!" }
+    ]
+  },
+  {
+    scenario: "How would you ask two of your friends together: 'Are you all happy?'",
+    hint: "Use 'ihr' (you all) with the verb 'seid'!",
+    options: [
+      { text: "Seid ihr glücklich?", correct: true, explain: "Exactly! Slide 6 shows: 'Seid ihr glücklich?' (Are you all happy?)!" },
+      { text: "Bist du glücklich?", correct: false, explain: "'Bist du' is for ONE person only." },
+      { text: "Haben ihr glücklich?", correct: false, explain: "'glücklich' is an emotion, so you use 'sein' (seid ihr), not 'haben'!" }
+    ]
+  },
+  {
+    scenario: "How do you say in German: 'He has no time'?",
+    hint: "Remember: 'er' + 'hat' + 'keine Zeit'!",
+    options: [
+      { text: "Er hat keine Zeit.", correct: true, explain: "Perfect! Slide 10 shows: 'Er hat keine Zeit.' (He has no time)!" },
+      { text: "Er ist keine Zeit.", correct: false, explain: "That would mean 'He is no time' instead of 'He has'!" },
+      { text: "Er haben keine Zeit.", correct: false, explain: "With 'er', 'haben' becomes 'hat'!" }
+    ]
+  },
+  {
+    scenario: "Look at the question: 'Frau Schmidt, sind Sie zu Hause?' What is the subject (Subjekt) of this sentence?",
+    hint: "Who are we asking about?",
+    options: [
+      { text: "Sie (You formal)", correct: true, explain: "Awesome! Slide 15 explicitly highlights that 'Sie' is the Subjekt that controls the verb 'sind'!" },
+      { text: "zu Hause", correct: false, explain: "'zu Hause' is the location (at home)." },
+      { text: "sind", correct: false, explain: "'sind' is the verb!" }
+    ]
+  },
+  {
+    scenario: "How would someone say: 'My parents have a dog' in German?",
+    hint: "Meine Eltern (plural they) + haben + einen Hund!",
+    options: [
+      { text: "Meine Eltern haben einen Hund.", correct: true, explain: "Outstanding! Slide 9 shows: 'Meine Eltern haben einen Hund.' (My parents have a dog)!" },
+      { text: "Meine Eltern hat einen Hund.", correct: false, explain: "'Eltern' is plural, so it takes 'haben', not 'hat'!" },
+      { text: "Meine Eltern sind einen Hund.", correct: false, explain: "That would mean your parents ARE a dog!" }
+    ]
+  }
+];
+
+
 
 
 
