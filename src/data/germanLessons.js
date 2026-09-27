@@ -1869,5 +1869,198 @@ export const LESSON_6_SCENARIOS = [
   }
 ];
 
+export const LESSON_7_ITEMS = [
+  {
+    id: "l7-sie-vs-du",
+    german: "Sie (Formal) vs. du (Informal)",
+    english: "You (Formal: Strangers & Officials) vs. You (Informal: Friends & Family)",
+    pronunciation: "ZEE vs DOO",
+    audioText: "Sie oder du. Wie heißen Sie? Wie heißt du?",
+    category: "grammar-golden-rule",
+    badge: "The Golden Rule: Sie vs du",
+    icon: "🎩 👕",
+    kenyanAnalogy: "Like greeting an elder, boss, or bank officer with full respect (Sie) versus greeting your childhood buddy or little sibling casually (du)!",
+    memoryTrick: "Capital 'Sie' wears a top hat for respect! 'du' wears casual flip-flops for friends and family!"
+  },
+  {
+    id: "l7-name",
+    german: "Wie heißen Sie? / Wie heißt du?",
+    english: "What is your name? (Formal: Sie / Informal: du)",
+    pronunciation: "vee HY-sen ZEE? / vee HYST doo?",
+    audioText: "Wie heißen Sie? Wie heißt du? Ich heiße Monika.",
+    category: "questions-identity",
+    badge: "Formal vs Informal Name",
+    icon: "🏷️",
+    kenyanAnalogy: "Asking someone what they are called: In a formal meeting say 'Wie heißen Sie?', at a casual hangout say 'Wie heißt du?'!",
+    memoryTrick: "Notice the verb ending: Sie takes '-en' (heißen), du takes '-t' (heißt)!"
+  },
+  {
+    id: "l7-family-name",
+    german: "Wie ist Ihr Familienname? / Wie ist dein Familienname?",
+    english: "What is your last name / surname? (Ihr = Your formal / dein = your informal)",
+    pronunciation: "vee ist EER fah-MEE-lee-en-nah-meh? / vee ist DYN...",
+    audioText: "Wie ist Ihr Familienname? Wie ist dein Familienname? Mein Familienname ist Schmidt.",
+    category: "questions-identity",
+    badge: "Surname: Ihr vs dein",
+    icon: "📜",
+    kenyanAnalogy: "The passport officer asks: 'Wie ist Ihr Familienname?'. A friend asking about your clan name says: 'Wie ist dein Familienname?'.",
+    memoryTrick: "Capital 'Ihr' = Your (polite & formal). 'dein' = your (casual & friendly)!"
+  },
+  {
+    id: "l7-origin",
+    german: "Woher kommen Sie? / Woher kommst du?",
+    english: "Where are you from? (Where do you come from?)",
+    pronunciation: "voh-HAIR KOM-men ZEE? / voh-HAIR KOMST doo?",
+    audioText: "Woher kommen Sie? Woher kommst du? Ich komme aus Deutschland.",
+    category: "questions-location",
+    badge: "Origin: kommen Sie / kommst du",
+    icon: "🌍",
+    kenyanAnalogy: "Asking where someone travels from: 'Woher' means 'where from'. Formal: 'kommen Sie?'. Friendly: 'kommst du?'.",
+    memoryTrick: "Sie adds '-en' (kommen Sie). du adds '-st' (kommst du)!"
+  },
+  {
+    id: "l7-residence",
+    german: "Wo wohnen Sie? / Wo wohnst du?",
+    english: "Where do you live? (Where is your home?)",
+    pronunciation: "voh VOH-nen ZEE? / voh VOHNST doo?",
+    audioText: "Wo wohnen Sie? Wo wohnst du? Ich wohne in Berlin.",
+    category: "questions-location",
+    badge: "Residence: wohnen Sie / wohnst du",
+    icon: "🏡",
+    kenyanAnalogy: "Asking which town or estate someone lives in: 'Wo' = Where. Formal: 'wohnen Sie?'. Friendly: 'wohnst du?'.",
+    memoryTrick: "Remember: German W sounds like English V (VOH-nen)! du adds '-st' (wohnst)!"
+  },
+  {
+    id: "l7-age",
+    german: "Wie alt sind Sie? / Wie alt bist du?",
+    english: "How old are you? (Formal: sind Sie / Informal: bist du)",
+    pronunciation: "vee ahlt zint ZEE? / vee ahlt bist doo?",
+    audioText: "Wie alt sind Sie? Wie alt bist du? Ich bin 23 Jahre alt.",
+    category: "questions-personal",
+    badge: "Age: sind Sie / bist du",
+    icon: "🎂",
+    kenyanAnalogy: "At the hospital reception: 'Wie alt sind Sie?'. At a children's birthday party: 'Wie alt bist du?'.",
+    memoryTrick: "Sie uses 'sind' (are). du uses 'bist' (are)!"
+  },
+  {
+    id: "l7-languages",
+    german: "Welche Sprachen sprechen Sie? / Welche Sprachen sprichst du?",
+    english: "Which languages do you speak? (sprechen Sie / sprichst du)",
+    pronunciation: "VEL-kheh SHPRAH-khen SHPREKH-en ZEE? / ...SHPRIKHST doo?",
+    audioText: "Welche Sprachen sprechen Sie? Welche Sprachen sprichst du? Ich spreche Deutsch und Englisch.",
+    category: "questions-skills",
+    badge: "Languages: sprechen Sie / sprichst du",
+    icon: "🗣️",
+    kenyanAnalogy: "Asking what tongues you can converse in: 'Welche Sprachen' = Which languages. Sie: 'sprechen Sie'. du: vowel changes from e to i ('sprichst du')!",
+    memoryTrick: "Vowel shift for du: 'sprechen' becomes 'sprichst du'!"
+  },
+  {
+    id: "l7-job",
+    german: "Was machen Sie beruflich? / Was machst du beruflich?",
+    english: "What do you do for a living? (What do you do professionally?)",
+    pronunciation: "vahs MAH-khen ZEE beh-ROOF-likh? / vahs MAHKHST doo...",
+    audioText: "Was machen Sie beruflich? Was machst du beruflich? Ich bin Lehrerin.",
+    category: "questions-job",
+    badge: "Job: machen Sie / machst du",
+    icon: "💼",
+    kenyanAnalogy: "Asking about someone's career or daily trade: 'Beruf' means profession/job, so 'beruflich' means 'as a career'!",
+    memoryTrick: "Was (What) + machen (make/do) + beruflich (professionally)!"
+  },
+  {
+    id: "l7-hobbies",
+    german: "Was sind Ihre Hobbys? / Was sind deine Hobbys?",
+    english: "What are your hobbies? (Ihre = Your formal / deine = your informal)",
+    pronunciation: "vahs zint EE-reh HOB-bees? / vahs zint DY-neh HOB-bees?",
+    audioText: "Was sind Ihre Hobbys? Was sind deine Hobbys? Meine Hobbys sind fernsehen und Musik hören.",
+    category: "questions-personal",
+    badge: "Hobbies: Ihre vs deine",
+    icon: "📺 🎵",
+    kenyanAnalogy: "Asking what someone loves doing on the weekend! Formal: 'Ihre Hobbys'. Friendly: 'deine Hobbys'.",
+    memoryTrick: "Notice the extra 'e' on 'Ihre' and 'deine' because Hobbys is plural!"
+  },
+  {
+    id: "l7-married",
+    german: "Sind Sie verheiratet? / Bist du verheiratet?",
+    english: "Are you married? (Formal: Sind Sie / Informal: Bist du)",
+    pronunciation: "zint ZEE fer-HY-rah-tet? / bist doo fer-HY-rah-tet?",
+    audioText: "Sind Sie verheiratet? Bist du verheiratet? Ja, ich bin verheiratet. Nein, ich bin nicht verheiratet.",
+    category: "questions-family",
+    badge: "Marriage: Sind Sie / Bist du",
+    icon: "💍",
+    kenyanAnalogy: "Looking for a wedding band! Formal: 'Sind Sie verheiratet?'. Informal: 'Bist du verheiratet?'. Answers: 'Ja' (Yes) or 'Nein, ich bin nicht...' (No, I am not).",
+    memoryTrick: "nicht = not! 'Nein, ich bin nicht verheiratet'!"
+  },
+  {
+    id: "l7-children",
+    german: "Haben Sie Kinder? / Hast du Kinder?",
+    english: "Do you have children? (Formal: Haben Sie / Informal: Hast du)",
+    pronunciation: "HAH-ben ZEE KIN-der? / HAHST doo KIN-der?",
+    audioText: "Haben Sie Kinder? Hast du Kinder? Ja, ich habe zwei Kinder. Nein, ich habe keine Kinder.",
+    category: "questions-family",
+    badge: "Children: Haben Sie / Hast du",
+    icon: "👶 👶",
+    kenyanAnalogy: "Asking about the little ones! Formal: 'Haben Sie Kinder?'. Casual: 'Hast du Kinder?'. Answers: 'Ja, ich habe zwei Kinder' or 'Nein, ich habe keine Kinder'.",
+    memoryTrick: "Sie uses 'Haben' (have). du cuts it down to 'Hast' (hast du)!"
+  }
+];
+
+export const LESSON_7_SCENARIOS = [
+  {
+    scenario: "When should you use 'Sie' (capital S) instead of 'du' in German?",
+    hint: "Think of strangers, elders, bosses, and official places!",
+    options: [
+      { text: "With strangers, elders, officials, and formal situations", correct: true, explain: "Spot on! 'Sie' is the respectful formal 'You'. You use it with strangers, doctors, teachers, police, and in professional settings!" },
+      { text: "Only with your best childhood friends", correct: false, explain: "With friends and family you use casual 'du'!" },
+      { text: "Only when talking to babies", correct: false, explain: "With children you use 'du'!" }
+    ]
+  },
+  {
+    scenario: "You meet an elder or bank manager for the first time. How do you respectfully ask: 'What is your name?'",
+    hint: "Look for the formal 'Sie' with the '-en' ending on the verb!",
+    options: [
+      { text: "Wie heißen Sie?", correct: true, explain: "Brilliant! 'Wie heißen Sie?' is the polite formal way to ask someone's name!" },
+      { text: "Wie heißt du?", correct: false, explain: "'Wie heißt du?' is informal and used with friends or children." },
+      { text: "Ich heiße Monika.", correct: false, explain: "That is answering your own name, not asking the other person!" }
+    ]
+  },
+  {
+    scenario: "Notice the verb endings between 'Sie' and 'du'. What ending does the informal 'du' usually add to verbs like 'wohnen' and 'kommen'?",
+    hint: "wohn... / komm...",
+    options: [
+      { text: "It adds '-st' -> wohnst du, kommst du, machst du", correct: true, explain: "Exactly! In German, 'du' loves the '-st' tail: Wo wohnst du? Woher kommst du? Was machst du?" },
+      { text: "It adds '-en' like wohnen du", correct: false, explain: "'-en' goes with formal 'Sie' (wohnen Sie, kommen Sie)." },
+      { text: "It adds nothing at all", correct: false, explain: "German verbs always change to match the person!" }
+    ]
+  },
+  {
+    scenario: "How do you ask a friend casually: 'Where are you from?'",
+    hint: "Use informal 'du' with the '-st' ending!",
+    options: [
+      { text: "Woher kommst du?", correct: true, explain: "Perfect! 'Woher kommst du?' is the friendly, casual way to ask a friend or classmate where they come from!" },
+      { text: "Woher kommen Sie?", correct: false, explain: "'Woher kommen Sie?' is the formal version." },
+      { text: "Wo wohnst du?", correct: false, explain: "That means 'Where do you live?', not where you are from originally." }
+    ]
+  },
+  {
+    scenario: "If someone asks you 'Haben Sie Kinder?' (Do you have children?) and you don't have any, how do you answer?",
+    hint: "Remember the word 'keine' (none / zero)!",
+    options: [
+      { text: "Nein, ich habe keine Kinder.", correct: true, explain: "Awesome! 'keine' means 'no / none', so 'Nein, ich habe keine Kinder' means 'No, I have no children'!" },
+      { text: "Ja, ich habe zwei Kinder.", correct: false, explain: "That means 'Yes, I have two children'!" },
+      { text: "Ich bin nicht Kind.", correct: false, explain: "That would mean 'I am not a child'!" }
+    ]
+  },
+  {
+    scenario: "What does the question 'Was machen Sie beruflich?' mean?",
+    hint: "Think about 'Beruf' (profession)!",
+    options: [
+      { text: "What do you do for a living / professionally?", correct: true, explain: "Outstanding! 'Beruf' means job/career, so 'Was machen Sie beruflich?' is 'What do you do for a living?'!" },
+      { text: "What are your hobbies?", correct: false, explain: "Hobbies is 'Was sind Ihre Hobbys?'." },
+      { text: "Where do you work today?", correct: false, explain: "It specifically asks about your profession or line of work!" }
+    ]
+  }
+];
+
+
 
 
