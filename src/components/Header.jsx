@@ -23,6 +23,7 @@ export default function Header({
     if (currentLesson === 9) msg = "ich wohne, du wohnst, Sie wohnen. ich komme, du kommst, Sie kommen. ich heiße, du heißt!";
     if (currentLesson === 10) msg = "Personalpronomen: ich, du, er, sie, es, wir, ihr, Sie! Das ist Michael, er wohnt in London.";
     if (currentLesson === 11) msg = "haben und sein: Ich habe Zeit, du hast Zeit, er hat Zeit. Ich bin glücklich, du bist glücklich, wir sind glücklich!";
+    if (currentLesson === 12) msg = "Was ist ein Verb? Ein Verb beschreibt eine Handlung. Verbstamm plus Endung. Regelmäßige und unregelmäßige Verben!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -117,6 +118,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson12NavItems = [
+    { id: 'cards', label: '📖 Lesson 12 Cards', sub: 'Verb Concepts & Types' },
+    { id: 'studio', label: '🌳 Stem & Ending Studio', sub: 'Tree Structure & Conjugation' },
+    { id: 'game12', label: '🎮 Verb Master Quiz', sub: 'Regular vs Irregular Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -128,6 +137,7 @@ export default function Header({
   if (currentLesson === 9) navItems = lesson9NavItems;
   if (currentLesson === 10) navItems = lesson10NavItems;
   if (currentLesson === 11) navItems = lesson11NavItems;
+  if (currentLesson === 12) navItems = lesson12NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -336,6 +346,20 @@ export default function Header({
               }`}
             >
               👑 11: haben & sein
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(12);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 12
+                  ? 'bg-emerald-700 text-white shadow-md scale-102 ring-2 ring-emerald-400'
+                  : 'bg-white text-stone-700 hover:bg-emerald-100 border border-emerald-300'
+              }`}
+            >
+              🌳 12: Was ist ein Verb?
             </button>
           </div>
 

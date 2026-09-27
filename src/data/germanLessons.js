@@ -2697,6 +2697,235 @@ export const LESSON_11_SCENARIOS = [
   }
 ];
 
+export const LESSON_12_ITEMS = [
+  {
+    id: "l12-what-is-verb",
+    german: "Was ist ein Verb? (Ich spiele Fußball.)",
+    english: "What is a verb? (A verb describes an action: I play football.)",
+    pronunciation: "vahs ist eyn vairb? Ikh SHPEE-leh FOOS-bahl.",
+    audioText: "Was ist ein Verb? Ein Verb beschreibt eine Handlung. Ich spiele Fußball.",
+    category: "verb-concept",
+    badge: "The Action Engine 🚗",
+    icon: "⚽ ⚡",
+    kenyanAnalogy: "Like the engine of a car or vehicle! Without the engine (verb), the vehicle cannot move at all. 'Ich spiele Fußball' moves because 'spiele' is running!",
+    memoryTrick: "Verb = Vital Engine Running sentences. It describes what you DO!"
+  },
+  {
+    id: "l12-sentence-structure-verb",
+    german: "Die Satzstruktur hängt vom Verb ab",
+    english: "The structure of a sentence depends on the verb",
+    pronunciation: "dee ZAHTS-shtrook-toor hengt fom vairb ahp",
+    audioText: "Die Struktur eines Satzes hängt vom Verb ab.",
+    category: "verb-concept",
+    badge: "Boss of Sentence Order 🚂",
+    icon: "🧭 👑",
+    kenyanAnalogy: "The verb is the conductor of the train! It decides where the subject sits, where time goes, and sets the whole rhythm of the sentence.",
+    memoryTrick: "The verb is the Boss: it commands the layout of the entire sentence!"
+  },
+  {
+    id: "l12-verbstruktur",
+    german: "Verbstruktur: Infinitiv (lernen) = Verbstamm (lern) + Endung (en / n)",
+    english: "Verb Structure: Infinitive (lernen) = Verb Stem (lern) + Ending (en / n)",
+    pronunciation: "lair-nen: lairn (Verbstamm) + en (Endung)",
+    audioText: "Verbstruktur. Infinitiv: lernen. Verbstamm: lern. Endung: e n.",
+    category: "verb-structure",
+    badge: "Tree Trunk & Leaves 🌳",
+    icon: "🪵 🍃",
+    kenyanAnalogy: "Think of a tree: the 'Verbstamm' (lern-) is the solid trunk that never falls over, and the 'Endung' (-en) is the seasonal leaf that gets swapped when different people speak!",
+    memoryTrick: "Stem = Strong trunk (lern). Ending = Outfit or leaf (-en)!"
+  },
+  {
+    id: "l12-six-base-infinitives",
+    german: "6 Grundverben: heißen, wohnen, machen, kommen, hören, sprechen",
+    english: "6 Base Verbs: to be called, to live, to do/make, to come, to hear/listen, to speak",
+    pronunciation: "HY-sen, VOH-nen, MAH-khen, KOM-men, HEU-ren, SHPREKH-en",
+    audioText: "heißen, wohnen, machen, kommen, hören, sprechen.",
+    category: "verb-vocabulary",
+    badge: "The 6 Everyday Engines 🛠️",
+    icon: "🗣️ 🏠",
+    kenyanAnalogy: "The 6 most common everyday actions: who you are called, where you live, what you do, where you travel from, what you hear, and the words you speak!",
+    memoryTrick: "All end in -en in their raw dictionary base (Infinitiv) form!"
+  },
+  {
+    id: "l12-conjugation-rule",
+    german: "Verbkonjugation: Ich komme aus China. / Kommt ihr aus Japan?",
+    english: "Verb Conjugation: Matching the verb ending to the Subject (Ich -> komme, ihr -> Kommt)",
+    pronunciation: "Ikh KOM-meh ows KHEE-nah. Komt eer ows YAH-pahn?",
+    audioText: "Verbkonjugation. Ich komme aus China. Kommt ihr aus Japan?",
+    category: "verb-conjugation",
+    badge: "Tailor the Verb 👔",
+    icon: "🇨🇳 🇯🇵",
+    kenyanAnalogy: "You wouldn't wear children's shoes or give a bicycle tire to a truck! When 'Ich' is the driver, the verb wears '-e' (komme). When 'ihr' is the driver, it wears '-t' (kommt)!",
+    memoryTrick: "Subject is the driver; Verb ending is the right gear!"
+  },
+  {
+    id: "l12-person-system",
+    german: "Person & Numerus: 1., 2., 3. Person (Singular & Plural)",
+    english: "Person & Number: 1st person (ich / wir), 2nd person (du / ihr / Sie), 3rd person (er/sie/es / sie)",
+    pronunciation: "AIR-steh pair-zohn, TSVAY-teh pair-zohn, DRIT-teh pair-zohn",
+    audioText: "Erste Person, zweite Person, dritte Person. Singular und Plural.",
+    category: "verb-person",
+    badge: "The Speaker Map 🗺️",
+    icon: "👤 👥",
+    kenyanAnalogy: "1st Person = Me & Us (the speakers). 2nd Person = You & You all (the listeners right in front of us). 3rd Person = He, She, It, They (the ones we are talking about)!",
+    memoryTrick: "1 = Me/Us, 2 = You, 3 = Someone else!"
+  },
+  {
+    id: "l12-regular-verbs-concept",
+    german: "Regelmäßige Verben (schwache Verben) -> Verbstamm ändert sich NICHT!",
+    english: "Regular Verbs ('Weak Verbs'): The stem NEVER changes! (lernen -> du lernst)",
+    pronunciation: "RAY-gel-meh-sih-geh VAIR-ben: lair-nen -> doo lairnst",
+    audioText: "Regelmäßige Verben, auch bekannt als schwache Verben. Der Verbstamm ändert sich nicht: lernen, du lernst.",
+    category: "verb-regular",
+    badge: "Rock-Solid Trunk 🪨",
+    icon: "🛡️ 🔒",
+    kenyanAnalogy: "The loyal, well-behaved verbs! Even though they are called 'weak' in textbooks, they are loyal like concrete: 'lern-' stays 'lern-' forever. Only the ending changes!",
+    memoryTrick: "Regular = Reliable! 'lern-' never bends or changes letters."
+  },
+  {
+    id: "l12-irregular-verbs-concept",
+    german: "Unregelmäßige Verben (starke Verben) -> Verbstamm ändert sich!",
+    english: "Irregular Verbs ('Strong Verbs'): Stem changes its vowel in certain cases! (sprechen -> du sprichst)",
+    pronunciation: "OON-ray-gel-meh-sih-geh VAIR-ben: SHPREKH-en -> doo SHPRIKHST",
+    audioText: "Unregelmäßige Verben, auch bekannt als starke Verben. Der Verbstamm ändert sich in bestimmten Fällen: sprechen, du sprichst.",
+    category: "verb-irregular",
+    badge: "Shapeshifter Verbs 🦸‍♂️",
+    icon: "⚡ 🔄",
+    kenyanAnalogy: "Strong like superheroes flexing muscles! They are so strong they change their internal heartbeat (the vowel): 'e' changes to 'i' in 'sprechen' -> 'du sprichst'!",
+    memoryTrick: "Strong verbs change from inside: sprechen -> sprichst!"
+  },
+  {
+    id: "l12-reg-list-group-1",
+    german: "Regelmäßig: heißen, wohnen, machen",
+    english: "Regular: to be called (heißen), to live (wohnen), to do/make (machen)",
+    pronunciation: "HY-sen, VOH-nen, MAH-khen",
+    audioText: "Regelmäßige Verben: heißen, wohnen, machen.",
+    category: "verb-lists",
+    badge: "Regular Trio 1 🟢",
+    icon: "🏷️ 🏡",
+    kenyanAnalogy: "Three classic reliable everyday verbs: Stems (heiß-, wohn-, mach-) never change their letters!",
+    memoryTrick: "ich heiße, du wohnst, wir machen!"
+  },
+  {
+    id: "l12-reg-list-group-2",
+    german: "Regelmäßig: spielen, studieren, arbeiten",
+    english: "Regular: to play (spielen), to study (studieren), to work (arbeiten)",
+    pronunciation: "SHPEE-len, shtoo-DEE-ren, AHR-by-ten",
+    audioText: "Regelmäßige Verben: spielen, studieren, arbeiten.",
+    category: "verb-lists",
+    badge: "Regular Trio 2 🟢",
+    icon: "🎮 📚 💼",
+    kenyanAnalogy: "Everyday routines: playing football, studying at college, or working at a job! All follow loyal regular endings.",
+    memoryTrick: "ich spiele, du studierst, er arbeitet!"
+  },
+  {
+    id: "l12-irreg-list-group-1",
+    german: "Unregelmäßig: schlafen (to sleep), fahren (to drive)",
+    english: "Irregular: to sleep (schlafen -> du schläfst), to drive (fahren -> du fährst)",
+    pronunciation: "SHLAH-fen (doo shlayfst), FAH-ren (doo fayrst)",
+    audioText: "Unregelmäßige Verben: schlafen, du schläfst. fahren, du fährst.",
+    category: "verb-lists",
+    badge: "A -> Ä Vowel Flip 🚗 🛏️",
+    icon: "😴 🚘",
+    kenyanAnalogy: "When you sleep or drive fast, the letter 'a' grows two little antennae (dots) and becomes 'ä' (ä-umlaut): du schläfst, du fährst!",
+    memoryTrick: "a turns to ä for du & er: schläfst, fährst!"
+  },
+  {
+    id: "l12-irreg-list-group-2",
+    german: "Unregelmäßig: essen (to eat), sehen (to see)",
+    english: "Irregular: to eat (essen -> du isst), to see (sehen -> du siehst)",
+    pronunciation: "ES-sen (doo ist), ZAY-en (doo zeest)",
+    audioText: "Unregelmäßige Verben: essen, du isst. sehen, du siehst.",
+    category: "verb-lists",
+    badge: "E -> I / IE Flip 🍽️ 👁️",
+    icon: "🍲 👓",
+    kenyanAnalogy: "Tasty food and sharp eyesight! The letter 'e' transforms into 'i' or 'ie': du isst (you eat), du siehst (you see)!",
+    memoryTrick: "essen -> du isst, sehen -> du siehst!"
+  },
+  {
+    id: "l12-irreg-list-group-3",
+    german: "Unregelmäßig: nehmen (to take), treffen (to meet)",
+    english: "Irregular: to take (nehmen -> du nimmst), to meet (treffen -> du triffst)",
+    pronunciation: "NAY-men (doo nimst), TREF-fen (doo trifst)",
+    audioText: "Unregelmäßige Verben: nehmen, du nimmst. treffen, du triffst.",
+    category: "verb-lists",
+    badge: "E -> I Muscle Flip 🤝 🤲",
+    icon: "🤝 🎁",
+    kenyanAnalogy: "Taking a gift or meeting up with good friends in town! 'nehmen' turns into 'du nimmst', 'treffen' turns into 'du triffst'!",
+    memoryTrick: "nehmen -> nimmst, treffen -> triffst!"
+  },
+  {
+    id: "l12-chalkboard-summary",
+    german: "Zusammenfassung: Was ist ein Verb? (At a glance)",
+    english: "Summary: Action engine, sentence depends on verb, Infinitiv = Verbstamm + Endung, regelmäßige & unregelmäßige Verben",
+    pronunciation: "tsoo-ZAM-men-fas-soong: vairb-shtrook-toor",
+    audioText: "Zusammenfassung: Das Verb beschreibt eine Handlung. Die Satzstruktur hängt vom Verb ab. Infinitiv gleich Verbstamm plus Endung. Regelmäßige und unregelmäßige Verben.",
+    category: "verb-summary",
+    badge: "Chalkboard Master 📋",
+    icon: "📝 🌟",
+    kenyanAnalogy: "The master recipe on the chalkboard! 1. Action engine. 2. Dictates sentence shape. 3. Stem + Ending. 4. Obedient regulars vs Shapeshifter strong verbs!",
+    memoryTrick: "Stem + Ending. Obedient weak verbs vs Shapeshifter strong verbs!"
+  }
+];
+
+export const LESSON_12_SCENARIOS = [
+  {
+    scenario: "What does every verb describe, and why is it called the 'engine' of the sentence?",
+    hint: "Think of slide 3: 'Ich spiele Fußball'!",
+    options: [
+      { text: "It describes an action, and the whole sentence structure depends on it!", correct: true, explain: "Spot on! Slides 1 & 3 state clearly: the verb describes an action, and sentence structure depends on the verb!" },
+      { text: "It only describes colors and nothing else", correct: false, explain: "Colors are adjectives, not verbs!" },
+      { text: "It is only used at the end of a book", correct: false, explain: "Verbs are active in every spoken and written sentence!" }
+    ]
+  },
+  {
+    scenario: "In the infinitive verb 'lernen' (to learn), what is the 'Verbstamm' (stem) and what is the 'Endung' (ending)?",
+    hint: "Check slide 4: 'lernen' broken into two parts!",
+    options: [
+      { text: "'lern' is the Verbstamm (stem) and 'en' is the Endung (ending)", correct: true, explain: "Brilliant! Slide 4 shows: 'lern' = Verbstamm (verb stem), 'en' = Endung (ending)!" },
+      { text: "'l' is the stem and 'ernen' is the ending", correct: false, explain: "The standard German ending is usually '-en' or '-n'!" },
+      { text: "There is no stem, all words are single blocks", correct: false, explain: "German verbs are built like tree trunks with interchangeable endings!" }
+    ]
+  },
+  {
+    scenario: "Why are regular verbs called 'schwache Verben' (weak verbs) in German grammar?",
+    hint: "Look at slide 9: 'Verbstamm doesn't change'!",
+    options: [
+      { text: "Because the Verbstamm NEVER changes its letters (e.g., lernen -> du lernst)", correct: true, explain: "Exactly! Slide 9 explains: 'Verbstamm doesn't change' in regular (weak) verbs like lernen -> du lernst!" },
+      { text: "Because they are too weak to be spoken out loud", correct: false, explain: "No, 'weak' is just an old grammar term meaning they don't break or alter their stem vowel!" },
+      { text: "Because they disappear from the sentence", correct: false, explain: "They stay firmly anchored in Position 2!" }
+    ]
+  },
+  {
+    scenario: "What happens to irregular verbs ('starke Verben' / strong verbs) like 'sprechen'?",
+    hint: "Check slide 10: 'sprechen -> du sprichst'!",
+    options: [
+      { text: "The Verbstamm changes its inner vowel in certain cases (sprechen -> du sprichst)!", correct: true, explain: "Outstanding! Slide 10 shows the letter 'e' changes to 'i': sprechen -> du sprichst!" },
+      { text: "They drop all vowels and become silent", correct: false, explain: "They just swap the vowel (e to i or ie, a to ä)!" },
+      { text: "They always turn into 'haben'", correct: false, explain: "'haben' is its own helping verb!" }
+    ]
+  },
+  {
+    scenario: "Look at slide 11. Which of the following lists contains ONLY regelmäßige Verben (regular verbs)?",
+    hint: "Look at the left column of slide 11!",
+    options: [
+      { text: "wohnen, machen, spielen, arbeiten, studieren, heißen", correct: true, explain: "Perfect! All six verbs in the left column of slide 11 are regular (schwache) Verben!" },
+      { text: "schlafen, essen, sehen, fahren", correct: false, explain: "Those are irregular (starke) verbs from the right column!" },
+      { text: "nehmen, treffen, sein, essen", correct: false, explain: "Those are irregular verbs!" }
+    ]
+  },
+  {
+    scenario: "Which of these verbs is an unregelmäßiges Verb (irregular verb) whose stem vowel changes?",
+    hint: "Check the right column of slide 11 (schlafen, essen, sehen, nehmen, treffen, fahren)!",
+    options: [
+      { text: "fahren (du fährst - vowel 'a' turns into 'ä'!)", correct: true, explain: "Superb! 'fahren' is an irregular verb: 'du fährst' and 'er fährt' take an umlaut (ä)!" },
+      { text: "spielen (du spielst)", correct: false, explain: "'spielen' is regular: spiel- never changes." },
+      { text: "wohnen (du wohnst)", correct: false, explain: "'wohnen' is regular: wohn- never changes." }
+    ]
+  }
+];
+
+
 
 
 

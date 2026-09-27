@@ -28,6 +28,8 @@ import Lesson10PronounFamily from './components/Lesson10PronounFamily';
 import Lesson10Game from './components/Lesson10Game';
 import Lesson11HabenSeinStudio from './components/Lesson11HabenSeinStudio';
 import Lesson11Game from './components/Lesson11Game';
+import Lesson12VerbExplorer from './components/Lesson12VerbExplorer';
+import Lesson12Game from './components/Lesson12Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -39,11 +41,12 @@ import {
   LESSON_8_ITEMS,
   LESSON_9_ITEMS,
   LESSON_10_ITEMS,
-  LESSON_11_ITEMS
+  LESSON_11_ITEMS,
+  LESSON_12_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(11); // Default to Lesson 11 as requested, easy switch to 1-10
+  const [currentLesson, setCurrentLesson] = useState(12); // Default to Lesson 12 as requested, easy switch to 1-11
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -58,6 +61,7 @@ export default function App() {
   if (currentLesson === 9) activeItems = LESSON_9_ITEMS;
   if (currentLesson === 10) activeItems = LESSON_10_ITEMS;
   if (currentLesson === 11) activeItems = LESSON_11_ITEMS;
+  if (currentLesson === 12) activeItems = LESSON_12_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -70,7 +74,8 @@ export default function App() {
     if (currentLesson === 8) return "Lesson 8: Satzstruktur (German Sentence Structure) - Verb Positions & Question Types";
     if (currentLesson === 9) return "Lesson 9: Satzstruktur Teil 2 (Verb Conjugation) - The Golden Endings (-e, -st, -en)";
     if (currentLesson === 10) return "Lesson 10: Personalpronomen (Nominativ) - The Personal Pronoun Family (er, sie, es, wir, ihr, Sie)";
-    return "Lesson 11: Verbkonjugation (haben & sein) - The Two Royal Pillar Verbs";
+    if (currentLesson === 11) return "Lesson 11: Verbkonjugation (haben & sein) - The Two Royal Pillar Verbs";
+    return "Lesson 12: Was ist ein Verb? (Verb Structure & Types) - Stem, Ending & Regular vs. Irregular";
   };
 
   const getLessonDesc = () => {
@@ -104,7 +109,10 @@ export default function App() {
     if (currentLesson === 10) {
       return "The complete German personal pronoun family: 1st person (ich, wir), 2nd person (du, ihr, Sie), and 3rd person (er, sie, es, sie). Discover how pronouns act as substitute players to make sentences concise without repeating names!";
     }
-    return "Meet the two royal pillars of German: King 'sein' (to be - identity, condition, who you are) and Queen 'haben' (to have - possessions, family, relations). Master their conjugations across all pronouns, explore all 16 real-life sentences, and pinpoint the Subjekt with ease!";
+    if (currentLesson === 11) {
+      return "Meet the two royal pillars of German: King 'sein' (to be - identity, condition, who you are) and Queen 'haben' (to have - possessions, family, relations). Master their conjugations across all pronouns, explore all 16 real-life sentences, and pinpoint the Subjekt with ease!";
+    }
+    return "What is a verb? Discover the action engine of every sentence! Learn the tree structure of verbs (Verbstamm trunk + Endung leaves), the 1st/2nd/3rd person system, and the clear difference between obedient regular verbs (schwache Verben) and superhero irregular verbs (starke Verben) with stem vowel flips!";
   };
 
   return (
@@ -240,6 +248,15 @@ export default function App() {
 
         {currentLesson === 11 && activeTab === 'game11' && (
           <Lesson11Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 12 Specific Modules */}
+        {currentLesson === 12 && activeTab === 'studio' && (
+          <Lesson12VerbExplorer isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 12 && activeTab === 'game12' && (
+          <Lesson12Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
