@@ -2385,6 +2385,163 @@ export const LESSON_9_SCENARIOS = [
   }
 ];
 
+export const LESSON_10_ITEMS = [
+  {
+    id: "l10-what-is-pronoun",
+    german: "Was sind Pronomen? (Personalpronomen)",
+    english: "What are pronouns? They replace nouns to avoid repeating names!",
+    pronunciation: "vahs zint proh-NOH-men?",
+    audioText: "Was sind Pronomen? Personalpronomen ersetzen Nomen.",
+    category: "pronouns-intro",
+    badge: "The Substitute Player",
+    icon: "🔄 ⚽",
+    kenyanAnalogy: "Like a substitute player in a soccer match! Instead of saying 'Michael... Michael... Michael...' five times, you bring on 'He' (Er) to take Michael's place!",
+    memoryTrick: "Pro-noun = FOR the noun. It stands in so you don't sound like a broken record!"
+  },
+  {
+    id: "l10-first-person",
+    german: "1. Person: ich (I) / wir (we)",
+    english: "First Person: ich = I (Singular) | wir = we (Plural)",
+    pronunciation: "ikh (I) / veer (we)",
+    audioText: "ich wohne in New York. Wir wohnen in New York. Ich heiße Maria. Wir wohnen in Berlin.",
+    category: "first-person",
+    badge: "1st Person: ich & wir",
+    icon: "👤 👥",
+    kenyanAnalogy: "Talking about yourself and your family: 'Ich wohne in New York' (I live) versus 'Wir wohnen in New York' (We live together as a family)!",
+    memoryTrick: "ich = just ME (1 person). wir = ME + OTHERS (we, a team)!"
+  },
+  {
+    id: "l10-second-informal",
+    german: "2. Person (informell): du (you) / ihr (you all)",
+    english: "Second Person (Casual): du = you (1 friend) | ihr = you all / you guys (group of friends)",
+    pronunciation: "doo (you) / eer (you all)",
+    audioText: "Max, wo wohnst du? Julia und Peter, wo wohnt ihr?",
+    category: "second-person-informal",
+    badge: "Casual: du & ihr",
+    icon: "👕 🧢",
+    kenyanAnalogy: "Talking to one friend: 'Max, wo wohnst du?'. Talking to two or more buddies together: 'Julia und Peter, wo wohnt ihr?' (Where do you guys live?).",
+    memoryTrick: "du = 1 friend. ihr = 2 or more friends (you guys / you all)!"
+  },
+  {
+    id: "l10-second-formal",
+    german: "2. Person (formell): Sie (you / you all)",
+    english: "Second Person (Formal): Sie = you (1 elder/stranger) | Sie = you all (group of respected elders/officials)",
+    pronunciation: "ZEE (capital S)",
+    audioText: "Herr Müller, wo wohnen Sie? Herr und Frau Müller, wo wohnen Sie?",
+    category: "second-person-formal",
+    badge: "Respect: Sie (Single & Plural)",
+    icon: "🎩 👔",
+    kenyanAnalogy: "Respectful address never changes: You say 'Herr Müller, wo wohnen Sie?' to one gentleman, and 'Herr und Frau Müller, wo wohnen Sie?' to the couple!",
+    memoryTrick: "Capital 'Sie' is magical — it works for ONE respected person OR TEN respected people!"
+  },
+  {
+    id: "l10-third-he",
+    german: "er (he - maskulin): Das ist Michael. Er wohnt in London.",
+    english: "er = he: This is Michael. He lives in London.",
+    pronunciation: "air (Word: Das ist Michael. Er wohnt in London.)",
+    audioText: "Das ist Michael. Er wohnt in London.",
+    category: "third-person-singular",
+    badge: "er = he (masculine)",
+    icon: "👨 🇬🇧",
+    kenyanAnalogy: "Pointing to a man across the street: 'Das ist Michael.' Replace Michael with 'Er' (He) $\rightarrow$ 'Er wohnt in London.'",
+    memoryTrick: "er = h-ER-o (a male hero!). Sounds like English 'air'."
+  },
+  {
+    id: "l10-third-she",
+    german: "sie (she - feminin): Das ist Michaela. Sie wohnt in Paris.",
+    english: "sie = she: This is Michaela. She lives in Paris.",
+    pronunciation: "zee (Word: Das ist Michaela. Sie wohnt in Paris.)",
+    audioText: "Das ist Michaela. Sie wohnt in Paris.",
+    category: "third-person-singular",
+    badge: "sie = she (feminine)",
+    icon: "👩 🇫🇷",
+    kenyanAnalogy: "Pointing to a lady: 'Das ist Michaela.' Replace Michaela with 'sie' (she) $\rightarrow$ 'Sie wohnt in Paris.' (Notice verb ends in -t: wohnt!).",
+    memoryTrick: "sie = SHE! If the verb ends in '-t' (sie wohnt), it means ONE woman (She)!"
+  },
+  {
+    id: "l10-third-it",
+    german: "es (it - neutrum): Das ist mein Buch. Es ist alt.",
+    english: "es = it: This is my book. It is old.",
+    pronunciation: "ess (Word: Das ist mein Buch. Es ist alt.)",
+    audioText: "Das ist mein Buch. Es ist alt.",
+    category: "third-person-singular",
+    badge: "es = it (neuter)",
+    icon: "📖 ⏳",
+    kenyanAnalogy: "Pointing to an object: 'Das ist mein Buch' (This is my book). Replace the book with 'Es' (It) $\rightarrow$ 'Es ist alt.' (It is old).",
+    memoryTrick: "es = English 'it' / 'es-sence'! Perfect match for neutral things."
+  },
+  {
+    id: "l10-third-they",
+    german: "sie (they - plural): Das sind Petra und Jürgen. Sie wohnen in Hamburg.",
+    english: "sie = they: This is Petra and Jürgen. They live in Hamburg.",
+    pronunciation: "zee (Word: Das sind Petra und Jürgen. Sie wohnen in Hamburg.)",
+    audioText: "Das sind Petra und Jürgen. Sie wohnen in Hamburg.",
+    category: "third-person-plural",
+    badge: "sie = they (plural)",
+    icon: "👫 🏙️",
+    kenyanAnalogy: "Talking about a couple or group over there: 'Das sind Petra und Jürgen.' Replace them with 'sie' (they) $\rightarrow$ 'Sie wohnen in Hamburg.'",
+    memoryTrick: "When 'sie' means THEY, the verb ends in '-en' (sie wohnen, sie kommen)!"
+  }
+];
+
+export const LESSON_10_SCENARIOS = [
+  {
+    scenario: "Look at the sentence: 'Das ist Michael. ______ wohnt in London.' Which pronoun replaces Michael?",
+    hint: "Michael is male (maskulin / he)!",
+    options: [
+      { text: "Er (He)", correct: true, explain: "Spot on! 'Er' means 'he' and replaces male names like Michael!" },
+      { text: "Sie (She)", correct: false, explain: "'Sie' is feminine (she)." },
+      { text: "Es (It)", correct: false, explain: "'Es' is neuter (it)." }
+    ]
+  },
+  {
+    scenario: "Look at the sentence: 'Das ist Michaela. ______ wohnt in Paris.' Which pronoun replaces Michaela?",
+    hint: "Michaela is female (feminin / she)!",
+    options: [
+      { text: "Sie (She)", correct: true, explain: "Brilliant! 'sie' means 'she' and replaces female names like Michaela!" },
+      { text: "Er (He)", correct: false, explain: "'Er' is for men (he)." },
+      { text: "Wir (We)", correct: false, explain: "'Wir' means we." }
+    ]
+  },
+  {
+    scenario: "You are speaking casually to two friends, Julia and Peter. What pronoun do you use for 'you all / you guys'?",
+    hint: "Look at slide 8: 'Julia und Peter, wo wohnt ______?'",
+    options: [
+      { text: "ihr (you all / you guys)", correct: true, explain: "Exactly! 'ihr' is the informal plural pronoun for addressing two or more friends (you guys / you all)!" },
+      { text: "du (single you)", correct: false, explain: "'du' is only for ONE friend." },
+      { text: "wir (we)", correct: false, explain: "'wir' means we, including yourself." }
+    ]
+  },
+  {
+    scenario: "You meet both Mr. and Mrs. Müller (respectful adults). How do you ask them: 'Where do you live?'",
+    hint: "Check slide 10: 'Herr und Frau Müller, wo wohnen ______?'",
+    options: [
+      { text: "Sie (Herr und Frau Müller, wo wohnen Sie?)", correct: true, explain: "Perfect! Formal 'Sie' is used for one respected person OR a group of respected people!" },
+      { text: "ihr", correct: false, explain: "'ihr' is informal for buddies and children." },
+      { text: "du", correct: false, explain: "'du' is informal singular." }
+    ]
+  },
+  {
+    scenario: "Look at: 'Das ist mein Buch. ______ ist alt.' (This is my book. It is old.) Which pronoun replaces 'Das Buch'?",
+    hint: "Das Buch is neuter (it)!",
+    options: [
+      { text: "Es (It)", correct: true, explain: "Awesome! 'Es' means 'it' and replaces neutral nouns like 'Das Buch'!" },
+      { text: "Er (He)", correct: false, explain: "'Er' is masculine." },
+      { text: "Sie (She)", correct: false, explain: "'Sie' is feminine." }
+    ]
+  },
+  {
+    scenario: "How can you easily tell if 'sie' means 'She' or 'They' in a sentence?",
+    hint: "Look at the verb ending (-t vs -en)!",
+    options: [
+      { text: "Look at the verb ending: 'sie wohnt' (-t) means SHE, while 'sie wohnen' (-en) means THEY!", correct: true, explain: "Outstanding! The verb ending gives it away immediately: '-t' means singular 'she', and '-en' means plural 'they'!" },
+      { text: "There is no way to know", correct: false, explain: "The verb ending tells you with 100% certainty!" },
+      { text: "They are spelled with different alphabets", correct: false, explain: "They are both spelled s-i-e." }
+    ]
+  }
+];
+
+
 
 
 
