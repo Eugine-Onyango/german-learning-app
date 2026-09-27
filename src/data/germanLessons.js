@@ -2061,6 +2061,187 @@ export const LESSON_7_SCENARIOS = [
   }
 ];
 
+export const LESSON_8_ITEMS = [
+  {
+    id: "l8-pos2-rule",
+    german: "Das Verb steht an Position 2 (The Verb in 2nd Position)",
+    english: "In normal German sentences, the VERB always sits in the 2nd position!",
+    pronunciation: "dahs vairp shtayt ahn poh-zee-TSYOHN tsvy",
+    audioText: "Ich wohne in Berlin. Heute bin ich in Berlin.",
+    category: "rule-position2",
+    badge: "The Golden Anchor Rule: Verb = Pos 2",
+    icon: "⚓ 🚂",
+    kenyanAnalogy: "Think of a train or matatu engine: No matter who enters first (you, or the word 'Today'), the engine (verb) is firmly anchored in seat number 2! 'Ich wohne in Berlin' or 'Heute bin ich in Berlin'!",
+    memoryTrick: "Position 1 = Any word. Position 2 = ALWAYS THE VERB! Position 3 = The subject if not in pos 1!"
+  },
+  {
+    id: "l8-statement-heute",
+    german: "Ich wohne in Berlin. / Heute bin ich in Berlin.",
+    english: "I live in Berlin. / Today I am in Berlin. (Notice the verb stays in 2nd spot!)",
+    pronunciation: "ikh VOH-neh in bair-LEEN. HOY-teh bin ikh in bair-LEEN.",
+    audioText: "Ich wohne in Berlin. Heute bin ich in Berlin.",
+    category: "rule-position2",
+    badge: "The 'Heute' Flip Trick",
+    icon: "📅 🏙️",
+    kenyanAnalogy: "If you start your story with 'Today' (Heute), the verb doesn't move backwards; it stays in Spot 2: 'Heute (1) bin (2) ich (3) in Berlin'!",
+    memoryTrick: "Never say 'Heute ich bin'. In German, the verb refuses to move: 'Heute bin ich'!"
+  },
+  {
+    id: "l8-subject-verb",
+    german: "Ich heiße Monika. / Ich bin müde.",
+    english: "I am called Monika. / I am tired. (Subject + Verb harmony)",
+    pronunciation: "ikh HY-seh MOH-nee-kah. ikh bin MEW-deh.",
+    audioText: "Ich heiße Monika. Ich bin müde.",
+    category: "rule-subject-verb",
+    badge: "Subject + Verb Match",
+    icon: "😴 🏷️",
+    kenyanAnalogy: "The subject controls the verb's clothes: 'Ich' makes the verb wear an '-e' (heiße, wohne) or 'bin' (am). 'müde' means tired!",
+    memoryTrick: "Ich = Subject (who is doing it). heiße / bin = Verb (the action / state). müde = tired (Ü sound)!"
+  },
+  {
+    id: "l8-w-words",
+    german: "Die 6 W-Fragen: Wie? Welche? Was? Wo? Woher? Wie viel?",
+    english: "The 6 W-Questions: How/What? Which? What? Where? Where from? How much?",
+    pronunciation: "vee? VEL-kheh? vahs? voh? voh-HAIR? vee feel?",
+    audioText: "Wie? Welche? Was? Wo? Woher? Wie viel?",
+    category: "w-questions",
+    badge: "The 6 Question Words",
+    icon: "❓ 🧭",
+    kenyanAnalogy: "The 6 detectives who ask for details! Every one of them starts with 'W'.",
+    memoryTrick: "Wo = Where. Woher = Where from. Was = What. Wie = How/What. Welche = Which. Wie viel = How much!"
+  },
+  {
+    id: "l8-w-structure",
+    german: "Wo (1) wohnen (2) Sie (3)? / Woher (1) kommst (2) du (3)?",
+    english: "W-Question Structure: W-Word (Pos 1) + Verb (Pos 2) + Subject (Pos 3)",
+    pronunciation: "voh VOH-nen ZEE? / voh-HAIR KOMST doo?",
+    audioText: "Wo wohnen Sie? Woher kommst du? Wie heißen Sie? Wie alt sind Sie?",
+    category: "w-questions",
+    badge: "W-Fragen: Verb in Pos 2",
+    icon: "1️⃣ 2️⃣ 3️⃣",
+    kenyanAnalogy: "Just like three friends walking in a row: Detective W leads in Front (1), the Verb engine sits in the Middle (2), and the Person follows right after (3)!",
+    memoryTrick: "W-Word (1) + Verb (2) + Subject (3)! Example: Wie (1) heißen (2) Sie (3)?"
+  },
+  {
+    id: "l8-ja-nein-rule",
+    german: "Ja/Nein - Fragen: Das Verb steht an Position 1! (Verb Leaps to Front!)",
+    english: "Yes/No Questions: The VERB jumps to the 1st position at the very front!",
+    pronunciation: "yah / nyn FRAH-gen: dahs vairp shtayt ahn poh-zee-TSYOHN ayns!",
+    audioText: "Haben Sie Kinder? Sind Sie verheiratet? Wohnst du in München?",
+    category: "ja-nein-questions",
+    badge: "Ja/Nein Rule: Verb = Pos 1",
+    icon: "⚡ 1️⃣",
+    kenyanAnalogy: "When you only want a 'YES' (Ja) or 'NO' (Nein) answer, the verb gets super excited and jumps right to the front of the line! Haben (1) Sie (2) Kinder?",
+    memoryTrick: "W-Questions = Verb in 2nd place. Yes/No Questions = Verb in 1st place!"
+  },
+  {
+    id: "l8-q-kinder-marriage",
+    german: "Haben Sie Kinder? / Sind Sie verheiratet?",
+    english: "Do you have children? / Are you married? (Yes/No Questions)",
+    pronunciation: "HAH-ben ZEE KIN-der? / zint ZEE fer-HY-rah-tet?",
+    audioText: "Haben Sie Kinder? Sind Sie verheiratet?",
+    category: "ja-nein-questions",
+    badge: "Family Yes/No Questions",
+    icon: "👶 💍",
+    kenyanAnalogy: "Notice: 'Haben' and 'Sind' are the verbs, and they start the sentence! Answer: 'Ja' or 'Nein'.",
+    memoryTrick: "Verb (1) + Subject (2) + Rest (3)!"
+  },
+  {
+    id: "l8-q-living-origin",
+    german: "Wohnst du in München? / Kommen Sie aus Deutschland?",
+    english: "Do you live in Munich? / Are you from Germany?",
+    pronunciation: "VOHNST doo in MEWN-khen? / KOM-men ZEE ows DOYCH-lahnt?",
+    audioText: "Wohnst du in München? Kommen Sie aus Deutschland? Wohnen Sie in Indonesien?",
+    category: "ja-nein-questions",
+    badge: "Location Yes/No Questions",
+    icon: "🥨 🇩🇪",
+    kenyanAnalogy: "Asking about someone's home city: 'Wohnst' (verb) starts the question! München is the German city of Munich.",
+    memoryTrick: "Wohnst (1) + du (2) + in München (3)?"
+  },
+  {
+    id: "l8-q-sports-languages",
+    german: "Spielen Sie Fußball? / Sprechen Sie Italienisch?",
+    english: "Do you play football? / Do you speak Italian?",
+    pronunciation: "SHPEE-len ZEE FOOSS-bahl? / SHPREKH-en ZEE ee-tah-lee-AY-nish?",
+    audioText: "Spielen Sie Fußball? Sprechen Sie Italienisch?",
+    category: "ja-nein-questions",
+    badge: "Hobbies & Skills Yes/No",
+    icon: "⚽ 🇮🇹",
+    kenyanAnalogy: "Asking someone if they love soccer or speak Italian: 'Spielen' (to play) jumps to position 1!",
+    memoryTrick: "Spielen Sie Fußball? = Do you play football? (Fußball has the ß Eszett: double s!)."
+  },
+  {
+    id: "l8-q-understanding-time",
+    german: "Verstehen Sie mich? / Haben Sie Zeit?",
+    english: "Do you understand me? / Do you have time?",
+    pronunciation: "fair-SHTAY-en ZEE mikh? / HAH-ben ZEE tsyt?",
+    audioText: "Verstehen Sie mich? Haben Sie Zeit? Sind Sie 30 Jahre alt?",
+    category: "ja-nein-questions",
+    badge: "Everyday Yes/No Essentials",
+    icon: "👂 ⏰",
+    kenyanAnalogy: "Two of the most useful polite phrases in Germany: 'Verstehen Sie mich?' (Are you following what I'm saying?) and 'Haben Sie Zeit?' (Do you have a minute?).",
+    memoryTrick: "Zeit = Time (Z = TS sound: 'TSYT'). Verstehen = Understand (V = F sound: 'fair-SHTAY-en')!"
+  }
+];
+
+export const LESSON_8_SCENARIOS = [
+  {
+    scenario: "In a standard German statement like 'Ich wohne in Berlin', which position does the verb always take?",
+    hint: "Think of the golden anchor rule!",
+    options: [
+      { text: "Position 2 (The verb is firmly anchored in the second spot)", correct: true, explain: "Spot on! In standard German statements, the verb ALWAYS sits in position 2!" },
+      { text: "Position 1 at the very beginning", correct: false, explain: "Position 1 is for Yes/No questions or whatever starts the sentence." },
+      { text: "At the very end of the sentence", correct: false, explain: "No, in normal main clauses the verb is in position 2!" }
+    ]
+  },
+  {
+    scenario: "Look at the sentence: 'Heute bin ich in Berlin' (Today I am in Berlin). Why is 'bin' in position 2 instead of after 'ich'?",
+    hint: "Because 'Heute' took position 1, and the verb refuses to leave position 2!",
+    options: [
+      { text: "Because the verb must stay in position 2, so the subject 'ich' moves to position 3!", correct: true, explain: "Brilliant! If you start with time like 'Heute' (Position 1), the verb stays glued to Position 2 ('bin'), and 'ich' moves to Position 3!" },
+      { text: "Because 'bin' is an irregular verb that hates the end", correct: false, explain: "It's the universal position 2 rule for all verbs!" },
+      { text: "It is an error, it should be 'Heute ich bin'", correct: false, explain: "Never say 'Heute ich bin' in German; it must be 'Heute bin ich'!" }
+    ]
+  },
+  {
+    scenario: "When you ask a W-Question like 'Woher kommst du?' (Where are you from?), what is the sentence order?",
+    hint: "W-Word + Verb + Subject!",
+    options: [
+      { text: "W-Word (Pos 1) + Verb (Pos 2) + Subject (Pos 3)", correct: true, explain: "Exactly! W-Word in position 1, Verb in position 2, and Subject in position 3!" },
+      { text: "Verb (Pos 1) + W-Word (Pos 2) + Subject (Pos 3)", correct: false, explain: "The W-Word must lead the question!" },
+      { text: "Subject (Pos 1) + Verb (Pos 2) + W-Word (Pos 3)", correct: false, explain: "W-questions always start with the W-Word!" }
+    ]
+  },
+  {
+    scenario: "What happens to the verb in a 'Ja/Nein' (Yes/No) question like 'Haben Sie Kinder?' or 'Wohnst du in München?'?",
+    hint: "Check the slide: Ja/Nein - Fragen: Here the verb is in the...",
+    options: [
+      { text: "The verb jumps to the FIRST position (Position 1) at the front!", correct: true, explain: "Perfect! Whenever a question can be answered with YES (Ja) or NO (Nein), the verb jumps straight to position 1!" },
+      { text: "The verb stays in position 2", correct: false, explain: "In Yes/No questions, the verb takes position 1!" },
+      { text: "The verb disappears completely", correct: false, explain: "The verb is essential!" }
+    ]
+  },
+  {
+    scenario: "How would you ask someone politely: 'Do you have time?' in German?",
+    hint: "Start with the verb 'Haben' in position 1, and remember 'Zeit' = time!",
+    options: [
+      { text: "Haben Sie Zeit?", correct: true, explain: "Awesome! 'Haben' (verb in pos 1) + 'Sie' (subject) + 'Zeit' (time) = 'Haben Sie Zeit?'!" },
+      { text: "Wie Zeit haben Sie?", correct: false, explain: "That is incorrect sentence order." },
+      { text: "Zeit haben Sie?", correct: false, explain: "The verb must lead in a Yes/No question!" }
+    ]
+  },
+  {
+    scenario: "How do you ask someone: 'Do you understand me?'",
+    hint: "Start with the verb 'Verstehen' (to understand) in position 1!",
+    options: [
+      { text: "Verstehen Sie mich?", correct: true, explain: "Outstanding! 'Verstehen' is in position 1, followed by 'Sie', followed by 'mich' (me)!" },
+      { text: "Was verstehen Sie?", correct: false, explain: "That means 'What do you understand?'." },
+      { text: "Ich verstehe Sie.", correct: false, explain: "That is a statement meaning 'I understand you', not a question!" }
+    ]
+  }
+];
+
+
 
 
 

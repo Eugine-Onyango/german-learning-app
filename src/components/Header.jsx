@@ -19,6 +19,7 @@ export default function Header({
     if (currentLesson === 5) msg = "Das Alphabet: A, B, C, D, E, F, G! Joghurt, Vogel, Wolke, Fuß!";
     if (currentLesson === 6) msg = "Hallo! Mein Name ist Monika Schmidt. Ich wohne in Berlin und ich spreche Deutsch!";
     if (currentLesson === 7) msg = "Wie heißen Sie? Wie heißt du? Woher kommen Sie? Wo wohnst du?";
+    if (currentLesson === 8) msg = "Ich wohne in Berlin. Heute bin ich in Berlin. Haben Sie Zeit? Verstehen Sie mich?";
     speakGerman(msg, isSlowMode);
   };
 
@@ -81,6 +82,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson8NavItems = [
+    { id: 'cards', label: '📖 Lesson 8 Cards', sub: 'Sentence Structure & Rules' },
+    { id: 'machine', label: '🚂 Sentence Train', sub: 'Positions 1, 2, 3 Machine' },
+    { id: 'game8', label: '🎮 Structure Quiz', sub: 'Conductor Scenario Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -88,6 +97,7 @@ export default function Header({
   if (currentLesson === 5) navItems = lesson5NavItems;
   if (currentLesson === 6) navItems = lesson6NavItems;
   if (currentLesson === 7) navItems = lesson7NavItems;
+  if (currentLesson === 8) navItems = lesson8NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -240,6 +250,20 @@ export default function Header({
               }`}
             >
               💬 7: Kennenlernen
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(8);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 8
+                  ? 'bg-amber-600 text-white shadow-md scale-102 ring-2 ring-amber-300'
+                  : 'bg-white text-stone-700 hover:bg-amber-100 border border-amber-300'
+              }`}
+            >
+              🚂 8: Satzstruktur
             </button>
           </div>
 

@@ -20,6 +20,8 @@ import Lesson6ProfileBuilder from './components/Lesson6ProfileBuilder';
 import Lesson6Game from './components/Lesson6Game';
 import Lesson7DialogueExplorer from './components/Lesson7DialogueExplorer';
 import Lesson7Game from './components/Lesson7Game';
+import Lesson8SentenceMachine from './components/Lesson8SentenceMachine';
+import Lesson8Game from './components/Lesson8Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -27,11 +29,12 @@ import {
   LESSON_4_ITEMS,
   LESSON_5_ITEMS,
   LESSON_6_ITEMS,
-  LESSON_7_ITEMS
+  LESSON_7_ITEMS,
+  LESSON_8_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(7); // Default to Lesson 7 as requested, easy switch to 1-6
+  const [currentLesson, setCurrentLesson] = useState(8); // Default to Lesson 8 as requested, easy switch to 1-7
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -42,6 +45,7 @@ export default function App() {
   if (currentLesson === 5) activeItems = LESSON_5_ITEMS;
   if (currentLesson === 6) activeItems = LESSON_6_ITEMS;
   if (currentLesson === 7) activeItems = LESSON_7_ITEMS;
+  if (currentLesson === 8) activeItems = LESSON_8_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -50,7 +54,8 @@ export default function App() {
     if (currentLesson === 4) return "Lesson 4: Zahlen 21 - 100 & The Backwards Rule (Numbers 21 to 100)";
     if (currentLesson === 5) return "Lesson 5: Das Alphabet (A bis Z) - The 30 German Characters & Sounds";
     if (currentLesson === 6) return "Lesson 6: Sich vorstellen (Introducing Yourself) - Name, Origin, Job & Family";
-    return "Lesson 7: Jemanden kennenlernen (Getting to Know Someone) - Formal 'Sie' vs. Casual 'du'";
+    if (currentLesson === 7) return "Lesson 7: Jemanden kennenlernen (Getting to Know Someone) - Formal 'Sie' vs. Casual 'du'";
+    return "Lesson 8: Satzstruktur (German Sentence Structure) - Verb Positions & Question Types";
   };
 
   const getLessonDesc = () => {
@@ -72,7 +77,10 @@ export default function App() {
     if (currentLesson === 6) {
       return "Master introducing yourself: 3 ways to say your name (Ich heiße / Ich bin / Mein Name ist), origin (komme aus), residence (wohne in), age (Jahre alt), the '-in' rule for women's professions (Studentin, Lehrerin), marital status (ledig / verheiratet), children (Kind / Kinder), and hobbies!";
     }
-    return "Asking questions and getting to know someone! Discover the golden rule of German respect: formal 'Sie' (strangers, elders, officials, verb ends in -en) vs. friendly 'du' (friends, family, kids, verb ends in -st), plus 'Ihr' vs. 'dein'!";
+    if (currentLesson === 7) {
+      return "Asking questions and getting to know someone! Discover the golden rule of German respect: formal 'Sie' (strangers, elders, officials, verb ends in -en) vs. friendly 'du' (friends, family, kids, verb ends in -st), plus 'Ihr' vs. 'dein'!";
+    }
+    return "Master German sentence architecture without tears: The golden anchor rule (the verb ALWAYS sits in Position 2 in statements and W-Fragen), the 'Heute' flip trick, and why the verb leaps to Position 1 in Yes/No questions (Ja/Nein-Fragen)!";
   };
 
   return (
@@ -172,6 +180,15 @@ export default function App() {
 
         {currentLesson === 7 && activeTab === 'game7' && (
           <Lesson7Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 8 Specific Modules */}
+        {currentLesson === 8 && activeTab === 'machine' && (
+          <Lesson8SentenceMachine isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 8 && activeTab === 'game8' && (
+          <Lesson8Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
