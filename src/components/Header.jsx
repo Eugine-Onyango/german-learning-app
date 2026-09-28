@@ -26,6 +26,7 @@ export default function Header({
     if (currentLesson === 12) msg = "Was ist ein Verb? Ein Verb beschreibt eine Handlung. Verbstamm plus Endung. Regelmäßige und unregelmäßige Verben!";
     if (currentLesson === 13) msg = "Regelmäßige Verben: ich wohne, du wohnst, er wohnt. Du reist, du tanzt. Du arbeitest, er wartet!";
     if (currentLesson === 14) msg = "Unregelmäßige Verben: sprechen wird zu du sprichst, sehen wird zu du siehst, fahren wird zu du fährst, und wissen: ich weiß, er weiß!";
+    if (currentLesson === 15) msg = "Zahlen Teil drei: einhundert, eintausend, eine Million, eine Milliarde. Neunzehnhundertfünfundsiebzig und zweitausendsiebzehn!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -144,6 +145,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson15NavItems = [
+    { id: 'cards', label: '📖 Lesson 15 Cards', sub: 'Big Numbers & Years' },
+    { id: 'numbers3', label: '💯 Number Builder', sub: 'Combinations & Birth Years' },
+    { id: 'game15', label: '🎮 Big Number Quiz', sub: 'Compounds & Years Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -158,6 +167,7 @@ export default function Header({
   if (currentLesson === 12) navItems = lesson12NavItems;
   if (currentLesson === 13) navItems = lesson13NavItems;
   if (currentLesson === 14) navItems = lesson14NavItems;
+  if (currentLesson === 15) navItems = lesson15NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -408,6 +418,20 @@ export default function Header({
               }`}
             >
               ⚡ 14: Unregelmäßige Verben
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(15);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 15
+                  ? 'bg-amber-700 text-white shadow-md scale-102 ring-2 ring-amber-400'
+                  : 'bg-white text-stone-700 hover:bg-amber-100 border border-amber-300'
+              }`}
+            >
+              💯 15: Zahlen (Teil 3)
             </button>
           </div>
 

@@ -3309,6 +3309,211 @@ export const LESSON_14_SCENARIOS = [
   }
 ];
 
+export const LESSON_15_ITEMS = [
+  {
+    id: "l15-hundreds-overview",
+    german: "Die Hunderter: 100 bis 900",
+    english: "The Hundreds: (ein)hundert, zweihundert, dreihundert, vierhundert, fünfhundert, sechshundert, siebenhundert, achthundert, neunhundert",
+    pronunciation: "HOON-dairt, TSVYE-hoon-dairt, DRY-hoon-dairt",
+    audioText: "Die Hunderter: einhundert, zweihundert, dreihundert, vierhundert, fünfhundert, sechshundert, siebenhundert, achthundert, neunhundert.",
+    category: "hundreds",
+    badge: "The 100 to 900 Train 💯",
+    icon: "💯 🧱",
+    kenyanAnalogy: "Stacking 100-shilling coins or notes! Just say the single digit (zwei, drei, vier) and snap 'hundert' onto the back: zweihundert, dreihundert, vierhundert!",
+    memoryTrick: "Number + hundert: 200 = zwei + hundert!"
+  },
+  {
+    id: "l15-thousands-overview",
+    german: "Die Tausender: 1.000 bis 100.000",
+    english: "The Thousands: (ein)tausend, zweitausend, zehntausend, elftausend, (ein)hunderttausend",
+    pronunciation: "TOW-zent, TSVYE-tow-zent, TSAYN-tow-zent",
+    audioText: "Die Tausender: eintausend, zweitausend, dreitausend, zehntausend, elftausend, einhunderttausend.",
+    category: "thousands",
+    badge: "Big Money Thousands 💰",
+    icon: "🏦 💵",
+    kenyanAnalogy: "Like a thousand-shilling note (tausend)! 2.000 = zweitausend. 10.000 = zehntausend. 100.000 = einhunderttausend!",
+    memoryTrick: "Number + tausend: 10.000 = zehn + tausend!"
+  },
+  {
+    id: "l15-millions-billions",
+    german: "Millionen & Milliarden: 1.000.000 & 1.000.000.000",
+    english: "Millions & Billions: eine Million (1M), zwei Millionen / eine Milliarde (1B), zwei Milliarden",
+    pronunciation: "EYE-neh mil-YOHN, TSVYE mil-YOH-nen / EYE-neh mil-YAHR-deh",
+    audioText: "Große Zahlen: eine Million, zwei Millionen. Eine Milliarde, zwei Milliarden.",
+    category: "millions",
+    badge: "Mega Wealth Nouns 💎",
+    icon: "👑 📈",
+    kenyanAnalogy: "National budget numbers! Notice: unlike hundred and thousand, Million and Milliarde are capitalized real nouns with feminine gender (eine Million, eine Milliarde)!",
+    memoryTrick: "Capital M! eine Million (1M) -> eine Milliarde (1B)!"
+  },
+  {
+    id: "l15-combination-simple",
+    german: "101, 110, 111, 121 (Kombinationen)",
+    english: "101 (hunderteins), 110 (hundertzehn), 111 (hundertelf), 121 (hunderteinundzwanzig)",
+    pronunciation: "HOON-dairt-eyns, HOON-dairt-tsayn, HOON-dairt-elf, HOON-dairt-eyn-oond-TSVAHN-tsikh",
+    audioText: "Kombinationen: einhunderteins, einhundertzehn, einhundertelf, einhunderteinundzwanzig.",
+    category: "combinations",
+    badge: "Lego Brick Numbers 🧱",
+    icon: "🧱 🧩",
+    kenyanAnalogy: "German builds big numbers like Lego! 121 = 100 (hundert) + 21 (einundzwanzig: 1-and-20 backwards rule) = hunderteinundzwanzig!",
+    memoryTrick: "100 + backwards two-digit number!"
+  },
+  {
+    id: "l15-six-three-four",
+    german: "634: sechshundertvierunddreißig",
+    english: "634 = 600 (sechshundert) + 34 (4-and-30: vierunddreißig)",
+    pronunciation: "ZEKHS-hoon-dairt-feer-oond-DRY-sikh",
+    audioText: "sechshundertvierunddreißig. 634.",
+    category: "combinations",
+    badge: "Slide 25 Master 🎯",
+    icon: "🎯 🔢",
+    kenyanAnalogy: "Slide 25 shows the arrows: First read the hundreds (600 = sechshundert), then hop backwards for the last two digits (4 and 30 = vierunddreißig)!",
+    memoryTrick: "600 (sechshundert) + 4 und 30 (vierunddreißig)!"
+  },
+  {
+    id: "l15-nine-eight-seven",
+    german: "987: neunhundertsiebenundachtzig",
+    english: "987 = 900 (neunhundert) + 87 (7-and-80: siebenundachtzig)",
+    pronunciation: "NOYN-hoon-dairt-zee-ben-oond-AHKH-tsikh",
+    audioText: "neunhundertsiebenundachtzig. 987.",
+    category: "combinations",
+    badge: "Countdown Trio 9-8-7 🚀",
+    icon: "🚀 ✨",
+    kenyanAnalogy: "Slide 26: 900 comes first (neunhundert), then 7 jumps before 80 (siebenundachtzig)!",
+    memoryTrick: "900 (neunhundert) + 7 und 80 (siebenundachtzig)!"
+  },
+  {
+    id: "l15-four-digit-thousands",
+    german: "2.458 & 3.945: zweitausendvierhundertachtundfünfzig",
+    english: "2458 & 3945: Building four-digit numbers with thousands, hundreds, and backwards tens",
+    pronunciation: "TSVYE-tow-zent-feer-hoon-dairt-ahkht-oond-FOONF-tsikh",
+    audioText: "zweitausendvierhundertachtundfünfzig. 2458. dreitausendneunhundertfünfundvierzig. 3945.",
+    category: "combinations",
+    badge: "Giant Compound Word 🚂",
+    icon: "🚂 📜",
+    kenyanAnalogy: "Germans write all digits as one giant single word without spaces! 2000 (zweitausend) + 400 (vierhundert) + 58 (achtundfünfzig)!",
+    memoryTrick: "Thousands -> Hundreds -> Ones-and-Tens!"
+  },
+  {
+    id: "l15-thirteen-thousand",
+    german: "13.236: dreizehntausendzweihundertsechsunddreißig",
+    english: "13,236: 13.000 (dreizehntausend) + 200 (zweihundert) + 36 (sechsunddreißig)",
+    pronunciation: "DRY-tsayn-tow-zent-TSVYE-hoon-dairt-zekhs-oond-DRY-sikh",
+    audioText: "dreizehntausendzweihundertsechsunddreißig. 13236.",
+    category: "combinations",
+    badge: "Five-Digit Champion 🏆",
+    icon: "🏆 🏅",
+    kenyanAnalogy: "Slide 31: 13 thousand (dreizehntausend) + 2 hundred (zweihundert) + 6-and-30 (sechsunddreißig). Easy as building blocks!",
+    memoryTrick: "13.000 + 200 + 36!"
+  },
+  {
+    id: "l15-jahreszahlen-rule",
+    german: "Jahreszahlen vor 2000: 1975 = neunzehnhundertfünfundsiebzig",
+    english: "Years before 2000: Read as 'Hundreds' (1975 = 19 hundred 75: neunzehnhundertfünfundsiebzig)",
+    pronunciation: "NOYN-tsayn-hoon-dairt-foonf-oond-ZEEB-tsikh",
+    audioText: "Jahreszahlen vor zweitausend. 1975: neunzehnhundertfünfundsiebzig. 1900 plus 75.",
+    category: "years",
+    badge: "The 19-Hundred Secret 🕰️",
+    icon: "🕰️ 📅",
+    kenyanAnalogy: "In English we say 'nineteen seventy-five'. In German, you say 'nineteen-hundred seventy-five' (neunzehnhundertfünfundsiebzig)! Never say eintausendneunhundert for calendar years!",
+    memoryTrick: "Years before 2000 = Century + Hundert + Year (19-hundert-75)!"
+  },
+  {
+    id: "l15-jahreszahlen-post2000",
+    german: "Jahreszahlen ab 2000: 2017 = zweitausendsiebzehn",
+    english: "Years from 2000 onwards: Read as regular thousands (2017 = zweitausendsiebzehn)",
+    pronunciation: "TSVYE-tow-zent-ZEEB-tsayn",
+    audioText: "Jahreszahlen ab zweitausend. 2017: zweitausendsiebzehn.",
+    category: "years",
+    badge: "21st Century Years 🚀",
+    icon: "🗓️ 🌟",
+    kenyanAnalogy: "From the year 2000 onwards, the rule simplifies into standard counting: 2000 (zweitausend) + 17 (siebzehn) = zweitausendsiebzehn!",
+    memoryTrick: "Years 2000+ = zweitausend + number (2017 = zweitausendsiebzehn)!"
+  },
+  {
+    id: "l15-wann-bist-du-geboren",
+    german: "Wann bist du geboren? -> Ich bin (im Jahr) 1990 geboren.",
+    english: "When were you born? -> I was born in (the year) 1990 (neunzehnhundertneunzig).",
+    pronunciation: "vahn bist doo geh-BOH-ren? Ikh bin im yahr NOYN-tsayn-hoon-dairt-NOYN-tsikh geh-BOH-ren.",
+    audioText: "Wann bist du geboren? Ich bin im Jahr neunzehnhundertneunzig geboren.",
+    category: "birthday-dialogue",
+    badge: "Birth Year Master 🎂",
+    icon: "🎂 🎈",
+    kenyanAnalogy: "When filling out visa forms, job applications, or sharing your birthday with friends: 'Ich bin 1990 geboren'!",
+    memoryTrick: "Wann bist du geboren? -> Ich bin [year] geboren!"
+  },
+  {
+    id: "l15-summary-chalkboard",
+    german: "Zusammenfassung: Zahlen (Teil 3) - At a glance",
+    english: "Summary: 100 to Billions, Big Combinations, and Calendar Year rules",
+    pronunciation: "tsoo-ZAM-men-fas-soong: TSAH-len tyl dry",
+    audioText: "Zusammenfassung: Zahlen Teil drei. Hunderter, Tausender, Millionen, Milliarden. Kombinationen und Jahreszahlen.",
+    category: "summary",
+    badge: "Master Chalkboard 📋",
+    icon: "🎓 🌟",
+    kenyanAnalogy: "Everything from 100 to 1 Billion! 1. Hundreds & Thousands. 2. Backward tens at the end. 3. 1900s years use 'hundert'. 4. 2000s years use 'zweitausend'!",
+    memoryTrick: "Hundreds + Backwards tens! 1900s = 19-hundert!"
+  }
+];
+
+export const LESSON_15_SCENARIOS = [
+  {
+    scenario: "How do you read the number 634 in German?",
+    hint: "Check slide 25: 600 (sechshundert) + 34 (4 and 30 backwards)!",
+    options: [
+      { text: "sechshundertvierunddreißig", correct: true, explain: "Spot on! Slide 25 shows: 600 (sechshundert) + 4-and-30 (vierunddreißig) = sechshundertvierunddreißig!" },
+      { text: "vierunddreißigsechshundert", correct: false, explain: "Hundreds come first, then the two-digit ending!" },
+      { text: "sechs drei vier", correct: false, explain: "That is just reading individual digits, not the full number!" }
+    ]
+  },
+  {
+    scenario: "How is the year 1975 pronounced in German?",
+    hint: "Check slide 33: Years before 2000 are counted in 'hundreds'!",
+    options: [
+      { text: "neunzehnhundertfünfundsiebzig (19 hundred 75)", correct: true, explain: "Brilliant! Slide 33 explains: historical years before 2000 are split as 1900 (neunzehnhundert) + 75 (fünfundsiebzig)!" },
+      { text: "eintausendneunhundertfünfundsiebzig", correct: false, explain: "While mathematically true, calendar years in German are always read in 'hundreds' (neunzehnhundert)!" },
+      { text: "neunzehn sieben fünf", correct: false, explain: "You must say the full German number words!" }
+    ]
+  },
+  {
+    scenario: "How do you say the year 2017 in German?",
+    hint: "Check slide 34: Years 2000 and onward use regular 'tausend'!",
+    options: [
+      { text: "zweitausendsiebzehn", correct: true, explain: "Outstanding! Slide 34 shows: for years 2000 and beyond, you simply say 'zweitausend' + the number: zweitausendsiebzehn!" },
+      { text: "zwanzighundertsiebzehn", correct: false, explain: "'zwanzighundert' is not used for 2000+ years." },
+      { text: "zwei null eins sieben", correct: false, explain: "That is reading digits, not the year!" }
+    ]
+  },
+  {
+    scenario: "Someone asks you: 'Wann bist du geboren?' What are they asking?",
+    hint: "Check slide 35!",
+    options: [
+      { text: "When were you born?", correct: true, explain: "Perfect! Slide 35 shows: 'Wann bist du geboren?' means 'When were you born?'!" },
+      { text: "Where do you live?", correct: false, explain: "Where do you live is 'Wo wohnst du?'." },
+      { text: "What is your telephone number?", correct: false, explain: "Phone number is 'Wie ist deine Handynummer?'." }
+    ]
+  },
+  {
+    scenario: "Look at the numbers '1.000.000' and '1.000.000.000' on slides 15 & 18. What are they called?",
+    hint: "Million vs Milliarde!",
+    options: [
+      { text: "eine Million (1M) and eine Milliarde (1 Billion)", correct: true, explain: "Superb! In German, 1.000.000 is 'eine Million' and 1.000.000.000 is 'eine Milliarde' (both feminine capitalized nouns)!" },
+      { text: "ein Million and ein Milliarde", correct: false, explain: "They are feminine nouns, so they take 'eine', not 'ein'!" },
+      { text: "eintausend and zweitausend", correct: false, explain: "Those are thousands, not millions or billions!" }
+    ]
+  },
+  {
+    scenario: "How do you construct the number 2.458 in German?",
+    hint: "Check slide 29: 2000 + 400 + 58!",
+    options: [
+      { text: "zweitausendvierhundertachtundfünfzig", correct: true, explain: "Masterful! Slide 29 breaks it down: 2000 (zweitausend) + 400 (vierhundert) + 8-and-50 (achtundfünfzig)!" },
+      { text: "zweitausendachtundfünfzigvierhundert", correct: false, explain: "Hundreds must come before the tens and ones!" },
+      { text: "zwei vier fünf acht", correct: false, explain: "That is just reading digit by digit." }
+    ]
+  }
+];
+
+
 
 
 
