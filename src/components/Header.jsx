@@ -24,6 +24,7 @@ export default function Header({
     if (currentLesson === 10) msg = "Personalpronomen: ich, du, er, sie, es, wir, ihr, Sie! Das ist Michael, er wohnt in London.";
     if (currentLesson === 11) msg = "haben und sein: Ich habe Zeit, du hast Zeit, er hat Zeit. Ich bin glücklich, du bist glücklich, wir sind glücklich!";
     if (currentLesson === 12) msg = "Was ist ein Verb? Ein Verb beschreibt eine Handlung. Verbstamm plus Endung. Regelmäßige und unregelmäßige Verben!";
+    if (currentLesson === 13) msg = "Regelmäßige Verben: ich wohne, du wohnst, er wohnt. Du reist, du tanzt. Du arbeitest, er wartet!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -126,6 +127,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson13NavItems = [
+    { id: 'cards', label: '📖 Lesson 13 Cards', sub: 'Regular Verbs & Rules' },
+    { id: 'regular', label: '🧩 Conjugation Studio', sub: '14 Slide Verbs & 2 Special Cases' },
+    { id: 'game13', label: '🎮 Conjugation Quiz', sub: 'Hissing & Cushion Rules Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -138,6 +147,7 @@ export default function Header({
   if (currentLesson === 10) navItems = lesson10NavItems;
   if (currentLesson === 11) navItems = lesson11NavItems;
   if (currentLesson === 12) navItems = lesson12NavItems;
+  if (currentLesson === 13) navItems = lesson13NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -360,6 +370,20 @@ export default function Header({
               }`}
             >
               🌳 12: Was ist ein Verb?
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(13);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 13
+                  ? 'bg-teal-700 text-white shadow-md scale-102 ring-2 ring-teal-400'
+                  : 'bg-white text-stone-700 hover:bg-teal-100 border border-teal-300'
+              }`}
+            >
+              🧩 13: Regelmäßige Verben
             </button>
           </div>
 

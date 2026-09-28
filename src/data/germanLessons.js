@@ -2925,6 +2925,199 @@ export const LESSON_12_SCENARIOS = [
   }
 ];
 
+export const LESSON_13_ITEMS = [
+  {
+    id: "l13-master-endings",
+    german: "Verbkonjugation im Präsens: -e, -st, -t, -en, -t, -en",
+    english: "Present Tense Endings: ich (-e), du (-st), er/sie/es (-t), wir (-en), ihr (-t), sie/Sie (-en)",
+    pronunciation: "eh, ess-tay, tay, eh-en, tay, eh-en",
+    audioText: "Verbkonjugation im Präsens. ich e, du s t, er t, wir e n, ihr t, sie e n.",
+    category: "endings-matrix",
+    badge: "The Golden Ending Code 🔑",
+    icon: "🧩 👔",
+    kenyanAnalogy: "Like matching shoes to the family members! When 'ich' steps out, it wears shoe '-e'. When 'du' steps out, it wears shoe '-st'. When 'er/sie/es' or 'ihr' steps out, it wears shoe '-t'!",
+    memoryTrick: "ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en!"
+  },
+  {
+    id: "l13-core-six-verbs",
+    german: "6 Kernverben: arbeiten, fragen, kommen, wohnen, hören, machen",
+    english: "6 Core Verbs: to work, to ask/question, to come, to live, to hear, to do/make",
+    pronunciation: "AHR-by-ten, FRAH-gen, KOM-men, VOH-nen, HEU-ren, MAH-khen",
+    audioText: "arbeiten, fragen, kommen, wohnen, hören, machen.",
+    category: "core-verbs",
+    badge: "Everyday Champions 🌟",
+    icon: "💼 ❓ ✈️ 🏡 🎧 🛠️",
+    kenyanAnalogy: "The 6 most spoken everyday workhorse verbs! Once you learn to dress these 6, you can speak hundreds of daily sentences with zero fear!",
+    memoryTrick: "All follow the exact same obedient Verbstamm pattern!"
+  },
+  {
+    id: "l13-wohnen-verb",
+    german: "wohnen (to live): ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie wohnen",
+    english: "to live: I live (wohne), you live (wohnst), he lives (wohnt), we live (wohnen), you all live (wohnt), they live (wohnen)",
+    pronunciation: "VOH-nen: VOH-neh, VOHNST, VOHNT, VOH-nen, VOHNT, VOH-nen",
+    audioText: "wohnen. ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie wohnen.",
+    category: "regular-conjugation",
+    badge: "Home Sweet Home 🏡",
+    icon: "🏠 📍",
+    kenyanAnalogy: "Describing where anyone stays or rents: 'Ich wohne in Nairobi' or 'Wo wohnst du?'",
+    memoryTrick: "Stem 'wohn' + standard endings: -e, -st, -t, -en, -t, -en!"
+  },
+  {
+    id: "l13-machen-verb",
+    german: "machen (to do/make): ich mache, du machst, er macht, wir machen, ihr macht, sie machen",
+    english: "to do / make: I do (mache), you do (machst), he does (macht), we do (machen), you all do (macht), they do (machen)",
+    pronunciation: "MAH-khen: MAH-kheh, MAHKHST, MAKHT, MAH-khen, MAKHT, MAH-khen",
+    audioText: "machen. ich mache, du machst, er macht, wir machen, ihr macht, sie machen.",
+    category: "regular-conjugation",
+    badge: "The Action King 🛠️",
+    icon: "🔨 ✨",
+    kenyanAnalogy: "Whenever you are busy doing anything: 'Was machst du?' (What are you doing?) -> 'Ich mache Hausaufgaben' (I am doing homework)!",
+    memoryTrick: "mach + e, st, t, en, t, en!"
+  },
+  {
+    id: "l13-spielen-studieren",
+    german: "spielen (to play) & studieren (to study)",
+    english: "to play (ich spiele, du spielst) & to study (ich studiere, du studierst)",
+    pronunciation: "SHPEE-len & shtoo-DEE-ren",
+    audioText: "spielen und studieren. Ich spiele Fußball. Ich studiere an der Universität.",
+    category: "regular-conjugation",
+    badge: "Fun & Campus ⚽ 🎓",
+    icon: "⚽ 📚",
+    kenyanAnalogy: "Playing football with buddies on the pitch (spielen) vs studying for a diploma at the college library (studieren)!",
+    memoryTrick: "Stem stays 100% frozen: 'spiel-' and 'studier-' never change!"
+  },
+  {
+    id: "l13-lernen-hoeren",
+    german: "lernen (to learn) & hören (to hear)",
+    english: "to learn (ich lerne, du lernst) & to hear (ich höre, du hörst)",
+    pronunciation: "LAIR-nen & HEU-ren",
+    audioText: "lernen und hören. Ich lerne Deutsch. Ich höre Musik.",
+    category: "regular-conjugation",
+    badge: "Brain & Ear 🧠 🎧",
+    icon: "💡 👂",
+    kenyanAnalogy: "Opening your ears to the radio (hören) and opening your mind to understand German step-by-step (lernen)!",
+    memoryTrick: "Notice Slide 10: wir lernen = Sie lernen = sie lernen (all identical)!"
+  },
+  {
+    id: "l13-fragen-sagen",
+    german: "fragen (to ask) & sagen (to say)",
+    english: "to ask (ich frage, du fragst) & to say (ich sage, du sagst)",
+    pronunciation: "FRAH-gen & ZAH-gen",
+    audioText: "fragen und sagen. Ich frage, du fragst. Ich sage, du sagst.",
+    category: "regular-conjugation",
+    badge: "Question & Answer ❓ 💬",
+    icon: "❓ 🗣️",
+    kenyanAnalogy: "Asking someone for directions on the road (fragen) and telling them what you think (sagen)!",
+    memoryTrick: "Stem 'frag-' and 'sag-' + standard endings!"
+  },
+  {
+    id: "l13-special-hissing-rule",
+    german: "Sonderfall 1: Verbstamm auf -s, -ß, -z (reisen, tanzen) -> du Endung -st wird zu -t!",
+    english: "Special Case 1: Stems ending in -s, -ß, -z -> for 'du', -st becomes simply -t! (reisen -> du reist, tanzen -> du tanzt)",
+    pronunciation: "ZON-der-fahl: ESS, ESS-TSET, TSET -> doo reyst, doo tahntst",
+    audioText: "Sonderfall eins: Verbstamm auf s, scharfes s, oder z. Zum Beispiel reisen und tanzen. Du reist, du tanzt. Das s entfällt.",
+    category: "special-case-hiss",
+    badge: "No Double Snake Hiss 🐍 🚫",
+    icon: "🐍 ✈️ 💃",
+    kenyanAnalogy: "You can't hiss twice! If a word already ends with an 's' sound like 'reis-' or 'tanz-', adding another 's' would sound like an angry cobra ('du reis-s-st'). So Germans simply drop the extra 's': du reist, du tanzt!",
+    memoryTrick: "Stem already has a snake sound? Only add '-t' for du: du reist, du tanzt!"
+  },
+  {
+    id: "l13-special-cushion-rule",
+    german: "Sonderfall 2: Verbstamm auf -d oder -t (arbeiten, warten, antworten) -> Puffer-e! (-est, -et)",
+    english: "Special Case 2: Stems ending in -d or -t -> insert a breathing cushion '-e-'! (du arbeitest, er arbeitet, ihr wartet)",
+    pronunciation: "ZON-der-fahl: DAY, TAY -> doo ahr-by-test, air ahr-by-tet",
+    audioText: "Sonderfall zwei: Verbstamm auf d oder t. Zum Beispiel arbeiten, warten, antworten. Du arbeitest, er arbeitet, ihr wartet.",
+    category: "special-case-cushion",
+    badge: "The Breathing Cushion 🛋️ 💨",
+    icon: "🛋️ ⏱️ ✍️",
+    kenyanAnalogy: "Try saying 'arbeitst' or 'arbeitt' fast without gasping—your tongue gets stuck! To prevent suffocating, Germans slip in a friendly pillow/cushion letter '-e-': du arbeitest, er arbeitet, du wartest, er wartet!",
+    memoryTrick: "Stem ends in D or T? Add a cushion -e-: -est and -et!"
+  },
+  {
+    id: "l13-telefonieren",
+    german: "telefonieren (to telephone): ich telefoniere, du telefonierst",
+    english: "to telephone: I call (telefoniere), you call (telefonierst), he calls (telefoniert)",
+    pronunciation: "teh-leh-foh-NEE-ren",
+    audioText: "telefonieren. ich telefoniere, du telefonierst, er telefoniert.",
+    category: "regular-conjugation",
+    badge: "Making Calls 📱",
+    icon: "📞 💬",
+    kenyanAnalogy: "Dialing someone up on your mobile: 'Ich telefoniere mit meiner Mutter' (I am telephoning with my mother)!",
+    memoryTrick: "Regular -ieren verb: stem 'telefonier-' + standard endings!"
+  },
+  {
+    id: "l13-summary-chalkboard",
+    german: "Zusammenfassung: Regelmäßige Verben & die 2 goldenen Sonderfälle",
+    english: "Summary: Regular Verbs & The 2 Golden Exceptions (Hissing -s/-ß/-z drop, Cushion -e- for -d/-t)",
+    pronunciation: "tsoo-ZAM-men-fas-soong: ray-gel-meh-sih-geh VAIR-ben",
+    audioText: "Zusammenfassung: Regelmäßige Verben im Präsens. Endungen: e, st, t, en, t, en. Sonderfall eins: kein Doppel-S bei reisen und tanzen. Sonderfall zwei: Puffer-E bei arbeiten und warten.",
+    category: "summary",
+    badge: "Master Chalkboard 📋",
+    icon: "🎓 🌟",
+    kenyanAnalogy: "Everything in one glance! 1. The standard ending uniform (-e, -st, -t, -en, -t, -en). 2. No double snake hiss (du reist, du tanzt). 3. Pillow cushion -e- for heavy tongues (du arbeitest, er wartet)!",
+    memoryTrick: "Standard: -e, -st, -t, -en, -t, -en. Hiss: drop s. D/T: cushion -e-!"
+  }
+];
+
+export const LESSON_13_SCENARIOS = [
+  {
+    scenario: "What are the standard endings for regular verbs in present tense for 'ich', 'du', and 'er/sie/es'?",
+    hint: "Check slide 5: Singular column!",
+    options: [
+      { text: "ich: -e, du: -st, er/sie/es: -t", correct: true, explain: "Spot on! Slide 5 shows: ich + e, du + st, er/sie/es + t!" },
+      { text: "ich: -en, du: -en, er/sie/es: -en", correct: false, explain: "-en is for plural (wir, sie, Sie)." },
+      { text: "ich: -t, du: -e, er/sie/es: -st", correct: false, explain: "The endings are in the wrong order!" }
+    ]
+  },
+  {
+    scenario: "Look at the verb 'tanzen' (to dance). Why do we say 'du tanzt' instead of 'du tanzst'?",
+    hint: "Check slide 15: Special case for stems ending in -s, -ß, or -z!",
+    options: [
+      { text: "Because the stem ends in 'z' (hissing sound), so the extra 's' drops out to avoid a double hiss!", correct: true, explain: "Brilliant! Slide 15 explains: If Verbstamm ends in -s, -ß, or -z, '-st' becomes '-t' (du tanzt)!" },
+      { text: "Because Germans dislike dancing", correct: false, explain: "German culture loves dancing; this is purely a phonetic pronunciation rule!" },
+      { text: "Because 'tanzen' is an irregular verb", correct: false, explain: "'tanzen' is regular; it just drops the redundant 's'!" }
+    ]
+  },
+  {
+    scenario: "Look at the verb 'arbeiten' (to work). How do you say 'He works' in German?",
+    hint: "Check slide 18 & 19: Special case for stems ending in -t or -d!",
+    options: [
+      { text: "Er arbeitet (adds a cushion '-e-' before '-t')", correct: true, explain: "Outstanding! Slide 18 & 19 show: because 'arbeit-' ends in 't', a breathing cushion '-e-' is inserted: 'Er arbeitet'!" },
+      { text: "Er arbeitt (without any 'e')", correct: false, explain: "'arbeitt' is impossible to pronounce smoothly!" },
+      { text: "Er arbeite (only ending in -e)", correct: false, explain: "Ending '-e' is reserved for 'ich' (Ich arbeite)." }
+    ]
+  },
+  {
+    scenario: "How do you conjugate 'warten' (to wait) when talking to a friend: 'Are you waiting?'",
+    hint: "Check slide 20: 'du' form of 'warten'!",
+    options: [
+      { text: "Wartest du? (wart + est)", correct: true, explain: "Perfect! Slide 20 shows: 'du wartest' with the cushion '-e-' so the tongue doesn't stumble!" },
+      { text: "Wartst du?", correct: false, explain: "'Wartst' is too difficult to pronounce without the cushion '-e-'!" },
+      { text: "Warten du?", correct: false, explain: "'Warten' is the infinitive or plural form, not the 'du' form!" }
+    ]
+  },
+  {
+    scenario: "Look at slide 10 (lernen). Which three pronouns share the exact same verb form: 'lernen'?",
+    hint: "Look at the circles on slide 10 linking the identical forms!",
+    options: [
+      { text: "wir, Sie (formal), and sie (they) -> all say 'lernen'!", correct: true, explain: "Superb! Slide 10 circles 'wir lernen', 'Sie lernen', and 'sie lernen'—they are always 100% identical to the infinitive!" },
+      { text: "ich, du, and er", correct: false, explain: "They have different endings: lerne, lernst, lernt." },
+      { text: "ihr, wir, and du", correct: false, explain: "'ihr' is lernt, 'du' is lernst." }
+    ]
+  },
+  {
+    scenario: "How would you say in German: 'I travel and she answers'?",
+    hint: "reisen (ich form) + antworten (sie/she form with cushion -e-)!",
+    options: [
+      { text: "Ich reise und sie antwortet.", correct: true, explain: "Masterful! 'Ich reise' (regular -e) + 'sie antwortet' (stem ends in -t, adds cushion -e-)!" },
+      { text: "Ich reist und sie antwort.", correct: false, explain: "Both endings are mismatched!" },
+      { text: "Ich reisen und sie antworte.", correct: false, explain: "'reisen' is plural and 'antworte' is for ich." }
+    ]
+  }
+];
+
+
 
 
 
