@@ -179,20 +179,39 @@ export default function Header({
   if (currentLesson === 15) navItems = lesson15NavItems;
   if (currentLesson === 16) navItems = lesson16NavItems;
 
+  const ALL_LESSONS = [
+    { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
+    { num: 2, label: "💬 2: Phrases", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
+    { num: 3, label: "🔢 3: 0 - 20 & Handy", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
+    { num: 4, label: "🔄 4: 21 - 100", activeClass: "bg-purple-700 ring-purple-300", hoverBorder: "hover:bg-purple-100 border-purple-300" },
+    { num: 5, label: "🔤 5: Das Alphabet", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
+    { num: 6, label: "🤝 6: Sich Vorstellen", activeClass: "bg-sky-700 ring-sky-300", hoverBorder: "hover:bg-sky-100 border-sky-300" },
+    { num: 7, label: "💬 7: Kennenlernen", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 8, label: "🚂 8: Satzstruktur", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 9, label: "👗 9: Verb-Endungen", activeClass: "bg-emerald-600 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
+    { num: 10, label: "👥 10: Pronomen", activeClass: "bg-purple-700 ring-purple-300", hoverBorder: "hover:bg-purple-100 border-purple-300" },
+    { num: 11, label: "👑 11: haben & sein", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 12, label: "🌳 12: Was ist ein Verb?", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
+    { num: 13, label: "🧩 13: Regelmäßige Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 14, label: "⚡ 14: Unregelmäßige Verben", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
+    { num: 15, label: "💯 15: Zahlen (Teil 3)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 16, label: "🎨 16: Adjektive & Gegenteile", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
+  ];
+
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-3 sm:py-4">
+      <div className="max-w-6xl mx-auto px-4 py-2 sm:py-3">
         {/* Top bar with reassurance and audio settings */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-amber-200">
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-amber-200">
           <div className="flex items-center gap-2">
-            <span className="text-3xl animate-gentle-bounce">🇩🇪</span>
-            <span className="text-2xl font-bold text-amber-900 tracking-tight">
+            <span className="text-2xl sm:text-3xl animate-gentle-bounce">🇩🇪</span>
+            <span className="text-lg sm:text-2xl font-bold text-amber-900 tracking-tight">
               German Made Simple
             </span>
-            <span className="text-3xl animate-gentle-bounce">🇰🇪</span>
+            <span className="text-2xl sm:text-3xl animate-gentle-bounce">🇰🇪</span>
           </div>
 
-          {/* Calming reassurance badge */}
+          {/* Calming reassurance badge - hidden on phones to conserve screen */}
           <div className="hidden lg:flex items-center gap-1.5 bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold shadow-xs">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
             <span>Zero Jargon • Pure Layman Analogies • No Panic</span>
@@ -205,7 +224,7 @@ export default function Header({
                 setIsSlowMode(!isSlowMode);
                 playChime('click');
               }}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all shadow-xs cursor-pointer ${
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold transition-all shadow-xs cursor-pointer ${
                 isSlowMode
                   ? 'bg-amber-500 text-white ring-2 ring-amber-300'
                   : 'bg-white text-stone-700 border border-amber-300 hover:bg-amber-100'
@@ -213,12 +232,12 @@ export default function Header({
               title="Speak slower so you can hear each syllable clearly"
             >
               <span>🐢</span>
-              <span>{isSlowMode ? 'Slow Voice: ON' : 'Slow Voice (Off)'}</span>
+              <span>{isSlowMode ? 'Slow: ON' : 'Slow (Off)'}</span>
             </button>
 
             <button
               onClick={handleTestAudio}
-              className="flex items-center gap-1 bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-xs active:scale-95 transition-transform cursor-pointer"
+              className="flex items-center gap-1 bg-amber-600 hover:bg-amber-700 text-white px-2.5 py-1 rounded-full text-xs font-bold shadow-xs active:scale-95 transition-transform cursor-pointer"
               title="Test pronunciation audio"
             >
               <Volume2 className="w-3.5 h-3.5" />
@@ -227,244 +246,41 @@ export default function Header({
           </div>
         </div>
 
-        {/* Lesson Switcher Buttons (Lesson 1, 2, 3, 4, 5) */}
-        <div className="py-2.5 flex flex-wrap items-center justify-between gap-2 border-b border-amber-200/70">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-black text-amber-900 uppercase tracking-wide">
-              Lesson:
+        {/* Lesson Switcher Row - Single horizontal thumb swipe on phones, wrapping row on laptops */}
+        <div className="py-2 flex items-center justify-between gap-2 border-b border-amber-200/70 overflow-hidden">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full scrollbar-none flex-nowrap lg:flex-wrap">
+            <span className="text-xs font-black text-amber-900 uppercase tracking-wide flex-shrink-0 mr-1 flex items-center gap-1">
+              <span>📚</span>
+              <span>Lesson:</span>
             </span>
-            <button
-              onClick={() => {
-                setCurrentLesson(1);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 1
-                  ? 'bg-amber-600 text-white shadow-md scale-102 ring-2 ring-amber-300'
-                  : 'bg-white text-stone-700 hover:bg-amber-200/60 border border-amber-300'
-              }`}
-            >
-              👋 1: Greetings
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(2);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 2
-                  ? 'bg-emerald-700 text-white shadow-md scale-102 ring-2 ring-emerald-300'
-                  : 'bg-white text-stone-700 hover:bg-emerald-100 border border-emerald-300'
-              }`}
-            >
-              💬 2: Phrases
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(3);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 3
-                  ? 'bg-indigo-700 text-white shadow-md scale-102 ring-2 ring-indigo-300'
-                  : 'bg-white text-stone-700 hover:bg-indigo-100 border border-indigo-300'
-              }`}
-            >
-              🔢 3: 0 - 20 & Handy
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(4);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 4
-                  ? 'bg-purple-700 text-white shadow-md scale-102 ring-2 ring-purple-300'
-                  : 'bg-white text-stone-700 hover:bg-purple-100 border border-purple-300'
-              }`}
-            >
-              🔄 4: 21 - 100
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(5);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 5
-                  ? 'bg-rose-700 text-white shadow-md scale-102 ring-2 ring-rose-300'
-                  : 'bg-white text-stone-700 hover:bg-rose-100 border border-rose-300'
-              }`}
-            >
-              🔤 5: Das Alphabet
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(6);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 6
-                  ? 'bg-sky-700 text-white shadow-md scale-102 ring-2 ring-sky-300'
-                  : 'bg-white text-stone-700 hover:bg-sky-100 border border-sky-300'
-              }`}
-            >
-              🤝 6: Sich Vorstellen
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(7);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 7
-                  ? 'bg-teal-700 text-white shadow-md scale-102 ring-2 ring-teal-300'
-                  : 'bg-white text-stone-700 hover:bg-teal-100 border border-teal-300'
-              }`}
-            >
-              💬 7: Kennenlernen
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(8);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 8
-                  ? 'bg-amber-600 text-white shadow-md scale-102 ring-2 ring-amber-300'
-                  : 'bg-white text-stone-700 hover:bg-amber-100 border border-amber-300'
-              }`}
-            >
-              🚂 8: Satzstruktur
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(9);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 9
-                  ? 'bg-emerald-600 text-white shadow-md scale-102 ring-2 ring-emerald-300'
-                  : 'bg-white text-stone-700 hover:bg-emerald-100 border border-emerald-300'
-              }`}
-            >
-              👗 9: Verb-Endungen
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(10);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 10
-                  ? 'bg-purple-700 text-white shadow-md scale-102 ring-2 ring-purple-300'
-                  : 'bg-white text-stone-700 hover:bg-purple-100 border border-purple-300'
-              }`}
-            >
-              👥 10: Pronomen
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(11);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 11
-                  ? 'bg-amber-700 text-white shadow-md scale-102 ring-2 ring-amber-400'
-                  : 'bg-white text-stone-700 hover:bg-amber-100 border border-amber-300'
-              }`}
-            >
-              👑 11: haben & sein
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(12);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 12
-                  ? 'bg-emerald-700 text-white shadow-md scale-102 ring-2 ring-emerald-400'
-                  : 'bg-white text-stone-700 hover:bg-emerald-100 border border-emerald-300'
-              }`}
-            >
-              🌳 12: Was ist ein Verb?
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(13);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 13
-                  ? 'bg-teal-700 text-white shadow-md scale-102 ring-2 ring-teal-400'
-                  : 'bg-white text-stone-700 hover:bg-teal-100 border border-teal-300'
-              }`}
-            >
-              🧩 13: Regelmäßige Verben
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(14);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 14
-                  ? 'bg-purple-700 text-white shadow-md scale-102 ring-2 ring-purple-400'
-                  : 'bg-white text-stone-700 hover:bg-purple-100 border border-purple-300'
-              }`}
-            >
-              ⚡ 14: Unregelmäßige Verben
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(15);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 15
-                  ? 'bg-amber-700 text-white shadow-md scale-102 ring-2 ring-amber-400'
-                  : 'bg-white text-stone-700 hover:bg-amber-100 border border-amber-300'
-              }`}
-            >
-              💯 15: Zahlen (Teil 3)
-            </button>
-            <button
-              onClick={() => {
-                setCurrentLesson(16);
-                setActiveTab('cards');
-                playChime('click');
-              }}
-              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                currentLesson === 16
-                  ? 'bg-purple-700 text-white shadow-md scale-102 ring-2 ring-purple-400'
-                  : 'bg-white text-stone-700 hover:bg-purple-100 border border-purple-300'
-              }`}
-            >
-              🎨 16: Adjektive & Gegenteile
-            </button>
+            {ALL_LESSONS.map((l) => {
+              const isCurrent = currentLesson === l.num;
+              return (
+                <button
+                  key={l.num}
+                  onClick={() => {
+                    setCurrentLesson(l.num);
+                    setActiveTab('cards');
+                    playChime('click');
+                  }}
+                  className={`flex-shrink-0 px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer whitespace-nowrap ${
+                    isCurrent
+                      ? `${l.activeClass} text-white shadow-md scale-102 ring-2`
+                      : `bg-white text-stone-700 border ${l.hoverBorder}`
+                  }`}
+                >
+                  {l.label}
+                </button>
+              );
+            })}
           </div>
 
-          <span className="text-[11px] text-stone-500 italic hidden sm:inline">
-            💡 Click any speaker icon to hear crystal clear native pronunciation
+          <span className="text-[11px] text-stone-500 italic hidden xl:inline flex-shrink-0">
+            💡 Tap speaker icon for audio
           </span>
         </div>
 
-        {/* Navigation Tabs for Active Lesson */}
+        {/* Navigation Tabs for Active Lesson - Smooth horizontal swipe */}
         <nav className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pt-2 pb-1 scrollbar-none">
           {navItems.map((item) => {
             const isActive = activeTab === item.id;
@@ -475,7 +291,7 @@ export default function Header({
                   setActiveTab(item.id);
                   playChime('click');
                 }}
-                className={`flex-shrink-0 px-3 py-2 rounded-2xl text-xs sm:text-sm font-bold transition-all duration-200 text-left cursor-pointer ${
+                className={`flex-shrink-0 px-3 py-1.5 sm:py-2 rounded-2xl text-xs sm:text-sm font-bold transition-all duration-200 text-left cursor-pointer whitespace-nowrap ${
                   isActive
                     ? 'bg-stone-900 text-amber-300 shadow-md scale-102 ring-2 ring-amber-400'
                     : 'bg-white/80 text-stone-700 hover:bg-amber-200/60 border border-amber-200'
