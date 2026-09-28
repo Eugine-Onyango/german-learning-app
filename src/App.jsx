@@ -36,6 +36,8 @@ import Lesson14IrregularVerbsStudio from './components/Lesson14IrregularVerbsStu
 import Lesson14Game from './components/Lesson14Game';
 import Lesson15NumbersPart3Studio from './components/Lesson15NumbersPart3Studio';
 import Lesson15Game from './components/Lesson15Game';
+import Lesson16AdjectivesStudio from './components/Lesson16AdjectivesStudio';
+import Lesson16Game from './components/Lesson16Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -51,11 +53,12 @@ import {
   LESSON_12_ITEMS,
   LESSON_13_ITEMS,
   LESSON_14_ITEMS,
-  LESSON_15_ITEMS
+  LESSON_15_ITEMS,
+  LESSON_16_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(15); // Default to Lesson 15 as requested, easy switch to 1-14
+  const [currentLesson, setCurrentLesson] = useState(16); // Default to Lesson 16 as requested, easy switch to 1-15
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -74,6 +77,7 @@ export default function App() {
   if (currentLesson === 13) activeItems = LESSON_13_ITEMS;
   if (currentLesson === 14) activeItems = LESSON_14_ITEMS;
   if (currentLesson === 15) activeItems = LESSON_15_ITEMS;
+  if (currentLesson === 16) activeItems = LESSON_16_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -90,7 +94,8 @@ export default function App() {
     if (currentLesson === 12) return "Lesson 12: Was ist ein Verb? (Verb Structure & Types) - Stem, Ending & Regular vs. Irregular";
     if (currentLesson === 13) return "Lesson 13: Regelmäßige Verben (Regular Verbs & The 2 Golden Exceptions)";
     if (currentLesson === 14) return "Lesson 14: Unregelmäßige Verben (Irregular Verbs with Vowel Change & The Rebel 'wissen')";
-    return "Lesson 15: Zahlen Teil 3 (Big Numbers 100 to 1 Billion, Combinations & Historical Years)";
+    if (currentLesson === 15) return "Lesson 15: Zahlen Teil 3 (Big Numbers 100 to 1 Billion, Combinations & Historical Years)";
+    return "Lesson 16: Adjektive & Gegenteile (Adjectives, Opposites & The 'aber' Connector)";
   };
 
   const getLessonDesc = () => {
@@ -136,7 +141,10 @@ export default function App() {
     if (currentLesson === 14) {
       return "Meet the superhero irregular verbs! Master the golden rule: the vowel shifts ONLY for 'du' and 'er/sie/es'. Explore all 5 vowel transformation patterns (e->i, e->ie, au->äu, a->ä, i->ei) across 13 slide verbs, and discover the famous twin rebel 'wissen'!";
     }
-    return "Count from 100 all the way to 1 Billion (eine Milliarde)! Build complex compound numbers like Lego bricks (634 = sechshundertvierunddreißig), and discover the historical year rule (1975 = neunzehnhundertfünfundsiebzig) vs 2000+ years (2017 = zweitausendsiebzehn)!";
+    if (currentLesson === 15) {
+      return "Count from 100 all the way to 1 Billion (eine Milliarde)! Build complex compound numbers like Lego bricks (634 = sechshundertvierunddreißig), and discover the historical year rule (1975 = neunzehnhundertfünfundsiebzig) vs 2000+ years (2017 = zweitausendsiebzehn)!";
+    }
+    return "Master German adjectives and opposite pairs (das Gegenteil / die Gegenteile)! Explore all 16 opposite pairs from the lesson, learn how to bridge contrasting sentences using 'aber' (but), and master the special double-life of 'alt': 'alt vs. neu' for objects, and 'alt vs. jung' for people!";
   };
 
   return (
@@ -308,6 +316,15 @@ export default function App() {
 
         {currentLesson === 15 && activeTab === 'game15' && (
           <Lesson15Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 16 Specific Modules */}
+        {currentLesson === 16 && activeTab === 'opposites' && (
+          <Lesson16AdjectivesStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 16 && activeTab === 'game16' && (
+          <Lesson16Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

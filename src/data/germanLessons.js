@@ -3513,6 +3513,283 @@ export const LESSON_15_SCENARIOS = [
   }
 ];
 
+export const LESSON_16_ITEMS = [
+  {
+    id: "l16-concept",
+    german: "das Adjektiv (die Adjektive) & das Gegenteil (die Gegenteile)",
+    english: "Adjectives (Descriptive Words) & Opposites (Gegenteile) with 'aber' (but)",
+    pronunciation: "dahs aht-yek-TEEF / dahs GAY-gen-tyl",
+    audioText: "Das Adjektiv, die Adjektive. Das Gegenteil, die Gegenteile. Ein Elefant ist groß, aber eine Katze ist klein.",
+    category: "concept",
+    badge: "The Flavor Words 🎨",
+    icon: "🎨 ⚖️",
+    kenyanAnalogy: "Like colors on a canvas or spices in food! Adjectives describe how big, fast, hot, or happy things are. When you contrast them, you use the magic connector 'aber' (but)!",
+    memoryTrick: "Adjektiv = describing quality. Gegenteil = opposite side of the coin!"
+  },
+  {
+    id: "l16-gross-klein",
+    german: "groß (big) vs. klein (small)",
+    english: "Ein Elefant ist groß, aber eine Katze ist klein. (An elephant is big, but a cat is small.)",
+    pronunciation: "grohs (big) / klyn (small)",
+    audioText: "groß und klein. Ein Elefant ist groß, aber eine Katze ist klein.",
+    category: "size",
+    badge: "Elephant vs Cat 🐘 🐱",
+    icon: "🐘 🐱",
+    kenyanAnalogy: "A huge African elephant towering in the park (groß) vs a tiny playful kitten purring in your lap (klein)!",
+    memoryTrick: "groß = Gross/grand/giant. klein = Tiny clean kitten!"
+  },
+  {
+    id: "l16-schnell-langsam",
+    german: "schnell (fast) vs. langsam (slow)",
+    english: "Ein Zug ist schnell, aber ein Fahrrad ist langsam. (A train is fast, but a bicycle is slow.)",
+    pronunciation: "shnel (fast) / LAHNG-zahm (slow)",
+    audioText: "schnell und langsam. Ein Zug ist schnell, aber ein Fahrrad ist langsam.",
+    category: "speed",
+    badge: "Speed Train vs Bike 🚄 🚲",
+    icon: "🚄 🚲",
+    kenyanAnalogy: "The express SGR train zooming down the tracks (schnell) vs pedaling an old bicycle uphill (langsam)!",
+    memoryTrick: "schnell = Swift like shell. langsam = Long and slow!"
+  },
+  {
+    id: "l16-dunkel-hell",
+    german: "dunkel (dark) vs. hell (light/bright)",
+    english: "Ein Espresso ist dunkel, aber eine Latte ist hell. (An espresso is dark, but a latte is light.)",
+    pronunciation: "DOON-kel (dark) / hel (light)",
+    audioText: "dunkel und hell. Ein Espresso ist dunkel, aber eine Latte ist hell.",
+    category: "light-color",
+    badge: "Espresso vs Latte ☕ 🥛",
+    icon: "☕ 🥛",
+    kenyanAnalogy: "Deep black brewed coffee in a tiny cup (dunkel) vs a tall glass of milky latte shining creamy white (hell)!",
+    memoryTrick: "dunkel = Dark dusk. hell = Bright like daylight!"
+  },
+  {
+    id: "l16-gluecklich-traurig",
+    german: "glücklich (happy) vs. traurig (sad)",
+    english: "Paul ist glücklich, aber Robert ist traurig. (Paul is happy, but Robert is sad.)",
+    pronunciation: "GLOOK-likh (happy) / TROW-rikh (sad)",
+    audioText: "glücklich und traurig. Paul ist glücklich, aber Robert ist traurig.",
+    category: "emotions",
+    badge: "Smile vs Frown 😊 😢",
+    icon: "😊 😢",
+    kenyanAnalogy: "Winning a celebratory prize with big smiles (glücklich) vs hearing disappointing news (traurig)!",
+    memoryTrick: "glücklich = Lucky and happy! traurig = Tearful sad."
+  },
+  {
+    id: "l16-lang-kurz",
+    german: "lang (long) vs. kurz (short)",
+    english: "Meine Haare sind lang, aber deine Haare sind kurz. (My hair is long, but your hair is short.)",
+    pronunciation: "lahng (long) / koorts (short)",
+    audioText: "lang und kurz. Meine Haare sind lang, aber deine Haare sind kurz.",
+    category: "length",
+    badge: "Long vs Short Hair 💇‍♀️ ✂️",
+    icon: "📏 ✂️",
+    kenyanAnalogy: "Long braided flowing hair (lang) vs a fresh clean short buzz cut (kurz)!",
+    memoryTrick: "lang = Long! kurz = Curt/curtly cut short!"
+  },
+  {
+    id: "l16-warm-kuehl",
+    german: "warm (warm) vs. kühl (cool)",
+    english: "Im Sommer ist es warm, aber im Winter ist es kühl. (In summer it's warm, but in winter it's cool.)",
+    pronunciation: "varm (warm) / kool (cool)",
+    audioText: "warm und kühl. Im Sommer ist es warm, aber im Winter ist es kühl.",
+    category: "temperature",
+    badge: "Summer vs Winter Breeze ☀️ ❄️",
+    icon: "☀️ 🌬️",
+    kenyanAnalogy: "Warm sunshine beating down in January (warm) vs an evening chilly breeze on the hills in July (kühl)!",
+    memoryTrick: "warm = Warm! kühl = Cool breeze!"
+  },
+  {
+    id: "l16-heiss-kalt",
+    german: "heiß (hot) vs. kalt (cold)",
+    english: "Kaffee trinkt man heiß, aber Limonade kalt. (One drinks coffee hot, but lemonade cold.)",
+    pronunciation: "hys (hot) / kahlt (cold)",
+    audioText: "heiß und kalt. Kaffee trinkt man heiß, aber Limonade kalt.",
+    category: "temperature",
+    badge: "Steaming Tea vs Iced Juice ☕ 🧊",
+    icon: "🔥 🧊",
+    kenyanAnalogy: "Steaming hot ginger tea fresh from the kettle (heiß) vs an iced cold lemonade on a sunny afternoon (kalt)!",
+    memoryTrick: "heiß = Hot hiss! kalt = Cold chill!"
+  },
+  {
+    id: "l16-richtig-falsch",
+    german: "richtig (correct) vs. falsch (wrong)",
+    english: "Meine Antwort ist richtig, aber deine Antwort ist falsch. (My answer is correct, but your answer is wrong.)",
+    pronunciation: "RIKH-tikh (correct) / fahlsh (wrong)",
+    audioText: "richtig und falsch. Meine Antwort ist richtig, aber deine Antwort ist falsch.",
+    category: "accuracy",
+    badge: "Checkmark vs Cross ✅ ❌",
+    icon: "✅ ❌",
+    kenyanAnalogy: "Getting full marks on the exam (richtig!) vs pressing the wrong key (falsch)!",
+    memoryTrick: "richtig = Right! falsch = False/wrong!"
+  },
+  {
+    id: "l16-dick-duenn",
+    german: "dick (fat/thick) vs. dünn (thin)",
+    english: "Philipp ist dick, aber Maria ist dünn. (Philipp is fat/chubby, but Maria is thin.)",
+    pronunciation: "dik (fat/thick) / doon (thin)",
+    audioText: "dick und dünn. Philipp ist dick, aber Maria ist dünn.",
+    category: "body",
+    badge: "Chubby vs Slender 🍔 🥗",
+    icon: "🧍‍♂️ 🧍‍♀️",
+    kenyanAnalogy: "A thick hefty textbook or chubby friend (dick) vs a thin slice of bread or slender runner (dünn)!",
+    memoryTrick: "dick = Thick! dünn = Thin!"
+  },
+  {
+    id: "l16-alt-neu",
+    german: "alt (old - objects) vs. neu (new)",
+    english: "Mein Auto ist alt, aber dein Auto ist neu. (My car is old, but your car is new.)",
+    pronunciation: "ahlt (old) / noy (new)",
+    audioText: "alt und neu. Mein Auto ist alt, aber dein Auto ist neu.",
+    category: "objects-age",
+    badge: "Vintage vs Shiny New 🚗 ✨",
+    icon: "🚙 🏎️",
+    kenyanAnalogy: "An old vintage Peugeot rattling down the dirt road (alt) vs a brand new zero-mileage sedan (neu)!",
+    memoryTrick: "For OBJECTS: alt is opposed by neu!"
+  },
+  {
+    id: "l16-arm-reich",
+    german: "arm (poor) vs. reich (rich)",
+    english: "Der Mann ist arm, aber die Frau ist reich. (The man is poor, but the woman is rich.)",
+    pronunciation: "ahrm (poor) / rykh (rich)",
+    audioText: "arm und reich. Der Mann ist arm, aber die Frau ist reich.",
+    category: "wealth",
+    badge: "Wanderer vs Royalty 🪙 👑",
+    icon: "🪙 🏰",
+    kenyanAnalogy: "A humble wanderer with empty pockets (arm) vs a wealthy queen in a palace (reich)!",
+    memoryTrick: "arm = Bare arms with no coins. reich = Rich kingdom!"
+  },
+  {
+    id: "l16-doof-intelligent",
+    german: "doof (dumb/silly) vs. intelligent (smart)",
+    english: "Ein Esel ist doof, aber ein Fuchs ist intelligent. (A donkey is dumb, but a fox is intelligent.)",
+    pronunciation: "dohf (dumb) / in-teli-GHENT (smart)",
+    audioText: "doof und intelligent. Ein Esel ist doof, aber ein Fuchs ist intelligent.",
+    category: "mind",
+    badge: "Donkey vs Clever Fox 🫏 🦊",
+    icon: "🫏 🦊",
+    kenyanAnalogy: "A stubborn donkey refusing to cross the bridge (doof) vs a cunning clever fox outsmarting everyone (intelligent)!",
+    memoryTrick: "doof = Goofy donkey. intelligent = Intelligent fox!"
+  },
+  {
+    id: "l16-gut-schlecht",
+    german: "gut (good) vs. schlecht (bad)",
+    english: "Lachen ist gut, aber Stress ist schlecht. (Laughter is good, but stress is bad.)",
+    pronunciation: "goot (good) / shlekht (bad)",
+    audioText: "gut und schlecht. Lachen ist gut, aber Stress ist schlecht.",
+    category: "quality",
+    badge: "Thumbs Up vs Down 👍 👎",
+    icon: "👍 👎",
+    kenyanAnalogy: "A hearty belly laugh with family (gut!) vs stressful traffic jams and headaches (schlecht)!",
+    memoryTrick: "gut = Good! schlecht = Bad/wretched!"
+  },
+  {
+    id: "l16-schwer-leicht",
+    german: "schwer (heavy/hard) vs. leicht (light/easy)",
+    english: "Mein Koffer ist schwer, aber meine Taschen sind leicht. (My suitcase is heavy, but my bags are light.)",
+    pronunciation: "shvair (heavy) / lykht (light)",
+    audioText: "schwer und leicht. Mein Koffer ist schwer, aber meine Taschen sind leicht.",
+    category: "weight",
+    badge: "Heavy Luggage vs Light Bag 🧳 🛍️",
+    icon: "🏋️ 🪶",
+    kenyanAnalogy: "Dragging a 30kg metal suitcase through the airport (schwer) vs carrying a light cotton tote bag (leicht)!",
+    memoryTrick: "schwer = Severe & heavy. leicht = Light like a feather!"
+  },
+  {
+    id: "l16-alt-jung",
+    german: "alt (old - people) vs. jung (young)",
+    english: "Meine Großmutter ist alt, aber meine Mutter ist jung. (My grandmother is old, but my mother is young.)",
+    pronunciation: "ahlt (old) / yoong (young)",
+    audioText: "alt und jung. Meine Großmutter ist alt, aber meine Mutter ist jung.",
+    category: "people-age",
+    badge: "Grandmother vs Daughter 👵 👧",
+    icon: "👵 👧",
+    kenyanAnalogy: "A wise gray-haired granny telling village stories (alt) vs her energetic young daughter running in the garden (jung)!",
+    memoryTrick: "For LIVING BEINGS: alt is opposed by jung!"
+  },
+  {
+    id: "l16-teuer-billig",
+    german: "teuer (expensive) vs. billig (cheap)",
+    english: "Ein Sportwagen ist teuer, aber ein Fahrrad ist billig. (A sports car is expensive, but a bicycle is cheap.)",
+    pronunciation: "TOY-er (expensive) / BIL-likh (cheap)",
+    audioText: "teuer und billig. Ein Sportwagen ist teuer, aber ein Fahrrad ist billig.",
+    category: "price",
+    badge: "Sports Car vs Bicycle 🏎️ 🚲",
+    icon: "💎 🏷️",
+    kenyanAnalogy: "A million-dollar luxury sports car (teuer) vs a secondhand neighborhood bicycle (billig)!",
+    memoryTrick: "teuer = High cost! billig = Low bill, bargain cheap!"
+  },
+  {
+    id: "l16-summary-chalkboard",
+    german: "Zusammenfassung: 16 Gegenteile (At a glance)",
+    english: "Summary: All 16 opposite pairs connected with 'aber' (but) on the chalkboard",
+    pronunciation: "tsoo-ZAM-men-fas-soong: zekh-tsayn GAY-gen-ty-leh",
+    audioText: "Zusammenfassung: Sechzehn Gegenteile. Groß und klein, schnell und langsam, dunkel und hell, glücklich und traurig, alt und neu, alt und jung, teuer und billig.",
+    category: "summary",
+    badge: "Master Chalkboard 📋",
+    icon: "🎓 🌟",
+    kenyanAnalogy: "The full opposite scale! Notice the special double-life of 'alt': alt/neu for objects, and alt/jung for people!",
+    memoryTrick: "16 pairs! Use 'aber' to connect contrasting halves!"
+  }
+];
+
+export const LESSON_16_SCENARIOS = [
+  {
+    scenario: "What is the opposite (Gegenteil) of 'groß' (big) in German?",
+    hint: "Check slide 3: Elephant vs Cat!",
+    options: [
+      { text: "klein (small)", correct: true, explain: "Spot on! Slide 3 shows: 'groß' (big) is the opposite of 'klein' (small)!" },
+      { text: "langsam (slow)", correct: false, explain: "'langsam' is the opposite of 'schnell'!" },
+      { text: "dunkel (dark)", correct: false, explain: "'dunkel' is the opposite of 'hell'!" }
+    ]
+  },
+  {
+    scenario: "Look at the word 'alt' (old). What are its two different opposites in German?",
+    hint: "Think of an old car vs an old grandmother!",
+    options: [
+      { text: "For objects: 'neu' (new). For living people/animals: 'jung' (young)!", correct: true, explain: "Brilliant! Slide 22 shows 'alt vs neu' for cars, and Slide 32 shows 'alt vs jung' for grandmothers!" },
+      { text: "There is only one opposite: 'billig'", correct: false, explain: "'billig' is the opposite of 'teuer' (cheap vs expensive)!" },
+      { text: "Both are 'klein'", correct: false, explain: "'klein' is small, not young or new!" }
+    ]
+  },
+  {
+    scenario: "Which German word is used throughout Lesson 16 to connect contrasting opposites (meaning 'but')?",
+    hint: "Look at: 'Ein Zug ist schnell, ______ ein Fahrrad ist langsam.'",
+    options: [
+      { text: "aber (but)", correct: true, explain: "Outstanding! Every slide uses 'aber' (but) to bridge opposites: '...schnell, aber... langsam'!" },
+      { text: "und (and)", correct: false, explain: "'und' means and, while 'aber' shows contrast!" },
+      { text: "oder (or)", correct: false, explain: "'oder' means or!" }
+    ]
+  },
+  {
+    scenario: "How would someone say: 'My answer is correct, but your answer is wrong'?",
+    hint: "Check slide 19: richtig vs falsch!",
+    options: [
+      { text: "Meine Antwort ist richtig, aber deine Antwort ist falsch.", correct: true, explain: "Perfect! Slide 19 shows: richtig = correct, falsch = wrong!" },
+      { text: "Meine Antwort ist gut, aber deine Antwort ist schön.", correct: false, explain: "That means 'good and beautiful', not correct and wrong!" },
+      { text: "Meine Antwort ist teuer, aber deine Antwort ist billig.", correct: false, explain: "That means expensive and cheap!" }
+    ]
+  },
+  {
+    scenario: "You are packing for a trip. Your heavy suitcase vs your light tote bag: which pair of adjectives fits?",
+    hint: "Check slide 30: schwer vs leicht!",
+    options: [
+      { text: "schwer (heavy) and leicht (light)", correct: true, explain: "Superb! Slide 31 shows: 'Mein Koffer ist schwer, aber meine Taschen sind leicht'!" },
+      { text: "dick and dünn", correct: false, explain: "'dick/dünn' refers to body thickness or fatness!" },
+      { text: "warm and kühl", correct: false, explain: "'warm/kühl' refers to temperature!" }
+    ]
+  },
+  {
+    scenario: "How do you say in German: 'A sports car is expensive, but a bicycle is cheap'?",
+    hint: "Check slide 34 & 35: teuer vs billig!",
+    options: [
+      { text: "Ein Sportwagen ist teuer, aber ein Fahrrad ist billig.", correct: true, explain: "Masterful! Slide 35 shows: 'teuer' = expensive, 'billig' = cheap!" },
+      { text: "Ein Sportwagen ist reich, aber ein Fahrrad ist arm.", correct: false, explain: "'reich/arm' is for rich/poor people, not prices!" },
+      { text: "Ein Sportwagen ist doof, aber ein Fahrrad ist intelligent.", correct: false, explain: "Cars and bicycles aren't dumb or intelligent!" }
+    ]
+  }
+];
+
+
 
 
 
