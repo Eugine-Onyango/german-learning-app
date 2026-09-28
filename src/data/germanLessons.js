@@ -3117,6 +3117,199 @@ export const LESSON_13_SCENARIOS = [
   }
 ];
 
+export const LESSON_14_ITEMS = [
+  {
+    id: "l14-core-concept",
+    german: "Unregelmäßige Verben: Vokalwechsel im Verbstamm",
+    english: "Irregular Verbs: Vowel Change in the Verb Stem (Vokalwechsel)",
+    pronunciation: "OON-ray-gel-meh-sih-geh VAIR-ben: foh-KAHL-vekh-sel",
+    audioText: "Unregelmäßige Verben. Vokalwechsel im Verbstamm.",
+    category: "irregular-intro",
+    badge: "The Superhero Flex 🦸‍♂️⚡",
+    icon: "⚡ 🔄",
+    kenyanAnalogy: "Like a superhero flexing their muscles! These verbs are so powerful they change their inner heartbeat (vowel) when speaking directly to 'du' or about 'er/sie/es'!",
+    memoryTrick: "Irregular = Vowel shapeshifter from inside!"
+  },
+  {
+    id: "l14-du-er-golden-rule",
+    german: "Die goldene Regel: Vokalwechsel NUR bei 'du' und 'er/sie/es'!",
+    english: "The Golden Rule: Vowel Change happens ONLY for 'du' and 'er/sie/es'!",
+    pronunciation: "dee GOL-deh-neh RAY-gel: NOOR by doo oond air, zee, ess",
+    audioText: "Die goldene Regel: Vokalwechsel nur bei du und er, sie, es. Ich und die Pluralformen bleiben unverändert.",
+    category: "irregular-rule",
+    badge: "The VIP Duo (du & er) 🎯",
+    icon: "👤 👥",
+    kenyanAnalogy: "Only the 2 front passenger seats get the turbo button! 'ich' and all plural people (wir, ihr, sie, Sie) stay relaxed with the normal original vowel: ich fahre, wir fahren, ihr fahrt!",
+    memoryTrick: "Only du & er change vowels! Plurals never change!"
+  },
+  {
+    id: "l14-five-patterns",
+    german: "Die 5 Vokalwechsel-Muster: e->i, e->ie, au->äu, a->ä, i->ei",
+    english: "The 5 Vowel Change Patterns: e to i, e to ie, au to äu, a to ä, i to ei",
+    pronunciation: "eh tsoo ee, eh tsoo ee-eh, ow tsoo oy, ah tsoo ay, ee tsoo eye",
+    audioText: "Die fünf Vokalwechsel: e zu i, e zu i e, a u zu ä u, a zu ä, i zu e i.",
+    category: "irregular-patterns",
+    badge: "The 5 Magical Keys 🔑",
+    icon: "🪄 🔤",
+    kenyanAnalogy: "Every irregular German verb fits into one of these 5 magical vowel switches! Master these 5 sounds and you master all spoken German.",
+    memoryTrick: "5 patterns: e->i, e->ie, au->äu, a->ä, i->ei!"
+  },
+  {
+    id: "l14-pattern-e-to-i",
+    german: "Muster 1: e -> i (sprechen, nehmen, treffen, geben, essen, helfen)",
+    english: "Pattern 1: e -> i (to speak, to take, to meet, to give, to eat, to help)",
+    pronunciation: "eh tsoo ee: SHPREKH-en -> doo SHPRIKHST",
+    audioText: "Muster eins: e zu i. sprechen, nehmen, treffen, geben, essen, helfen. Du sprichst, du nimmst, du triffst, du gibst, du isst, du hilfst.",
+    category: "pattern-e-to-i",
+    badge: "E to I Champions 🗣️",
+    icon: "🗣️ 🍽️ 🤝",
+    kenyanAnalogy: "The letter 'e' shrinks into a quick, punchy 'i': sprechen -> du sprichst, essen -> du isst, helfen -> du hilfst!",
+    memoryTrick: "e turns to short sharp 'i' for du & er!"
+  },
+  {
+    id: "l14-pattern-e-to-ie",
+    german: "Muster 2: e -> ie (lesen & sehen)",
+    english: "Pattern 2: e -> ie (to read: du liest / to see: du siehst)",
+    pronunciation: "eh tsoo ee-eh: LAY-zen -> doo LEEST; ZAY-en -> doo ZEEST",
+    audioText: "Muster zwei: e zu i e. lesen und sehen. Du liest, er liest. Du siehst, er sieht.",
+    category: "pattern-e-to-ie",
+    badge: "E to IE Long Stretch 👓",
+    icon: "📖 👁️",
+    kenyanAnalogy: "Eyes and books! The sound stretches longer: 'lesen' becomes 'du liest', 'sehen' becomes 'du siehst' (long 'ee' sound)!",
+    memoryTrick: "Sight verbs stretch: lesen -> liest, sehen -> siehst!"
+  },
+  {
+    id: "l14-pattern-au-to-aeu",
+    german: "Muster 3: au -> äu (laufen -> du läufst, er läuft)",
+    english: "Pattern 3: au -> äu (to walk / run: du läufst, er läuft)",
+    pronunciation: "ow tsoo oy: LOW-fen -> doo LOYFST",
+    audioText: "Muster drei: a u zu ä u. laufen: ich laufe, du läufst, er läuft.",
+    category: "pattern-au-to-aeu",
+    badge: "The OI Runner 🏃💨",
+    icon: "🏃‍♂️ 👟",
+    kenyanAnalogy: "When running fast, 'au' jumps into an energetic 'äu' (sounds like 'oi'): du läufst, er läuft!",
+    memoryTrick: "laufen -> du läufst ('loyfst')!"
+  },
+  {
+    id: "l14-pattern-a-to-ae",
+    german: "Muster 4: a -> ä (fahren, schlafen, waschen)",
+    english: "Pattern 4: a -> ä (to drive: fährst / to sleep: schläfst / to wash: wäschst)",
+    pronunciation: "ah tsoo ay: FAH-ren -> doo FAYRST; SHLAH-fen -> doo SHLAYFST",
+    audioText: "Muster vier: a zu ä. fahren, schlafen, waschen. Du fährst, du schläfst, du wäschst.",
+    category: "pattern-a-to-ae",
+    badge: "The Umlaut Antennae 🚗 🛏️",
+    icon: "🚘 😴 🧼",
+    kenyanAnalogy: "The letter 'a' sprouts two antennae dots (ä): fahren -> du fährst, schlafen -> du schläfst, waschen -> du wäschst!",
+    memoryTrick: "a gets two dots for du & er: fährst, schläfst, wäscht!"
+  },
+  {
+    id: "l14-pattern-wissen",
+    german: "Muster 5: i -> ei (wissen: ich weiß, du weißt, er weiß)",
+    english: "Pattern 5: i -> ei (to know: I know [weiß], you know [weißt], he knows [weiß])",
+    pronunciation: "ee tsoo eye: VIS-sen -> ikh VYS, doo VYST, air VYS",
+    audioText: "Muster fünf: i zu e i. wissen: ich weiß, du weißt, er weiß, wir wissen, ihr wisst, sie wissen.",
+    category: "pattern-wissen",
+    badge: "The Rebel 'wissen' 🧠 ⚠️",
+    icon: "💡 🧠",
+    kenyanAnalogy: "The brainy rebel verb! Not only does 'i' turn into 'ei', but 'ich' and 'er/sie/es' drop their endings completely: 'Ich weiß' (I know) and 'Er weiß' (He knows) look identical!",
+    memoryTrick: "Ich weiß = Er weiß! No ending for 1st & 3rd person!"
+  },
+  {
+    id: "l14-sprechen-showcase",
+    german: "sprechen (to speak): ich spreche, du sprichst, er spricht, wir sprechen, ihr sprecht, sie sprechen",
+    english: "to speak: I speak, you speak, he speaks, we speak, you all speak, they speak",
+    pronunciation: "SHPREKH-en: SHPREH-kheh, SHPRIKHST, SHPRIKHT",
+    audioText: "sprechen. ich spreche, du sprichst, er spricht, wir sprechen, ihr sprecht, sie sprechen.",
+    category: "verb-showcase",
+    badge: "Spoken Master 🗣️",
+    icon: "💬 🇩🇪",
+    kenyanAnalogy: "Speaking languages fluently: 'Ich spreche Englisch, aber du sprichst Deutsch!' Notice 'ihr sprecht' keeps the normal 'e'!",
+    memoryTrick: "du sprichst, er spricht (e->i), but ihr sprecht (keeps e)!"
+  },
+  {
+    id: "l14-fahren-schlafen-showcase",
+    german: "fahren (to drive) & schlafen (to sleep): du fährst, er fährt / du schläfst, er schläft",
+    english: "to drive & to sleep: you drive (fährst), he drives (fährt) / you sleep (schläfst), he sleeps (schläft)",
+    pronunciation: "FAH-ren & SHLAH-fen",
+    audioText: "fahren und schlafen. Du fährst nach Berlin. Er schläft lange.",
+    category: "verb-showcase",
+    badge: "Travel & Rest 🚗 💤",
+    icon: "🚘 🛏️",
+    kenyanAnalogy: "Driving a vehicle across country (fahren) and taking a good night's rest (schlafen)!",
+    memoryTrick: "du fährst / er fährt, du schläfst / er schläft!"
+  },
+  {
+    id: "l14-summary-chalkboard",
+    german: "Zusammenfassung: Unregelmäßige Verben im Präsens (Master Chalkboard)",
+    english: "Summary: Irregular Verbs with Vowel Change (5 Patterns, du & er only, wissen rebel)",
+    pronunciation: "tsoo-ZAM-men-fas-soong: foh-KAHL-vekh-sel",
+    audioText: "Zusammenfassung: Unregelmäßige Verben im Präsens. Vokalwechsel nur bei du und er, sie, es. Fünf Muster: e zu i, e zu i e, a u zu ä u, a zu ä, i zu e i. Das Spezialverb wissen: ich weiß, er weiß.",
+    category: "summary",
+    badge: "Master Chalkboard 📋",
+    icon: "🎓 🌟",
+    kenyanAnalogy: "The full treasure map! 1. Only du and er change vowels. 2. 5 patterns. 3. wissen has twin forms: ich weiß = er weiß!",
+    memoryTrick: "du & er flex vowels, plurals rest, ich weiß = er weiß!"
+  }
+];
+
+export const LESSON_14_SCENARIOS = [
+  {
+    scenario: "For which pronouns does the vowel change (Vokalwechsel) take place in German present tense?",
+    hint: "Check slide 5: Look at where the red warning triangles (⚠️) are located!",
+    options: [
+      { text: "ONLY for 'du' and 'er/sie/es'! ('ich' and all plurals stay normal)", correct: true, explain: "Spot on! Slide 5 shows warning triangles ONLY at 'du' and 'er/sie/es'. 'ich', 'wir', 'ihr', and 'sie' never change their vowel!" },
+      { text: "For all pronouns including wir and ihr", correct: false, explain: "Plurals never change their stem vowel (e.g., wir fahren, ihr fahrt)!" },
+      { text: "Only when speaking on Sundays", correct: false, explain: "This applies whenever speaking German!" }
+    ]
+  },
+  {
+    scenario: "How do you conjugate 'sprechen' (to speak) when asking a friend: 'Do you speak German?'",
+    hint: "Check slide 6 & 8: 'e' changes to 'i' for 'du'!",
+    options: [
+      { text: "Sprichst du Deutsch? (e -> i)", correct: true, explain: "Brilliant! Slide 8 shows 'sprechen' turns into 'du sprichst' ($e \rightarrow i$)!" },
+      { text: "Sprechst du Deutsch?", correct: false, explain: "'e' must change to 'i' for du!" },
+      { text: "Spracht du Deutsch?", correct: false, explain: "'sprach' is past tense, not present tense!" }
+    ]
+  },
+  {
+    scenario: "Look at the verb 'sehen' (to see). How do you say: 'He sees the car' in German?",
+    hint: "Check slide 16: 'e' stretches to 'ie' for 'er'!",
+    options: [
+      { text: "Er sieht das Auto. (e -> ie)", correct: true, explain: "Outstanding! Slide 16 shows: 'sehen' changes from 'e' to 'ie': 'er sieht'!" },
+      { text: "Er seht das Auto.", correct: false, explain: "'Er seht' is incorrect; 'seht' is for 'ihr' (ihr seht)!" },
+      { text: "Er siht das Auto.", correct: false, explain: "It is spelled with 'ie' (sieht), not single 'i'!" }
+    ]
+  },
+  {
+    scenario: "How do you conjugate 'laufen' (to walk/run) for 'du'?",
+    hint: "Check slide 18: 'au' turns into 'äu'!",
+    options: [
+      { text: "du läufst (au -> äu, sounds like 'loyfst')", correct: true, explain: "Perfect! Slide 18 shows 'laufen' becomes 'du läufst' with the äu umlaut!" },
+      { text: "du laufst", correct: false, explain: "'laufst' is regular, but laufen is irregular!" },
+      { text: "du loufst", correct: false, explain: "German spells this sound as 'äu'!" }
+    ]
+  },
+  {
+    scenario: "Look at 'fahren' (to drive). What is the correct form for 'Maria drives to Berlin'?",
+    hint: "Maria is 'sie' (3rd person singular er/sie/es). Check slide 20!",
+    options: [
+      { text: "Maria fährt nach Berlin. (a -> ä)", correct: true, explain: "Superb! Slide 20 shows: 'er/sie/es fährt' ($a \rightarrow \ddot{a}$)!" },
+      { text: "Maria fahrt nach Berlin.", correct: false, explain: "'a' must take an umlaut (ä) for Maria!" },
+      { text: "Maria fahre nach Berlin.", correct: false, explain: "'fahre' is for 'ich' (ich fahre)." }
+    ]
+  },
+  {
+    scenario: "Look at the rebel verb 'wissen' (to know) on slide 24. What is unique about 'ich' and 'er/sie/es'?",
+    hint: "Look at: 'ich weiß' and 'er weiß'!",
+    options: [
+      { text: "Both 'ich' and 'er/sie/es' drop endings and look 100% identical: 'ich weiß' = 'er weiß'!", correct: true, explain: "Masterful! Slide 24 shows: 'ich weiß' has no '-e' and 'er weiß' has no '-t'—they are twin forms!" },
+      { text: "They are regular verbs like wohnen", correct: false, explain: "'wissen' is a famous irregular rebel verb!" },
+      { text: "They cannot be used in sentences", correct: false, explain: "'Ich weiß' (I know) is one of the most common spoken phrases in German!" }
+    ]
+  }
+];
+
+
 
 
 

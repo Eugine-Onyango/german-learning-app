@@ -32,6 +32,8 @@ import Lesson12VerbExplorer from './components/Lesson12VerbExplorer';
 import Lesson12Game from './components/Lesson12Game';
 import Lesson13RegularVerbsStudio from './components/Lesson13RegularVerbsStudio';
 import Lesson13Game from './components/Lesson13Game';
+import Lesson14IrregularVerbsStudio from './components/Lesson14IrregularVerbsStudio';
+import Lesson14Game from './components/Lesson14Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -45,11 +47,12 @@ import {
   LESSON_10_ITEMS,
   LESSON_11_ITEMS,
   LESSON_12_ITEMS,
-  LESSON_13_ITEMS
+  LESSON_13_ITEMS,
+  LESSON_14_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(13); // Default to Lesson 13 as requested, easy switch to 1-12
+  const [currentLesson, setCurrentLesson] = useState(14); // Default to Lesson 14 as requested, easy switch to 1-13
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -66,6 +69,7 @@ export default function App() {
   if (currentLesson === 11) activeItems = LESSON_11_ITEMS;
   if (currentLesson === 12) activeItems = LESSON_12_ITEMS;
   if (currentLesson === 13) activeItems = LESSON_13_ITEMS;
+  if (currentLesson === 14) activeItems = LESSON_14_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -80,7 +84,8 @@ export default function App() {
     if (currentLesson === 10) return "Lesson 10: Personalpronomen (Nominativ) - The Personal Pronoun Family (er, sie, es, wir, ihr, Sie)";
     if (currentLesson === 11) return "Lesson 11: Verbkonjugation (haben & sein) - The Two Royal Pillar Verbs";
     if (currentLesson === 12) return "Lesson 12: Was ist ein Verb? (Verb Structure & Types) - Stem, Ending & Regular vs. Irregular";
-    return "Lesson 13: Regelmäßige Verben (Regular Verbs & The 2 Golden Exceptions)";
+    if (currentLesson === 13) return "Lesson 13: Regelmäßige Verben (Regular Verbs & The 2 Golden Exceptions)";
+    return "Lesson 14: Unregelmäßige Verben (Irregular Verbs with Vowel Change & The Rebel 'wissen')";
   };
 
   const getLessonDesc = () => {
@@ -120,7 +125,10 @@ export default function App() {
     if (currentLesson === 12) {
       return "What is a verb? Discover the action engine of every sentence! Learn the tree structure of verbs (Verbstamm trunk + Endung leaves), the 1st/2nd/3rd person system, and the clear difference between obedient regular verbs (schwache Verben) and superhero irregular verbs (starke Verben) with stem vowel flips!";
     }
-    return "Conjugate regular German verbs with total ease! Learn the standard ending uniform (-e, -st, -t, -en, -t, -en), explore all 14 slide verbs (wohnen, machen, lernen, spielen, studieren, hören, telefonieren, fragen, sagen), and master the 2 golden pronunciation exceptions: No Double Snake Hiss (reisen, tanzen) and the Breathing Cushion -e- (arbeiten, warten, antworten)!";
+    if (currentLesson === 13) {
+      return "Conjugate regular German verbs with total ease! Learn the standard ending uniform (-e, -st, -t, -en, -t, -en), explore all 14 slide verbs (wohnen, machen, lernen, spielen, studieren, hören, telefonieren, fragen, sagen), and master the 2 golden pronunciation exceptions: No Double Snake Hiss (reisen, tanzen) and the Breathing Cushion -e- (arbeiten, warten, antworten)!";
+    }
+    return "Meet the superhero irregular verbs! Master the golden rule: the vowel shifts ONLY for 'du' and 'er/sie/es'. Explore all 5 vowel transformation patterns (e->i, e->ie, au->äu, a->ä, i->ei) across 13 slide verbs, and discover the famous twin rebel 'wissen'!";
   };
 
   return (
@@ -274,6 +282,15 @@ export default function App() {
 
         {currentLesson === 13 && activeTab === 'game13' && (
           <Lesson13Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 14 Specific Modules */}
+        {currentLesson === 14 && activeTab === 'vowel' && (
+          <Lesson14IrregularVerbsStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 14 && activeTab === 'game14' && (
+          <Lesson14Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

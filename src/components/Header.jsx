@@ -25,6 +25,7 @@ export default function Header({
     if (currentLesson === 11) msg = "haben und sein: Ich habe Zeit, du hast Zeit, er hat Zeit. Ich bin glücklich, du bist glücklich, wir sind glücklich!";
     if (currentLesson === 12) msg = "Was ist ein Verb? Ein Verb beschreibt eine Handlung. Verbstamm plus Endung. Regelmäßige und unregelmäßige Verben!";
     if (currentLesson === 13) msg = "Regelmäßige Verben: ich wohne, du wohnst, er wohnt. Du reist, du tanzt. Du arbeitest, er wartet!";
+    if (currentLesson === 14) msg = "Unregelmäßige Verben: sprechen wird zu du sprichst, sehen wird zu du siehst, fahren wird zu du fährst, und wissen: ich weiß, er weiß!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -135,6 +136,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson14NavItems = [
+    { id: 'cards', label: '📖 Lesson 14 Cards', sub: 'Irregular Verbs & 5 Patterns' },
+    { id: 'vowel', label: '⚡ Vokalwechsel Studio', sub: '5 Patterns & Rebel wissen' },
+    { id: 'game14', label: '🎮 Vokalwechsel Quiz', sub: 'Vowel Shift Challenge Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -148,6 +157,7 @@ export default function Header({
   if (currentLesson === 11) navItems = lesson11NavItems;
   if (currentLesson === 12) navItems = lesson12NavItems;
   if (currentLesson === 13) navItems = lesson13NavItems;
+  if (currentLesson === 14) navItems = lesson14NavItems;
 
   return (
     <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
@@ -384,6 +394,20 @@ export default function Header({
               }`}
             >
               🧩 13: Regelmäßige Verben
+            </button>
+            <button
+              onClick={() => {
+                setCurrentLesson(14);
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className={`px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                currentLesson === 14
+                  ? 'bg-purple-700 text-white shadow-md scale-102 ring-2 ring-purple-400'
+                  : 'bg-white text-stone-700 hover:bg-purple-100 border border-purple-300'
+              }`}
+            >
+              ⚡ 14: Unregelmäßige Verben
             </button>
           </div>
 
