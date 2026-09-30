@@ -5505,22 +5505,326 @@ export const LESSON_22_SCENARIOS = [
   }
 ];
 
+export const LESSON_23_ITEMS = [
+  {
+    id: "l23-concept-intro",
+    german: "Possessivartikel im Nominativ (Possessive Articles)",
+    english: "Possessive articles show who owns or belongs to something: my, your, his, her, its, our, your (all), your (formal), their.",
+    pronunciation: "poh-zeh-SEEV-ar-tee-kel im noh-mee-nah-TEEF",
+    audioText: "Possessivartikel im Nominativ. Mein, dein, sein, ihr, unser, euer, Ihr.",
+    category: "concept",
+    badge: "Lesson 23 Concept",
+    icon: "🏷️ 🎁",
+    kenyanAnalogy: "Like putting a name tag on your favorite mug or lunchbox so everyone knows whose it is: 'This is MINE, that is YOURS'!",
+    memoryTrick: "Possessivartikel = Ownership label! Answers the question: Whose is it (Wessen ist das)?"
+  },
+  {
+    id: "l23-golden-rule-endings",
+    german: "Die goldene Endungsregel (The Golden Ending Rule)",
+    english: "der (masculine) & das (neuter) take NO extra ending: mein, dein, sein. die (feminine) & die (plural) ALWAYS add '-e': meine, deine, seine.",
+    pronunciation: "der und das: mein. die und Plural: meine.",
+    audioText: "der und das: mein. die und Plural: meine. Genau wie ein und eine!",
+    category: "rules",
+    badge: "Golden Pattern",
+    icon: "👑 ✨",
+    kenyanAnalogy: "Just like 'ein' and 'kein' from previous lessons! Masculine and Neuter wear simple clothes (no ending), while Feminine and Plural wear the fancy '-e' dress!",
+    memoryTrick: "der / das = naked base (mein)! die / plural = add -e (meine)!"
+  },
+  {
+    id: "l23-ich-rule",
+    german: "ich -> mein / meine (I -> my)",
+    english: "When 'I' own something: der & das -> mein. die & plural -> meine.",
+    pronunciation: "ikh: mayn / MY-neh",
+    audioText: "ich wird zu mein oder meine. Das ist mein Fernseher. Das ist mein Auto. Das ist meine Katze. Das sind meine Bücher.",
+    category: "pronouns",
+    badge: "ich (I -> my)",
+    icon: "🙋‍♂️ 📱",
+    kenyanAnalogy: "Talking about your own personal belongings with pride: 'My phone, my ride, my cat, my books'!",
+    memoryTrick: "ich starts with I, mein means mine!"
+  },
+  {
+    id: "l23-peter-all-items",
+    german: "Hi, ich bin Peter: mein Fernseher, mein Auto, meine Katze, meine Bücher",
+    english: "Hi, I'm Peter (from Hamburg): This is my TV (m), this is my car (n), this is my cat (f), these are my books (pl).",
+    pronunciation: "dahs ist mayn FERN-zay-er, mayn OW-toh, MY-neh KAHT-seh, MY-neh BUE-kher",
+    audioText: "Hi, ich bin Peter. Ich komme aus Hamburg. Das ist mein Fernseher. Das ist mein Auto. Das ist meine Katze. Das sind meine Bücher.",
+    category: "examples",
+    badge: "Peter's Belongings",
+    icon: "📺 🚗 🐱 📚",
+    kenyanAnalogy: "Peter from Hamburg showing you around his flat: pointing at his TV, his sports car, his cuddly cat, and his bookshelf.",
+    memoryTrick: "der Fernseher -> mein. das Auto -> mein. die Katze -> meine. die Bücher -> meine!"
+  },
+  {
+    id: "l23-du-rule",
+    german: "du -> dein / deine (you informal -> your)",
+    english: "When speaking to one friend or child: der & das -> dein. die & plural -> deine.",
+    pronunciation: "doo: dayn / DY-neh",
+    audioText: "du wird zu dein oder deine. Ist das dein Fernseher? Ist das dein Auto? Ist das deine Katze? Sind das deine Bücher?",
+    category: "pronouns",
+    badge: "du (you -> your)",
+    icon: "👉 👕",
+    kenyanAnalogy: "Asking your buddy casually: 'Hey, is that your TV? Is that your car? Is that your cat? Are those your books?'",
+    memoryTrick: "du starts with D -> dein starts with D!"
+  },
+  {
+    id: "l23-er-rule",
+    german: "er -> sein / seine (he -> his)",
+    english: "When a man/boy owns something: der & das -> sein. die & plural -> seine.",
+    pronunciation: "air: zayn / ZY-neh",
+    audioText: "er wird zu sein oder seine. Das ist Peter. Er kommt aus Berlin. Das ist sein Fernseher. Das ist sein Auto. Das ist seine Katze. Das sind seine Bücher.",
+    category: "pronouns",
+    badge: "er (he -> his)",
+    icon: "👦 💼",
+    kenyanAnalogy: "Talking about another guy: 'That's his car parked outside, that's his cat sleeping on the rug'!",
+    memoryTrick: "er -> sein (sounds like 'sign' of his ownership)!"
+  },
+  {
+    id: "l23-sie-female-rule",
+    german: "sie (she) -> ihr / ihre (she -> her)",
+    english: "When a woman/girl owns something: der & das -> ihr. die & plural -> ihre.",
+    pronunciation: "zee: eer / EE-reh",
+    audioText: "sie wird zu ihr oder ihre. Das ist Julia. Sie kommt aus Frankfurt. Das ist ihr Fernseher. Das ist ihr Auto. Das ist ihre Katze. Das sind ihre Bücher.",
+    category: "pronouns",
+    badge: "sie (she -> her)",
+    icon: "👩 👠",
+    kenyanAnalogy: "Talking about Julia from Frankfurt: 'That's HER television, HER convertible, HER cat, and HER books'!",
+    memoryTrick: "she -> her, in German: sie -> ihr / ihre (rhymes with clear / cheer)!"
+  },
+  {
+    id: "l23-es-rule",
+    german: "es (it) -> sein / seine (it -> its / his)",
+    english: "When neuter nouns or a child (das Kind) owns something: der & das -> sein. die & plural -> seine.",
+    pronunciation: "es: zayn / ZY-neh",
+    audioText: "es wird zu sein oder seine. Das ist ein Kind. Es ist fünf Jahre alt. Das ist sein Fernseher. Das ist sein Auto. Das ist seine Katze. Das sind seine Bücher.",
+    category: "pronouns",
+    badge: "es (it -> its)",
+    icon: "🧒 🧸",
+    kenyanAnalogy: "Just like in German grammar where 'das Kind' (the child) is neuter, its toys and books belong to it using 'sein / seine'!",
+    memoryTrick: "Golden Twin: 'er' and 'es' both use 'sein / seine'!"
+  },
+  {
+    id: "l23-wir-rule",
+    german: "wir -> unser / unsere (we -> our)",
+    english: "When a group or family including you owns something: der & das -> unser. die & plural -> unsere.",
+    pronunciation: "veer: OON-zer / OON-zeh-reh",
+    audioText: "wir wird zu unser oder unsere. Wir sind eine Familie. Das ist unser Fernseher. Das ist unser Auto. Das ist unsere Katze. Das sind unsere Bücher.",
+    category: "pronouns",
+    badge: "wir (we -> our)",
+    icon: "👨‍👩‍👧‍👦 🏡",
+    kenyanAnalogy: "A family welcoming guests home: 'This is OUR home, OUR TV, OUR family car, and OUR friendly cat'!",
+    memoryTrick: "wir = unser (sounds like 'us'!). unsere for feminine & plural!"
+  },
+  {
+    id: "l23-ihr-rule",
+    german: "ihr (you all informal) -> euer / eure (your group)",
+    english: "When speaking to multiple friends or kids: der & das -> euer. die & plural -> eure.",
+    pronunciation: "eer: OY-er / OY-reh",
+    audioText: "ihr wird zu euer oder eure. Achtung! Aus euer plus e wird eure, nicht euere!",
+    category: "pronouns",
+    badge: "ihr (you all -> your)",
+    icon: "👥 📢",
+    kenyanAnalogy: "Asking a bunch of students or friends: 'Hey guys, is that your TV? Is that your car? Are those your books?'",
+    memoryTrick: "ihr -> euer / eure. Watch out for the dropped 'e'!"
+  },
+  {
+    id: "l23-euer-drop-e-trap",
+    german: "Die 'euer -> eure' Falle! (The Dropped 'e' Trap)",
+    english: "Careful! When adding '-e' to 'euer', the middle 'e' drops out: euer + e = eure (NOT euere)!",
+    pronunciation: "OY-er plus eh wird OY-reh!",
+    audioText: "Achtung Falle! euer wird zu eure. Das ist euer Auto, aber das ist eure Katze und das sind eure Bücher.",
+    category: "traps",
+    badge: "Crucial Spelling Trap (!)",
+    icon: "⚠️ 🪤",
+    kenyanAnalogy: "Like swallowing an unnecessary syllable so words roll smoothly off your tongue without tripping: say 'OY-reh', never 'oy-eh-reh'!",
+    memoryTrick: "euer loses its inner 'e' when it puts on the final 'e' dress -> EURE!"
+  },
+  {
+    id: "l23-ihr-group-questions",
+    german: "Wie heißt ihr? Ist das euer Fernseher? / Ist das eure Katze?",
+    english: "What are your names? Is this your TV? Is this your car? Is this your cat? Are these your books?",
+    pronunciation: "ist dahs OY-er FERN-zay-er? ist dahs OY-er OW-toh? ist dahs OY-reh KAHT-seh? zint dahs OY-reh BUE-kher?",
+    audioText: "Wie heißt ihr? Woher kommt ihr? Ist das euer Fernseher? Ist das euer Auto? Ist das eure Katze? Sind das eure Bücher?",
+    category: "examples",
+    badge: "Group Questions (euer/eure)",
+    icon: "🎯 🙋‍♀️🙋‍♂️",
+    kenyanAnalogy: "Asking a visiting music band or sports team about their equipment and bus: 'Is that YOUR sound system? Is that YOUR team bus?'",
+    memoryTrick: "euer Fernseher (der) & euer Auto (das) vs. eure Katze (die) & eure Bücher (pl)!"
+  },
+  {
+    id: "l23-sie-formal-rule",
+    german: "Sie (formal you singular & plural) -> Ihr / Ihre",
+    english: "When speaking respectfully to Herr Müller or a business team: der & das -> Ihr. die & plural -> Ihre (ALWAYS Capitalized!).",
+    pronunciation: "zee: eer / EE-reh (großgeschrieben!)",
+    audioText: "Sie höflich wird zu Ihr oder Ihre, immer großgeschrieben! Sind Sie Herr Müller? Ist das Ihr Auto? Ist das Ihre Katze?",
+    category: "pronouns",
+    badge: "Sie (formal -> Your)",
+    icon: "👔 🤝",
+    kenyanAnalogy: "Speaking with utmost respect to a doctor, elder, or business client: ALWAYS capitalize the 'I' in writing as a badge of honor!",
+    memoryTrick: "Capital Sie -> Capital Ihr / Ihre! Shows high respect!"
+  },
+  {
+    id: "l23-herr-mueller-team",
+    german: "Sind Sie Herr Müller? Ist das Ihr Fernseher? Sind das Ihre Bücher?",
+    english: "Are you Mr. Müller? Is this your TV? Is this your car? Is this your cat? Are these your books?",
+    pronunciation: "zint zee hair MYU-ler? ist dahs eer FERN-zay-er? zint dahs EE-reh BUE-kher?",
+    audioText: "Sind Sie Herr Müller? Sind Sie ein Team? Ist das Ihr Fernseher? Ist das Ihr Auto? Ist das Ihre Katze? Sind das Ihre Bücher?",
+    category: "examples",
+    badge: "Formal Questions (Ihr/Ihre)",
+    icon: "💼 🏢",
+    kenyanAnalogy: "Hotel receptionist checking in an executive or official delegation: 'Is this your car key, Sir? Are these your books?'",
+    memoryTrick: "Formal questions use: Ist das Ihr...? / Sind das Ihre...?"
+  },
+  {
+    id: "l23-sie-plural-rule",
+    german: "sie (they) -> ihr / ihre (they -> their)",
+    english: "When talking about a third party in the plural (they/them): der & das -> ihr. die & plural -> ihre (lowercase!).",
+    pronunciation: "zee: eer / EE-reh (kleingeschrieben)",
+    audioText: "sie im Plural wird zu ihr oder ihre, kleingeschrieben! Das ist ein Paar. Sie wohnen in Deutschland. Das ist ihr Fernseher. Das ist ihr Auto. Das ist ihre Katze. Das sind ihre Bücher.",
+    category: "pronouns",
+    badge: "sie (they -> their)",
+    icon: "👫 🇩🇪",
+    kenyanAnalogy: "Talking about your neighbors or a nice married couple: 'That's THEIR TV, that's THEIR cute cat, that's THEIR book collection'!",
+    memoryTrick: "they = sie -> their = ihr / ihre (lowercase)!"
+  },
+  {
+    id: "l23-three-ihr-clones",
+    german: "Die 3 'ihr / Ihr' Klone (The 3 'ihr' Clones Demystified)",
+    english: "Don't panic! 1. sie (she) -> ihr (her). 2. sie (they) -> ihr (their). 3. Sie (formal) -> Ihr (capitalized Your).",
+    pronunciation: "ihr: her, their, oder formal your!",
+    audioText: "Die drei Klone: ihr für sie Einzahl, ihr für sie Mehrzahl, und großes Ihr für die Höflichkeitsform!",
+    category: "traps",
+    badge: "Clone Buster",
+    icon: "👯‍♀️ 🔍",
+    kenyanAnalogy: "Like three cousins who share the same surname: look at who you are pointing at or look for the capital letter in writing!",
+    memoryTrick: "Capital 'Ihr' = Formal You. Lowercase 'ihr' = her (she) or their (they)!"
+  },
+  {
+    id: "l23-at-a-glance-table",
+    german: "At a glance (Slide 29 Master Matrix)",
+    english: "The complete summary matrix from Slide 29: all pronouns mapped across der (MASK), das (NEUT), die (FEM), die (PLURAL).",
+    pronunciation: "ayt ah glahns: ahl-leh poh-zeh-SEEV-ar-tee-kel owf eye-nen bleek",
+    audioText: "At a glance: mein, meine. dein, deine. sein, seine. ihr, ihre. unser, unsere. euer, eure. Ihr, Ihre. Und ihr, ihre.",
+    category: "summary",
+    badge: "Slide 29 Master Table",
+    icon: "📋 📊",
+    kenyanAnalogy: "The master cheat sheet! Notice how column 1 (der) and column 3 (das) are identical twins, while column 2 (die) and column 4 (plural) both wear the '-e' dress!",
+    memoryTrick: "der & das = no ending! die & pl = add -e!"
+  },
+  {
+    id: "l23-fernseher-anchor",
+    german: "der Fernseher (m): mein, dein, sein, ihr, unser, euer, Ihr, ihr Fernseher",
+    english: "Masculine anchor noun: takes pure base possessive without '-e' across all persons.",
+    pronunciation: "der FERN-zay-er",
+    audioText: "der Fernseher: mein Fernseher, dein Fernseher, sein Fernseher, ihr Fernseher, unser Fernseher, euer Fernseher, Ihr Fernseher.",
+    category: "drill",
+    badge: "Masculine Drill (der)",
+    icon: "📺 🔵",
+    kenyanAnalogy: "The TV is masculine in German. No extra ending needed on any possessive!",
+    memoryTrick: "der Fernseher -> mein Fernseher (never meine)!"
+  },
+  {
+    id: "l23-auto-anchor",
+    german: "das Auto (n): mein, dein, sein, ihr, unser, euer, Ihr, ihr Auto",
+    english: "Neuter anchor noun: takes pure base possessive without '-e' across all persons.",
+    pronunciation: "dahs OW-toh",
+    audioText: "das Auto: mein Auto, dein Auto, sein Auto, ihr Auto, unser Auto, euer Auto, Ihr Auto.",
+    category: "drill",
+    badge: "Neuter Drill (das)",
+    icon: "🚗 🟢",
+    kenyanAnalogy: "The car is neuter in German. Exactly matches masculine possessives!",
+    memoryTrick: "das Auto -> mein Auto (matches der Fernseher)!"
+  },
+  {
+    id: "l23-katze-anchor",
+    german: "die Katze (f): meine, deine, seine, ihre, unsere, eure, Ihre, ihre Katze",
+    english: "Feminine anchor noun: ALWAYS takes the '-e' ending across all persons.",
+    pronunciation: "dee KAHT-seh",
+    audioText: "die Katze: meine Katze, deine Katze, seine Katze, ihre Katze, unsere Katze, eure Katze, Ihre Katze.",
+    category: "drill",
+    badge: "Feminine Drill (die)",
+    icon: "🐱 🔴",
+    kenyanAnalogy: "The cat is feminine in German. Every possessive puts on the '-e' ending!",
+    memoryTrick: "die Katze -> meine Katze (always with -e)!"
+  },
+  {
+    id: "l23-buecher-anchor",
+    german: "die Bücher (pl): meine, deine, seine, ihre, unsere, eure, Ihre, ihre Bücher",
+    english: "Plural anchor noun: ALWAYS takes the '-e' ending across all persons.",
+    pronunciation: "dee BUE-kher",
+    audioText: "die Bücher: meine Bücher, deine Bücher, seine Bücher, ihre Bücher, unsere Bücher, eure Bücher, Ihre Bücher.",
+    category: "drill",
+    badge: "Plural Drill (die)",
+    icon: "📚 🟣",
+    kenyanAnalogy: "A stack of books is plural. Plural shares the exact same '-e' ending as feminine!",
+    memoryTrick: "die Bücher -> meine Bücher (matches feminine)!"
+  },
+  {
+    id: "l23-question-structure",
+    german: "Frageform: Ist das dein Auto? / Sind das deine Bücher?",
+    english: "Asking about possession: Singular uses 'Ist das...', Plural uses 'Sind das...'.",
+    pronunciation: "ist dahs dayn OW-toh? zint dahs DY-neh BUE-kher?",
+    audioText: "Ist das dein Auto? Ja, das ist mein Auto. Sind das deine Bücher? Ja, das sind meine Bücher.",
+    category: "dialogue",
+    badge: "Asking Ownership",
+    icon: "❓ 🗣️",
+    kenyanAnalogy: "Asking a friend if an item belongs to them: singular takes 'Ist das...?', while multiple items take 'Sind das...?'!",
+    memoryTrick: "1 item = Ist das dein...? 2+ items = Sind das deine...?"
+  }
+];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const LESSON_23_SCENARIOS = [
+  {
+    scenario: "Peter from Hamburg wants to say 'This is my car' (Slide 6). Which sentence is grammatically correct?",
+    hint: "'Auto' is neuter (das Auto). Remember the golden rule for 'das'!",
+    options: [
+      { text: "Das ist mein Auto.", correct: true, explain: "Genau! 'Auto' is neuter (das Auto), so 'mein' takes NO extra ending: 'Das ist mein Auto'!" },
+      { text: "Das ist meine Auto.", correct: false, explain: "Incorrect! 'meine' is only for feminine (die) or plural nouns, not neuter!" },
+      { text: "Das ist meins Auto.", correct: false, explain: "'meins' is not an attributive possessive article in standard German!" }
+    ]
+  },
+  {
+    scenario: "You are speaking to your friend and want to ask: 'Is this your cat?' (Slide 13). How do you ask informally?",
+    hint: "'Katze' is feminine (die Katze) and 'you' is 'du'.",
+    options: [
+      { text: "Ist das deine Katze?", correct: true, explain: "Wunderbar! For 'du' with a feminine noun (die Katze), add '-e' -> 'deine'!" },
+      { text: "Ist das dein Katze?", correct: false, explain: "Almost, but 'Katze' is feminine (die Katze), so it needs the '-e' ending: 'deine Katze'!" },
+      { text: "Ist das seine Katze?", correct: false, explain: "'seine' means 'his', not 'your'!" }
+    ]
+  },
+  {
+    scenario: "Slide 23 has a big exclamation mark (!) for 'ihr -> euer / eure'. You are asking a group of friends: 'Is this your cat?' Which spelling is correct?",
+    hint: "Beware the trap: euer drops the middle 'e' when adding '-e'!",
+    options: [
+      { text: "Ist das eure Katze?", correct: true, explain: "Perfection! When adding '-e' to 'euer', the inner 'e' drops: e-u-r-e (eure Katze)!" },
+      { text: "Ist das euere Katze?", correct: false, explain: "Classic trap! Germans never say 'euere'; the middle 'e' drops to form 'eure'!" },
+      { text: "Ist das ihr Katze?", correct: false, explain: "For 'ihr' (you all) with feminine, use 'eure'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 18, Julia from Frankfurt is showing her belongings. How do you say 'These are her books'?",
+    hint: "'Bücher' is plural (die Bücher) and Julia is female ('sie').",
+    options: [
+      { text: "Das sind ihre Bücher.", correct: true, explain: "Ausgezeichnet! 'sie' (she) becomes 'ihr', and with plural books (die Bücher) it takes '-e' -> 'ihre Bücher'!" },
+      { text: "Das ist ihr Bücher.", correct: false, explain: "Books are plural, so use 'Das sind' and 'ihre'!" },
+      { text: "Das sind seine Bücher.", correct: false, explain: "'seine' means 'his', but Julia is female ('ihre')!" }
+    ]
+  },
+  {
+    scenario: "In Slide 26, you are speaking formally to Herr Müller. Which question correctly asks 'Is this your television?'",
+    hint: "Formal 'Sie' possessive is ALWAYS capitalized in German!",
+    options: [
+      { text: "Ist das Ihr Fernseher?", correct: true, explain: "Superb! Formal 'you' possessive is 'Ihr' with a capital 'I' for masculine 'der Fernseher'!" },
+      { text: "Ist das Ihre Fernseher?", correct: false, explain: "'Fernseher' is masculine (der), so no '-e' ending: 'Ihr Fernseher'!" },
+      { text: "Ist das dein Fernseher?", correct: false, explain: "'dein' is informal, but Herr Müller requires formal 'Ihr'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 20, a 5-year-old child ('das Kind' / pronoun 'es') has a pet cat. How do you say 'This is its/his cat' in German?",
+    hint: "Neuter 'es' shares the exact same possessive as masculine 'er'!",
+    options: [
+      { text: "Das ist seine Katze.", correct: true, explain: "Brilliant! Both 'er' and 'es' share 'sein / seine'. For feminine 'die Katze', add '-e' -> 'seine Katze'!" },
+      { text: "Das ist ihre Katze.", correct: false, explain: "'ihre' would mean her cat or their cat, but 'es' uses 'seine'!" },
+      { text: "Das ist seines Katze.", correct: false, explain: "In nominative feminine, use 'seine', not 'seines'!" }
+    ]
+  }
+];

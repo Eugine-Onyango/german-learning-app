@@ -50,6 +50,8 @@ import Lesson21TimeStudio from './components/Lesson21TimeStudio';
 import Lesson21Game from './components/Lesson21Game';
 import Lesson22InofficialTimeStudio from './components/Lesson22InofficialTimeStudio';
 import Lesson22Game from './components/Lesson22Game';
+import Lesson23PossessiveStudio from './components/Lesson23PossessiveStudio';
+import Lesson23Game from './components/Lesson23Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -72,11 +74,12 @@ import {
   LESSON_19_ITEMS,
   LESSON_20_ITEMS,
   LESSON_21_ITEMS,
-  LESSON_22_ITEMS
+  LESSON_22_ITEMS,
+  LESSON_23_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(22); // Default to Lesson 22 as requested, easy switch to 1-21
+  const [currentLesson, setCurrentLesson] = useState(23); // Default to Lesson 23 as requested, easy switch to 1-22
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -102,6 +105,7 @@ export default function App() {
   if (currentLesson === 20) activeItems = LESSON_20_ITEMS;
   if (currentLesson === 21) activeItems = LESSON_21_ITEMS;
   if (currentLesson === 22) activeItems = LESSON_22_ITEMS;
+  if (currentLesson === 23) activeItems = LESSON_23_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -125,7 +129,8 @@ export default function App() {
     if (currentLesson === 19) return "Lesson 19: unbestimmte Artikel (Indefinite Articles: ein, eine, ein & Plural Nullartikel)";
     if (currentLesson === 20) return "Lesson 20: negative Artikel im Nominativ (kein, keine, kein & Plural keine - The Magic 'K' Rule)";
     if (currentLesson === 21) return "Lesson 21: Die Uhrzeit - offizielle Zeit (Telling Time in German - 24-Hour Digital Clock & Time Units)";
-    return "Lesson 22: Inoffizielle Zeit (Zeit in Umgangssprache - Everyday Conversational Time)";
+    if (currentLesson === 22) return "Lesson 22: Inoffizielle Zeit (Zeit in Umgangssprache - Everyday Conversational Time)";
+    return "Lesson 23: Possessivartikel im Nominativ (Possessive Articles in the Nominative Case)";
   };
 
   const getLessonDesc = () => {
@@ -192,7 +197,10 @@ export default function App() {
     if (currentLesson === 21) {
       return "Master official German time (offizielle Zeit) and the 24-hour clock! Learn the units of time (Woche, Tag, Stunde, Minute, Sekunde), how to ask the time (Wie spät ist es? / Wie viel Uhr ist es?), the golden formula [Stunde] + Uhr + [Minute], and the drop-s rule for 'ein Uhr'!";
     }
-    return "Master how native Germans actually tell the time in everyday conversation! Learn the famous 'halb' forward-looking rule (halb zwei = 1:30), the Slide 31 clock circle (nach vs. vor), 'fünf vor/nach halb', and everyday approximations (kurz vor, gleich, fast)!";
+    if (currentLesson === 22) {
+      return "Master how native Germans actually tell the time in everyday conversation! Learn the famous 'halb' forward-looking rule (halb zwei = 1:30), the Slide 31 clock circle (nach vs. vor), 'fünf vor/nach halb', and everyday approximations (kurz vor, gleich, fast)!";
+    }
+    return "Master German possessive articles ('my, your, his, her, its, our, your group, formal Your, their')! Learn the golden ending rhythm (der & das take no ending, die & Plural add -e), beware the 'euer -> eure' spelling trap, and decode the 3 'ihr' triplets with ease!";
   };
 
   return (
@@ -427,6 +435,15 @@ export default function App() {
 
         {currentLesson === 22 && activeTab === 'game22' && (
           <Lesson22Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 23 Specific Modules */}
+        {currentLesson === 23 && activeTab === 'studio23' && (
+          <Lesson23PossessiveStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 23 && activeTab === 'game23' && (
+          <Lesson23Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
