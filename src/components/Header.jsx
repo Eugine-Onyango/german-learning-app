@@ -35,6 +35,7 @@ export default function Header({
     if (currentLesson === 21) msg = "Die Uhrzeit: Wie spät ist es? Wie viel Uhr ist es? Es ist ein Uhr, es ist siebzehn Uhr zweiundvierzig, und es ist null Uhr!";
     if (currentLesson === 22) msg = "Inoffizielle Zeit: Es ist Viertel vor sieben, es ist halb zwei, es ist fünf nach halb vier, und es ist kurz vor fünf!";
     if (currentLesson === 23) msg = "Possessivartikel im Nominativ: Das ist mein Auto, das ist meine Katze. Ist das dein Fernseher? Sind das eure Bücher? Und ist das Ihr Auto, Herr Müller?";
+    if (currentLesson === 24) msg = "Die Familie: Das ist mein Vater, das ist meine Mutter, das sind meine Eltern und Geschwister. Mein Opa und meine Oma!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -225,6 +226,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson24NavItems = [
+    { id: 'cards', label: '📖 Lesson 24 Cards', sub: 'Vater, Mutter, Geschwister & Baum' },
+    { id: 'studio24', label: '🌳 Family Studio', sub: '3-Generation Tree & Builder' },
+    { id: 'game24', label: '🎮 Family Quiz', sub: 'Family Tree Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -248,6 +257,7 @@ export default function Header({
   if (currentLesson === 21) navItems = lesson21NavItems;
   if (currentLesson === 22) navItems = lesson22NavItems;
   if (currentLesson === 23) navItems = lesson23NavItems;
+  if (currentLesson === 24) navItems = lesson24NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -273,6 +283,7 @@ export default function Header({
     { num: 21, label: "⏰ 21: Die Uhrzeit", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 22, label: "🕰️ 22: Inoffizielle Zeit", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 23, label: "🏷️ 23: Possessivartikel", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
+    { num: 24, label: "👨‍👩‍👦 24: Die Familie", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
   ];
 
   return (

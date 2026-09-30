@@ -5828,3 +5828,304 @@ export const LESSON_23_SCENARIOS = [
     ]
   }
 ];
+
+export const LESSON_24_ITEMS = [
+  {
+    id: "l24-intro-familie",
+    german: "die Familie: Das ist meine Familie. Meine Familie ist klein. Wie groß ist deine Familie?",
+    english: "the family: This is my family. My family is small. How big is your family?",
+    pronunciation: "dee fah-MEE-lee-eh: dahs ist MY-neh fah-MEE-lee-eh. MY-neh fah-MEE-lee-eh ist klayn. vee grohs ist DY-neh fah-MEE-lee-eh?",
+    audioText: "Die Familie. Das ist meine Familie. Meine Familie ist klein. Wie groß ist deine Familie?",
+    category: "family-intro",
+    badge: "Slide 1–2 Family Intro",
+    icon: "👨‍👩‍👦 🏡",
+    kenyanAnalogy: "Welcoming visitors into your home and showing off your loving household: 'This is my family, we are small, how about yours?'",
+    memoryTrick: "'die Familie' is feminine, so always use 'meine Familie' and 'deine Familie' with -e!"
+  },
+  {
+    id: "l24-vater",
+    german: "der Vater (r Vater) -> Das ist mein Vater.",
+    english: "the father -> This is my father.",
+    pronunciation: "der FAH-ter: dahs ist mayn FAH-ter",
+    audioText: "der Vater. Das ist mein Vater.",
+    category: "parents",
+    badge: "Slide 3 Father (der)",
+    icon: "👨 👔",
+    kenyanAnalogy: "Introducing your dad with utmost respect. Since father is masculine (der), say 'mein Vater' without an ending!",
+    memoryTrick: "der Vater = mein Vater (remember V is pronounced like F in German: FAH-ter)!"
+  },
+  {
+    id: "l24-mutter",
+    german: "die Mutter (e Mutter) -> Das ist meine Mutter.",
+    english: "the mother -> This is my mother.",
+    pronunciation: "dee MOO-ter: dahs ist MY-neh MOO-ter",
+    audioText: "die Mutter. Das ist meine Mutter.",
+    category: "parents",
+    badge: "Slide 4 Mother (die)",
+    icon: "👩 👗",
+    kenyanAnalogy: "Introducing your dear mother. Since mother is feminine (die), add the '-e' dress: 'meine Mutter'!",
+    memoryTrick: "die Mutter = meine Mutter (rhymes with butter, starts with M)!"
+  },
+  {
+    id: "l24-eltern",
+    german: "die Eltern (e Eltern) -> Das sind meine Eltern.",
+    english: "the parents (plural) -> These are my parents.",
+    pronunciation: "dee EL-tern: dahs zint MY-neh EL-tern",
+    audioText: "die Eltern. Das sind meine Eltern.",
+    category: "parents",
+    badge: "Slide 5 Parents (Plural)",
+    icon: "👫 👥",
+    kenyanAnalogy: "Introducing both mom and dad together! Because they are two people, switch to 'Das sind' and add '-e' -> 'meine Eltern'!",
+    memoryTrick: "Plural rule: 'Das sind' + 'meine Eltern' (never 'Das ist')!"
+  },
+  {
+    id: "l24-bruder",
+    german: "der Bruder (r Bruder) -> Das ist mein Bruder.",
+    english: "the brother -> This is my brother.",
+    pronunciation: "der BROO-der: dahs ist mayn BROO-der",
+    audioText: "der Bruder. Das ist mein Bruder.",
+    category: "siblings",
+    badge: "Slide 6 Brother (der)",
+    icon: "👦 👕",
+    kenyanAnalogy: "Introducing your brother standing beside you: masculine 'der' takes naked 'mein Bruder'!",
+    memoryTrick: "der Bruder = mein Bruder (brother with a B)!"
+  },
+  {
+    id: "l24-schwester",
+    german: "die Schwester (e Schwester) -> Das ist meine Schwester.",
+    english: "the sister -> This is my sister.",
+    pronunciation: "dee SHVES-ter: dahs ist MY-neh SHVES-ter",
+    audioText: "die Schwester. Das ist meine Schwester.",
+    category: "siblings",
+    badge: "Slide 7 Sister (die)",
+    icon: "👧 🌼",
+    kenyanAnalogy: "Introducing your sweet sister: feminine 'die' gets the '-e' ending -> 'meine Schwester'!",
+    memoryTrick: "die Schwester = meine Schwester ('Schwester' starts with Sch = Sh sound)!"
+  },
+  {
+    id: "l24-geschwister",
+    german: "die Geschwister (e Geschwister) -> Das sind meine Geschwister.",
+    english: "the siblings (plural collective) -> These are my siblings (brother & sister).",
+    pronunciation: "dee geh-SHVIS-ter: dahs zint MY-neh geh-SHVIS-ter",
+    audioText: "die Geschwister. Das sind meine Geschwister.",
+    category: "siblings",
+    badge: "Slide 8 Siblings (Plural)",
+    icon: "👦👧 🤝",
+    kenyanAnalogy: "A single super-word for all your brothers and sisters together! In German you don't need to say 'brothers and sisters', just say 'meine Geschwister'!",
+    memoryTrick: "Geschwister = group of siblings! Uses 'Das sind meine Geschwister'!"
+  },
+  {
+    id: "l24-nuclear-summary",
+    german: "Meine Familie: mein Vater, meine Mutter, mein Bruder, meine Schwester",
+    english: "My nuclear family: my father, my mother, my brother, my sister.",
+    pronunciation: "MY-neh fah-MEE-lee-eh: mayn FAH-ter, MY-neh MOO-ter, mayn BROO-der, MY-neh SHVES-ter",
+    audioText: "Meine Familie: mein Vater, meine Mutter, mein Bruder, meine Schwester.",
+    category: "nuclear-family",
+    badge: "Slide 9 Nuclear Family",
+    icon: "👨‍👩‍👧‍👦 📋",
+    kenyanAnalogy: "The classic family portrait on the mantelpiece with both parents and children lined up.",
+    memoryTrick: "Boys get mein (Vater, Bruder). Girls get meine (Mutter, Schwester)!"
+  },
+  {
+    id: "l24-grossvater-opa",
+    german: "der Großvater (Opa) -> Das ist mein Großvater (Opa).",
+    english: "the grandfather (grandpa) -> This is my grandfather (grandpa).",
+    pronunciation: "der GROHS-fah-ter (OH-pah): dahs ist mayn GROHS-fah-ter, dahs ist mayn OH-pah",
+    audioText: "der Großvater. Das ist mein Großvater. Oder: Das ist mein Opa.",
+    category: "grandparents",
+    badge: "Slide 10 Grandfather (der)",
+    icon: "👴 👓",
+    kenyanAnalogy: "The wise, smiling grandfather sitting on his favorite porch chair. The warm daily pet name is 'Opa'!",
+    memoryTrick: "Großvater = big father = grandfather! Daily nickname = Opa!"
+  },
+  {
+    id: "l24-grossmutter-oma",
+    german: "die Großmutter (Oma) -> Das ist meine Großmutter (Oma).",
+    english: "the grandmother (grandma) -> This is my grandmother (grandma).",
+    pronunciation: "dee GROHS-moo-ter (OH-mah): dahs ist MY-neh GROHS-moo-ter, dahs ist MY-neh OH-mah",
+    audioText: "die Großmutter. Das ist meine Großmutter. Oder: Das ist meine Oma.",
+    category: "grandparents",
+    badge: "Slide 11 Grandmother (die)",
+    icon: "👵 🧣",
+    kenyanAnalogy: "The warm grandmother who bakes cookies and tells wonderful bedtime stories. The warm daily pet name is 'Oma'!",
+    memoryTrick: "Großmutter = big mother = grandmother! Daily nickname = Oma!"
+  },
+  {
+    id: "l24-grosseltern",
+    german: "die Großeltern (e Großeltern) -> Das sind meine Großeltern.",
+    english: "the grandparents (plural) -> These are my grandparents (Opa & Oma).",
+    pronunciation: "dee GROHS-el-tern: dahs zint MY-neh GROHS-el-tern",
+    audioText: "die Großeltern. Das sind meine Großeltern.",
+    category: "grandparents",
+    badge: "Slide 12 Grandparents (Plural)",
+    icon: "👴👵 🏡",
+    kenyanAnalogy: "Opa and Oma together! Just like 'Eltern' means parents, adding 'Groß-' makes 'Großeltern' (grandparents)!",
+    memoryTrick: "Groß + Eltern = Großeltern (grandparents). Plural uses 'Das sind meine Großeltern'!"
+  },
+  {
+    id: "l24-onkel",
+    german: "der Onkel (r Onkel) -> Das ist mein Onkel.",
+    english: "the uncle -> This is my uncle.",
+    pronunciation: "der ON-kel: dahs ist mayn ON-kel",
+    audioText: "der Onkel. Das ist mein Onkel.",
+    category: "extended-family",
+    badge: "Slide 13 Uncle (der)",
+    icon: "👨‍🦰 🤝",
+    kenyanAnalogy: "Your favorite uncle who brings treats when visiting! Masculine 'der' takes 'mein Onkel'!",
+    memoryTrick: "der Onkel = mein Onkel (spelled O-N-K-E-L with a K)!"
+  },
+  {
+    id: "l24-tante",
+    german: "die Tante (e Tante) -> Das ist meine Tante.",
+    english: "the aunt -> This is my aunt.",
+    pronunciation: "dee TAHN-teh: dahs ist MY-neh TAHN-teh",
+    audioText: "die Tante. Das ist meine Tante.",
+    category: "extended-family",
+    badge: "Slide 14 Aunt (die)",
+    icon: "👩‍🦱 💐",
+    kenyanAnalogy: "Your aunt with her cheerful laughter at family reunions! Feminine 'die' takes 'meine Tante'!",
+    memoryTrick: "die Tante = meine Tante (sounds like auntie with a T)!"
+  },
+  {
+    id: "l24-cousine",
+    german: "die Cousine (e Cousine) -> Das ist meine Cousine.",
+    english: "the female cousin -> This is my cousin (girl/woman).",
+    pronunciation: "dee koo-ZEE-neh: dahs ist MY-neh koo-ZEE-neh",
+    audioText: "die Cousine. Das ist meine Cousine.",
+    category: "extended-family",
+    badge: "Slide 15 Female Cousin (die)",
+    icon: "👧 🎀",
+    kenyanAnalogy: "German distinguishes cousin gender! A girl cousin is 'die Cousine' (ending in -e) -> 'meine Cousine'!",
+    memoryTrick: "die Cousine = girl cousin! Ends in -e and pronounced koo-ZEE-neh!"
+  },
+  {
+    id: "l24-cousin",
+    german: "der Cousin (r Cousin) -> Das ist mein Cousin.",
+    english: "the male cousin -> This is my cousin (boy/man).",
+    pronunciation: "der koo-ZENG: dahs ist mayn koo-ZENG",
+    audioText: "der Cousin. Das ist mein Cousin.",
+    category: "extended-family",
+    badge: "Slide 16 Male Cousin (der)",
+    icon: "👦 ⚽",
+    kenyanAnalogy: "A boy cousin you play football with! In German he is 'der Cousin' -> 'mein Cousin'!",
+    memoryTrick: "der Cousin = boy cousin! Masculine without -e (pronounced French style koo-ZENG)!"
+  },
+  {
+    id: "l24-family-size",
+    german: "Meine Familie ist groß. / Meine Familie ist klein.",
+    english: "My family is big. / My family is small.",
+    pronunciation: "MY-neh fah-MEE-lee-eh ist grohs. MY-neh fah-MEE-lee-eh ist klayn.",
+    audioText: "Meine Familie ist groß. Meine Familie ist klein.",
+    category: "family-intro",
+    badge: "Slide 17 Family Size",
+    icon: "👨‍👩‍👧‍👦 📏",
+    kenyanAnalogy: "Describing the size of your clan: whether you are a cozy unit of three (klein) or a big bustling compound full of aunts and cousins (groß)!",
+    memoryTrick: "groß = big (like 'gross' size in English)! klein = small (like 'tiny clown')!"
+  },
+  {
+    id: "l24-familienbaum",
+    german: "der Familienbaum: Das ist mein Familienbaum.",
+    english: "the family tree: This is my family tree (3 generations).",
+    pronunciation: "der fah-MEE-lee-en-bowm: dahs ist mayn fah-MEE-lee-en-bowm",
+    audioText: "der Familienbaum. Das ist mein Familienbaum.",
+    category: "family-tree",
+    badge: "Slide 18 Family Tree (der)",
+    icon: "🌳 🌿",
+    kenyanAnalogy: "A genealogical tree: roots with grandparents (Großeltern), trunk with parents (Eltern) and aunt/uncle, branches with siblings (Geschwister) and cousins!",
+    memoryTrick: "Familie + Baum (tree) = Familienbaum! der Baum is masculine -> mein Familienbaum!"
+  },
+  {
+    id: "l24-familienbaum-frage",
+    german: "Und wie sieht dein Familienbaum aus?",
+    english: "And how does your family tree look like? (What is your family structure?)",
+    pronunciation: "oont vee zeet dayn fah-MEE-lee-en-bowm ows?",
+    audioText: "Und wie sieht dein Familienbaum aus?",
+    category: "family-tree",
+    badge: "Slide 19 Tree Question",
+    icon: "❓ 🌳",
+    kenyanAnalogy: "Asking someone about their family heritage and relatives in friendly German conversation.",
+    memoryTrick: "aussehen = to look like! 'Wie sieht dein Familienbaum aus?'"
+  },
+  {
+    id: "l24-collective-plurals",
+    german: "Die 3 Plural-Kollektive: die Eltern, die Großeltern, die Geschwister",
+    english: "The 3 Special German Collective Plurals: parents, grandparents, siblings.",
+    pronunciation: "dee EL-tern, dee GROHS-el-tern, dee geh-SHVIS-ter",
+    audioText: "Die Eltern, die Großeltern, die Geschwister. Immer mit: Das sind meine...",
+    category: "rules",
+    badge: "3 Plural Groups",
+    icon: "👥 ✨",
+    kenyanAnalogy: "German has wonderful collective words for whole groups! Because they represent multiple people, they always use 'Das sind meine...'!",
+    memoryTrick: "1. Eltern (parents) | 2. Großeltern (grandparents) | 3. Geschwister (siblings)!"
+  },
+  {
+    id: "l24-opa-oma-petnames",
+    german: "Kosenamen: der Opa (Großvater) & die Oma (Großmutter)",
+    english: "Affectionate Pet Names: Opa (Grandpa) & Oma (Grandma).",
+    pronunciation: "der OH-pah, dee OH-mah",
+    audioText: "der Opa und die Oma. Mein Opa, meine Oma.",
+    category: "grandparents",
+    badge: "Opa & Oma",
+    icon: "👴👵 ❤️",
+    kenyanAnalogy: "In real daily life in Germany, children and adults almost always say 'mein Opa' and 'meine Oma' rather than the formal 'Großvater/Großmutter'!",
+    memoryTrick: "Opa (grandfather) is der/mein. Oma (grandmother) is die/meine!"
+  }
+];
+
+export const LESSON_24_SCENARIOS = [
+  {
+    scenario: "You want to introduce your parents to a friend (Slide 5). Which sentence is grammatically correct?",
+    hint: "'Eltern' is plural (two people: father and mother)!",
+    options: [
+      { text: "Das sind meine Eltern.", correct: true, explain: "Ausgezeichnet! 'Eltern' is plural (die Eltern), so you must use 'Das sind' and 'meine Eltern'!" },
+      { text: "Das ist mein Eltern.", correct: false, explain: "Incorrect! 'Eltern' is plural, so it requires 'Das sind' and the '-e' ending on 'meine'!" },
+      { text: "Das ist meine Eltern.", correct: false, explain: "'Eltern' is plural, so the verb must be 'sind', not 'ist'!" }
+    ]
+  },
+  {
+    scenario: "In German, there is a distinct word for a female cousin vs. a male cousin. How do you introduce your female cousin (Slide 15)?",
+    hint: "Female cousin ends in '-e' and is feminine (die).",
+    options: [
+      { text: "Das ist meine Cousine.", correct: true, explain: "Wunderbar! A female cousin is 'die Cousine', taking 'meine Cousine' (pronounced koo-ZEE-neh)!" },
+      { text: "Das ist mein Cousin.", correct: false, explain: "'mein Cousin' refers to a male cousin!" },
+      { text: "Das sind meine Cousinen.", correct: false, explain: "'Cousinen' is plural (multiple female cousins)!" }
+    ]
+  },
+  {
+    scenario: "You have one brother and one sister. Which super-word in German means 'siblings' (Slide 8)?",
+    hint: "It combines all your brothers and sisters into one plural collective noun.",
+    options: [
+      { text: "Das sind meine Geschwister.", correct: true, explain: "Perfection! 'die Geschwister' is the German collective plural for brothers and sisters!" },
+      { text: "Das ist mein Geschwister.", correct: false, explain: "'Geschwister' is plural, so use 'Das sind meine Geschwister'!" },
+      { text: "Das sind meine Brüder.", correct: false, explain: "'Brüder' means brothers only, not brothers and sisters together!" }
+    ]
+  },
+  {
+    scenario: "What are the common, warm everyday German pet names for grandfather and grandmother (Slides 10–11)?",
+    hint: "Short, sweet 3-letter words starting with O!",
+    options: [
+      { text: "Opa (Grandpa) and Oma (Grandma)", correct: true, explain: "Genau! In everyday life, native Germans affectionately call them 'mein Opa' and 'meine Oma'!" },
+      { text: "Papa and Mama", correct: false, explain: "'Papa' and 'Mama' mean dad and mom!" },
+      { text: "Onkel and Tante", correct: false, explain: "'Onkel' and 'Tante' mean uncle and aunt!" }
+    ]
+  },
+  {
+    scenario: "You are talking to a colleague and want to ask: 'How big is your family?' (Slide 1). How do you ask informally?",
+    hint: "'Familie' is feminine (die Familie).",
+    options: [
+      { text: "Wie groß ist deine Familie?", correct: true, explain: "Brilliant! 'Familie' is feminine (die Familie), so you say 'deine Familie' with an '-e'!" },
+      { text: "Wie groß ist dein Familie?", correct: false, explain: "'Familie' is feminine, so it must be 'deine Familie'!" },
+      { text: "Wie viel ist deine Familie?", correct: false, explain: "To ask family size, use 'Wie groß ist...' (How big is...)!" }
+    ]
+  },
+  {
+    scenario: "On the 3-generation family tree (Slide 18), which group belongs together with 'mein Vater' and 'meine Mutter' on Generation 2?",
+    hint: "Your father's brother and sister-in-law (or mother's sister and brother-in-law)!",
+    options: [
+      { text: "mein Onkel und meine Tante", correct: true, explain: "Spot on! Uncle and Aunt sit on Generation 2 alongside Father and Mother on the family tree!" },
+      { text: "mein Großvater und meine Großmutter", correct: false, explain: "Grandparents sit on Generation 1 at the top of the tree!" },
+      { text: "mein Cousin und meine Cousine", correct: false, explain: "Cousins sit on Generation 3 alongside brothers and sisters!" }
+    ]
+  }
+];
+
