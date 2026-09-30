@@ -4499,231 +4499,280 @@ export const LESSON_19_SCENARIOS = [
 
 export const LESSON_20_ITEMS = [
   {
-    id: "l20-tasche-def",
-    german: "die Tasche",
-    english: "The bag / The handbag (Feminine)",
-    pronunciation: "dee TAH-sheh",
-    audioText: "die Tasche.",
-    category: "exercise-feminine",
-    badge: "Slide 9 • die Tasche",
-    icon: "👜",
-    kenyanAnalogy: "Like a favorite leather handbag or grocery tote bag you carry every day.",
-    memoryTrick: "Feminine noun ending in -e: die Tasche!"
+    id: "l20-apfel-birne",
+    german: "Das ist kein Apfel. Das ist eine Birne.",
+    english: "This is not an apple. This is a pear.",
+    pronunciation: "dahs ist kine AHP-fel. dahs ist EYE-neh BEER-neh.",
+    audioText: "Das ist kein Apfel. Das ist eine Birne.",
+    category: "negative-intro",
+    badge: "Slide 1 • kein Apfel / eine Birne",
+    icon: "🍐",
+    kenyanAnalogy: "Holding a juicy green pear when someone mistakenly thinks it's a red apple: 'No, this isn't an apple, it's a pear!'",
+    memoryTrick: "der Apfel -> kein Apfel (just put a 'k' in front of ein)!"
   },
   {
-    id: "l20-tasche-indef",
-    german: "Das ist eine Tasche.",
-    english: "This is a bag. / That is a handbag.",
-    pronunciation: "dahs ist EYE-neh TAH-sheh",
-    audioText: "Das ist eine Tasche.",
-    category: "exercise-feminine",
-    badge: "Slide 9 Übung • eine Tasche",
-    icon: "👝",
-    kenyanAnalogy: "Pointing to a bag for the first time: 'Hey look, that is a handbag!'",
-    memoryTrick: "die -> eine! Notice both end in the letter -e!"
+    id: "l20-tasche-buch",
+    german: "Das ist keine Tasche. Das ist ein Buch.",
+    english: "This is not a bag. This is a book.",
+    pronunciation: "dahs ist KYE-neh TAH-sheh. dahs ist eyn BOOKH.",
+    audioText: "Das ist keine Tasche. Das ist ein Buch.",
+    category: "negative-intro",
+    badge: "Slide 1 • keine Tasche / ein Buch",
+    icon: "📕",
+    kenyanAnalogy: "Looking at a hardcover novel and clarifying: 'This isn't a bag, this is a book!'",
+    memoryTrick: "die Tasche -> keine Tasche (die -> eine -> keine)!"
   },
   {
-    id: "l20-buch-def",
-    german: "das Buch",
-    english: "The book (Neutral)",
-    pronunciation: "dahs BOOKH",
-    audioText: "das Buch.",
-    category: "exercise-neutral",
-    badge: "Slide 10 • das Buch",
+    id: "l20-kuli-bleistift-q",
+    german: "Ist das ein Kuli?",
+    english: "Is this a pen / ballpoint pen?",
+    pronunciation: "ist dahs eyn KOO-lee?",
+    audioText: "Ist das ein Kuli?",
+    category: "question-dialogue",
+    badge: "Slide 3 Question • der Kuli",
+    icon: "🖊️",
+    kenyanAnalogy: "Asking a classmate if the writing tool on their desk is a ballpoint pen.",
+    memoryTrick: "Kuli is short for Kugelschreiber (ballpoint pen), masculine: der Kuli!"
+  },
+  {
+    id: "l20-kuli-bleistift-a",
+    german: "Nein, das ist kein Kuli. Das ist ein Bleistift.",
+    english: "No, this is not a pen. This is a pencil.",
+    pronunciation: "nine, dahs ist kine KOO-lee. dahs ist eyn BLYE-shtift.",
+    audioText: "Nein, das ist kein Kuli. Das ist ein Bleistift.",
+    category: "negative-dialogue",
+    badge: "Slide 3 Answer • kein Kuli / Bleistift",
+    icon: "✏️",
+    kenyanAnalogy: "Correcting a friend: 'No, it's not a pen, it's a pencil with an eraser!'",
+    memoryTrick: "der Kuli -> ein Kuli -> kein Kuli!"
+  },
+  {
+    id: "l20-kuli-bleistift-nouns",
+    german: "der Kuli (pen) • der Bleistift (pencil)",
+    english: "The pen (Masculine) • The pencil (Masculine)",
+    pronunciation: "dair KOO-lee • dair BLYE-shtift",
+    audioText: "der Kuli und der Bleistift. Beide sind maskulin.",
+    category: "vocabulary-focus",
+    badge: "Slide 3 Vocabulary • r Kuli / r Bleistift",
+    icon: "📝",
+    kenyanAnalogy: "Two essential stationery items in your school pencil case.",
+    memoryTrick: "Both take 'der' (der Kuli, der Bleistift) and both negate with 'kein'!"
+  },
+  {
+    id: "l20-blume-schoko-q",
+    german: "Ist das eine Blume?",
+    english: "Is this a flower?",
+    pronunciation: "ist dahs EYE-neh BLOO-meh?",
+    audioText: "Ist das eine Blume?",
+    category: "question-dialogue",
+    badge: "Slide 4 Question • die Blume",
+    icon: "🌸",
+    kenyanAnalogy: "Asking if a wrapped gift is a rose flower.",
+    memoryTrick: "die Blume is feminine, so question uses 'eine Blume'!"
+  },
+  {
+    id: "l20-blume-schoko-a",
+    german: "Nein, das ist keine Blume. Das ist eine Schokolade.",
+    english: "No, this is not a flower. This is a chocolate.",
+    pronunciation: "nine, dahs ist KYE-neh BLOO-meh. dahs ist EYE-neh shoh-koh-LAH-deh.",
+    audioText: "Nein, das ist keine Blume. Das ist eine Schokolade.",
+    category: "negative-dialogue",
+    badge: "Slide 4 Answer • keine Blume / Schokolade",
+    icon: "🍫",
+    kenyanAnalogy: "Opening a sweet treat: 'No, it's not a flower bouquet, it's delicious chocolate!'",
+    memoryTrick: "die Blume -> keine Blume; die Schokolade -> eine Schokolade. Both end in -e!"
+  },
+  {
+    id: "l20-blume-schoko-nouns",
+    german: "die Blume (flower) • die Schokolade (chocolate)",
+    english: "The flower (Feminine) • The chocolate (Feminine)",
+    pronunciation: "dee BLOO-meh • dee shoh-koh-LAH-deh",
+    audioText: "die Blume und die Schokolade. Beide sind feminin.",
+    category: "vocabulary-focus",
+    badge: "Slide 4 Vocabulary • e Blume / e Schokolade",
+    icon: "💐",
+    kenyanAnalogy: "Two sweet gifts: flowers and chocolate bars.",
+    memoryTrick: "Both take 'die' (die Blume, die Schokolade) and negate with 'keine'!"
+  },
+  {
+    id: "l20-buch-handy-q",
+    german: "Ist das ein Buch?",
+    english: "Is this a book?",
+    pronunciation: "ist dahs eyn BOOKH?",
+    audioText: "Ist das ein Buch?",
+    category: "question-dialogue",
+    badge: "Slide 5 Question • das Buch",
     icon: "📖",
-    kenyanAnalogy: "A trusted school textbook or storybook open on the study desk.",
-    memoryTrick: "Neutral noun: das Buch!"
+    kenyanAnalogy: "Glancing at a rectangle device on the sofa and asking if it's a book.",
+    memoryTrick: "das Buch is neutral, so question uses 'ein Buch'!"
   },
   {
-    id: "l20-buch-indef",
-    german: "Das ist ein Buch.",
-    english: "This is a book. / That is a book.",
-    pronunciation: "dahs ist EYN BOOKH",
-    audioText: "Das ist ein Buch.",
-    category: "exercise-neutral",
-    badge: "Slide 10 Übung • ein Buch",
-    icon: "📚",
-    kenyanAnalogy: "Introducing a book on the table: 'Look, here is a book.'",
-    memoryTrick: "das -> ein! Neuter takes 'ein', not 'eine'!"
+    id: "l20-buch-handy-a",
+    german: "Nein, das ist kein Buch. Das ist ein Handy.",
+    english: "No, this is not a book. This is a mobile phone.",
+    pronunciation: "nine, dahs ist kine BOOKH. dahs ist eyn HEN-dee.",
+    audioText: "Nein, das ist kein Buch. Das ist ein Handy.",
+    category: "negative-dialogue",
+    badge: "Slide 5 Answer • kein Buch / Handy",
+    icon: "📱",
+    kenyanAnalogy: "Picking up your smartphone: 'No, this isn't a book, it's a smartphone!'",
+    memoryTrick: "das Buch -> kein Buch; das Handy -> ein Handy. Neuter takes 'kein'!"
   },
   {
-    id: "l20-elefant-def",
-    german: "der Elefant",
-    english: "The elephant (Masculine)",
-    pronunciation: "dair eh-leh-FAHNT",
-    audioText: "der Elefant.",
-    category: "exercise-masculine",
-    badge: "Slide 11 • der Elefant",
-    icon: "🐘",
-    kenyanAnalogy: "A majestic African elephant walking peacefully across the savannah grassland.",
-    memoryTrick: "Masculine animal: der Elefant!"
+    id: "l20-buch-handy-nouns",
+    german: "das Buch (book) • das Handy (mobile phone)",
+    english: "The book (Neutral) • The mobile phone (Neutral)",
+    pronunciation: "dahs BOOKH • dahs HEN-dee",
+    audioText: "das Buch und das Handy. Beide sind neutral.",
+    category: "vocabulary-focus",
+    badge: "Slide 5 Vocabulary • s Buch / s Handy",
+    icon: "📲",
+    kenyanAnalogy: "Reading a printed book vs scrolling on your mobile phone.",
+    memoryTrick: "Both take 'das' (das Buch, das Handy) and negate with 'kein'!"
   },
   {
-    id: "l20-elefant-indef",
-    german: "Das ist ein Elefant.",
-    english: "This is an elephant. / That is an elephant.",
-    pronunciation: "dahs ist EYN eh-leh-FAHNT",
-    audioText: "Das ist ein Elefant.",
-    category: "exercise-masculine",
-    badge: "Slide 11 Übung • ein Elefant",
-    icon: "🎪",
-    kenyanAnalogy: "Spotting an elephant on safari: 'Look over there, that is an elephant!'",
-    memoryTrick: "der -> ein! Masculine takes 'ein'!"
+    id: "l20-sterne-ballons-q",
+    german: "Sind das Sterne?",
+    english: "Are these stars? (Plural question)",
+    pronunciation: "zint dahs SHTAIR-neh?",
+    audioText: "Sind das Sterne?",
+    category: "question-dialogue",
+    badge: "Slide 6 Question • Plural Sterne",
+    icon: "✨",
+    kenyanAnalogy: "Looking up at colorful floating shapes in the sky and asking if they are stars.",
+    memoryTrick: "Plural question: 'Sind das...' with NO article before Sterne!"
   },
   {
-    id: "l20-table-maskulin",
-    german: "maskulin: der → ein",
-    english: "Masculine: der becomes ein (e.g. ein Apfel, ein Mann, ein Elefant)",
-    pronunciation: "MAHS-koo-leen: dair veerdt eyn",
-    audioText: "maskulin: der wird zu ein. Zum Beispiel: ein Apfel, ein Mann, ein Elefant.",
-    category: "comparison-matrix",
-    badge: "Slide 12 Table • der -> ein",
+    id: "l20-sterne-ballons-a",
+    german: "Nein, das sind keine Sterne. Das sind Ballons.",
+    english: "No, these are not stars. These are balloons.",
+    pronunciation: "nine, dahs zint KYE-neh SHTAIR-neh. dahs zint bah-LOHNS.",
+    audioText: "Nein, das sind keine Sterne. Das sind Ballons.",
+    category: "negative-dialogue",
+    badge: "Slide 6 Answer • keine Sterne / Ballons",
+    icon: "🎈",
+    kenyanAnalogy: "Smiling at floating festival party balloons: 'No, those aren't stars, they're balloons!'",
+    memoryTrick: "In plural, negative article IS used: 'keine Sterne'!"
+  },
+  {
+    id: "l20-sterne-ballons-nouns",
+    german: "die Sterne (stars) • die Ballons (balloons)",
+    english: "The stars (Plural) • The balloons (Plural)",
+    pronunciation: "dee SHTAIR-neh • dee bah-LOHNS",
+    audioText: "die Sterne und die Ballons. Beide sind Plural.",
+    category: "vocabulary-focus",
+    badge: "Slide 6 Vocabulary • e Sterne / e Ballons",
+    icon: "🌟",
+    kenyanAnalogy: "Twinkling stars in the night sky and party balloons.",
+    memoryTrick: "All plural nouns use 'die' and negate with 'keine'!"
+  },
+  {
+    id: "l20-rule-maskulin",
+    german: "maskulin: ein → kein",
+    english: "Masculine: ein becomes kein (e.g. kein Apfel, kein Kuli, kein Bleistift)",
+    pronunciation: "MAHS-koo-leen: eyn veerdt kine",
+    audioText: "maskulin: ein wird zu kein. Zum Beispiel: kein Apfel, kein Kuli, kein Bleistift.",
+    category: "negative-rules",
+    badge: "Slide 7 & 8 • maskulin: kein",
     icon: "🔵",
-    kenyanAnalogy: "The masculine lane: specific 'the' (der) transforms into a general 'a' (ein).",
-    memoryTrick: "der -> ein (never add an -e for masculine)!"
+    kenyanAnalogy: "The Magic 'K': slap a 'K' onto 'ein' to make it 'kein'!",
+    memoryTrick: "ein + K = kein!"
   },
   {
-    id: "l20-table-feminin",
-    german: "feminin: die → eine",
-    english: "Feminine: die becomes eine (e.g. eine Frau, eine Tasche, eine Blume)",
-    pronunciation: "feh-mee-NEEN: dee veerdt EYE-neh",
-    audioText: "feminin: die wird zu eine. Zum Beispiel: eine Frau, eine Tasche.",
-    category: "comparison-matrix",
-    badge: "Slide 12 Table • die -> eine",
+    id: "l20-rule-feminin",
+    german: "feminin: eine → keine",
+    english: "Feminine: eine becomes keine (e.g. keine Tasche, keine Blume, keine Schokolade)",
+    pronunciation: "feh-mee-NEEN: EYE-neh veerdt KYE-neh",
+    audioText: "feminin: eine wird zu keine. Zum Beispiel: keine Tasche, keine Blume, keine Schokolade.",
+    category: "negative-rules",
+    badge: "Slide 7 & 8 • feminin: keine",
     icon: "🔴",
-    kenyanAnalogy: "The feminine lane: specific 'die' transforms into 'eine'. Both end with -e.",
-    memoryTrick: "di-E -> ein-E! The matching -e sound."
+    kenyanAnalogy: "Feminine: slap a 'K' onto 'eine' to get 'keine'. Both keep the -e!",
+    memoryTrick: "eine + K = keine!"
   },
   {
-    id: "l20-table-neutral",
-    german: "neutral: das → ein",
-    english: "Neutral: das becomes ein (e.g. ein Mädchen, ein Buch, ein Kind)",
-    pronunciation: "noy-TRAHL: dahs veerdt eyn",
-    audioText: "neutral: das wird zu ein. Zum Beispiel: ein Mädchen, ein Buch.",
-    category: "comparison-matrix",
-    badge: "Slide 12 Table • das -> ein",
+    id: "l20-rule-neutral",
+    german: "neutral: ein → kein",
+    english: "Neutral: ein becomes kein (e.g. kein Buch, kein Handy, kein Mädchen)",
+    pronunciation: "noy-TRAHL: eyn veerdt kine",
+    audioText: "neutral: ein wird zu kein. Zum Beispiel: kein Buch, kein Handy.",
+    category: "negative-rules",
+    badge: "Slide 7 & 8 • neutral: kein",
     icon: "🟡",
-    kenyanAnalogy: "The neutral lane: 'das' transforms into 'ein', just like masculine!",
-    memoryTrick: "The twin rule: maskulin (ein) = neutral (ein)!"
+    kenyanAnalogy: "Identical twin rule: masculine and neutral both use 'kein'!",
+    memoryTrick: "das Buch -> ein Buch + K = kein Buch!"
   },
   {
-    id: "l20-table-plural",
-    german: "Plural: die → (kein Artikel / -)",
-    english: "Plural: die becomes NO indefinite article (e.g. Das sind Blumen)",
-    pronunciation: "ploo-RAHL: dee veerdt kine ar-TEE-kel",
-    audioText: "Plural: die wird zu kein Artikel. Zum Beispiel: Das sind Blumen.",
-    category: "comparison-matrix",
-    badge: "Slide 12 Table • Plural Nullartikel",
+    id: "l20-rule-plural",
+    german: "Plural: — → keine",
+    english: "Plural: no article becomes keine (e.g. keine Sterne, keine Blumen, keine Ballons)",
+    pronunciation: "ploo-RAHL: kine ar-TEE-kel veerdt KYE-neh",
+    audioText: "Plural: ohne Artikel wird zu keine. Zum Beispiel: keine Sterne, keine Ballons.",
+    category: "negative-rules",
+    badge: "Slide 7 & 8 • Plural: keine",
     icon: "🟢",
-    kenyanAnalogy: "Like English: you never say 'a flowers', you just say 'flowers'!",
-    memoryTrick: "In plural indefinite: no article at all (-)! Das sind Blumen."
-  },
-  {
-    id: "l20-drill-tisch",
-    german: "der Tisch → Das ist ein Tisch.",
-    english: "The table → This is a table. (Masculine drill)",
-    pronunciation: "dair TISH -> dahs ist EYN TISH",
-    audioText: "der Tisch. Das ist ein Tisch.",
-    category: "classroom-drill",
-    badge: "Bonus Drill • der Tisch",
-    icon: "🪵",
-    kenyanAnalogy: "A solid wooden dining table made by a local artisan.",
-    memoryTrick: "der Tisch -> ein Tisch!"
-  },
-  {
-    id: "l20-drill-lampe",
-    german: "die Lampe → Das ist eine Lampe.",
-    english: "The lamp → This is a lamp. (Feminine drill)",
-    pronunciation: "dee LAHM-peh -> dahs ist EYE-neh LAHM-peh",
-    audioText: "die Lampe. Das ist eine Lampe.",
-    category: "classroom-drill",
-    badge: "Bonus Drill • die Lampe",
-    icon: "💡",
-    kenyanAnalogy: "A bright desk lamp shedding light over your homework.",
-    memoryTrick: "die Lampe -> eine Lampe!"
-  },
-  {
-    id: "l20-drill-auto",
-    german: "das Auto → Das ist ein Auto.",
-    english: "The car → This is a car. (Neutral drill)",
-    pronunciation: "dahs OW-toh -> dahs ist EYN OW-toh",
-    audioText: "das Auto. Das ist ein Auto.",
-    category: "classroom-drill",
-    badge: "Bonus Drill • das Auto",
-    icon: "🚗",
-    kenyanAnalogy: "A neat little sedan car parked in the driveway.",
-    memoryTrick: "das Auto -> ein Auto!"
-  },
-  {
-    id: "l20-drill-kinder",
-    german: "die Kinder → Das sind Kinder.",
-    english: "The children → These are children. (Plural drill)",
-    pronunciation: "dee KIN-dair -> dahs zint KIN-dair",
-    audioText: "die Kinder. Das sind Kinder.",
-    category: "classroom-drill",
-    badge: "Bonus Drill • die Kinder",
-    icon: "🧒",
-    kenyanAnalogy: "Smiling children laughing and playing football in the field.",
-    memoryTrick: "Plural indefinite: no article! Das sind Kinder."
+    kenyanAnalogy: "Positive plural has no article (Das sind Sterne), but negative plural takes 'keine' (Das sind keine Sterne)!",
+    memoryTrick: "Plural negation matches feminine: always 'keine'!"
   }
 ];
 
 export const LESSON_20_SCENARIOS = [
   {
-    scenario: "In Slide 9's classroom exercise (Übung), you see 'die Tasche'. What is the correct way to say 'This is a bag' in German?",
-    hint: "Feminine nouns take 'eine' (notice both 'die' and 'eine' end in -e)!",
+    scenario: "On Slide 3, someone shows you a green pencil and asks: 'Ist das ein Kuli?'. How do you reply in German?",
+    hint: "'Kuli' is masculine (der Kuli) and 'Bleistift' is also masculine (der Bleistift)!",
     options: [
-      { text: "Das ist eine Tasche.", correct: true, explain: "Genau! 'die Tasche' is feminine, so it becomes 'eine Tasche'!" },
-      { text: "Das ist ein Tasche.", correct: false, explain: "'ein' is only for masculine and neutral, feminine requires 'eine'!" },
-      { text: "Das sind eine Tasche.", correct: false, explain: "'Tasche' is singular, so use 'Das ist', not 'Das sind'!" }
+      { text: "Nein, das ist kein Kuli. Das ist ein Bleistift.", correct: true, explain: "Brilliant! 'der Kuli' is masculine, so 'ein Kuli' negates to 'kein Kuli'!" },
+      { text: "Nein, das ist keine Kuli. Das ist eine Bleistift.", correct: false, explain: "'Kuli' and 'Bleistift' are masculine, so they take 'kein' and 'ein', not 'keine'!" },
+      { text: "Nein, das sind kein Kuli.", correct: false, explain: "It's singular, so use 'das ist', not 'das sind'!" }
     ]
   },
   {
-    scenario: "In Slide 10's exercise (Übung), you see 'das Buch'. What is the correct way to say 'This is a book'?",
-    hint: "'das' turns into 'ein' (neuter indefinite article)!",
+    scenario: "On Slide 4, someone points to a bar of chocolate and asks: 'Ist das eine Blume?'. What is the correct response?",
+    hint: "Both 'Blume' and 'Schokolade' are feminine: die Blume, die Schokolade!",
     options: [
-      { text: "Das ist ein Buch.", correct: true, explain: "Wunderbar! Slide 10 explicitly teaches: 'das Buch -> Das ist ein Buch'!" },
-      { text: "Das ist eine Buch.", correct: false, explain: "'Buch' is neuter (das Buch), so it takes 'ein', never 'eine'!" },
-      { text: "Der Buch ist schön.", correct: false, explain: "'Buch' is neuter (das), not masculine (der)!" }
+      { text: "Nein, das ist keine Blume. Das ist eine Schokolade.", correct: true, explain: "Ausgezeichnet! Feminine nouns take 'keine' and 'eine' (both end in -e)!" },
+      { text: "Nein, das ist kein Blume. Das ist ein Schokolade.", correct: false, explain: "Feminine nouns need 'keine' and 'eine', not 'kein'!" },
+      { text: "Ja, das ist eine Blume.", correct: false, explain: "The picture is chocolate, not a flower!" }
     ]
   },
   {
-    scenario: "In Slide 11's exercise (Übung), you see 'der Elefant'. How do you introduce it for the first time?",
-    hint: "'der' transforms into 'ein' for masculine nouns!",
+    scenario: "On Slide 5, someone looks at your smartphone and asks: 'Ist das ein Buch?'. How do you answer?",
+    hint: "Both 'Buch' and 'Handy' are neutral: das Buch, das Handy!",
     options: [
-      { text: "Das ist ein Elefant.", correct: true, explain: "Hervorragend! Slide 11 shows: 'der Elefant -> Das ist ein Elefant'!" },
-      { text: "Das ist eine Elefant.", correct: false, explain: "'Elefant' is masculine (der), so it takes 'ein', not 'eine'!" },
-      { text: "Das sind ein Elefant.", correct: false, explain: "Only one elephant is pictured, so use 'Das ist'!" }
+      { text: "Nein, das ist kein Buch. Das ist ein Handy.", correct: true, explain: "Wunderbar! Neutral nouns use 'kein' for negative and 'ein' for positive!" },
+      { text: "Nein, das ist keine Buch. Das ist eine Handy.", correct: false, explain: "Neutral nouns never take 'keine' in the singular!" },
+      { text: "Nein, das sind keine Bücher.", correct: false, explain: "There is only one object, so use singular: 'das ist kein Buch'!" }
     ]
   },
   {
-    scenario: "Look at the master comparison table on Slide 12: You want to switch between 'The' and 'A/An'. Which pair is correct?",
-    hint: "der -> ein, die -> eine, das -> ein!",
+    scenario: "On Slide 6, someone looks at balloons floating in the air and asks: 'Sind das Sterne?'. How do you answer?",
+    hint: "Plural negation uses 'keine' and positive plural has NO article!",
     options: [
-      { text: "der -> ein, die -> eine, das -> ein, Plural die -> (no article)", correct: true, explain: "Masterful! Slide 12's mirror table clearly shows this exact golden formula!" },
-      { text: "der -> eine, die -> ein, das -> eine, Plural die -> ein", correct: false, explain: "Articles are reversed and plural cannot have 'ein'!" },
-      { text: "der -> ein, die -> ein, das -> ein, Plural die -> eine", correct: false, explain: "Feminine takes 'eine', not 'ein', and plural has no indefinite article!" }
+      { text: "Nein, das sind keine Sterne. Das sind Ballons.", correct: true, explain: "Masterful! Slide 6 shows: 'Nein, das sind keine Sterne. Das sind Ballons' (plural negation takes 'keine', positive plural has no article)!" },
+      { text: "Nein, das sind kein Sterne. Das sind ein Ballons.", correct: false, explain: "Plural cannot use 'kein' or 'ein'!" },
+      { text: "Nein, das ist keine Sterne.", correct: false, explain: "'Sterne' is plural, so you must use 'das sind', not 'das ist'!" }
     ]
   },
   {
-    scenario: "You see multiple cars on the street ('die Autos'). How do you say 'These are cars. The cars are fast'?",
-    hint: "Remember the Plural Nullartikel rule from Slides 6 & 12!",
+    scenario: "What is the 'Magic K' rule shown on Slides 7 and 8 for turning positive indefinite articles into negative articles?",
+    hint: "What letter do you add to 'ein' and 'eine'?",
     options: [
-      { text: "Das sind Autos. Die Autos sind schnell.", correct: true, explain: "Brilliant! Plural indefinite has no article ('Das sind Autos'), then specific plural uses 'Die Autos'!" },
-      { text: "Das sind eine Autos. Die Autos sind schnell.", correct: false, explain: "Never say 'eine Autos'! There is no plural indefinite article in German!" },
-      { text: "Das ist ein Autos. Der Autos ist schnell.", correct: false, explain: "'Autos' is plural, so verb must be 'sind' and article 'die'!" }
+      { text: "You simply add the letter 'K' in front of 'ein' (ein -> kein) and 'eine' (eine -> keine)!", correct: true, explain: "Spot on! The Magic K: ein + K = kein, and eine + K = keine!" },
+      { text: "You add 'nicht' before every noun.", correct: false, explain: "German nouns with indefinite articles are negated with 'kein/keine', not 'nicht'!" },
+      { text: "You add the letter 'S' in front of 'ein'.", correct: false, explain: "The negative prefix letter is 'K'!" }
     ]
   },
   {
-    scenario: "Why do German speakers call masculine (der -> ein) and neutral (das -> ein) 'The Indefinite Twins'?",
-    hint: "Look at their indefinite forms in the Slide 12 table!",
+    scenario: "Look at Slide 8 (At a glance: unbestimmte vs. negative Artikel): In the plural, positive has no article (Das sind Ballons). What happens in the negative?",
+    hint: "Check the Plural row on Slide 8!",
     options: [
-      { text: "Because in the singular indefinite (a/an), both masculine and neutral use the exact same word: 'ein'!", correct: true, explain: "Superb! Both say 'ein Mann' and 'ein Buch', 'ein Apfel' and 'ein Mädchen'!" },
-      { text: "Because both take 'eine'.", correct: false, explain: "Only feminine takes 'eine'!" },
-      { text: "Because both disappear in plural.", correct: false, explain: "All genders use 'die' in plural!" }
+      { text: "In the negative plural, you use 'keine' (Das sind keine Ballons)!", correct: true, explain: "Perfection! Even though positive plural has no article, negative plural ALWAYS uses 'keine'!" },
+      { text: "Negative plural also has no article.", correct: false, explain: "Without 'keine', the sentence would not be negative!" },
+      { text: "Negative plural uses 'kein'.", correct: false, explain: "Plural always takes the -e ending: 'keine'!" }
     ]
   }
 ];
+
 
 
 

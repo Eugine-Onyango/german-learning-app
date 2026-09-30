@@ -59,13 +59,13 @@ export default function Lesson20Game({ isSlowMode }) {
   return (
     <div className="space-y-6 max-w-2xl mx-auto">
       {/* Banner */}
-      <div className="bg-gradient-to-r from-teal-800 via-emerald-700 to-indigo-800 rounded-3xl p-5 sm:p-6 text-white shadow-md text-center">
-        <div className="text-3xl mb-1 animate-gentle-bounce">👜 📖 🐘 📋 ✨</div>
+      <div className="bg-gradient-to-r from-emerald-800 via-teal-700 to-indigo-800 rounded-3xl p-5 sm:p-6 text-white shadow-md text-center">
+        <div className="text-3xl mb-1 animate-gentle-bounce">🚫 ✏️ 🍫 📱 🎈</div>
         <h2 className="text-2xl font-black">
-          Lesson 20 Challenge: Übung & Vergleich!
+          Lesson 20 Challenge: Negative Artikel!
         </h2>
         <p className="text-xs sm:text-sm font-semibold text-white/90 mt-1">
-          Master definite vs. indefinite articles, classroom exercises, and the Slide 12 table!
+          Master kein, keine, kein, the Magic 'K' Rule, and Slide Q&amp;A rebuttals!
         </p>
       </div>
 
@@ -170,15 +170,15 @@ export default function Lesson20Game({ isSlowMode }) {
             Lesson 20 Challenge Completed!
           </h3>
           <p className="text-sm text-stone-600 max-w-md mx-auto">
-            You scored <strong className="text-emerald-700 font-extrabold text-base">{score} out of {LESSON_20_SCENARIOS.length}</strong>! You now understand the full classroom exercises and master comparison between definite and indefinite articles.
+            You scored <strong className="text-emerald-700 font-extrabold text-base">{score} out of {LESSON_20_SCENARIOS.length}</strong>! You now master the Magic 'K' Rule, question rebuttals, and German negative articles.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 max-w-sm mx-auto text-xs text-amber-950 space-y-1 text-left">
             <div className="font-bold text-center text-sm text-amber-900 mb-1">🎓 Key Takeaway</div>
-            <div>• <strong>die Tasche:</strong> Das ist eine Tasche (die → eine)</div>
-            <div>• <strong>das Buch:</strong> Das ist ein Buch (das → ein)</div>
-            <div>• <strong>der Elefant:</strong> Das ist ein Elefant (der → ein)</div>
-            <div>• <strong>Plural:</strong> Das sind Blumen (kein Artikel!)</div>
+            <div>• <strong>Maskulin:</strong> kein Kuli / kein Bleistift (ein + K = kein)</div>
+            <div>• <strong>Feminin:</strong> keine Blume / keine Schokolade (eine + K = keine)</div>
+            <div>• <strong>Neutral:</strong> kein Buch / kein Handy (ein + K = kein)</div>
+            <div>• <strong>Plural:</strong> keine Sterne / keine Ballons (Plural takes 'keine'!)</div>
           </div>
 
           <button

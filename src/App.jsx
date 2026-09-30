@@ -44,7 +44,7 @@ import Lesson18NominativStudio from './components/Lesson18NominativStudio';
 import Lesson18Game from './components/Lesson18Game';
 import Lesson19IndefiniteArticlesStudio from './components/Lesson19IndefiniteArticlesStudio';
 import Lesson19Game from './components/Lesson19Game';
-import Lesson20ComparisonStudio from './components/Lesson20ComparisonStudio';
+import Lesson20NegativeArticlesStudio from './components/Lesson20NegativeArticlesStudio';
 import Lesson20Game from './components/Lesson20Game';
 import {
   LESSON_1_ITEMS,
@@ -115,7 +115,7 @@ export default function App() {
     if (currentLesson === 17) return "Lesson 17: jemanden vorstellen (Introducing Someone Else - He, She, Child & Couples)";
     if (currentLesson === 18) return "Lesson 18: Artikel im Nominativ (Definite Articles: der, die, das & Universal Plural die)";
     if (currentLesson === 19) return "Lesson 19: unbestimmte Artikel (Indefinite Articles: ein, eine, ein & Plural Nullartikel)";
-    return "Lesson 20: bestimmte vs. unbestimmte Artikel (Übung & Master Matrix - Definite vs. Indefinite)";
+    return "Lesson 20: negative Artikel im Nominativ (kein, keine, kein & Plural keine - The Magic 'K' Rule)";
   };
 
   const getLessonDesc = () => {
@@ -176,7 +176,7 @@ export default function App() {
     if (currentLesson === 19) {
       return "Master the German indefinite articles ('A / An') in the Nominative case! Learn the storytelling sequence (introduce with ein/eine, describe with der/die/das), discover why masculine and neuter are identical twins (ein), and why plural has no article (Das sind Blumen)!";
     }
-    return "Master the classroom transformation exercises (die Tasche -> eine Tasche, das Buch -> ein Buch, der Elefant -> ein Elefant) and the Slide 12 Master Comparison Blackboard! Contrast definite vs. indefinite articles across all three genders and plural.";
+    return "Master how to say 'NOT A / NO' in German! Discover the Magic 'K' Rule: simply put a K in front of ein/eine to get kein/keine! Learn the Question-and-Answer formula (Ist das ein Kuli? Nein, das ist kein Kuli!), and master plural negation (keine Sterne)!";
   };
 
   return (
@@ -388,7 +388,7 @@ export default function App() {
 
         {/* Lesson 20 Specific Modules */}
         {currentLesson === 20 && activeTab === 'studio20' && (
-          <Lesson20ComparisonStudio isSlowMode={isSlowMode} />
+          <Lesson20NegativeArticlesStudio isSlowMode={isSlowMode} />
         )}
 
         {currentLesson === 20 && activeTab === 'game20' && (
