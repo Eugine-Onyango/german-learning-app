@@ -44,6 +44,8 @@ import Lesson18NominativStudio from './components/Lesson18NominativStudio';
 import Lesson18Game from './components/Lesson18Game';
 import Lesson19IndefiniteArticlesStudio from './components/Lesson19IndefiniteArticlesStudio';
 import Lesson19Game from './components/Lesson19Game';
+import Lesson20ComparisonStudio from './components/Lesson20ComparisonStudio';
+import Lesson20Game from './components/Lesson20Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -63,11 +65,12 @@ import {
   LESSON_16_ITEMS,
   LESSON_17_ITEMS,
   LESSON_18_ITEMS,
-  LESSON_19_ITEMS
+  LESSON_19_ITEMS,
+  LESSON_20_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(19); // Default to Lesson 19 as requested, easy switch to 1-18
+  const [currentLesson, setCurrentLesson] = useState(20); // Default to Lesson 20 as requested, easy switch to 1-19
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -90,6 +93,7 @@ export default function App() {
   if (currentLesson === 17) activeItems = LESSON_17_ITEMS;
   if (currentLesson === 18) activeItems = LESSON_18_ITEMS;
   if (currentLesson === 19) activeItems = LESSON_19_ITEMS;
+  if (currentLesson === 20) activeItems = LESSON_20_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -110,7 +114,8 @@ export default function App() {
     if (currentLesson === 16) return "Lesson 16: Adjektive & Gegenteile (Adjectives, Opposites & The 'aber' Connector)";
     if (currentLesson === 17) return "Lesson 17: jemanden vorstellen (Introducing Someone Else - He, She, Child & Couples)";
     if (currentLesson === 18) return "Lesson 18: Artikel im Nominativ (Definite Articles: der, die, das & Universal Plural die)";
-    return "Lesson 19: unbestimmte Artikel (Indefinite Articles: ein, eine, ein & Plural Nullartikel)";
+    if (currentLesson === 19) return "Lesson 19: unbestimmte Artikel (Indefinite Articles: ein, eine, ein & Plural Nullartikel)";
+    return "Lesson 20: bestimmte vs. unbestimmte Artikel (Übung & Master Matrix - Definite vs. Indefinite)";
   };
 
   const getLessonDesc = () => {
@@ -168,7 +173,10 @@ export default function App() {
     if (currentLesson === 18) {
       return "Master the German definite articles ('The') in the Nominative case! Learn why all German nouns are capitalized, how to spot the Subject with 'Wer?' or 'Was?', the 3 genders (der Mann, die Frau, das Baby), and the golden Universal Plural Umbrella (die)!";
     }
-    return "Master the German indefinite articles ('A / An') in the Nominative case! Learn the storytelling sequence (introduce with ein/eine, describe with der/die/das), discover why masculine and neuter are identical twins (ein), and why plural has no article (Das sind Blumen)!";
+    if (currentLesson === 19) {
+      return "Master the German indefinite articles ('A / An') in the Nominative case! Learn the storytelling sequence (introduce with ein/eine, describe with der/die/das), discover why masculine and neuter are identical twins (ein), and why plural has no article (Das sind Blumen)!";
+    }
+    return "Master the classroom transformation exercises (die Tasche -> eine Tasche, das Buch -> ein Buch, der Elefant -> ein Elefant) and the Slide 12 Master Comparison Blackboard! Contrast definite vs. indefinite articles across all three genders and plural.";
   };
 
   return (
@@ -376,6 +384,15 @@ export default function App() {
 
         {currentLesson === 19 && activeTab === 'game19' && (
           <Lesson19Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 20 Specific Modules */}
+        {currentLesson === 20 && activeTab === 'studio20' && (
+          <Lesson20ComparisonStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 20 && activeTab === 'game20' && (
+          <Lesson20Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

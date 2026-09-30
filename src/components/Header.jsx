@@ -31,6 +31,7 @@ export default function Header({
     if (currentLesson === 17) msg = "jemanden vorstellen: Das ist Peter, er kommt aus Spanien und arbeitet bei Siemens. Das ist Martina, sie kommt aus der Schweiz. Das ist ein Kind, es ist ein Jahr alt. Das sind Laura und Antonio, sie wohnen in München.";
     if (currentLesson === 18) msg = "Artikel im Nominativ: der Mann, der Apfel. Die Frau, die Katze. Das Baby, das Haus. Und im Plural immer die: die Männer, die Frauen, die Babys!";
     if (currentLesson === 19) msg = "unbestimmte Artikel: ein Apfel, ein Mann, eine Frau, ein Mädchen. Und im Plural: Das sind Blumen, die Blumen sind schön!";
+    if (currentLesson === 20) msg = "bestimmte und unbestimmte Artikel: die Tasche, eine Tasche. Das Buch, ein Buch. Der Elefant, ein Elefant. Und die Blumen, das sind Blumen!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -189,6 +190,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson20NavItems = [
+    { id: 'cards', label: '📖 Lesson 20 Cards', sub: 'Übungen & Vergleich Cards' },
+    { id: 'studio20', label: '✨ Comparison Studio', sub: 'Classroom Exercises & Matrix' },
+    { id: 'game20', label: '🎮 Comparison Quiz', sub: 'Definite vs Indefinite Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -208,6 +217,7 @@ export default function Header({
   if (currentLesson === 17) navItems = lesson17NavItems;
   if (currentLesson === 18) navItems = lesson18NavItems;
   if (currentLesson === 19) navItems = lesson19NavItems;
+  if (currentLesson === 20) navItems = lesson20NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -229,6 +239,7 @@ export default function Header({
     { num: 17, label: "👥 17: Jemanden vorstellen", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 18, label: "🔴 18: der, die, das (Nominativ)", activeClass: "bg-blue-700 ring-blue-400", hoverBorder: "hover:bg-blue-100 border-blue-300" },
     { num: 19, label: "✨ 19: ein, eine, ein", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 20, label: "📋 20: Übung & Vergleich", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
   ];
 
   return (

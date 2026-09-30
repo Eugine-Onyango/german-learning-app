@@ -4497,6 +4497,235 @@ export const LESSON_19_SCENARIOS = [
   }
 ];
 
+export const LESSON_20_ITEMS = [
+  {
+    id: "l20-tasche-def",
+    german: "die Tasche",
+    english: "The bag / The handbag (Feminine)",
+    pronunciation: "dee TAH-sheh",
+    audioText: "die Tasche.",
+    category: "exercise-feminine",
+    badge: "Slide 9 • die Tasche",
+    icon: "👜",
+    kenyanAnalogy: "Like a favorite leather handbag or grocery tote bag you carry every day.",
+    memoryTrick: "Feminine noun ending in -e: die Tasche!"
+  },
+  {
+    id: "l20-tasche-indef",
+    german: "Das ist eine Tasche.",
+    english: "This is a bag. / That is a handbag.",
+    pronunciation: "dahs ist EYE-neh TAH-sheh",
+    audioText: "Das ist eine Tasche.",
+    category: "exercise-feminine",
+    badge: "Slide 9 Übung • eine Tasche",
+    icon: "👝",
+    kenyanAnalogy: "Pointing to a bag for the first time: 'Hey look, that is a handbag!'",
+    memoryTrick: "die -> eine! Notice both end in the letter -e!"
+  },
+  {
+    id: "l20-buch-def",
+    german: "das Buch",
+    english: "The book (Neutral)",
+    pronunciation: "dahs BOOKH",
+    audioText: "das Buch.",
+    category: "exercise-neutral",
+    badge: "Slide 10 • das Buch",
+    icon: "📖",
+    kenyanAnalogy: "A trusted school textbook or storybook open on the study desk.",
+    memoryTrick: "Neutral noun: das Buch!"
+  },
+  {
+    id: "l20-buch-indef",
+    german: "Das ist ein Buch.",
+    english: "This is a book. / That is a book.",
+    pronunciation: "dahs ist EYN BOOKH",
+    audioText: "Das ist ein Buch.",
+    category: "exercise-neutral",
+    badge: "Slide 10 Übung • ein Buch",
+    icon: "📚",
+    kenyanAnalogy: "Introducing a book on the table: 'Look, here is a book.'",
+    memoryTrick: "das -> ein! Neuter takes 'ein', not 'eine'!"
+  },
+  {
+    id: "l20-elefant-def",
+    german: "der Elefant",
+    english: "The elephant (Masculine)",
+    pronunciation: "dair eh-leh-FAHNT",
+    audioText: "der Elefant.",
+    category: "exercise-masculine",
+    badge: "Slide 11 • der Elefant",
+    icon: "🐘",
+    kenyanAnalogy: "A majestic African elephant walking peacefully across the savannah grassland.",
+    memoryTrick: "Masculine animal: der Elefant!"
+  },
+  {
+    id: "l20-elefant-indef",
+    german: "Das ist ein Elefant.",
+    english: "This is an elephant. / That is an elephant.",
+    pronunciation: "dahs ist EYN eh-leh-FAHNT",
+    audioText: "Das ist ein Elefant.",
+    category: "exercise-masculine",
+    badge: "Slide 11 Übung • ein Elefant",
+    icon: "🎪",
+    kenyanAnalogy: "Spotting an elephant on safari: 'Look over there, that is an elephant!'",
+    memoryTrick: "der -> ein! Masculine takes 'ein'!"
+  },
+  {
+    id: "l20-table-maskulin",
+    german: "maskulin: der → ein",
+    english: "Masculine: der becomes ein (e.g. ein Apfel, ein Mann, ein Elefant)",
+    pronunciation: "MAHS-koo-leen: dair veerdt eyn",
+    audioText: "maskulin: der wird zu ein. Zum Beispiel: ein Apfel, ein Mann, ein Elefant.",
+    category: "comparison-matrix",
+    badge: "Slide 12 Table • der -> ein",
+    icon: "🔵",
+    kenyanAnalogy: "The masculine lane: specific 'the' (der) transforms into a general 'a' (ein).",
+    memoryTrick: "der -> ein (never add an -e for masculine)!"
+  },
+  {
+    id: "l20-table-feminin",
+    german: "feminin: die → eine",
+    english: "Feminine: die becomes eine (e.g. eine Frau, eine Tasche, eine Blume)",
+    pronunciation: "feh-mee-NEEN: dee veerdt EYE-neh",
+    audioText: "feminin: die wird zu eine. Zum Beispiel: eine Frau, eine Tasche.",
+    category: "comparison-matrix",
+    badge: "Slide 12 Table • die -> eine",
+    icon: "🔴",
+    kenyanAnalogy: "The feminine lane: specific 'die' transforms into 'eine'. Both end with -e.",
+    memoryTrick: "di-E -> ein-E! The matching -e sound."
+  },
+  {
+    id: "l20-table-neutral",
+    german: "neutral: das → ein",
+    english: "Neutral: das becomes ein (e.g. ein Mädchen, ein Buch, ein Kind)",
+    pronunciation: "noy-TRAHL: dahs veerdt eyn",
+    audioText: "neutral: das wird zu ein. Zum Beispiel: ein Mädchen, ein Buch.",
+    category: "comparison-matrix",
+    badge: "Slide 12 Table • das -> ein",
+    icon: "🟡",
+    kenyanAnalogy: "The neutral lane: 'das' transforms into 'ein', just like masculine!",
+    memoryTrick: "The twin rule: maskulin (ein) = neutral (ein)!"
+  },
+  {
+    id: "l20-table-plural",
+    german: "Plural: die → (kein Artikel / -)",
+    english: "Plural: die becomes NO indefinite article (e.g. Das sind Blumen)",
+    pronunciation: "ploo-RAHL: dee veerdt kine ar-TEE-kel",
+    audioText: "Plural: die wird zu kein Artikel. Zum Beispiel: Das sind Blumen.",
+    category: "comparison-matrix",
+    badge: "Slide 12 Table • Plural Nullartikel",
+    icon: "🟢",
+    kenyanAnalogy: "Like English: you never say 'a flowers', you just say 'flowers'!",
+    memoryTrick: "In plural indefinite: no article at all (-)! Das sind Blumen."
+  },
+  {
+    id: "l20-drill-tisch",
+    german: "der Tisch → Das ist ein Tisch.",
+    english: "The table → This is a table. (Masculine drill)",
+    pronunciation: "dair TISH -> dahs ist EYN TISH",
+    audioText: "der Tisch. Das ist ein Tisch.",
+    category: "classroom-drill",
+    badge: "Bonus Drill • der Tisch",
+    icon: "🪵",
+    kenyanAnalogy: "A solid wooden dining table made by a local artisan.",
+    memoryTrick: "der Tisch -> ein Tisch!"
+  },
+  {
+    id: "l20-drill-lampe",
+    german: "die Lampe → Das ist eine Lampe.",
+    english: "The lamp → This is a lamp. (Feminine drill)",
+    pronunciation: "dee LAHM-peh -> dahs ist EYE-neh LAHM-peh",
+    audioText: "die Lampe. Das ist eine Lampe.",
+    category: "classroom-drill",
+    badge: "Bonus Drill • die Lampe",
+    icon: "💡",
+    kenyanAnalogy: "A bright desk lamp shedding light over your homework.",
+    memoryTrick: "die Lampe -> eine Lampe!"
+  },
+  {
+    id: "l20-drill-auto",
+    german: "das Auto → Das ist ein Auto.",
+    english: "The car → This is a car. (Neutral drill)",
+    pronunciation: "dahs OW-toh -> dahs ist EYN OW-toh",
+    audioText: "das Auto. Das ist ein Auto.",
+    category: "classroom-drill",
+    badge: "Bonus Drill • das Auto",
+    icon: "🚗",
+    kenyanAnalogy: "A neat little sedan car parked in the driveway.",
+    memoryTrick: "das Auto -> ein Auto!"
+  },
+  {
+    id: "l20-drill-kinder",
+    german: "die Kinder → Das sind Kinder.",
+    english: "The children → These are children. (Plural drill)",
+    pronunciation: "dee KIN-dair -> dahs zint KIN-dair",
+    audioText: "die Kinder. Das sind Kinder.",
+    category: "classroom-drill",
+    badge: "Bonus Drill • die Kinder",
+    icon: "🧒",
+    kenyanAnalogy: "Smiling children laughing and playing football in the field.",
+    memoryTrick: "Plural indefinite: no article! Das sind Kinder."
+  }
+];
+
+export const LESSON_20_SCENARIOS = [
+  {
+    scenario: "In Slide 9's classroom exercise (Übung), you see 'die Tasche'. What is the correct way to say 'This is a bag' in German?",
+    hint: "Feminine nouns take 'eine' (notice both 'die' and 'eine' end in -e)!",
+    options: [
+      { text: "Das ist eine Tasche.", correct: true, explain: "Genau! 'die Tasche' is feminine, so it becomes 'eine Tasche'!" },
+      { text: "Das ist ein Tasche.", correct: false, explain: "'ein' is only for masculine and neutral, feminine requires 'eine'!" },
+      { text: "Das sind eine Tasche.", correct: false, explain: "'Tasche' is singular, so use 'Das ist', not 'Das sind'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 10's exercise (Übung), you see 'das Buch'. What is the correct way to say 'This is a book'?",
+    hint: "'das' turns into 'ein' (neuter indefinite article)!",
+    options: [
+      { text: "Das ist ein Buch.", correct: true, explain: "Wunderbar! Slide 10 explicitly teaches: 'das Buch -> Das ist ein Buch'!" },
+      { text: "Das ist eine Buch.", correct: false, explain: "'Buch' is neuter (das Buch), so it takes 'ein', never 'eine'!" },
+      { text: "Der Buch ist schön.", correct: false, explain: "'Buch' is neuter (das), not masculine (der)!" }
+    ]
+  },
+  {
+    scenario: "In Slide 11's exercise (Übung), you see 'der Elefant'. How do you introduce it for the first time?",
+    hint: "'der' transforms into 'ein' for masculine nouns!",
+    options: [
+      { text: "Das ist ein Elefant.", correct: true, explain: "Hervorragend! Slide 11 shows: 'der Elefant -> Das ist ein Elefant'!" },
+      { text: "Das ist eine Elefant.", correct: false, explain: "'Elefant' is masculine (der), so it takes 'ein', not 'eine'!" },
+      { text: "Das sind ein Elefant.", correct: false, explain: "Only one elephant is pictured, so use 'Das ist'!" }
+    ]
+  },
+  {
+    scenario: "Look at the master comparison table on Slide 12: You want to switch between 'The' and 'A/An'. Which pair is correct?",
+    hint: "der -> ein, die -> eine, das -> ein!",
+    options: [
+      { text: "der -> ein, die -> eine, das -> ein, Plural die -> (no article)", correct: true, explain: "Masterful! Slide 12's mirror table clearly shows this exact golden formula!" },
+      { text: "der -> eine, die -> ein, das -> eine, Plural die -> ein", correct: false, explain: "Articles are reversed and plural cannot have 'ein'!" },
+      { text: "der -> ein, die -> ein, das -> ein, Plural die -> eine", correct: false, explain: "Feminine takes 'eine', not 'ein', and plural has no indefinite article!" }
+    ]
+  },
+  {
+    scenario: "You see multiple cars on the street ('die Autos'). How do you say 'These are cars. The cars are fast'?",
+    hint: "Remember the Plural Nullartikel rule from Slides 6 & 12!",
+    options: [
+      { text: "Das sind Autos. Die Autos sind schnell.", correct: true, explain: "Brilliant! Plural indefinite has no article ('Das sind Autos'), then specific plural uses 'Die Autos'!" },
+      { text: "Das sind eine Autos. Die Autos sind schnell.", correct: false, explain: "Never say 'eine Autos'! There is no plural indefinite article in German!" },
+      { text: "Das ist ein Autos. Der Autos ist schnell.", correct: false, explain: "'Autos' is plural, so verb must be 'sind' and article 'die'!" }
+    ]
+  },
+  {
+    scenario: "Why do German speakers call masculine (der -> ein) and neutral (das -> ein) 'The Indefinite Twins'?",
+    hint: "Look at their indefinite forms in the Slide 12 table!",
+    options: [
+      { text: "Because in the singular indefinite (a/an), both masculine and neutral use the exact same word: 'ein'!", correct: true, explain: "Superb! Both say 'ein Mann' and 'ein Buch', 'ein Apfel' and 'ein Mädchen'!" },
+      { text: "Because both take 'eine'.", correct: false, explain: "Only feminine takes 'eine'!" },
+      { text: "Because both disappear in plural.", correct: false, explain: "All genders use 'die' in plural!" }
+    ]
+  }
+];
+
+
 
 
 
