@@ -28,6 +28,7 @@ export default function Header({
     if (currentLesson === 14) msg = "Unregelmäßige Verben: sprechen wird zu du sprichst, sehen wird zu du siehst, fahren wird zu du fährst, und wissen: ich weiß, er weiß!";
     if (currentLesson === 15) msg = "Zahlen Teil drei: einhundert, eintausend, eine Million, eine Milliarde. Neunzehnhundertfünfundsiebzig und zweitausendsiebzehn!";
     if (currentLesson === 16) msg = "Adjektive und Gegenteile: groß und klein, schnell und langsam, alt und neu, alt und jung! Ein Elefant ist groß, aber eine Katze ist klein.";
+    if (currentLesson === 17) msg = "jemanden vorstellen: Das ist Peter, er kommt aus Spanien und arbeitet bei Siemens. Das ist Martina, sie kommt aus der Schweiz. Das ist ein Kind, es ist ein Jahr alt. Das sind Laura und Antonio, sie wohnen in München.";
     speakGerman(msg, isSlowMode);
   };
 
@@ -162,6 +163,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson17NavItems = [
+    { id: 'cards', label: '📖 Lesson 17 Cards', sub: 'Profiles & Introduction Stories' },
+    { id: 'studio17', label: '👥 Introduction Studio', sub: 'Peter, Martina, Kind & Couple' },
+    { id: 'game17', label: '🎮 Introduction Quiz', sub: 'Questions & Grammar Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -178,6 +187,7 @@ export default function Header({
   if (currentLesson === 14) navItems = lesson14NavItems;
   if (currentLesson === 15) navItems = lesson15NavItems;
   if (currentLesson === 16) navItems = lesson16NavItems;
+  if (currentLesson === 17) navItems = lesson17NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -196,6 +206,7 @@ export default function Header({
     { num: 14, label: "⚡ 14: Unregelmäßige Verben", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
     { num: 15, label: "💯 15: Zahlen (Teil 3)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 16, label: "🎨 16: Adjektive & Gegenteile", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
+    { num: 17, label: "👥 17: Jemanden vorstellen", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
   ];
 
   return (

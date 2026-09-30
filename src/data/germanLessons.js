@@ -3789,6 +3789,259 @@ export const LESSON_16_SCENARIOS = [
   }
 ];
 
+export const LESSON_17_ITEMS = [
+  {
+    id: "l17-intro",
+    german: "jemanden vorstellen",
+    english: "To introduce someone else (Slide 2)",
+    pronunciation: "YAY-man-den FOR-shtel-len",
+    audioText: "jemanden vorstellen. Wie stellt man eine andere Person vor?",
+    category: "concept",
+    badge: "Core Topic 👥",
+    icon: "🤝 🌟",
+    kenyanAnalogy: "Like a gracious host at a gathering introducing a guest speaker, friend, or colleague to everyone in the room!",
+    memoryTrick: "jemanden (someone) + vorstellen (to introduce) = introducing someone else!"
+  },
+  {
+    id: "l17-wer-ist-das",
+    german: "Wer ist das? / Wer sind sie?",
+    english: "Who is this? (Singular) / Who are they? (Plural) (Slide 3 & 10)",
+    pronunciation: "vair ist dahs? / vair zint zee?",
+    audioText: "Wer ist das? Und wer sind sie?",
+    category: "question",
+    badge: "The Golden Questions ❓",
+    icon: "❓ 👥",
+    kenyanAnalogy: "Pointing to an interesting newcomer across the room: 'Wer ist das?' for one person, and 'Wer sind sie?' for a group or couple!",
+    memoryTrick: "Wer = Who. Wer ist das? (singular is), Wer sind sie? (plural are)."
+  },
+  {
+    id: "l17-peter-profile",
+    german: "Das ist Peter. Er kommt aus Spanien. Er wohnt in Frankfurt.",
+    english: "This is Peter. He is from Spain. He lives in Frankfurt. (Slide 4 & 5)",
+    pronunciation: "dahs ist PAY-ter. air komt ows SHPAH-nee-en. air vohnt in FRAHNK-foort.",
+    audioText: "Das ist Peter. Er kommt aus Spanien. Er wohnt in Frankfurt.",
+    category: "he-profile",
+    badge: "Peter: Origin & City 👨",
+    icon: "👨 🇪🇸",
+    kenyanAnalogy: "Introducing your male colleague Peter: using 'er' (he) and notice verbs end with -t (er kommt, er wohnt)!",
+    memoryTrick: "For a man: use 'er' (he). Both kommt and wohnt end in -t!"
+  },
+  {
+    id: "l17-peter-work",
+    german: "Er ist Analyst. Er arbeitet bei Siemens.",
+    english: "He is an analyst. He works at Siemens. (Slide 5)",
+    pronunciation: "air ist ah-nah-LEEST. air AR-by-tet by ZEE-mens.",
+    audioText: "Er ist Analyst. Er arbeitet bei Siemens.",
+    category: "he-profile",
+    badge: "Peter: Job & Company 💼",
+    icon: "📊 🏢",
+    kenyanAnalogy: "Just like saying someone works at Safaricom: in German, companies take 'bei' (bei Siemens, bei Safaricom)! And no 'a/an' before job titles!",
+    memoryTrick: "Company rule: always use 'bei' (at company) + no 'ein' before profession!"
+  },
+  {
+    id: "l17-peter-details",
+    german: "Er ist 30 Jahre alt. Seine Hobbys sind Musik hören und Lesen.",
+    english: "He is 30 years old. His hobbies are listening to music and reading. (Slide 5)",
+    pronunciation: "air ist DRAY-sikh YAH-reh ahlt. ZY-neh HOH-bees zint moo-ZEEK HEW-ren oont LAY-zen.",
+    audioText: "Er ist 30 Jahre alt. Seine Hobbys sind Musik hören und Lesen. Er lernt Deutsch.",
+    category: "he-profile",
+    badge: "Peter: Hobbies & Languages 🎧",
+    icon: "🎶 📖",
+    kenyanAnalogy: "For a man, 'his' is 'sein/seine'. Because hobbies is plural, we use 'seine Hobbys sind...'!",
+    memoryTrick: "Male possessive = SEINE Hobbys (His hobbies). Verb is 'sind' (are)!"
+  },
+  {
+    id: "l17-martina-profile",
+    german: "Das ist Martina. Sie kommt aus der Schweiz. Sie wohnt in Leipzig.",
+    english: "This is Martina. She comes from Switzerland. She lives in Leipzig. (Slide 6 & 7)",
+    pronunciation: "dahs ist mar-TEE-nah. zee komt ows dair SHVYTS. zee vohnt in LYP-tsikh.",
+    audioText: "Das ist Martina. Sie kommt aus der Schweiz. Sie wohnt in Leipzig.",
+    category: "she-profile",
+    badge: "Martina: Switzerland Alert 🇨🇭",
+    icon: "👩 🇨🇭",
+    kenyanAnalogy: "Special rule alert! Most countries don't have an article (aus Spanien, aus Kenia), but Switzerland ALWAYS takes 'der': 'aus der Schweiz'!",
+    memoryTrick: "Switzerland is feminine: ALWAYS say 'aus DER Schweiz'!"
+  },
+  {
+    id: "l17-martina-work",
+    german: "Sie ist Flugbegleiterin. Sie arbeitet bei Lufthansa.",
+    english: "She is a flight attendant. She works at Lufthansa. (Slide 7)",
+    pronunciation: "zee ist FLOOK-beh-gly-te-rin. zee AR-by-tet by LOOFT-hahn-zah.",
+    audioText: "Sie ist Flugbegleiterin. Sie arbeitet bei Lufthansa.",
+    category: "she-profile",
+    badge: "Martina: Feminine Job ✈️",
+    icon: "✈️ 🛫",
+    kenyanAnalogy: "Remember the feminine job ending '-in' from Lesson 6! Flugbegleiter (male) becomes Flugbegleiterin for Martina. Company is 'bei Lufthansa'!",
+    memoryTrick: "Female profession = add '-in'! Flugbegleiterin!"
+  },
+  {
+    id: "l17-martina-details",
+    german: "Sie ist 28 Jahre alt. Ihre Hobbys sind Tanzen und Reisen.",
+    english: "She is 28 years old. Her hobbies are dancing and traveling. (Slide 7)",
+    pronunciation: "zee ist AHKHT-oont-TSVAHN-tsikh YAH-reh ahlt. EE-reh HOH-bees zint TAHN-tsen oont RYE-zen.",
+    audioText: "Sie ist 28 Jahre alt. Ihre Hobbys sind Tanzen und Reisen. Sie lernt Französisch.",
+    category: "she-profile",
+    badge: "Martina: Her Hobbies 💃",
+    icon: "💃 🧳",
+    kenyanAnalogy: "For a woman, 'her' is 'ihr/ihre'. So we say 'ihre Hobbys' (her hobbies) vs Peter's 'seine Hobbys' (his hobbies)!",
+    memoryTrick: "Female possessive = IHRE Hobbys (Her hobbies)!"
+  },
+  {
+    id: "l17-sofia-profile",
+    german: "Das ist Sofia. Sie kommt aus Slowakei. Sie ist Managerin von Beruf.",
+    english: "This is Sofia. She is from Slovakia. She is a manager by profession. (Slide 1)",
+    pronunciation: "dahs ist zoh-FEE-ah. zee komt ows sloh-vah-KY. zee ist mah-nah-JEH-rin fon beh-ROOF.",
+    audioText: "Das ist Sofia. Sie kommt aus Slowakei. Sie wohnt in Berlin. Sie ist Managerin von Beruf. Sie spricht Deutsch, Englisch und Slowakisch.",
+    category: "she-profile",
+    badge: "Sofia: Slide 1 Host 🌟",
+    icon: "👩‍💼 🇸🇰",
+    kenyanAnalogy: "Sofia from slide 1! Managerin with '-in' + 'von Beruf' (by profession) + speaks 3 languages!",
+    memoryTrick: "von Beruf = by profession. Manager + in = Managerin!"
+  },
+  {
+    id: "l17-baby-profile",
+    german: "Das ist ein Kind. Es kommt aus Deutschland. Es ist 1 Jahr alt.",
+    english: "This is a child. It comes from Germany. It is 1 year old. (Slide 8 & 9)",
+    pronunciation: "dahs ist ayn KINT. ess komt ows DOYTCH-lahnt. ess ist ayn YAHR ahlt.",
+    audioText: "Das ist ein Kind. Es kommt aus Deutschland. Es ist 1 Jahr alt.",
+    category: "child-profile",
+    badge: "Child: The Baby (es) 🍼",
+    icon: "👶 🍼",
+    kenyanAnalogy: "Because 'Kind' is neuter (das Kind), German uses 'es' (it) to refer to the baby! And notice: '1 Jahr alt' (singular year, no -e)!",
+    memoryTrick: "das Kind -> pronoun is 'es'! 1 Jahr (singular, not Jahre)!"
+  },
+  {
+    id: "l17-baby-drink",
+    german: "Es wohnt in Berlin. Es trinkt Milch.",
+    english: "It lives in Berlin. It drinks milk. (Slide 9)",
+    pronunciation: "ess vohnt in bair-LEEN. ess trinkt MILKH.",
+    audioText: "Es wohnt in Berlin. Es trinkt Milch.",
+    category: "child-profile",
+    badge: "Baby Routine 🥛",
+    icon: "🥛 👶",
+    kenyanAnalogy: "Babies don't have corporate jobs or languages yet—Slide 9 gives the sweet everyday detail: 'Es trinkt Milch'!",
+    memoryTrick: "es trinkt Milch = baby drinks milk!"
+  },
+  {
+    id: "l17-couple-profile",
+    german: "Das sind Laura und Antonio. Sie kommen aus Italien.",
+    english: "These are Laura and Antonio. They come from Italy. (Slide 10 & 11)",
+    pronunciation: "dahs zint LAOW-rah oont ahn-TOH-nee-oh. zee KOM-men ows ee-TAH-lee-en.",
+    audioText: "Das sind Laura und Antonio. Sie kommen aus Italien.",
+    category: "they-profile",
+    badge: "Couple: They (sie Plural) 👫",
+    icon: "👫 🇮🇹",
+    kenyanAnalogy: "Plural alert! For two people, we say 'Das sind...' (These are...) instead of 'Das ist...', and verbs take -en: 'sie kommen'!",
+    memoryTrick: "Plural = Das SIND! They = SIE kommen (ends in -en)!"
+  },
+  {
+    id: "l17-couple-work",
+    german: "Sie wohnen in München. Sie sind Ingenieure. Sie arbeiten bei BMW.",
+    english: "They live in Munich. They are engineers. They work at BMW. (Slide 11)",
+    pronunciation: "zee VOH-nen in MEWN-khen. zee zint in-zheh-NYER-eh. zee AR-by-ten by beh-em-veh.",
+    audioText: "Sie wohnen in München. Sie sind Ingenieure. Sie arbeiten bei BMW.",
+    category: "they-profile",
+    badge: "Couple: BMW Engineers 🚗",
+    icon: "🚗 🛠️",
+    kenyanAnalogy: "Both work as engineers: 'Ingenieure' is plural! And company preposition is 'bei BMW'!",
+    memoryTrick: "Plural job: Ingenieure! Plural verb: sie arbeiten, sie wohnen!"
+  },
+  {
+    id: "l17-couple-details",
+    german: "Sie sind 30 Jahre alt. Ihre Hobbys sind Karten spielen und Essen gehen.",
+    english: "They are 30 years old. Their hobbies are playing cards and dining out. (Slide 11)",
+    pronunciation: "zee zint DRAY-sikh YAH-reh ahlt. EE-reh HOH-bees zint KAR-ten SHPEE-len oont ESS-en GAY-en.",
+    audioText: "Sie sprechen Deutsch und Italienisch. Ihre Hobbys sind Karten spielen und Essen gehen.",
+    category: "they-profile",
+    badge: "Couple: Their Hobbies 🃏",
+    icon: "🃏 🍽️",
+    kenyanAnalogy: "'Their hobbies' is 'Ihre Hobbys'. Followed by fun social activities: playing cards (Karten spielen) and dining out (Essen gehen)!",
+    memoryTrick: "Their hobbies = Ihre Hobbys sind Karten spielen und Essen gehen!"
+  },
+  {
+    id: "l17-questions-summary",
+    german: "Die 9 W-Fragen zum Vorstellen",
+    english: "The 9 Core Questions used to introduce someone (Slide 4, 6, 10)",
+    pronunciation: "dee noyn veh-FRAH-gen tsoom FOR-shtel-len",
+    audioText: "Wer ist das? Woher kommt er? Wo wohnt er? Wie alt ist er? Was lernt er? Wo arbeitet er? Was ist er von Beruf? Welche Sprachen spricht er? Was sind seine Hobbys?",
+    category: "questions",
+    badge: "The 9 Question Toolkit 📋",
+    icon: "❓ 🎓",
+    kenyanAnalogy: "The complete checklist! Wer (Who), Woher (Where from), Wo (Where), Wie alt (How old), Wo arbeitet (Where works), Was von Beruf (Job), Welche Sprachen (Languages), Was für Hobbys (Hobbies)!",
+    memoryTrick: "9 questions that unlock everything about anyone you meet!"
+  },
+  {
+    id: "l17-summary-chalkboard",
+    german: "Zusammenfassung: jemanden vorstellen (At a glance)",
+    english: "Summary: Introducing Men (er), Women (sie), Children (es), and Groups (sie Plural)",
+    pronunciation: "tsoo-ZAM-men-fas-soong: YAY-man-den FOR-shtel-len",
+    audioText: "Zusammenfassung: jemanden vorstellen. Er kommt, er wohnt, seine Hobbys. Sie kommt, sie wohnt, ihre Hobbys. Das Kind, es kommt, es wohnt. Laura und Antonio: sie kommen, sie wohnen, ihre Hobbys.",
+    category: "summary",
+    badge: "Master Chalkboard 📋",
+    icon: "🌟 🎓",
+    kenyanAnalogy: "The 4 profile archetypes side by side: Male (er / seine Hobbys), Female (sie / ihre Hobbys), Child (es / 1 Jahr), Couple (Das sind... / sie Plural)!",
+    memoryTrick: "He = er/seine. She = sie/ihre. Child = es. They = Das sind / sie / ihre!"
+  }
+];
+
+export const LESSON_17_SCENARIOS = [
+  {
+    scenario: "You are with a friend at a social gathering and point to a man standing nearby. How do you ask 'Who is this?' in German?",
+    hint: "Check slide 3: The essential 3-word question!",
+    options: [
+      { text: "Wer ist das?", correct: true, explain: "Spot on! 'Wer ist das?' means 'Who is this?' used across all slides to introduce someone!" },
+      { text: "Wie heißt du?", correct: false, explain: "'Wie heißt du?' is used when asking the person directly: 'What is your name?'" },
+      { text: "Woher kommen Sie?", correct: false, explain: "'Woher kommen Sie?' means 'Where do you come from?'" }
+    ]
+  },
+  {
+    scenario: "You are describing your male colleague Peter's hobbies. Which sentence uses the correct German possessive for 'his hobbies'?",
+    hint: "For a man (er), think of 'sein / seine'!",
+    options: [
+      { text: "Seine Hobbys sind Musik hören und Lesen.", correct: true, explain: "Brilliant! Slide 5 shows: For a man (er), his hobbies is 'Seine Hobbys sind...'!" },
+      { text: "Ihre Hobbys sind Musik hören und Lesen.", correct: false, explain: "'Ihre Hobbys' means 'her hobbies' or 'their hobbies', not his!" },
+      { text: "Meine Hobbys sind Musik hören und Lesen.", correct: false, explain: "'Meine Hobbys' means 'my hobbies' (Lesson 6)!" }
+    ]
+  },
+  {
+    scenario: "Martina is from Switzerland. How does German specially express 'She comes from Switzerland'?",
+    hint: "Check slide 7: Switzerland has a special feminine country article!",
+    options: [
+      { text: "Sie kommt aus der Schweiz.", correct: true, explain: "Outstanding! Switzerland is one of the few countries that requires 'der': 'aus der Schweiz'!" },
+      { text: "Sie kommt aus Schweiz.", correct: false, explain: "In German you cannot omit the article for Switzerland. It must be 'aus der Schweiz'!" },
+      { text: "Sie kommt in der Schweiz.", correct: false, explain: "'in der Schweiz' means living in Switzerland, not coming from Switzerland!" }
+    ]
+  },
+  {
+    scenario: "Look at the baby on Slide 8 & 9 ('das Kind'). Why does German say 'Es ist 1 Jahr alt' instead of 'Er' or 'Jahre'?",
+    hint: "Neuter noun 'das Kind' and singular year!",
+    options: [
+      { text: "Because 'das Kind' takes pronoun 'es', and 1 year is singular 'Jahr' (not plural 'Jahre').", correct: true, explain: "Perfect! Slide 9 shows: 'Das ist ein Kind. Es kommt... Es ist 1 Jahr alt'!" },
+      { text: "Because babies don't have German pronouns.", correct: false, explain: "Babies do have pronouns! Neuter nouns take 'es'!" },
+      { text: "Because 'Kind' is always plural.", correct: false, explain: "'Kind' is singular (child); 'Kinder' is plural (children)!" }
+    ]
+  },
+  {
+    scenario: "Peter works at Siemens, and Martina works at Lufthansa. Which German preposition is used before company names?",
+    hint: "Look at: 'Er arbeitet ______ Siemens' and 'Sie arbeitet ______ Lufthansa'.",
+    options: [
+      { text: "bei (bei Siemens, bei Lufthansa)", correct: true, explain: "Masterful! In German, working at a company always takes 'bei': 'bei Siemens', 'bei BMW', 'bei Lufthansa'!" },
+      { text: "in (in Siemens)", correct: false, explain: "'in' is used for cities/countries (in Frankfurt, in Berlin), not companies!" },
+      { text: "zu (zu Siemens)", correct: false, explain: "'zu' indicates motion towards a place, not employment!" }
+    ]
+  },
+  {
+    scenario: "You are introducing a couple (Laura und Antonio). How does German start the sentence, and which verb ending do they take?",
+    hint: "Check slide 11: Plural form of 'Das ist...' and verb endings!",
+    options: [
+      { text: "Das sind Laura und Antonio. Sie kommen aus Italien und wohnen in München.", correct: true, explain: "Superb! For two or more people, 'Das ist' becomes 'Das sind', and verbs end in '-en' (sie kommen, sie wohnen)!" },
+      { text: "Das ist Laura und Antonio. Er kommt aus Italien.", correct: false, explain: "You cannot say 'Das ist' or 'er' for two people!" },
+      { text: "Das seid Laura und Antonio. Ihr kommt aus Italien.", correct: false, explain: "'Ihr seid' is used when speaking directly to them ('you guys'), not introducing them to someone else!" }
+    ]
+  }
+];
+
+
 
 
 

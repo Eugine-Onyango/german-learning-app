@@ -38,6 +38,8 @@ import Lesson15NumbersPart3Studio from './components/Lesson15NumbersPart3Studio'
 import Lesson15Game from './components/Lesson15Game';
 import Lesson16AdjectivesStudio from './components/Lesson16AdjectivesStudio';
 import Lesson16Game from './components/Lesson16Game';
+import Lesson17IntroduceSomeoneStudio from './components/Lesson17IntroduceSomeoneStudio';
+import Lesson17Game from './components/Lesson17Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -54,11 +56,12 @@ import {
   LESSON_13_ITEMS,
   LESSON_14_ITEMS,
   LESSON_15_ITEMS,
-  LESSON_16_ITEMS
+  LESSON_16_ITEMS,
+  LESSON_17_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(16); // Default to Lesson 16 as requested, easy switch to 1-15
+  const [currentLesson, setCurrentLesson] = useState(17); // Default to Lesson 17 as requested, easy switch to 1-16
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -78,6 +81,7 @@ export default function App() {
   if (currentLesson === 14) activeItems = LESSON_14_ITEMS;
   if (currentLesson === 15) activeItems = LESSON_15_ITEMS;
   if (currentLesson === 16) activeItems = LESSON_16_ITEMS;
+  if (currentLesson === 17) activeItems = LESSON_17_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -95,7 +99,8 @@ export default function App() {
     if (currentLesson === 13) return "Lesson 13: Regelmäßige Verben (Regular Verbs & The 2 Golden Exceptions)";
     if (currentLesson === 14) return "Lesson 14: Unregelmäßige Verben (Irregular Verbs with Vowel Change & The Rebel 'wissen')";
     if (currentLesson === 15) return "Lesson 15: Zahlen Teil 3 (Big Numbers 100 to 1 Billion, Combinations & Historical Years)";
-    return "Lesson 16: Adjektive & Gegenteile (Adjectives, Opposites & The 'aber' Connector)";
+    if (currentLesson === 16) return "Lesson 16: Adjektive & Gegenteile (Adjectives, Opposites & The 'aber' Connector)";
+    return "Lesson 17: jemanden vorstellen (Introducing Someone Else - He, She, Child & Couples)";
   };
 
   const getLessonDesc = () => {
@@ -144,7 +149,10 @@ export default function App() {
     if (currentLesson === 15) {
       return "Count from 100 all the way to 1 Billion (eine Milliarde)! Build complex compound numbers like Lego bricks (634 = sechshundertvierunddreißig), and discover the historical year rule (1975 = neunzehnhundertfünfundsiebzig) vs 2000+ years (2017 = zweitausendsiebzehn)!";
     }
-    return "Master German adjectives and opposite pairs (das Gegenteil / die Gegenteile)! Explore all 16 opposite pairs from the lesson, learn how to bridge contrasting sentences using 'aber' (but), and master the special double-life of 'alt': 'alt vs. neu' for objects, and 'alt vs. jung' for people!";
+    if (currentLesson === 16) {
+      return "Master German adjectives and opposite pairs (das Gegenteil / die Gegenteile)! Explore all 16 opposite pairs from the lesson, learn how to bridge contrasting sentences using 'aber' (but), and master the special double-life of 'alt': 'alt vs. neu' for objects, and 'alt vs. jung' for people!";
+    }
+    return "Learn how to introduce any friend, colleague, child, or group in German! Master the 9 core questions (Wer ist das? Woher kommt er? Wo wohnt sie? Was sind ihre Hobbys?), company names with 'bei' (bei Siemens, bei BMW), and the special country rule 'aus der Schweiz'!";
   };
 
   return (
@@ -325,6 +333,15 @@ export default function App() {
 
         {currentLesson === 16 && activeTab === 'game16' && (
           <Lesson16Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 17 Specific Modules */}
+        {currentLesson === 17 && activeTab === 'studio17' && (
+          <Lesson17IntroduceSomeoneStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 17 && activeTab === 'game17' && (
+          <Lesson17Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
