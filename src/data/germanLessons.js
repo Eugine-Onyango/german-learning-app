@@ -4041,6 +4041,259 @@ export const LESSON_17_SCENARIOS = [
   }
 ];
 
+export const LESSON_18_ITEMS = [
+  {
+    id: "l18-nominativ-intro",
+    german: "der, die, das - Artikel im Nominativ",
+    english: "Articles in Nominative Case (Part 1 - Slide 1 & 2)",
+    pronunciation: "dair, dee, dahs - ar-TEE-kel im noh-mee-nah-TEEF",
+    audioText: "der, die, das. Artikel im Nominativ. Was ist Nominativ? Wer oder was?",
+    category: "concept",
+    badge: "Core Topic 🎯",
+    icon: "🔴 🔵 🟡",
+    kenyanAnalogy: "English has only one word for 'the'. German gives every noun a gender badge: der (masculine), die (feminine), and das (neutral)!",
+    memoryTrick: "3 singular colors: der, die, das! And ONE universal plural: die!"
+  },
+  {
+    id: "l18-what-is-nominativ",
+    german: "Subjekt (Nominativ): Wer? oder Was?",
+    english: "The Subject: Who? (for people) or What? (for things) (Slide 3-5)",
+    pronunciation: "zoob-YEKT: vair OH-der vahs?",
+    audioText: "Das Subjekt steht im Nominativ. Wer oder was? Sabine ist ledig. Das Haus ist groß.",
+    category: "concept",
+    badge: "The 2 Magic Questions ❓",
+    icon: "👤 🏠",
+    kenyanAnalogy: "Nominative simply means who or what the sentence is about! Sabine ist ledig (Who is single? Sabine!). Das Haus ist groß (What is big? The house!).",
+    memoryTrick: "People = Wer? (Who?). Things = Was? (What?). Both are the Subjekt!"
+  },
+  {
+    id: "l18-satz-formel",
+    german: "Satz = Subjekt (Nominativ) + Verb",
+    english: "Sentence = Subject + Verb (Slide 6 & 7)",
+    pronunciation: "zahts = zoob-YEKT poos fairp",
+    audioText: "Ein Satz besteht aus Subjekt und Verb. Das Subjekt bestimmt das Verb.",
+    category: "concept",
+    badge: "Sentence Formula 🧱",
+    icon: "🧱 ⚙️",
+    kenyanAnalogy: "The subject is the driver, and the verb is the engine! The subject decides how the verb conjugates.",
+    memoryTrick: "Subject in Nominativ + Verb = Core Sentence Engine!"
+  },
+  {
+    id: "l18-substantiv-rules",
+    german: "Nomen (Substantiv): Person oder Sache",
+    english: "Nouns: Persons or Things (Slide 8 & 9)",
+    pronunciation: "NOH-men: pair-ZOHN OH-der ZAH-kheh",
+    audioText: "Ein Nomen beschreibt eine Person oder eine Sache. Wer ist das? Das ist Peter. Was ist das? Das ist ein Bus.",
+    category: "concept",
+    badge: "Person vs Thing 👥 🚌",
+    icon: "👨 🚌",
+    kenyanAnalogy: "For a person, ask 'Wer ist das?' -> Das ist Peter. For an object/thing, ask 'Was ist das?' -> Das ist ein Bus. In German, ALL nouns must start with a CAPITAL letter!",
+    memoryTrick: "Always capitalize every single German noun! No exceptions!"
+  },
+  {
+    id: "l18-drei-artikel-typen",
+    german: "3 Arten von Artikeln",
+    english: "3 Types of Articles: Bestimmt, Unbestimmt, Negation (Slide 10)",
+    pronunciation: "dry AR-ten fon ar-TEE-keln",
+    audioText: "Drei Arten von Artikeln: bestimmter Artikel, unbestimmter Artikel, Negationsartikel.",
+    category: "concept",
+    badge: "3 Article Types 📑",
+    icon: "1️⃣ 2️⃣ 3️⃣",
+    kenyanAnalogy: "1. Specific ('The' bus -> der Bus), 2. Any random ('A' bus -> ein Bus), 3. None/Not a ('No' bus -> kein Bus)!",
+    memoryTrick: "Definite (der/die/das) = specific! Indefinite (ein/eine) = any! Negative (kein) = none!"
+  },
+  {
+    id: "l18-der-mann",
+    german: "Der Mann ist glücklich.",
+    english: "The man is happy. (Slide 12 - Maskulin Person)",
+    pronunciation: "dair mahn ist GLEWK-likh",
+    audioText: "Der Mann ist glücklich.",
+    category: "maskulin",
+    badge: "der (Maskulin Person) 👨",
+    icon: "👨 🍺",
+    kenyanAnalogy: "A man is naturally masculine: der Mann! Notice capital 'M' for Mann.",
+    memoryTrick: "Male person = DER Mann!"
+  },
+  {
+    id: "l18-der-apfel",
+    german: "Der Apfel ist rot.",
+    english: "The apple is red. (Slide 13 - Maskulin Thing)",
+    pronunciation: "dair AHP-fel ist roht",
+    audioText: "Der Apfel ist rot.",
+    category: "maskulin",
+    badge: "der (Maskulin Thing) 🍎",
+    icon: "🍎 🔴",
+    kenyanAnalogy: "Even objects have genders in German! An apple is treated as masculine: der Apfel!",
+    memoryTrick: "A crisp red apple is DER Apfel!"
+  },
+  {
+    id: "l18-die-frau",
+    german: "Die Frau trinkt Wein.",
+    english: "The woman is drinking wine. (Slide 14 - Feminin Person)",
+    pronunciation: "dee frow trinkt vyne",
+    audioText: "Die Frau trinkt Wein.",
+    category: "feminin",
+    badge: "die (Feminin Person) 👩",
+    icon: "👩 🍷",
+    kenyanAnalogy: "A woman is feminine: die Frau! Notice capital 'F' for Frau.",
+    memoryTrick: "Female person = DIE Frau!"
+  },
+  {
+    id: "l18-die-katze",
+    german: "Die Katze ist freundlich.",
+    english: "The cat is friendly. (Slide 15 - Feminin Animal/Thing)",
+    pronunciation: "dee KAHT-seh ist FROYNT-likh",
+    audioText: "Die Katze ist freundlich.",
+    category: "feminin",
+    badge: "die (Feminin Animal) 🐱",
+    icon: "🐱 💙",
+    kenyanAnalogy: "A cat is grammatically feminine in German: die Katze! Friendly adjective: freundlich.",
+    memoryTrick: "Purring pet = DIE Katze!"
+  },
+  {
+    id: "l18-das-baby",
+    german: "Das Baby ist süß.",
+    english: "The baby is sweet / cute. (Slide 16 - Neutrum Person)",
+    pronunciation: "dahs BAY-bee ist zewss",
+    audioText: "Das Baby ist süß.",
+    category: "neutrum",
+    badge: "das (Neutrum Baby) 👶",
+    icon: "👶 🍼",
+    kenyanAnalogy: "Babies in German take the neutral gender 'das Baby' (just like 'das Kind')! süß = sweet/cute.",
+    memoryTrick: "Little baby = DAS Baby!"
+  },
+  {
+    id: "l18-das-haus",
+    german: "Das Haus ist groß.",
+    english: "The house is big. (Slide 17 - Neutrum Thing)",
+    pronunciation: "dahs hows ist grohs",
+    audioText: "Das Haus ist groß.",
+    category: "neutrum",
+    badge: "das (Neutrum Thing) 🏠",
+    icon: "🏠 🏰",
+    kenyanAnalogy: "A building/house is neutral: das Haus! Just like from Lesson 16: groß = big.",
+    memoryTrick: "Solid house = DAS Haus!"
+  },
+  {
+    id: "l18-die-kinder",
+    german: "Die Kinder spielen.",
+    english: "The children are playing. (Slide 18 - Plural People)",
+    pronunciation: "dee KIN-der SHPEE-len",
+    audioText: "Die Kinder spielen.",
+    category: "plural",
+    badge: "die (Plural People) 🧒",
+    icon: "🧒 ⚽",
+    kenyanAnalogy: "In the plural, all genders turn into 'die'! das Kind -> die Kinder! Verb is plural: spielen.",
+    memoryTrick: "Multiple children = DIE Kinder!"
+  },
+  {
+    id: "l18-die-buecher",
+    german: "Die Bücher sind bunt.",
+    english: "The books are colorful. (Slide 19 - Plural Things)",
+    pronunciation: "dee BEW-kher zint boont",
+    audioText: "Die Bücher sind bunt.",
+    category: "plural",
+    badge: "die (Plural Things) 📚",
+    icon: "📚 🎨",
+    kenyanAnalogy: "Even things in plural take 'die'! das Buch -> die Bücher! Plural verb: sind bunt (are colorful).",
+    memoryTrick: "Stack of books = DIE Bücher!"
+  },
+  {
+    id: "l18-tabelle-singular-plural",
+    german: "Tabelle: der, die, das -> die Plural",
+    english: "Master Table: Singular to Plural (Slide 20 & 21)",
+    pronunciation: "tah-BEL-leh: dair, dee, dahs -> dee",
+    audioText: "der Mann wird zu die Männer. Die Frau wird zu die Frauen. Das Baby wird zu die Babys. Im Plural heißt es immer die!",
+    category: "summary",
+    badge: "The Golden Table 📋",
+    icon: "📊 🌟",
+    kenyanAnalogy: "der Mann -> die Männer. die Frau -> die Frauen. das Baby -> die Babys. Notice that in the plural, EVERY single noun takes 'die'!",
+    memoryTrick: "Universal Plural Rule: ALL genders become DIE in the plural!"
+  },
+  {
+    id: "l18-sound-short-trick",
+    german: "Der Endungs-Trick: 'r Mann, 'e Frau, 's Baby",
+    english: "Sound Trick: -r for der, -e for die, -s for das (Slide 22)",
+    pronunciation: "dair en-doongs trik: dair, dee, dahs",
+    audioText: "Der Endungs-Trick: der Mann, die Frau, das Baby. r, e, s.",
+    category: "trick",
+    badge: "Acoustic Trick 💡",
+    icon: "👂 🎯",
+    kenyanAnalogy: "Notice the ending sound of each article: deR (-r for masculine), diE (-e for feminine), daS (-s for neutral)! This is the RES key of German grammar!",
+    memoryTrick: "R-E-S: deR (male), diE (female), daS (neuter)!"
+  },
+  {
+    id: "l18-summary-chalkboard",
+    german: "Zusammenfassung: Artikel im Nominativ",
+    english: "Summary: Definite Articles in the Nominative Case",
+    pronunciation: "tsoo-ZAM-men-fas-soong: ar-TEE-kel im noh-mee-nah-TEEF",
+    audioText: "Zusammenfassung: Maskulin der, feminin die, neutrum das. Plural immer die. Wer oder was ist das Subjekt.",
+    category: "summary",
+    badge: "Chalkboard Summary 🎓",
+    icon: "📋 🌟",
+    kenyanAnalogy: "The complete Nominative map: der Mann, der Apfel, die Frau, die Katze, das Baby, das Haus, die Kinder, die Bücher!",
+    memoryTrick: "Nominativ = Subject (Wer/Was). der, die, das -> die Plural!"
+  }
+];
+
+export const LESSON_18_SCENARIOS = [
+  {
+    scenario: "In German grammar, what is the 'Nominativ' (Nominative case) in plain, everyday language?",
+    hint: "Check slide 5 & 6: The core sentence builder!",
+    options: [
+      { text: "It is the Subject of the sentence (who or what does the action, answering 'Wer?' or 'Was?').", correct: true, explain: "Spot on! Slide 5 shows: Sabine (Wer?) and Das Haus (Was?) are both the Subjekt in the Nominativ!" },
+      { text: "It is a past tense verb form.", correct: false, explain: "Nominativ is a noun case (the Subject), not a verb tense!" },
+      { text: "It is only used for female words.", correct: false, explain: "Nominativ applies to all genders: masculine (der), feminine (die), and neutral (das)!" }
+    ]
+  },
+  {
+    scenario: "Look at the sentences: 'Der Mann ist glücklich' and 'Der Apfel ist rot'. Why do both 'Mann' and 'Apfel' take the article 'der'?",
+    hint: "Check slide 12 & 13: Grammatical gender for persons and things!",
+    options: [
+      { text: "Because both 'Mann' (person) and 'Apfel' (thing) are masculine nouns in German.", correct: true, explain: "Brilliant! In German, masculine nouns (both people and objects) take 'der' in the singular Nominativ!" },
+      { text: "Because all food items take 'der'.", correct: false, explain: "Food items can be feminine (die Pizza) or neuter (das Brot) as well!" },
+      { text: "Because 'der' is used for everything red.", correct: false, explain: "Color doesn't determine noun gender in German!" }
+    ]
+  },
+  {
+    scenario: "How would you correctly translate: 'The woman is drinking wine' and 'The cat is friendly'?",
+    hint: "Check slide 14 & 15: Feminine definite article!",
+    options: [
+      { text: "Die Frau trinkt Wein. Die Katze ist freundlich.", correct: true, explain: "Outstanding! Both 'Frau' and 'Katze' are feminine nouns and take 'die'!" },
+      { text: "Der Frau trinkt Wein. Der Katze ist freundlich.", correct: false, explain: "'der' is masculine, not feminine!" },
+      { text: "Das Frau trinkt Wein. Das Katze ist freundlich.", correct: false, explain: "'das' is neuter, not feminine!" }
+    ]
+  },
+  {
+    scenario: "What definite article does German use for 'baby' and 'house' in: '_____ Baby ist süß' and '_____ Haus ist groß'?",
+    hint: "Check slide 16 & 17: Neuter definite article!",
+    options: [
+      { text: "das (Das Baby ist süß. Das Haus ist groß.)", correct: true, explain: "Perfect! Both 'Baby' and 'Haus' are neuter nouns and take 'das'!" },
+      { text: "die", correct: false, explain: "'die' is feminine or plural!" },
+      { text: "der", correct: false, explain: "'der' is masculine!" }
+    ]
+  },
+  {
+    scenario: "Look at Slide 20 & 21: When 'der Mann', 'die Frau', and 'das Baby' become plural, what happens to their articles?",
+    hint: "The Universal Plural Rule!",
+    options: [
+      { text: "In the plural, ALL genders take 'die' (die Männer, die Frauen, die Babys).", correct: true, explain: "Masterful! Slide 20 shows: No matter if a noun was der, die, or das in singular, in plural it ALWAYS takes 'die'!" },
+      { text: "Each gender keeps its own singular article.", correct: false, explain: "In German, there is no 'der' or 'das' in plural. Plural is always 'die'!" },
+      { text: "Plural nouns do not have articles.", correct: false, explain: "Definite plural nouns take 'die'!" }
+    ]
+  },
+  {
+    scenario: "Look at all German nouns: 'Mann', 'Frau', 'Apfel', 'Katze', 'Haus', 'Kinder'. What is the golden spelling rule for EVERY German noun?",
+    hint: "Look at the first letter of each noun on the chalkboard!",
+    options: [
+      { text: "Every German noun must ALWAYS be capitalized (start with an uppercase capital letter)!", correct: true, explain: "Superb! Slide 5-21: In German, all nouns (persons, things, animals) are always written with a Capital letter!" },
+      { text: "All German nouns must end in '-en'.", correct: false, explain: "Many nouns end in other letters like '-el', '-er', or '-s'!" },
+      { text: "Nouns are written in lowercase unless at the start of a sentence.", correct: false, explain: "In German, nouns are ALWAYS capitalized everywhere in the sentence!" }
+    ]
+  }
+];
+
+
 
 
 

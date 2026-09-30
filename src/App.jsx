@@ -40,6 +40,8 @@ import Lesson16AdjectivesStudio from './components/Lesson16AdjectivesStudio';
 import Lesson16Game from './components/Lesson16Game';
 import Lesson17IntroduceSomeoneStudio from './components/Lesson17IntroduceSomeoneStudio';
 import Lesson17Game from './components/Lesson17Game';
+import Lesson18NominativStudio from './components/Lesson18NominativStudio';
+import Lesson18Game from './components/Lesson18Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -57,11 +59,12 @@ import {
   LESSON_14_ITEMS,
   LESSON_15_ITEMS,
   LESSON_16_ITEMS,
-  LESSON_17_ITEMS
+  LESSON_17_ITEMS,
+  LESSON_18_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(17); // Default to Lesson 17 as requested, easy switch to 1-16
+  const [currentLesson, setCurrentLesson] = useState(18); // Default to Lesson 18 as requested, easy switch to 1-17
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -82,6 +85,7 @@ export default function App() {
   if (currentLesson === 15) activeItems = LESSON_15_ITEMS;
   if (currentLesson === 16) activeItems = LESSON_16_ITEMS;
   if (currentLesson === 17) activeItems = LESSON_17_ITEMS;
+  if (currentLesson === 18) activeItems = LESSON_18_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -100,7 +104,8 @@ export default function App() {
     if (currentLesson === 14) return "Lesson 14: Unregelmäßige Verben (Irregular Verbs with Vowel Change & The Rebel 'wissen')";
     if (currentLesson === 15) return "Lesson 15: Zahlen Teil 3 (Big Numbers 100 to 1 Billion, Combinations & Historical Years)";
     if (currentLesson === 16) return "Lesson 16: Adjektive & Gegenteile (Adjectives, Opposites & The 'aber' Connector)";
-    return "Lesson 17: jemanden vorstellen (Introducing Someone Else - He, She, Child & Couples)";
+    if (currentLesson === 17) return "Lesson 17: jemanden vorstellen (Introducing Someone Else - He, She, Child & Couples)";
+    return "Lesson 18: Artikel im Nominativ (Definite Articles: der, die, das & Universal Plural die)";
   };
 
   const getLessonDesc = () => {
@@ -152,7 +157,10 @@ export default function App() {
     if (currentLesson === 16) {
       return "Master German adjectives and opposite pairs (das Gegenteil / die Gegenteile)! Explore all 16 opposite pairs from the lesson, learn how to bridge contrasting sentences using 'aber' (but), and master the special double-life of 'alt': 'alt vs. neu' for objects, and 'alt vs. jung' for people!";
     }
-    return "Learn how to introduce any friend, colleague, child, or group in German! Master the 9 core questions (Wer ist das? Woher kommt er? Wo wohnt sie? Was sind ihre Hobbys?), company names with 'bei' (bei Siemens, bei BMW), and the special country rule 'aus der Schweiz'!";
+    if (currentLesson === 17) {
+      return "Learn how to introduce any friend, colleague, child, or group in German! Master the 9 core questions (Wer ist das? Woher kommt er? Wo wohnt sie? Was sind ihre Hobbys?), company names with 'bei' (bei Siemens, bei BMW), and the special country rule 'aus der Schweiz'!";
+    }
+    return "Master the German definite articles ('The') in the Nominative case! Learn why all German nouns are capitalized, how to spot the Subject with 'Wer?' or 'Was?', the 3 genders (der Mann, die Frau, das Baby), and the golden Universal Plural Umbrella (die)!";
   };
 
   return (
@@ -342,6 +350,15 @@ export default function App() {
 
         {currentLesson === 17 && activeTab === 'game17' && (
           <Lesson17Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 18 Specific Modules */}
+        {currentLesson === 18 && activeTab === 'studio18' && (
+          <Lesson18NominativStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 18 && activeTab === 'game18' && (
+          <Lesson18Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
