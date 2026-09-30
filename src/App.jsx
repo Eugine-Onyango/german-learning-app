@@ -48,6 +48,8 @@ import Lesson20NegativeArticlesStudio from './components/Lesson20NegativeArticle
 import Lesson20Game from './components/Lesson20Game';
 import Lesson21TimeStudio from './components/Lesson21TimeStudio';
 import Lesson21Game from './components/Lesson21Game';
+import Lesson22InofficialTimeStudio from './components/Lesson22InofficialTimeStudio';
+import Lesson22Game from './components/Lesson22Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -69,11 +71,12 @@ import {
   LESSON_18_ITEMS,
   LESSON_19_ITEMS,
   LESSON_20_ITEMS,
-  LESSON_21_ITEMS
+  LESSON_21_ITEMS,
+  LESSON_22_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(21); // Default to Lesson 21 as requested, easy switch to 1-20
+  const [currentLesson, setCurrentLesson] = useState(22); // Default to Lesson 22 as requested, easy switch to 1-21
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -98,6 +101,7 @@ export default function App() {
   if (currentLesson === 19) activeItems = LESSON_19_ITEMS;
   if (currentLesson === 20) activeItems = LESSON_20_ITEMS;
   if (currentLesson === 21) activeItems = LESSON_21_ITEMS;
+  if (currentLesson === 22) activeItems = LESSON_22_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -120,7 +124,8 @@ export default function App() {
     if (currentLesson === 18) return "Lesson 18: Artikel im Nominativ (Definite Articles: der, die, das & Universal Plural die)";
     if (currentLesson === 19) return "Lesson 19: unbestimmte Artikel (Indefinite Articles: ein, eine, ein & Plural Nullartikel)";
     if (currentLesson === 20) return "Lesson 20: negative Artikel im Nominativ (kein, keine, kein & Plural keine - The Magic 'K' Rule)";
-    return "Lesson 21: Die Uhrzeit - offizielle Zeit (Telling Time in German - 24-Hour Digital Clock & Time Units)";
+    if (currentLesson === 21) return "Lesson 21: Die Uhrzeit - offizielle Zeit (Telling Time in German - 24-Hour Digital Clock & Time Units)";
+    return "Lesson 22: Inoffizielle Zeit (Zeit in Umgangssprache - Everyday Conversational Time)";
   };
 
   const getLessonDesc = () => {
@@ -184,7 +189,10 @@ export default function App() {
     if (currentLesson === 20) {
       return "Master how to say 'NOT A / NO' in German! Discover the Magic 'K' Rule: simply put a K in front of ein/eine to get kein/keine! Learn the Question-and-Answer formula (Ist das ein Kuli? Nein, das ist kein Kuli!), and master plural negation (keine Sterne)!";
     }
-    return "Master official German time (offizielle Zeit) and the 24-hour clock! Learn the units of time (Woche, Tag, Stunde, Minute, Sekunde), how to ask the time (Wie spät ist es? / Wie viel Uhr ist es?), the golden formula [Stunde] + Uhr + [Minute], and the drop-s rule for 'ein Uhr'!";
+    if (currentLesson === 21) {
+      return "Master official German time (offizielle Zeit) and the 24-hour clock! Learn the units of time (Woche, Tag, Stunde, Minute, Sekunde), how to ask the time (Wie spät ist es? / Wie viel Uhr ist es?), the golden formula [Stunde] + Uhr + [Minute], and the drop-s rule for 'ein Uhr'!";
+    }
+    return "Master how native Germans actually tell the time in everyday conversation! Learn the famous 'halb' forward-looking rule (halb zwei = 1:30), the Slide 31 clock circle (nach vs. vor), 'fünf vor/nach halb', and everyday approximations (kurz vor, gleich, fast)!";
   };
 
   return (
@@ -410,6 +418,15 @@ export default function App() {
 
         {currentLesson === 21 && activeTab === 'game21' && (
           <Lesson21Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 22 Specific Modules */}
+        {currentLesson === 22 && activeTab === 'studio22' && (
+          <Lesson22InofficialTimeStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 22 && activeTab === 'game22' && (
+          <Lesson22Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

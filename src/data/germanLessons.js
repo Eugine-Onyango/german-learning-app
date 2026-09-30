@@ -5157,6 +5157,355 @@ export const LESSON_21_SCENARIOS = [
   }
 ];
 
+export const LESSON_22_ITEMS = [
+  {
+    id: "l22-viertel-vor-sieben",
+    german: "Es ist Viertel vor sieben.",
+    english: "It is quarter to seven. (06:45 / 18:45)",
+    pronunciation: "es ist FEER-tel for ZEE-ben",
+    audioText: "Es ist Viertel vor sieben.",
+    category: "quarter-times",
+    badge: "Slide 1 • Viertel vor",
+    icon: "⏰",
+    kenyanAnalogy: "Alarm clock ringing early before breakfast at quarter to seven.",
+    memoryTrick: "Viertel vor = Quarter TO! 15 minutes before the next hour."
+  },
+  {
+    id: "l22-halb-zwoelf",
+    german: "Es ist halb zwölf.",
+    english: "It is half past eleven. (11:30 / 23:30 - Halfway TO twelve!)",
+    pronunciation: "es ist HAHLP TSVOELF",
+    audioText: "Es ist halb zwölf.",
+    category: "half-times",
+    badge: "Slide 2 • halb zwölf",
+    icon: "🕰️",
+    kenyanAnalogy: "Looking up at the Grand Central station clock: 30 minutes before 12:00 lunch.",
+    memoryTrick: "CRITICAL: 'halb zwölf' does NOT mean half past 12! It means halfway TO 12 = 11:30!"
+  },
+  {
+    id: "l22-fuenf-nach-zwei",
+    german: "Es ist fünf nach zwei.",
+    english: "It is five past two. (02:05 / 14:05)",
+    pronunciation: "es ist FYOONF nahkh TSWY",
+    audioText: "Es ist fünf nach zwei.",
+    category: "nach-times",
+    badge: "Slide 3 • fünf nach",
+    icon: "🕑",
+    kenyanAnalogy: "Digital bedside clock showing 14:05: just 5 minutes past 2 p.m.",
+    memoryTrick: "nach = after/past. fünf nach zwei = 5 past 2!"
+  },
+  {
+    id: "l22-fuenf-nach-halb-vier",
+    german: "Es ist fünf nach halb vier.",
+    english: "It is 25 to 4 / 5 past half 4 (03:35 / 15:35)",
+    pronunciation: "es ist FYOONF nahkh HAHLP FEER",
+    audioText: "Es ist fünf nach halb vier.",
+    category: "half-orbit",
+    badge: "Slide 4 • nach halb",
+    icon: "⌚",
+    kenyanAnalogy: "Looking at a fancy smartwatch showing 15:35: 5 minutes past half four!",
+    memoryTrick: "15:30 is 'halb vier', so 15:35 is 'fünf nach halb vier'!"
+  },
+  {
+    id: "l22-es-ist-eins",
+    german: "Es ist eins.",
+    english: "It is 1 o'clock. (01:00 / 13:00 - Casual full hour)",
+    pronunciation: "es ist EYENSS",
+    audioText: "Es ist eins.",
+    category: "casual-hours",
+    badge: "Slide 8 • Es ist eins",
+    icon: "🕐",
+    kenyanAnalogy: "In casual speech, Germans drop 'Uhr' and just say the number with '-s': 'Es ist eins'!",
+    memoryTrick: "With Uhr: 'ein Uhr'. Without Uhr: 'eins'!"
+  },
+  {
+    id: "l22-daytimes",
+    german: "morgens, mittags, nachmittags, abends, nachts",
+    english: "in the morning, at noon, in the afternoon, in the evening, at night",
+    pronunciation: "MOR-gens, MIT-tahks, NAHKH-mit-tahks, AH-bents, NAHKHTS",
+    audioText: "morgens, mittags, nachmittags, abends, nachts.",
+    category: "time-of-day",
+    badge: "Slide 11 • Tageszeiten",
+    icon: "🌅",
+    kenyanAnalogy: "Adding context when using the 12-hour clock: 'sechs Uhr morgens' vs 'sechs Uhr abends'.",
+    memoryTrick: "Notice all end with '-s' for habitual time of day!"
+  },
+  {
+    id: "l22-fuenf-nach-eins",
+    german: "Es ist fünf nach eins.",
+    english: "It is five past one. (01:05 / 13:05)",
+    pronunciation: "es ist FYOONF nahkh EYENSS",
+    audioText: "Es ist fünf nach eins.",
+    category: "nach-times",
+    badge: "Slide 14 • fünf nach",
+    icon: "🕜",
+    kenyanAnalogy: "5 minutes into your lunch break.",
+    memoryTrick: "Minutes 1 to 20 use 'nach'!"
+  },
+  {
+    id: "l22-viertel-nach-eins",
+    german: "Es ist Viertel nach eins.",
+    english: "It is quarter past one. (01:15 / 13:15)",
+    pronunciation: "es ist FEER-tel nahkh EYENSS",
+    audioText: "Es ist Viertel nach eins.",
+    category: "quarter-times",
+    badge: "Slide 15 • Viertel nach",
+    icon: "🕐",
+    kenyanAnalogy: "15 minutes past 1. A quarter of the clock face has passed.",
+    memoryTrick: "Viertel = quarter. Viertel nach = quarter past!"
+  },
+  {
+    id: "l22-zwanzig-nach-eins",
+    german: "Es ist zwanzig nach eins.",
+    english: "It is twenty past one. (01:20 / 13:20)",
+    pronunciation: "es ist TSVAHN-tsikh nahkh EYENSS",
+    audioText: "Es ist zwanzig nach eins.",
+    category: "nach-times",
+    badge: "Slide 16 • zwanzig nach",
+    icon: "🕜",
+    kenyanAnalogy: "20 minutes after 1 o'clock.",
+    memoryTrick: "zwanzig nach = 20 past!"
+  },
+  {
+    id: "l22-zwanzig-vor-zwei",
+    german: "Es ist zwanzig vor zwei.",
+    english: "It is twenty to two. (01:40 / 13:40)",
+    pronunciation: "es ist TSVAHN-tsikh for TSWY",
+    audioText: "Es ist zwanzig vor zwei.",
+    category: "vor-times",
+    badge: "Slide 17 • zwanzig vor",
+    icon: "🕜",
+    kenyanAnalogy: "20 minutes left before 2 o'clock begins.",
+    memoryTrick: "vor = before/to. 40 minutes past = 20 to the next hour!"
+  },
+  {
+    id: "l22-viertel-vor-zwei",
+    german: "Es ist Viertel vor zwei.",
+    english: "It is quarter to two. (01:45 / 13:45)",
+    pronunciation: "es ist FEER-tel for TSWY",
+    audioText: "Es ist Viertel vor zwei.",
+    category: "quarter-times",
+    badge: "Slide 18 • Viertel vor",
+    icon: "🕜",
+    kenyanAnalogy: "15 minutes until 2 o'clock.",
+    memoryTrick: "Viertel vor = Quarter to!"
+  },
+  {
+    id: "l22-zehn-vor-zwei",
+    german: "Es ist zehn vor zwei.",
+    english: "It is ten to two. (01:50 / 13:50)",
+    pronunciation: "es ist TSEHN for TSWY",
+    audioText: "Es ist zehn vor zwei.",
+    category: "vor-times",
+    badge: "Slide 19 • zehn vor",
+    icon: "🕜",
+    kenyanAnalogy: "10 minutes before the bell rings at 2:00.",
+    memoryTrick: "zehn vor = 10 to!"
+  },
+  {
+    id: "l22-fuenf-vor-zwei",
+    german: "Es ist fünf vor zwei.",
+    english: "It is five to two. (01:55 / 13:55)",
+    pronunciation: "es ist FYOONF for TSWY",
+    audioText: "Es ist fünf vor zwei.",
+    category: "vor-times",
+    badge: "Slide 20 • fünf vor",
+    icon: "🕜",
+    kenyanAnalogy: "Almost 2 o'clock, just 5 minutes remaining!",
+    memoryTrick: "fünf vor = 5 to!"
+  },
+  {
+    id: "l22-regional-viertel-zwei",
+    german: "Viertel zwei (13:15) • Dreiviertel zwei (13:45)",
+    english: "Quarter two (1:15) • Three-quarters two (1:45) - Regional German/Austrian",
+    pronunciation: "FEER-tel TSWY • DRY-feer-tel TSWY",
+    audioText: "Viertel zwei bedeutet ein Uhr fünfzehn. Dreiviertel zwei bedeutet ein Uhr fünfundvierzig.",
+    category: "regional-times",
+    badge: "Slide 21 • Regional",
+    icon: "🥨",
+    kenyanAnalogy: "Like cutting a cake: at 1:15 you have eaten 1/4 of the second hour (Viertel zwei). At 1:45 you've eaten 3/4 (Dreiviertel zwei)!",
+    memoryTrick: "Think of slices of the hour being filled up!"
+  },
+  {
+    id: "l22-halb-zwei",
+    german: "Es ist halb zwei.",
+    english: "It is half past one. (01:30 / 13:30 - Halfway to two!)",
+    pronunciation: "es ist HAHLP TSWY",
+    audioText: "Es ist halb zwei.",
+    category: "half-times",
+    badge: "Slide 22 • halb zwei",
+    icon: "⏰",
+    kenyanAnalogy: "You have walked half the road towards hour 2!",
+    memoryTrick: "GERMAN LOGIC: Look forward! 1:30 = half of the 2nd hour = halb zwei!"
+  },
+  {
+    id: "l22-fuenf-vor-halb-zwei",
+    german: "Es ist fünf vor halb zwei.",
+    english: "It is 25 past 1 / 5 to half 2 (01:25 / 13:25)",
+    pronunciation: "es ist FYOONF for HAHLP TSWY",
+    audioText: "Es ist fünf vor halb zwei.",
+    category: "half-orbit",
+    badge: "Slide 23 • fünf vor halb",
+    icon: "⏱️",
+    kenyanAnalogy: "5 minutes before 1:30 arrives.",
+    memoryTrick: "At :25, Germans anchor to 'halb': 5 vor halb!"
+  },
+  {
+    id: "l22-fuenf-nach-halb-zwei",
+    german: "Es ist fünf nach halb zwei.",
+    english: "It is 25 to 2 / 5 past half 2 (01:35 / 13:35)",
+    pronunciation: "es ist FYOONF nahkh HAHLP TSWY",
+    audioText: "Es ist fünf nach halb zwei.",
+    category: "half-orbit",
+    badge: "Slide 24 • fünf nach halb",
+    icon: "⏱️",
+    kenyanAnalogy: "5 minutes after 1:30 has passed.",
+    memoryTrick: "At :35, Germans anchor to 'halb': 5 nach halb!"
+  },
+  {
+    id: "l22-kurz-vor-fuenf",
+    german: "Es ist kurz vor fünf. / gleich fünf. / fast fünf.",
+    english: "It is just before 5. / about to be 5. / almost 5. (04:58 / 16:58)",
+    pronunciation: "es ist KOORTS for FYOONF / GLYSHE FYOONF / FAHST FYOONF",
+    audioText: "Es ist kurz vor fünf. Es ist gleich fünf. Es ist fast fünf.",
+    category: "approx-times",
+    badge: "Slides 25-27 • Kurz / Gleich / Fast",
+    icon: "⏳",
+    kenyanAnalogy: "Two minutes before 5 o'clock: you don't say 4:58, you say 'It's almost 5!'",
+    memoryTrick: "kurz vor = short before; gleich = right away; fast = almost!"
+  },
+  {
+    id: "l22-kurz-nach-fuenf",
+    german: "Es ist kurz nach fünf.",
+    english: "It is just after 5. (05:03 / 17:03)",
+    pronunciation: "es ist KOORTS nahkh FYOONF",
+    audioText: "Es ist kurz nach fünf.",
+    category: "approx-times",
+    badge: "Slide 28 • kurz nach",
+    icon: "⌛",
+    kenyanAnalogy: "Just a few minutes past 5 o'clock.",
+    memoryTrick: "kurz nach = short after!"
+  },
+  {
+    id: "l22-kurz-vor-halb-zehn",
+    german: "Es ist kurz vor halb zehn.",
+    english: "It is just before half past nine / 9:30 (09:27 / 21:27)",
+    pronunciation: "es ist KOORTS for HAHLP TSEHN",
+    audioText: "Es ist kurz vor halb zehn.",
+    category: "approx-times",
+    badge: "Slide 29 • kurz vor halb",
+    icon: "🕘",
+    kenyanAnalogy: "At 09:27: just 3 minutes before 9:30 (halb zehn).",
+    memoryTrick: "Anchor to 'halb zehn'!"
+  },
+  {
+    id: "l22-kurz-nach-halb-zehn",
+    german: "Es ist kurz nach halb zehn.",
+    english: "It is just after half past nine / 9:30 (09:34 / 21:34)",
+    pronunciation: "es ist KOORTS nahkh HAHLP TSEHN",
+    audioText: "Es ist kurz nach halb zehn.",
+    category: "approx-times",
+    badge: "Slide 30 • kurz nach halb",
+    icon: "🕤",
+    kenyanAnalogy: "At 09:34: just 4 minutes after 9:30 (halb zehn).",
+    memoryTrick: "Anchor to 'halb zehn'!"
+  },
+  {
+    id: "l22-uebung-viertel-vor-neun",
+    german: "Es ist Viertel vor neun.",
+    english: "It is quarter to nine. (20:45 / 8:45 p.m. - Classroom Übung)",
+    pronunciation: "es ist FEER-tel for NOYN",
+    audioText: "Es ist Viertel vor neun.",
+    category: "exercise-time",
+    badge: "Slide 33 Übung • 20:45",
+    icon: "🎯",
+    kenyanAnalogy: "Inofficial time for 20:45: 15 minutes before 9 p.m.!",
+    memoryTrick: "20:45 = Viertel vor neun!"
+  },
+  {
+    id: "l22-uebung-zwanzig-nach-zehn",
+    german: "Es ist zwanzig nach zehn.",
+    english: "It is twenty past ten. (10:20 - Classroom Übung)",
+    pronunciation: "es ist TSVAHN-tsikh nahkh TSEHN",
+    audioText: "Es ist zwanzig nach zehn.",
+    category: "exercise-time",
+    badge: "Slide 34 Übung • 10:20",
+    icon: "🕙",
+    kenyanAnalogy: "Inofficial time for 10:20: 20 minutes past 10 in the morning.",
+    memoryTrick: "10:20 = zwanzig nach zehn!"
+  },
+  {
+    id: "l22-uebung-kurz-vor-halb-elf",
+    german: "Es ist kurz vor halb elf.",
+    english: "It is just before half past ten / 10:30 (22:28 - Classroom Übung)",
+    pronunciation: "es ist KOORTS for HAHLP ELF",
+    audioText: "Es ist kurz vor halb elf.",
+    category: "exercise-time",
+    badge: "Slide 35 Übung • 22:28",
+    icon: "🌃",
+    kenyanAnalogy: "Inofficial time for 22:28: 2 minutes before 22:30 (halb elf)!",
+    memoryTrick: "22:28 is 2 minutes before halb elf: kurz vor halb elf!"
+  }
+];
+
+export const LESSON_22_SCENARIOS = [
+  {
+    scenario: "Your German friend looks at their watch and says: 'Es ist halb zwei.' What time is it actually?",
+    hint: "Warning! In German, 'halb' looks FORWARD to the upcoming hour, not backward!",
+    options: [
+      { text: "It is 1:30 (half past one - halfway towards two)!", correct: true, explain: "Brilliant! German 'halb zwei' means half of the 2nd hour is completed, so it is 1:30!" },
+      { text: "It is 2:30 (half past two).", correct: false, explain: "Classic beginner trap! 'Halb zwei' is 1:30, NOT 2:30!" },
+      { text: "It is 12:30.", correct: false, explain: "12:30 is 'halb eins'!" }
+    ]
+  },
+  {
+    scenario: "Look at Slide 31's Master Clock Wheel: The minute hand points at 25 minutes past the hour (like 01:25 or 13:25). How do Germans say this casually?",
+    hint: "Germans anchor to the half hour: 5 minutes BEFORE half!",
+    options: [
+      { text: "Es ist fünf vor halb zwei.", correct: true, explain: "Genau! 01:25 is 5 minutes before 01:30 (halb zwei), so say 'fünf vor halb zwei'!" },
+      { text: "Es ist fünfundzwanzig nach eins.", correct: false, explain: "While technically understood, native German conversational speech uses 'fünf vor halb zwei'!" },
+      { text: "Es ist fünf nach halb eins.", correct: false, explain: "1:25 is BEFORE the half hour, so it uses 'vor', not 'nach'!" }
+    ]
+  },
+  {
+    scenario: "On Slide 24, the time is 01:35 (or 15:35 on Slide 4). How is this spoken in conversational German?",
+    hint: "5 minutes AFTER the half hour!",
+    options: [
+      { text: "Es ist fünf nach halb zwei (for 01:35) / fünf nach halb vier (for 15:35).", correct: true, explain: "Ausgezeichnet! 5 minutes past the half hour is 'fünf nach halb'!" },
+      { text: "Es ist fünf vor zwei.", correct: false, explain: "'Fünf vor zwei' is 01:55, not 01:35!" },
+      { text: "Es ist zwanzig vor zwei.", correct: false, explain: "'Zwanzig vor zwei' is 01:40, not 01:35!" }
+    ]
+  },
+  {
+    scenario: "The clock shows 04:58 (Slides 25-27). Which of the following words can you use to say it is almost 5 o'clock?",
+    hint: "Three words are shown in the slides!",
+    options: [
+      { text: "kurz vor fünf / gleich fünf / fast fünf", correct: true, explain: "Superb! 'kurz vor' (just before), 'gleich' (about to be), and 'fast' (almost) are all authentic ways to describe 04:58!" },
+      { text: "kurz nach fünf", correct: false, explain: "'kurz nach fünf' means just AFTER 5 (like 05:02)!" },
+      { text: "spät fünf", correct: false, explain: "'spät fünf' is not a valid German expression!" }
+    ]
+  },
+  {
+    scenario: "In Slide 33's classroom exercise (Übung), you see the clock showing 20:45. How do you say this in casual spoken German?",
+    hint: "15 minutes before 9!",
+    options: [
+      { text: "Es ist Viertel vor neun.", correct: true, explain: "Wunderbar! 20:45 is 15 minutes before 9 p.m., so say 'Viertel vor neun'!" },
+      { text: "Es ist Viertel nach acht.", correct: false, explain: "'Viertel nach acht' is 20:15, not 20:45!" },
+      { text: "Es ist zwanzig Uhr fünfundvierzig.", correct: false, explain: "That is official time! The exercise asks for inofficial conversational time (Viertel vor neun)!" }
+    ]
+  },
+  {
+    scenario: "In Slide 35's exercise (Übung), you see 22:28. How is this expressed in conversational German?",
+    hint: "It is 2 minutes before 22:30 (halb elf)!",
+    options: [
+      { text: "Es ist kurz vor halb elf.", correct: true, explain: "Perfection! Slide 35 explicitly teaches: 22:28 is just before 22:30 (halb elf) = 'Es ist kurz vor halb elf'!" },
+      { text: "Es ist kurz nach zehn.", correct: false, explain: "22:28 is nearly 22:30, not right after 22:00!" },
+      { text: "Es ist halb elf.", correct: false, explain: "22:28 is 2 minutes before halb elf, so add 'kurz vor'!" }
+    ]
+  }
+];
+
+
 
 
 
