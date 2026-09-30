@@ -54,6 +54,8 @@ import Lesson23PossessiveStudio from './components/Lesson23PossessiveStudio';
 import Lesson23Game from './components/Lesson23Game';
 import Lesson24FamilyStudio from './components/Lesson24FamilyStudio';
 import Lesson24Game from './components/Lesson24Game';
+import Lesson25AkkusativStudio from './components/Lesson25AkkusativStudio';
+import Lesson25Game from './components/Lesson25Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -78,11 +80,12 @@ import {
   LESSON_21_ITEMS,
   LESSON_22_ITEMS,
   LESSON_23_ITEMS,
-  LESSON_24_ITEMS
+  LESSON_24_ITEMS,
+  LESSON_25_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(24); // Default to Lesson 24 as requested, easy switch to 1-23
+  const [currentLesson, setCurrentLesson] = useState(25); // Default to Lesson 25 as requested, easy switch to 1-24
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -110,6 +113,7 @@ export default function App() {
   if (currentLesson === 22) activeItems = LESSON_22_ITEMS;
   if (currentLesson === 23) activeItems = LESSON_23_ITEMS;
   if (currentLesson === 24) activeItems = LESSON_24_ITEMS;
+  if (currentLesson === 25) activeItems = LESSON_25_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -135,7 +139,8 @@ export default function App() {
     if (currentLesson === 21) return "Lesson 21: Die Uhrzeit - offizielle Zeit (Telling Time in German - 24-Hour Digital Clock & Time Units)";
     if (currentLesson === 22) return "Lesson 22: Inoffizielle Zeit (Zeit in Umgangssprache - Everyday Conversational Time)";
     if (currentLesson === 23) return "Lesson 23: Possessivartikel im Nominativ (Possessive Articles in the Nominative Case)";
-    return "Lesson 24: Die Familie (The Family, Relative Pairs & The 3-Generation Family Tree)";
+    if (currentLesson === 24) return "Lesson 24: Die Familie (The Family, Relative Pairs & The 3-Generation Family Tree)";
+    return "Lesson 25: Artikel im Akkusativ (Articles in the Accusative Case - Direct Object)";
   };
 
   const getLessonDesc = () => {
@@ -208,7 +213,10 @@ export default function App() {
     if (currentLesson === 23) {
       return "Master German possessive articles ('my, your, his, her, its, our, your group, formal Your, their')! Learn the golden ending rhythm (der & das take no ending, die & Plural add -e), beware the 'euer -> eure' spelling trap, and decode the 3 'ihr' triplets with ease!";
     }
-    return "Explore the German family tree (der Familienbaum)! Learn core relatives (Vater, Mutter, Bruder, Schwester, Großvater, Großmutter, Onkel, Tante, Cousin, Cousine), the 3 German collective plurals (die Eltern, die Großeltern, die Geschwister), and affectionate pet names (Opa & Oma)!";
+    if (currentLesson === 24) {
+      return "Explore the German family tree (der Familienbaum)! Learn core relatives (Vater, Mutter, Bruder, Schwester, Großvater, Großmutter, Onkel, Tante, Cousin, Cousine), the 3 German collective plurals (die Eltern, die Großeltern, die Geschwister), and affectionate pet names (Opa & Oma)!";
+    }
+    return "Master the German Accusative direct object case (Akkusativ)! Discover the golden relief secret: ONLY masculine transforms (der -> den, ein -> einen, kein -> keinen), while feminine, neuter, and plural stay 100% identical! Learn Wen? vs. Was?, and test the 4 famous apple sentences!";
   };
 
   return (
@@ -461,6 +469,15 @@ export default function App() {
 
         {currentLesson === 24 && activeTab === 'game24' && (
           <Lesson24Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 25 Specific Modules */}
+        {currentLesson === 25 && activeTab === 'studio25' && (
+          <Lesson25AkkusativStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 25 && activeTab === 'game25' && (
+          <Lesson25Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

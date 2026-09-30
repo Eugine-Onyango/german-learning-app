@@ -6129,3 +6129,268 @@ export const LESSON_24_SCENARIOS = [
   }
 ];
 
+export const LESSON_25_ITEMS = [
+  {
+    id: "l25-concept-intro",
+    german: "Akkusativ (The Direct Object Case): Subjekt vs. Objekt",
+    english: "What is Akkusativ? The Subjekt does the action (Nominativ). The Objekt receives the action (Akkusativ).",
+    pronunciation: "ah-koo-zah-TEEF: zoo-b-YEKT vs. ob-YEKT",
+    audioText: "Akkusativ. Sabine hat einen Bruder. Wir haben ein Kind. Subjekt und Objekt.",
+    category: "concept",
+    badge: "Slide 2–4 What is Akkusativ?",
+    icon: "🎯 🎁",
+    kenyanAnalogy: "Like passing a ball: The thrower is the Subjekt (Nominativ), but the person or goal receiving the ball is the Objekt (Akkusativ)!",
+    memoryTrick: "Subjekt = Actor (Nominativ) | Objekt = Target receiving the action (Akkusativ)!"
+  },
+  {
+    id: "l25-wen-was-rule",
+    german: "Die Fragewörter im Akkusativ: Wen? (Person) & Was? (Sache)",
+    english: "Question Words: Wen? (Whom? for people) & Was? (What? for things). Compare with WER for subjects!",
+    pronunciation: "ven? (PEHR-zon) oond vahs? (ZAH-kheh)",
+    audioText: "Wen liebt Petra? Petra liebt ihren Mann. Was hast du? Ich habe ein Auto. Wen für Personen, Was für Sachen.",
+    category: "questions",
+    badge: "Slide 5–8 Wen? vs. Was?",
+    icon: "❓ 👥 🚗",
+    kenyanAnalogy: "When asking about the person receiving action, ask 'Wen?' (Whom do you love?). When asking about an object, ask 'Was?' (What do you have?)!",
+    memoryTrick: "WER = Person doing action (Nominativ) | WEN = Person receiving action (Akkusativ)!"
+  },
+  {
+    id: "l25-the-big-secret",
+    german: "Das goldene Akkusativ-Geheimnis: NUR Maskulin ändert sich!",
+    english: "The Golden Akkusativ Secret: ONLY masculine (der) changes! Feminine, Neuter, and Plural remain 100% UNCHANGED!",
+    pronunciation: "noor mahs-koo-LEEN AYN-dert zikh!",
+    audioText: "Das Akkusativ-Geheimnis: Nur Maskulin ändert sich. Der wird zu den, ein zu einen, kein zu keinen. Die, das und Plural bleiben gleich!",
+    category: "rules",
+    badge: "The Golden Secret 👑",
+    icon: "👑 🛡️",
+    kenyanAnalogy: "Huge relief! Out of 4 categories, 3 of them (die, das, Plural) are completely relaxed and don't change at all! Only masculine puts on an '-en' uniform!",
+    memoryTrick: "der -> den | ein -> einen | kein -> keinen! die / das / plural = 100% identical!"
+  },
+  {
+    id: "l25-indef-masculine",
+    german: "Unbestimmt (Maskulin): Ich esse einen Apfel. / Ich habe einen Bruder.",
+    english: "Indefinite Masculine: 'ein' turns into 'einen'. (I eat an apple / I have a brother / He drinks a juice / We buy a table).",
+    pronunciation: "ikh EH-seh EYE-nen AHP-fel. ikh HAH-beh EYE-nen BROO-der.",
+    audioText: "Ich esse einen Apfel. Ich habe einen Bruder. Er trinkt einen Saft. Wir kaufen einen Tisch.",
+    category: "indefinite",
+    badge: "Slide 10 ein -> einen",
+    icon: "🍎 🧃 🪵",
+    kenyanAnalogy: "Because the apple or juice is receiving the eating/drinking action, masculine 'ein' gains the '-en' ending -> 'einen'!",
+    memoryTrick: "der Apfel -> einen Apfel | der Saft -> einen Saft | der Tisch -> einen Tisch!"
+  },
+  {
+    id: "l25-indef-feminine",
+    german: "Unbestimmt (Feminin): Ich habe eine Katze. / Ich esse eine Pizza.",
+    english: "Indefinite Feminine: 'eine' stays 'eine' (NO change!). (I have a cat / I eat a pizza / He drinks a cola / We buy a lamp).",
+    pronunciation: "ikh HAH-beh EYE-neh KAHT-seh. ikh EH-seh EYE-neh PEET-sah.",
+    audioText: "Ich habe eine Katze. Ich esse eine Pizza. Er trinkt eine Cola. Wir kaufen eine Lampe.",
+    category: "indefinite",
+    badge: "Slide 11 eine -> eine (Same!)",
+    icon: "🐱 🍕 🥤",
+    kenyanAnalogy: "Feminine nouns are completely relaxed! 'eine Pizza' in Nominativ remains 'eine Pizza' in Akkusativ!",
+    memoryTrick: "die Katze -> eine Katze (stays identical)!"
+  },
+  {
+    id: "l25-indef-neuter",
+    german: "Unbestimmt (Neutral): Wir haben ein Baby. / Ich esse ein Sandwich.",
+    english: "Indefinite Neuter: 'ein' stays 'ein' (NO change!). (We have a baby / I eat a sandwich / He drinks a beer / We buy a book).",
+    pronunciation: "veer HAH-ben ayn BAH-bee. ikh EH-seh ayn ZAHNT-vich.",
+    audioText: "Wir haben ein Baby. Ich esse ein Sandwich. Er trinkt ein Bier. Wir kaufen ein Buch.",
+    category: "indefinite",
+    badge: "Slide 12 ein -> ein (Same!)",
+    icon: "👶 🥪 🍺 📚",
+    kenyanAnalogy: "Neuter nouns are also completely peaceful! 'ein Buch' in Nominativ stays 'ein Buch' in Akkusativ!",
+    memoryTrick: "das Baby -> ein Baby (stays identical)!"
+  },
+  {
+    id: "l25-indef-plural",
+    german: "Unbestimmt (Plural): Ich habe zwei Brüder. / Ich habe Bücher.",
+    english: "Indefinite Plural: No article (Nullartikel) or use a number! (I have two brothers / I have books).",
+    pronunciation: "ikh HAH-beh tsvye BROO-der. ikh HAH-beh BUE-kher.",
+    audioText: "Ich habe zwei Brüder. Ich habe Bücher. Im Plural kein ein!",
+    category: "indefinite",
+    badge: "Slide 13 Plural Nullartikel",
+    icon: "👦👦 📚",
+    kenyanAnalogy: "Just like in English you don't say 'a books', in German plural indefinite has no article or uses a count (zwei, drei)!",
+    memoryTrick: "Plural = number or just the plural noun alone!"
+  },
+  {
+    id: "l25-def-masculine",
+    german: "Bestimmt (Maskulin): Wie findest du den Hut? -> Den Hut finde ich schön.",
+    english: "Definite Masculine: 'der' turns into 'den'. (How do you like the hat? -> I find the hat beautiful).",
+    pronunciation: "vee FIN-dest doo dayn HOOT? dayn HOOT FIN-deh ikh shoen.",
+    audioText: "Wie findest du den Hut? Den Hut finde ich schön. Ich finde den Hut schön.",
+    category: "definite",
+    badge: "Slide 16 der -> den",
+    icon: "🎩 ✨",
+    kenyanAnalogy: "When rating or talking about a specific masculine object, 'der Hut' transforms into 'den Hut' because it is being evaluated by you!",
+    memoryTrick: "der Hut -> den Hut (ends in -n)!"
+  },
+  {
+    id: "l25-def-feminine",
+    german: "Bestimmt (Feminin): Wie findest du die Hose? -> Die Hose finde ich cool.",
+    english: "Definite Feminine: 'die' stays 'die' (NO change!). (How do you like the pants? -> I find the pants cool).",
+    pronunciation: "vee FIN-dest doo dee HOH-zeh? dee HOH-zeh FIN-deh ikh kool.",
+    audioText: "Wie findest du die Hose? Die Hose finde ich cool.",
+    category: "definite",
+    badge: "Slide 17 die -> die (Same!)",
+    icon: "👖 😎",
+    kenyanAnalogy: "Feminine definite stays 100% stable: 'die Hose' stays 'die Hose'!",
+    memoryTrick: "die Hose -> die Hose (zero change)!"
+  },
+  {
+    id: "l25-def-neuter",
+    german: "Bestimmt (Neutral): Wie findest du das Kleid? -> Das Kleid finde ich elegant.",
+    english: "Definite Neuter: 'das' stays 'das' (NO change!). (How do you like the dress? -> I find the dress elegant).",
+    pronunciation: "vee FIN-dest doo dahs KLAYT? dahs KLAYT FIN-deh ikh eh-leh-GAHNT.",
+    audioText: "Wie findest du das Kleid? Das Kleid finde ich elegant.",
+    category: "definite",
+    badge: "Slide 18 das -> das (Same!)",
+    icon: "👗 💃",
+    kenyanAnalogy: "Neuter definite stays rock steady: 'das Kleid' stays 'das Kleid'!",
+    memoryTrick: "das Kleid -> das Kleid (zero change)!"
+  },
+  {
+    id: "l25-def-plural",
+    german: "Bestimmt (Plural): Wie findest du die Schuhe? -> Die Schuhe finde ich teuer.",
+    english: "Definite Plural: 'die' stays 'die' (NO change!). (How do you like the shoes? -> I find the shoes expensive).",
+    pronunciation: "vee FIN-dest doo dee SHOO-eh? dee SHOO-eh FIN-deh ikh TOY-er.",
+    audioText: "Wie findest du die Schuhe? Die Schuhe finde ich teuer.",
+    category: "definite",
+    badge: "Slide 19 die -> die Plural (Same!)",
+    icon: "👠 🏷️",
+    kenyanAnalogy: "Plural definite also never flinches: 'die Schuhe' stays 'die Schuhe'!",
+    memoryTrick: "die Schuhe -> die Schuhe (zero change)!"
+  },
+  {
+    id: "l25-neg-masculine",
+    german: "Negativ (Maskulin): Hast du einen Kuli? -> Nein, ich habe keinen Kuli.",
+    english: "Negative Masculine: 'kein' turns into 'keinen'. (Do you have a pen? -> No, I don't have a pen).",
+    pronunciation: "HAHST doo EYE-nen KOO-lee? nayn, ikh HAH-beh KY-nen KOO-lee.",
+    audioText: "Hast du einen Kuli? Nein, ich habe keinen Kuli.",
+    category: "negative",
+    badge: "Slide 22 kein -> keinen",
+    icon: "🖊️ 🚫",
+    kenyanAnalogy: "When answering 'No' to a masculine item in Akkusativ, add the '-en' ending: 'keinen Kuli'!",
+    memoryTrick: "einen Kuli -> keinen Kuli (perfect twin match)!"
+  },
+  {
+    id: "l25-neg-feminine",
+    german: "Negativ (Feminin): Hast du eine Uhr? -> Nein, ich habe keine Uhr.",
+    english: "Negative Feminine: 'keine' stays 'keine' (NO change!). (Do you have a watch? -> No, I don't have a watch).",
+    pronunciation: "HAHST doo EYE-neh OOR? nayn, ikh HAH-beh KY-neh OOR.",
+    audioText: "Hast du eine Uhr? Nein, ich habe keine Uhr.",
+    category: "negative",
+    badge: "Slide 23 keine -> keine (Same!)",
+    icon: "⌚ 🚫",
+    kenyanAnalogy: "Feminine negation stays identical: 'eine Uhr' is denied with 'keine Uhr'!",
+    memoryTrick: "eine Uhr -> keine Uhr!"
+  },
+  {
+    id: "l25-neg-neuter",
+    german: "Negativ (Neutral): Hast du ein Lineal? -> Nein, ich habe kein Lineal.",
+    english: "Negative Neuter: 'kein' stays 'kein' (NO change!). (Do you have a ruler? -> No, I don't have a ruler).",
+    pronunciation: "HAHST doo ayn lee-neh-AHL? nayn, ikh HAH-beh kayn lee-neh-AHL.",
+    audioText: "Hast du ein Lineal? Nein, ich habe kein Lineal.",
+    category: "negative",
+    badge: "Slide 24 kein -> kein (Same!)",
+    icon: "📏 🚫",
+    kenyanAnalogy: "Neuter negation stays clean with no extra ending: 'ein Lineal' is denied with 'kein Lineal'!",
+    memoryTrick: "ein Lineal -> kein Lineal!"
+  },
+  {
+    id: "l25-neg-plural",
+    german: "Negativ (Plural): Hast du Kinder? -> Nein, ich habe keine Kinder.",
+    english: "Negative Plural: 'keine' stays 'keine' (NO change!). (Do you have children? -> No, I don't have children).",
+    pronunciation: "HAHST doo KIN-der? nayn, ikh HAH-beh KY-neh KIN-der.",
+    audioText: "Hast du Kinder? Nein, ich habe keine Kinder.",
+    category: "negative",
+    badge: "Slide 25 keine -> keine Plural",
+    icon: "👧👦 🚫",
+    kenyanAnalogy: "Denying multiple items always uses 'keine' with the '-e' dress: 'keine Kinder'!",
+    memoryTrick: "Kinder -> keine Kinder!"
+  },
+  {
+    id: "l25-apple-diagnostic",
+    german: "Slide 27 Apfel-Diagnose: Nominativ vs. Akkusativ",
+    english: "The 4 Famous Apple Sentences from Slide 27: 1. Das ist ein Apfel (Nom) 2. Der Apfel ist grün (Nom) 3. Ich habe einen Apfel (Akk) 4. Den Apfel finde ich süß (Akk).",
+    pronunciation: "AHP-fel dee-ahg-NOH-zeh: 1. ayn AHP-fel (Nom) 2. der AHP-fel (Nom) 3. EYE-nen AHP-fel (Akk) 4. dayn AHP-fel (Akk)",
+    audioText: "Eins: Das ist ein Apfel. Nominativ. Zwei: Der Apfel ist grün. Nominativ. Drei: Ich habe einen Apfel. Akkusativ. Vier: Den Apfel finde ich süß. Akkusativ.",
+    category: "diagnostic",
+    badge: "Slide 27 Apple Lab 🍏",
+    icon: "🍏 🔬",
+    kenyanAnalogy: "The ultimate diagnostic test! If the apple is just existing or being described, it's Nominativ (ein / der). If you possess or judge it, it enters Akkusativ (einen / den)!",
+    memoryTrick: "Sentences 1 & 2 = Nominativ (ein/der) | Sentences 3 & 4 = Akkusativ (einen/den)!"
+  },
+  {
+    id: "l25-master-table",
+    german: "Slide 28 Master-Tabelle: Artikel im Akkusativ",
+    english: "The complete summary matrix from Slide 28: Maskulin (den, einen, keinen) | Feminin (die, eine, keine) | Neutral (das, ein, kein) | Plural (die, -, keine).",
+    pronunciation: "MAHS-ter tah-BEH-leh: ah-koo-zah-TEEF owf eye-nen bleek",
+    audioText: "Artikel im Akkusativ: Maskulin: den, einen, keinen. Feminin: die, eine, keine. Neutral: das, ein, kein. Plural: die, keine.",
+    category: "summary",
+    badge: "Slide 28 Master Matrix",
+    icon: "📋 📊",
+    kenyanAnalogy: "The final master chart on the chalkboard! Notice how ONLY the top row (Maskulin) turns into '-en', while all other 3 rows stay exactly as they were in Nominativ!",
+    memoryTrick: "Akkusativ maskulin = -EN club (den, einen, keinen)! Everything else = unchanged!"
+  }
+];
+
+export const LESSON_25_SCENARIOS = [
+  {
+    scenario: "You want to say: 'I eat an apple' (Slide 10). Since 'der Apfel' is masculine and receiving the eating action, which sentence is correct?",
+    hint: "'der Apfel' is masculine in Akkusativ (ein -> einen)!",
+    options: [
+      { text: "Ich esse einen Apfel.", correct: true, explain: "Ausgezeichnet! 'Apfel' is masculine (der Apfel). In Akkusativ, 'ein' turns into 'einen'!" },
+      { text: "Ich esse ein Apfel.", correct: false, explain: "Incorrect! 'ein' is only for neuter in Akkusativ, or masculine in Nominativ!" },
+      { text: "Ich esse eine Apfel.", correct: false, explain: "'eine' is for feminine nouns, but apple is masculine!" }
+    ]
+  },
+  {
+    scenario: "Look at Slide 27: 'Den Apfel finde ich süß.' (I find the apple sweet). Why does the sentence use 'Den' instead of 'Der'?",
+    hint: "The apple is the direct object of the verb 'finden' (to find/judge)!",
+    options: [
+      { text: "Because 'der Apfel' is the direct object (Akkusativ) being judged by 'ich' (Subject)!", correct: true, explain: "Wunderbar! 'ich' is the Subjekt doing the thinking, and 'der Apfel' is the Objekt receiving the thought, so 'der' changes to 'den'!" },
+      { text: "Because 'süß' is an adjective", correct: false, explain: "The adjective 'süß' doesn't change the article here; the Akkusativ case does!" },
+      { text: "Because the sentence starts with the apple", correct: false, explain: "Even if an object is moved to Position 1 for emphasis, its Akkusativ case remains 'den'!" }
+    ]
+  },
+  {
+    scenario: "A friend asks: 'Hast du einen Kuli?' (Do you have a pen? - Slide 22). You don't have one. How do you answer in German?",
+    hint: "'Kuli' is masculine (der Kuli). Negative masculine in Akkusativ ends in '-en'!",
+    options: [
+      { text: "Nein, ich habe keinen Kuli.", correct: true, explain: "Perfection! In Akkusativ, negative masculine becomes 'keinen Kuli' (matching 'einen Kuli')!" },
+      { text: "Nein, ich habe kein Kuli.", correct: false, explain: "'kein' is only for neuter nouns in Akkusativ!" },
+      { text: "Nein, ich habe keine Kuli.", correct: false, explain: "'keine' is for feminine or plural nouns!" }
+    ]
+  },
+  {
+    scenario: "In Slide 18, someone asks: 'Wie findest du das Kleid?' (How do you like the dress?). How do you answer 'I find the dress elegant'?",
+    hint: "'Kleid' is neuter (das Kleid). Does neuter change in Akkusativ?",
+    options: [
+      { text: "Das Kleid finde ich elegant.", correct: true, explain: "Genau! Neuter 'das Kleid' does NOT change in Akkusativ: 'das' remains 'das'!" },
+      { text: "Den Kleid finde ich elegant.", correct: false, explain: "'den' is only for masculine nouns!" },
+      { text: "Die Kleid finde ich elegant.", correct: false, explain: "'die' is only for feminine or plural nouns!" }
+    ]
+  },
+  {
+    scenario: "In Slide 6, Petra is in love with her husband ('der Mann'). Which question asks 'Whom does Petra love?' in German?",
+    hint: "Question word for an Akkusativ PERSON (object) starts with W-e-n!",
+    options: [
+      { text: "Wen liebt Petra?", correct: true, explain: "Brilliant! Slide 7 shows: 'WEN' is used for a Person in Akkusativ (Objekt), while 'WER' is for Nominativ (Subjekt)!" },
+      { text: "Wer liebt Petra?", correct: false, explain: "'Wer liebt Petra?' means 'Who loves Petra?' (Wer = Subject)!" },
+      { text: "Was liebt Petra?", correct: false, explain: "'Was' is for things (Sache), but a husband is a person!" }
+    ]
+  },
+  {
+    scenario: "What is the single most important rule to remember about articles in Akkusativ (Slide 28)?",
+    hint: "Think about which of the 4 genders actually transforms!",
+    options: [
+      { text: "ONLY Masculine (der -> den, ein -> einen, kein -> keinen) changes; Feminine, Neuter, and Plural stay 100% identical!", correct: true, explain: "Spot on! That is the golden relief rule of German grammar: only masculine puts on the '-en' ending in Akkusativ!" },
+      { text: "All 4 genders change completely", correct: false, explain: "Feminine, Neuter, and Plural never change in Akkusativ!" },
+      { text: "Only Plural nouns change", correct: false, explain: "Plural stays 'die' and 'keine' without change!" }
+    ]
+  }
+];
+
+
