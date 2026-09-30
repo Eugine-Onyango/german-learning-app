@@ -4773,6 +4773,391 @@ export const LESSON_20_SCENARIOS = [
   }
 ];
 
+export const LESSON_21_ITEMS = [
+  {
+    id: "l21-zeit",
+    german: "die Zeit",
+    english: "The time (Feminine)",
+    pronunciation: "dee TSYTE",
+    audioText: "die Zeit.",
+    category: "time-units",
+    badge: "Slide 2 & 3 • die Zeit",
+    icon: "⌛",
+    kenyanAnalogy: "Time ticking by on a wall clock. 'Zeit' is feminine: die Zeit.",
+    memoryTrick: "Z sounds like TS: TSYTE! die Zeit = time."
+  },
+  {
+    id: "l21-uhr",
+    german: "die Uhr / die Uhren",
+    english: "The clock / watch / clocks (also 'o'clock')",
+    pronunciation: "dee OOR / dee OO-ren",
+    audioText: "die Uhr, die Uhren.",
+    category: "time-units",
+    badge: "Slide 3 • die Uhr",
+    icon: "🕰️",
+    kenyanAnalogy: "A wristwatch or classic wall clock hanging in the living room.",
+    memoryTrick: "die Uhr = the clock/watch, and also the word you say for 'o'clock'!"
+  },
+  {
+    id: "l21-woche",
+    german: "die Woche / die Wochen • Eine Woche hat 7 Tage.",
+    english: "The week / weeks • A week has 7 days.",
+    pronunciation: "dee VOH-kheh • EYE-neh VOH-kheh haht ZEE-ben TAH-geh",
+    audioText: "die Woche, die Wochen. Eine Woche hat sieben Tage.",
+    category: "time-units",
+    badge: "Slide 4 • die Woche",
+    icon: "📅",
+    kenyanAnalogy: "The 7 days of the calendar week from Monday to Sunday.",
+    memoryTrick: "die Woche -> Plural: die Wochen!"
+  },
+  {
+    id: "l21-tag",
+    german: "der Tag / die Tage • Ein Tag hat 24 Stunden.",
+    english: "The day / days • A day has 24 hours.",
+    pronunciation: "dair TAHK • eyn TAHK haht FEER-oond-TSVAHN-tsikh SHTOON-den",
+    audioText: "der Tag, die Tage. Ein Tag hat vierundzwanzig Stunden.",
+    category: "time-units",
+    badge: "Slide 6 • der Tag",
+    icon: "☀️",
+    kenyanAnalogy: "From morning sunrise to starry night: 24 full hours.",
+    memoryTrick: "der Tag (singular) -> die Tage (plural)!"
+  },
+  {
+    id: "l21-stunde",
+    german: "die Stunde / die Stunden • Eine Stunde hat 60 Minuten.",
+    english: "The hour / hours • An hour has 60 minutes.",
+    pronunciation: "dee SHTOON-deh • EYE-neh SHTOON-deh haht ZEKH-tsikh mee-NOO-ten",
+    audioText: "die Stunde, die Stunden. Eine Stunde hat sechzig Minuten.",
+    category: "time-units",
+    badge: "Slide 7 • die Stunde",
+    icon: "⏳",
+    kenyanAnalogy: "A 60-minute school lesson or football match half-time.",
+    memoryTrick: "ST sounds like SHT: SHTOON-deh!"
+  },
+  {
+    id: "l21-minute",
+    german: "die Minute / die Minuten • Eine Minute hat 60 Sekunden.",
+    english: "The minute / minutes • A minute has 60 seconds.",
+    pronunciation: "dee mee-NOO-teh • EYE-neh mee-NOO-teh haht ZEKH-tsikh zeh-KOON-den",
+    audioText: "die Minute, die Minuten. Eine Minute hat sechzig Sekunden.",
+    category: "time-units",
+    badge: "Slide 8 • die Minute",
+    icon: "⏱️",
+    kenyanAnalogy: "Sixty quick heartbeats on a stopwatch.",
+    memoryTrick: "die Minute -> die Minuten (both end in -e/-en)!"
+  },
+  {
+    id: "l21-sekunde",
+    german: "die Sekunde / die Sekunden",
+    english: "The second / seconds",
+    pronunciation: "dee zeh-KOON-deh / dee zeh-KOON-den",
+    audioText: "die Sekunde, die Sekunden.",
+    category: "time-units",
+    badge: "Slide 9 • die Sekunde",
+    icon: "⚡",
+    kenyanAnalogy: "The fast-moving red second-hand on a Timex watch.",
+    memoryTrick: "S at start sounds like Z: zeh-KOON-deh!"
+  },
+  {
+    id: "l21-formats",
+    german: "inoffizielle Zeit (12h) vs. offizielle Zeit (24h)",
+    english: "Inofficial time (12-hour format) vs Official time (24-hour format)",
+    pronunciation: "in-oh-fee-TSEE-el-leh Tsyte • oh-fee-TSEE-el-leh Tsyte",
+    audioText: "inoffizielle Zeit und offizielle Zeit. Die offizielle Zeit nutzt das vierundzwanzig Stunden Format.",
+    category: "time-concept",
+    badge: "Slide 10 & 11 • Formate",
+    icon: "⌚",
+    kenyanAnalogy: "Like airport flight departure screens (16:47) vs everyday casual chat (quarter to 5).",
+    memoryTrick: "Official time is used on trains, TV news, and appointments!"
+  },
+  {
+    id: "l21-wie-spaet",
+    german: "Wie spät ist es?",
+    english: "What time is it? (Literal: How late is it?)",
+    pronunciation: "vee SHPAYT ist es?",
+    audioText: "Wie spät ist es?",
+    category: "time-question",
+    badge: "Slide 12 • Wie spät ist es?",
+    icon: "❓",
+    kenyanAnalogy: "Checking your phone with a friend: 'Excuse me, what time is it right now?'",
+    memoryTrick: "spät = late. 'How late is it?' = What time is it?"
+  },
+  {
+    id: "l21-wie-viel-uhr",
+    german: "Wie viel Uhr ist es?",
+    english: "What time is it? (Literal: How much clock is it?)",
+    pronunciation: "vee FEEL OOR ist es?",
+    audioText: "Wie viel Uhr ist es?",
+    category: "time-question",
+    badge: "Slide 13 • Wie viel Uhr ist es?",
+    icon: "🗣️",
+    kenyanAnalogy: "Another super common way to ask the time at the bus stage or train station.",
+    memoryTrick: "Viel = much/many. 'Wie viel Uhr ist es?'"
+  },
+  {
+    id: "l21-ein-uhr",
+    german: "Es ist ein Uhr.",
+    english: "It is 1 o'clock / 1 a.m. (01:00)",
+    pronunciation: "es ist EYN OOR",
+    audioText: "Es ist ein Uhr.",
+    category: "official-hours",
+    badge: "Slide 14 • 01:00",
+    icon: "🕐",
+    kenyanAnalogy: "One in the morning. Notice Germans say 'ein Uhr', NEVER 'eins Uhr'!",
+    memoryTrick: "Drop the 's' from 'eins': Es ist ein Uhr!"
+  },
+  {
+    id: "l21-zwei-uhr",
+    german: "Es ist zwei Uhr.",
+    english: "It is 2 o'clock / 2 a.m. (02:00)",
+    pronunciation: "es ist TSWY OOR",
+    audioText: "Es ist zwei Uhr.",
+    category: "official-hours",
+    badge: "Slide 15 • 02:00",
+    icon: "🕑",
+    kenyanAnalogy: "2 o'clock in the quiet night.",
+    memoryTrick: "zwei + Uhr!"
+  },
+  {
+    id: "l21-sechs-uhr",
+    german: "Es ist sechs Uhr.",
+    english: "It is 6 o'clock / 6 a.m. (06:00)",
+    pronunciation: "es ist ZEKS OOR",
+    audioText: "Es ist sechs Uhr.",
+    category: "official-hours",
+    badge: "Slide 16 • 06:00",
+    icon: "🕕",
+    kenyanAnalogy: "Dawn breaks at 6 in the morning.",
+    memoryTrick: "sechs + Uhr!"
+  },
+  {
+    id: "l21-zehn-uhr",
+    german: "Es ist zehn Uhr.",
+    english: "It is 10 o'clock / 10 a.m. (10:00)",
+    pronunciation: "es ist TSEHN OOR",
+    audioText: "Es ist zehn Uhr.",
+    category: "official-hours",
+    badge: "Slide 17 • 10:00",
+    icon: "🕙",
+    kenyanAnalogy: "Mid-morning tea time at 10 a.m.",
+    memoryTrick: "zehn + Uhr!"
+  },
+  {
+    id: "l21-zwoelf-uhr",
+    german: "Es ist zwölf Uhr.",
+    english: "It is 12 p.m. / 12 noon (12:00)",
+    pronunciation: "es ist TSVOELF OOR",
+    audioText: "Es ist zwölf Uhr.",
+    category: "official-hours",
+    badge: "Slide 18 • 12:00",
+    icon: "🕛",
+    kenyanAnalogy: "Midday sun right overhead at 12 o'clock noon.",
+    memoryTrick: "zwölf + Uhr!"
+  },
+  {
+    id: "l21-dreizehn-uhr",
+    german: "Es ist dreizehn Uhr.",
+    english: "It is 1 p.m. / 13:00 (Official 24-hour clock)",
+    pronunciation: "es ist DRY-tsehn OOR",
+    audioText: "Es ist dreizehn Uhr.",
+    category: "official-hours",
+    badge: "Slide 19 • 13:00",
+    icon: "🕜",
+    kenyanAnalogy: "In the 24-hour clock, 1 p.m. is 12 + 1 = 13:00 (dreizehn Uhr).",
+    memoryTrick: "13:00 = dreizehn Uhr!"
+  },
+  {
+    id: "l21-fuenfzehn-uhr",
+    german: "Es ist fünfzehn Uhr.",
+    english: "It is 3 p.m. / 15:00",
+    pronunciation: "es ist FYOONF-tsehn OOR",
+    audioText: "Es ist fünfzehn Uhr.",
+    category: "official-hours",
+    badge: "Slide 20 • 15:00",
+    icon: "🕒",
+    kenyanAnalogy: "3 in the afternoon = 12 + 3 = 15:00 (fünfzehn Uhr).",
+    memoryTrick: "15:00 = fünfzehn Uhr!"
+  },
+  {
+    id: "l21-zwanzig-uhr",
+    german: "Es ist zwanzig Uhr.",
+    english: "It is 8 p.m. / 20:00 (Prime time news hour in Germany)",
+    pronunciation: "es ist TSVAHN-tsikh OOR",
+    audioText: "Es ist zwanzig Uhr.",
+    category: "official-hours",
+    badge: "Slide 21 • 20:00",
+    icon: "🕗",
+    kenyanAnalogy: "8 p.m. dinner time = 12 + 8 = 20:00 (zwanzig Uhr). The famous German Tagesschau news starts at 20:00!",
+    memoryTrick: "20:00 = zwanzig Uhr!"
+  },
+  {
+    id: "l21-dreiundzwanzig-uhr",
+    german: "Es ist dreiundzwanzig Uhr.",
+    english: "It is 11 p.m. / 23:00",
+    pronunciation: "es ist DRY-oond-TSVAHN-tsikh OOR",
+    audioText: "Es ist dreiundzwanzig Uhr.",
+    category: "official-hours",
+    badge: "Slide 22 • 23:00",
+    icon: "🕚",
+    kenyanAnalogy: "Late bedtime at 11 p.m. = 23:00.",
+    memoryTrick: "23:00 = dreiundzwanzig Uhr!"
+  },
+  {
+    id: "l21-null-uhr",
+    german: "Es ist null Uhr.",
+    english: "It is midnight / 12 a.m. (00:00)",
+    pronunciation: "es ist NOOL OOR",
+    audioText: "Es ist null Uhr.",
+    category: "official-hours",
+    badge: "Slide 23 • 00:00",
+    icon: "🌌",
+    kenyanAnalogy: "New Year's Eve countdown reaching zero: 00:00 = null Uhr!",
+    memoryTrick: "00:00 = null Uhr!"
+  },
+  {
+    id: "l21-minutes-formula",
+    german: "Formula: [Stunde] + Uhr + [Minute]",
+    english: "Official Formula: [Hour] + Uhr + [Minute]",
+    pronunciation: "SHTOON-deh + OOR + mee-NOO-teh",
+    audioText: "Die Formel für die offizielle Zeit: Stunde plus Uhr plus Minute. Zum Beispiel: ein Uhr fünf, dreizehn Uhr fünfzehn.",
+    category: "time-concept",
+    badge: "Slides 24-34 • Golden Formula",
+    icon: "📐",
+    kenyanAnalogy: "Just read the numbers straight from left to right, inserting 'Uhr' in the middle!",
+    memoryTrick: "01:05 = ein Uhr fünf. 01:30 = ein Uhr dreißig. So simple!"
+  },
+  {
+    id: "l21-dreizehn-fuenfzehn",
+    german: "Es ist dreizehn Uhr fünfzehn.",
+    english: "It is 13:15 / 1:15 p.m.",
+    pronunciation: "es ist DRY-tsehn OOR FYOONF-tsehn",
+    audioText: "Es ist dreizehn Uhr fünfzehn.",
+    category: "official-minutes",
+    badge: "Slide 36 • 13:15",
+    icon: "🕧",
+    kenyanAnalogy: "Afternoon train departure time announced on the loudspeaker.",
+    memoryTrick: "13 + Uhr + 15 = dreizehn Uhr fünfzehn!"
+  },
+  {
+    id: "l21-fuenfzehn-dreissig",
+    german: "Es ist fünfzehn Uhr dreißig.",
+    english: "It is 15:30 / 3:30 p.m.",
+    pronunciation: "es ist FYOONF-tsehn OOR DRY-sikh",
+    audioText: "Es ist fünfzehn Uhr dreißig.",
+    category: "official-minutes",
+    badge: "Slide 37 • 15:30",
+    icon: "🕞",
+    kenyanAnalogy: "Afternoon coffee and cake (Kaffee und Kuchen) time in Germany!",
+    memoryTrick: "15 + Uhr + 30 = fünfzehn Uhr dreißig!"
+  },
+  {
+    id: "l21-siebzehn-zweiundvierzig",
+    german: "Es ist siebzehn Uhr zweiundvierzig.",
+    english: "It is 17:42 / 5:42 p.m.",
+    pronunciation: "es ist ZEEP-tsehn OOR TSWY-oond-FEER-tsikh",
+    audioText: "Es ist siebzehn Uhr zweiundvierzig.",
+    category: "official-minutes",
+    badge: "Slide 38 • 17:42",
+    icon: "🕔",
+    kenyanAnalogy: "Evening commute bus leaving at precisely 17:42.",
+    memoryTrick: "17 (siebzehn) + Uhr + 42 (zweiundvierzig)!"
+  },
+  {
+    id: "l21-uebung-zwanzig-fuenfundvierzig",
+    german: "Es ist zwanzig Uhr fünfundvierzig.",
+    english: "It is 20:45 / 8:45 p.m. (Classroom Übung)",
+    pronunciation: "es ist TSVAHN-tsikh OOR FYOONF-oond-FEER-tsikh",
+    audioText: "Es ist zwanzig Uhr fünfundvierzig.",
+    category: "exercise-time",
+    badge: "Slide 41 Übung • 20:45",
+    icon: "🎯",
+    kenyanAnalogy: "Slide 41 practice challenge: reading 20:45.",
+    memoryTrick: "20 (zwanzig) + Uhr + 45 (fünfundvierzig)!"
+  },
+  {
+    id: "l21-uebung-elf-siebenundfuenfzig",
+    german: "Es ist elf Uhr siebenundfünfzig.",
+    english: "It is 11:57 a.m. (Classroom Übung)",
+    pronunciation: "es ist ELF OOR ZEE-ben-oond-FYOONF-tsikh",
+    audioText: "Es ist elf Uhr siebenundfünfzig.",
+    category: "exercise-time",
+    badge: "Slide 42 Übung • 11:57",
+    icon: "🕚",
+    kenyanAnalogy: "Slide 42 practice challenge: 3 minutes before midday lunch.",
+    memoryTrick: "11 (elf) + Uhr + 57 (siebenundfünfzig)!"
+  },
+  {
+    id: "l21-uebung-zweiundzwanzig-achtundzwanzig",
+    german: "Es ist zweiundzwanzig Uhr achtundzwanzig.",
+    english: "It is 22:28 / 10:28 p.m. (Classroom Übung)",
+    pronunciation: "es ist TSWY-oond-TSVAHN-tsikh OOR AHKHT-oond-TSVAHN-tsikh",
+    audioText: "Es ist zweiundzwanzig Uhr achtundzwanzig.",
+    category: "exercise-time",
+    badge: "Slide 43 Übung • 22:28",
+    icon: "🌃",
+    kenyanAnalogy: "Slide 43 practice challenge: late evening reading 22:28.",
+    memoryTrick: "22 (zweiundzwanzig) + Uhr + 28 (achtundzwanzig)!"
+  }
+];
+
+export const LESSON_21_SCENARIOS = [
+  {
+    scenario: "You are standing on a train platform in Frankfurt and want to ask someone for the time. Which two German questions are correct?",
+    hint: "Check Slides 12 and 13!",
+    options: [
+      { text: "Wie spät ist es? / Wie viel Uhr ist es?", correct: true, explain: "Genau! Both 'Wie spät ist es?' (How late is it?) and 'Wie viel Uhr ist es?' (What time is it?) are standard and polite!" },
+      { text: "Wie Zeit ist es? / Welche Uhr?", correct: false, explain: "Germans don't say 'Wie Zeit', they say 'Wie spät' or 'Wie viel Uhr'!" },
+      { text: "Wo ist die Uhr?", correct: false, explain: "'Wo ist die Uhr?' means 'Where is the clock?', not 'What time is it?'" }
+    ]
+  },
+  {
+    scenario: "Look at Slide 14 (01:00). How do you say 'It is 1 o'clock' in official German?",
+    hint: "Do you say 'eins Uhr' or 'ein Uhr'?",
+    options: [
+      { text: "Es ist ein Uhr.", correct: true, explain: "Ausgezeichnet! The number 'eins' drops the final '-s' before 'Uhr': 'Es ist ein Uhr'!" },
+      { text: "Es ist eins Uhr.", correct: false, explain: "Common trap! You must drop the '-s': say 'ein Uhr', not 'eins Uhr'!" },
+      { text: "Es ist eine Uhr.", correct: false, explain: "'Eine Uhr' means 'a clock/watch', not '1 o'clock'!" }
+    ]
+  },
+  {
+    scenario: "What is the official German formula for reading any digital clock time (like 17:42 or 13:15)?",
+    hint: "Hours + word + Minutes!",
+    options: [
+      { text: "[Hours] + Uhr + [Minutes] (e.g. siebzehn Uhr zweiundvierzig)", correct: true, explain: "Wunderbar! Simply state the hour number, say 'Uhr', and state the minute number!" },
+      { text: "[Minutes] + nach + [Hours]", correct: false, explain: "That is the conversational inofficial time format, not the official 24-hour format!" },
+      { text: "Uhr + [Hours] + [Minutes]", correct: false, explain: "'Uhr' goes in the middle between hours and minutes, not in front!" }
+    ]
+  },
+  {
+    scenario: "Look at Slide 23 (00:00 / midnight). How is midnight spoken in official 24-hour German time?",
+    hint: "What is the number zero in German?",
+    options: [
+      { text: "Es ist null Uhr.", correct: true, explain: "Superb! Slide 23 shows: 00:00 is read as 'Es ist null Uhr'!" },
+      { text: "Es ist vierundzwanzig Uhr.", correct: false, explain: "Digital clocks display 00:00, which is officially spoken as 'null Uhr'!" },
+      { text: "Es ist zwölf Uhr Nachts.", correct: false, explain: "In official 24-hour time, say 'Es ist null Uhr'!" }
+    ]
+  },
+  {
+    scenario: "In the Slide 41 classroom exercise (Übung), you see the clock showing 20:45. How do you pronounce this time?",
+    hint: "20 is zwanzig, 45 is fünfundvierzig!",
+    options: [
+      { text: "Es ist zwanzig Uhr fünfundvierzig.", correct: true, explain: "Hervorragend! Slide 41: 20 (zwanzig) + Uhr + 45 (fünfundvierzig)!" },
+      { text: "Es ist acht Uhr fünfundvierzig.", correct: false, explain: "In official time, use the 24-hour number 'zwanzig', not 'acht'!" },
+      { text: "Es ist zwanzig Uhr vierundfünfzig.", correct: false, explain: "45 is fünfundvierzig (5 and 40), not vierundfünfzig (54)!" }
+    ]
+  },
+  {
+    scenario: "Look at the time units from Slides 4 to 8: Which statement is grammatically correct in German?",
+    hint: "Eine Woche hat 7 Tage, Ein Tag hat 24 Stunden, Eine Stunde hat 60 Minuten!",
+    options: [
+      { text: "Eine Woche hat 7 Tage, ein Tag hat 24 Stunden, und eine Stunde hat 60 Minuten.", correct: true, explain: "Perfection! All three slides confirm these exact German units of time!" },
+      { text: "Ein Woche hat 7 Tagen.", correct: false, explain: "'Woche' is feminine: 'Eine Woche', and '7 Tage' without extra -n!" },
+      { text: "Eine Stunde hat 60 Sekunden.", correct: false, explain: "An hour has 60 minutes (Minuten), not 60 seconds (Sekunden)!" }
+    ]
+  }
+];
+
+
 
 
 

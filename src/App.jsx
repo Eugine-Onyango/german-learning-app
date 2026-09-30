@@ -46,6 +46,8 @@ import Lesson19IndefiniteArticlesStudio from './components/Lesson19IndefiniteArt
 import Lesson19Game from './components/Lesson19Game';
 import Lesson20NegativeArticlesStudio from './components/Lesson20NegativeArticlesStudio';
 import Lesson20Game from './components/Lesson20Game';
+import Lesson21TimeStudio from './components/Lesson21TimeStudio';
+import Lesson21Game from './components/Lesson21Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -66,11 +68,12 @@ import {
   LESSON_17_ITEMS,
   LESSON_18_ITEMS,
   LESSON_19_ITEMS,
-  LESSON_20_ITEMS
+  LESSON_20_ITEMS,
+  LESSON_21_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(20); // Default to Lesson 20 as requested, easy switch to 1-19
+  const [currentLesson, setCurrentLesson] = useState(21); // Default to Lesson 21 as requested, easy switch to 1-20
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -94,6 +97,7 @@ export default function App() {
   if (currentLesson === 18) activeItems = LESSON_18_ITEMS;
   if (currentLesson === 19) activeItems = LESSON_19_ITEMS;
   if (currentLesson === 20) activeItems = LESSON_20_ITEMS;
+  if (currentLesson === 21) activeItems = LESSON_21_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -115,7 +119,8 @@ export default function App() {
     if (currentLesson === 17) return "Lesson 17: jemanden vorstellen (Introducing Someone Else - He, She, Child & Couples)";
     if (currentLesson === 18) return "Lesson 18: Artikel im Nominativ (Definite Articles: der, die, das & Universal Plural die)";
     if (currentLesson === 19) return "Lesson 19: unbestimmte Artikel (Indefinite Articles: ein, eine, ein & Plural Nullartikel)";
-    return "Lesson 20: negative Artikel im Nominativ (kein, keine, kein & Plural keine - The Magic 'K' Rule)";
+    if (currentLesson === 20) return "Lesson 20: negative Artikel im Nominativ (kein, keine, kein & Plural keine - The Magic 'K' Rule)";
+    return "Lesson 21: Die Uhrzeit - offizielle Zeit (Telling Time in German - 24-Hour Digital Clock & Time Units)";
   };
 
   const getLessonDesc = () => {
@@ -176,7 +181,10 @@ export default function App() {
     if (currentLesson === 19) {
       return "Master the German indefinite articles ('A / An') in the Nominative case! Learn the storytelling sequence (introduce with ein/eine, describe with der/die/das), discover why masculine and neuter are identical twins (ein), and why plural has no article (Das sind Blumen)!";
     }
-    return "Master how to say 'NOT A / NO' in German! Discover the Magic 'K' Rule: simply put a K in front of ein/eine to get kein/keine! Learn the Question-and-Answer formula (Ist das ein Kuli? Nein, das ist kein Kuli!), and master plural negation (keine Sterne)!";
+    if (currentLesson === 20) {
+      return "Master how to say 'NOT A / NO' in German! Discover the Magic 'K' Rule: simply put a K in front of ein/eine to get kein/keine! Learn the Question-and-Answer formula (Ist das ein Kuli? Nein, das ist kein Kuli!), and master plural negation (keine Sterne)!";
+    }
+    return "Master official German time (offizielle Zeit) and the 24-hour clock! Learn the units of time (Woche, Tag, Stunde, Minute, Sekunde), how to ask the time (Wie spät ist es? / Wie viel Uhr ist es?), the golden formula [Stunde] + Uhr + [Minute], and the drop-s rule for 'ein Uhr'!";
   };
 
   return (
@@ -393,6 +401,15 @@ export default function App() {
 
         {currentLesson === 20 && activeTab === 'game20' && (
           <Lesson20Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 21 Specific Modules */}
+        {currentLesson === 21 && activeTab === 'studio21' && (
+          <Lesson21TimeStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 21 && activeTab === 'game21' && (
+          <Lesson21Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
