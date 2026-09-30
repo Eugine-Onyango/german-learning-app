@@ -4293,6 +4293,211 @@ export const LESSON_18_SCENARIOS = [
   }
 ];
 
+export const LESSON_19_ITEMS = [
+  {
+    id: "l19-unbestimmt-intro",
+    german: "unbestimmte Artikel im Nominativ (ein, eine, ein)",
+    english: "Indefinite Articles in the Nominative Case (A / An - Slide 1 & 2)",
+    pronunciation: "OON-beh-shtim-teh ar-TEE-kel im noh-mee-nah-TEEF",
+    audioText: "unbestimmte Artikel im Nominativ: ein, eine, ein. Und im Plural gibt es keinen unbestimmten Artikel.",
+    category: "concept",
+    badge: "Core Topic 🎯",
+    icon: "✨ 🍎 👨",
+    kenyanAnalogy: "When you mention something for the first time, or any random item: 'a man', 'an apple', 'a bag'. In German: ein (male), eine (female), ein (neutral)!",
+    memoryTrick: "A/An = ein (male) / eine (female) / ein (neutral). No article for plural!"
+  },
+  {
+    id: "l19-apfel-pair",
+    german: "Das ist ein Apfel. Der Apfel ist süß.",
+    english: "This is an apple. The apple is sweet. (Slide 1)",
+    pronunciation: "dahs ist ayn AHP-fel. dair AHP-fel ist zewss.",
+    audioText: "Das ist ein Apfel. Der Apfel ist süß.",
+    category: "maskulin",
+    badge: "First vs Second Mention 🍎",
+    icon: "🍎 😋",
+    kenyanAnalogy: "First introduce it: 'Das ist ein Apfel' (an apple). Then describe that specific apple: 'Der Apfel ist süß' (the apple)!",
+    memoryTrick: "1st time = ein Apfel (any apple). 2nd time = der Apfel (this specific apple)!"
+  },
+  {
+    id: "l19-mann-pair",
+    german: "Das ist ein Mann. Der Mann wohnt in Paris.",
+    english: "This is a man. The man lives in Paris. (Slide 3)",
+    pronunciation: "dahs ist ayn mahn. dair mahn vohnt in pah-REES.",
+    audioText: "Das ist ein Mann. Der Mann wohnt in Paris.",
+    category: "maskulin",
+    badge: "Maskulin Person 👨",
+    icon: "👨 🗼",
+    kenyanAnalogy: "Point out a stranger: 'Das ist ein Mann' (a man). Once we know who we are talking about: 'Der Mann wohnt in Paris'!",
+    memoryTrick: "der Mann -> indefinite is 'ein Mann'!"
+  },
+  {
+    id: "l19-frau-pair",
+    german: "Das ist eine Frau. Die Frau hört Musik.",
+    english: "This is a woman. The woman is listening to music. (Slide 4)",
+    pronunciation: "dahs ist EYE-neh frow. dee frow hewrt moo-ZEEK.",
+    audioText: "Das ist eine Frau. Die Frau hört Musik.",
+    category: "feminin",
+    badge: "Feminin Person 👩",
+    icon: "👩 🎧",
+    kenyanAnalogy: "Notice the -e matching: 'die' ends in -e, so its indefinite partner is 'eine' (also ends in -e)! Die Frau -> eine Frau!",
+    memoryTrick: "die Frau -> eine Frau! Both end in -e!"
+  },
+  {
+    id: "l19-maedchen-pair",
+    german: "Das ist ein Mädchen. Das Mädchen tanzt.",
+    english: "This is a girl. The girl is dancing. (Slide 5)",
+    pronunciation: "dahs ist ayn MAYD-khen. dahs MAYD-khen tahntst.",
+    audioText: "Das ist ein Mädchen. Das Mädchen tanzt.",
+    category: "neutrum",
+    badge: "Neutrum Person 👧",
+    icon: "👧 🩰",
+    kenyanAnalogy: "All German words ending in '-chen' are grammatically neutral (das Mädchen)! So its indefinite article is 'ein Mädchen'!",
+    memoryTrick: "das Mädchen -> ein Mädchen! Neutral uses 'ein' just like masculine!"
+  },
+  {
+    id: "l19-blumen-plural",
+    german: "Das sind Blumen. Die Blumen sind schön.",
+    english: "These are flowers. The flowers are pretty. (Slide 6)",
+    pronunciation: "dahs zint BLOO-men. dee BLOO-men zint shew-n.",
+    audioText: "Das sind Blumen. Die Blumen sind schön.",
+    category: "plural",
+    badge: "No Plural Article (!) 💐",
+    icon: "💐 🌹",
+    kenyanAnalogy: "Look at the warning icon on Slide 6! In English you don't say 'a flowers'. In German, you don't say 'eine Blumen' either! You simply say 'Das sind Blumen' (no article)! And then 'Die Blumen sind schön'!",
+    memoryTrick: "PLURAL HAS NO 'EIN'! Just say the plural noun directly!"
+  },
+  {
+    id: "l19-tabelle-unbestimmt",
+    german: "Tabelle: unbestimmte Artikel (ein, eine, ein, -)",
+    english: "Table: Indefinite Articles in Nominativ (Slide 7)",
+    pronunciation: "tah-BEL-leh: ayn, EYE-neh, ayn, noor no-men",
+    audioText: "Tabelle der unbestimmten Artikel: Maskulin ein, feminin eine, neutral ein. Im Plural kein Artikel.",
+    category: "summary",
+    badge: "The Indefinite Table 📋",
+    icon: "📊 💡",
+    kenyanAnalogy: "Maskulin: ein. Feminin: eine. Neutral: ein. Plural: - (nothing / Nullartikel). Masculine and Neutral are identical twins!",
+    memoryTrick: "Twins: Maskulin = ein, Neutrum = ein. Feminin = eine. Plural = empty dash (-)!"
+  },
+  {
+    id: "l19-tasche-exercise",
+    german: "die Tasche -> Das ist eine Tasche.",
+    english: "The bag -> This is a bag. (Slide 8 & 9 - Exercise)",
+    pronunciation: "dee TAH-sheh -> dahs ist EYE-neh TAH-sheh",
+    audioText: "die Tasche. Das ist eine Tasche.",
+    category: "exercise",
+    badge: "Practice: die -> eine 👜",
+    icon: "👜 🏷️",
+    kenyanAnalogy: "A brown leather handbag. Because it is 'die Tasche' (feminine), when you point it out in a shop you say: 'Das ist eine Tasche'!",
+    memoryTrick: "die Tasche -> eine Tasche!"
+  },
+  {
+    id: "l19-buch-exercise",
+    german: "das Buch -> Das ist ein Buch.",
+    english: "The book -> This is a book. (Slide 10 - Exercise)",
+    pronunciation: "dahs bookh -> dahs ist ayn bookh",
+    audioText: "das Buch. Das ist ein Buch.",
+    category: "exercise",
+    badge: "Practice: das -> ein 📖",
+    icon: "📖 🤓",
+    kenyanAnalogy: "A cheerful storybook with glasses. Because it is 'das Buch' (neutral), you say: 'Das ist ein Buch'!",
+    memoryTrick: "das Buch -> ein Buch!"
+  },
+  {
+    id: "l19-elefant-exercise",
+    german: "der Elefant -> Das ist ein Elefant.",
+    english: "The elephant -> This is an elephant. (Slide 11 - Exercise)",
+    pronunciation: "dair eh-leh-FAHNT -> dahs ist ayn eh-leh-FAHNT",
+    audioText: "der Elefant. Das ist ein Elefant.",
+    category: "exercise",
+    badge: "Practice: der -> ein 🐘",
+    icon: "🐘 🌿",
+    kenyanAnalogy: "A majestic African elephant. Because it is 'der Elefant' (masculine), you say: 'Das ist ein Elefant'!",
+    memoryTrick: "der Elefant -> ein Elefant!"
+  },
+  {
+    id: "l19-bestimmt-vs-unbestimmt",
+    german: "At a glance: bestimmte vs. unbestimmte Artikel",
+    english: "Master Comparison Table: Definite vs. Indefinite (Slide 12)",
+    pronunciation: "aht ah glahns: beh-SHTIM-teh gain-ghen OON-beh-shtim-teh",
+    audioText: "At a glance: Maskulin der wird zu ein. Feminin die wird zu eine. Neutral das wird zu ein. Plural die hat keinen unbestimmten Artikel.",
+    category: "summary",
+    badge: "Master Chalkboard 📋",
+    icon: "🎓 🌟",
+    kenyanAnalogy: "The complete 2-column mirror: der -> ein, die -> eine, das -> ein, die Plural -> - (Nullartikel)! You now know how to say both 'the' and 'a' for everything!",
+    memoryTrick: "der/ein, die/eine, das/ein, die/-"
+  },
+  {
+    id: "l19-summary-chalkboard",
+    german: "Zusammenfassung: ein, eine, ein (At a glance)",
+    english: "Summary: First Mention (ein/eine) vs. Specific Mention (der/die/das)",
+    pronunciation: "tsoo-ZAM-men-fas-soong: ayn, EYE-neh, ayn",
+    audioText: "Zusammenfassung: Das ist ein Apfel, der Apfel ist süß. Das ist eine Frau, die Frau hört Musik. Das ist ein Buch. Das sind Blumen.",
+    category: "summary",
+    badge: "Full Story Summary 🌟",
+    icon: "🍎 👩 📚 💐",
+    kenyanAnalogy: "The universal storytelling sequence: Introduce it with 'ein/eine' or bare plural, then follow up with 'der/die/das/die'!",
+    memoryTrick: "New item = ein/eine. Known item = der/die/das!"
+  }
+];
+
+export const LESSON_19_SCENARIOS = [
+  {
+    scenario: "You hold up an apple to show a friend and say: 'This is an apple. The apple is sweet.' How do you say this in German?",
+    hint: "Check slide 1: Indefinite first, then definite!",
+    options: [
+      { text: "Das ist ein Apfel. Der Apfel ist süß.", correct: true, explain: "Spot on! Slide 1 shows: 'ein Apfel' for the first mention, then 'Der Apfel' when describing that specific apple!" },
+      { text: "Das ist der Apfel. Ein Apfel ist süß.", correct: false, explain: "You introduce with 'ein' first, and refer back with 'der'!" },
+      { text: "Das ist eine Apfel. Die Apfel ist süß.", correct: false, explain: "'Apfel' is masculine, so it takes 'ein' and 'der', not 'eine'!" }
+    ]
+  },
+  {
+    scenario: "What are the correct indefinite articles (a/an) for 'Frau' (woman) and 'Tasche' (bag) in German?",
+    hint: "Both nouns are feminine: die Frau, die Tasche!",
+    options: [
+      { text: "eine (Das ist eine Frau. Das ist eine Tasche.)", correct: true, explain: "Brilliant! Feminine nouns take 'eine' (notice both 'die' and 'eine' end in -e)!" },
+      { text: "ein (Das ist ein Frau. Das ist ein Tasche.)", correct: false, explain: "'ein' is for masculine and neuter, not feminine!" },
+      { text: "eines", correct: false, explain: "'eines' is genitive, not nominative!" }
+    ]
+  },
+  {
+    scenario: "Look at the ballerina girl on Slide 5: 'Das ist ein Mädchen. Das Mädchen tanzt.' Why does 'Mädchen' take 'ein' and 'das'?",
+    hint: "Diminutive ending '-chen' makes nouns neuter!",
+    options: [
+      { text: "Because in German, 'Mädchen' is grammatically neutral (das Mädchen / ein Mädchen).", correct: true, explain: "Outstanding! All words ending in '-chen' are grammatically neutral in German!" },
+      { text: "Because all children take 'der'.", correct: false, explain: "Child nouns take 'das' (das Kind, das Baby, das Mädchen)!" },
+      { text: "Because 'Mädchen' is plural.", correct: false, explain: "'Mädchen' here is singular (tanzt is 3rd person singular)!" }
+    ]
+  },
+  {
+    scenario: "Look at the bouquet of red roses on Slide 6: How do you say 'These are flowers. The flowers are pretty'?",
+    hint: "Warning (!): Is there an indefinite article in the plural?",
+    options: [
+      { text: "Das sind Blumen. Die Blumen sind schön.", correct: true, explain: "Masterful! Slide 6 shows: In plural, there is NO indefinite article! Just 'Das sind Blumen'!" },
+      { text: "Das sind eine Blumen. Die Blumen sind schön.", correct: false, explain: "Never say 'eine Blumen'! In plural, there is no indefinite article!" },
+      { text: "Das ist ein Blumen. Der Blumen ist schön.", correct: false, explain: "'Blumen' is plural, so verb is 'sind' and article is 'die'!" }
+    ]
+  },
+  {
+    scenario: "In the exercises on Slides 9, 10, and 11, how do you turn 'die Tasche', 'das Buch', and 'der Elefant' into indefinite sentences?",
+    hint: "die -> eine, das -> ein, der -> ein!",
+    options: [
+      { text: "Das ist eine Tasche. Das ist ein Buch. Das ist ein Elefant.", correct: true, explain: "Perfect! die Tasche -> eine Tasche; das Buch -> ein Buch; der Elefant -> ein Elefant!" },
+      { text: "Das ist ein Tasche. Das ist eine Buch. Das ist eine Elefant.", correct: false, explain: "The gender articles are mixed up here!" },
+      { text: "Das sind eine Tasche. Das sind ein Buch. Das sind ein Elefant.", correct: false, explain: "Each of these is singular, so it must be 'Das ist', not 'Das sind'!" }
+    ]
+  },
+  {
+    scenario: "Look at the master comparison table on Slide 12: Which two grammatical genders share the EXACT SAME indefinite article 'ein'?",
+    hint: "The identical twins of the indefinite table!",
+    options: [
+      { text: "Maskulin (der -> ein) and Neutral (das -> ein)!", correct: true, explain: "Superb! Slide 12 shows: Both maskulin and neutral take 'ein' (ein Mann, ein Buch, ein Apfel, ein Mädchen)!" },
+      { text: "Feminin and Neutral.", correct: false, explain: "Feminin takes 'eine', while neutral takes 'ein'!" },
+      { text: "Maskulin and Feminin.", correct: false, explain: "Maskulin takes 'ein', while feminin takes 'eine'!" }
+    ]
+  }
+];
+
+
 
 
 
