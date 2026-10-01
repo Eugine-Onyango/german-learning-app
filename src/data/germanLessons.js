@@ -7773,6 +7773,211 @@ export const LESSON_32_SCENARIOS = [
   }
 ];
 
+export const LESSON_33_ITEMS = [
+  {
+    id: "l33-wann-concept",
+    german: "Wann? (When?): Wann hast du Geburtstag? - Ich habe am 6. November Geburtstag.",
+    english: "When?: When is your birthday? - My birthday is on November 6th.",
+    pronunciation: "Vahn? Vahn hahst doo geh-BOORTS-tahk? - Ihsh HAH-beh ahm ZEKH-sten noh-VEM-ber geh-BOORTS-tahk.",
+    audioText: "Wann? Wann hast du Geburtstag? Heute habe ich Geburtstag! Ich habe am sechsten November Geburtstag. Ich habe im November Geburtstag. Nächste Woche habe ich Geburtstag.",
+    category: "wann",
+    badge: "Key 1: Wann? (When?) 🗓️",
+    icon: "🗓️",
+    kenyanAnalogy: "The classic German question for any moment in time! You can reply with 'Heute' (today), 'am 6. November' (on the date), 'im November' (in the month), or 'nächste Woche' (next week)!",
+    memoryTrick: "Wann? asks for the moment or date!"
+  },
+  {
+    id: "l33-preposition-trio-um-am-im",
+    german: "Das Zeit-Trio: um 6 Uhr (Uhrzeit), am Donnerstag / am Abend (Tage/Tageszeit), im August / im Sommer (Monate/Jahreszeit)",
+    english: "The Preposition Trio: at 6:00 (um), on Thursday / in the evening (am), in August / in summer (im)",
+    pronunciation: "oom zeks oor, ahm DON-ners-tahk, ahm AH-bent, im ow-GOOST, im ZOM-mer",
+    audioText: "um sechs Uhr. am Abend, am Donnerstag. im Sommer, im August. heute, nächste Woche.",
+    category: "prepositions",
+    badge: "um vs. am vs. im ⏰",
+    icon: "⏰",
+    kenyanAnalogy: "Slide 8 Golden Secret: 1. Exact Clock Needle = 'um' (um 6 Uhr). 2. Days & Day Parts = 'am' (am Donnerstag, am Abend). 3. Big Seasons & Months = 'im' (im Sommer, im August)!",
+    memoryTrick: "um (clock) | am (day/part) | im (month/season)!"
+  },
+  {
+    id: "l33-bis-wann",
+    german: "Bis wann? (Until when?): Bis wann schläfst du? - Ich schlafe bis 12 Uhr. Bis wann bleibst du in Paris? - Bis Sonntag.",
+    english: "Until when?: Until when do you sleep? - I sleep till noon. Until when are you staying in Paris? - Till Sunday.",
+    pronunciation: "Bis vahn? Bis vahn SHLAYFST doo? - Ihsh SHLAH-feh bis tswurlf oor. Bis vahn BLYBST doo in Pah-REES? - Ihsh BLY-beh bis ZON-tahk in Pah-REES.",
+    audioText: "Bis wann? Bis wann schläfst du? Ich schlafe bis zwölf Uhr. Bis wann bleibst du in Paris? Ich bleibe bis Sonntag in Paris. bis sechs Uhr, bis Abend, bis Sommer, bis August, bis nächste Woche, bis morgen.",
+    category: "bis-wann",
+    badge: "Key 2: Bis wann? (Until when?) 🛑",
+    icon: "🛑",
+    kenyanAnalogy: "Asks for the deadline or finish line! 'Bis wann schläfst du?' (Until when do you sleep?) ➔ 'bis 12 Uhr' (till 12) / 'bis Sonntag' (till Sunday) / 'bis morgen' (till tomorrow)!",
+    memoryTrick: "Bis wann = Until when (The stop sign)!"
+  },
+  {
+    id: "l33-seit-wann",
+    german: "Seit wann? (Since when?): Seit wann lernst du Deutsch? - Ich lerne Deutsch seit 2 Jahren.",
+    english: "Since when?: Since when are you learning German? - I have been learning German for 2 years.",
+    pronunciation: "Zayt vahn? Zayt vahn LERNST doo DOYTSH? - Ihsh LER-neh DOYTSH zayt tsvy YAH-ren.",
+    audioText: "Seit wann? Seit wann lernst du Deutsch? Ich lerne Deutsch seit zwei Jahren. seit sechs Uhr, seit Abend, seit Sommer, seit August, seit Donnerstag, seit letzter Woche.",
+    category: "seit-wann",
+    badge: "Key 3: Seit wann? (Since when?) ⏳",
+    icon: "⏳",
+    kenyanAnalogy: "Use 'Seit wann?' for something that started in the past and is STILL ongoing right now! 'Seit wann lernst du Deutsch?' ➔ 'seit 2 Jahren' (for 2 years) / 'seit letzter Woche' (since last week)!",
+    memoryTrick: "Seit wann = Started in the past + still going on today!"
+  },
+  {
+    id: "l33-ab-wann",
+    german: "Ab wann? (From when? - Future Start): Ab wann machst du Urlaub? - Ab nächster Woche mache ich Urlaub.",
+    english: "From when?: From when are you on vacation? - Starting next week I am on vacation.",
+    pronunciation: "Ahp vahn? Ahp vahn MAHKHST doo OOR-lowp? - Ahp NAYKH-ster VOKH-eh MAH-kheh ihsh OOR-lowp.",
+    audioText: "Ab wann? Ab wann machst du Urlaub? Ab nächster Woche mache ich Urlaub. ab sechs Uhr, ab Abend, ab Sommer, ab August, ab Donnerstag, ab morgen.",
+    category: "ab-wann",
+    badge: "Key 4: Ab wann? (Starting when?) 🚀",
+    icon: "🚀",
+    kenyanAnalogy: "The opposite of 'seit'! 'Ab wann?' looks forward to a starting point in the future! 'Ab wann machst du Urlaub?' ➔ 'Ab nächster Woche' (starting next week) / 'ab morgen' (starting tomorrow)!",
+    memoryTrick: "Ab wann = Future kickoff point!"
+  },
+  {
+    id: "l33-von-wann-bis-wann",
+    german: "Von wann bis wann? (From when till when?): Von wann bis wann arbeitest du? - Von Montag bis Freitag, von 8:30 bis 18 Uhr.",
+    english: "From when until when?: When to when do you work? - From Monday to Friday, from 8:30 to 18:00.",
+    pronunciation: "Fon vahn bis vahn? Fon vahn bis vahn AR-by-test doo? - Ihsh ar-BY-teh fon MOHN-tahk bis FRY-tahk fon AHKHT oor DRAY-sikh bis AHKHT-tsayn oor.",
+    audioText: "Von wann bis wann? Von wann bis wann arbeitest du? Ich arbeite von Montag bis Freitag von acht Uhr dreißig bis achtzehn Uhr. von sechs Uhr bis sieben Uhr, von Morgen bis Abend, von Sommer bis Winter.",
+    category: "von-bis",
+    badge: "Key 5: Von ... bis ... ↔️",
+    icon: "↔️",
+    kenyanAnalogy: "The complete time bridge! Setting business hours, schedules, or shifts: 'von Montag bis Freitag' (Monday to Friday) and 'von 8:30 bis 18:00 Uhr'!",
+    memoryTrick: "von [Start] bis [Ende] = From [A] to [B]!"
+  },
+  {
+    id: "l33-um-wie-viel-uhr",
+    german: "Um wie viel Uhr? (At what time?): Um wie viel Uhr kommst du? - Ich komme um 21 Uhr.",
+    english: "At what time?: At what time are you coming? - I will come at 21:00 (9 p.m.).",
+    pronunciation: "Oom vee feel OOR? Oom vee feel oor KOMST doo? - Ihsh KOM-meh oom eye-n-oont-TSVAHN-tsikh oor.",
+    audioText: "Um wie viel Uhr? Um wie viel Uhr kommst du? Ich komme um einundzwanzig Uhr.",
+    category: "um-wie-viel-uhr",
+    badge: "Key 6: Um wie viel Uhr? 🎯",
+    icon: "🎯",
+    kenyanAnalogy: "When you need the exact needle point on the watch! Always answered with 'um [number] Uhr' (e.g. 'um 21 Uhr' = 9 p.m.)!",
+    memoryTrick: "Um wie viel Uhr? ➔ Answer always starts with 'um'!"
+  },
+  {
+    id: "l33-wie-spaet-ist-es",
+    german: "Wie spät ist es (jetzt)? / Wie viel Uhr ist es? - Es ist (genau) 11 Uhr.",
+    english: "What time is it now?: What time is it? - It is (exactly) 11 o'clock.",
+    pronunciation: "Vee shpayt ist es yetst? / Vee feel oor ist es yetst? - Es ist geh-NOW ELF oor.",
+    audioText: "Wie spät ist es jetzt? Wie viel Uhr ist es jetzt? Es ist genau elf Uhr.",
+    category: "wie-spaet",
+    badge: "Key 7: Wie spät ist es? ⌚",
+    icon: "⌚",
+    kenyanAnalogy: "Asking a passerby for the current time on the street! Both 'Wie spät ist es?' and 'Wie viel Uhr ist es?' are 100% interchangeable in German!",
+    memoryTrick: "Wie spät? = Wie viel Uhr? = What time is it?"
+  },
+  {
+    id: "l33-time-approximations",
+    german: "Zeit-Angaben: gegen 6 Uhr (around 6), gleich (soon), kurz vor (shortly before), kurz nach (shortly after), fast (almost), genau (exactly)",
+    english: "Time Modifiers: around 6 (gegen), right away/soon (gleich), shortly before (kurz vor), shortly after (kurz nach), almost (fast), exactly (genau)",
+    pronunciation: "GAY-gen, glykh, koorts fohr, koorts nahkh, fahst, geh-NOW",
+    audioText: "gegen sechs Uhr, gleich, kurz vor sechs, kurz nach sechs, fast sechs, genau sechs Uhr.",
+    category: "modifiers",
+    badge: "Time Modifiers & Precision 🔍",
+    icon: "🔍",
+    kenyanAnalogy: "Slide 33 conversational power words! 'gegen 6 Uhr' (around 6:00), 'kurz vor halb sechs' (just before 5:30), 'fast 11 Uhr' (almost 11), 'genau 11 Uhr' (on the dot)!",
+    memoryTrick: "gegen = around | gleich = right away | kurz vor/nach = just before/after!"
+  },
+  {
+    id: "l33-wie-lange",
+    german: "Wie lange? (How long? - Duration): Wie lange bleibst du bei mir? - 5 Tage. Wie lange dauert der Film? - 2 Stunden.",
+    english: "How long? (Duration): How long are you staying with me? - 5 days. How long does the film last? - 2 hours.",
+    pronunciation: "Vee LAHNG-eh? Vee lahng-eh BLYBST doo by meer? - Ihsh BLY-beh fyoonf TAH-geh by deer. Vee lahng-eh DOW-ert dair film? - Dair film dow-ert tsvy SHTOON-den.",
+    audioText: "Wie lange? Wie lange bleibst du bei mir? Ich bleibe fünf Tage bei dir. Wie lange dauert der Film? Der Film dauert zwei Stunden.",
+    category: "wie-lange",
+    badge: "Key 8: Wie lange? (Duration) ⏱️",
+    icon: "⏱️",
+    kenyanAnalogy: "Measuring the length of time! Often pairs with the verb 'dauern' (to take/last): 'Wie lange dauert der Film?' ➔ 'Der Film dauert 2 Stunden'!",
+    memoryTrick: "Wie lange? = Measuring duration (Minuten, Stunden, Tage)!"
+  },
+  {
+    id: "l33-wie-oft",
+    german: "Wie oft? (How often? - Frequency): Wie oft gehst du ins Kino? - Ich gehe manchmal ins Kino.",
+    english: "How often?: How often do you go to the cinema? - I sometimes go to the cinema.",
+    pronunciation: "Vee oft? Vee oft GAYST doo ins KEE-noh? - Ihsh GAY-eh MAHNCH-mahl ins KEE-noh.",
+    audioText: "Wie oft? Wie oft gehst du ins Kino? Ich gehe manchmal ins Kino.",
+    category: "wie-oft",
+    badge: "Key 9: Wie oft? (Frequency) 🔄",
+    icon: "🔄",
+    kenyanAnalogy: "Counting how frequently you do an activity! Answer with words from the Frequency Ladder: 'immer' (always), 'manchmal' (sometimes), 'nie' (never)!",
+    memoryTrick: "Wie oft? asks for frequency!"
+  },
+  {
+    id: "l33-frequency-ladder",
+    german: "Die Häufigkeits-Skala: immer (100%), meistens (80%), oft (60%), manchmal (40%), selten (15%), nie (0%) + ab und zu, jeden Tag",
+    english: "The Frequency Scale: always (100%), mostly (80%), often (60%), sometimes (40%), seldom (15%), never (0%) + now and then, every day",
+    pronunciation: "IM-mer, MYS-tens, oft, MAHNCH-mahl, ZEL-ten, nee, ahp oont tsoo, YAY-den tahk",
+    audioText: "immer, meistens, oft, manchmal, selten, nie. ab und zu, jeden Tag, jeden Montag.",
+    category: "frequency",
+    badge: "The Frequency Spectrum 📊",
+    icon: "📊",
+    kenyanAnalogy: "Slide 42 master ladder from 100% to 0%: 'immer' (always 100%) ➔ 'meistens' (usually 80%) ➔ 'oft' (often 60%) ➔ 'manchmal' (sometimes 40%) ➔ 'selten' (rarely 15%) ➔ 'nie' (never 0%)!",
+    memoryTrick: "immer (100%) > meistens (80%) > oft (60%) > manchmal (40%) > selten (15%) > nie (0%)!"
+  }
+];
+
+export const LESSON_33_SCENARIOS = [
+  {
+    scenario: "In Slide 3–5, someone asks when your birthday is: 'Wann hast du Geburtstag?' You want to say: 'My birthday is on the 6th of November.' Which preposition is correct for the specific date?",
+    hint: "Dates and days always take the preposition 'am'.",
+    options: [
+      { text: "Ich habe am 6. November Geburtstag.", correct: true, explain: "Wunderbar! Specific calendar dates and days always take 'am' ('am 6. November')." },
+      { text: "Ich habe im 6. November Geburtstag.", correct: false, explain: "'im' is used for bare months alone without a day number (e.g. 'im November')!" },
+      { text: "Ich habe um 6. November Geburtstag.", correct: false, explain: "'um' is strictly for clock time (e.g. 'um 6 Uhr')!" }
+    ]
+  },
+  {
+    scenario: "In Slide 16–17, someone asks since when you have been learning German: 'Seit wann lernst du Deutsch?' You want to say: 'I have been learning German for 2 years.' What is the correct response?",
+    hint: "Questions with 'Seit wann?' are answered using 'seit'.",
+    options: [
+      { text: "Ich lerne Deutsch seit 2 Jahren.", correct: true, explain: "Ausgezeichnet! 'Seit wann?' is answered with 'seit' + plural Dativ ('seit 2 Jahren')." },
+      { text: "Ich lerne Deutsch ab 2 Jahren.", correct: false, explain: "'ab' is for future starting points, not past ongoing duration!" },
+      { text: "Ich lerne Deutsch vor 2 Jahren.", correct: false, explain: "'vor 2 Jahren' means '2 years ago' (finished event), while 'seit' means still ongoing!" }
+    ]
+  },
+  {
+    scenario: "In Slide 20–21, your colleague asks from what point in time your upcoming vacation begins: 'Ab wann machst du Urlaub?' How do you answer 'From next week'?",
+    hint: "Questions with 'Ab wann?' are answered using 'ab'.",
+    options: [
+      { text: "Ab nächster Woche mache ich Urlaub.", correct: true, explain: "Genau! 'Ab wann?' looks at a future kickoff time and is answered with 'ab' ('Ab nächster Woche')." },
+      { text: "Seit nächster Woche mache ich Urlaub.", correct: false, explain: "'seit' is for something that started in the past, not next week!" },
+      { text: "Bis nächster Woche mache ich Urlaub.", correct: false, explain: "'bis' means until, which would mean your vacation ends next week!" }
+    ]
+  },
+  {
+    scenario: "In Slide 24–25, you are describing your work schedule from Monday to Friday, 8:30 to 18:00. Which question asked for this time span?",
+    hint: "Asks for both the starting point and ending point.",
+    options: [
+      { text: "Von wann bis wann arbeitest du?", correct: true, explain: "Perfekt! 'Von wann bis wann?' asks for a time range from start to finish!" },
+      { text: "Wie spät arbeitest du?", correct: false, explain: "'Wie spät?' asks for the current clock time ('What time is it?')." },
+      { text: "Wie oft arbeitest du?", correct: false, explain: "'Wie oft?' asks for frequency (how many times a week), not daily schedule hours." }
+    ]
+  },
+  {
+    scenario: "In Slide 37–38, you want to ask how long the cinema movie will last. Which question word specifically measures time duration?",
+    hint: "Combines 'Wie' with length/duration.",
+    options: [
+      { text: "Wie lange dauert der Film?", correct: true, explain: "Brilliant! 'Wie lange?' measures duration in minutes or hours, paired with the verb 'dauern'!" },
+      { text: "Wie viel Uhr dauert der Film?", correct: false, explain: "'Wie viel Uhr?' asks for the clock time on a watch, not duration!" },
+      { text: "Bis wann dauert der Film?", correct: false, explain: "While 'bis wann' asks for the end time, 'Wie lange' is the standard question for how long something lasts." }
+    ]
+  },
+  {
+    scenario: "In Slide 42, which German word on the Frequency Scale means that you do something occasionally / 'now and then'?",
+    hint: "A famous 3-word German idiom for 'now and then'.",
+    options: [
+      { text: "ab und zu", correct: true, explain: "Hervorragend! 'ab und zu' is the native German idiom for 'now and then / occasionally'!" },
+      { text: "immer", correct: false, explain: "'immer' means always (100%)!" },
+      { text: "nie", correct: false, explain: "'nie' means never (0%)!" }
+    ]
+  }
+];
+
+
 
 
 

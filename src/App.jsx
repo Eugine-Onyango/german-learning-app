@@ -70,6 +70,8 @@ import Lesson31DativStudio from './components/Lesson31DativStudio';
 import Lesson31Game from './components/Lesson31Game';
 import Lesson32OrdinalStudio from './components/Lesson32OrdinalStudio';
 import Lesson32Game from './components/Lesson32Game';
+import Lesson33TimeQuestionsStudio from './components/Lesson33TimeQuestionsStudio';
+import Lesson33Game from './components/Lesson33Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -102,11 +104,12 @@ import {
   LESSON_29_ITEMS,
   LESSON_30_ITEMS,
   LESSON_31_ITEMS,
-  LESSON_32_ITEMS
+  LESSON_32_ITEMS,
+  LESSON_33_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(32); // Default to Lesson 32 as requested, easy switch to 1-31
+  const [currentLesson, setCurrentLesson] = useState(33); // Default to Lesson 33 as requested, easy switch to 1-32
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -142,6 +145,7 @@ export default function App() {
   if (currentLesson === 30) activeItems = LESSON_30_ITEMS;
   if (currentLesson === 31) activeItems = LESSON_31_ITEMS;
   if (currentLesson === 32) activeItems = LESSON_32_ITEMS;
+  if (currentLesson === 33) activeItems = LESSON_33_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -175,7 +179,8 @@ export default function App() {
     if (currentLesson === 29) return "Lesson 29: im Restaurant & Café bestellen (Ordering in a Restaurant / Café)";
     if (currentLesson === 30) return "Lesson 30: Personalpronomen im Akkusativ (Accusative Personal Pronouns: mich, dich, ihn, uns, euch & The Unchanging Twins)";
     if (currentLesson === 31) return "Lesson 31: Artikel im Dativ (Definite, Indefinite & Negative Articles in the Dative Case - The Gift Receiver)";
-    return "Lesson 32: Ordinalzahlen (Ordinal Numbers - Dates, Birthdays, Rankings & The 4 Rebels)";
+    if (currentLesson === 32) return "Lesson 32: Ordinalzahlen (Ordinal Numbers - Dates, Birthdays, Rankings & The 4 Rebels)";
+    return "Lesson 33: Zeit - Fragewörter (Questions Relating to Time - The 9 Time Keys & Prepositions)";
   };
 
   const getLessonDesc = () => {
@@ -272,7 +277,10 @@ export default function App() {
     if (currentLesson === 31) {
       return "Master the Dative case (Dativ / Indirect Object)! Discover the magic M-R-M-N formula (dem, der, dem, den + n | einem, einer, einem | keinem, keiner, keinem, keinen + n), understand who receives gifts and benefits (Wem?), and practice pure Dative verbs like 'danken' and 'helfen'.";
     }
-    return "Master German ordinal numbers (Ordinalzahlen: erste, zweite, dritte... 1. bis 1000.)! Learn how to express dates and birthdays (Heute ist der sechste April / Ich habe am sechsten April Geburtstag), conquer the 4 irregular rebels (erste, dritte, siebte, achte), and master the -te vs. -ste rules.";
+    if (currentLesson === 32) {
+      return "Master German ordinal numbers (Ordinalzahlen: erste, zweite, dritte... 1. bis 1000.)! Learn how to express dates and birthdays (Heute ist der sechste April / Ich habe am sechsten April Geburtstag), conquer the 4 irregular rebels (erste, dritte, siebte, achte), and master the -te vs. -ste rules.";
+    }
+    return "Master how to ask and answer all 9 German time questions (Wann, Bis wann, Seit wann, Ab wann, Von wann bis wann, Um wie viel Uhr, Wie spät, Wie lange, Wie oft)! Explore the preposition trio (um, am, im), ongoing past vs. future kickoff (seit vs. ab), duration with 'dauern', and the complete 100% to 0% frequency ladder.";
   };
 
   return (
@@ -597,6 +605,15 @@ export default function App() {
 
         {currentLesson === 32 && activeTab === 'game32' && (
           <Lesson32Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 33 Specific Modules */}
+        {currentLesson === 33 && activeTab === 'studio33' && (
+          <Lesson33TimeQuestionsStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 33 && activeTab === 'game33' && (
+          <Lesson33Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
