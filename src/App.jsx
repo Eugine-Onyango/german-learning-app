@@ -68,6 +68,8 @@ import Lesson30PronounStudio from './components/Lesson30PronounStudio';
 import Lesson30Game from './components/Lesson30Game';
 import Lesson31DativStudio from './components/Lesson31DativStudio';
 import Lesson31Game from './components/Lesson31Game';
+import Lesson32OrdinalStudio from './components/Lesson32OrdinalStudio';
+import Lesson32Game from './components/Lesson32Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -99,11 +101,12 @@ import {
   LESSON_28_ITEMS,
   LESSON_29_ITEMS,
   LESSON_30_ITEMS,
-  LESSON_31_ITEMS
+  LESSON_31_ITEMS,
+  LESSON_32_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(31); // Default to Lesson 31 as requested, easy switch to 1-30
+  const [currentLesson, setCurrentLesson] = useState(32); // Default to Lesson 32 as requested, easy switch to 1-31
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -138,6 +141,7 @@ export default function App() {
   if (currentLesson === 29) activeItems = LESSON_29_ITEMS;
   if (currentLesson === 30) activeItems = LESSON_30_ITEMS;
   if (currentLesson === 31) activeItems = LESSON_31_ITEMS;
+  if (currentLesson === 32) activeItems = LESSON_32_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -170,7 +174,8 @@ export default function App() {
     if (currentLesson === 28) return "Lesson 28: W-Fragen (German W-Questions - The 13 Key Question Words)";
     if (currentLesson === 29) return "Lesson 29: im Restaurant & Café bestellen (Ordering in a Restaurant / Café)";
     if (currentLesson === 30) return "Lesson 30: Personalpronomen im Akkusativ (Accusative Personal Pronouns: mich, dich, ihn, uns, euch & The Unchanging Twins)";
-    return "Lesson 31: Artikel im Dativ (Definite, Indefinite & Negative Articles in the Dative Case - The Gift Receiver)";
+    if (currentLesson === 31) return "Lesson 31: Artikel im Dativ (Definite, Indefinite & Negative Articles in the Dative Case - The Gift Receiver)";
+    return "Lesson 32: Ordinalzahlen (Ordinal Numbers - Dates, Birthdays, Rankings & The 4 Rebels)";
   };
 
   const getLessonDesc = () => {
@@ -264,7 +269,10 @@ export default function App() {
     if (currentLesson === 30) {
       return "Master personal pronouns in the accusative case (Personalpronomen im Akkusativ)! Understand how pronouns transform when they are the direct receiver of an action. Master the 5 Changers (ich ➔ mich, du ➔ dich, er ➔ ihn, wir ➔ uns, ihr ➔ euch) and why 'sie', 'es', and formal 'Sie' stay completely identical!";
     }
-    return "Master the Dative case (Dativ / Indirect Object)! Discover the magic M-R-M-N formula (dem, der, dem, den + n | einem, einer, einem | keinem, keiner, keinem, keinen + n), understand who receives gifts and benefits (Wem?), and practice pure Dative verbs like 'danken' and 'helfen'.";
+    if (currentLesson === 31) {
+      return "Master the Dative case (Dativ / Indirect Object)! Discover the magic M-R-M-N formula (dem, der, dem, den + n | einem, einer, einem | keinem, keiner, keinem, keinen + n), understand who receives gifts and benefits (Wem?), and practice pure Dative verbs like 'danken' and 'helfen'.";
+    }
+    return "Master German ordinal numbers (Ordinalzahlen: erste, zweite, dritte... 1. bis 1000.)! Learn how to express dates and birthdays (Heute ist der sechste April / Ich habe am sechsten April Geburtstag), conquer the 4 irregular rebels (erste, dritte, siebte, achte), and master the -te vs. -ste rules.";
   };
 
   return (
@@ -580,6 +588,15 @@ export default function App() {
 
         {currentLesson === 31 && activeTab === 'game31' && (
           <Lesson31Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 32 Specific Modules */}
+        {currentLesson === 32 && activeTab === 'studio32' && (
+          <Lesson32OrdinalStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 32 && activeTab === 'game32' && (
+          <Lesson32Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

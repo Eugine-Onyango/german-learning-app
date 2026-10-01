@@ -43,6 +43,7 @@ export default function Header({
     if (currentLesson === 29) msg = "Im Restaurant und Café: Guten Tag! Wir wollen einen Tisch für zwei Personen. Was möchten Sie trinken? Ich nehme einen Kaffee und eine Pizza. Wir möchten zahlen, bitte! Zusammen oder getrennt? Stimmt so!";
     if (currentLesson === 30) msg = "Personalpronomen im Akkusativ: Kennst du mich? Ich kenne dich nicht. Herr Schmidt, ich suche Sie! Das ist Michael, ich kenne ihn. Michaela, ich finde sie schön. Mein Buch, ich finde es toll. Samantha und Mike, kennst du uns? Wer seid ihr, ich kenne euch nicht! Petra und Jürgen, ich kenne sie!";
     if (currentLesson === 31) msg = "Artikel im Dativ: Die Mutter kauft der Tochter ein Kleid. Petra kocht dem Mann eine Suppe. Er bringt dem Kind und den Kindern ein Geschenk. Sie dankt dem Mann und er hilft der Frau!";
+    if (currentLesson === 32) msg = "Ordinalzahlen: erste, zweite, dritte, vierte, fünfte, sechste. Heute ist der sechste April. Ich habe am sechsten April Geburtstag. Das dritte Haus von links ist mein Haus!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -297,6 +298,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson32NavItems = [
+    { id: 'cards', label: '📖 Lesson 32 Cards', sub: 'erste, zweite, dritte... 1. bis 1000.' },
+    { id: 'studio32', label: '🥇 Ordinal Numbers Studio', sub: 'Date Builder, Ladder & Milestones' },
+    { id: 'game32', label: '🎮 Ordinal Numbers Quiz', sub: 'Dates, Rebels & Endings Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -328,6 +337,7 @@ export default function Header({
   if (currentLesson === 29) navItems = lesson29NavItems;
   if (currentLesson === 30) navItems = lesson30NavItems;
   if (currentLesson === 31) navItems = lesson31NavItems;
+  if (currentLesson === 32) navItems = lesson32NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -361,6 +371,7 @@ export default function Header({
     { num: 29, label: "🍽️ 29: Restaurant & Café", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 30, label: "🔄 30: Personalpronomen (Akk)", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
     { num: 31, label: "🎁 31: Artikel im Dativ", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
+    { num: 32, label: "🥇 32: Ordinalzahlen", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (

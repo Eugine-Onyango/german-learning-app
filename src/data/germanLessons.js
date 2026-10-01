@@ -7617,6 +7617,163 @@ export const LESSON_31_SCENARIOS = [
   }
 ];
 
+export const LESSON_32_ITEMS = [
+  {
+    id: "l32-ordinal-concept",
+    german: "Was sind Ordinalzahlen? Reihenfolge & Datum: der erste, zweite, dritte... (1., 2., 3.)",
+    english: "What are Ordinal Numbers? Order, Rank & Dates: the first, second, third... (1st, 2nd, 3rd)",
+    pronunciation: "Vahs zint or-dee-NAHL-tsah-len? RYE-en-fol-geh oont DAH-toom: dair AIR-steh, TSWEY-teh, DRIT-teh",
+    audioText: "Was sind Ordinalzahlen? Kardinalzahlen sind eins, zwei, drei. Ordinalzahlen sind erste, zweite, dritte. Das dritte Haus von links ist mein Haus.",
+    category: "concept",
+    badge: "Ordinal Numbers Concept 🥇",
+    icon: "🥇",
+    kenyanAnalogy: "Cardinal numbers tell you 'How many' (1, 2, 3 houses), but Ordinal numbers tell you 'Which position' (the 1st child, 2nd floor, 3rd house)! In German, a dot after the digit means '-th': 1. = erste, 2. = zweite, 3. = dritte!",
+    memoryTrick: "Dot after number = Ordinal! (1. = first, 6. = sixth)!"
+  },
+  {
+    id: "l32-two-endings-te-vs-ten",
+    german: "Zwei Endungen: der/die/das sechste (Subjekt) vs. am sechsten (Datum mit am)",
+    english: "Two Endings: the 6th (der/die/das sechste) vs. on the 6th (am sechsten)",
+    pronunciation: "dair ZEKH-steh (Sub-yekt) vs. ahm ZEKH-sten (DAH-toom mit ahm)",
+    audioText: "Heute ist der sechste April. Sie kommt am sechsten April. Ich wurde am sechsten Vierten geboren. Ich habe am sechsten April Geburtstag.",
+    category: "rules",
+    badge: "-te vs. -ten Rule ⚖️",
+    icon: "📅",
+    kenyanAnalogy: "Slide 5 Golden Rule: 1. Saying the date as the subject ('Today is the 6th') ➔ 'Heute ist der sechste April' (-te). 2. Saying when something happens with 'am' ('on the 6th') ➔ 'am sechsten April' (-ten)!",
+    memoryTrick: "With 'der/die/das' ➔ -te (-ste). With 'am' ➔ -ten (-sten)!"
+  },
+  {
+    id: "l32-rebels-1-3-7-8",
+    german: "Die 4 Ausnahmen: 1. erste (am ersten), 3. dritte (am dritten), 7. siebte (am siebten), 8. achte (am achten)",
+    english: "The 4 Irregular Rebels: 1st (erste), 3rd (dritte), 7th (siebte - drops en), 8th (achte - already has t)",
+    pronunciation: "AIR-steh (ahm AIR-sten), DRIT-teh (ahm DRIT-ten), ZEEP-teh (ahm ZEEP-ten), AHKH-teh (ahm AHKH-ten)",
+    audioText: "Die vier Ausnahmen: der erste, am ersten. der dritte, am dritten. der siebte, am siebten. der achte, am achten.",
+    category: "rebels",
+    badge: "The 4 Irregular Rebels ⚡",
+    icon: "⚡ 🎯",
+    kenyanAnalogy: "Most numbers just take the digit + te, BUT these 4 are rebels: 1 is 'erste' (NOT einste), 3 is 'dritte' (NOT dreite), 7 is 'siebte' (drops '-en'), and 8 is 'achte' (already has a 't')!",
+    memoryTrick: "Memorize: 1. erste, 3. dritte, 7. siebte, 8. achte!"
+  },
+  {
+    id: "l32-zone-1-to-19",
+    german: "Zahlen 1 bis 19: Grundzahl + '-te' (der/die/das) oder '-ten' (am)",
+    english: "Numbers 1 to 19: Base number + '-te' (der/die/das) or '-ten' (am)",
+    pronunciation: "TSWEY-teh, FEER-teh, FYOONF-teh, TSAYN-teh, ELF-teh, TSWURLF-teh, DRAY-tsayn-teh...",
+    audioText: "erste, zweite, dritte, vierte, fünfte, sechste, siebte, achte, neunte, zehnte, elfte, zwölfte, dreizehnte, vierzehnte, fünfzehnte, sechzehnte, siebzehnte, achtzehnte, neunzehnte.",
+    category: "numbers-1-19",
+    badge: "1 to 19: Add -te / -ten 🪜",
+    icon: "🔢",
+    kenyanAnalogy: "From 1 to 19, just add '-te' or '-ten' to the number! (4. vierte, 5. fünfte, 10. zehnte, 11. elfte, 12. zwölfte, 17. siebzehnte, 19. neunzehnte)!",
+    memoryTrick: "1 to 19 = simply add -te / -ten!"
+  },
+  {
+    id: "l32-zone-20-plus",
+    german: "Zahlen ab 20: Grundzahl + '-ste' (der/die/das) oder '-sten' (am)",
+    english: "Numbers 20 and above: Base number + '-ste' (der/die/das) or '-sten' (am)",
+    pronunciation: "TSVAHN-tsikh-steh (ahm TSVAHN-tsikh-sten), DRY-sikh-steh (ahm DRY-sikh-sten)...",
+    audioText: "Ab zwanzig kommt ein S dazu: zwanzigste, am zwanzigsten. einundzwanzigste, am einundzwanzigsten. dreißigste, am dreißigsten. vierzigste, fünfzigste, sechzigste, siebzigste, achtzigste, neunzigste, hundertste.",
+    category: "numbers-20-plus",
+    badge: "20+: Add -ste / -sten 🚀",
+    icon: "🚀",
+    kenyanAnalogy: "At number 20, the rocket ignites and adds an extra 's'! 20. is 'zwanzigste' (NOT zwanzigte). 21. is 'einundzwanzigste', 30. is 'dreißigste', 100. is 'hundertste'!",
+    memoryTrick: "20 and up gets an 'S': -STE / -STEN!"
+  },
+  {
+    id: "l32-birthdays-and-dates",
+    german: "Geburtstag & Datum: Ich habe am 6. April Geburtstag. Ich wurde am 06.04. (sechsten Vierten) geboren.",
+    english: "Birthdays & Dates: My birthday is on April 6th. I was born on 06.04. (the 6th of the 4th).",
+    pronunciation: "Ihsh HAH-beh ahm ZEKH-sten ah-PRIL geh-BOORTS-tahk. Ihsh VOOR-deh ahm ZEKH-sten FEER-ten geh-BOH-ren.",
+    audioText: "Ich habe am sechsten April Geburtstag. Ich wurde am sechsten Vierten geboren. Wann bist du geboren? Wann hast du Geburtstag?",
+    category: "application",
+    badge: "Birthday & Date Formulas 🎂",
+    icon: "🎂 🎈",
+    kenyanAnalogy: "Slides 3–4 date mastery: Germans read '06.04.' as 'am sechsten Vierten' (on the 6th of the 4th month)! When stating your birthday: 'Ich habe am [Tag] [Monat] Geburtstag'!",
+    memoryTrick: "am [number]-ten [Month] Geburtstag haben!"
+  },
+  {
+    id: "l32-daily-life-applications",
+    german: "Alltagsbeispiele: Das dritte Haus von links. Die erste Liebe. Das erste Kind. Der erste Juli.",
+    english: "Everyday Applications: The 3rd house from the left. The first love. The first child. The 1st of July.",
+    pronunciation: "Dahs DRIT-teh hows fon links. Dee AIR-steh LEE-beh. Dahs AIR-steh kint. Dair AIR-steh YOO-lee.",
+    audioText: "Das dritte Haus von links ist mein Haus. Die erste Liebe. Das erste Kind. Der erste Juli.",
+    category: "application",
+    badge: "Everyday Life Examples 🏡",
+    icon: "🏡 ❤️",
+    kenyanAnalogy: "Slides 2, 42–44: Using ordinals to point out directions ('Das dritte Haus von links'), life milestones ('Die erste Liebe', 'Das erste Kind'), and calendar months ('Der erste Juli')!",
+    memoryTrick: "der/die/das + ordinal adjective matches noun gender!"
+  },
+  {
+    id: "l32-big-ordinals-100-101-1000",
+    german: "Große Ordinalzahlen: 100. hundertste, 101. einhunderterste, 102. einhundertzweite, 1000. tausendste",
+    english: "Big Ordinal Numbers: 100th (hundertste), 101st (einhunderterste), 102nd (einhundertzweite), 1000th (tausendste)",
+    pronunciation: "HOON-dert-steh, eye-n-HOON-dert-AIR-steh, eye-n-HOON-dert-TSWEY-teh, TOW-zend-steh",
+    audioText: "hundertste, einhunderterste, einhundertzweite, tausendste. Am einhundertersten, am tausendsten.",
+    category: "big-numbers",
+    badge: "100th, 101st & 1000th 💯",
+    icon: "💯 🏛️",
+    kenyanAnalogy: "Slides 7–9: For compound numbers like 101 (einhunderterste), only the LAST number gets the ordinal ending! 1000. is 'tausendste' (am tausendsten)!",
+    memoryTrick: "Only the very last word takes the -ste / -sten ending!"
+  }
+];
+
+export const LESSON_32_SCENARIOS = [
+  {
+    scenario: "In Slide 5, you want to state today's date as the sentence subject: 'Today is the 6th of April.' How do you say this in German?",
+    hint: "As the subject with 'der', the ordinal takes the '-te' ending.",
+    options: [
+      { text: "Heute ist der sechste April.", correct: true, explain: "Wunderbar! When stating the date with 'der', the ending is '-te' ('der sechste April')." },
+      { text: "Heute ist der sechsten April.", correct: false, explain: "'-ten' is only used after 'am' (e.g. am sechsten April), not after 'der'!" },
+      { text: "Heute ist der sechste von April.", correct: false, explain: "In German you say 'der sechste April' directly without 'von'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 3–5, your friend asks when you are arriving. You want to answer: 'I will come on the 1st of April.' How is this correctly phrased with 'am'?",
+    hint: "'1.' is the irregular rebel 'erste' and after 'am' it adds '-n'.",
+    options: [
+      { text: "Ich komme am ersten April.", correct: true, explain: "Ausgezeichnet! '1.' is 'erste', and with preposition 'am' it becomes 'am ersten April'!" },
+      { text: "Ich komme am einsten April.", correct: false, explain: "'einsten' does not exist in German; '1.' is always irregular 'erste / ersten'!" },
+      { text: "Ich komme am erste April.", correct: false, explain: "After 'am', ordinal numbers must take the '-en' ending: 'am ersten'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 2, you are pointing out your home to a guest: 'The third house from the left is my house.' How do you say 'the third house'?",
+    hint: "'3.' is the irregular rebel 'dritte' (NOT dreite) with neuter 'das'.",
+    options: [
+      { text: "Das dritte Haus von links ist mein Haus.", correct: true, explain: "Genau! '3.' is irregular 'dritte' ('Das dritte Haus von links')." },
+      { text: "Das dreite Haus von links ist mein Haus.", correct: false, explain: "'dreite' is incorrect; 3. is always 'dritte'!" },
+      { text: "Das dreiste Haus von links ist mein Haus.", correct: false, explain: "'dreist' means cheeky/insolent in German, not third!" }
+    ]
+  },
+  {
+    scenario: "In Slide 13–15, you are celebrating your friend's 21st birthday on the 21st: 'We are celebrating on the 21st.' How do you say 'on the 21st'?",
+    hint: "Numbers 20 and above add '-sten' after 'am'.",
+    options: [
+      { text: "am einundzwanzigsten", correct: true, explain: "Perfekt! From 20 onwards, the ending is '-sten': 'am einundzwanzigsten'!" },
+      { text: "am einundzwanzigten", correct: false, explain: "20 and above use '-sten', not '-ten'!" },
+      { text: "am erstenundzwanzigsten", correct: false, explain: "Only the last digit takes the ordinal ending: 'einundzwanzigsten'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 28–29, what is special about the ordinal number for 7th ('7.')?",
+    hint: "'sieben' drops its '-en' before adding '-te'.",
+    options: [
+      { text: "It drops '-en' from 'sieben' to become 'siebte' (am siebten).", correct: true, explain: "Brilliant! 7. is 'siebte' (NOT 'siebente'), dropping the '-en' stem ending!" },
+      { text: "It is completely regular: 'siebente'.", correct: false, explain: "German standard is 'siebte' / 'am siebten'!" },
+      { text: "It adds an 's': 'siebste'.", correct: false, explain: "'-ste' only starts at 20 (zwanzigste)!" }
+    ]
+  },
+  {
+    scenario: "In Slide 3, a birth certificate reads date of birth '06.04.'. How does a native German read this date in spoken words?",
+    hint: "Day in dative (6th) + Month in dative (4th month of the year).",
+    options: [
+      { text: "am sechsten Vierten", correct: true, explain: "Hervorragend! '06.04.' is spoken as 'am sechsten Vierten' (on the 6th of the 4th)!" },
+      { text: "am sechs vier", correct: false, explain: "Dates are always spoken as ordinal numbers, not bare digits!" },
+      { text: "am sechste vierte", correct: false, explain: "After 'am', ordinals must take '-n': 'am sechsten Vierten'!" }
+    ]
+  }
+];
+
+
 
 
 
