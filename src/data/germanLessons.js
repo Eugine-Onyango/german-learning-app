@@ -6393,4 +6393,209 @@ export const LESSON_25_SCENARIOS = [
   }
 ];
 
+export const LESSON_26_ITEMS = [
+  {
+    id: "l26-concept-intro",
+    german: "Possessivartikel im Akkusativ: Das ist mein Mann -> Ich liebe meinen Mann.",
+    english: "Possessive Articles in the Accusative Case: When you love, like, have, or visit someone/something you own.",
+    pronunciation: "poh-zeh-SEEV-ar-tee-kel im ah-koo-zah-TEEF: dahs ist mayn MAHN -> ikh LEE-beh MY-nen MAHN.",
+    audioText: "Possessivartikel im Akkusativ. Das ist mein Mann. Ich liebe meinen Mann.",
+    category: "concept",
+    badge: "Slide 1–4 Core Concept",
+    icon: "❤️ 🏷️",
+    kenyanAnalogy: "Just like introducing someone (Nominativ: 'This is my husband'), but when you do an action to him (Akkusativ: 'I love my husband'), masculine 'mein' gains the '-en' ending -> 'meinen'!",
+    memoryTrick: "Subjekt: mein Mann (Nom) -> Objekt: meinen Mann (Akk)!"
+  },
+  {
+    id: "l26-the-masculine-en-rule",
+    german: "Die Akkusativ-Endungsregel: NUR Maskulin bekommt -EN!",
+    english: "The Golden Possessive Akkusativ Rule: ONLY Masculine adds '-en' (meinen, deinen, seinen, ihren, unseren, euren, Ihren)! Feminine, Neuter, and Plural remain 100% identical to Nominativ!",
+    pronunciation: "noor mahs-koo-LEEN beh-KOMT eh-en!",
+    audioText: "Die goldene Regel: Nur Maskulin bekommt e n. Meinen, deinen, seinen, ihren, unseren, euren, Ihren. Feminin, Neutral und Plural bleiben gleich!",
+    category: "rules",
+    badge: "The Golden Rule 👑",
+    icon: "👑 ⚡",
+    kenyanAnalogy: "Total peace of mind! Out of all 4 categories, only masculine words wear the '-en' suffix in Akkusativ! Feminine (meine), Neuter (mein), and Plural (meine) don't change at all!",
+    memoryTrick: "Maskulin Akkusativ = -EN Club! meinen, deinen, seinen, ihren, unseren, euren, Ihren!"
+  },
+  {
+    id: "l26-julia-story",
+    german: "Julia (Slide 2–7): meinen Mann (m), mein Auto (n), meine Katze (f), meine Kinder (pl)",
+    english: "Julia's 4 Sentences: I love my husband (m), I love my car (n), I love my cat (f), I love my children (pl).",
+    pronunciation: "ikh LEE-beh MY-nen MAHN, mayn OW-toh, MY-neh KAHT-seh, MY-neh KIN-der",
+    audioText: "Hi, ich bin Julia. Das ist mein Mann. Ich liebe meinen Mann. Das ist mein Auto. Ich liebe mein Auto. Das ist meine Katze. Ich liebe meine Katze. Das sind meine Kinder. Ich liebe meine Kinder.",
+    category: "stories",
+    badge: "Slide 2–7 Julia (ich)",
+    icon: "👩 🚗 🐱 👧👦",
+    kenyanAnalogy: "Julia showing her family: only her husband (der Mann) changes to 'meinen Mann'. Car, cat, and children stay exactly like Nominativ!",
+    memoryTrick: "der Mann -> meinen Mann! das Auto -> mein Auto! die Katze -> meine Katze! die Kinder -> meine Kinder!"
+  },
+  {
+    id: "l26-alex-story",
+    german: "Alex (Slide 8–12): seine Freundin (f), seinen Hund (m), sein Motorrad (n), seine Freunde (pl)",
+    english: "Alex's 4 Sentences: He likes his girlfriend (f), he likes his dog (m), he likes his motorbike (n), he likes his friends (pl).",
+    pronunciation: "air mahk ZY-neh FROYN-din, ZY-nen HOONT, zayn MOH-tor-raht, ZY-neh FROYN-deh",
+    audioText: "Das ist Alex. Das ist seine Freundin. Er mag seine Freundin. Das ist sein Hund. Er mag seinen Hund. Das ist sein Motorrad. Er mag sein Motorrad. Das sind seine Freunde. Er mag seine Freunde.",
+    category: "stories",
+    badge: "Slide 8–12 Alex (er)",
+    icon: "👦 🐕 🏍️ 👥",
+    kenyanAnalogy: "Alex with his hobbies and pals: only his dog (der Hund) shifts to 'seinen Hund'. Girlfriend, motorbike, and friends stay unchanged!",
+    memoryTrick: "der Hund -> seinen Hund! die Freundin -> seine Freundin! das Motorrad -> sein Motorrad! die Freunde -> seine Freunde!"
+  },
+  {
+    id: "l26-sabrina-story",
+    german: "Sabrina (Slide 13–17): ihren Freund (m), ihre Gitarre (f), ihr Haus (n), ihre Nachbarn (pl)",
+    english: "Sabrina's 4 Sentences: She finds her boyfriend nice (m), her guitar super (f), her house beautiful (n), her neighbors friendly (pl).",
+    pronunciation: "zee FIN-det EE-ren FROYNT net, EE-reh gee-TAH-reh ZOO-per, eer HOWS shoen, EE-reh NAHKH-barn FROYNT-likh",
+    audioText: "Das ist Sabrina. Das ist ihr Freund. Sie findet ihren Freund nett. Das ist ihre Gitarre. Sie findet ihre Gitarre super. Das ist ihr Haus. Sie findet ihr Haus schön. Das sind ihre Nachbarn. Sie findet ihre Nachbarn freundlich.",
+    category: "stories",
+    badge: "Slide 13–17 Sabrina (sie)",
+    icon: "👱‍♀️ 🎸 🏡 👫",
+    kenyanAnalogy: "Sabrina reviewing her life: only her boyfriend (der Freund) shifts to 'ihren Freund'. Guitar, house, and neighbors keep their Nominativ forms!",
+    memoryTrick: "der Freund -> ihren Freund! die Gitarre -> ihre Gitarre! das Haus -> ihr Haus! die Nachbarn -> ihre Nachbarn!"
+  },
+  {
+    id: "l26-und-du-dialogue",
+    german: "Und du? (Slide 18): Magst du deinen Freund? Wie findest du dein Haus? Liebst du deine Familie?",
+    english: "And you? Do you like your boyfriend/girlfriend? How do you like your house? Do you love your family?",
+    pronunciation: "oont doo? mahkst doo DY-nen FROYNT / DY-neh FROYN-din? vee FIN-dest doo dayn HOWS? leepst doo DY-neh fah-MEE-lee-eh?",
+    audioText: "Und du? Magst du deinen Freund oder deine Freundin? Wie findest du dein Haus? Liebst du deine Familie?",
+    category: "dialogue",
+    badge: "Slide 18 Conversation",
+    icon: "🗣️ 💬 ❓",
+    kenyanAnalogy: "Asking your conversation partner about their loved ones and possessions in real daily German chat!",
+    memoryTrick: "deinen Freund (m) vs. deine Freundin (f) vs. dein Haus (n) vs. deine Familie (f)!"
+  },
+  {
+    id: "l26-master-table",
+    german: "Slide 19 Master-Tabelle: Possessivartikel im Akkusativ",
+    english: "The complete summary matrix from Slide 19: Maskulin (-en) | Feminin (-e) | Neutral (base) | Plural (-e).",
+    pronunciation: "MAHS-ter tah-BEH-leh: ahl-leh poh-zeh-SEEV-ar-tee-kel im ah-koo-zah-TEEF",
+    audioText: "At a glance: meinen, meine, mein, meine. Deinen, deine, dein, deine. Seinen, seine, sein, seine. Ihren, ihre, ihr, ihre. Unseren, unsere, unser, unsere. Euren, eure, euer, eure. Ihren, Ihre, Ihr, Ihre. Und ihren, ihre, ihr, ihre.",
+    category: "summary",
+    badge: "Slide 19 Master Matrix",
+    icon: "📋 📊",
+    kenyanAnalogy: "The master chalkboard matrix! Notice column 1 (Maskulin) is 100% dressed in '-en', while columns 2, 3, and 4 are carbon copies of Lesson 23 Nominativ!",
+    memoryTrick: "Maskulin Akkusativ: meinen, deinen, seinen, ihren, unseren, euren, Ihren, ihren!"
+  },
+  {
+    id: "l26-dog-drill-all-9",
+    german: "Slide 20 Der Hund-Drill: meinen, deinen, ihren, seinen, Ihren, ihren, unseren, euren Hund",
+    english: "The 9-Sentence Dog Mastery Drill: All 9 pronoun subjects paired with masculine 'der Hund' in Akkusativ.",
+    pronunciation: "der HOONT dril: ahl-leh noyn ZET-seh",
+    audioText: "Ich liebe meinen Hund. Liebst du deinen Hund? Sie liebt ihren Hund. Er liebt seinen Hund. Lieben Sie Ihren Hund? Sie lieben ihren Hund. Wir lieben unseren Hund. Liebt ihr euren Hund? Lieben Sie Ihren Hund?",
+    category: "drill",
+    badge: "Slide 20 Dog Drill 🐕",
+    icon: "🐕 🏆",
+    kenyanAnalogy: "The ultimate workout! Because 'der Hund' is masculine, every single person who loves their dog must use '-en'!",
+    memoryTrick: "meinen Hund | deinen Hund | seinen Hund | ihren Hund | unseren Hund | euren Hund | Ihren Hund!"
+  },
+  {
+    id: "l26-exercise-1",
+    german: "Übung 1 (Slide 22–23): Er liebt seine Eltern.",
+    english: "Exercise 1: He loves his parents. (Eltern is plural -> seine).",
+    pronunciation: "air leept ZY-neh EL-tern",
+    audioText: "Er liebt seine Eltern. Eltern ist Plural, also seine Eltern.",
+    category: "exercises",
+    badge: "Slide 22–23 Übung 1",
+    icon: "👨‍👩‍👧‍👦 ✓",
+    kenyanAnalogy: "Choosing between sein / seine / seinen: 'Eltern' is plural (die Eltern), so choose 'seine' with '-e'!",
+    memoryTrick: "die Eltern (plural) -> seine Eltern!"
+  },
+  {
+    id: "l26-exercise-2",
+    german: "Übung 2 (Slide 24–25): Heute besuchen wir unseren Opa.",
+    english: "Exercise 2: Today we visit our grandpa. (Opa is masculine der Opa in Akkusativ -> unseren).",
+    pronunciation: "HOY-teh beh-ZOO-khen veer OON-zeh-ren OH-pah",
+    audioText: "Heute besuchen wir unseren Opa. Der Opa ist Maskulin im Akkusativ, also unseren Opa.",
+    category: "exercises",
+    badge: "Slide 24–25 Übung 2",
+    icon: "👴 ✓",
+    kenyanAnalogy: "Choosing between unser / unsere / unseren: 'Opa' is masculine (der Opa) and is being visited (Akkusativ), so choose 'unseren'!",
+    memoryTrick: "der Opa (Akkusativ) -> unseren Opa!"
+  },
+  {
+    id: "l26-exercise-3",
+    german: "Übung 3 (Slide 26–27): Wie findet ihr euren Lehrer?",
+    english: "Exercise 3: How do you (all) like your teacher? (Lehrer is masculine der Lehrer in Akkusativ -> euren).",
+    pronunciation: "vee FIN-det eer OY-ren LAY-rer?",
+    audioText: "Wie findet ihr euren Lehrer? Der Lehrer ist Maskulin im Akkusativ, also euren Lehrer.",
+    category: "exercises",
+    badge: "Slide 26–27 Übung 3",
+    icon: "👨‍🏫 ✓",
+    kenyanAnalogy: "Choosing between euer / eure / euren: 'der Lehrer' is masculine object of 'finden', and remember the inner 'e' drops -> 'euren'!",
+    memoryTrick: "der Lehrer (Akkusativ) -> euren Lehrer!"
+  },
+  {
+    id: "l26-exercise-4",
+    german: "Übung 4 (Slide 28–29): Bitte geben Sie Ihre Adresse!",
+    english: "Exercise 4: Please give your address! (Adresse is feminine die Adresse in Akkusativ -> Ihre).",
+    pronunciation: "BIT-teh GAY-ben zee EE-reh ah-DREH-seh!",
+    audioText: "Bitte geben Sie Ihre Adresse! Die Adresse ist Feminin, also Ihre Adresse mit großem I.",
+    category: "exercises",
+    badge: "Slide 28–29 Übung 4",
+    icon: "📝 ✓",
+    kenyanAnalogy: "Choosing between Ihr / Ihre / Ihren: 'Adresse' is feminine (die Adresse) and formal 'Sie' uses capital 'I' -> 'Ihre Adresse'!",
+    memoryTrick: "die Adresse (feminin) -> Ihre Adresse (capital I + -e)!"
+  }
+];
+
+export const LESSON_26_SCENARIOS = [
+  {
+    scenario: "In Slide 3, Julia from Hamburg says: 'This is my husband. I love my husband.' Which German sentence correctly shows 'husband' as the direct object of 'lieben'?",
+    hint: "'der Mann' is masculine in Akkusativ (mein -> meinen)!",
+    options: [
+      { text: "Ich liebe meinen Mann.", correct: true, explain: "Ausgezeichnet! 'Mann' is masculine (der Mann). In Akkusativ, 'mein' changes to 'meinen'!" },
+      { text: "Ich liebe mein Mann.", correct: false, explain: "Incorrect! 'mein' is Nominativ, but 'Mann' is the direct object of 'lieben' (Akkusativ)!" },
+      { text: "Ich liebe meine Mann.", correct: false, explain: "'meine' is for feminine or plural nouns!" }
+    ]
+  },
+  {
+    scenario: "In Slide 10, Alex has a dog ('der Hund'). How do you say 'He likes his dog' in German?",
+    hint: "'Hund' is masculine (der Hund) and the subject is 'er' (his).",
+    options: [
+      { text: "Er mag seinen Hund.", correct: true, explain: "Wunderbar! 'er' possessive is 'sein', and for masculine 'der Hund' in Akkusativ it becomes 'seinen Hund'!" },
+      { text: "Er mag sein Hund.", correct: false, explain: "Almost, but masculine direct objects require '-en': 'seinen Hund'!" },
+      { text: "Er mag seine Hund.", correct: false, explain: "'seine' is for feminine or plural nouns!" }
+    ]
+  },
+  {
+    scenario: "In Slide 24–25 (Übung 2), a family is going to visit their grandfather: 'Heute besuchen wir ______ Opa.' Which word completes the sentence?",
+    hint: "'der Opa' is masculine receiving the visit from 'wir' (our).",
+    options: [
+      { text: "unseren", correct: true, explain: "Perfection! 'der Opa' is masculine in Akkusativ, so 'unser' takes '-en' -> 'unseren Opa'!" },
+      { text: "unsere", correct: false, explain: "'unsere' is for feminine or plural nouns!" },
+      { text: "unser", correct: false, explain: "'unser' is for neuter or masculine Nominativ!" }
+    ]
+  },
+  {
+    scenario: "In Slide 26–27 (Übung 3), you ask a group of students: 'How do you like your teacher (der Lehrer)?' Which question is grammatically correct?",
+    hint: "For 'ihr' (you all), masculine Akkusativ drops the inner 'e' and adds '-en'!",
+    options: [
+      { text: "Wie findet ihr euren Lehrer?", correct: true, explain: "Genau! For 'ihr', masculine Akkusativ is 'euren' (e-u-r-e-n) with 'Lehrer'!" },
+      { text: "Wie findet ihr eueren Lehrer?", correct: false, explain: "Trap alert! The inner 'e' must drop: 'euren', never 'eueren'!" },
+      { text: "Wie findet ihr eure Lehrer?", correct: false, explain: "'eure' is for feminine or plural nouns, not singular masculine 'der Lehrer'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 28–29 (Übung 4), a receptionist asks a formal guest: 'Bitte geben Sie ______ Adresse!' (Please give your address). Which word fits?",
+    hint: "'Adresse' is feminine (die Adresse) and the guest is addressed as formal 'Sie'.",
+    options: [
+      { text: "Ihre", correct: true, explain: "Brilliant! 'die Adresse' is feminine (takes '-e') and formal 'Sie' possessive is capitalized -> 'Ihre Adresse'!" },
+      { text: "Ihren", correct: false, explain: "'Ihren' is only for masculine nouns in Akkusativ!" },
+      { text: "Ihr", correct: false, explain: "'Ihr' is for neuter or masculine Nominativ!" }
+    ]
+  },
+  {
+    scenario: "Julia says: 'Ich liebe mein Auto und meine Katze.' Why did 'Auto' and 'Katze' NOT add '-en' like 'meinen Mann' did?",
+    hint: "Think about the Golden Rule: which genders actually transform in Akkusativ?",
+    options: [
+      { text: "Because ONLY Masculine (der) changes in Akkusativ; Neuter (das Auto) and Feminine (die Katze) stay 100% identical to Nominativ!", correct: true, explain: "Spot on! That is the golden rule of German Akkusativ: feminine, neuter, and plural never change their possessive endings!" },
+      { text: "Because cars and cats cannot be loved in German", correct: false, explain: "The verb 'lieben' takes Akkusativ for all nouns; only masculine grammar morphology changes!" },
+      { text: "Because Julia made a grammatical mistake", correct: false, explain: "Julia's German is 100% textbook perfect!" }
+    ]
+  }
+];
+
+
 

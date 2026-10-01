@@ -37,6 +37,7 @@ export default function Header({
     if (currentLesson === 23) msg = "Possessivartikel im Nominativ: Das ist mein Auto, das ist meine Katze. Ist das dein Fernseher? Sind das eure Bücher? Und ist das Ihr Auto, Herr Müller?";
     if (currentLesson === 24) msg = "Die Familie: Das ist mein Vater, das ist meine Mutter, das sind meine Eltern und Geschwister. Mein Opa und meine Oma!";
     if (currentLesson === 25) msg = "Artikel im Akkusativ: Ich esse einen Apfel, ich trinke einen Saft, ich habe eine Katze und ein Auto. Und ich habe keinen Kuli!";
+    if (currentLesson === 26) msg = "Possessivartikel im Akkusativ: Ich liebe meinen Mann, er mag seinen Hund, und sie findet ihren Freund nett. Heute besuchen wir unseren Opa!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -243,6 +244,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson26NavItems = [
+    { id: 'cards', label: '📖 Lesson 26 Cards', sub: 'meinen, seinen, ihren & Hund Drill' },
+    { id: 'studio26', label: '❤️ Possessive Akk Studio', sub: '3 Stories, Dog Drill & Übungen' },
+    { id: 'game26', label: '🎮 Possessive Akk Quiz', sub: 'Akkusativ Ownership Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -268,6 +277,7 @@ export default function Header({
   if (currentLesson === 23) navItems = lesson23NavItems;
   if (currentLesson === 24) navItems = lesson24NavItems;
   if (currentLesson === 25) navItems = lesson25NavItems;
+  if (currentLesson === 26) navItems = lesson26NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -295,6 +305,7 @@ export default function Header({
     { num: 23, label: "🏷️ 23: Possessivartikel", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
     { num: 24, label: "👨‍👩‍👦 24: Die Familie", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 25, label: "🎯 25: Artikel im Akkusativ", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 26, label: "❤️ 26: Possessiv im Akkusativ", activeClass: "bg-rose-700 ring-rose-400", hoverBorder: "hover:bg-rose-100 border-rose-300" },
   ];
 
   return (

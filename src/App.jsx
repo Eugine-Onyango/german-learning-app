@@ -56,6 +56,8 @@ import Lesson24FamilyStudio from './components/Lesson24FamilyStudio';
 import Lesson24Game from './components/Lesson24Game';
 import Lesson25AkkusativStudio from './components/Lesson25AkkusativStudio';
 import Lesson25Game from './components/Lesson25Game';
+import Lesson26PossessiveAkkStudio from './components/Lesson26PossessiveAkkStudio';
+import Lesson26Game from './components/Lesson26Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -81,11 +83,12 @@ import {
   LESSON_22_ITEMS,
   LESSON_23_ITEMS,
   LESSON_24_ITEMS,
-  LESSON_25_ITEMS
+  LESSON_25_ITEMS,
+  LESSON_26_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(25); // Default to Lesson 25 as requested, easy switch to 1-24
+  const [currentLesson, setCurrentLesson] = useState(26); // Default to Lesson 26 as requested, easy switch to 1-25
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -114,6 +117,7 @@ export default function App() {
   if (currentLesson === 23) activeItems = LESSON_23_ITEMS;
   if (currentLesson === 24) activeItems = LESSON_24_ITEMS;
   if (currentLesson === 25) activeItems = LESSON_25_ITEMS;
+  if (currentLesson === 26) activeItems = LESSON_26_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -140,7 +144,8 @@ export default function App() {
     if (currentLesson === 22) return "Lesson 22: Inoffizielle Zeit (Zeit in Umgangssprache - Everyday Conversational Time)";
     if (currentLesson === 23) return "Lesson 23: Possessivartikel im Nominativ (Possessive Articles in the Nominative Case)";
     if (currentLesson === 24) return "Lesson 24: Die Familie (The Family, Relative Pairs & The 3-Generation Family Tree)";
-    return "Lesson 25: Artikel im Akkusativ (Articles in the Accusative Case - Direct Object)";
+    if (currentLesson === 25) return "Lesson 25: Artikel im Akkusativ (Articles in the Accusative Case - Direct Object)";
+    return "Lesson 26: Possessivartikel im Akkusativ (Possessive Articles in the Accusative Case)";
   };
 
   const getLessonDesc = () => {
@@ -216,7 +221,10 @@ export default function App() {
     if (currentLesson === 24) {
       return "Explore the German family tree (der Familienbaum)! Learn core relatives (Vater, Mutter, Bruder, Schwester, Großvater, Großmutter, Onkel, Tante, Cousin, Cousine), the 3 German collective plurals (die Eltern, die Großeltern, die Geschwister), and affectionate pet names (Opa & Oma)!";
     }
-    return "Master the German Accusative direct object case (Akkusativ)! Discover the golden relief secret: ONLY masculine transforms (der -> den, ein -> einen, kein -> keinen), while feminine, neuter, and plural stay 100% identical! Learn Wen? vs. Was?, and test the 4 famous apple sentences!";
+    if (currentLesson === 25) {
+      return "Master the German Accusative direct object case (Akkusativ)! Discover the golden relief secret: ONLY masculine transforms (der -> den, ein -> einen, kein -> keinen), while feminine, neuter, and plural stay 100% identical! Learn Wen? vs. Was?, and test the 4 famous apple sentences!";
+    }
+    return "Express love, likes, and opinions about people and things you own! Master the golden rule: ONLY masculine adds -EN (meinen, seinen, ihren, unseren, euren, Ihren), while feminine, neuter, and plural stay 100% identical to Nominativ! Explore Julia, Alex, and Sabrina's stories, the 9-dog drill, and classroom exercises!";
   };
 
   return (
@@ -478,6 +486,15 @@ export default function App() {
 
         {currentLesson === 25 && activeTab === 'game25' && (
           <Lesson25Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 26 Specific Modules */}
+        {currentLesson === 26 && activeTab === 'studio26' && (
+          <Lesson26PossessiveAkkStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 26 && activeTab === 'game26' && (
+          <Lesson26Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
