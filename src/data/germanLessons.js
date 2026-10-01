@@ -7029,6 +7029,211 @@ export const LESSON_28_SCENARIOS = [
   }
 ];
 
+export const LESSON_29_ITEMS = [
+  {
+    id: "l29-menu-vocab",
+    german: "die Speisekarte (die Speisekarten) / das Menü (die Menüs)",
+    english: "The Menu / Menus (Food & Drink List in Restaurants & Cafés)",
+    pronunciation: "dee SHPY-zeh-kahr-teh / dahs meh-NOO",
+    audioText: "die Speisekarte, die Speisekarten. das Menü, die Menüs. Hier ist die Speisekarte!",
+    category: "restaurant",
+    badge: "The Menu 📜",
+    icon: "📜 🍽️",
+    kenyanAnalogy: "The magic food catalogue! 'Speise' means food/dish, and 'Karte' means card/booklet. In German restaurants you'll hear: 'Hier ist die Speisekarte!'",
+    memoryTrick: "die Speisekarte (feminin) / das Menü (neuter)!"
+  },
+  {
+    id: "l29-arrival-table",
+    german: "Wir wollen einen Tisch für zwei Personen. Haben Sie reserviert?",
+    english: "We want a table for two people. Have you made a reservation?",
+    pronunciation: "Veer VOL-len EYE-nen Tish feer tsvy pair-ZOH-nen. HAH-ben Zee reh-zair-VEERT?",
+    audioText: "Guten Tag! Wir wollen einen Tisch für zwei Personen. Haben Sie reserviert? Ja, auf den Namen Müller. Nein, wir haben nicht reserviert.",
+    category: "restaurant",
+    badge: "Table & Booking 🪑",
+    icon: "🪑 👥",
+    kenyanAnalogy: "Arriving at the restaurant entrance: 'der Tisch' is masculine Akkusativ, so you say 'einen Tisch'. The host asks if you booked: 'Haben Sie reserviert? Ja, auf den Namen...' or 'Nein, wir haben nicht reserviert.'",
+    memoryTrick: "einen Tisch (Akkusativ) + auf den Namen [Name]!"
+  },
+  {
+    id: "l29-seating-polite",
+    german: "Bitte kommen Sie mit! Bitte nehmen Sie Platz!",
+    english: "Please come along! Please take a seat!",
+    pronunciation: "BIT-teh KOM-men Zee mit! BIT-teh NAY-men Zee Plahts!",
+    audioText: "Bitte kommen Sie mit! Bitte nehmen Sie Platz! Hier ist die Speisekarte. Vielen Dank!",
+    category: "restaurant",
+    badge: "Take a Seat 🤝",
+    icon: "🚶‍♀️ 💺",
+    kenyanAnalogy: "Warm German hospitality! The server guides you to your cozy corner ('Bitte kommen Sie mit!') and invites you to sit down ('Bitte nehmen Sie Platz!').",
+    memoryTrick: "Platz nehmen = to take a seat / sit down!"
+  },
+  {
+    id: "l29-drinks-inquiry",
+    german: "Was möchten Sie trinken? / Was hätten Sie gern zum Trinken?",
+    english: "What would you like to drink? -> Wir hätten gern Wein bitte.",
+    pronunciation: "Vahs MURKH-ten Zee TRING-ken? Veer HET-ten gairn Vyn BIT-teh.",
+    audioText: "Was möchten Sie trinken? Was hätten Sie gern zum Trinken? Wir hätten gern Wein bitte. Ok, kommt sofort!",
+    category: "restaurant",
+    badge: "Drink Orders 🍷",
+    icon: "🍷 🥤",
+    kenyanAnalogy: "Taking first drink orders! The waiter asks politely with 'möchten' or 'hätten gern', and replies cheerfully: 'Ok, kommt sofort!' (Coming right up!).",
+    memoryTrick: "Kommt sofort! = Coming right away!"
+  },
+  {
+    id: "l29-drinks-menu-akkusativ",
+    german: "Getränke im Akkusativ: eine Cola, ein Bier, ein Wasser, einen Wein, einen Saft, einen Kaffee",
+    english: "Drinks in the Accusative: Remember ONLY masculine drinks take 'einen'!",
+    pronunciation: "EYE-neh KOH-lah, eye-n BEER, eye-n VAHS-ser, EYE-nen Vyn, EYE-nen ZAHFT, EYE-nen KAHF-fay",
+    audioText: "Getränke: eine Cola, eine Limonade, ein Bier, ein Wasser, einen Wein, einen Saft, einen Kaffee, einen Tee.",
+    category: "menu",
+    badge: "Drink List 🍺",
+    icon: "🥤 🍺 ☕",
+    kenyanAnalogy: "Apply your Lesson 25 & 26 Akkusativ powers! Feminine stays 'eine' (Cola, Limonade), Neuter stays 'ein' (Bier, Wasser), but Masculine drinks MUST transform to 'einen' (Wein, Saft, Kaffee, Tee)!",
+    memoryTrick: "einen Wein / Saft / Kaffee / Tee (Masculine = -en)!"
+  },
+  {
+    id: "l29-3-ordering-formulas",
+    german: "Die 3 Zauberformeln: 1. Ich hätte gerne... 2. Ich nehme... 3. Ich möchte...",
+    english: "The 3 Magic Customer Formulas: 'I'd gladly have...', 'I'll take...', 'I'd like...'",
+    pronunciation: "Ikh HET-teh GAIR-neh / Ikh NAY-meh / Ikh MURKH-teh",
+    audioText: "Die drei Zauberformeln beim Bestellen: Ich hätte gerne, Ich nehme, Ich möchte. Zum Beispiel: Ich hätte gern ein Sandwich. Ich nehme einen Hamburger.",
+    category: "restaurant",
+    badge: "3 Magic Formulas 🪄",
+    icon: "✨ 🗣️",
+    kenyanAnalogy: "Your 3 bulletproof options at any German counter: 1. 'Ich hätte gerne...' (super polite), 2. 'Ich nehme...' (direct & natural), 3. 'Ich möchte...' (classic polite). All 3 take the Akkusativ object!",
+    memoryTrick: "hätte gern / nehme / möchte + [Akkusativ item]!"
+  },
+  {
+    id: "l29-food-waiter-questions",
+    german: "Was darf's denn sein? / Was möchten Sie bestellen? / Was möchten Sie essen?",
+    english: "So what will it be? / What would you like to order/eat? / Was wünschen Sie sich?",
+    pronunciation: "Vahs dahrfs den zyn? Vahs MURKH-ten Zee beh-SHTEL-len?",
+    audioText: "Was darf's denn sein? Was möchten Sie bestellen? Was möchten Sie essen? Was hätten Sie gern zum Essen? Was wünschen Sie sich?",
+    category: "restaurant",
+    badge: "Server Prompts 🛎️",
+    icon: "📋 👨‍🍳",
+    kenyanAnalogy: "All 5 ways German waitstaff ask for your main meal order. 'Was darf's denn sein?' is the most charming and common everyday phrase you'll hear in cafes and eateries!",
+    memoryTrick: "Was darf's denn sein? = What can I get for you?"
+  },
+  {
+    id: "l29-food-menu-akkusativ",
+    german: "Speisen im Akkusativ: eine Pizza, eine Suppe, ein Sandwich, ein Stück Kuchen, einen Salat, einen Burger, Pommes, Nudeln",
+    english: "Food Items in Accusative: Pizza, Soup, Sandwich, Cake slice, Salad, Burger, Fries, Pasta",
+    pronunciation: "EYE-neh PEET-tsah, EYE-neh ZOOP-peh, eye-n ZAND-vitch, eye-n SHTOOK KOO-khen, EYE-nen zah-LAHT, EYE-nen BOOR-ger, POMM-es, NOO-deln",
+    audioText: "Speisen: eine Pizza, eine Suppe, ein Sandwich, ein Stück Kuchen, einen Salat, einen Burger, Pommes, Nudeln.",
+    category: "menu",
+    badge: "Food Menu 🍕",
+    icon: "🍕 🥗 🍟",
+    kenyanAnalogy: "Delicious food grammar! Feminine: eine Pizza / Suppe. Neuter: ein Sandwich / Stück Kuchen. Masculine: einen Salat / Burger. Plural (no article): Pommes, Nudeln!",
+    memoryTrick: "einen Salat & einen Burger! (Masculine Akkusativ -en)!"
+  },
+  {
+    id: "l29-delivery-taste",
+    german: "Hier einmal der Hamburger und das Sandwich. Guten Appetit! - Schmeckt es Ihnen?",
+    english: "Here's the burger & sandwich. Enjoy your meal! - Are you enjoying your meal? -> Ja, danke!",
+    pronunciation: "GOO-ten ah-peh-TEET! Shmekt es EE-nen? Yah, DAHN-keh!",
+    audioText: "Hier einmal der Hamburger und das Sandwich. Guten Appetit! Danke! Schmeckt es Ihnen? Ja, danke!",
+    category: "restaurant",
+    badge: "Enjoy Your Meal! 🍲",
+    icon: "🍔 😋",
+    kenyanAnalogy: "The meal arrives! The waiter wishes 'Guten Appetit!' (Enjoy your meal!) and later checks: 'Schmeckt es Ihnen?' (Does it taste good to you?). You reply with a smile: 'Ja, danke!'",
+    memoryTrick: "Guten Appetit! (Enjoy!) & Schmeckt es Ihnen? (Tasty?)."
+  },
+  {
+    id: "l29-bill-tip",
+    german: "Wir möchten zahlen, bitte! Zusammen oder getrennt? - Zusammen! Das macht 45 Euro. Stimmt so!",
+    english: "We'd like to pay! Together or separate? - Together! That's 45 euros. Keep the change! (das Trinkgeld)",
+    pronunciation: "Veer MURKH-ten TSAH-len, BIT-teh! Tsoo-ZAHM-men OH-der geh-TRENNT? SHTIMMT zoh!",
+    audioText: "Wir möchten zahlen, bitte! Zusammen oder getrennt? Zusammen, bitte! Das macht zusammen fünfundvierzig Euro. Hier bitte! Stimmt so! Vielen Dank! das Trinkgeld.",
+    category: "restaurant",
+    badge: "Paying & Tipping 💶",
+    icon: "💳 💶 🪙",
+    kenyanAnalogy: "The famous German bill ritual! 1. Ask to pay: 'Wir möchten zahlen, bitte!'. 2. Waiter asks: 'Zusammen oder getrennt?' (Together or split?). 3. Tipping shortcut: handing cash and saying 'Stimmt so!' means 'Keep the change!' (das Trinkgeld = drinking money/tip).",
+    memoryTrick: "Stimmt so! = Keep the change!"
+  },
+  {
+    id: "l29-cafe-counter-flow",
+    german: "Im Café: Einen großen Cappuccino, bitte. Zum hier trinken oder zum Mitnehmen? - Zum Mitnehmen. Mit Karte, bitte.",
+    english: "At the Café: A large cappuccino. For here or to go? - Take away. With card, please.",
+    pronunciation: "EYE-nen GROH-sen kah-poot-CHEE-noh. Tsoom HEER TRING-ken OH-der tsoom MIT-nay-men? Tsoom MIT-nay-men. Mit KAHR-teh BIT-teh.",
+    audioText: "im Café bestellen. Hallo! Was darf's sein? Einen großen Cappuccino, bitte. Zum hier trinken oder zum Mitnehmen? Zum Mitnehmen. Möchten Sie noch etwas? Nein, danke! Okay, das macht vier Euro achtzig. Hier mit Karte, bitte. Danke! Ihr Kaffee kommt gleich.",
+    category: "cafe",
+    badge: "Coffee To Go ☕",
+    icon: "☕ 💳",
+    kenyanAnalogy: "Ordering at a trendy German bakery or coffee shop! Barista asks: 'Zum hier trinken oder zum Mitnehmen?' (To drink here or take away?). You reply: 'Zum Mitnehmen' and pay 'Mit Karte, bitte' (by card)!",
+    memoryTrick: "Zum Mitnehmen = To go / Take away! Mit Karte = By card!"
+  },
+  {
+    id: "l29-master-vocab-roles",
+    german: "das Restaurant, das Café, bestellen, der Kellner / die Kellnerin, der Gast (die Gäste), Auf Wiedersehen!",
+    english: "Master Vocab: Restaurant, Café, to order, waiter/waitress, guest/guests, Goodbye!",
+    pronunciation: "dahs res-toh-RAHN, dahs kah-FAY, beh-SHTEL-len, dair KEL-ner, dee KEL-neh-rin, dair GAHST, dee GEHS-teh",
+    audioText: "das Restaurant, das Café, bestellen, der Kellner, die Kellnerin, der Gast, die Gäste, Auf Wiedersehen!",
+    category: "roles",
+    badge: "Master Roles 👥",
+    icon: "🏨 🧑‍🍳",
+    kenyanAnalogy: "All the key words on Slides 33–38! 'der Kellner' (waiter), 'die Kellnerin' (waitress), 'der Gast' / 'die Gäste' (guests). And before leaving: 'Auf Wiedersehen!'",
+    memoryTrick: "der Gast -> die Gäste (Umlaut plural)!"
+  }
+];
+
+export const LESSON_29_SCENARIOS = [
+  {
+    scenario: "In Slide 23, the total bill comes to 45 Euros. You hand the waiter a 50-Euro note and want to tell him to keep the change as a tip ('das Trinkgeld'). What do you say?",
+    hint: "The famous 2-word German tipping phrase on Slide 23!",
+    options: [
+      { text: "Stimmt so!", correct: true, explain: "Wunderbar! 'Stimmt so!' literally means 'It's correct like that' and is the standard way in German to say 'Keep the change!'" },
+      { text: "Behalten Sie das Geld!", correct: false, explain: "That sounds unnatural and commanding; native Germans always say 'Stimmt so!'." },
+      { text: "Das ist Trinkgeld für dich!", correct: false, explain: "Too informal/blunt; 'Stimmt so!' is the polite and universally accepted idiom." }
+    ]
+  },
+  {
+    scenario: "In Slide 28–29 at the café, the barista asks: 'Zum hier trinken oder zum ______?' (To drink here or to take away?). Which word completes the question?",
+    hint: "Compound made from 'mit' (with) + 'nehmen' (to take).",
+    options: [
+      { text: "Mitnehmen", correct: true, explain: "Genau! 'Zum Mitnehmen' means 'To go / Take away'!" },
+      { text: "Ausgehen", correct: false, explain: "'Ausgehen' means to go out partying, not food take-away!" },
+      { text: "Wegwerfen", correct: false, explain: "'Wegwerfen' means to throw away in the trash!" }
+    ]
+  },
+  {
+    scenario: "In Slide 22, you ask to pay ('Wir möchten zahlen, bitte!'). The server asks whether you are paying on one bill or splitting. How does the server ask this in German?",
+    hint: "Together or separately?",
+    options: [
+      { text: "Zusammen oder getrennt?", correct: true, explain: "Perfection! 'Zusammen' = together (one bill), 'getrennt' = separately (split bill)!" },
+      { text: "Zusammen oder allein?", correct: false, explain: "'Allein' means alone, not split bill!" },
+      { text: "Bar oder mit Karte?", correct: false, explain: "That asks about cash vs. card payment, not splitting the bill!" }
+    ]
+  },
+  {
+    scenario: "In Slide 12, you want to order a coffee ('der Kaffee') and a tea ('der Tee'). Using the direct object (Akkusativ), how do you say 'I'll take a coffee and a tea'?",
+    hint: "'der Kaffee' and 'der Tee' are both masculine nouns in Akkusativ direct object!",
+    options: [
+      { text: "Ich nehme einen Kaffee und einen Tee.", correct: true, explain: "Ausgezeichnet! Masculine nouns in Akkusativ take '-en' -> 'einen Kaffee' and 'einen Tee'!" },
+      { text: "Ich nehme ein Kaffee und ein Tee.", correct: false, explain: "'ein' is only for neuter nouns (ein Wasser, ein Bier). Masculine takes 'einen'!" },
+      { text: "Ich nehme eine Kaffee und eine Tee.", correct: false, explain: "'eine' is for feminine nouns (eine Cola, eine Limonade)!" }
+    ]
+  },
+  {
+    scenario: "In Slide 19, the waiter places your warm food on the table and politely says: 'Enjoy your meal!'. What is the exact German phrase?",
+    hint: "A classic wish for good appetite!",
+    options: [
+      { text: "Guten Appetit!", correct: true, explain: "Brilliant! 'Guten Appetit!' is the German equivalent of 'Enjoy your meal / Bon appétit'!" },
+      { text: "Gute Besserung!", correct: false, explain: "'Gute Besserung!' means 'Get well soon!' (for sick people)!" },
+      { text: "Gute Reise!", correct: false, explain: "'Gute Reise!' means 'Have a good journey/trip!'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 4, you enter a busy restaurant with a friend and want to request a table: 'We want a table for two people.' How is this phrased with the correct Akkusativ article for 'der Tisch'?",
+    hint: "'der Tisch' is masculine receiving the action of 'wollen'.",
+    options: [
+      { text: "Wir wollen einen Tisch für zwei Personen.", correct: true, explain: "Genau! 'der Tisch' is masculine, so in Akkusativ it becomes 'einen Tisch für zwei Personen'!" },
+      { text: "Wir wollen ein Tisch für zwei Personen.", correct: false, explain: "Masculine nouns require 'einen' in Akkusativ, not 'ein'!" },
+      { text: "Wir wollen eine Tisch für zwei Personen.", correct: false, explain: "'eine' is for feminine nouns only!" }
+    ]
+  }
+];
+
+
 
 
 

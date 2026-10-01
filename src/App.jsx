@@ -62,6 +62,8 @@ import Lesson27MoechtenStudio from './components/Lesson27MoechtenStudio';
 import Lesson27Game from './components/Lesson27Game';
 import Lesson28WFragenStudio from './components/Lesson28WFragenStudio';
 import Lesson28Game from './components/Lesson28Game';
+import Lesson29RestaurantStudio from './components/Lesson29RestaurantStudio';
+import Lesson29Game from './components/Lesson29Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -90,11 +92,12 @@ import {
   LESSON_25_ITEMS,
   LESSON_26_ITEMS,
   LESSON_27_ITEMS,
-  LESSON_28_ITEMS
+  LESSON_28_ITEMS,
+  LESSON_29_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(28); // Default to Lesson 28 as requested, easy switch to 1-27
+  const [currentLesson, setCurrentLesson] = useState(29); // Default to Lesson 29 as requested, easy switch to 1-28
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -126,6 +129,7 @@ export default function App() {
   if (currentLesson === 26) activeItems = LESSON_26_ITEMS;
   if (currentLesson === 27) activeItems = LESSON_27_ITEMS;
   if (currentLesson === 28) activeItems = LESSON_28_ITEMS;
+  if (currentLesson === 29) activeItems = LESSON_29_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -155,7 +159,8 @@ export default function App() {
     if (currentLesson === 25) return "Lesson 25: Artikel im Akkusativ (Articles in the Accusative Case - Direct Object)";
     if (currentLesson === 26) return "Lesson 26: Possessivartikel im Akkusativ (Possessive Articles in the Accusative Case)";
     if (currentLesson === 27) return "Lesson 27: möchten (The Modal Verb 'would like to' & Sentence Brackets)";
-    return "Lesson 28: W-Fragen (German W-Questions - The 13 Key Question Words)";
+    if (currentLesson === 28) return "Lesson 28: W-Fragen (German W-Questions - The 13 Key Question Words)";
+    return "Lesson 29: im Restaurant & Café bestellen (Ordering in a Restaurant / Café)";
   };
 
   const getLessonDesc = () => {
@@ -240,7 +245,10 @@ export default function App() {
     if (currentLesson === 27) {
       return "Politely express wishes, order food, and make invitations with 'möchten'! Master the German Satzklammer (Verb Bracket: Position 2 helper + End of sentence action infinitive), the Modal Twin Rule (ich möchte = er/sie/es möchte), direct noun orders, and all 5 chalkboard exercises!";
     }
-    return "Unlock every German conversation with the 13 essential W-Question keys (Was, Warum, Wann, Wer, Wen, Wie, Wo, Woher, Wohin, Wie viel, Wie viele, Wie oft, Welche)! Master Wer vs. Wen (Subject vs. Object), the Location Trio (Wo vs. Woher vs. Wohin), and price vs. quantity inquiries with zero stress!";
+    if (currentLesson === 28) {
+      return "Unlock every German conversation with the 13 essential W-Question keys (Was, Warum, Wann, Wer, Wen, Wie, Wo, Woher, Wohin, Wie viel, Wie viele, Wie oft, Welche)! Master Wer vs. Wen (Subject vs. Object), the Location Trio (Wo vs. Woher vs. Wohin), and price vs. quantity inquiries with zero stress!";
+    }
+    return "Master real-world German dining like a native! Learn how to request a table (einen Tisch), order food & drinks using 3 magic customer formulas (Ich hätte gerne, Ich nehme, Ich möchte), navigate Akkusativ menu items, split the bill (Zusammen oder getrennt?), tip like a local ('Stimmt so!'), and order coffee to go (Zum Mitnehmen)!";
   };
 
   return (
@@ -529,6 +537,15 @@ export default function App() {
 
         {currentLesson === 28 && activeTab === 'game28' && (
           <Lesson28Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 29 Specific Modules */}
+        {currentLesson === 29 && activeTab === 'studio29' && (
+          <Lesson29RestaurantStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 29 && activeTab === 'game29' && (
+          <Lesson29Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

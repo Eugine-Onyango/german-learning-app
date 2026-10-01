@@ -40,6 +40,7 @@ export default function Header({
     if (currentLesson === 26) msg = "Possessivartikel im Akkusativ: Ich liebe meinen Mann, er mag seinen Hund, und sie findet ihren Freund nett. Heute besuchen wir unseren Opa!";
     if (currentLesson === 27) msg = "Das Modalverb möchten: Ich möchte Ärztin werden, Peter möchte in England studieren, und Tobi möchte eine Pizza bestellen. Was möchtest du essen?";
     if (currentLesson === 28) msg = "W-Fragen: Was sind Sie von Beruf? Warum bist du traurig? Wann heiratet ihr? Wer spricht gut Deutsch? Wen liebst du? Wo wohnst du? Woher kommst du? Wohin fahrt ihr? Wie viel kostet ein Fahrrad? Wie viele Kinder hast du?";
+    if (currentLesson === 29) msg = "Im Restaurant und Café: Guten Tag! Wir wollen einen Tisch für zwei Personen. Was möchten Sie trinken? Ich nehme einen Kaffee und eine Pizza. Wir möchten zahlen, bitte! Zusammen oder getrennt? Stimmt so!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -270,6 +271,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson29NavItems = [
+    { id: 'cards', label: '📖 Lesson 29 Cards', sub: 'Restaurant & Café Dialogue' },
+    { id: 'studio29', label: '🍽️ Restaurant & Café Studio', sub: 'Dialogue Flow, Counter & Speisekarte' },
+    { id: 'game29', label: '🎮 Dining Out Quiz', sub: 'Real Life Ordering Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -298,6 +307,7 @@ export default function Header({
   if (currentLesson === 26) navItems = lesson26NavItems;
   if (currentLesson === 27) navItems = lesson27NavItems;
   if (currentLesson === 28) navItems = lesson28NavItems;
+  if (currentLesson === 29) navItems = lesson29NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -328,6 +338,7 @@ export default function Header({
     { num: 26, label: "❤️ 26: Possessiv im Akkusativ", activeClass: "bg-rose-700 ring-rose-400", hoverBorder: "hover:bg-rose-100 border-rose-300" },
     { num: 27, label: "☕ 27: möchten (would like to)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 28, label: "❓ 28: W-Fragen (W-Questions)", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 29, label: "🍽️ 29: Restaurant & Café", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (
