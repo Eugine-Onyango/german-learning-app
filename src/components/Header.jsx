@@ -41,6 +41,7 @@ export default function Header({
     if (currentLesson === 27) msg = "Das Modalverb möchten: Ich möchte Ärztin werden, Peter möchte in England studieren, und Tobi möchte eine Pizza bestellen. Was möchtest du essen?";
     if (currentLesson === 28) msg = "W-Fragen: Was sind Sie von Beruf? Warum bist du traurig? Wann heiratet ihr? Wer spricht gut Deutsch? Wen liebst du? Wo wohnst du? Woher kommst du? Wohin fahrt ihr? Wie viel kostet ein Fahrrad? Wie viele Kinder hast du?";
     if (currentLesson === 29) msg = "Im Restaurant und Café: Guten Tag! Wir wollen einen Tisch für zwei Personen. Was möchten Sie trinken? Ich nehme einen Kaffee und eine Pizza. Wir möchten zahlen, bitte! Zusammen oder getrennt? Stimmt so!";
+    if (currentLesson === 30) msg = "Personalpronomen im Akkusativ: Kennst du mich? Ich kenne dich nicht. Herr Schmidt, ich suche Sie! Das ist Michael, ich kenne ihn. Michaela, ich finde sie schön. Mein Buch, ich finde es toll. Samantha und Mike, kennst du uns? Wer seid ihr, ich kenne euch nicht! Petra und Jürgen, ich kenne sie!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -279,6 +280,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson30NavItems = [
+    { id: 'cards', label: '📖 Lesson 30 Cards', sub: 'mich, dich, ihn, uns, euch & Twins' },
+    { id: 'studio30', label: '🔄 Pronouns Akk Studio', sub: '10 Stories, Matrix & Sentence Lab' },
+    { id: 'game30', label: '🎮 Pronouns Akk Quiz', sub: 'Object Pronoun Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -308,6 +317,7 @@ export default function Header({
   if (currentLesson === 27) navItems = lesson27NavItems;
   if (currentLesson === 28) navItems = lesson28NavItems;
   if (currentLesson === 29) navItems = lesson29NavItems;
+  if (currentLesson === 30) navItems = lesson30NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -339,6 +349,7 @@ export default function Header({
     { num: 27, label: "☕ 27: möchten (would like to)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 28, label: "❓ 28: W-Fragen (W-Questions)", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 29, label: "🍽️ 29: Restaurant & Café", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 30, label: "🔄 30: Personalpronomen (Akk)", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
   ];
 
   return (

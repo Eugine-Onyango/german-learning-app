@@ -7233,6 +7233,199 @@ export const LESSON_29_SCENARIOS = [
   }
 ];
 
+export const LESSON_30_ITEMS = [
+  {
+    id: "l30-ich-mich",
+    german: "ich (Nom) ➔ mich (Akk): Hi. Ich bin Maria. Kennst du mich?",
+    english: "I ➔ me: Hi. I am Maria. Do you know me?",
+    pronunciation: "ihsh (Nom) -> mish (Akk): Hee. Ihsh bin Mah-REE-ah. Kenst doo MISH?",
+    audioText: "ich wird zu mich. Hi. Ich bin Maria. Kennst du mich?",
+    category: "1st-singular",
+    badge: "1st Person Sg: ich ➔ mich",
+    icon: "🙋‍♀️",
+    kenyanAnalogy: "When you are the receiver of the action: 'ich' (I) becomes 'mich' (me)! Just like in English 'I' becomes 'me', Maria asks: 'Kennst du mich?' (Do you know me?).",
+    memoryTrick: "ich ➔ mich (adds 'm' and ends in 'ch')!"
+  },
+  {
+    id: "l30-du-dich",
+    german: "du (Nom) ➔ dich (Akk): Wer bist du? Ich kenne dich nicht.",
+    english: "you ➔ you (informal): Who are you? I don't know you.",
+    pronunciation: "doo (Nom) -> dish (Akk): Vair bist doo? Ihsh KEN-neh DISH nihst.",
+    audioText: "du wird zu dich. Wer bist du? Ich kenne dich nicht.",
+    category: "2nd-singular-inf",
+    badge: "2nd Person Sg (inf): du ➔ dich",
+    icon: "👉",
+    kenyanAnalogy: "When talking to one friend or child: 'du' turns into 'dich' when they are the object! 'Ich kenne dich nicht' (I don't know you).",
+    memoryTrick: "du ➔ dich (rhymes with mich)!"
+  },
+  {
+    id: "l30-sie-formal-sie",
+    german: "Sie (Nom) ➔ Sie (Akk): Herr Schmidt, wo sind Sie? Ich suche Sie.",
+    english: "You ➔ You (formal): Mr. Schmidt, where are you? I am looking for you.",
+    pronunciation: "zee (Nom) -> zee (Akk): Hair Shmit, voh zint zee? Ihsh ZOO-kheh zee.",
+    audioText: "Sie bleibt Sie. Herr Schmidt, wo sind Sie? Ich suche Sie. Herr und Frau Müller, wo sind Sie? Ich suche Sie.",
+    category: "formal",
+    badge: "Formal (Sg & Pl): Sie ➔ Sie",
+    icon: "👔 👵",
+    kenyanAnalogy: "Super easy! The respectful capital 'Sie' NEVER changes in Akkusativ! Whether talking politely to one boss (Herr Schmidt) or elders (Herr und Frau Müller), it stays 'Sie'!",
+    memoryTrick: "Capital 'Sie' is polite and stays identical in Nominativ & Akkusativ!"
+  },
+  {
+    id: "l30-er-ihn",
+    german: "er (Nom) ➔ ihn (Akk): Das ist Michael. Er ist Architekt. Ich kenne ihn.",
+    english: "he ➔ him: This is Michael. He is an architect. I know him.",
+    pronunciation: "air (Nom) -> een (Akk): Dahs ist MEE-khah-el. Air ist ar-khee-TEKT. Ihsh KEN-neh EEN.",
+    audioText: "er wird zu ihn. Das ist Michael. Er wohnt in London. Ich finde ihn nett. Er ist Architekt. Ich kenne ihn.",
+    category: "3rd-masculine",
+    badge: "3rd Person Masc: er ➔ ihn",
+    icon: "👨‍💼",
+    kenyanAnalogy: "Just like 'der' becomes 'den' and 'ein' becomes 'einen', masculine 'er' becomes 'ihn' (ends with 'n')! 'Ich kenne ihn' (I know him) / 'Ich finde ihn nett' (I find him nice).",
+    memoryTrick: "er ➔ ihn (Masculine always gets an 'n' ending in Akkusativ: den / einen / ihn)!"
+  },
+  {
+    id: "l30-sie-fem-sie",
+    german: "sie (Nom) ➔ sie (Akk): Das ist Michaela. Sie studiert. Ich finde sie sehr schön.",
+    english: "she ➔ her: This is Michaela. She is studying. I find her very beautiful.",
+    pronunciation: "zee (Nom) -> zee (Akk): Dahs ist mee-khah-EH-lah. Zee shtoo-DEERT. Ihsh FIN-deh zee zayr shurn.",
+    audioText: "sie bleibt sie. Das ist Michaela. Sie studiert. Ich finde sie sehr schön.",
+    category: "3rd-feminine",
+    badge: "3rd Person Fem: sie ➔ sie",
+    icon: "👩‍🎓",
+    kenyanAnalogy: "Feminine words are effortless in Akkusativ! 'die' stays 'die', and 'sie' (she) stays 'sie' (her)! 'Ich finde sie sehr schön' (I find her very beautiful).",
+    memoryTrick: "Feminine 'sie' stays exactly the same as 'sie'!"
+  },
+  {
+    id: "l30-es-es",
+    german: "es (Nom) ➔ es (Akk): Das ist mein Buch. Es ist alt. Ich finde es sehr interessant.",
+    english: "it ➔ it: This is my book. It is old. I find it very interesting.",
+    pronunciation: "es (Nom) -> es (Akk): Dahs ist meyn Bookh. Es ist ahlt. Ihsh FIN-deh es zayr in-teh-reh-SAHNT.",
+    audioText: "es bleibt es. Das ist mein Buch. Es ist alt. Ich finde es sehr interessant.",
+    category: "3rd-neuter",
+    badge: "3rd Person Neuter: es ➔ es",
+    icon: "📖",
+    kenyanAnalogy: "Neuter things never change form either! 'das' stays 'das', and 'es' (it) stays 'es' (it)! 'Ich finde es sehr interessant' (I find it very interesting).",
+    memoryTrick: "Neuter 'es' stays exactly the same as 'es'!"
+  },
+  {
+    id: "l30-wir-uns",
+    german: "wir (Nom) ➔ uns (Akk): Wir sind Samantha und Mike. Kennst du uns?",
+    english: "we ➔ us: We are Samantha and Mike. Do you know us?",
+    pronunciation: "veer (Nom) -> oons (Akk): Veer zint zah-MAHN-tah oont Myk. Kenst doo OONS?",
+    audioText: "wir wird zu uns. Wir sind Samantha und Mike. Kennst du uns?",
+    category: "1st-plural",
+    badge: "1st Person Plural: wir ➔ uns",
+    icon: "👫 🎸",
+    kenyanAnalogy: "When 'we' receive the action, 'wir' becomes 'uns' (us)! Samantha and Mike with their guitar ask: 'Kennst du uns?' (Do you know us?).",
+    memoryTrick: "wir ➔ uns (rhymes with English 'us'!)"
+  },
+  {
+    id: "l30-ihr-euch",
+    german: "ihr (Nom) ➔ euch (Akk): Wer seid ihr? Ich kenne euch nicht.",
+    english: "you all ➔ you all: Who are you (all)? I don't know you (all).",
+    pronunciation: "eer (Nom) -> oysh (Akk): Vair zayt eer? Ihsh KEN-neh OYSH nihst.",
+    audioText: "ihr wird zu euch. Wer seid ihr? Ich kenne euch nicht.",
+    category: "2nd-plural-inf",
+    badge: "2nd Person Plural (inf): ihr ➔ euch",
+    icon: "👥",
+    kenyanAnalogy: "When speaking to multiple friends or kids: 'ihr' (you all) becomes 'euch' (you all as objects)! 'Ich kenne euch nicht' (I don't know you all).",
+    memoryTrick: "ihr ➔ euch (the 'eu' makes an 'oy' sound: OYSH)!"
+  },
+  {
+    id: "l30-sie-plural-sie",
+    german: "sie (Nom) ➔ sie (Akk): Das sind Petra und Jürgen. Ich kenne sie.",
+    english: "they ➔ them: This is Petra and Jürgen. I know them.",
+    pronunciation: "zee (Nom) -> zee (Akk): Dahs zint PET-rah oont YUR-gen. Ihsh KEN-neh zee.",
+    audioText: "sie plural bleibt sie. Das sind Petra und Jürgen. Ich kenne sie.",
+    category: "3rd-plural",
+    badge: "3rd Person Plural: sie ➔ sie",
+    icon: "👫 💖",
+    kenyanAnalogy: "Plural 'they' is also a breeze! 'sie' (they) stays 'sie' (them)! 'Das sind Petra und Jürgen. Ich kenne sie' (I know them).",
+    memoryTrick: "Plural 'sie' stays identical in Nominativ & Akkusativ!"
+  },
+  {
+    id: "l30-at-a-glance-summary",
+    german: "Auf einen Blick: mich, dich, ihn, uns, euch ÄNDERN SICH! sie, es, Sie BLEIBEN GLEICH!",
+    english: "At a Glance: mich, dich, ihn, uns, euch CHANGE! sie, es, Sie STAY THE SAME!",
+    pronunciation: "owf EYE-nen blik: mish, dish, een, oons, oysh. zee, es, zee.",
+    audioText: "Auf einen Blick. ich wird mich. du wird dich. Sie bleibt Sie. er wird ihn. sie bleibt sie. es bleibt es. wir wird uns. ihr wird euch. Sie bleibt Sie. sie bleibt sie.",
+    category: "summary",
+    badge: "Golden Rule Summary 📋",
+    icon: "⚡ 🧠",
+    kenyanAnalogy: "Slide 24 secret formula: Out of 8 pronouns, only 5 change (ich->mich, du->dich, er->ihn, wir->uns, ihr->euch)! The remaining 3 (sie, es, Sie) NEVER change! Half your job is already done!",
+    memoryTrick: "Remember: 'sie', 'es', and capital 'Sie' are twins that never change form!"
+  },
+  {
+    id: "l30-common-everyday-sentences",
+    german: "Alltagssätze: Ich sehe dich. Ich mag dich. Sie besucht ihn. Entschuldigen Sie mich, bitte! Ich rufe dich später an!",
+    english: "Common Sentences: I see you. I like you. She visits him. Excuse me, please! I will call you later!",
+    pronunciation: "Ihsh ZAY-eh dish. Ihsh MAHK dish. Zee beh-ZOOKHT een. Ent-SHOOL-dee-gen zee MISH, BIT-teh! Ihsh ROO-feh dish SHPAY-ter ahn!",
+    audioText: "Häufige Sätze. Ich sehe dich. Ich mag dich. Sie besucht ihn. Entschuldigen Sie mich, bitte! Ich rufe dich später an!",
+    category: "phrases",
+    badge: "5 Everyday Hit Phrases 💬",
+    icon: "📱 💬",
+    kenyanAnalogy: "Slide 25 high-frequency sentences you will hear and use daily in Germany: 'Ich mag dich' (I like you), 'Entschuldigen Sie mich, bitte!' (Excuse me, please), and 'Ich rufe dich später an!' (I'll call you later)!",
+    memoryTrick: "anrufen is a separable verb: Ich rufe [dich] später [an]!"
+  }
+];
+
+export const LESSON_30_SCENARIOS = [
+  {
+    scenario: "In Slide 5, Maria introduces herself: 'Hi. Ich bin Maria.' She wants to ask you: 'Do you know me?' How does she correctly form this with the Akkusativ pronoun?",
+    hint: "'ich' (I) turns into the object pronoun for 'me'.",
+    options: [
+      { text: "Kennst du mich?", correct: true, explain: "Wunderbar! 'ich' becomes 'mich' in Akkusativ direct object ('Do you know me?')." },
+      { text: "Kennst du mir?", correct: false, explain: "'mir' is Dativ, which is used for indirect objects. Direct object here requires Akkusativ 'mich'!" },
+      { text: "Kennst du ich?", correct: false, explain: "'ich' is Nominativ (the subject). As the object receiving the knowing, it must change to 'mich'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 11, you point at Michael the architect: 'Das ist Michael. Er ist Architekt.' You want to say: 'I know him.' What is the correct German sentence?",
+    hint: "'er' (he) gets the masculine Akkusativ ending '-n'.",
+    options: [
+      { text: "Ich kenne ihn.", correct: true, explain: "Ausgezeichnet! 'er' (he) transforms into 'ihn' (him) in Akkusativ!" },
+      { text: "Ich kenne er.", correct: false, explain: "'er' is Nominativ. In Akkusativ it must change to 'ihn'!" },
+      { text: "Ich kenne ihm.", correct: false, explain: "'ihm' is Dativ. The verb 'kennen' takes a direct object in Akkusativ: 'ihn'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 17, Samantha and Mike introduce themselves: 'Wir sind Samantha und Mike.' They ask you: 'Do you know us?' Which sentence is correct?",
+    hint: "'wir' (we) becomes 'us' in Akkusativ.",
+    options: [
+      { text: "Kennst du uns?", correct: true, explain: "Genau! 'wir' (we) becomes 'uns' (us) in Akkusativ!" },
+      { text: "Kennst du wir?", correct: false, explain: "'wir' is the Nominativ subject form; the direct object form is 'uns'!" },
+      { text: "Kennst du euch?", correct: false, explain: "'euch' means 'you all', not 'us'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 9, you are looking for your elderly boss Mr. Schmidt: 'Herr Schmidt, wo sind Sie?' You want to tell him politely: 'I am looking for you.' What do you say?",
+    hint: "Formal 'Sie' stays identical in Akkusativ!",
+    options: [
+      { text: "Ich suche Sie.", correct: true, explain: "Perfekt! Formal 'Sie' does not change form in Akkusativ and stays 'Sie' (with capital S)!" },
+      { text: "Ich suche Ihnen.", correct: false, explain: "'Ihnen' is Dativ. 'suchen' takes a direct object in Akkusativ: 'Sie'!" },
+      { text: "Ich suche dich.", correct: false, explain: "'dich' is informal (for a close friend or kid). For Herr Schmidt, use polite 'Sie'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 19, you see a group of young people: 'Wer seid ihr?' (Who are you all?). You want to say: 'I don't know you (all).' How do you say this?",
+    hint: "'ihr' (you all) transforms into the Akkusativ object pronoun.",
+    options: [
+      { text: "Ich kenne euch nicht.", correct: true, explain: "Brilliant! 'ihr' (you all) becomes 'euch' in Akkusativ!" },
+      { text: "Ich kenne ihr nicht.", correct: false, explain: "'ihr' is Nominativ subject; Akkusativ requires 'euch'!" },
+      { text: "Ich kenne uns nicht.", correct: false, explain: "'uns' means 'us', not 'you all'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 25, you are trying to squeeze past someone in a train or meeting and want to say politely: 'Excuse me, please!' Which phrase from Slide 25 is correct?",
+    hint: "Uses the verb 'entschuldigen' with formal 'Sie' and pronoun 'mich'.",
+    options: [
+      { text: "Entschuldigen Sie mich, bitte!", correct: true, explain: "Hervorragend! 'Entschuldigen Sie mich, bitte!' is the standard polite German phrase for 'Excuse me, please!'" },
+      { text: "Entschuldigen Sie dich, bitte!", correct: false, explain: "'dich' means you; to say excuse *me*, use 'mich'!" },
+      { text: "Entschuldigen Sie uns, danke!", correct: false, explain: "That would mean 'Excuse us, thank you!', not 'Excuse me, please!'" }
+    ]
+  }
+];
+
+
 
 
 
