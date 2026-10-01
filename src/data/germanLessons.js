@@ -7425,6 +7425,199 @@ export const LESSON_30_SCENARIOS = [
   }
 ];
 
+export const LESSON_31_ITEMS = [
+  {
+    id: "l31-what-is-dativ",
+    german: "Was ist Dativ? Das indirekte Objekt (Die Person, die etwas bekommt). Frage: Wem?",
+    english: "What is Dativ? The indirect object (The person receiving the benefit/gift). Question: To/For whom?",
+    pronunciation: "Vahs ist DAH-teef? Dahs in-dee-REK-teh ob-YEKT. Frah-geh: VAYM?",
+    audioText: "Was ist Dativ? Das indirekte Objekt. Die Mutter kauft der Tochter ein Kleid. Petra kocht dem Mann eine Suppe. Frage: Wem?",
+    category: "concept",
+    badge: "What is Dativ? 🎁",
+    icon: "🎁",
+    kenyanAnalogy: "Think of Dativ as 'The Happy Receiver of a Gift'! In 'Die Mutter kauft der Tochter ein Kleid': The mother (Nominativ) does the buying, the dress (Akkusativ) is the item bought, and the daughter (Dativ: der Tochter) is the blessed person receiving the dress!",
+    memoryTrick: "Dativ = Indirect Object = The person receiving the action (Answers 'Wem?' - To/For whom)!"
+  },
+  {
+    id: "l31-def-masculine-dem",
+    german: "der Mann ➔ dem Mann: Er bringt dem Mann ein Geschenk. Petra kocht dem Mann eine Suppe.",
+    english: "the man ➔ to the man: He brings the man a gift. Petra is cooking soup for the husband.",
+    pronunciation: "dair mahn -> daym mahn: Air bringt daym MAHN eye-n geh-SHENK. PET-rah kokht daym MAHN eye-neh ZOO-peh.",
+    audioText: "der Mann wird zu dem Mann. Er bringt dem Mann ein Geschenk. Petra kocht dem Mann eine Suppe.",
+    category: "definite",
+    badge: "Definite Masc: der ➔ dem",
+    icon: "👨 🎁",
+    kenyanAnalogy: "In Dativ, masculine 'der' changes to 'dem' (ends in -m)! When bringing a gift to the gentleman: 'Er bringt dem Mann ein Geschenk'.",
+    memoryTrick: "der ➔ dem (Masculine in Dativ gets the 'm' sound: deM)!"
+  },
+  {
+    id: "l31-def-feminine-der",
+    german: "die Frau / die Tochter ➔ der Frau / der Tochter: Die Mutter kauft der Tochter ein Kleid. Er bringt der Frau ein Geschenk.",
+    english: "the woman / the daughter ➔ for the woman / daughter: Mother buys the daughter a dress. He brings the woman a gift.",
+    pronunciation: "dee frow -> dair frow: Dee MOOT-ter kowft dair TOKH-ter eye-n klyt. Air bringt dair FROW eye-n geh-SHENK.",
+    audioText: "die Frau wird zu der Frau. Die Mutter kauft der Tochter ein Kleid. Er bringt der Frau ein Geschenk. Er hilft der Frau.",
+    category: "definite",
+    badge: "Definite Fem: die ➔ der",
+    icon: "👩 👗",
+    kenyanAnalogy: "Watch out for this classic German trick: Feminine 'die' changes into 'der' in Dativ! 'Die Mutter kauft der Tochter ein Kleid' (Mother buys the daughter a dress).",
+    memoryTrick: "die ➔ der (Feminine in Dativ gets the 'r' sound: deR)!"
+  },
+  {
+    id: "l31-def-neuter-dem",
+    german: "das Kind ➔ dem Kind: Er bringt dem Kind ein Geschenk.",
+    english: "the child ➔ to the child: He brings the child a gift.",
+    pronunciation: "dahs kint -> daym kint: Air bringt daym KINT eye-n geh-SHENK.",
+    audioText: "das Kind wird zu dem Kind. Er bringt dem Kind ein Geschenk.",
+    category: "definite",
+    badge: "Definite Neuter: das ➔ dem",
+    icon: "🧒 🧸",
+    kenyanAnalogy: "Neuter is the exact twin of masculine in Dativ! 'das Kind' becomes 'dem Kind'! Both masculine and neuter take 'dem'.",
+    memoryTrick: "das ➔ dem (Neuter copies masculine in Dativ: deM)!"
+  },
+  {
+    id: "l31-def-plural-den-n",
+    german: "die Kinder ➔ den Kindern: Er bringt den Kindern ein Geschenk.",
+    english: "the children ➔ to the children: He brings the children a gift.",
+    pronunciation: "dee KIN-der -> dayn KIN-dern: Air bringt dayn KIN-dern eye-n geh-SHENK.",
+    audioText: "die Kinder wird zu den Kindern. Er bringt den Kindern ein Geschenk.",
+    category: "definite",
+    badge: "Definite Plural: die ➔ den + n",
+    icon: "👶👧👦",
+    kenyanAnalogy: "In Dative plural, TWO things happen: the article becomes 'den' AND the noun adds an extra '-n' at the end! 'die Kinder' ➔ 'den Kindern'!",
+    memoryTrick: "Plural Dativ Rule: den + Noun gets an extra '-n' at the end!"
+  },
+  {
+    id: "l31-indef-masculine-einem",
+    german: "ein Gast ➔ einem Gast: Sie gibt einem Gast Blumen.",
+    english: "a guest ➔ to a guest: She gives a guest flowers.",
+    pronunciation: "eye-n gahst -> EYE-nem gahst: Zee geebt EYE-nem GAHST BLOO-men.",
+    audioText: "ein Gast wird zu einem Gast. Sie gibt einem Gast Blumen.",
+    category: "indefinite",
+    badge: "Indefinite Masc: ein ➔ einem",
+    icon: "🤵 💐",
+    kenyanAnalogy: "Indefinite masculine copies 'dem' with '-em': 'ein' becomes 'einem'! 'Sie gibt einem Gast Blumen' (She gives flowers to a guest).",
+    memoryTrick: "ein ➔ einem (matches deM)!"
+  },
+  {
+    id: "l31-indef-feminine-einer",
+    german: "eine Frau ➔ einer Frau: Sie gibt einer Frau Blumen.",
+    english: "a woman ➔ to a woman: She gives a woman flowers.",
+    pronunciation: "EYE-neh frow -> EYE-ner frow: Zee geebt EYE-ner FROW BLOO-men.",
+    audioText: "eine Frau wird zu einer Frau. Sie gibt einer Frau Blumen.",
+    category: "indefinite",
+    badge: "Indefinite Fem: eine ➔ einer",
+    icon: "👩 🌹",
+    kenyanAnalogy: "Indefinite feminine copies 'der' with '-er': 'eine' becomes 'einer'! 'Sie gibt einer Frau Blumen'.",
+    memoryTrick: "eine ➔ einer (matches deR)!"
+  },
+  {
+    id: "l31-indef-neuter-einem",
+    german: "ein Kind ➔ einem Kind: Sie gibt einem Kind Blumen.",
+    english: "a child ➔ to a child: She gives a child flowers.",
+    pronunciation: "eye-n kint -> EYE-nem kint: Zee geebt EYE-nem KINT BLOO-men.",
+    audioText: "ein Kind wird zu einem Kind. Sie gibt einem Kind Blumen.",
+    category: "indefinite",
+    badge: "Indefinite Neuter: ein ➔ einem",
+    icon: "👦 🌸",
+    kenyanAnalogy: "Neuter indefinite copies masculine: 'ein' becomes 'einem'! 'Sie gibt einem Kind Blumen'.",
+    memoryTrick: "ein ➔ einem (matches deM)!"
+  },
+  {
+    id: "l31-negative-articles",
+    german: "kein ➔ keinem (Masc/Neut), keiner (Fem), keinen + n (Plural)",
+    english: "no / not a: to no man (keinem Mann), to no woman (keiner Frau), to no children (keinen Kindern)",
+    pronunciation: "KYE-nem, KYE-ner, KYE-nem, KYE-nen",
+    audioText: "Negative Artikel im Dativ: keinem Mann, keiner Frau, keinem Kind, keinen Kindern.",
+    category: "negative",
+    badge: "Negative Articles 🚫",
+    icon: "🚫",
+    kenyanAnalogy: "Negative articles in Dativ follow the exact same ending pattern: add 'k-' to einem/einer/einem/keinen! keinem Mann, keiner Frau, keinem Kind, keinen Kindern!",
+    memoryTrick: "Just add 'k' to the indefinite endings: keinem / keiner / keinem / keinen!"
+  },
+  {
+    id: "l31-dative-verbs-danken-helfen",
+    german: "Dativ-Verben: danken & helfen. Sie dankt dem Mann. Er hilft der Frau.",
+    english: "Dative Verbs: to thank & to help. She thanks the man. He helps the woman.",
+    pronunciation: "Zee DAHNKT daym MAHN. Air HILFT dair FROW.",
+    audioText: "Verben mit Dativ: Sie dankt dem Mann. Er hilft der Frau.",
+    category: "verbs",
+    badge: "Dative Verbs: danken & helfen 🤝",
+    icon: "🤝 👵",
+    kenyanAnalogy: "Some German verbs are 'Dative magnets' and ALWAYS take the Dative case without needing a gift! 'danken' (to thank) ➔ 'Sie dankt dem Mann'. 'helfen' (to help) ➔ 'Er hilft der Frau'!",
+    memoryTrick: "danken + Dativ & helfen + Dativ (always trigger dem/der/dem/den)!"
+  },
+  {
+    id: "l31-mrmn-master-formula",
+    german: "Die M-R-M-N Meisterformel: Maskulin = -m, Feminin = -r, Neutral = -m, Plural = -n (+n)!",
+    english: "The M-R-M-N Master Formula: Masculine = -m, Feminine = -r, Neuter = -m, Plural = -n (+n)!",
+    pronunciation: "deM, deR, deM, deN (+n) | eineM, eineR, eineM, - (+n) | keineM, keineR, keineM, keineN (+n)",
+    audioText: "Die Dativ Formel: dem, der, dem, den plus n. einem, einer, einem. keinem, keiner, keinem, keinen plus n.",
+    category: "summary",
+    badge: "Master M-R-M-N Formula 🧠",
+    icon: "⚡ 📋",
+    kenyanAnalogy: "Slide 23 master secret: Just remember the 4 letters: M - R - M - N! (dem, der, dem, den | einem, einer, einem | keinem, keiner, keinem, keinen). That is the entire Dativ case in a nutshell!",
+    memoryTrick: "Say it out loud like a melody: M - R - M - N!"
+  }
+];
+
+export const LESSON_31_SCENARIOS = [
+  {
+    scenario: "In Slide 5, the mother is buying a new dress for her daughter ('die Tochter'): 'Die Mutter kauft ______ Tochter ein Kleid.' Which Dative article is correct?",
+    hint: "'die Tochter' is feminine. In Dativ, feminine 'die' turns into what?",
+    options: [
+      { text: "der", correct: true, explain: "Wunderbar! Feminine nouns in Dativ change from 'die' to 'der' ('Die Mutter kauft der Tochter ein Kleid')." },
+      { text: "dem", correct: false, explain: "'dem' is for masculine and neuter nouns, not feminine!" },
+      { text: "die", correct: false, explain: "'die' is Nominativ/Akkusativ. In Dativ it must change to 'der'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 7, Petra is cooking a delicious soup for her husband ('der Mann'): 'Petra kocht ______ Mann eine Suppe.' Which article completes the sentence?",
+    hint: "'der Mann' is masculine. What does 'der' become in Dativ?",
+    options: [
+      { text: "dem", correct: true, explain: "Ausgezeichnet! Masculine 'der' becomes 'dem' in Dativ ('Petra kocht dem Mann eine Suppe')." },
+      { text: "den", correct: false, explain: "'den' is for masculine Akkusativ or plural Dativ, not singular masculine Dativ!" },
+      { text: "des", correct: false, explain: "'des' is Genitiv, not Dativ!" }
+    ]
+  },
+  {
+    scenario: "In Slide 12, a generous uncle brings a gift to all the children ('die Kinder'): 'Er bringt ______ Kindern ein Geschenk.' Which Dative plural article is correct?",
+    hint: "Plural in Dativ uses the 'n' sound and the noun adds '-n'.",
+    options: [
+      { text: "den", correct: true, explain: "Genau! Plural in Dativ becomes 'den' and the noun adds an extra '-n' ('den Kindern')." },
+      { text: "die", correct: false, explain: "'die' is Nominativ/Akkusativ plural, not Dativ plural!" },
+      { text: "dem", correct: false, explain: "'dem' is only for singular masculine and neuter!" }
+    ]
+  },
+  {
+    scenario: "In Slide 16, a woman is giving flowers to a female colleague ('eine Frau' - indefinite): 'Sie gibt ______ Frau Blumen.' What is the correct indefinite article?",
+    hint: "Feminine indefinite 'eine' takes the '-er' Dative ending.",
+    options: [
+      { text: "einer", correct: true, explain: "Perfekt! Feminine indefinite 'eine' becomes 'einer' in Dativ ('Sie gibt einer Frau Blumen')." },
+      { text: "einem", correct: false, explain: "'einem' is for masculine and neuter nouns (einem Gast, einem Kind)!" },
+      { text: "einen", correct: false, explain: "'einen' is masculine Akkusativ, not feminine Dativ!" }
+    ]
+  },
+  {
+    scenario: "In Slide 21, the businesswoman warmly expresses gratitude to a gentleman using the Dativ verb 'danken': 'Sie dankt ______ Mann.' How do you complete this?",
+    hint: "'danken' always demands a Dative object for 'der Mann'.",
+    options: [
+      { text: "dem", correct: true, explain: "Brilliant! The verb 'danken' requires Dativ, so 'der Mann' becomes 'dem Mann' ('Sie dankt dem Mann')." },
+      { text: "den", correct: false, explain: "'danken' takes Dativ ('dem'), never Akkusativ ('den')!" },
+      { text: "ihn", correct: false, explain: "'ihn' is an Akkusativ pronoun; 'danken' requires Dativ!" }
+    ]
+  },
+  {
+    scenario: "In Slide 22, a young man kindly assists an elderly lady across the street with the verb 'helfen': 'Er hilft ______ Frau.' Which article belongs here?",
+    hint: "'helfen' is a pure Dative verb, and 'die Frau' is feminine.",
+    options: [
+      { text: "der", correct: true, explain: "Hervorragend! 'helfen' always triggers Dativ, so feminine 'die Frau' becomes 'der Frau' ('Er hilft der Frau')." },
+      { text: "die", correct: false, explain: "'die' is Nominativ/Akkusativ. 'helfen' demands Dativ, which turns 'die' into 'der'!" },
+      { text: "dem", correct: false, explain: "'dem' is for masculine/neuter; feminine requires 'der'!" }
+    ]
+  }
+];
+
+
 
 
 

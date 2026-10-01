@@ -66,6 +66,8 @@ import Lesson29RestaurantStudio from './components/Lesson29RestaurantStudio';
 import Lesson29Game from './components/Lesson29Game';
 import Lesson30PronounStudio from './components/Lesson30PronounStudio';
 import Lesson30Game from './components/Lesson30Game';
+import Lesson31DativStudio from './components/Lesson31DativStudio';
+import Lesson31Game from './components/Lesson31Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -96,11 +98,12 @@ import {
   LESSON_27_ITEMS,
   LESSON_28_ITEMS,
   LESSON_29_ITEMS,
-  LESSON_30_ITEMS
+  LESSON_30_ITEMS,
+  LESSON_31_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(30); // Default to Lesson 30 as requested, easy switch to 1-29
+  const [currentLesson, setCurrentLesson] = useState(31); // Default to Lesson 31 as requested, easy switch to 1-30
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -134,6 +137,7 @@ export default function App() {
   if (currentLesson === 28) activeItems = LESSON_28_ITEMS;
   if (currentLesson === 29) activeItems = LESSON_29_ITEMS;
   if (currentLesson === 30) activeItems = LESSON_30_ITEMS;
+  if (currentLesson === 31) activeItems = LESSON_31_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -165,7 +169,8 @@ export default function App() {
     if (currentLesson === 27) return "Lesson 27: möchten (The Modal Verb 'would like to' & Sentence Brackets)";
     if (currentLesson === 28) return "Lesson 28: W-Fragen (German W-Questions - The 13 Key Question Words)";
     if (currentLesson === 29) return "Lesson 29: im Restaurant & Café bestellen (Ordering in a Restaurant / Café)";
-    return "Lesson 30: Personalpronomen im Akkusativ (Accusative Personal Pronouns: mich, dich, ihn, uns, euch & The Unchanging Twins)";
+    if (currentLesson === 30) return "Lesson 30: Personalpronomen im Akkusativ (Accusative Personal Pronouns: mich, dich, ihn, uns, euch & The Unchanging Twins)";
+    return "Lesson 31: Artikel im Dativ (Definite, Indefinite & Negative Articles in the Dative Case - The Gift Receiver)";
   };
 
   const getLessonDesc = () => {
@@ -256,7 +261,10 @@ export default function App() {
     if (currentLesson === 29) {
       return "Master real-world German dining like a native! Learn how to request a table (einen Tisch), order food & drinks using 3 magic customer formulas (Ich hätte gerne, Ich nehme, Ich möchte), navigate Akkusativ menu items, split the bill (Zusammen oder getrennt?), tip like a local ('Stimmt so!'), and order coffee to go (Zum Mitnehmen)!";
     }
-    return "Master personal pronouns in the accusative case (Personalpronomen im Akkusativ)! Understand how pronouns transform when they are the direct receiver of an action. Master the 5 Changers (ich ➔ mich, du ➔ dich, er ➔ ihn, wir ➔ uns, ihr ➔ euch) and why 'sie', 'es', and formal 'Sie' stay completely identical!";
+    if (currentLesson === 30) {
+      return "Master personal pronouns in the accusative case (Personalpronomen im Akkusativ)! Understand how pronouns transform when they are the direct receiver of an action. Master the 5 Changers (ich ➔ mich, du ➔ dich, er ➔ ihn, wir ➔ uns, ihr ➔ euch) and why 'sie', 'es', and formal 'Sie' stay completely identical!";
+    }
+    return "Master the Dative case (Dativ / Indirect Object)! Discover the magic M-R-M-N formula (dem, der, dem, den + n | einem, einer, einem | keinem, keiner, keinem, keinen + n), understand who receives gifts and benefits (Wem?), and practice pure Dative verbs like 'danken' and 'helfen'.";
   };
 
   return (
@@ -563,6 +571,15 @@ export default function App() {
 
         {currentLesson === 30 && activeTab === 'game30' && (
           <Lesson30Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 31 Specific Modules */}
+        {currentLesson === 31 && activeTab === 'studio31' && (
+          <Lesson31DativStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 31 && activeTab === 'game31' && (
+          <Lesson31Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
