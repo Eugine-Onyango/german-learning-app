@@ -60,6 +60,8 @@ import Lesson26PossessiveAkkStudio from './components/Lesson26PossessiveAkkStudi
 import Lesson26Game from './components/Lesson26Game';
 import Lesson27MoechtenStudio from './components/Lesson27MoechtenStudio';
 import Lesson27Game from './components/Lesson27Game';
+import Lesson28WFragenStudio from './components/Lesson28WFragenStudio';
+import Lesson28Game from './components/Lesson28Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -87,11 +89,12 @@ import {
   LESSON_24_ITEMS,
   LESSON_25_ITEMS,
   LESSON_26_ITEMS,
-  LESSON_27_ITEMS
+  LESSON_27_ITEMS,
+  LESSON_28_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(27); // Default to Lesson 27 as requested, easy switch to 1-26
+  const [currentLesson, setCurrentLesson] = useState(28); // Default to Lesson 28 as requested, easy switch to 1-27
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -122,6 +125,7 @@ export default function App() {
   if (currentLesson === 25) activeItems = LESSON_25_ITEMS;
   if (currentLesson === 26) activeItems = LESSON_26_ITEMS;
   if (currentLesson === 27) activeItems = LESSON_27_ITEMS;
+  if (currentLesson === 28) activeItems = LESSON_28_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -150,7 +154,8 @@ export default function App() {
     if (currentLesson === 24) return "Lesson 24: Die Familie (The Family, Relative Pairs & The 3-Generation Family Tree)";
     if (currentLesson === 25) return "Lesson 25: Artikel im Akkusativ (Articles in the Accusative Case - Direct Object)";
     if (currentLesson === 26) return "Lesson 26: Possessivartikel im Akkusativ (Possessive Articles in the Accusative Case)";
-    return "Lesson 27: möchten (The Modal Verb 'would like to' & Sentence Brackets)";
+    if (currentLesson === 27) return "Lesson 27: möchten (The Modal Verb 'would like to' & Sentence Brackets)";
+    return "Lesson 28: W-Fragen (German W-Questions - The 13 Key Question Words)";
   };
 
   const getLessonDesc = () => {
@@ -232,7 +237,10 @@ export default function App() {
     if (currentLesson === 26) {
       return "Express love, likes, and opinions about people and things you own! Master the golden rule: ONLY masculine adds -EN (meinen, seinen, ihren, unseren, euren, Ihren), while feminine, neuter, and plural stay 100% identical to Nominativ! Explore Julia, Alex, and Sabrina's stories, the 9-dog drill, and classroom exercises!";
     }
-    return "Politely express wishes, order food, and make invitations with 'möchten'! Master the German Satzklammer (Verb Bracket: Position 2 helper + End of sentence action infinitive), the Modal Twin Rule (ich möchte = er/sie/es möchte), direct noun orders, and all 5 chalkboard exercises!";
+    if (currentLesson === 27) {
+      return "Politely express wishes, order food, and make invitations with 'möchten'! Master the German Satzklammer (Verb Bracket: Position 2 helper + End of sentence action infinitive), the Modal Twin Rule (ich möchte = er/sie/es möchte), direct noun orders, and all 5 chalkboard exercises!";
+    }
+    return "Unlock every German conversation with the 13 essential W-Question keys (Was, Warum, Wann, Wer, Wen, Wie, Wo, Woher, Wohin, Wie viel, Wie viele, Wie oft, Welche)! Master Wer vs. Wen (Subject vs. Object), the Location Trio (Wo vs. Woher vs. Wohin), and price vs. quantity inquiries with zero stress!";
   };
 
   return (
@@ -512,6 +520,15 @@ export default function App() {
 
         {currentLesson === 27 && activeTab === 'game27' && (
           <Lesson27Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 28 Specific Modules */}
+        {currentLesson === 28 && activeTab === 'studio28' && (
+          <Lesson28WFragenStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 28 && activeTab === 'game28' && (
+          <Lesson28Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

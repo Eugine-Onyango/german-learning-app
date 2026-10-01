@@ -6801,6 +6801,235 @@ export const LESSON_27_SCENARIOS = [
   }
 ];
 
+export const LESSON_28_ITEMS = [
+  {
+    id: "l28-overview",
+    german: "W-Fragen (W-Questions)",
+    english: "Open Questions in German - Always Starting with a 'W' Word!",
+    pronunciation: "VAY FRAH-gen",
+    audioText: "W-Fragen. Die dreizehn wichtigsten W-Fragen im Deutschen: Was, Warum, Wann, Wer, Wen, Wie, Wo, Woher, Wohin, Wie viel, Wie viele, Wie oft, Welche.",
+    category: "overview",
+    badge: "13 W-Keys 🗝️",
+    icon: "❓ 🧭",
+    kenyanAnalogy: "Like the essential curiosity toolkit of every good detective or friendly neighbor! In German, almost every question word starts with the letter 'W', and the action verb always sits right in spot #2.",
+    memoryTrick: "W-Word (Pos. 1) + Verb (Pos. 2) + Subject + Rest?"
+  },
+  {
+    id: "l28-was",
+    german: "Was? -> Was sind Sie von Beruf?",
+    english: "What? -> What do you do professionally? / What is your profession?",
+    pronunciation: "VAHS? Vahs zint Zee fon beh-ROOF?",
+    audioText: "Was? Was sind Sie von Beruf?",
+    category: "basics",
+    badge: "What? 💼",
+    icon: "👷‍♂️ 🩺",
+    kenyanAnalogy: "Asking about things, actions, or career jobs! 'Was sind Sie von Beruf?' is the gold-standard formal way to ask someone what career they work in.",
+    memoryTrick: "Was = What! Was sind Sie von Beruf?"
+  },
+  {
+    id: "l28-warum",
+    german: "Warum? -> Warum bist du traurig?",
+    english: "Why? -> Why are you sad?",
+    pronunciation: "vah-ROOM? Vah-room bist doo TROW-rikh?",
+    audioText: "Warum? Warum bist du traurig?",
+    category: "basics",
+    badge: "Why? 🥺",
+    icon: "😢 💭",
+    kenyanAnalogy: "Asking for reasons and feelings! When a friend looks down, you comfort them by asking 'Warum bist du traurig?' (Why are you sad?).",
+    memoryTrick: "Warum = Why! Looking for the reason (weil / because)."
+  },
+  {
+    id: "l28-wann",
+    german: "Wann? -> Wann heiratet ihr?",
+    english: "When? -> When are you getting married?",
+    pronunciation: "VAHN? Vahn HY-rah-tet eer?",
+    audioText: "Wann? Wann heiratet ihr?",
+    category: "basics",
+    badge: "When? 💒",
+    icon: "👰 🤵",
+    kenyanAnalogy: "Asking about dates, time, and happy celebrations! 'Wann heiratet ihr?' is what family asks couples planning their big wedding day.",
+    memoryTrick: "Wann = When! (Both have double letters: W-a-n-n / W-h-e-n)."
+  },
+  {
+    id: "l28-wer",
+    german: "Wer? -> Wer spricht gut Deutsch?",
+    english: "Who? (Subject) -> Who speaks good German?",
+    pronunciation: "VAIR? Vair shprikht goot DOYTCH?",
+    audioText: "Wer? Wer spricht gut Deutsch?",
+    category: "people",
+    badge: "Who? (Subjekt) 👤",
+    icon: "🗣️ 🇩🇪",
+    kenyanAnalogy: "Asking for the boss / doer of the sentence (Nominativ)! 'Wer spricht gut Deutsch?' looks for the person doing the speaking.",
+    memoryTrick: "Wer = Who (the Subject doing the action)!"
+  },
+  {
+    id: "l28-wen",
+    german: "Wen? -> Wen liebst du?",
+    english: "Whom? (Direct Object) -> Whom do you love?",
+    pronunciation: "VAIN? Vain leebst doo?",
+    audioText: "Wen? Wen liebst du?",
+    category: "people",
+    badge: "Whom? (Objekt) ❤️",
+    icon: "💖 👥",
+    kenyanAnalogy: "Asking for the receiver of love or action (Akkusativ)! Just like 'den Mann', the question word ends in '-en': 'Wen liebst du?' (Whom do you love?).",
+    memoryTrick: "Wen = Whom (ends in -en just like den/einen direct object)!"
+  },
+  {
+    id: "l28-wie",
+    german: "Wie? -> Wie alt bist du?",
+    english: "How? -> How old are you?",
+    pronunciation: "VEE? Vee alt bist doo?",
+    audioText: "Wie? Wie alt bist du?",
+    category: "basics",
+    badge: "How? 🎂",
+    icon: "🎂 🕯️",
+    kenyanAnalogy: "Asking about manner, condition, name (Wie heißt du?), or age (Wie alt bist du?). It's the most flexible question word in German!",
+    memoryTrick: "Wie = How! Wie alt, Wie spät, Wie geht's?"
+  },
+  {
+    id: "l28-wo",
+    german: "Wo? -> Wo wohnst du?",
+    english: "Where? (Location / Static) -> Where do you live?",
+    pronunciation: "VOH? Voh vohnst doo?",
+    audioText: "Wo? Wo wohnst du?",
+    category: "location",
+    badge: "Where? (Static) 📍",
+    icon: "🗺️ 🏡",
+    kenyanAnalogy: "Asking about stationary places where something or someone is sitting still! 'Wo wohnst du?' (Where do you live / reside?).",
+    memoryTrick: "Wo = Where (stationary place, zero movement)!"
+  },
+  {
+    id: "l28-woher",
+    german: "Woher? -> Woher kommst du?",
+    english: "Where from? (Origin) -> Where are you from?",
+    pronunciation: "voh-HAIR? Voh-hair komst doo?",
+    audioText: "Woher? Woher kommst du?",
+    category: "location",
+    badge: "Where from? 🌍",
+    icon: "🌐 🛫",
+    kenyanAnalogy: "Asking about origins and starting points! 'her' means towards here, so 'Woher kommst du?' asks where you came from.",
+    memoryTrick: "Woher = Where from! (Wo + her -> coming from somewhere)."
+  },
+  {
+    id: "l28-wohin",
+    german: "Wohin? -> Wohin fahrt ihr im Urlaub?",
+    english: "Where to? (Destination) -> Where are you going on vacation?",
+    pronunciation: "voh-HIN? Voh-hin fahrt eer im OOR-lowp?",
+    audioText: "Wohin? Wohin fahrt ihr im Urlaub?",
+    category: "location",
+    badge: "Where to? 🚗",
+    icon: "🏖️ 🚗",
+    kenyanAnalogy: "Asking about travel destinations and forward movement! 'hin' means going away towards a destination: 'Wohin fahrt ihr im Urlaub?'.",
+    memoryTrick: "Wohin = Where to! (Heading into a new destination)."
+  },
+  {
+    id: "l28-wie-viel",
+    german: "Wie viel? -> Wie viel kostet ein Fahrrad?",
+    english: "How much? (Price / Uncountable) -> How much does a bicycle cost?",
+    pronunciation: "VEE FEEL? Vee feel KOS-tet eye-n FAHR-raht?",
+    audioText: "Wie viel? Wie viel kostet ein Fahrrad?",
+    category: "quantity",
+    badge: "How much? 🏷️",
+    icon: "🚲 💵",
+    kenyanAnalogy: "At the bike shop or kiosk asking the price! For money, prices, or singular amounts, use 'Wie viel' (no 'e' at the end).",
+    memoryTrick: "Wie viel kostet...? = How much does it cost?"
+  },
+  {
+    id: "l28-wie-viele",
+    german: "Wie viele? -> Wie viele Kinder hast du?",
+    english: "How many? (Countable Plural) -> How many children do you have?",
+    pronunciation: "VEE FEE-leh? Vee fee-leh KIN-der hahst doo?",
+    audioText: "Wie viele? Wie viele Kinder hast du?",
+    category: "quantity",
+    badge: "How many? 👨‍👩‍👧‍👦",
+    icon: "👧 👦",
+    kenyanAnalogy: "Counting individual people, children, apples, or items! Plural takes an '-e' at the end: 'Wie viele Kinder?'",
+    memoryTrick: "Wie viele + [Plural noun] = How many!"
+  },
+  {
+    id: "l28-wie-oft",
+    german: "Wie oft? -> Wie oft spielst du Fußball?",
+    english: "How often? (Frequency) -> How often do you play football?",
+    pronunciation: "VEE OFT? Vee oft shpeelst doo FOOS-bahl?",
+    audioText: "Wie oft? Wie oft spielst du Fußball?",
+    category: "quantity",
+    badge: "How often? ⚽",
+    icon: "⚽ 📅",
+    kenyanAnalogy: "Asking about habits and weekly routines! 'Wie oft' checks if you play soccer once a week, daily, or never.",
+    memoryTrick: "Wie oft? = How often? (oft = often!)."
+  },
+  {
+    id: "l28-welche",
+    german: "Welche? -> Welche Sprachen sprichst du?",
+    english: "Which? -> Which languages do you speak?",
+    pronunciation: "VEL-kheh? Vel-kheh SHPRAH-khen shprikhst doo?",
+    audioText: "Welche? Welche Sprachen sprichst du?",
+    category: "basics",
+    badge: "Which? 🗣️",
+    icon: "🌐 🗣️",
+    kenyanAnalogy: "Selecting from options! 'Welche Sprachen sprichst du?' asks which specific languages (English, German, etc.) you speak.",
+    memoryTrick: "Welche = Which! Picking from a list."
+  }
+];
+
+export const LESSON_28_SCENARIOS = [
+  {
+    scenario: "In Slide 11, you want to ask someone about their romantic feelings: 'Whom do you love?' Which question word is correct for the direct object of love?",
+    hint: "Love is aimed at an Akkusativ person (like 'den Mann'), so the question word ends in '-en'!",
+    options: [
+      { text: "Wen liebst du?", correct: true, explain: "Wunderbar! 'Wen' is the direct object (Akkusativ) form of 'Wer'. You ask: 'Wen liebst du?'" },
+      { text: "Wer liebst du?", correct: false, explain: "'Wer' is only for the subject (e.g., 'Wer liebt dich?' - Who loves you?). For direct object, use 'Wen'!" },
+      { text: "Was liebst du?", correct: false, explain: "'Was' is for things, but asking about a person requires 'Wen'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 19, a family is packing their car for holiday: 'Where are you going on vacation?' Which question word expresses movement to a destination?",
+    hint: "'Wo' is static, 'Woher' is origin, and 'Wohin' is direction/destination!",
+    options: [
+      { text: "Wohin fahrt ihr im Urlaub?", correct: true, explain: "Genau! 'Wohin' asks 'Where to?' whenever there is travel, movement, or a destination!" },
+      { text: "Wo fahrt ihr im Urlaub?", correct: false, explain: "'Wo' only asks about stationary location (e.g., 'Wo wohnst du?'), not forward movement!" },
+      { text: "Woher fahrt ihr im Urlaub?", correct: false, explain: "'Woher' means 'Where from?' (origin), not 'Where to?'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 21, you want to buy a bicycle: 'How much does a bicycle cost?' Which 'Wie' question is used for prices?",
+    hint: "For prices and uncountable amounts (singular), do not add '-e'.",
+    options: [
+      { text: "Wie viel kostet ein Fahrrad?", correct: true, explain: "Perfection! For prices and costs, use 'Wie viel kostet...?' without an '-e'!" },
+      { text: "Wie viele kostet ein Fahrrad?", correct: false, explain: "'Wie viele' is only for plural countable nouns (e.g. 'Wie viele Fahrräder hast du?')!" },
+      { text: "Wie oft kostet ein Fahrrad?", correct: false, explain: "'Wie oft' means 'How often', not 'How much'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 23, a mother is with her children: 'How many children do you have?' Which 'Wie' compound is correct for countable plural nouns?",
+    hint: "'Kinder' is plural, so the question word adds '-e'.",
+    options: [
+      { text: "Wie viele Kinder hast du?", correct: true, explain: "Ausgezeichnet! 'Kinder' is plural, so we use 'Wie viele' (How many)!" },
+      { text: "Wie viel Kinder hast du?", correct: false, explain: "For plural countable items, German requires 'Wie viele' with the ending '-e'!" },
+      { text: "Welche Kinder hast du?", correct: false, explain: "'Welche' means 'Which', but the slide asks 'How many' -> 'Wie viele'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 3, you meet someone at a networking event and want to ask their job: 'What do you do professionally?' Which phrase is standard German?",
+    hint: "Starts with 'Was' and uses the phrase 'von Beruf'.",
+    options: [
+      { text: "Was sind Sie von Beruf?", correct: true, explain: "Brilliant! 'Was sind Sie von Beruf?' is the classic, polite German way to ask someone's profession!" },
+      { text: "Wie sind Sie von Beruf?", correct: false, explain: "In German we ask 'Was' (what), not 'Wie' (how), when asking for a profession!" },
+      { text: "Wer sind Sie von Beruf?", correct: false, explain: "'Wer' asks 'Who', which doesn't fit the idiom 'von Beruf'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 5, a boy is crying with a green scarf: 'Why are you sad?' Which question word asks for a reason or cause?",
+    hint: "Starts with 'War...'",
+    options: [
+      { text: "Warum bist du traurig?", correct: true, explain: "Genau! 'Warum' asks for the reason or emotion ('Why are you sad?')." },
+      { text: "Wann bist du traurig?", correct: false, explain: "'Wann' means 'When' (asking for a time), not 'Why'!" },
+      { text: "Wo bist du traurig?", correct: false, explain: "'Wo' means 'Where' (asking for a location)!" }
+    ]
+  }
+];
+
+
 
 
 
