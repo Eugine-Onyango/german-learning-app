@@ -7977,6 +7977,211 @@ export const LESSON_33_SCENARIOS = [
   }
 ];
 
+export const LESSON_34_ITEMS = [
+  {
+    id: "l34-intro-concept",
+    german: "Possessivartikel im Dativ: meinem / meiner / meinem / meinen (+n)",
+    english: "Possessive Articles in Dative: to my / his / her / our (Beneficiary Ownership)",
+    pronunciation: "MY-nem / MY-ner / MY-nem / MY-nen (+en)",
+    audioText: "Possessivartikel im Dativ: meinem, meiner, meinem, meinen. Ich gebe meinem Mann einen Kuss. Ich gebe meiner Tochter einen Kuss. Ich gebe meinem Baby einen Kuss. Ich gebe meinen Kindern einen Kuss.",
+    category: "concept",
+    badge: "The Dative Ownership Crown 👑",
+    icon: "👑",
+    kenyanAnalogy: "When you give a gift, show love, buy food, or bring something to someone who belongs to you (my husband, her sister, our grandparents), the owner word puts on Dative clothes: -em (men/neuter), -er (ladies), -en + n (groups)!",
+    memoryTrick: "Maskulin: -em | Feminin: -er | Neutral: -em | Plural: -en + n!"
+  },
+  {
+    id: "l34-sentence-anatomy",
+    german: "Satzbau: Ich (Nominativ) gebe (Verb) meinem Mann (Dativ) einen Kuss (Akkusativ).",
+    english: "Sentence Anatomy: I (Subject) give (Verb) to my husband (Receiver/Dative) a kiss (Direct Object/Accusative).",
+    pronunciation: "Ihsh GAY-beh MY-nem mahn EYE-nen kooss.",
+    audioText: "Ich gebe meinem Mann einen Kuss. Ich ist Nominativ. Meinem Mann ist Dativ. Einen Kuss ist Akkusativ.",
+    category: "sentence-structure",
+    badge: "Slide 4: Sentence Anatomy 🔍",
+    icon: "🔍",
+    kenyanAnalogy: "Think of a gift delivery train: 1. You (Subject/Nominativ) do the action, 2. The Person receiving the love/gift sits in Dativ (meinem Mann), 3. The actual item being given travels in Akkusativ (einen Kuss)!",
+    memoryTrick: "Who does it? (Nom) ➔ Who receives it? (Dativ) ➔ What is given? (Akkusativ)!"
+  },
+  {
+    id: "l34-petra-family",
+    german: "Petra (ich ➔ mein-): meinem Mann (der), meiner Tochter (die), meinem Baby (das), meinen Kindern (die Pl.)",
+    english: "Petra gives a kiss: to my husband (Masc), to my daughter (Fem), to my baby (Neut), to my children (Plural).",
+    pronunciation: "Ihsh GAY-beh MY-nem mahn, MY-ner TOKH-ter, MY-nem BAY-bee, MY-nen KIN-dern EYE-nen kooss.",
+    audioText: "Das ist mein Mann. Ich gebe meinem Mann einen Kuss. Das ist meine Tochter. Ich gebe meiner Tochter einen Kuss. Das ist mein Baby. Ich gebe meinem Baby einen Kuss. Das sind meine Kinder. Ich gebe meinen Kindern einen Kuss.",
+    category: "petra-story",
+    badge: "Petra's Kiss Journey (Slides 2–7) 💋",
+    icon: "💋",
+    kenyanAnalogy: "Petra spreading love around the family house! Notice how 'mein' transforms for each family member: Mann ➔ meinem, Tochter ➔ meiner, Baby ➔ meinem, Kinder ➔ meinen Kindern!",
+    memoryTrick: "der Mann ➔ meinem Mann | die Tochter ➔ meiner Tochter | das Baby ➔ meinem Baby | die Kinder ➔ meinen Kindern!"
+  },
+  {
+    id: "l34-martin-family",
+    german: "Martin (er ➔ sein-): seinem Bruder (der), seiner Frau (die), seinem Kind (das), seinen Freunden (die Pl.)",
+    english: "Martin buys chocolate: for his brother (Masc), for his wife (Fem), for his child (Neut), for his friends (Plural).",
+    pronunciation: "Air KOWFT ZY-nem BROO-der, ZY-ner frow, ZY-nem kint, ZY-nen FROYN-den EYE-neh shoh-koh-LAH-deh.",
+    audioText: "Das ist Martin. Das ist sein Bruder. Er kauft seinem Bruder eine Schokolade. Das ist seine Frau. Er kauft seiner Frau eine Schokolade. Das ist sein Kind. Er kauft seinem Kind eine Schokolade. Das sind seine Freunde. Er kauft seinen Freunden Schokoladen.",
+    category: "martin-story",
+    badge: "Martin's Chocolate Shopping (Slides 8–12) 🍫",
+    icon: "🍫",
+    kenyanAnalogy: "Martin arriving home with sweet chocolates from the supermarket for his family and pals! 'sein' takes the exact same Dative endings: seinem, seiner, seinem, seinen!",
+    memoryTrick: "sein + -em (Bruder) | sein + -er (Frau) | sein + -em (Kind) | sein + -en (Freunden)!"
+  },
+  {
+    id: "l34-maria-family",
+    german: "Maria (sie ➔ ihr-): ihrem Freund (der), ihrer Schwester (die), ihrem Kind (das), ihren Nachbarn (die Pl.)",
+    english: "Maria brings food: to her boyfriend (Masc), to her sister (Fem), to her child (Neut), to her neighbors (Plural).",
+    pronunciation: "Zee BRINGT EE-rem froynt, EE-rer SHVES-ter, EE-rem kint, EE-ren NAHKH-barn dahs ESS-en.",
+    audioText: "Das ist Maria. Das ist ihr Freund. Sie bringt ihrem Freund das Essen. Das ist ihre Schwester. Sie bringt ihrer Schwester das Essen. Das ist ihr Kind. Sie bringt ihrem Kind das Essen. Das sind ihre Nachbarn. Sie bringt ihren Nachbarn das Essen.",
+    category: "maria-story",
+    badge: "Maria's Warm Meal Delivery (Slides 13–17) 🍲",
+    icon: "🍲",
+    kenyanAnalogy: "Maria carrying delicious hot homemade food to everyone around her! 'ihr' (her) adds the Dative endings: ihrem Freund, ihrer Schwester, ihrem Kind, ihren Nachbarn!",
+    memoryTrick: "ihr + -em (Freund) | ihr + -er (Schwester) | ihr + -em (Kind) | ihr + -en (Nachbarn)!"
+  },
+  {
+    id: "l34-lukas-kathrin-family",
+    german: "Lukas & Kathrin (wir ➔ unser-): unserem Vater (der), unserer Mutter (die), unseren Großeltern (die Pl.)",
+    english: "Lukas & Kathrin buy gifts: for our father (Masc), for our mother (Fem), for our grandparents (Plural).",
+    pronunciation: "Veer KOW-fen OON-zeh-rem FAH-ter, OON-zeh-rer MOOT-ter, OON-zeh-ren GROHS-el-tern ayn geh-SHENK.",
+    audioText: "Wir sind Lukas und Kathrin. Das ist unser Vater. Wir kaufen unserem Vater ein Geschenk. Das ist unsere Mutter. Wir kaufen unserer Mutter ein Geschenk. Das sind unsere Großeltern. Wir kaufen unseren Großeltern ein Geschenk.",
+    category: "lukas-story",
+    badge: "Lukas & Kathrin's Gifts (Slides 18–22) 🎁",
+    icon: "🎁",
+    kenyanAnalogy: "Two loving siblings teaming up to buy surprise birthday presents for their parents and grandparents! 'unser' becomes: unserem Vater, unserer Mutter, unseren Großeltern!",
+    memoryTrick: "unser + -em (Vater) | unser + -er (Mutter) | unser + -en (Großeltern)!"
+  },
+  {
+    id: "l34-matrix-masculine",
+    german: "Maskulin im Dativ (-em): meinem, deinem, seinem, ihrem, unserem, eurem, Ihrem, ihrem",
+    english: "Masculine in Dative (-em): to my, your, his, her, our, your (y'all), Your (formal), their",
+    pronunciation: "MY-nem, DY-nem, ZY-nem, EE-rem, OON-zeh-rem, OY-rem, EE-rem",
+    audioText: "Maskulin im Dativ: meinem Mann, deinem Vater, seinem Bruder, ihrem Freund, unserem Sohn, eurem Onkel, Ihrem Chef.",
+    category: "matrix",
+    badge: "Masc Dativ: Always -em! 👨",
+    icon: "👨",
+    kenyanAnalogy: "Just like 'der' became 'dem' in Lesson 31, every possessive for a male noun takes the solid '-em' ending!",
+    memoryTrick: "Masc Dativ Possessives = Base word + -em!"
+  },
+  {
+    id: "l34-matrix-feminine",
+    german: "Feminin im Dativ (-er): meiner, deiner, seiner, ihrer, unserer, eurer, Ihrer, ihrer",
+    english: "Feminine in Dative (-er): to my, your, his, her, our, your (y'all), Your (formal), their",
+    pronunciation: "MY-ner, DY-ner, ZY-ner, EE-rer, OON-zeh-rer, OY-rer, EE-rer",
+    audioText: "Feminin im Dativ: meiner Frau, deiner Mutter, seiner Schwester, ihrer Tochter, unserer Tante, eurer Oma, Ihrer Kollegin.",
+    category: "matrix",
+    badge: "Fem Dativ: The -er Queen! 👩",
+    icon: "👩",
+    kenyanAnalogy: "Just like 'die' turned into 'der' in Lesson 31, feminine nouns in Dative hand their possessive an '-er' crown: meiner, deiner, seiner, ihrer, unserer, eurer!",
+    memoryTrick: "Fem Dativ Possessives = Base word + -er!"
+  },
+  {
+    id: "l34-matrix-neuter",
+    german: "Neutral im Dativ (-em): meinem, deinem, seinem, ihrem, unserem, eurem, Ihrem, ihrem",
+    english: "Neuter in Dative (-em): to my, your, his, her, our, your (y'all), Your (formal), their",
+    pronunciation: "MY-nem, DY-nem, ZY-nem, EE-rem, OON-zeh-rem, OY-rem, EE-rem",
+    audioText: "Neutral im Dativ: meinem Baby, deinem Kind, seinem Mädchen, ihrem Auto, unserem Haus, eurem Zimmer, Ihrem Büro.",
+    category: "matrix",
+    badge: "Neuter Dativ: The -em Twin! 👶",
+    icon: "👶",
+    kenyanAnalogy: "Neuter is the exact identical twin brother to Masculine in Dativ! Both take '-em' without exception (meinem Baby, seinem Kind)!",
+    memoryTrick: "Maskulin & Neutral = Twin brothers with '-em'!"
+  },
+  {
+    id: "l34-matrix-plural",
+    german: "Plural im Dativ (-en + n): meinen, deinen, seinen, ihren, unseren, euren, Ihren (+ Nomen -n)",
+    english: "Plural in Dative (-en + n): to my, your, his, her, our, your (y'all), their (+ add -n to noun)",
+    pronunciation: "MY-nen, DY-nen, ZY-nen, EE-nen, OON-zeh-nen, OY-ren, EE-nen",
+    audioText: "Plural im Dativ: meinen Kindern, deinen Freunden, seinen Eltern, ihren Nachbarn, unseren Großeltern, euren Kollegen, Ihren Gästen.",
+    category: "matrix",
+    badge: "Plural Dativ: Double 'n' Magic! 👥",
+    icon: "👥",
+    kenyanAnalogy: "The famous Plural Dativ Double-N rule: 1. Possessive adds '-en' (meinen, unseren), 2. Plural noun adds an extra '-n' at the end (Kindern, Freunden, Eltern)!",
+    memoryTrick: "Plural Dativ = Possessive gets '-en' + Noun gets '-n'!"
+  },
+  {
+    id: "l34-euer-special-spelling",
+    german: "Besonderheit 'euer' (y'all's): eurem (Mask./Neut.), eurer (Fem.), euren (Plural + n)",
+    english: "Special Spelling for 'euer': eurem (Masc/Neut), eurer (Fem), euren (Plural)",
+    pronunciation: "OY-rem, OY-rer, OY-ren",
+    audioText: "euer im Dativ: Helft ihr eurem Vater? Helft ihr eurer Mutter? Helft ihr euren Eltern?",
+    category: "special-case",
+    badge: "The 'euer' Spelling Trick 🪄",
+    icon: "🪄",
+    kenyanAnalogy: "Remember from Lesson 23: when adding endings to 'euer', the middle 'e' steps aside to keep pronunciation smooth: 'euer' + 'em' = 'eurem' (not euerem), 'euer' + 'er' = 'eurer'!",
+    memoryTrick: "euer ➔ eurem / eurer / eurem / euren!"
+  },
+  {
+    id: "l34-chalkboard-drills",
+    german: "Übungen: Wir bringen unseren Eltern einen Wein. Ich kaufe meiner Freundin einen Ring. Bringst du deinem Vater ein Buch?",
+    english: "Slide Drills: We bring our parents wine. I buy my girlfriend a ring. Are you bringing your father a book?",
+    pronunciation: "Veer BRING-en OON-zeh-ren EL-tern EYE-nen vyn. Ihsh KOW-feh MY-ner FROYN-din EYE-nen ring. BRINGST doo DY-nem FAH-ter ayn bookh?",
+    audioText: "Übungen aus den Folien: Wir bringen unseren Eltern einen Wein. Ich kaufe meiner Freundin einen Ring. Bringst du deinem Vater ein Buch?",
+    category: "exercises",
+    badge: "Slides 24–28 Chalkboard Drills 📝",
+    icon: "📝",
+    kenyanAnalogy: "The exact classroom chalkboard test questions! 1. Eltern (Plural) ➔ 'unseren', 2. Freundin (Feminin) ➔ 'meiner', 3. Vater (Maskulin) ➔ 'deinem'!",
+    memoryTrick: "Eltern = Plural (unseren) | Freundin = Feminin (meiner) | Vater = Maskulin (deinem)!"
+  }
+];
+
+export const LESSON_34_SCENARIOS = [
+  {
+    scenario: "In Slide 4, look at the sentence: 'Ich gebe meinem Mann einen Kuss.' What grammatical role does 'meinem Mann' play in this sentence?",
+    hint: "He is the loving receiver / beneficiary of the kiss.",
+    options: [
+      { text: "Dativ (Indirect Object / Beneficiary - who receives the kiss)", correct: true, explain: "Genau! 'meinem Mann' is in the Dative case because he is the person who receives the kiss!" },
+      { text: "Nominativ (The person doing the action)", correct: false, explain: "The Nominativ subject is 'Ich' (the person giving the kiss)!" },
+      { text: "Akkusativ (The direct object given)", correct: false, explain: "'einen Kuss' is the Akkusativ direct object being given!" }
+    ]
+  },
+  {
+    scenario: "In Slide 5, Petra says: 'Das ist meine Tochter. Ich gebe _____ Tochter einen Kuss.' Which possessive form is correct for the feminine daughter in Dative?",
+    hint: "Feminine nouns in Dative always make possessives end in '-er'.",
+    options: [
+      { text: "meiner Tochter", correct: true, explain: "Wunderbar! 'die Tochter' is feminine, so in Dativ it takes the '-er' ending: 'meiner Tochter'!" },
+      { text: "meinem Tochter", correct: false, explain: "'-em' is only for masculine and neuter nouns!" },
+      { text: "meinen Tochter", correct: false, explain: "'-en' is for plural nouns in Dative!" }
+    ]
+  },
+  {
+    scenario: "In Slide 7, Petra gives a kiss to her children (die Kinder): 'Ich gebe _____ einen Kuss.' Which form is correct for Plural Dativ?",
+    hint: "Plural Dative takes '-en' on the possessive AND adds an extra '-n' to 'Kinder'.",
+    options: [
+      { text: "meinen Kindern", correct: true, explain: "Perfekt! Plural in Dative uses '-en' on the possessive AND adds '-n' to the noun: 'meinen Kindern'!" },
+      { text: "meiner Kinder", correct: false, explain: "'meiner' is feminine singular, not plural!" },
+      { text: "meinem Kinder", correct: false, explain: "'meinem' is for masculine and neuter singular!" }
+    ]
+  },
+  {
+    scenario: "In Slide 25–26, choose the correct possessive to fill the chalkboard blank: 'Wir bringen _____ Eltern einen Wein.'",
+    hint: "'Eltern' is plural (parents).",
+    options: [
+      { text: "unseren", correct: true, explain: "Ausgezeichnet! 'Eltern' is plural, so 'wir' becomes 'unseren' in the Dative case ('Wir bringen unseren Eltern einen Wein')!" },
+      { text: "unserer", correct: false, explain: "'unserer' is for feminine singular nouns (like 'unserer Mutter')!" },
+      { text: "unserem", correct: false, explain: "'unserem' is for masculine or neuter singular nouns (like 'unserem Vater')!" }
+    ]
+  },
+  {
+    scenario: "In Slide 27, fill in the chalkboard blank: 'Ich kaufe _____ Freundin einen Ring.'",
+    hint: "'die Freundin' is feminine (girlfriend).",
+    options: [
+      { text: "meiner", correct: true, explain: "Hervorragend! 'die Freundin' is feminine singular, which takes the '-er' ending in Dative: 'Ich kaufe meiner Freundin einen Ring'!" },
+      { text: "meinem", correct: false, explain: "'meinem' is masculine/neuter!" },
+      { text: "meinen", correct: false, explain: "'meinen' is plural!" }
+    ]
+  },
+  {
+    scenario: "In Slide 28, fill in the chalkboard blank: 'Bringst du _____ Vater ein Buch?'",
+    hint: "'der Vater' is masculine.",
+    options: [
+      { text: "deinem", correct: true, explain: "Brilliant! 'der Vater' is masculine singular, so in Dative 'du' becomes 'deinem': 'Bringst du deinem Vater ein Buch?'!" },
+      { text: "deiner", correct: false, explain: "'deiner' is for feminine nouns (like 'deiner Mutter')!" },
+      { text: "deinen", correct: false, explain: "'deinen' is for plural nouns in Dative!" }
+    ]
+  }
+];
+
+
 
 
 
