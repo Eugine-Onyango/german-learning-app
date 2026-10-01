@@ -58,6 +58,8 @@ import Lesson25AkkusativStudio from './components/Lesson25AkkusativStudio';
 import Lesson25Game from './components/Lesson25Game';
 import Lesson26PossessiveAkkStudio from './components/Lesson26PossessiveAkkStudio';
 import Lesson26Game from './components/Lesson26Game';
+import Lesson27MoechtenStudio from './components/Lesson27MoechtenStudio';
+import Lesson27Game from './components/Lesson27Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -84,11 +86,12 @@ import {
   LESSON_23_ITEMS,
   LESSON_24_ITEMS,
   LESSON_25_ITEMS,
-  LESSON_26_ITEMS
+  LESSON_26_ITEMS,
+  LESSON_27_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(26); // Default to Lesson 26 as requested, easy switch to 1-25
+  const [currentLesson, setCurrentLesson] = useState(27); // Default to Lesson 27 as requested, easy switch to 1-26
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -118,6 +121,7 @@ export default function App() {
   if (currentLesson === 24) activeItems = LESSON_24_ITEMS;
   if (currentLesson === 25) activeItems = LESSON_25_ITEMS;
   if (currentLesson === 26) activeItems = LESSON_26_ITEMS;
+  if (currentLesson === 27) activeItems = LESSON_27_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -145,7 +149,8 @@ export default function App() {
     if (currentLesson === 23) return "Lesson 23: Possessivartikel im Nominativ (Possessive Articles in the Nominative Case)";
     if (currentLesson === 24) return "Lesson 24: Die Familie (The Family, Relative Pairs & The 3-Generation Family Tree)";
     if (currentLesson === 25) return "Lesson 25: Artikel im Akkusativ (Articles in the Accusative Case - Direct Object)";
-    return "Lesson 26: Possessivartikel im Akkusativ (Possessive Articles in the Accusative Case)";
+    if (currentLesson === 26) return "Lesson 26: Possessivartikel im Akkusativ (Possessive Articles in the Accusative Case)";
+    return "Lesson 27: möchten (The Modal Verb 'would like to' & Sentence Brackets)";
   };
 
   const getLessonDesc = () => {
@@ -224,7 +229,10 @@ export default function App() {
     if (currentLesson === 25) {
       return "Master the German Accusative direct object case (Akkusativ)! Discover the golden relief secret: ONLY masculine transforms (der -> den, ein -> einen, kein -> keinen), while feminine, neuter, and plural stay 100% identical! Learn Wen? vs. Was?, and test the 4 famous apple sentences!";
     }
-    return "Express love, likes, and opinions about people and things you own! Master the golden rule: ONLY masculine adds -EN (meinen, seinen, ihren, unseren, euren, Ihren), while feminine, neuter, and plural stay 100% identical to Nominativ! Explore Julia, Alex, and Sabrina's stories, the 9-dog drill, and classroom exercises!";
+    if (currentLesson === 26) {
+      return "Express love, likes, and opinions about people and things you own! Master the golden rule: ONLY masculine adds -EN (meinen, seinen, ihren, unseren, euren, Ihren), while feminine, neuter, and plural stay 100% identical to Nominativ! Explore Julia, Alex, and Sabrina's stories, the 9-dog drill, and classroom exercises!";
+    }
+    return "Politely express wishes, order food, and make invitations with 'möchten'! Master the German Satzklammer (Verb Bracket: Position 2 helper + End of sentence action infinitive), the Modal Twin Rule (ich möchte = er/sie/es möchte), direct noun orders, and all 5 chalkboard exercises!";
   };
 
   return (
@@ -495,6 +503,15 @@ export default function App() {
 
         {currentLesson === 26 && activeTab === 'game26' && (
           <Lesson26Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 27 Specific Modules */}
+        {currentLesson === 27 && activeTab === 'studio27' && (
+          <Lesson27MoechtenStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 27 && activeTab === 'game27' && (
+          <Lesson27Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

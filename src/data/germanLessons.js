@@ -6597,5 +6597,210 @@ export const LESSON_26_SCENARIOS = [
   }
 ];
 
+export const LESSON_27_ITEMS = [
+  {
+    id: "l27-title-concept",
+    german: "möchten (would like to)",
+    english: "The Polite German Verb for Desires, Wishes & Orders",
+    pronunciation: "MURKH-ten",
+    audioText: "möchten. Das Modalverb möchten bedeutet: would like to. Höflich Wünsche und Bestellungen ausdrücken!",
+    category: "concept",
+    badge: "Polite Golden Key 🔑",
+    icon: "☕ ✨",
+    kenyanAnalogy: "Like saying 'I would appreciate having...' instead of barking 'Give me!'. In German, 'möchten' is the smoothest, warmest magic word to order food, express dreams, or invite friends.",
+    memoryTrick: "möchten = would like to! Super polite and friendly."
+  },
+  {
+    id: "l27-klammer-statement-1",
+    german: "Ich möchte Ärztin werden.",
+    english: "I would like to be (become) a doctor.",
+    pronunciation: "Ikh MURKH-teh AIRTS-tin VAIR-den",
+    audioText: "Ich möchte Ärztin werden. möchte ist das Modalverb auf Position zwei, und werden steht als Infinitiv am Satzende.",
+    category: "sentence-bracket",
+    badge: "Verb Bracket 🧲",
+    icon: "👩‍⚕️ 🩺",
+    kenyanAnalogy: "The German Sentence Sandwich (Satzklammer)! The helper verb 'möchte' sits at Position 2, while the main action verb 'werden' gets pushed all the way to the end of the sentence like the bottom bun!",
+    memoryTrick: "Position 2 = möchte (conjugated), Sentence End = werden (infinitive)!"
+  },
+  {
+    id: "l27-klammer-statement-2",
+    german: "Peter möchte in England studieren.",
+    english: "Peter would like to study in England.",
+    pronunciation: "PAY-ter MURKH-teh in ENG-land shtoo-DEE-ren",
+    audioText: "Peter möchte in England studieren. Peter ist das Subjekt, möchte steht auf Position zwei, und studieren am Ende.",
+    category: "sentence-bracket",
+    badge: "Future Goal 🎓",
+    icon: "🇬🇧 📚",
+    kenyanAnalogy: "Peter is packing his bags for university! 'möchte' does the greeting at door #2, while the action 'studieren' waits patiently at the very back.",
+    memoryTrick: "Subject (Peter) + möchte (Pos 2) + details (in England) + studieren (End)!"
+  },
+  {
+    id: "l27-scramble-order",
+    german: "Tobi möchte eine Pizza bestellen.",
+    english: "Tobi wants to order a pizza. (Scramble from Slide 4)",
+    pronunciation: "TOH-bee MURKH-teh EYE-neh PEET-tsah beh-SHTEL-len",
+    audioText: "Tobi möchte eine Pizza bestellen. bestellen - möchten - Tobi - eine Pizza.",
+    category: "sentence-bracket",
+    badge: "Pizza Order 🍕",
+    icon: "🍕 📦",
+    kenyanAnalogy: "Slide 4 Scramble Challenge! Unscramble: bestellen - möchten - Tobi - eine Pizza. The chef needs Tobi (who) + möchte (wants) + eine Pizza (what) + bestellen (to order)!",
+    memoryTrick: "Tobi (1) + möchte (2) + eine Pizza (middle) + bestellen (end)!"
+  },
+  {
+    id: "l27-question-w-frage",
+    german: "Was möchtest du essen?",
+    english: "What would you like to eat? (W-Question)",
+    pronunciation: "Vahs MURKH-test doo ES-sen",
+    audioText: "Was möchtest du essen? Was auf Position eins, möchtest auf Position zwei, du, und essen am Ende.",
+    category: "questions",
+    badge: "W-Question 🍽️",
+    icon: "❓ 🍲",
+    kenyanAnalogy: "At a restaurant with a buddy: Question word 'Was' takes spot #1, 'möchtest' hugs spot #2, and the action 'essen' goes to the finish line!",
+    memoryTrick: "Was (1) + möchtest (2) + du (3) + essen (End)?"
+  },
+  {
+    id: "l27-question-ja-nein",
+    german: "Möchtest du ins Kino gehen?",
+    english: "Would you like to go to the cinema? (Yes/No Question)",
+    pronunciation: "MURKH-test doo ins KEE-noh GAY-en",
+    audioText: "Möchtest du ins Kino gehen? Ja-Nein-Frage: Möchtest springt auf Position eins!",
+    category: "questions",
+    badge: "Cinema Invite 🎬",
+    icon: "🍿 🎟️",
+    kenyanAnalogy: "Inviting a friend out! In Yes/No questions, the helper verb 'Möchtest' jumps to Position 1 like a gatekeeper, while the action 'gehen' stays locked at the very end.",
+    memoryTrick: "Möchtest (Pos 1) + du + ins Kino + gehen (End)?"
+  },
+  {
+    id: "l27-usage-direct-noun",
+    german: "Ich möchte eine Cola.",
+    english: "I would like a cola. (Usage 1: Direct Noun without 2nd verb)",
+    pronunciation: "Ikh MURKH-teh EYE-neh KOH-lah",
+    audioText: "Ich möchte eine Cola. Die Cola ist feminin, also eine Cola im Akkusativ.",
+    category: "usage",
+    badge: "Quick Order 🥤",
+    icon: "🥫 🧊",
+    kenyanAnalogy: "Supermarket or kiosk shortcut! You don't even need to say 'trinken' (to drink). Simply say 'Ich möchte eine Cola' and you're good to go!",
+    memoryTrick: "die Cola -> eine Cola (Akkusativ direct object)!"
+  },
+  {
+    id: "l27-usage-wish-career",
+    german: "Ich möchte Schauspieler werden. (Wunsch)",
+    english: "I would like to be / become an actor. (Usage 2: A Wish / Ambition)",
+    pronunciation: "Ikh MURKH-teh SHOU-shpee-ler VAIR-den",
+    audioText: "Wunsch: Ich möchte Schauspieler werden. Der Schauspieler ist maskulin.",
+    category: "usage",
+    badge: "Big Dream 🎭",
+    icon: "🎭 🌟",
+    kenyanAnalogy: "Expressing your life dreams! 'der Schauspieler' (actor) + 'werden' (to become). In German, job titles here don't need 'ein'!",
+    memoryTrick: "Ich möchte + [Job] + werden!"
+  },
+  {
+    id: "l27-usage-order-food",
+    german: "Ich möchte eine Pizza (bestellen). (etwas bestellen)",
+    english: "I would like to order a pizza. (Usage 3: Ordering Food)",
+    pronunciation: "Ikh MURKH-teh EYE-neh PEET-tsah beh-SHTEL-len",
+    audioText: "Etwas bestellen: Ich möchte eine Pizza bestellen. Die Pizza ist feminin.",
+    category: "usage",
+    badge: "Menu Order 🍕",
+    icon: "🍕 🛎️",
+    kenyanAnalogy: "Calling delivery or sitting at an Italian restaurant: 'die Pizza' is feminine, so you say 'eine Pizza', with or without 'bestellen' at the end.",
+    memoryTrick: "die Pizza -> eine Pizza bestellen!"
+  },
+  {
+    id: "l27-usage-shopping",
+    german: "Ich möchte Äpfel kaufen. (etwas einkaufen)",
+    english: "I would like to buy apples. (Usage 4: Shopping)",
+    pronunciation: "Ikh MURKH-teh EP-fel KOU-fen",
+    audioText: "Etwas einkaufen: Ich möchte Äpfel kaufen. Die Äpfel ist der Plural.",
+    category: "usage",
+    badge: "Market Shopping 🍎",
+    icon: "🍏 🛒",
+    kenyanAnalogy: "At the open-air fruit market! 'die Äpfel' is plural (no article needed for general apples) + 'kaufen' (to buy) at the end.",
+    memoryTrick: "Ich möchte + Äpfel + kaufen!"
+  },
+  {
+    id: "l27-conjugation-table",
+    german: "Die Konjugation: ich möchte, du möchtest, er/sie/es möchte!",
+    english: "Full Conjugation: Note the Twin Rule (ich & er/sie/es are identical!)",
+    pronunciation: "ikh MURKH-teh, doo MURKH-test, air MURKH-teh, veer MURKH-ten, eer MURKH-tet, zee MURKH-ten",
+    audioText: "Die Konjugation von möchten: ich möchte, du möchtest, Sie möchten, er sie es möchte. Plural: wir möchten, ihr möchtet, Sie möchten, sie möchten.",
+    category: "conjugation",
+    badge: "Twin Rule Alert ⚠️",
+    icon: "📋 👥",
+    kenyanAnalogy: "The Modal Twin Secret! Unlike regular verbs where 'er' takes -t, with modal verbs like 'möchten', 'er/sie/es' is the IDENTICAL TWIN of 'ich': 'ich möchte' and 'er möchte'!",
+    memoryTrick: "ich möchte = er/sie/es möchte! du takes -st (möchtest), ihr takes -t (möchtet)!"
+  },
+  {
+    id: "l27-exercises-summary",
+    german: "Die 5 Übungen aus den Folien 12 bis 16",
+    english: "Classroom Exercises: USA, Hamburger, Mitkommen, Pilot, Bestellen",
+    pronunciation: "veer MURKH-ten in dee oo-es-ah FLEE-gen",
+    audioText: "Die Übungen: 1. Wir möchten in die USA fliegen. 2. Er möchte einen Hamburger. 3. Möchtet ihr mitkommen? 4. Ich möchte Pilot werden. 5. Möchten Sie etwas bestellen?",
+    category: "exercises",
+    badge: "5 Slide Drills 🎯",
+    icon: "✈️ 🍔 🙋‍♂️ 👨‍✈️ 📋",
+    kenyanAnalogy: "All 5 exact exercises from the classroom chalkboard: flying to America, ordering a burger, inviting friends, becoming a pilot, and waiter taking an order!",
+    memoryTrick: "Wir möchten, Er möchte, Möchtet ihr, Ich möchte, Möchten Sie!"
+  }
+];
+
+export const LESSON_27_SCENARIOS = [
+  {
+    scenario: "In Slide 3, a student says: 'I would like to be a doctor.' Where does the main action verb 'werden' (to become) go?",
+    hint: "In German with modal verbs (möchten), the second verb in infinitive always sits at the very finish line!",
+    options: [
+      { text: "Ich möchte Ärztin werden.", correct: true, explain: "Wunderbar! 'möchte' sits at Position 2, and 'werden' goes to the very end of the sentence (Satzklammer)!" },
+      { text: "Ich möchte werden Ärztin.", correct: false, explain: "In English we say 'would like to be a doctor', but in German the action verb 'werden' must go to the very end!" },
+      { text: "Ich werden möchte Ärztin.", correct: false, explain: "The conjugated verb 'möchte' must always take Position 2 in normal statements!" }
+    ]
+  },
+  {
+    scenario: "In Slide 13 (Übung 2), a boy is at a fast-food restaurant: 'He would like a hamburger.' Which form of 'möchten' is correct for 'er'?",
+    hint: "Remember the Modal Twin Rule: 3rd person singular (er/sie/es) is identical to 'ich'!",
+    options: [
+      { text: "Er möchte einen Hamburger.", correct: true, explain: "Genau! 'ich möchte' and 'er möchte' are identical twins! Notice also masculine Akkusativ: 'einen Hamburger'!" },
+      { text: "Er möchtet einen Hamburger.", correct: false, explain: "'möchtet' is only for 'ihr' (you all)!" },
+      { text: "Er möchten einen Hamburger.", correct: false, explain: "'möchten' is for 'wir', 'sie', and formal 'Sie'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 5, you want to ask a friend: 'What would you like to eat?' (W-Frage). Which word order is correct?",
+    hint: "Question word (Was) + modal verb (möchtest) + subject (du) + infinitive at the end (essen)!",
+    options: [
+      { text: "Was möchtest du essen?", correct: true, explain: "Perfection! Was (1) + möchtest (2) + du (Subject) + essen (Infinitive at the end)!" },
+      { text: "Was du möchtest essen?", correct: false, explain: "Verb must sit in Position 2: 'Was möchtest du...' not 'Was du möchtest'!" },
+      { text: "Möchtest du was essen?", correct: false, explain: "While conversational, the slide's standard W-question begins with 'Was möchtest du essen?'" }
+    ]
+  },
+  {
+    scenario: "In Slide 14 (Übung 3), you want to invite a group of friends: 'Would you all like to come along?' Which question is correct?",
+    hint: "For 'ihr' (you all), the modal verb ending is '-et' -> 'Möchtet ihr...'.",
+    options: [
+      { text: "Möchtet ihr mitkommen?", correct: true, explain: "Ausgezeichnet! For 'ihr', the ending is '-et' -> 'Möchtet ihr mitkommen?'" },
+      { text: "Möchten ihr mitkommen?", correct: false, explain: "'möchten' is for 'wir' or 'Sie', not 'ihr'!" },
+      { text: "Möchtest ihr mitkommen?", correct: false, explain: "'möchtest' is only for singular 'du'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 6 & 8, you are at a cafe and want a cola. Do you always need a second verb like 'trinken' or 'bestellen'?",
+    hint: "Look at Slide 6: 'Ich möchte eine Cola.'",
+    options: [
+      { text: "No, you can simply use 'Ich möchte eine Cola' with just the noun as a direct object!", correct: true, explain: "Exactly! In German, 'Ich möchte + [Noun]' is a complete, natural, and highly polite order!" },
+      { text: "Yes, you are strictly forbidden from omitting 'trinken'", correct: false, explain: "Germans use 'Ich möchte [noun]' every single day when ordering food and drinks!" },
+      { text: "No, but you must use the nominative 'eine Cola' instead of accusative", correct: false, explain: "'eine Cola' is in Akkusativ, but feminine 'die/eine' happens to stay identical to nominative!" }
+    ]
+  },
+  {
+    scenario: "In Slide 16 (Übung 5), a waiter politely approaches a formal customer: 'Would you like to order something?' Which sentence is correct?",
+    hint: "Formal 'Sie' uses the infinitive form 'möchten' capitalized at Position 1.",
+    options: [
+      { text: "Möchten Sie etwas bestellen?", correct: true, explain: "Brilliant! 'Möchten' for formal 'Sie' at Position 1, and 'bestellen' at the end!" },
+      { text: "Möchtet Sie etwas bestellen?", correct: false, explain: "'Möchtet' is only for informal plural 'ihr'!" },
+      { text: "Möchtest Sie etwas bestellen?", correct: false, explain: "'Möchtest' is only for informal singular 'du'!" }
+    ]
+  }
+];
+
+
 
 
