@@ -48,6 +48,7 @@ export default function Header({
     if (currentLesson === 34) msg = "Possessivartikel im Dativ: Ich gebe meinem Mann einen Kuss, meiner Tochter, meinem Baby, und meinen Kindern! Martin kauft seinem Bruder eine Schokolade, und wir kaufen unserem Vater ein Geschenk.";
     if (currentLesson === 35) msg = "Personalpronomen im Dativ: Gibst du mir ein Geschenk? Ich gebe dir ein Geschenk. Wie geht es Ihnen? Das Essen schmeckt mir sehr gut, und ich helfe dir gerne!";
     if (currentLesson === 36) msg = "Trennbare Verben: Ich stehe um 6 Uhr auf. Wann stehst du auf? Stehst du um 6 Uhr auf? Und mit Modalverb: Wann willst du aufstehen?";
+    if (currentLesson === 37) msg = "Der Tagesablauf: Der Wecker klingelt um 6 Uhr. Ich stehe um halb sieben auf. Um 7 Uhr dusche ich und ziehe mich an. Um 13 Uhr esse ich zu Mittag. Und um halb elf gehe ich ins Bett und schlafe ein.";
     speakGerman(msg, isSlowMode);
   };
 
@@ -342,6 +343,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson37NavItems = [
+    { id: 'cards', label: '📖 Lesson 37 Cards', sub: 'Tagesablauf & Zeitabläufe' },
+    { id: 'studio37', label: '🌅 Daily Routine Studio', sub: '24-Hour Day, Inversion & Blocks' },
+    { id: 'game37', label: '🎮 Daily Routine Quiz', sub: 'Routine & Inversion Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -378,6 +387,7 @@ export default function Header({
   if (currentLesson === 34) navItems = lesson34NavItems;
   if (currentLesson === 35) navItems = lesson35NavItems;
   if (currentLesson === 36) navItems = lesson36NavItems;
+  if (currentLesson === 37) navItems = lesson37NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -416,6 +426,7 @@ export default function Header({
     { num: 34, label: "🎁 34: Possessiv im Dativ", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
     { num: 35, label: "🎁 35: Pronomen im Dativ", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 36, label: "🚀 36: Trennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 37, label: "🌅 37: Der Tagesablauf", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (

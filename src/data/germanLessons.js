@@ -8625,6 +8625,223 @@ export const LESSON_36_SCENARIOS = [
   }
 ];
 
+export const LESSON_37_ITEMS = [
+  {
+    id: "l37-inversion-rule",
+    german: "Die Inversions-Regel: Um 6 Uhr stehe ich auf. / Dann gehe ich joggen. / Danach esse ich zu Mittag.",
+    english: "The Golden Time Inversion Rule: At 6 o'clock I get up. / Then I go jogging. / After that I eat lunch.",
+    pronunciation: "Dee in-vehr-ZYOHNS RAY-gel. Oom ZEKHS OOR SHTAY-heh ihsh OWF. DAHN GAY-heh ihsh. DAH-nahkh EH-seh ihsh.",
+    audioText: "Die Inversions-Regel: Wenn die Zeit oder Dann oder Danach am Anfang steht, bleibt das Verb auf Position zwei und das Subjekt rutscht auf Position drei: Um 6 Uhr stehe ich auf. Dann gehe ich joggen. Danach esse ich.",
+    category: "grammar-rule",
+    badge: "The Flip Rule (Inversion) 🔄",
+    icon: "🔄",
+    kenyanAnalogy: "In German, the verb is an immovable anchor at Position 2! If you put a time starter like 'Um 7 Uhr' or a connector like 'Dann' (Then) or 'Danach' (After that) in Position 1, 'ich' (I) flips to Position 3 right after the verb: 'Dann [gehe] [ich]'!",
+    memoryTrick: "Position 1: Time/Dann ➔ Position 2: Verb ➔ Position 3: ich!"
+  },
+  {
+    id: "l37-wecker",
+    german: "Der Wecker klingelt um 6 Uhr.",
+    english: "The alarm clock rings at 6 a.m.",
+    pronunciation: "Dayr VEK-er KLING-elt oom ZEKHS OOR.",
+    audioText: "Der Wecker klingelt um 6 Uhr.",
+    category: "morning",
+    badge: "06:00 • Alarm Clock ⏰",
+    icon: "⏰",
+    kenyanAnalogy: "The morning rooster crowing or phone alarm buzzing at 6:00 sharp! 'Der Wecker' (alarm clock) 'klingelt' (rings/chimes).",
+    memoryTrick: "Wecker (waker) + klingelt (rings) = Alarm rings!"
+  },
+  {
+    id: "l37-aufstehen",
+    german: "Ich stehe um halb sieben auf.",
+    english: "I get up at 6:30 a.m.",
+    pronunciation: "Ihsh SHTAY-heh oom HAHLP ZEE-ben OWF.",
+    audioText: "Ich stehe um halb sieben auf. Wache ich auf oder stehe ich auf?",
+    category: "morning",
+    badge: "06:30 • Get Up 🛏️",
+    icon: "🛏️",
+    kenyanAnalogy: "Remember German time from Lesson 22: 'halb sieben' is halfway to 7 = 6:30! 'aufstehen' separates into 'stehe ... auf'.",
+    memoryTrick: "halb sieben = 6:30! 'Ich stehe um halb sieben auf.'"
+  },
+  {
+    id: "l37-zaehne-putzen",
+    german: "Ich gehe ins Badezimmer und putze mir die Zähne.",
+    english: "I go to the bathroom and brush my teeth.",
+    pronunciation: "Ihsh GAY-heh ins BAH-deh-tsim-er oont POOT-seh meer dee TSAY-neh.",
+    audioText: "Ich gehe ins Badezimmer und putze mir die Zähne.",
+    category: "morning",
+    badge: "Bathroom & Teeth 🪥",
+    icon: "🪥",
+    kenyanAnalogy: "Morning hygiene routine: 'putzen' = clean/polish, 'mir die Zähne' = my teeth (using Dative 'mir')!",
+    memoryTrick: "Zähne putzen = brush teeth! 'Ich putze mir die Zähne.'"
+  },
+  {
+    id: "l37-joggen",
+    german: "Dann gehe ich eine halbe Stunde joggen.",
+    english: "Then I go jogging for half an hour.",
+    pronunciation: "DAHN GAY-heh ihsh EYE-neh HAHL-beh SHTOON-deh JOG-gen.",
+    audioText: "Dann gehe ich eine halbe Stunde joggen. Oder gehe ich spazieren?",
+    category: "morning",
+    badge: "Morning Jog 🏃‍♂️",
+    icon: "🏃‍♂️",
+    kenyanAnalogy: "A quick 30-minute morning run before the day heats up! Notice: 'Dann' starts the sentence, so the verb 'gehe' is at Position 2 and 'ich' is at Position 3!",
+    memoryTrick: "eine halbe Stunde = half an hour (30 min)!"
+  },
+  {
+    id: "l37-duschen-anziehen",
+    german: "Um 7 Uhr dusche ich und ziehe mich an. / Ich wasche mich und ziehe mich an.",
+    english: "At 7 a.m. I shower and get dressed. / I wash myself and get dressed.",
+    pronunciation: "Oom ZEE-ben OOR DOO-sheh ihsh oont TSEE-eh mish AHN.",
+    audioText: "Um 7 Uhr dusche ich und ziehe mich an. Ich wasche mich und ziehe mich an.",
+    category: "morning",
+    badge: "07:00 • Shower & Dress 🚿",
+    icon: "🚿",
+    kenyanAnalogy: "Taking a refreshing shower and putting on your work or school clothes! 'anziehen' splits into 'ziehe mich an'.",
+    memoryTrick: "duschen (shower) + anziehen (dress up)!"
+  },
+  {
+    id: "l37-fruehstueck",
+    german: "Ich bereite das Frühstück vor. Ich frühstücke, trinke einen Saft und lese die Zeitung.",
+    english: "I prepare breakfast. I eat breakfast, drink a juice, and read the newspaper.",
+    pronunciation: "Ihsh beh-RY-teh dahs FREO-shtook FOR. Ihsh FREO-shtoo-keh, TRING-keh EYE-nen ZAHFT oont LAY-zeh dee TSY-toong.",
+    audioText: "Ich bereite das Frühstück vor. Ich frühstücke und trinke einen Saft. Ich frühstücke und lese die Zeitung.",
+    category: "morning",
+    badge: "Breakfast & News 🥐",
+    icon: "🥐",
+    kenyanAnalogy: "Brewing tea or juice and making toast! 'vorbereiten' (to prepare) splits into 'bereite ... vor'. 'frühstücken' = to eat breakfast.",
+    memoryTrick: "Frühstück (early piece) = breakfast! 'Ich frühstücke.'"
+  },
+  {
+    id: "l37-weg-arbeit",
+    german: "Um 7.45 Uhr laufe ich zur Uni / zur Schule. / Um 7.45 Uhr fahre ich mit dem Bus / mit der Bahn zur Arbeit.",
+    english: "At 7:45 a.m. I walk to uni/school. / At 7:45 a.m. I travel by bus/tram to work.",
+    pronunciation: "Oom ZEE-ben FOONF-oont-VEER-tsish OOR LOW-feh ihsh tsoor OO-nee. FAH-reh ihsh mit daym BOOS / mit dayr BAHN tsoor AHR-bayt.",
+    audioText: "Um 7.45 Uhr laufe ich zur Uni oder zur Schule. Um 7.45 Uhr fahre ich mit dem Bus oder mit der Bahn zur Arbeit.",
+    category: "commute",
+    badge: "07:45 • Commute 🚌",
+    icon: "🚌",
+    kenyanAnalogy: "Catching the morning matatu or bus! 'mit dem Bus' (Dative masculine) and 'mit der Bahn' (Dative feminine). 'laufen' = walk/run, 'fahren' = drive/ride.",
+    memoryTrick: "mit + Dativ: mit dem Bus, mit der Bahn, mit dem Auto!"
+  },
+  {
+    id: "l37-anfangen-arbeit",
+    german: "Der Unterricht fängt um 8.30 Uhr an. / Um 8.30 Uhr fange ich mit der Arbeit an.",
+    english: "Class starts at 8:30 a.m. / At 8:30 a.m. I start work.",
+    pronunciation: "Dayr OON-ter-risht FENGT oom AHKHT OOR DRY-sish AHN. Oom AHKHT OOR DRY-sish FAHNG-eh ihsh mit dayr AHR-bayt AHN.",
+    audioText: "Der Unterricht fängt um 8.30 Uhr an. Um 8.30 Uhr fange ich mit der Arbeit an.",
+    category: "work-study",
+    badge: "08:30 • Work Kickoff 💼",
+    icon: "💼",
+    kenyanAnalogy: "Clocking in at the office or sitting at your desk for lesson 1! 'anfangen' separates: 'fängt ... an' or 'fange ich ... an'.",
+    memoryTrick: "anfangen mit + Dativ: 'Ich fange mit der Arbeit an.'"
+  },
+  {
+    id: "l37-pause-mittag",
+    german: "Danach mache ich eine kleine Pause und esse einen Apfel / eine Banane. Um 13 Uhr ist Mittagspause. Dann esse ich zu Mittag.",
+    english: "After that I take a small break and eat an apple/banana. At 1 p.m. is lunch break. Then I eat lunch.",
+    pronunciation: "DAH-nahkh MAH-kheh ihsh EYE-neh KLY-neh POW-zeh. Oom DRY-tsayn OOR ist MIT-tahks-pow-zeh. DAHN EH-seh ihsh tsoo MIT-tahk.",
+    audioText: "Danach mache ich eine kleine Pause und esse einen Apfel oder eine Banane. Um 13 Uhr ist Mittagspause. Dann esse ich zu Mittag.",
+    category: "midday",
+    badge: "13:00 • Lunch Break 🥗",
+    icon: "🥗",
+    kenyanAnalogy: "Heading to the cafeteria or canteen for lunch at 1:00 PM! In German: 'zu Mittag essen' = to eat lunch.",
+    memoryTrick: "Mittagspause = midday break! 'Ich esse zu Mittag.'"
+  },
+  {
+    id: "l37-nachmittag",
+    german: "Dann beginnt der Unterricht wieder um 14 Uhr. Um 16 Uhr mache ich eine Kaffeepause / fahre ich nach Hause zurück / mache ich meine Hausaufgaben.",
+    english: "Then class begins again at 2 p.m. At 4 p.m. I take a coffee break / drive back home / do my homework.",
+    pronunciation: "DAHN beh-GINNT dayr OON-ter-risht VEE-der oom FEER-tsayn OOR. Oom ZEKH-tsayn OOR MAH-kheh ihsh EYE-neh KAHF-fay-pow-zeh.",
+    audioText: "Dann beginnt der Unterricht wieder um 14 Uhr. Dann beginne ich wieder um 14 Uhr mit der Arbeit. Um 16 Uhr mache ich eine Kaffeepause. Um 16 Uhr fahre ich nach Hause zurück. Um 16 Uhr mache ich meine Hausaufgaben.",
+    category: "afternoon",
+    badge: "14:00–16:00 • Afternoon & Coffee ☕",
+    icon: "☕",
+    kenyanAnalogy: "The famous German 4:00 PM 'Kaffee und Kuchen' break! Or packing your bag to travel home ('nach Hause zurückfahren').",
+    memoryTrick: "zurückfahren (drive back) = 'Ich fahre nach Hause zurück!'"
+  },
+  {
+    id: "l37-abend",
+    german: "Um 18 Uhr treffe ich meine Freunde. Um 19 Uhr bereite ich das Abendessen zu. Um 20 Uhr esse ich zu Abend.",
+    english: "At 6 p.m. I meet my friends. At 7 p.m. I prepare dinner. At 8 p.m. I eat dinner.",
+    pronunciation: "Oom AHKHT-tsayn OOR TREF-feh ihsh MY-neh FROYND-eh. Oom NOYN-tsayn OOR beh-RY-teh ihsh dahs AH-bent-ehs-sen TSOO. Oom TSVAHN-tsish OOR EH-seh ihsh tsoo AH-bent.",
+    audioText: "Um 18 Uhr treffe ich meine Freunde. Um 19 Uhr bereite ich das Abendessen zu. Um 20 Uhr esse ich zu Abend.",
+    category: "evening",
+    badge: "18:00–20:00 • Friends & Dinner 🍲",
+    icon: "🍲",
+    kenyanAnalogy: "Chilling with friends after work, preparing a hearty evening meal ('zubereiten'), and sitting down to dinner ('zu Abend essen').",
+    memoryTrick: "zubereiten (prepare meal) + zu Abend essen (eat dinner)!"
+  },
+  {
+    id: "l37-nacht-bett",
+    german: "Danach lese ich ein Buch, sehe fern oder beantworte E-Mails. So um halb elf gehe ich ins Bett und schlafe ein.",
+    english: "After that I read a book, watch TV, or answer emails. Around 10:30 p.m. I go to bed and fall asleep.",
+    pronunciation: "DAH-nahkh LAY-zeh ihsh ayn BOOKH, ZAY-eh FERN. Zoh oom HAHLP ELF GAY-heh ihsh ins BET oont SHLAH-feh AYN.",
+    audioText: "Danach lese ich ein Buch. Danach sehe ich fern. Danach beantworte ich meine E-Mails. So um halb elf gehe ich ins Bett und schlafe ein.",
+    category: "night",
+    badge: "22:30 • Bed & Sleep 🌙",
+    icon: "🌙",
+    kenyanAnalogy: "Unwinding with a book, watching some TV ('fernsehen'), crawling under the duvet, and drifting off to sleep ('einschlafen')!",
+    memoryTrick: "einschlafen (fall asleep) = 'Ich schlafe ein!'"
+  }
+];
+
+export const LESSON_37_SCENARIOS = [
+  {
+    scenario: "In Slide 5, you want to start your sentence with 'Dann' (Then) to say 'Then I go jogging.' Which word order is correct in German?",
+    hint: "Because 'Dann' is in Position 1, the verb 'gehe' stays in Position 2, and 'ich' flips to Position 3!",
+    options: [
+      { text: "Dann gehe ich joggen.", correct: true, explain: "Wunderbar! When a sentence starts with 'Dann' or a time phrase, the verb stays at Position 2 and the subject flips to Position 3 ('Dann gehe ich joggen')!" },
+      { text: "Dann ich gehe joggen.", correct: false, explain: "In German, the verb MUST stay in Position 2! 'Dann ich gehe' puts the verb in Position 3, which is incorrect." },
+      { text: "Dann joggen gehe ich.", correct: false, explain: "The conjugated verb 'gehe' must follow 'Dann' directly in Position 2." }
+    ]
+  },
+  {
+    scenario: "In Slide 3, what does 'Ich stehe um halb sieben auf' mean in English?",
+    hint: "Remember 'halb sieben' means half an hour BEFORE 7:00.",
+    options: [
+      { text: "I get up at 6:30 a.m.", correct: true, explain: "Perfekt! 'halb sieben' in German is 6:30 (halfway to 7:00), and 'aufstehen' means to get out of bed!" },
+      { text: "I get up at 7:30 a.m.", correct: false, explain: "7:30 is 'halb acht', not 'halb sieben'!" },
+      { text: "I go to sleep at 6:30 a.m.", correct: false, explain: "'aufstehen' means get up; 'schlafen' means sleep!" }
+    ]
+  },
+  {
+    scenario: "In Slide 13, you travel to work by bus and train. What are the correct Dative forms after the preposition 'mit'?",
+    hint: "'mit dem Bus' (masculine) and 'mit der Bahn' (feminine).",
+    options: [
+      { text: "Ich fahre mit dem Bus / mit der Bahn zur Arbeit.", correct: true, explain: "Ausgezeichnet! The preposition 'mit' always takes the Dative case: 'mit dem Bus' (der ➔ dem) and 'mit der Bahn' (die ➔ der)!" },
+      { text: "Ich fahre mit den Bus / mit die Bahn zur Arbeit.", correct: false, explain: "'den' and 'die' are Akkusativ/Nominativ forms, but 'mit' demands Dativ!" },
+      { text: "Ich fahre mit der Bus / mit dem Bahn zur Arbeit.", correct: false, explain: "Bus is masculine (dem) and Bahn is feminine (der)!" }
+    ]
+  },
+  {
+    scenario: "In Slide 24, you want to say: 'At 7 p.m. I prepare the dinner.' (Verb: zubereiten). What is the correct sentence?",
+    hint: "Time in Position 1 + 'bereite' in Position 2 + 'ich' in Position 3 + 'zu' at the very end!",
+    options: [
+      { text: "Um 19 Uhr bereite ich das Abendessen zu.", correct: true, explain: "Genau! 'zubereiten' is a separable verb: 'bereite' is at Position 2, 'ich' is at Position 3, and 'zu' flies to the end!" },
+      { text: "Um 19 Uhr ich zubereite das Abendessen.", correct: false, explain: "The verb must split and take Position 2 directly after 'Um 19 Uhr'!" },
+      { text: "Um 19 Uhr bereite zu ich das Abendessen.", correct: false, explain: "The prefix 'zu' must go to the very end of the sentence!" }
+    ]
+  },
+  {
+    scenario: "In Slide 29, you are going to bed and falling asleep: 'So um halb elf gehe ich ins Bett und _____.' Which separable verb form is correct?",
+    hint: "The verb is 'einschlafen' (to fall asleep) conjugated for 'ich'.",
+    options: [
+      { text: "schlafe ein (und schlafe ein)", correct: true, explain: "Hervorragend! 'einschlafen' splits for 'ich' into 'schlafe ... ein' ('und schlafe ein')!" },
+      { text: "einschlafe", correct: false, explain: "Separable verbs must separate in standard main clauses!" },
+      { text: "schlafe aus", correct: false, explain: "'ausschlafen' means to sleep in / sleep late, whereas 'einschlafen' means to fall asleep!" }
+    ]
+  },
+  {
+    scenario: "Look at Slide 30 (Der Morgen). How do you say 'I brush my teeth' in natural German?",
+    hint: "Uses the reflexive Dative pronoun 'mir': 'Ich putze mir die Zähne.'",
+    options: [
+      { text: "Ich putze mir die Zähne.", correct: true, explain: "Brilliant! In German, you say 'Ich putze mir die Zähne' (literally: I brush to myself the teeth)!" },
+      { text: "Ich putze mich die Zähne.", correct: false, explain: "'mich' is Akkusativ, but here 'mir' (Dativ) is needed for 'to myself'!" },
+      { text: "Ich putze meine Zähne.", correct: false, explain: "While understandable, Germans naturally use the reflexive idiom: 'Ich putze mir die Zähne'." }
+    ]
+  }
+];
+
+
 
 
 
