@@ -8385,6 +8385,247 @@ export const LESSON_35_SCENARIOS = [
   }
 ];
 
+export const LESSON_36_ITEMS = [
+  {
+    id: "l36-concept",
+    german: "Trennbare Verben (Das Prinzip): Präfix + Verb ➔ Ich stehe um 6 Uhr auf.",
+    english: "Separable Verbs (The Rocket Principle): Prefix + Verb ➔ I get up at 6 o'clock.",
+    pronunciation: "TREN-bah-reh VER-ben: PRAY-fiks + VERB. Ihsh SHTAY-heh oom ZEKHS OOR OWF.",
+    audioText: "Trennbare Verben: Das Verb teilt sich. Der Verbstamm steht auf Position zwei, und das Präfix steht ganz am Ende: Ich stehe um 6 Uhr auf.",
+    category: "concept",
+    badge: "The Detachable Rocket 🚀",
+    icon: "🚀",
+    kenyanAnalogy: "Imagine a two-stage rocket! The main engine (the conjugated verb stem) stays at Position 2, while the detachable booster (the prefix like auf-, an-, ab-, ein-) launches all the way to the very end of the sentence!",
+    memoryTrick: "Verb stem at Position 2, Prefix catapulted to the very END!"
+  },
+  {
+    id: "l36-positions",
+    german: "Satzpositionen: Aussage (Pos. 2 + Ende), W-Frage (Wann + Pos. 2 + Ende), Ja-Nein-Frage (Pos. 1 + Ende), Modalverb (Modal Pos. 2 + Infinitiv am Ende)",
+    english: "Sentence Positions: Statement (Pos. 2 + End), W-Question (Pos. 2 + End), Yes/No Question (Pos. 1 + End), Modal Verb (Modal Pos. 2 + Glued Infinitive at End)",
+    pronunciation: "Zahts-poh-zee-TSYOH-nen",
+    audioText: "Satzpositionen: Ich stehe um 6 Uhr auf. Wann stehst du auf? Stehst du um 6 Uhr auf? Mit Modalverb: Wann willst du aufstehen?",
+    category: "sentence-structure",
+    badge: "The 4 Sentence Rules 📐",
+    icon: "📐",
+    kenyanAnalogy: "In statements and W-questions, the verb is at Position 2 and prefix at the end. In Yes/No questions, verb is at Position 1 and prefix at the end. With Modal verbs (willst, kannst), the modal verb takes Position 2 and the separable verb stays 100% glued together at the end!",
+    memoryTrick: "With Modal verbs, the verb stays whole at the end: Wann willst du aufstehen?"
+  },
+  {
+    id: "l36-aufstehen",
+    german: "aufstehen (steht auf): Ich stehe um 6 Uhr auf.",
+    english: "to get up / wake up: I get up at 6 o'clock.",
+    pronunciation: "OWF-shtay-en. Ihsh SHTAY-heh oom ZEKHS OOR OWF.",
+    audioText: "aufstehen: Ich stehe um 6 Uhr auf. Wann stehst du auf?",
+    category: "daily-routine",
+    badge: "aufstehen • to get up ⏰",
+    icon: "⏰",
+    kenyanAnalogy: "Kicking off the blankets in the morning! 'stehen' means to stand, 'auf' means up. Put them together: 'aufstehen' = to get out of bed!",
+    memoryTrick: "auf (up) + stehen (stand) = get up! 'Ich stehe auf.'"
+  },
+  {
+    id: "l36-losgehen",
+    german: "losgehen (geht los): Peter geht um 9 Uhr los.",
+    english: "to set off / to get going: Peter sets off at 9 o'clock.",
+    pronunciation: "LOHS-gay-en. PAY-ter GAYT oom NOYN OOR LOHS.",
+    audioText: "losgehen: Peter geht um 9 Uhr los. Es geht los!",
+    category: "movement",
+    badge: "losgehen • to set off 🚶‍♂️",
+    icon: "🚶‍♂️",
+    kenyanAnalogy: "Starting your journey or leaving the house: 'Peter geht um 9 Uhr los' (Peter sets off at 9). Also famous for starting events: 'Es geht los!' (It's starting!)",
+    memoryTrick: "los (off/away) + gehen (go) = to set off!"
+  },
+  {
+    id: "l36-mitkommen",
+    german: "mitkommen (kommt mit): Wir gehen zur Schule. Kommst du mit?",
+    english: "to come along / join: We are going to school. Are you coming along?",
+    pronunciation: "MIT-kom-en. Veer GAY-en tsoor SHOO-leh. KOMST doo MIT?",
+    audioText: "mitkommen: Wir gehen zur Schule. Kommst du mit? Ich gehe kurz raus. Kommst du mit?",
+    category: "social",
+    badge: "mitkommen • to come along 👫",
+    icon: "👫",
+    kenyanAnalogy: "Inviting a friend to tag along with you to the market or class: 'Kommst du mit?' (Are you coming along with us?)",
+    memoryTrick: "mit (with) + kommen (come) = come along!"
+  },
+  {
+    id: "l36-abholen",
+    german: "abholen (holt ab): Kannst du mich um 18 Uhr abholen?",
+    english: "to pick someone/something up: Can you pick me up at 6 p.m.?",
+    pronunciation: "AHP-hoh-len. KANST doo mish oom AHKHT-tsayn OOR AHP-hoh-len?",
+    audioText: "abholen: Kannst du mich um 18 Uhr abholen? Ich hole dich vom Bahnhof ab.",
+    category: "daily-routine",
+    badge: "abholen • to pick up 🚗",
+    icon: "🚗",
+    kenyanAnalogy: "Picking up your child from school or a friend from the bus station: 'Ich hole dich ab' (I pick you up) or 'Kannst du mich abholen?'",
+    memoryTrick: "ab + holen (fetch) = pick up / fetch from a place!"
+  },
+  {
+    id: "l36-abfahren",
+    german: "abfahren (fährt ab): Der Zug fährt um 7 Uhr ab.",
+    english: "to depart / leave (vehicle): The train leaves at 7 o'clock.",
+    pronunciation: "AHP-fah-ren. Dayr TSOOK FEHRT oom ZEE-ben OOR AHP.",
+    audioText: "abfahren: Der Zug fährt um 7 Uhr ab. Wann fährt der Bus ab?",
+    category: "travel",
+    badge: "abfahren • to depart 🚆",
+    icon: "🚆",
+    kenyanAnalogy: "A train or bus pulling out of the station. Remember the irregular vowel change: er fährt ab!",
+    memoryTrick: "ab + fahren (drive) = depart! 'Der Zug fährt um 7 Uhr ab.'"
+  },
+  {
+    id: "l36-ankommen",
+    german: "ankommen (kommt an): Der Bus kommt um 7 Uhr an.",
+    english: "to arrive: The bus arrives at 7 o'clock.",
+    pronunciation: "AHN-kom-en. Dayr BOOS KOMT oom ZEE-ben OOR AHN.",
+    audioText: "ankommen: Der Bus kommt um 7 Uhr an. Wann kommen wir an?",
+    category: "travel",
+    badge: "ankommen • to arrive 🚏",
+    icon: "🚏",
+    kenyanAnalogy: "The bus pulling into the stage or arriving at your destination: 'Der Bus kommt an!'",
+    memoryTrick: "an + kommen (come) = arrive!"
+  },
+  {
+    id: "l36-anfangen",
+    german: "anfangen (fängt an): Der Unterricht fängt um 13 Uhr an.",
+    english: "to begin / start: The class begins at 1 o'clock.",
+    pronunciation: "AHN-fang-en. Dayr OON-ter-risht FENGT oom DRY-tsayn OOR AHN.",
+    audioText: "anfangen: Der Unterricht fängt um 13 Uhr an. Wann fängt der Kurs an?",
+    category: "school-life",
+    badge: "anfangen • to begin 🎓",
+    icon: "🎓",
+    kenyanAnalogy: "When the school bell rings or the meeting kicks off: 'Der Kurs fängt um 9 Uhr an.' Notice the vowel flip: fangen ➔ er fängt!",
+    memoryTrick: "an + fangen = begin! 'Wann fängt der Kurs an?'"
+  },
+  {
+    id: "l36-einkaufen",
+    german: "einkaufen (kauft ein): Am Wochenende kaufen wir in der Stadt ein.",
+    english: "to shop / grocery shopping: On the weekend we shop in the city.",
+    pronunciation: "AYN-kow-fen. Ahm VOKH-en-en-deh KOW-fen veer in dayr SHTAHT AYN.",
+    audioText: "einkaufen: Am Wochenende kaufen wir in der Stadt ein. Ich kaufe nur schnell ein.",
+    category: "shopping",
+    badge: "einkaufen • to shop 🛒",
+    icon: "🛒",
+    kenyanAnalogy: "Doing your weekly grocery shopping or supermarket run: 'kaufen' = buy one item, 'einkaufen' = do overall shopping!",
+    memoryTrick: "ein + kaufen = go shopping! 'Ich kaufe schnell ein.'"
+  },
+  {
+    id: "l36-fernsehen",
+    german: "fernsehen (sieht fern): Peter und Maria sehen am Abend immer fern.",
+    english: "to watch TV: Peter and Maria always watch TV in the evening.",
+    pronunciation: "FERN-zay-en. PAY-ter oont mah-REE-ah ZAY-en ahm AH-bent IM-mer FERN.",
+    audioText: "fernsehen: Peter und Maria sehen am Abend immer fern. Siehst du gern fern?",
+    category: "leisure",
+    badge: "fernsehen • to watch TV 📺",
+    icon: "📺",
+    kenyanAnalogy: "Relaxing on the couch watching news or movies: 'fern' (far) + 'sehen' (see) = watching television from afar!",
+    memoryTrick: "fern (far) + sehen (see) = watch TV! 'Siehst du fern?'"
+  },
+  {
+    id: "l36-anrufen",
+    german: "anrufen (ruft an): Kannst du mich heute Abend anrufen? / Ich rufe dich später an.",
+    english: "to phone / call: Can you call me tonight? / I will call you later.",
+    pronunciation: "AHN-roo-fen. KANST doo mish HOY-teh AH-bent AHN-roo-fen? Ihsh ROO-feh dish SHPAY-ter AHN.",
+    audioText: "anrufen: Kannst du mich heute Abend anrufen? Ich rufe dich später an. Wann rufst du mich an?",
+    category: "communication",
+    badge: "anrufen • to call on phone 📞",
+    icon: "📞",
+    kenyanAnalogy: "Dialing someone's number on your phone: 'rufen' = shout/call out, 'anrufen' = call on the telephone!",
+    memoryTrick: "an + rufen = phone call! 'Ich rufe dich an.'"
+  },
+  {
+    id: "l36-einladen",
+    german: "einladen (lädt ein): Lädst du mich zu deiner Hochzeit ein?",
+    english: "to invite: Will you invite me to your wedding?",
+    pronunciation: "AYN-lah-den. LETST doo mish tsoo DY-ner HOKH-tsayt AYN?",
+    audioText: "einladen: Lädst du mich zu deiner Hochzeit ein? Ich lade meine Freunde ein.",
+    category: "social",
+    badge: "einladen • to invite 💌",
+    icon: "💌",
+    kenyanAnalogy: "Sending out wedding or party invitation cards! Note the irregular stem: du lädst ein, er lädt ein!",
+    memoryTrick: "ein + laden = invite! 'Ich lade dich ein.'"
+  },
+  {
+    id: "l36-zumachen",
+    german: "zumachen (macht zu): Mir ist kalt. Kannst du bitte das Fenster zumachen? / Mach bitte die Tür zu.",
+    english: "to close / shut: I am feeling cold. Can you please close the window? / Please close the door.",
+    pronunciation: "TSOO-mah-khen. Meer ist KALT. KANST doo BIT-teh dahs FEN-ster TSOO-mah-khen? Mahkh BIT-teh dee TEOR TSOO.",
+    audioText: "zumachen: Mir ist kalt. Kannst du bitte das Fenster zumachen? Mach bitte die Tür zu.",
+    category: "daily-routine",
+    badge: "zumachen • to close 🚪",
+    icon: "🚪",
+    kenyanAnalogy: "Closing the windows or door when it's chilly: 'zu' (closed) + 'machen' (make) = shut closed!",
+    memoryTrick: "zu + machen = close / shut! 'Mach die Tür zu!'"
+  },
+  {
+    id: "l36-alltagssaetze",
+    german: "Die 9 Alltags-Hits: mitkommen, mitbringen, anrufen, anfangen, einkaufen, abfahren, anziehen, zumachen, aufräumen",
+    english: "The 9 Everyday Life Hits: come along, bring along, call, start, shop, depart, put on clothes, close, tidy up",
+    pronunciation: "AHL-tahks-zet-seh",
+    audioText: "Die 9 Alltagssätze: 1. Ich gehe kurz raus. Kommst du mit? 2. Bringst du bitte Milch mit? 3. Ich rufe dich später an. 4. Wann fängt der Kurs an? 5. Ich kaufe nur schnell ein. 6. Wann fährt der Bus ab? 7. Ich ziehe mir eine Jacke an. 8. Mach bitte die Tür zu. 9. Ich räume schnell die Küche auf.",
+    category: "everyday-sentences",
+    badge: "Slide 19: 9 Everyday Hits 🌟",
+    icon: "🌟",
+    kenyanAnalogy: "These 9 sentences are the bread-and-butter of daily German communication from morning to evening!",
+    memoryTrick: "From waking up to tidying up: German life runs on separable verbs!"
+  }
+];
+
+export const LESSON_36_SCENARIOS = [
+  {
+    scenario: "In Slide 4, you want to tell someone: 'I get up at 6 o'clock.' (Verb: aufstehen). What is the correct sentence order?",
+    hint: "The conjugated verb 'stehe' is at Position 2, and the prefix 'auf' goes to the very end!",
+    options: [
+      { text: "Ich stehe um 6 Uhr auf.", correct: true, explain: "Wunderbar! In a statement, the conjugated verb stem 'stehe' stays at Position 2 and the prefix 'auf' flies all the way to the end!" },
+      { text: "Ich aufstehe um 6 Uhr.", correct: false, explain: "Separable verbs must split in standard statements: 'auf' belongs at the end!" },
+      { text: "Ich stehe auf um 6 Uhr.", correct: false, explain: "The prefix 'auf' must go to the very end of the sentence clause!" }
+    ]
+  },
+  {
+    scenario: "In Slide 5, you want to ask a Yes/No question: 'Do you get up at 6 o'clock?' Where does the verb go?",
+    hint: "In Yes/No questions, the verb leaps to Position 1, and the prefix stays at the end.",
+    options: [
+      { text: "Stehst du um 6 Uhr auf?", correct: true, explain: "Perfekt! In a Ja/Nein-Frage, the verb takes Position 1 ('Stehst'), followed by the subject ('du'), and the prefix 'auf' stays at the end!" },
+      { text: "Du stehst um 6 Uhr auf?", correct: false, explain: "That is structured as a statement, not a classic Yes/No question with verb in Position 1." },
+      { text: "Aufstehst du um 6 Uhr?", correct: false, explain: "The prefix never stays attached to the front in a conjugated main clause!" }
+    ]
+  },
+  {
+    scenario: "In Slide 6, you use the modal verb 'willst' (want): 'Wann willst du _____?' (When do you want to get up?). What happens to 'aufstehen'?",
+    hint: "With a modal verb at Position 2, the separable verb at the end stays GLUED together in its infinitive form!",
+    options: [
+      { text: "Wann willst du aufstehen?", correct: true, explain: "Ausgezeichnet! When a modal verb (willst, kannst, möchtest) is at Position 2, the separable verb stays completely glued in the infinitive at the end ('aufstehen')!" },
+      { text: "Wann willst du stehst auf?", correct: false, explain: "You cannot conjugate both verbs; the second verb must be an unseparated infinitive!" },
+      { text: "Wann willst du auf stehen?", correct: false, explain: "The infinitive is one single word: 'aufstehen'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 10, the train leaves at 7:00. (Verb: abfahren). Remember the vowel change (a ➔ ä). Which sentence is correct?",
+    hint: "'Der Zug' is 3rd person singular (er/der Zug). 'fahren' becomes 'fährt'.",
+    options: [
+      { text: "Der Zug fährt um 7 Uhr ab.", correct: true, explain: "Genau! 'Der Zug' takes the irregular form 'fährt', and the prefix 'ab' sits at the end ('Der Zug fährt um 7 Uhr ab')!" },
+      { text: "Der Zug fahrt um 7 Uhr ab.", correct: false, explain: "'fahren' has an irregular vowel change in 3rd person: 'er fährt' (with Umlaut ä)!" },
+      { text: "Der Zug abfährt um 7 Uhr.", correct: false, explain: "The verb must separate: 'fährt ... ab'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 22, arrange the scrambled words into a question: [ gern / siehst / fern / du ]",
+    hint: "This is a Yes/No question about watching TV (fernsehen). Verb in Position 1.",
+    options: [
+      { text: "Siehst du gern fern?", correct: true, explain: "Hervorragend! Position 1: 'Siehst', Position 2: 'du', middle: 'gern', end: 'fern' ('Siehst du gern fern?')." },
+      { text: "Du siehst gern fern?", correct: false, explain: "Classic Yes/No questions place the verb in Position 1!" },
+      { text: "Fernsiehst du gern?", correct: false, explain: "The prefix 'fern' must separate and land at the end!" }
+    ]
+  },
+  {
+    scenario: "In Slide 19, someone asks you to bring milk back when you return: 'Bringst du bitte Milch _____?' (Verb: mitbringen)",
+    hint: "The base verb is 'bringen', the prefix is...",
+    options: [
+      { text: "mit (Bringst du bitte Milch mit?)", correct: true, explain: "Brilliant! 'mitbringen' splits into 'Bringst du ... mit?' (Will you bring milk along with you?)." },
+      { text: "an", correct: false, explain: "'an' is for anrufen/anfangen, not mitbringen!" },
+      { text: "ab", correct: false, explain: "'ab' is for abfahren/abholen!" }
+    ]
+  }
+];
+
+
 
 
 

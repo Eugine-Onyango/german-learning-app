@@ -47,6 +47,7 @@ export default function Header({
     if (currentLesson === 33) msg = "Zeit-Fragewörter: Wann hast du Geburtstag? Bis wann bleibst du? Seit wann lernst du Deutsch? Ab wann machst du Urlaub? Von wann bis wann arbeitest du? Um wie viel Uhr kommst du? Wie spät ist es? Wie lange dauert der Film? Wie oft gehst du ins Kino?";
     if (currentLesson === 34) msg = "Possessivartikel im Dativ: Ich gebe meinem Mann einen Kuss, meiner Tochter, meinem Baby, und meinen Kindern! Martin kauft seinem Bruder eine Schokolade, und wir kaufen unserem Vater ein Geschenk.";
     if (currentLesson === 35) msg = "Personalpronomen im Dativ: Gibst du mir ein Geschenk? Ich gebe dir ein Geschenk. Wie geht es Ihnen? Das Essen schmeckt mir sehr gut, und ich helfe dir gerne!";
+    if (currentLesson === 36) msg = "Trennbare Verben: Ich stehe um 6 Uhr auf. Wann stehst du auf? Stehst du um 6 Uhr auf? Und mit Modalverb: Wann willst du aufstehen?";
     speakGerman(msg, isSlowMode);
   };
 
@@ -333,6 +334,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson36NavItems = [
+    { id: 'cards', label: '📖 Lesson 36 Cards', sub: 'aufstehen, anrufen, abfahren...' },
+    { id: 'studio36', label: '🚀 Separable Verbs Studio', sub: 'Rocket Slots, 15 Verbs & Puzzles' },
+    { id: 'game36', label: '🎮 Separable Verbs Quiz', sub: 'Positions & Modal Glue Game' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -368,6 +377,7 @@ export default function Header({
   if (currentLesson === 33) navItems = lesson33NavItems;
   if (currentLesson === 34) navItems = lesson34NavItems;
   if (currentLesson === 35) navItems = lesson35NavItems;
+  if (currentLesson === 36) navItems = lesson36NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -383,7 +393,7 @@ export default function Header({
     { num: 11, label: "👑 11: haben & sein", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 12, label: "🌳 12: Was ist ein Verb?", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
     { num: 13, label: "🧩 13: Regelmäßige Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 14, label: "⚡ 14: Unregelmäßige Verben", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
+    { num: 14, label: "⚡ 14: Unregelmäßige Verben", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-violet-300" },
     { num: 15, label: "💯 15: Zahlen (Teil 3)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 16, label: "🎨 16: Adjektive & Gegenteile", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
     { num: 17, label: "👥 17: Jemanden vorstellen", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
@@ -405,6 +415,7 @@ export default function Header({
     { num: 33, label: "⏰ 33: Zeit-Fragewörter", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 34, label: "🎁 34: Possessiv im Dativ", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
     { num: 35, label: "🎁 35: Pronomen im Dativ", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 36, label: "🚀 36: Trennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
   ];
 
   return (
