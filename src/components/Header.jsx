@@ -49,6 +49,7 @@ export default function Header({
     if (currentLesson === 35) msg = "Personalpronomen im Dativ: Gibst du mir ein Geschenk? Ich gebe dir ein Geschenk. Wie geht es Ihnen? Das Essen schmeckt mir sehr gut, und ich helfe dir gerne!";
     if (currentLesson === 36) msg = "Trennbare Verben: Ich stehe um 6 Uhr auf. Wann stehst du auf? Stehst du um 6 Uhr auf? Und mit Modalverb: Wann willst du aufstehen?";
     if (currentLesson === 37) msg = "Der Tagesablauf: Der Wecker klingelt um 6 Uhr. Ich stehe um halb sieben auf. Um 7 Uhr dusche ich und ziehe mich an. Um 13 Uhr esse ich zu Mittag. Und um halb elf gehe ich ins Bett und schlafe ein.";
+    if (currentLesson === 38) msg = "Der Imperativ: Komm! Kommt! Kommen Sie bitte! Haben Sie bitte Geduld! Seien Sie bitte leise! Fahr doch jetzt!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -351,6 +352,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson38NavItems = [
+    { id: 'cards', label: '📖 Lesson 38 Cards', sub: 'Commands, Requests & Rebels' },
+    { id: 'studio38', label: '📣 Imperativ Studio', sub: '3-Lane Factory, Rebels & Hits' },
+    { id: 'game38', label: '🎮 Imperativ Quiz', sub: 'Action & Command Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -388,6 +397,7 @@ export default function Header({
   if (currentLesson === 35) navItems = lesson35NavItems;
   if (currentLesson === 36) navItems = lesson36NavItems;
   if (currentLesson === 37) navItems = lesson37NavItems;
+  if (currentLesson === 38) navItems = lesson38NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -427,6 +437,7 @@ export default function Header({
     { num: 35, label: "🎁 35: Pronomen im Dativ", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 36, label: "🚀 36: Trennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 37, label: "🌅 37: Der Tagesablauf", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 38, label: "📣 38: Der Imperativ", activeClass: "bg-red-700 ring-red-400", hoverBorder: "hover:bg-red-100 border-red-300" },
   ];
 
   return (

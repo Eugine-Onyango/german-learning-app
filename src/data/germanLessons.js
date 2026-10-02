@@ -8841,6 +8841,211 @@ export const LESSON_37_SCENARIOS = [
   }
 ];
 
+export const LESSON_38_ITEMS = [
+  {
+    id: "l38-concept",
+    german: "Der Imperativ (Befehlsform): Verb auf Position 1 + Ausrufezeichen! (Komm! / Kommt! / Kommen Sie!)",
+    english: "The Imperative (Commands & Requests): Verb at Position 1 + Exclamation mark! (Come! / You all come! / Please come!)",
+    pronunciation: "Dayr im-peh-rah-TEEF. KOMM! KOMMT! KOM-men zee!",
+    audioText: "Der Imperativ: Ein Satz im Imperativ gibt einen Rat, eine Anweisung, oder drückt einen Befehl oder eine Bitte aus. Das Verb steht auf Position eins: Komm! Kommt! Kommen Sie bitte!",
+    category: "concept",
+    badge: "The Action Commander 📣",
+    icon: "📣",
+    kenyanAnalogy: "Giving direct instructions to someone: telling a child to eat their dinner, advising a friend to drink water, or politely asking an elder for patience. The verb leaps to Position 1!",
+    memoryTrick: "Imperativ = Direct Action! Verb is ALWAYS first: 'Komm!', 'Lern!', 'Helfen Sie!'"
+  },
+  {
+    id: "l38-du-rule",
+    german: "Imperativ mit 'du' (2. Person Singular): du kommst ➔ Komm! / du lernst ➔ Lern! (du und -st streichen!)",
+    english: "Imperative for 'du' (1 friend/child): Cross out 'du' and cross out '-st'! ➔ Komm! / Lern!",
+    pronunciation: "doo KOMST ➔ KOMM! doo LERNST ➔ LERN!",
+    audioText: "Imperativ mit du: Streiche du und streiche s t: du kommst wird zu Komm! du lernst wird zu Lern!",
+    category: "du-rule",
+    badge: "du ➔ Drop 'du' & '-st' ✂️",
+    icon: "✂️",
+    kenyanAnalogy: "Talking to one friend or child: Just chop off 'du' and chop off '-st'! 'du machst' ➔ 'Mach!' (Do it!), 'du gehst' ➔ 'Geh!' (Go!).",
+    memoryTrick: "du kommst ➔ Drop 'du' & '-st' = Komm!"
+  },
+  {
+    id: "l38-du-umlaut-drop",
+    german: "Die Umlaut-Falle ⚠️: du fährst ➔ Fahr! / du läufst ➔ Lauf! / du schläfst ➔ Schlaf! (Umlaut fällt weg!)",
+    english: "The Umlaut Drop Trap ⚠️: du fährst ➔ Fahr! / du läufst ➔ Lauf! (The dots disappear!)",
+    pronunciation: "doo FEHRST ➔ FAHR! doo LOWFST ➔ LOWF!",
+    audioText: "Achtung beim Imperativ mit du: Der Umlaut fällt weg! du fährst wird zu Fahr! du läufst wird zu Lauf!",
+    category: "du-rule",
+    badge: "Umlaut Drop Rule ⚠️",
+    icon: "⚠️",
+    kenyanAnalogy: "Watch out! Even though 'du fährst' has two dots (ä), in the command form the dots get blown away: 'Fahr!' (Drive!), NOT 'Fähr!'. 'Lauf!' (Run!), NOT 'Läuf!'.",
+    memoryTrick: "Imperativ hates dots: ä drops back to plain a! 'Fahr doch jetzt!'"
+  },
+  {
+    id: "l38-du-vowel-change",
+    german: "Vokalwechsel e ➔ i / ie bleibt! du gibst ➔ Gib! / du liest ➔ Lies! / du isst ➔ Iss! / du siehst ➔ Sieh!",
+    english: "Vowel shift e ➔ i / ie stays! du gibst ➔ Gib! / du liest ➔ Lies! / du isst ➔ Iss!",
+    pronunciation: "doo GIPST ➔ GIP! doo LEEST ➔ LEES! doo IST ➔ ISS!",
+    audioText: "Der Vokalwechsel von e zu i oder i e bleibt erhalten: du gibst wird zu Gib! du liest wird zu Lies! du isst wird zu Iss!",
+    category: "du-rule",
+    badge: "e ➔ i/ie Stays! 🔄",
+    icon: "🔄",
+    kenyanAnalogy: "While Umlauts drop, the strong stem vowel shift (e ➔ i/ie) stays proud! 'du gibst' ➔ 'Gib mir das Buch!', 'du liest' ➔ 'Lies laut!'.",
+    memoryTrick: "i and ie stay: Gib!, Lies!, Iss!, Sieh!"
+  },
+  {
+    id: "l38-du-breathing-e",
+    german: "Das Atem-E (Verben auf -d / -t): du arbeitest ➔ Arbeite! / du wartest ➔ Warte! / du redest ➔ Rede! / du sendest ➔ Sende!",
+    english: "The Breathing Cushion -e (Verbs ending in -d / -t): du arbeitest ➔ Arbeite! / du wartest ➔ Warte!",
+    pronunciation: "AHR-bay-teh! VAHR-teh! RAY-deh! ZEN-deh!",
+    audioText: "Verben auf d oder t behalten das e: du arbeitest wird zu Arbeite! du wartest wird zu Warte! du redest wird zu Rede! du sendest wird zu Sende!",
+    category: "du-rule",
+    badge: "Breathing -e Cushion 🌬️",
+    icon: "🌬️",
+    kenyanAnalogy: "Try saying 'Arbeit!' without choking — it is hard! German adds a soft cushion '-e' at the end of stems ending in -d or -t: 'Arbeite!', 'Warte!', 'Rede!'.",
+    memoryTrick: "Stems ending in -d or -t keep the -e: Warte!, Arbeite!, Rede!"
+  },
+  {
+    id: "l38-ihr-rule",
+    german: "Imperativ mit 'ihr' (2. Person Plural): ihr kommt ➔ Kommt! / ihr lernt ➔ Lernt! / ihr gebt ➔ Gebt! (ihr streichen, -t bleibt!)",
+    english: "Imperative for 'ihr' (You all): Drop 'ihr' and keep '-t'! ➔ Kommt! / Lernt! / Gebt!",
+    pronunciation: "eer KOMT ➔ KOMMT! eer LERNT ➔ LERNT! eer GAYPT ➔ GAYPT!",
+    audioText: "Imperativ mit ihr: Streiche ihr und behalte das t: ihr kommt wird zu Kommt! ihr lernt wird zu Lernt! ihr gebt wird zu Gebt! ihr fahrt wird zu Fahrt!",
+    category: "ihr-rule",
+    badge: "ihr ➔ Drop 'ihr', Keep '-t' 👥",
+    icon: "👥",
+    kenyanAnalogy: "Talking to a group of friends, classmates, or children: Just delete the word 'ihr' and shout the verb with its '-t': 'Kommt!' (Come on guys!), 'Macht die Hausaufgaben!' (Do your homework!).",
+    memoryTrick: "ihr kommt ➔ Drop 'ihr' = Kommt!"
+  },
+  {
+    id: "l38-sie-rule",
+    german: "Imperativ mit 'Sie' (Höflichkeitsform): Kommen Sie! / Lernen Sie! / Geben Sie! / Fahren Sie bitte!",
+    english: "Imperative for formal 'Sie': Invert Verb + Sie! ➔ Kommen Sie! / Fahren Sie bitte!",
+    pronunciation: "KOM-men zee! LERN-en zee! GAY-ben zee! FAH-ren zee BIT-teh!",
+    audioText: "Imperativ mit Sie: Das Verb steht auf Position eins, gefolgt von Sie: Kommen Sie bitte! Haben Sie Geduld! Trinken Sie mehr Wasser!",
+    category: "sie-rule",
+    badge: "Formal Sie ➔ Invert Verb & Sie 👔",
+    icon: "👔",
+    kenyanAnalogy: "Speaking politely to a customer, elder, doctor, or boss: Put the full infinitive verb first and follow with 'Sie': 'Kommen Sie bitte rein!' (Please come inside!), 'Haben Sie bitte Geduld!' (Please have patience!).",
+    memoryTrick: "Formal Imperativ: Verb + Sie + bitte! 'Kommen Sie bitte!'"
+  },
+  {
+    id: "l38-sein",
+    german: "Das königliche Ausnahme-Verb 'sein': du bist ➔ Sei! / ihr seid ➔ Seid! / Sie sind ➔ Seien Sie!",
+    english: "The Royal Rebel 'sein' (to be): du ➔ Sei! / ihr ➔ Seid! / Sie ➔ Seien Sie!",
+    pronunciation: "ZY! ZYT! ZY-en zee!",
+    audioText: "Besondere Form von sein: du bist wird zu Sei leise! ihr seid wird zu Seid leise! Sie sind wird zu Seien Sie bitte leise!",
+    category: "special-verbs",
+    badge: "sein ➔ Sei! / Seid! / Seien Sie! 👑",
+    icon: "👑",
+    kenyanAnalogy: "The verb 'sein' (to be) is a special superhero! To 1 friend: 'Sei leise!' (Be quiet!) or 'Sei froh!' (Be glad!). To a group: 'Seid leise!'. To an elder: 'Seien Sie bitte leise!'.",
+    memoryTrick: "sein = Sei! (du) • Seid! (ihr) • Seien Sie! (Sie)"
+  },
+  {
+    id: "l38-haben",
+    german: "Das Ausnahme-Verb 'haben': du hast ➔ Hab Geduld! / ihr habt ➔ Habt Geduld! / Sie haben ➔ Haben Sie Geduld!",
+    english: "The Special Verb 'haben' (to have): du ➔ Hab Geduld! / ihr ➔ Habt Geduld! / Sie ➔ Haben Sie Geduld!",
+    pronunciation: "HAHP geh-DOOLT! HAHPT geh-DOOLT! HAH-ben zee geh-DOOLT!",
+    audioText: "Besondere Form von haben: du hast wird zu Hab Geduld! ihr habt wird zu Habt Geduld! Sie haben wird zu Haben Sie Geduld!",
+    category: "special-verbs",
+    badge: "haben ➔ Hab! / Habt! / Haben Sie! ⏳",
+    icon: "⏳",
+    kenyanAnalogy: "Telling someone to have courage or patience: 'Hab keine Angst!' (Don't be afraid!), 'Hab Geduld!' (Have patience!), 'Haben Sie bitte Geduld!'",
+    memoryTrick: "haben = Hab! • Habt! • Haben Sie!"
+  },
+  {
+    id: "l38-werden",
+    german: "Das Ausnahme-Verb 'werden': du wirst ➔ Werde gesund! / ihr werdet ➔ Werdet gesund! / Sie werden ➔ Werden Sie gesund!",
+    english: "The Special Verb 'werden' (to become / get): du ➔ Werde gesund! (Get well soon!) / Sie ➔ Werden Sie gesund!",
+    pronunciation: "VEHR-deh geh-ZOONT! VEHR-det geh-ZOONT! VEHR-den zee geh-ZOONT!",
+    audioText: "Besondere Form von werden: du wirst wird zu Werde gesund! ihr werdet wird zu Werdet gesund! Sie werden wird zu Werden Sie gesund!",
+    category: "special-verbs",
+    badge: "werden ➔ Werde gesund! 🩹",
+    icon: "🩹",
+    kenyanAnalogy: "Wishing a sick friend or elder a speedy recovery: 'Werde schnell gesund!' (Get well soon!), 'Werden Sie gesund!'",
+    memoryTrick: "werden = Werde! • Werdet! • Werden Sie!"
+  },
+  {
+    id: "l38-separable",
+    german: "Imperativ mit trennbaren Verben: Mach auf! / Hör zu! / Steh auf! / Räum die Küche auf! / Kommen Sie mit!",
+    english: "Imperative with Separable Verbs: Prefix detached at the end! ➔ Mach auf! / Hör zu! / Steh auf!",
+    pronunciation: "MAHKH OWF! HEOR TSOO! SHTAY OWF!",
+    audioText: "Imperativ mit trennbaren Verben: Das Präfix steht am Ende: Mach das Fenster auf! Hör gut zu! Steh bitte auf!",
+    category: "separable",
+    badge: "Separable Commands 🚀",
+    icon: "🚀",
+    kenyanAnalogy: "Just like in statements, the separable prefix flies to the very end of the command: 'Mach die Tür zu!' (Close the door!), 'Hör mir zu!' (Listen to me!).",
+    memoryTrick: "Verb at start, Prefix at end: 'Mach auf!', 'Hör zu!'"
+  },
+  {
+    id: "l38-alltag-imperativ",
+    german: "Alltags-Imperative: Fahr doch jetzt! / Geh sofort nach Hause! / Bitte trinken Sie mehr Wasser! / Mach regelmäßig die Hausaufgabe!",
+    english: "Everyday Imperative Hits: Drive now! / Go home immediately! / Please drink more water! / Do your homework regularly!",
+    pronunciation: "FAHR dokh YETST! GAY zoh-FORT nahkh HOW-zeh! BIT-teh TRING-ken zee mayr VAHS-ser!",
+    audioText: "Alltags-Imperative: Fahr doch jetzt! Geh sofort nach Hause! Bitte trinken Sie mehr Wasser! Mach regelmäßig die Hausaufgabe! Seien Sie bitte leise! Haben Sie bitte Geduld!",
+    category: "everyday-sentences",
+    badge: "Slides 3–8: Everyday Hits 🌟",
+    icon: "🌟",
+    kenyanAnalogy: "The essential command and advice phrases heard every day in German schools, offices, traffic, and homes!",
+    memoryTrick: "Command (Befehl), Advice (Rat), Request (Bitte) — all use Imperativ!"
+  }
+];
+
+export const LESSON_38_SCENARIOS = [
+  {
+    scenario: "In Slide 13, you want to tell a single friend (du) to drive now (Verb: fahren). Watch out for the Umlaut trap!",
+    hint: "For 'du', drop 'du' and '-st', AND drop the two dots (Umlaut)!",
+    options: [
+      { text: "Fahr doch jetzt!", correct: true, explain: "Wunderbar! In the 'du' imperative, the Umlaut dots disappear ('du fährst' ➔ 'Fahr!'), so you say 'Fahr doch jetzt!'." },
+      { text: "Fähr doch jetzt!", correct: false, explain: "Imperative with 'du' drops the Umlaut dots: 'Fahr!', NOT 'Fähr!'." },
+      { text: "Fahrst doch jetzt!", correct: false, explain: "You must cross out the '-st' ending: 'Fahr!'." }
+    ]
+  },
+  {
+    scenario: "In Slide 4, you want to politely ask a group of adults or a stranger (Sie) to please be quiet. (Verb: sein). What is the correct form?",
+    hint: "'sein' is a special rebel for 'Sie': 'Seien Sie...' (NOT 'Sind Sie').",
+    options: [
+      { text: "Seien Sie bitte leise!", correct: true, explain: "Perfekt! The polite formal imperative of 'sein' is 'Seien Sie bitte leise!'." },
+      { text: "Sind Sie bitte leise!", correct: false, explain: "'Sind Sie' is a question ('Are you quiet?'), not an imperative command!" },
+      { text: "Sein Sie bitte leise!", correct: false, explain: "The correct formal form is 'Seien Sie', not 'Sein Sie'." }
+    ]
+  },
+  {
+    scenario: "In Slide 15, you tell your friend: 'Work hard!' (Verb: arbeiten). Because the stem ends in '-t', what happens to the ending?",
+    hint: "Stems ending in -d or -t keep the breathing cushion '-e'.",
+    options: [
+      { text: "Arbeite!", correct: true, explain: "Ausgezeichnet! Verbs ending in -d or -t (arbeiten, warten, reden, senden) keep the '-e' cushion in the 'du' imperative: 'Arbeite!' / 'Warte!'." },
+      { text: "Arbeit!", correct: false, explain: "'Arbeit' is the noun (die Arbeit). The imperative keeps the '-e': 'Arbeite!'." },
+      { text: "Arbeitst!", correct: false, explain: "'-st' must always be removed in the 'du' imperative." }
+    ]
+  },
+  {
+    scenario: "In Slide 21, you tell a group of children or friends (ihr) to learn German: (Verb: lernen). What is the correct 'ihr' imperative?",
+    hint: "For 'ihr', cross out 'ihr' and keep the '-t' ending.",
+    options: [
+      { text: "Lernt Deutsch!", correct: true, explain: "Genau! For 'ihr' (you all), you simply drop 'ihr' and keep the verb ending in '-t': 'Lernt Deutsch!'." },
+      { text: "Lernen Deutsch!", correct: false, explain: "'Lernen' is the infinitive / formal Sie form." },
+      { text: "Lern Deutsch!", correct: false, explain: "'Lern!' is for one person ('du'), whereas 'Lernt!' is for a group ('ihr')." }
+    ]
+  },
+  {
+    scenario: "In Slide 17, you tell your child to read the book and eat the apple. (Verbs: lesen, essen). What happens to the stem vowels 'e ➔ i/ie'?",
+    hint: "Vowel changes from e to i/ie ARE kept in the 'du' imperative!",
+    options: [
+      { text: "Lies das Buch und iss den Apfel!", correct: true, explain: "Hervorragend! The vowel changes 'e ➔ ie' (lesen ➔ Lies!) and 'e ➔ i' (essen ➔ Iss!) are preserved in the 'du' imperative!" },
+      { text: "Les das Buch und ess den Apfel!", correct: false, explain: "The vowel shift must be kept: 'Lies!' and 'Iss!', not 'Les' or 'Ess'." },
+      { text: "Liest das Buch und isst den Apfel!", correct: false, explain: "You must remove the '-t / -st' ending: 'Lies!' and 'Iss!'." }
+    ]
+  },
+  {
+    scenario: "In Slide 24, you want to tell someone to have patience: (Verb: haben). What is the 'du' imperative form?",
+    hint: "'du hast' becomes 'Hab...' / 'Habe...'.",
+    options: [
+      { text: "Hab Geduld! (or Habe Geduld!)", correct: true, explain: "Brilliant! The imperative of 'haben' for 'du' is 'Hab Geduld!' (or 'Habe Geduld!')." },
+      { text: "Hast Geduld!", correct: false, explain: "'-st' is dropped in the imperative: 'Hab!'." },
+      { text: "Habe du Geduld!", correct: false, explain: "'du' is never included in the imperative command." }
+    ]
+  }
+];
+
+
 
 
 

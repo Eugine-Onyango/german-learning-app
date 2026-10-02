@@ -80,6 +80,8 @@ import Lesson36SeparableVerbsStudio from './components/Lesson36SeparableVerbsStu
 import Lesson36Game from './components/Lesson36Game';
 import Lesson37DailyRoutineStudio from './components/Lesson37DailyRoutineStudio';
 import Lesson37Game from './components/Lesson37Game';
+import Lesson38ImperativStudio from './components/Lesson38ImperativStudio';
+import Lesson38Game from './components/Lesson38Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -117,11 +119,12 @@ import {
   LESSON_34_ITEMS,
   LESSON_35_ITEMS,
   LESSON_36_ITEMS,
-  LESSON_37_ITEMS
+  LESSON_37_ITEMS,
+  LESSON_38_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(37); // Default to Lesson 37 as requested, easy switch to 1-36
+  const [currentLesson, setCurrentLesson] = useState(38); // Default to Lesson 38 as requested, easy switch to 1-37
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -162,6 +165,7 @@ export default function App() {
   if (currentLesson === 35) activeItems = LESSON_35_ITEMS;
   if (currentLesson === 36) activeItems = LESSON_36_ITEMS;
   if (currentLesson === 37) activeItems = LESSON_37_ITEMS;
+  if (currentLesson === 38) activeItems = LESSON_38_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -200,7 +204,8 @@ export default function App() {
     if (currentLesson === 34) return "Lesson 34: Possessivartikel im Dativ (Possessive Articles in the Dative Case - The Beneficiary Ownership)";
     if (currentLesson === 35) return "Lesson 35: Personalpronomen im Dativ (Personal Pronouns in the Dative Case - The Gift & Help Receivers)";
     if (currentLesson === 36) return "Lesson 36: Trennbare Verben (German Separable Verbs - The Detachable Rocket Engine & Sentence Positions)";
-    return "Lesson 37: Der Tagesablauf (German Daily Routine - From Morning Alarm to Sleep & The Inversion Rule)";
+    if (currentLesson === 37) return "Lesson 37: Der Tagesablauf (German Daily Routine - From Morning Alarm to Sleep & The Inversion Rule)";
+    return "Lesson 38: Der Imperativ (German Commands, Requests & Advice - du, ihr, Sie & Rebel Verbs)";
   };
 
   const getLessonDesc = () => {
@@ -312,7 +317,10 @@ export default function App() {
     if (currentLesson === 36) {
       return "Master German separable verbs (Trennbare Verben: aufstehen, anrufen, abfahren, einkaufen, fernsehen, zumachen, einladen)! Discover the Detachable Rocket Principle, sentence positions (Pos. 2 + Satzende, Pos. 1 in Yes/No questions, Pos. 2 in W-questions), and the unseparated Modal Verb Superglue Shield (Wann willst du aufstehen?).";
     }
-    return "Master talking about your entire day in German (Der Tagesablauf: Aufstehen, Zähne putzen, Frühstücken, Pendeln, Arbeiten, Kaffeepause, Freunde treffen, Abendessen & Einschlafen)! Explore the 24-Hour Timeline Journey, the Golden Inversion Engine (Dann/Danach/Um... + Verb in Pos. 2), and the 4 Time-Block Matrix.";
+    if (currentLesson === 37) {
+      return "Master talking about your entire day in German (Der Tagesablauf: Aufstehen, Zähne putzen, Frühstücken, Pendeln, Arbeiten, Kaffeepause, Freunde treffen, Abendessen & Einschlafen)! Explore the 24-Hour Timeline Journey, the Golden Inversion Engine (Dann/Danach/Um... + Verb in Pos. 2), and the 4 Time-Block Matrix.";
+    }
+    return "Master giving commands, advice, and polite requests in German (Der Imperativ)! Explore the 3-Lane Transformation Factory (du: drop du & -st + drop Umlaut dots; ihr: drop ihr, keep -t; Sie: invert Verb & Sie), the 3 Royal Rebels (sein -> Sei/Seien Sie, haben -> Hab, werden -> Werde), and everyday hit phrases.";
   };
 
   return (
@@ -682,6 +690,15 @@ export default function App() {
 
         {currentLesson === 37 && activeTab === 'game37' && (
           <Lesson37Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 38 Specific Modules */}
+        {currentLesson === 38 && activeTab === 'studio38' && (
+          <Lesson38ImperativStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 38 && activeTab === 'game38' && (
+          <Lesson38Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
