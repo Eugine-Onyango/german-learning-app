@@ -74,6 +74,8 @@ import Lesson33TimeQuestionsStudio from './components/Lesson33TimeQuestionsStudi
 import Lesson33Game from './components/Lesson33Game';
 import Lesson34PossessiveDativStudio from './components/Lesson34PossessiveDativStudio';
 import Lesson34Game from './components/Lesson34Game';
+import Lesson35DativPronounStudio from './components/Lesson35DativPronounStudio';
+import Lesson35Game from './components/Lesson35Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -108,11 +110,12 @@ import {
   LESSON_31_ITEMS,
   LESSON_32_ITEMS,
   LESSON_33_ITEMS,
-  LESSON_34_ITEMS
+  LESSON_34_ITEMS,
+  LESSON_35_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(34); // Default to Lesson 34 as requested, easy switch to 1-33
+  const [currentLesson, setCurrentLesson] = useState(35); // Default to Lesson 35 as requested, easy switch to 1-34
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -150,6 +153,7 @@ export default function App() {
   if (currentLesson === 32) activeItems = LESSON_32_ITEMS;
   if (currentLesson === 33) activeItems = LESSON_33_ITEMS;
   if (currentLesson === 34) activeItems = LESSON_34_ITEMS;
+  if (currentLesson === 35) activeItems = LESSON_35_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -185,7 +189,8 @@ export default function App() {
     if (currentLesson === 31) return "Lesson 31: Artikel im Dativ (Definite, Indefinite & Negative Articles in the Dative Case - The Gift Receiver)";
     if (currentLesson === 32) return "Lesson 32: Ordinalzahlen (Ordinal Numbers - Dates, Birthdays, Rankings & The 4 Rebels)";
     if (currentLesson === 33) return "Lesson 33: Zeit - Fragewörter (Questions Relating to Time - The 9 Time Keys & Prepositions)";
-    return "Lesson 34: Possessivartikel im Dativ (Possessive Articles in the Dative Case - The Beneficiary Ownership)";
+    if (currentLesson === 34) return "Lesson 34: Possessivartikel im Dativ (Possessive Articles in the Dative Case - The Beneficiary Ownership)";
+    return "Lesson 35: Personalpronomen im Dativ (Personal Pronouns in the Dative Case - The Gift & Help Receivers)";
   };
 
   const getLessonDesc = () => {
@@ -288,7 +293,10 @@ export default function App() {
     if (currentLesson === 33) {
       return "Master how to ask and answer all 9 German time questions (Wann, Bis wann, Seit wann, Ab wann, Von wann bis wann, Um wie viel Uhr, Wie spät, Wie lange, Wie oft)! Explore the preposition trio (um, am, im), ongoing past vs. future kickoff (seit vs. ab), duration with 'dauern', and the complete 100% to 0% frequency ladder.";
     }
-    return "Master German possessive articles in the Dative case (meinem, meiner, meinem, meinen + n)! Explore 4 character story journeys (Petra giving kisses, Martin buying chocolate, Maria bringing meals, Lukas & Kathrin buying gifts), the Master Slide 23 matrix, sentence anatomy (Nom + Verb + Dativ + Akkusativ), and the Plural +n rule.";
+    if (currentLesson === 34) {
+      return "Master German possessive articles in the Dative case (meinem, meiner, meinem, meinen + n)! Explore 4 character story journeys (Petra giving kisses, Martin buying chocolate, Maria bringing meals, Lukas & Kathrin buying gifts), the Master Slide 23 matrix, sentence anatomy (Nom + Verb + Dativ + Akkusativ), and the Plural +n rule.";
+    }
+    return "Master German personal pronouns in the Dative case (mir, dir, ihm, ihr, ihm, uns, euch, Ihnen, ihnen)! Explore the 10 Character Story Cards, the Nominativ vs. Akkusativ vs. Dativ Master Matrix, and the 10 Everyday Hit Sentences with Dative verbs (schmecken, helfen, gratulieren, gehören, gefallen, danken, antworten).";
   };
 
   return (
@@ -631,6 +639,15 @@ export default function App() {
 
         {currentLesson === 34 && activeTab === 'game34' && (
           <Lesson34Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 35 Specific Modules */}
+        {currentLesson === 35 && activeTab === 'studio35' && (
+          <Lesson35DativPronounStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 35 && activeTab === 'game35' && (
+          <Lesson35Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

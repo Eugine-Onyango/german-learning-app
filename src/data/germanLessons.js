@@ -8181,6 +8181,211 @@ export const LESSON_34_SCENARIOS = [
   }
 ];
 
+export const LESSON_35_ITEMS = [
+  {
+    id: "l35-concept-overview",
+    german: "Personalpronomen im Dativ: mir, dir, ihm, ihr, ihm, uns, euch, Ihnen, ihnen",
+    english: "Personal Pronouns in Dative: (to/for) me, you, him, her, it, us, you all, You (formal), them",
+    pronunciation: "meer, deer, eem, eer, eem, oons, oykh, EE-nen, EE-nen",
+    audioText: "Personalpronomen im Dativ: mir, dir, ihm, ihr, ihm, uns, euch, Ihnen, ihnen. Ich gebe dir ein Geschenk. Gibst du mir ein Geschenk?",
+    category: "concept",
+    badge: "The Dative Receiver Pronouns 🎁",
+    icon: "🎁",
+    kenyanAnalogy: "When someone receives a gift, help, or a question, the pronoun transforms into Dativ! Instead of 'mich' and 'dich', they say 'mir' (to me) and 'dir' (to you)!",
+    memoryTrick: "Dativ Pronoun Chant: mir, dir, ihm, ihr, ihm, uns, euch, Ihnen, ihnen!"
+  },
+  {
+    id: "l35-sentence-anatomy",
+    german: "Satzbau: Ich (Subjekt/Nominativ) gebe (Verb) ihm (Dativ-Objekt) eine Schokolade (Akkusativ-Objekt).",
+    english: "Sentence Anatomy: I (Subject) give (Verb) to him (Dative Object/Receiver) a chocolate (Accusative Object/Gift).",
+    pronunciation: "Ihsh GAY-beh eem EYE-neh shoh-koh-LAH-deh.",
+    audioText: "Ich gebe ihm eine Schokolade. Ich ist Subjekt im Nominativ. Ihm ist Dativ-Objekt. Eine Schokolade ist Akkusativ-Objekt.",
+    category: "anatomy",
+    badge: "Slide 3: Sentence Engine 🔍",
+    icon: "🔍",
+    kenyanAnalogy: "Slide 3 golden 3-part engine: 1. Who gives? (Nominativ: Ich), 2. Who receives? (Dativ: ihm), 3. What is given? (Akkusativ: eine Schokolade)!",
+    memoryTrick: "Subject (Nom) + Verb + Receiver (Dativ) + Gift (Akkusativ)!"
+  },
+  {
+    id: "l35-1st-person-sg",
+    german: "1. Person Singular (ich ➔ mir): Gibst du mir ein Geschenk? Das Essen schmeckt mir sehr gut.",
+    english: "First Person Singular (I ➔ to me): Will you give me a gift? The food tastes very good to me.",
+    pronunciation: "GIPST doo meer ayn geh-SHENK? Dahs ESS-en SHMEKT meer zayr goot.",
+    audioText: "Hi, ich bin Maria. Gibst du mir ein Geschenk? Das Essen schmeckt mir sehr gut. Kannst du mir bitte helfen?",
+    category: "1st-singular",
+    badge: "ich ➔ mir (to me) 🙋‍♀️",
+    icon: "🙋‍♀️",
+    kenyanAnalogy: "Maria asking for a gift: 'Gibst du mir ein Geschenk?'. When something tastes delicious to you, you say 'Das Essen schmeckt mir' (It tastes to me)!",
+    memoryTrick: "ich ➔ mir (rhymes with 'near me'!)"
+  },
+  {
+    id: "l35-2nd-person-informal",
+    german: "2. Person Singular locker (du ➔ dir): Anna, du bist nett. Ich gebe dir ein Geschenk. Ich helfe dir gerne.",
+    english: "Second Person Singular informal (you ➔ to you): Anna, you are nice. I give you a gift. I gladly help you.",
+    pronunciation: "AH-nah, doo bist net. Ihsh GAY-beh deer ayn geh-SHENK. Ihsh HEL-feh deer GAIR-neh.",
+    audioText: "Anna, du bist nett. Ich gebe dir ein Geschenk. Ich helfe dir gerne. Ich kaufe dir einen Kaffee.",
+    category: "2nd-singular",
+    badge: "du ➔ dir (to you) 🎁",
+    icon: "🎁",
+    kenyanAnalogy: "Talking to a friend or buddy: 'Ich gebe dir ein Geschenk' (I give you a gift) or 'Ich kaufe dir einen Kaffee' (I'll buy you a coffee)!",
+    memoryTrick: "du ➔ dir (rhymes with 'dear' friend!)"
+  },
+  {
+    id: "l35-2nd-person-formal",
+    german: "2. Person Singular & Plural höflich (Sie ➔ Ihnen): Herr Schmidt, ich gebe Ihnen ein Geschenk. Wie geht es Ihnen?",
+    english: "Formal You (Sie ➔ to You): Mr. Schmidt, I give You a gift. How are You doing? / How is it going with You?",
+    pronunciation: "Hair shmit, ihsh GAY-beh EE-nen ayn geh-SHENK. Vee gayt es EE-nen?",
+    audioText: "Herr Schmidt, Sie sind nett. Ich gebe Ihnen ein Geschenk. Wie geht es Ihnen? Ich antworte Ihnen sofort, Herr Müller.",
+    category: "formal",
+    badge: "Sie ➔ Ihnen (Formal You) 🎩",
+    icon: "🎩",
+    kenyanAnalogy: "Addressing an elder, boss, or doctor with respect! Capitalized 'Ihnen': 'Wie geht es Ihnen?' (How are You doing?) and 'Ich antworte Ihnen sofort' (I will answer You immediately)!",
+    memoryTrick: "Capital 'Sie' ➔ Capital 'Ihnen' with top hat respect!"
+  },
+  {
+    id: "l35-3rd-person-masc",
+    german: "3. Person Maskulin (er ➔ ihm): Das ist Michael. Er ist Architekt. Ich gebe ihm ein Geschenk.",
+    english: "Third Person Masculine (he ➔ to him): This is Michael. He is an architect. I am giving him a gift.",
+    pronunciation: "Dahs ist MEE-khah-el. Air ist ar-khee-TEKT. Ihsh GAY-beh eem ayn geh-SHENK.",
+    audioText: "Das ist Michael. Er ist mein Freund. Er ist Architekt. Ich gebe ihm eine Schokolade. Ich gebe ihm ein Geschenk. Wir gratulieren ihm zum Geburtstag.",
+    category: "3rd-masculine",
+    badge: "er ➔ ihm (to him) 👨",
+    icon: "👨",
+    kenyanAnalogy: "Replacing a man's name: Instead of saying 'Ich gebe Michael', you say 'Ich gebe ihm'! 'Wir gratulieren ihm' (We congratulate him)!",
+    memoryTrick: "er ➔ ihm (ends with 'm' just like 'dem' and 'meinem'!)"
+  },
+  {
+    id: "l35-3rd-person-fem",
+    german: "3. Person Feminin (sie ➔ ihr): Das ist Michaela. Sie ist Studentin. Ich gebe ihr ein Geschenk. Die Tasche gehört ihr.",
+    english: "Third Person Feminine (she ➔ to her): This is Michaela. She is a student. I am giving her a gift. The bag belongs to her.",
+    pronunciation: "Dahs ist mee-khah-AY-lah. Zee ist shtoo-DEN-tin. Ihsh GAY-beh eer ayn geh-SHENK. Dee TAH-sheh geh-HURT eer.",
+    audioText: "Das ist Michaela. Sie ist Studentin. Ich gebe ihr ein Geschenk. Die Tasche gehört ihr.",
+    category: "3rd-feminine",
+    badge: "sie ➔ ihr (to her) 👩",
+    icon: "👩",
+    kenyanAnalogy: "Replacing a woman's name: 'Ich gebe ihr ein Geschenk' (I give her a gift) or 'Die Tasche gehört ihr' (The bag belongs to her)!",
+    memoryTrick: "sie ➔ ihr (ends with 'r' just like 'der' and 'meiner'!)"
+  },
+  {
+    id: "l35-3rd-person-neut",
+    german: "3. Person Neutral (es ➔ ihm): Das ist ein Kind. Es ist süß. Ich gebe ihm ein Geschenk.",
+    english: "Third Person Neuter (it ➔ to it/him): This is a child. It is sweet. I am giving him/it a gift.",
+    pronunciation: "Dahs ist ayn kint. Es ist zewss. Ihsh GAY-beh eem ayn geh-SHENK.",
+    audioText: "Das ist ein Kind. Es ist süß. Ich gebe ihm ein Geschenk.",
+    category: "3rd-neuter",
+    badge: "es ➔ ihm (Neuter Twin!) 👶",
+    icon: "👶",
+    kenyanAnalogy: "Neuter is the exact twin of Masculine in Dativ! 'er' becomes 'ihm', and 'es' (das Kind, das Baby) ALSO becomes 'ihm'!",
+    memoryTrick: "er ➔ ihm | es ➔ ihm (Identical twins in Dativ!)"
+  },
+  {
+    id: "l35-1st-person-pl",
+    german: "1. Person Plural (wir ➔ uns): Wir sind Samantha und Mike. Gibst du uns ein Geschenk? Das Auto gefällt uns.",
+    english: "First Person Plural (we ➔ to us): We are Samantha and Mike. Will you give us a gift? We like the car.",
+    pronunciation: "Veer zint zah-MAHN-tah oont myk. GIPST doo oons ayn geh-SHENK? Dahs OW-toh geh-FELT oons.",
+    audioText: "Wir sind Samantha und Mike. Gibst du uns ein Geschenk? Das Auto gefällt uns.",
+    category: "1st-plural",
+    badge: "wir ➔ uns (to us) 👥",
+    icon: "👥",
+    kenyanAnalogy: "When a group of us receives something: 'Gibst du uns ein Geschenk?' (Will you give us a gift?). Note: 'uns' stays identical in both Akkusativ and Dativ!",
+    memoryTrick: "wir ➔ uns (Easy: same in Akkusativ and Dativ!)"
+  },
+  {
+    id: "l35-2nd-person-pl",
+    german: "2. Person Plural locker (ihr ➔ euch): Marie und Tobi, ihr seid nett. Ich gebe euch ein Geschenk. Ich danke euch!",
+    english: "Second Person Plural informal (you all ➔ to you all): Marie and Tobi, you are nice. I give you all a gift. I thank you all!",
+    pronunciation: "Mah-REE oont TOH-bee, eer zyt net. Ihsh GAY-beh oykh ayn geh-SHENK. Ihsh DAHN-keh oykh feor dahs geh-SHENK.",
+    audioText: "Marie und Tobi, ihr seid nett. Ich gebe euch ein Geschenk. Ich danke euch für das Geschenk.",
+    category: "2nd-plural",
+    badge: "ihr ➔ euch (to you all) 👫",
+    icon: "👫",
+    kenyanAnalogy: "Talking to a group of friends or kids: 'Ich gebe euch ein Geschenk' (I give you guys a gift) or 'Ich danke euch' (I thank you all)! 'euch' is identical in Akkusativ and Dativ!",
+    memoryTrick: "ihr ➔ euch (Easy: same in Akkusativ and Dativ!)"
+  },
+  {
+    id: "l35-3rd-person-pl",
+    german: "3. Person Plural (sie ➔ ihnen): Das sind Petra und Jürgen. Sie sind nett. Ich gebe ihnen ein Geschenk.",
+    english: "Third Person Plural (they ➔ to them): These are Petra and Jürgen. They are nice. I am giving them a gift.",
+    pronunciation: "Dahs zint PAY-trah oont YEOR-gen. Zee zint net. Ihsh GAY-beh EE-nen ayn geh-SHENK.",
+    audioText: "Das sind Petra und Jürgen. Sie sind nett. Ich gebe ihnen ein Geschenk.",
+    category: "3rd-plural",
+    badge: "sie (they) ➔ ihnen (them) 👥",
+    icon: "👥",
+    kenyanAnalogy: "Giving something to a group of other people (lowercase 'ihnen'): 'Ich gebe ihnen ein Geschenk' (I am giving them a gift)!",
+    memoryTrick: "sie (they) ➔ ihnen (lowercase i = them)!"
+  },
+  {
+    id: "l35-10-everyday-hit-phrases",
+    german: "Die 10 Dativ-Alltagssätze: schmecken (mir), helfen (dir), gratulieren (ihm), gehören (ihr), gefallen (uns), danken (euch), antworten (Ihnen)",
+    english: "The 10 Everyday Dative Hit Sentences: tastes to me, help you, congratulate him, belongs to her, appeals to us, thank you all, answer You",
+    pronunciation: "SHMEK-en, HEL-fen, grah-too-LEE-ren, geh-HUR-en, geh-FAL-en, DAHN-ken, AHT-vor-ten",
+    audioText: "Alltagssätze: Das Essen schmeckt mir sehr gut. Ich helfe dir gerne. Wir gratulieren ihm zum Geburtstag. Die Tasche gehört ihr. Das Auto gefällt uns. Ich danke euch für das Geschenk. Wie geht es Ihnen? Ich antworte Ihnen sofort, Herr Müller. Ich kaufe dir einen Kaffee. Kannst du mir bitte helfen?",
+    category: "everyday-phrases",
+    badge: "Slide 25: 10 Dativ Hit Verbs 🌟",
+    icon: "🌟",
+    kenyanAnalogy: "In German, these famous verbs naturally connect with Dative pronouns: schmecken (tastes to), helfen (helps), gratulieren (congratulates), gehören (belongs to), gefallen (pleases), danken (thanks), antworten (answers)!",
+    memoryTrick: "These verbs love Dativ: schmecken, helfen, gratulieren, gehören, gefallen, danken, antworten!"
+  }
+];
+
+export const LESSON_35_SCENARIOS = [
+  {
+    scenario: "In Slide 2, look at the transition: 'Ich gebe Michael eine Schokolade.' When you replace 'Michael' (a male person) with a pronoun in Dative, what does it become?",
+    hint: "'er' becomes 'ihm' in Dative.",
+    options: [
+      { text: "Ich gebe ihm eine Schokolade.", correct: true, explain: "Wunderbar! In the Dative case, masculine 'er / Michael' becomes 'ihm' ('Ich gebe ihm eine Schokolade')!" },
+      { text: "Ich gebe ihn eine Schokolade.", correct: false, explain: "'ihn' is the Akkusativ form (Lesson 30), not Dativ!" },
+      { text: "Ich gebe er eine Schokolade.", correct: false, explain: "'er' is the Nominativ subject form!" }
+    ]
+  },
+  {
+    scenario: "In Slide 5, Maria wants someone to give her a gift: 'Gibst du _____ ein Geschenk?' Which Dative pronoun means 'to me'?",
+    hint: "'ich' in Dativ becomes...",
+    options: [
+      { text: "mir (Gibst du mir ein Geschenk?)", correct: true, explain: "Perfekt! First person singular 'ich' becomes 'mir' in Dativ ('Gibst du mir ein Geschenk?')!" },
+      { text: "mich", correct: false, explain: "'mich' is Akkusativ ('Siehst du mich?'), whereas Dativ is 'mir'!" },
+      { text: "dir", correct: false, explain: "'dir' means 'to you', not 'to me'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 13, Michaela is a female student. You want to say: 'I am giving her a gift.' What is the correct Dative pronoun for 'sie' (feminine she)?",
+    hint: "Think of the feminine Dative crown '-r' (der ➔ einer ➔ ihrer ➔ ihr).",
+    options: [
+      { text: "Ich gebe ihr ein Geschenk.", correct: true, explain: "Ausgezeichnet! Feminine 'sie' (she) becomes 'ihr' (to her) in the Dative case!" },
+      { text: "Ich gebe sie ein Geschenk.", correct: false, explain: "'sie' is Nominativ / Akkusativ, not Dativ!" },
+      { text: "Ich gebe ihm ein Geschenk.", correct: false, explain: "'ihm' is masculine and neuter, not feminine!" }
+    ]
+  },
+  {
+    scenario: "In Slide 15, you are talking about a little child (das Kind / es). Which Dative pronoun replaces 'es'?",
+    hint: "Neuter is the exact identical twin of Masculine in Dativ!",
+    options: [
+      { text: "ihm (Ich gebe ihm ein Geschenk.)", correct: true, explain: "Genau! Neuter 'es' (das Kind, das Baby) becomes 'ihm' in Dativ, just like masculine 'er'!" },
+      { text: "es", correct: false, explain: "'es' does not stay 'es' in Dativ; it changes to 'ihm'!" },
+      { text: "ihr", correct: false, explain: "'ihr' is for feminine nouns (die Frau, sie)!" }
+    ]
+  },
+  {
+    scenario: "In Slide 25, you are enjoying a delicious meal at a German restaurant. How do you naturally say 'The food tastes very good to me'?",
+    hint: "The verb 'schmecken' pairs with the Dative pronoun 'mir'.",
+    options: [
+      { text: "Das Essen schmeckt mir sehr gut.", correct: true, explain: "Hervorragend! 'schmecken' is a classic Dativ verb, so you say 'schmeckt mir' (tastes to me)!" },
+      { text: "Das Essen schmeckt mich sehr gut.", correct: false, explain: "'mich' is Akkusativ; 'schmecken' requires Dativ 'mir'!" },
+      { text: "Das Essen schmeckt ich sehr gut.", correct: false, explain: "'ich' is Nominativ!" }
+    ]
+  },
+  {
+    scenario: "In Slide 25, you want to ask your boss or an elder politely: 'How are you doing?' (formal). What is the correct German phrase?",
+    hint: "Uses the formal Dative pronoun 'Ihnen' with a capital 'I'.",
+    options: [
+      { text: "Wie geht es Ihnen?", correct: true, explain: "Brilliant! 'Wie geht es Ihnen?' is the quintessential polite formal greeting in German!" },
+      { text: "Wie geht es Sie?", correct: false, explain: "After 'Wie geht es', you must use the Dative pronoun 'Ihnen'!" },
+      { text: "Wie geht es dich?", correct: false, explain: "Informal greeting is 'Wie geht es dir?' (Dativ), not 'dich'!" }
+    ]
+  }
+];
+
+
 
 
 
