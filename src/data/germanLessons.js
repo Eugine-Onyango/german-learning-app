@@ -9045,6 +9045,211 @@ export const LESSON_38_SCENARIOS = [
   }
 ];
 
+export const LESSON_39_ITEMS = [
+  {
+    id: "l39-places-city",
+    german: "Orte in der Stadt (City Landmarks & Buildings)",
+    english: "Important city buildings: Town hall (das Rathaus), Post office (die Post), Pharmacy (die Apotheke), Travel agency (das Reisebüro), Library (die Bücherei), Church (die Kirche), Train station (der Bahnhof), Bakery (die Bäckerei), Hospital (das Krankenhaus), Zoo (der Tierpark), School (die Schule)",
+    pronunciation: "RAHT-hows, POST, ah-poh-TAY-keh, RYE-zeh-byoo-roh, BYOO-kheh-rye, KEER-kheh, BAHN-hohf, bek-keh-RYE, KRANG-ken-hows, TEER-pahrk, SHOO-leh",
+    audioText: "Orte in der Stadt: das Rathaus, die Post, die Apotheke, das Reisebüro, die Bücherei, die Kirche, der Bahnhof, die Bäckerei, das Krankenhaus, der Tierpark, die Schule.",
+    category: "places-vocabulary",
+    badge: "Slide 2: City Landmarks 🏙️",
+    icon: "🏛️",
+    kenyanAnalogy: "Like landmarks in any town center: post office, train station, pharmacy, hospital, and bakeries that you use as reference points!",
+    memoryTrick: "Notice the genders: der Bahnhof & der Tierpark (der); das Rathaus, das Reisebüro & das Krankenhaus (das); all others like die Post, die Apotheke, die Kirche, die Bäckerei, die Schule are die!"
+  },
+  {
+    id: "l39-directions-arrows",
+    german: "links ⬅️ | geradeaus ⬆️ | rechts ➡️",
+    english: "The 3 Basic Direction Arrows: left (links), straight ahead (geradeaus), right (rechts)",
+    pronunciation: "LINGKS, geh-RAH-deh-OWS, REKHTS",
+    audioText: "Die Richtungen: links, geradeaus, rechts. Gehen Sie geradeaus! Biegen Sie links ab! Biegen Sie rechts ab!",
+    category: "directions-basics",
+    badge: "Slide 3: Compass Arrows 🧭",
+    icon: "🧭",
+    kenyanAnalogy: "Your pocket GPS navigation: Turn left (links), go straight (geradeaus), or turn right (rechts)!",
+    memoryTrick: "links = Left (both start with L). rechts = Right (both start with R). geradeaus = Straight out ahead ('straight out')!"
+  },
+  {
+    id: "l39-geradeaus",
+    german: "Gehen Sie geradeaus! / Fahren Sie geradeaus!",
+    english: "Go straight ahead! / Keep straight on! / Drive straight ahead!",
+    pronunciation: "GAY-en zee geh-RAH-deh-OWS! / FAH-ren zee geh-RAH-deh-OWS!",
+    audioText: "Gehen Sie geradeaus! Fahren Sie geradeaus! Gehen Sie immer geradeaus!",
+    category: "navigation-commands",
+    badge: "Slide 4: Straight Ahead ⬆️",
+    icon: "🛣️",
+    kenyanAnalogy: "Telling someone to stay on the main road without turning off anywhere!",
+    memoryTrick: "Imperativ with formal 'Sie': Verb in Pos. 1 + Sie + geradeaus!"
+  },
+  {
+    id: "l39-links-rechts-abbiegen",
+    german: "Biegen Sie links / rechts ab! (Fahren Sie nach links / rechts!)",
+    english: "Turn left / Turn right! (Make a left / right turn! / Go into [Street Name]!)",
+    pronunciation: "BEE-gen zee LINGKS ahp! / BEE-gen zee REKHTS ahp! / GAY-en zee LINGKS in dee GEU-teh-strah-seh!",
+    audioText: "Biegen Sie links ab! Fahren Sie nach links! Gehen Sie links in die Goethestraße! Biegen Sie rechts ab! Fahren Sie nach rechts! Gehen Sie rechts in die Schillerstraße!",
+    category: "turning-commands",
+    badge: "Slides 5–6: Turning Corners ↩️↪️",
+    icon: "🔄",
+    kenyanAnalogy: "Like a navigation voice prompt: 'Turn left into Goethe Street' (Gehen Sie links in die Goethestraße) or 'Turn right into Schiller Street' (Biegen Sie rechts ab)!",
+    memoryTrick: "'abbiegen' is separable: 'Biegen Sie...' at the start, '...ab!' at the very end!"
+  },
+  {
+    id: "l39-kreuzung-und-ampel",
+    german: "Gehen Sie bis zur Kreuzung! / Überqueren Sie an der Ampel!",
+    english: "Walk down to the intersection! / Cross the street at the traffic light!",
+    pronunciation: "GAY-en zee bis tsoor KROY-tsoong! / YOO-ber-kveh-ren zee ahn dayr AHM-pel!",
+    audioText: "Gehen Sie bis zur Kreuzung! Überqueren Sie an der Ampel!",
+    category: "landmarks-intersections",
+    badge: "Slides 7 & 11: Intersections & Lights 🚦",
+    icon: "🚦",
+    kenyanAnalogy: "'Walk up to the junction, then cross when the pedestrian green man lights up at the zebra crossing!'",
+    memoryTrick: "die Kreuzung ➔ bis ZUR Kreuzung ('zu + der'). die Ampel ➔ AN DER Ampel ('at the traffic light')!"
+  },
+  {
+    id: "l39-vorbeigehen-entlang",
+    german: "Gehen Sie an der Kirche vorbei! / Gehen Sie die Straße entlang!",
+    english: "Pass by the church! / Walk along the street!",
+    pronunciation: "GAY-en zee ahn dayr KEER-kheh for-BYE! / GAY-en zee dee STRAH-seh ent-LAHNG!",
+    audioText: "Gehen Sie an der Kirche vorbei! Gehen Sie an dem Rathaus vorbei! Gehen Sie die Straße entlang!",
+    category: "passing-landmarks",
+    badge: "Slides 8, 9 & 12: Passing Landmarks ⛪",
+    icon: "🚶",
+    kenyanAnalogy: "'Walk past the church building on your side, and continue along this main road.'",
+    memoryTrick: "'an [Dativ] vorbei' = pass past something (an der Kirche vorbei). 'die Straße entlang' = walk along the street!"
+  },
+  {
+    id: "l39-ordinal-streets",
+    german: "Nehmen Sie die erste / zweite / dritte Straße links (rechts)!",
+    english: "Take the first / second / third street on the left (right)!",
+    pronunciation: "NAY-men zee dee AIR-steh / TSVYE-teh / DRIT-teh STRAH-seh LINGKS (REKHTS)!",
+    audioText: "Nehmen Sie die erste Straße links! Nehmen Sie die zweite Straße links! Nehmen Sie die dritte Straße rechts!",
+    category: "ordinal-directions",
+    badge: "Slide 10: Street Counting 🔢",
+    icon: "🔢",
+    kenyanAnalogy: "'Don't take the immediate first corner; take the second street on your left side!'",
+    memoryTrick: "Uses our Ordinal Numbers from Lesson 32: erste (1st), zweite (2nd), dritte (3rd) + Straße!"
+  },
+  {
+    id: "l39-kreisverkehr",
+    german: "Nehmen Sie die erste / zweite Ausfahrt im Kreisverkehr.",
+    english: "Take the first / second exit at the roundabout.",
+    pronunciation: "NAY-men zee dee AIR-steh OWS-fahrt im KRYE-zer-kayr.",
+    audioText: "Nehmen Sie die erste Ausfahrt im Kreisverkehr. Nehmen Sie die zweite Ausfahrt im Kreisverkehr.",
+    category: "roundabout-navigation",
+    badge: "Slide 13: The Roundabout ⭕",
+    icon: "⭕",
+    kenyanAnalogy: "Navigating a traffic roundabout: 'Enter the circle and take the 1st exit onto the side road!'",
+    memoryTrick: "Kreisverkehr = Circle traffic (roundabout). Ausfahrt = Driving out (exit)!"
+  },
+  {
+    id: "l39-ecke-und-gegenueber",
+    german: "an der Ecke / dem Rathaus gegenüber (der Kirche gegenüber)",
+    english: "at the corner / opposite the town hall (opposite the church)",
+    pronunciation: "ahn dayr EK-keh / daym RAHT-hows gay-gen-YOO-ber",
+    audioText: "Die Kirche ist an der Ecke. Der Bahnhof ist an der Ecke. Die Bank ist dem Rathaus gegenüber. Das Restaurant ist der Kirche gegenüber.",
+    category: "relative-positions",
+    badge: "Slides 14–15: Position Markers 📍",
+    icon: "📍",
+    kenyanAnalogy: "Pinpointing exact spots: 'It is right on the corner' or 'Right across the street opposite the town hall.'",
+    memoryTrick: "die Ecke ➔ an der Ecke. gegenüber takes DATIV: dem Rathaus (das) gegenüber, der Kirche (die) gegenüber!"
+  },
+  {
+    id: "l39-zum-vs-zur",
+    german: "Die Goldene Regel: zum (der/das) vs. zur (die)",
+    english: "The Golden Destination Rule: zum = zu + dem (for masculine & neuter) | zur = zu + der (for feminine)",
+    pronunciation: "TSOOM (der/das) / TSOOR (die)",
+    audioText: "Die Goldene Regel: Wie komme ich zum Bahnhof? Wie komme ich zum Rathaus? Wie komme ich zum Tierpark? Wie komme ich zur Apotheke? Wie komme ich zur Bäckerei? Wie komme ich zur Bank?",
+    category: "grammar-formula",
+    badge: "Slide 19: The zum vs. zur Rule 👑",
+    icon: "👑",
+    kenyanAnalogy: "A magic shortcut for 'to the': If the building is der/das ➔ say 'zum' (zum Bahnhof, zum Rathaus). If it is die ➔ say 'zur' (zur Apotheke, zur Bank)!",
+    memoryTrick: "Masc/Neuter (der/das) ➔ zum (ends in -m). Feminine (die) ➔ zur (ends in -r)!"
+  },
+  {
+    id: "l39-asking-directions-dialogues",
+    german: "Entschuldigung, wie komme ich zum/zur ...? / Wie weit ist es zum/zur ...?",
+    english: "Excuse me, how do I get to the ...? / How far is it to the ...? (Das ist ganz in der Nähe / 10 Minuten zu Fuß)",
+    pronunciation: "ent-SHOOL-dee-goong, vee KOM-meh ikh tsoom... / vee VYE-t ist ess tsoom...",
+    audioText: "Entschuldigung, wie komme ich zum Hauptbahnhof? Das ist ganz einfach. Nehmen Sie die erste Straße links und dann gehen Sie bis zur Kreuzung. Der Hauptbahnhof ist an der Ecke. Entschuldigen Sie, wie weit ist es zum Rathaus? Das ist ganz in der Nähe. Sie können 10 Minuten zu Fuß laufen.",
+    category: "real-dialogues",
+    badge: "Slides 17, 18 & 20: Street Dialogues 🗣️",
+    icon: "🗣️",
+    kenyanAnalogy: "Stopping a friendly local on the pavement to ask for the station or town hall, and thanking them politely!",
+    memoryTrick: "Ask with 'Wie komme ich zum/zur...?' or 'Wie weit ist es zum/zur...?' Answer with 'ganz in der Nähe' (very close) or walking time 'zu Fuß' (on foot)!"
+  },
+  {
+    id: "l39-public-transit-and-idk",
+    german: "Da nehmen Sie am besten den Bus / Es tut mir leid. Ich weiß es leider nicht.",
+    english: "Public transit advice & Polite 'I don't know': Best take the bus or subway / I'm sorry, unfortunately I don't know either.",
+    pronunciation: "dah NAY-men zee ahm BES-ten dayn BOOS... / ess toot meer LYET. ikh vyess ess LY-der owkh nikht.",
+    audioText: "Nehmen Sie am besten die U-Bahn oder den Bus. Entschuldigen Sie bitte, wo finde ich hier eine Apotheke? Es tut mir leid. Ich weiß es leider auch nicht.",
+    category: "transit-and-apology",
+    badge: "Slides 16, 22 & 23: Transit & Polite Apology 🚌",
+    icon: "🚌",
+    kenyanAnalogy: "Recommending a bus line when it's too far, or politely apologizing with grace when you are also new in town!",
+    memoryTrick: "'am besten' = best way. 'Es tut mir leid' = I'm sorry. 'leider' = unfortunately!"
+  }
+];
+
+export const LESSON_39_SCENARIOS = [
+  {
+    scenario: "In Slide 19, you want to ask a passerby how to get to the train station (der Bahnhof). Which contracted preposition must you use: 'zum' or 'zur'?",
+    hint: "'der Bahnhof' is masculine (der). der/das take 'zum' (zu + dem).",
+    options: [
+      { text: "Entschuldigung, wie komme ich zum Bahnhof?", correct: true, explain: "Perfekt! Because 'Bahnhof' is masculine ('der Bahnhof'), 'zu + dem' contracts to 'zum': 'zum Bahnhof'!" },
+      { text: "Entschuldigung, wie komme ich zur Bahnhof?", correct: false, explain: "'zur' is only for feminine nouns ('die Apotheke' ➔ 'zur Apotheke')." },
+      { text: "Entschuldigung, wie komme ich in Bahnhof?", correct: false, explain: "When asking for directions to a destination, German uses 'wie komme ich zum / zur...'." }
+    ]
+  },
+  {
+    scenario: "In Slide 19, you need to ask how far it is to the pharmacy (die Apotheke). Which contracted preposition is correct?",
+    hint: "'die Apotheke' is feminine (die). 'die' takes 'zur' (zu + der).",
+    options: [
+      { text: "Wie weit ist es zur Apotheke?", correct: true, explain: "Ausgezeichnet! Because 'Apotheke' is feminine ('die Apotheke'), 'zu + der' contracts to 'zur': 'zur Apotheke'!" },
+      { text: "Wie weit ist es zum Apotheke?", correct: false, explain: "'zum' is for masculine (der) and neuter (das) nouns." },
+      { text: "Wie weit ist es an der Apotheke?", correct: false, explain: "To ask 'how far to', use 'Wie weit ist es zur Apotheke?'." }
+    ]
+  },
+  {
+    scenario: "In Slide 5, you want to tell a driver or pedestrian to turn left into Goethe Street. What is the correct German phrase?",
+    hint: "'left' is 'links', and turning into a street uses 'in die...'.",
+    options: [
+      { text: "Biegen Sie links ab! (Gehen Sie links in die Goethestraße!)", correct: true, explain: "Wunderbar! 'Biegen Sie links ab!' means 'Turn left!' and 'Gehen Sie links in die Goethestraße!' means 'Turn left into Goethe Street!'." },
+      { text: "Biegen Sie rechts ab!", correct: false, explain: "'rechts' means right, not left." },
+      { text: "Gehen Sie geradeaus in die Goethestraße!", correct: false, explain: "'geradeaus' means straight ahead, not turning left." }
+    ]
+  },
+  {
+    scenario: "In Slide 8, you tell someone: 'Pass by the church!' (die Kirche). How do you express 'passing by' in German?",
+    hint: "Use the structure: 'an + [Dativ: der Kirche] + vorbei'.",
+    options: [
+      { text: "Gehen Sie an der Kirche vorbei!", correct: true, explain: "Genau! 'Vorbeigehen' takes 'an + Dativ': 'Gehen Sie an der Kirche vorbei!' means 'Pass by the church!'." },
+      { text: "Gehen Sie in die Kirche vorbei!", correct: false, explain: "The preposition used with 'vorbeigehen' is 'an' + Dativ, not 'in'." },
+      { text: "Gehen Sie durch die Kirche!", correct: false, explain: "'durch' means through the inside of the church." }
+    ]
+  },
+  {
+    scenario: "In Slide 15, you want to say: 'The bank is opposite the town hall' (das Rathaus). How does 'gegenüber' work with Dative?",
+    hint: "'gegenüber' triggers Dative: 'das Rathaus' becomes 'dem Rathaus'.",
+    options: [
+      { text: "Die Bank ist dem Rathaus gegenüber.", correct: true, explain: "Hervorragend! 'gegenüber' takes Dative ('das Rathaus' ➔ 'dem Rathaus'), so: 'Die Bank ist dem Rathaus gegenüber' (or 'gegenüber dem Rathaus')." },
+      { text: "Die Bank ist das Rathaus gegenüber.", correct: false, explain: "'das Rathaus' must change to Dative 'dem Rathaus'." },
+      { text: "Die Bank ist den Rathaus gegenüber.", correct: false, explain: "'den' is Accusative masculine, whereas 'Rathaus' is neuter Dative ('dem')." }
+    ]
+  },
+  {
+    scenario: "In Slide 23, a tourist asks you where to find a pharmacy, but you are also a visitor and don't know. What is the most polite, natural response?",
+    hint: "'Es tut mir leid. Ich weiß es leider auch nicht.' (I am sorry. Unfortunately even I don't know.)",
+    options: [
+      { text: "Es tut mir leid. Ich weiß es leider auch nicht.", correct: true, explain: "Brilliant! This is the standard, warm, and polite German way to say you unfortunately don't know." },
+      { text: "Nein, danke.", correct: false, explain: "'Nein, danke' means 'No, thank you' and does not answer a direction question." },
+      { text: "Ich will nicht.", correct: false, explain: "'Ich will nicht' means 'I do not want to', which is blunt and inappropriate." }
+    ]
+  }
+];
+
+
 
 
 
