@@ -57,6 +57,7 @@ export default function Header({
     if (currentLesson === 43) msg = "Das Perfekt: Was hast du gestern gemacht? Ich habe einen Salat gegessen und wir sind nach Paris gefahren. Tanja hat ihren Freund angerufen!";
     if (currentLesson === 44) msg = "haben oder sein im Perfekt: Maria hat mir geholfen, aber wir sind nach London geflogen! Wo bist du geblieben? Und was ist passiert?";
     if (currentLesson === 45) msg = "das Perfekt Teil 3: Die vier Baupläne für das Partizip zwei: regelmäßig, unregelmäßig, trennbar und untrennbar! Ich habe heute alles verstanden!";
+    if (currentLesson === 46) msg = "Was hast du im Urlaub gemacht? Im Urlaub war ich in Spanien, habe Sehenswürdigkeiten besichtigt und mich erholt!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -423,6 +424,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson46NavItems = [
+    { id: 'cards', label: '📖 Lesson 46 Cards', sub: 'Vacations & Activities' },
+    { id: 'studio46', label: '🏖️ Urlaub Studio', sub: 'Diary Builder, Phraseboard & Forge' },
+    { id: 'game46', label: '🎮 Vacation Quiz', sub: 'Travel & Memories Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -468,6 +477,7 @@ export default function Header({
   if (currentLesson === 43) navItems = lesson43NavItems;
   if (currentLesson === 44) navItems = lesson44NavItems;
   if (currentLesson === 45) navItems = lesson45NavItems;
+  if (currentLesson === 46) navItems = lesson46NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -515,6 +525,7 @@ export default function Header({
     { num: 43, label: "⏳ 43: das Perfekt (Teil 1)", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 44, label: "👑 44: haben vs. sein (Perfekt)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 45, label: "🏭 45: Partizip II Blueprints", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
+    { num: 46, label: "🏖️ 46: Urlaub & Ferien", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (

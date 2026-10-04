@@ -10742,6 +10742,275 @@ export const LESSON_45_SCENARIOS = [
   }
 ];
 
+export const LESSON_46_ITEMS = [
+  {
+    id: "l46-urlaub-ferien-core",
+    german: "der Urlaub / die Ferien: reisen (ist gereist), übernachten (hat übernachtet), besichtigen (hat besichtigt)",
+    english: "Vacation / Holidays: to travel, to stay overnight, to visit (sightseeing)",
+    pronunciation: "dair OOR-lowp / dee FAY-ree-en: RY-zen, ew-ber-NAHKH-ten, beh-ZIKH-tee-gen",
+    audioText: "der Urlaub, die Ferien. reisen, ist gereist. übernachten, hat übernachtet. besichtigen, hat besichtigt.",
+    category: "vacation-core",
+    badge: "Core Vacation Verbs • Slides 2-5",
+    icon: "🏖️",
+    kenyanAnalogy: "The essential holiday vocabulary trio: 'reisen' (traveling from town to town - takes ist!), 'übernachten' (spending the night at a hotel or homestay), and 'besichtigen' (touring famous landmarks and city centers)!",
+    memoryTrick: "der Urlaub (Singular) | die Ferien (Plural) | reisen (ist gereist)!",
+    imageType: "beach-vacation"
+  },
+  {
+    id: "l46-trip-sentences",
+    german: "Im Urlaub war ich in Spanien. / Ich habe mit meiner Familie eine Reise gemacht. / In den Ferien bin ich zu Hause geblieben.",
+    english: "On vacation I was in Spain. / I went on a trip with my family. / During the holidays I stayed at home.",
+    pronunciation: "im OOR-lowp vahr ikh in SHPAH-nee-en",
+    audioText: "Im Urlaub war ich in Spanien. Ich habe in Spanien einen Urlaub gemacht. Ich habe mit meiner Familie eine Reise gemacht. In den Ferien bin ich zu Hause geblieben.",
+    category: "vacation-intros",
+    badge: "Vacation Starters • Slides 6-8",
+    icon: "🇪🇸",
+    kenyanAnalogy: "Three classic ways to kick off your vacation story: 1. Saying where you were ('Im Urlaub war ich in Spanien'), 2. Saying you took a family journey ('eine Reise gemacht'), or 3. Relaxing peacefully at home ('In den Ferien bin ich zu Hause geblieben')!",
+    memoryTrick: "Urlaub machen (haben) | eine Reise machen (haben) | zu Hause bleiben (ist geblieben)!",
+    imageType: "family-travel"
+  },
+  {
+    id: "l46-wo-warst-du-destinations",
+    german: "Wo warst du? in Spanien, in der Schweiz, auf einer Insel, an der Ostsee, am Strand, bei meinen Eltern, auf einer Weltreise, zu Hause",
+    english: "Where were you? in Spain, in Switzerland, on an island, at the Baltic Sea, at the beach, with parents, on a world tour, at home",
+    pronunciation: "VOH vahrst doo? in SHPAH-nee-en, in dair SHVYE-ts, owf EYE-ner IN-zel, ahn dair OST-zay, ahm SHTRAHND, tsoo HOW-zeh",
+    audioText: "Wo warst du? Im Urlaub war ich in Spanien, in der Schweiz, in New York, auf einer Insel, an der Ostsee, bei meinen Eltern, am Strand, bei Verwandten, auf einer Weltreise, oder zu Hause.",
+    category: "destinations",
+    badge: "Destination Matrix • Slide 10",
+    icon: "🗺️",
+    kenyanAnalogy: "Notice the clever German prepositions: countries take 'in' (in Spanien), countries with feminine articles take 'in der' (in der Schweiz), islands take 'auf' (auf einer Insel), water shores take 'an/am' (am Strand, an der Ostsee), and parents take 'bei' (bei meinen Eltern)!",
+    memoryTrick: "in der Schweiz (fem Dativ) | auf einer Insel | am Strand | zu Hause!",
+    imageType: "world-map"
+  },
+  {
+    id: "l46-flight-travel",
+    german: "Im Urlaub sind wir nach New York geflogen / gefahren.",
+    english: "On vacation we flew / drove to New York.",
+    pronunciation: "im OOR-lowp ZINT veer nahkh New York ge-FLOH-gen / ge-FAH-ren",
+    audioText: "Im Urlaub sind wir nach New York geflogen. Im Urlaub sind wir nach New York gefahren.",
+    category: "transport",
+    badge: "Travel Movement • Slide 11",
+    icon: "✈️",
+    kenyanAnalogy: "When heading out to an exciting overseas metropolis like New York, both flying ('geflogen') and driving ('gefahren') represent movement from A to B, so they proudly take 'sind'!",
+    memoryTrick: "fliegen ➔ sind geflogen | fahren ➔ sind gefahren!",
+    imageType: "plane-flight"
+  },
+  {
+    id: "l46-mit-wem-companions",
+    german: "Mit wem warst du? mit meiner Familie, allein, mit meinen Verwandten, mit meiner Freundin, mit meinem Mann, mit Schulfreunden",
+    english: "With whom were you? with my family, alone, with my relatives, with my girlfriend, with my husband, with school friends",
+    pronunciation: "mit VAYM vahrst doo? mit MY-ner fah-MEE-lee-eh, ah-LYN, mit MY-nen fer-VAHND-ten, mit MY-nem MAHN",
+    audioText: "Mit wem warst du? Ich war mit meiner Familie unterwegs, allein, mit meinen Verwandten, mit meiner Freundin, mit meinem Mann, oder mit Schulfreunden.",
+    category: "companions",
+    badge: "Companions Matrix • Slide 13",
+    icon: "👥",
+    kenyanAnalogy: "'mit' ALWAYS triggers the Dative case: 'meiner Familie' (die ➔ der), 'meinem Mann' (der ➔ dem), and 'meinen Verwandten' (plural +n). Or if traveling solo, simply say 'Ich war allein unterwegs'!",
+    memoryTrick: "mit + Dativ: mit meiner Frau / mit meinem Mann / mit meinen Freunden!",
+    imageType: "friends-traveling"
+  },
+  {
+    id: "l46-wo-uebernachtet-lodging",
+    german: "Wo hast du übernachtet? im Hotel, bei Freunden, bei einer Gastfamilie, in einer Jugendherberge, in einem Zelt",
+    english: "Where did you stay overnight? in a hotel, with friends, with a host family, in a youth hostel, in a tent",
+    pronunciation: "VOH hast doo ew-ber-NAHKH-tet? im ho-TEL, by FROYND-en, in EYE-ner YOO-gend-hair-bair-geh, in EYE-nem TSELT",
+    audioText: "Wo hast du übernachtet? Ich habe im Hotel übernachtet, bei meiner Familie, bei Freunden, bei Bekannten, bei einer Gastfamilie, in einer Jugendherberge, oder in einem Zelt.",
+    category: "lodging",
+    badge: "Accommodation Matrix • Slide 15",
+    icon: "🏨",
+    kenyanAnalogy: "Where did you rest your head? From a luxury suite ('im Hotel') to a student dorm ('in einer Jugendherberge'), pitching a safari campsite ('in einem Zelt'), or staying with warm host families ('bei einer Gastfamilie')!",
+    memoryTrick: "übernachten ➔ hat übernachtet (inseparable über- blocks ge-)!",
+    imageType: "hotel-reception"
+  },
+  {
+    id: "l46-act-eating-grandma",
+    german: "Wir haben viel gegessen. / Ich habe meine Oma besucht.",
+    english: "We ate a lot. / I visited my grandmother.",
+    pronunciation: "VEER HAH-ben FEEL ge-GES-sen / IKH HAH-beh MY-neh OH-mah beh-ZOOKHT",
+    audioText: "Was hast du gemacht? Wir haben viel gegessen. Ich habe meine Oma besucht.",
+    category: "activities",
+    badge: "Food & Family • Slides 17-18",
+    icon: "🍔",
+    kenyanAnalogy: "Feasting on local delicacies ('Wir haben viel gegessen' - irregular essen ➔ gegessen) and paying heartfelt visits to grandmother in the village ('Ich habe meine Oma besucht' - inseparable be- blocks ge-)!",
+    memoryTrick: "essen ➔ hat gegessen | besuchen ➔ hat besucht!",
+    imageType: "eating-burger"
+  },
+  {
+    id: "l46-act-sightseeing-souvenirs",
+    german: "Wir haben die Sehenswürdigkeiten besichtigt. / Wir haben viele Souvenirs gekauft.",
+    english: "We did sightseeing / toured sights. / We bought a lot of souvenirs.",
+    pronunciation: "ZEH-ens-vewr-dikh-kye-ten beh-ZIKH-tikt & soo-veh-NEERS ge-KOWFT",
+    audioText: "Wir haben die Sehenswürdigkeiten besichtigt. Wir haben viele Souvenirs gekauft.",
+    category: "activities",
+    badge: "Sightseeing & Souvenirs • Slides 19-20",
+    icon: "🗽",
+    kenyanAnalogy: "Taking photos in front of historic towers and museums ('Sehenswürdigkeiten besichtigt') and shopping for gifts, keychains, and mementos for friends back home ('Souvenirs gekauft')!",
+    memoryTrick: "besichtigen ➔ hat besichtigt | kaufen ➔ hat gekauft!",
+    imageType: "city-sightseeing"
+  },
+  {
+    id: "l46-act-relax-sun",
+    german: "Ich habe mich erholt. / Wir haben uns in die Sonne gelegt.",
+    english: "I relaxed / rested. / We sunbathed / laid in the sun.",
+    pronunciation: "IKH HAH-beh MIKH air-HOHLT / VEER HAH-ben OONS in dee ZON-neh ge-LAYKT",
+    audioText: "Ich habe mich erholt. Wir haben uns in die Sonne gelegt.",
+    category: "activities",
+    badge: "Rest & Sunbathing • Slides 21-22",
+    icon: "☀️",
+    kenyanAnalogy: "Chilling out and recharging your batteries! Notice the reflexive past: 'Ich habe MICH erholt' (I relaxed myself) and 'Wir haben UNS in die Sonne gelegt' (We laid ourselves in the sun)!",
+    memoryTrick: "sich erholen ➔ hat sich erholt | sich legen ➔ hat sich gelegt!",
+    imageType: "sunbathing-beach"
+  },
+  {
+    id: "l46-act-family-sports-running",
+    german: "Ich habe mit meiner Familie Zeit verbracht. / Wir haben viel Sport getrieben. / Ich bin jeden Tag viel gerannt.",
+    english: "I spent time with my family. / We did a lot of sports. / I ran a lot every day.",
+    pronunciation: "TSYT fer-BRAHKHT / SHPORT ge-TREE-ben / ge-RAHNT",
+    audioText: "Ich habe mit meiner Familie Zeit verbracht. Wir haben viel Sport getrieben. Ich bin jeden Tag viel gerannt.",
+    category: "activities",
+    badge: "Family Time & Fitness • Slides 23-25",
+    icon: "🏃",
+    kenyanAnalogy: "Spending quality evening bonding time ('Zeit verbracht'), engaging in athletics and football ('Sport getrieben'), and morning jogs along the scenic paths ('Ich bin jeden Tag viel gerannt' - movement takes bin!).",
+    memoryTrick: "Zeit verbringen ➔ hat verbracht | rennen ➔ ist gerannt (movement)!",
+    imageType: "running-track"
+  },
+  {
+    id: "l46-act-stroll-reading",
+    german: "Wir haben einen Stadtbummel gemacht. / Ich habe einen Roman gelesen.",
+    english: "We went for a stroll through town / city walk. / I read a novel.",
+    pronunciation: "SHTAHT-boom-mel ge-MAHKHT / roh-MAHN ge-LAY-zen",
+    audioText: "Wir haben einen Stadtbummel gemacht. Ich habe einen Roman gelesen.",
+    category: "activities",
+    badge: "City Walks & Novels • Slides 26-27",
+    icon: "🚶",
+    kenyanAnalogy: "A relaxing stroll window-shopping along town streets ('einen Stadtbummel gemacht') and sitting on a park bench reading an inspiring book ('einen Roman gelesen')!",
+    memoryTrick: "Stadtbummel machen ➔ hat gemacht | lesen ➔ hat gelesen!",
+    imageType: "reading-book"
+  },
+  {
+    id: "l46-compound-stay-home",
+    german: "Ich bin zu Hause geblieben, habe gelesen und Filme geschaut.",
+    english: "I stayed at home, read, and watched movies.",
+    pronunciation: "IKH BIN tsoo HOW-zeh ge-BLEE-ben, HAH-beh ge-LAY-zen oont FEEL-meh ge-SHOWT",
+    audioText: "Ich bin zu Hause geblieben, habe gelesen und Filme geschaut.",
+    category: "compound-sentences",
+    badge: "Compound Story 1 • Slide 28",
+    icon: "📺",
+    kenyanAnalogy: "The cozy staycation sentence! Notice the combination: 'bin geblieben' (staying takes sein!) followed by the chained activities with have: 'habe gelesen und Filme geschaut'!",
+    memoryTrick: "bin geblieben (sein) + habe gelesen (haben) + Filme geschaut!",
+    imageType: "movie-night"
+  },
+  {
+    id: "l46-compound-hiking-nature",
+    german: "Ich bin viel gewandert und habe die Natur genossen.",
+    english: "I went hiking a lot and enjoyed nature.",
+    pronunciation: "IKH BIN FEEL ge-VAHN-dert oont HAH-beh dee nah-TOOR ge-NOS-sen",
+    audioText: "Ich bin viel gewandert und habe die Natur genossen.",
+    category: "compound-sentences",
+    badge: "Compound Story 2 • Slide 29",
+    icon: "🌲",
+    kenyanAnalogy: "The nature lover's dream! Trekking through green mountain trails ('bin gewandert' - movement takes bin) and savoring the fresh mountain air ('habe die Natur genossen' - genießen ➔ genossen)!",
+    memoryTrick: "wandern ➔ ist gewandert | genießen ➔ hat genossen!",
+    imageType: "hiking-mountain"
+  },
+  {
+    id: "l46-compound-mountains-photos",
+    german: "Ich bin in die Berge gefahren und habe viele Fotos gemacht.",
+    english: "I went to the mountains and took many photos.",
+    pronunciation: "IKH BIN in dee BAIR-geh ge-FAH-ren oont HAH-beh FEE-leh FOH-tos ge-MAHKHT",
+    audioText: "Ich bin in die Berge gefahren und habe viele Fotos gemacht.",
+    category: "compound-sentences",
+    badge: "Compound Story 3 • Slide 30",
+    icon: "🏔️",
+    kenyanAnalogy: "Driving up into the scenic highlands ('bin in die Berge gefahren') and snapping wonderful memories on your smartphone ('habe viele Fotos gemacht')!",
+    memoryTrick: "fahren ➔ ist gefahren | Fotos machen ➔ hat Fotos gemacht!",
+    imageType: "mountain-photos"
+  },
+  {
+    id: "l46-compound-people-museum-language",
+    german: "Ich habe viele interessante Menschen kennengelernt und ein Museum besucht.",
+    english: "I got to know many interesting people and visited a museum.",
+    pronunciation: "KEN-nen-ge-lehrnt oont moo-ZEH-oom beh-ZOOKHT",
+    audioText: "Ich habe viele interessante Menschen kennengelernt. Ich habe ein Museum besucht und viel Neues gelernt. Im Urlaub habe ich einen Sprachkurs gemacht.",
+    category: "compound-sentences",
+    badge: "Culture & Learning • Slides 31-34",
+    icon: "🏛️",
+    kenyanAnalogy: "Making lifelong international friends ('Menschen kennengelernt' - separable kennenlernen), exploring ancient history in a museum ('Museum besucht'), and sharpening your German in an intensive language course ('einen Sprachkurs gemacht')!",
+    memoryTrick: "kennenlernen ➔ hat kennengelernt | besuchen ➔ hat besucht!",
+    imageType: "museum-dino"
+  },
+  {
+    id: "l46-holiday-activities-mindmap",
+    german: "Im Urlaub: fotografieren, klettern, grillen, schwimmen, Musik hören, Zimmer aufräumen",
+    english: "Vacation activities: taking photos, climbing, barbecuing, swimming, listening to music, tidying up",
+    pronunciation: "im OOR-lowp: fo-to-grah-FEE-ren, KLEHT-tern, GRIL-len, SHVIM-men",
+    audioText: "Im Urlaub habe ich viel fotografiert, Musik gehört und mein Zimmer aufgeräumt. Was hast du gestern gemacht?",
+    category: "mindmap",
+    badge: "Holiday Mindmap • Slides 33-36",
+    icon: "🥩",
+    kenyanAnalogy: "Slide 33–36 vacation mindmap: Having a weekend barbecue ('gegrillt'), diving into clear waters ('ist geschwommen'), conquering rock climbing ('ist geklettert'), and doing a thorough spring cleaning ('Zimmer aufgeräumt')!",
+    memoryTrick: "grillen (gegrillt) | schwimmen (ist geschwommen) | aufräumen (aufgeräumt)!",
+    imageType: "bbq-grill"
+  }
+];
+
+export const LESSON_46_SCENARIOS = [
+  {
+    scenario: "In Slide 6 & 10, how do you say in German: 'On vacation I was in Spain, but my friend was in Switzerland'?",
+    hint: "Spain takes 'in Spanien', but Switzerland has a feminine article so it takes 'in der Schweiz'.",
+    options: [
+      { text: "Im Urlaub war ich in Spanien, aber mein Freund war in der Schweiz.", correct: true, explain: "Genau! Countries without articles take 'in Spanien', but feminine countries take 'in der Schweiz' (Dativ)!" },
+      { text: "Im Urlaub war ich auf Spanien, aber mein Freund war an Schweiz.", correct: false, explain: "Countries use 'in', not 'auf' or 'an'." },
+      { text: "Im Urlaub habe ich in Spanien, aber mein Freund ist in Schweiz.", correct: false, explain: "'war ich' is the correct past state verb." }
+    ]
+  },
+  {
+    scenario: "In Slide 11, you flew to New York for vacation. Which helping verb and past participle are required?",
+    hint: "fliegen is movement from A to B (sind geflogen).",
+    options: [
+      { text: "Im Urlaub sind wir nach New York geflogen.", correct: true, explain: "Ausgezeichnet! 'fliegen' represents movement from Point A to Point B, so it takes 'sind geflogen'!" },
+      { text: "Im Urlaub haben wir nach New York gefliegt.", correct: false, explain: "'fliegen' is irregular (geflogen) and takes 'sein'." },
+      { text: "Im Urlaub werden wir nach New York geflogen.", correct: false, explain: "'werden' is for passive/future, not Perfekt." }
+    ]
+  },
+  {
+    scenario: "In Slide 13, look at the preposition 'mit'. Why do we say 'mit MEINER Familie' and 'mit MEINEM Mann'?",
+    hint: "'mit' is a dative-only preposition.",
+    options: [
+      { text: "Because 'mit' ALWAYS triggers the Dative case (die Familie ➔ meiner, der Mann ➔ meinem).", correct: true, explain: "Wunderbar! 'mit' is a strict Dative boss: mit meiner Familie, mit meinem Mann, mit meinen Freunden!" },
+      { text: "Because they are accusative direct objects.", correct: false, explain: "'mit' never takes the accusative." },
+      { text: "Because 'Familie' is plural.", correct: false, explain: "'Familie' is feminine singular." }
+    ]
+  },
+  {
+    scenario: "In Slide 14 & 15, which helping verb and participle form does 'übernachten' (to stay overnight) take?",
+    hint: "Inseparable prefix 'über-' blocks 'ge-'.",
+    options: [
+      { text: "hat übernachtet (Ich habe im Hotel übernachtet.)", correct: true, explain: "Perfekt! 'übernachten' is an inseparable verb; it rejects 'ge-' and ends in '-et': hat übernachtet!" },
+      { text: "ist geübernachtet", correct: false, explain: "Never say 'geübernachtet'! Inseparable prefixes ban 'ge-'." },
+      { text: "hat übernachten", correct: false, explain: "'übernachten' is the infinitive." }
+    ]
+  },
+  {
+    scenario: "In Slide 28, look at the compound sentence: 'Ich bin zu Hause geblieben, habe gelesen und Filme geschaut.' Why is 'bin' used first, followed by 'habe'?",
+    hint: "'bleiben' requires 'sein' (bin geblieben), while reading and watching movies require 'haben' (habe gelesen/geschaut).",
+    options: [
+      { text: "'bleiben' is a special exception that takes 'sein' (bin geblieben), while 'lesen' and 'schauen' are actions that take 'haben'.", correct: true, explain: "Hervorragend! German sentences effortlessly chain different helping verbs: 'Ich bin geblieben' (sein) + 'habe gelesen und Filme geschaut' (haben)!" },
+      { text: "Because all three verbs must take 'sein'.", correct: false, explain: "'lesen' and 'schauen' take 'haben'." },
+      { text: "Because 'bleiben' means you traveled fast.", correct: false, explain: "'bleiben' means staying, but is one of the 4 royal exceptions for 'sein'." }
+    ]
+  },
+  {
+    scenario: "In Slide 31 & 34, how do you say: 'I got to know many interesting people and took a language course on vacation'?",
+    hint: "kennenlernen ➔ kennengelernt | machen ➔ gemacht.",
+    options: [
+      { text: "Ich habe viele interessante Menschen kennengelernt und einen Sprachkurs gemacht.", correct: true, explain: "Brilliant! 'kennenlernen' becomes 'kennengelernt' (separable) and 'einen Sprachkurs machen' becomes 'gemacht'!" },
+      { text: "Ich bin viele Menschen gekennenlernt und einen Sprachkurs gemachen.", correct: false, explain: "'kennenlernen' takes 'haben' and forms 'kennengelernt'." },
+      { text: "Ich habe Menschen kennenlernt und einen Sprachkurs gemacht.", correct: false, explain: "'kennengelernt' needs 'ge-' in the middle sandwich." }
+    ]
+  }
+];
+
+
 
 
 
