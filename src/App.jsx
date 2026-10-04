@@ -98,6 +98,8 @@ import Lesson45PartizipStudio from './components/Lesson45PartizipStudio';
 import Lesson45Game from './components/Lesson45Game';
 import Lesson46UrlaubStudio from './components/Lesson46UrlaubStudio';
 import Lesson46Game from './components/Lesson46Game';
+import Lesson47SupermarktStudio from './components/Lesson47SupermarktStudio';
+import Lesson47Game from './components/Lesson47Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -144,11 +146,12 @@ import {
   LESSON_43_ITEMS,
   LESSON_44_ITEMS,
   LESSON_45_ITEMS,
-  LESSON_46_ITEMS
+  LESSON_46_ITEMS,
+  LESSON_47_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(46); // Default to Lesson 46 as requested, easy switch to 1-45
+  const [currentLesson, setCurrentLesson] = useState(47); // Default to Lesson 47 as requested, easy switch to 1-46
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -198,6 +201,7 @@ export default function App() {
   if (currentLesson === 44) activeItems = LESSON_44_ITEMS;
   if (currentLesson === 45) activeItems = LESSON_45_ITEMS;
   if (currentLesson === 46) activeItems = LESSON_46_ITEMS;
+  if (currentLesson === 47) activeItems = LESSON_47_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -245,7 +249,8 @@ export default function App() {
     if (currentLesson === 43) return "Lesson 43: das Perfekt Teil 1 (Present Perfect Tense - Satzklammer & Partizip II Formations)";
     if (currentLesson === 44) return "Lesson 44: das Perfekt Teil 2 (haben vs. sein Selection Rules, Movement, State Change & Chameleon Verbs)";
     if (currentLesson === 45) return "Lesson 45: das Perfekt Teil 3 (The 4 Partizip II Blueprints - Regular, Irregular, Separable Sandwich & Inseparable Superglue)";
-    return "Lesson 46: Was hast du im Urlaub gemacht? (Vacation Vocab, Destinations, Lodgings, Activities & Compound Past Stories)";
+    if (currentLesson === 46) return "Lesson 46: Was hast du im Urlaub gemacht? (Vacation Vocab, Destinations, Lodgings, Activities & Compound Past Stories)";
+    return "Lesson 47: Im Supermarkt (Supermarket Vocab, Packaging, Measurements, Aisle Navigation & Checkout Dialogue)";
   };
 
   const getLessonDesc = () => {
@@ -384,7 +389,10 @@ export default function App() {
     if (currentLesson === 45) {
       return "Master the 4 Partizip II blueprints in German (das Perfekt - Teil 3)! Discover the Lego building blocks: Regular (ge-...-t), Irregular (ge-...-en), Separable Sandwich (ein-ge-kauft, auf-ge-standen), and Inseparable Superglue (erklärt, verstanden strictly NO ge-), plus the VIP -ieren rule!";
     }
-    return "Master talking about vacations, holidays, destinations, accommodations, and activities in German (Was hast du im Urlaub gemacht?)! Explore the 4 Conversation Pillars (Wo warst du? Mit wem? Wo übernachtet? Was gemacht?), compound past stories, and vacation mindmaps!";
+    if (currentLesson === 46) {
+      return "Master talking about vacations, holidays, destinations, accommodations, and activities in German (Was hast du im Urlaub gemacht?)! Explore the 4 Conversation Pillars (Wo warst du? Mit wem? Wo übernachtet? Was gemacht?), compound past stories, and vacation mindmaps!";
+    }
+    return "Master grocery shopping and navigating the German supermarket (Im Supermarkt)! Learn shopping essentials (der Einkaufswagen, der Einkaufszettel), exact packaging units (eine Dose, ein Stück, eine Tafel, ein Glas, ein Becher), metric weight & liquid measurements (das Pfund = 500g, anderthalb Liter), aisle navigation with Dative prepositions (beim, bei der, bei den), and the complete checkout dialogue at the Kasse!";
   };
 
   return (
@@ -835,6 +843,15 @@ export default function App() {
 
         {currentLesson === 46 && activeTab === 'game46' && (
           <Lesson46Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 47 Specific Modules */}
+        {currentLesson === 47 && activeTab === 'studio47' && (
+          <Lesson47SupermarktStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 47 && activeTab === 'game47' && (
+          <Lesson47Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

@@ -11010,6 +11010,275 @@ export const LESSON_46_SCENARIOS = [
   }
 ];
 
+export const LESSON_47_ITEMS = [
+  {
+    id: "l47-equipment-nouns",
+    german: "Im Supermarkt: der Einkaufswagen, der Einkaufskorb, die Einkaufsliste, die Kasse, der Kassenbon",
+    english: "In the supermarket: shopping cart, shopping basket, shopping list, cash register, receipt",
+    pronunciation: "im ZOO-pair-markt: dair EYN-kowfs-vah-gen, dair EYN-kowfs-korp, dee EYN-kowfs-lis-teh, dee KAHS-seh, dair KAHS-sen-bon",
+    audioText: "der Supermarkt, die Supermärkte. die Einkaufsliste. der Einkaufswagen. der Einkaufskorb. die Kasse. der Kassenbon, der Kassenzettel.",
+    category: "supermarket-core",
+    badge: "Supermarket Essentials • Slides 2-5, 9",
+    icon: "🛒",
+    kenyanAnalogy: "Entering the store: grabbing a rolling trolley ('der Einkaufswagen') for big family shopping or a handheld basket ('der Einkaufskorb') for a quick errand with your list ('die Einkaufsliste')!",
+    memoryTrick: "der Einkaufswagen (cart) | der Einkaufskorb (basket) | der Kassenbon (receipt)!",
+    imageType: "supermarket-trolley"
+  },
+  {
+    id: "l47-people-nouns",
+    german: "der Kassierer / die Kassiererin & der Kunde / die Kundin (die Kunden, die Kundinnen)",
+    english: "The cashier (male/female) & the customer (male/female/plural)",
+    pronunciation: "dair kah-SEE-rer / dee kah-SEE-reh-rin & dair KOON-deh / dee KOON-din",
+    audioText: "der Kassierer, die Kassiererin. der Kunde, die Kundin. die Kunden, die Kundinnen. die Abteilung.",
+    category: "people",
+    badge: "People & Staff • Slides 6-8",
+    icon: "🧑‍💼",
+    kenyanAnalogy: "The friendly supermarket team: the cashier scanning your groceries ('die Kassiererin'), the customer shopping in the aisles ('die Kundin'), and the sections ('die Abteilung')!",
+    memoryTrick: "der Kunde (male customer) ➔ die Kundin (female) | die Kassiererin (cashier)!",
+    imageType: "cashier-customer"
+  },
+  {
+    id: "l47-preposition-compass",
+    german: "Der Supermarkt-Kompass: Ich gehe zum Supermarkt ➔ Ich bin im Supermarkt ➔ Ich komme vom Supermarkt",
+    english: "The Preposition Compass: going TO (zum) ➔ being IN (im) ➔ coming FROM (vom)",
+    pronunciation: "tsoom ZOO-pair-markt ➔ im ZOO-pair-markt ➔ fom ZOO-pair-markt",
+    audioText: "Ich gehe zum Supermarkt. Ich bin im Supermarkt. Ich komme vom Supermarkt.",
+    category: "prepositions",
+    badge: "The Golden Trio • Slides 10-12",
+    icon: "🧭",
+    kenyanAnalogy: "The 3-stage shopping trip compass: 1. Walking towards the store (Direction: zu + dem = 'zum Supermarkt'), 2. Browsing inside (Location: in + dem = 'im Supermarkt'), 3. Walking back home with grocery bags (Origin: von + dem = 'vom Supermarkt')!",
+    memoryTrick: "Heading there: ZUM | Inside: IM | Returning: VOM!",
+    imageType: "walking-supermarket"
+  },
+  {
+    id: "l47-packaging-cola-cheese-choc",
+    german: "eine Dose Cola, ein Stück Käse, eine Tafel Schokolade, ein Glas Honig",
+    english: "a can of cola, a piece of cheese, a bar of chocolate, a jar of honey",
+    pronunciation: "EYE-neh DOH-zeh KOH-lah, eyn SHTEWK KEH-zeh, EYE-neh TAH-fel sho-ko-LAH-deh, eyn GLAHS HOH-nikh",
+    audioText: "eine Dose Cola, ein Stück Käse, eine Tafel Schokolade, ein Glas Honig.",
+    category: "packaging",
+    badge: "Containers 1 • Slide 13",
+    icon: "🍫",
+    kenyanAnalogy: "German precision packaging: sodas in a metal tin ('eine Dose'), cheese in a sliced block ('ein Stück'), chocolate in a classic slab/bar ('eine Tafel'), and sweet honey in a glass jar ('ein Glas')!",
+    memoryTrick: "Dose (can) | Stück (piece) | Tafel (chocolate bar) | Glas (jar)!",
+    imageType: "chocolate-honey"
+  },
+  {
+    id: "l47-packaging-oil-milk-detergent",
+    german: "eine Flasche Öl, eine Packung Milch, eine Packung Waschmittel",
+    english: "a bottle of oil, a carton/pack of milk, a pack of laundry detergent",
+    pronunciation: "EYE-neh FLAH-sheh OEL, EYE-neh PAHK-oong MILKH, EYE-neh PAHK-oong VAHSH-mit-tel",
+    audioText: "eine Flasche Öl, eine Packung Milch, eine Packung Waschmittel.",
+    category: "packaging",
+    badge: "Containers 2 • Slide 13",
+    icon: "🍾",
+    kenyanAnalogy: "Cooking oil in a tall glass/plastic bottle ('eine Flasche Öl') and fresh milk or detergent powder in a carton box ('eine Packung')!",
+    memoryTrick: "Flasche (bottle) | Packung (carton/box pack)!",
+    imageType: "milk-oil"
+  },
+  {
+    id: "l47-packaging-yogurt-rice-tomatoes",
+    german: "einen Becher Joghurt, einen Beutel Reis, ein Kilo Tomaten",
+    english: "a tub/cup of yogurt, a bag/pouch of rice, a kilo of tomatoes",
+    pronunciation: "EYE-nen BEKH-er YOH-goort, EYE-nen BOY-tel RYS, eyn KEE-loh toh-MAH-ten",
+    audioText: "Ich kaufe einen Becher Joghurt, einen Beutel Reis und ein Kilo Tomaten. Ich möchte Tomaten kaufen.",
+    category: "packaging",
+    badge: "Masculine Containers (Akkusativ) • Slide 13",
+    icon: "🍚",
+    kenyanAnalogy: "Notice the masculine direct objects: 'der Becher' becomes 'einen Becher Joghurt' and 'der Beutel' becomes 'einen Beutel Reis'! Fresh produce is weighed in kilos: 'ein Kilo Tomaten'!",
+    memoryTrick: "der Becher ➔ einen Becher (tub) | der Beutel ➔ einen Beutel (pouch/bag)!",
+    imageType: "yogurt-rice"
+  },
+  {
+    id: "l47-measurements-kilo-gramm-pfund",
+    german: "Mengenangaben (Gewicht): das Kilo, zwei Kilo, anderthalb Kilo (1,5 kg), ein halbes Kilo (500g = das Pfund), 250 Gramm",
+    english: "Weights & Quantities: kilo, 2 kg, 1.5 kg (one and a half), 500g (half a kilo / German pound), 250g",
+    pronunciation: "dahs KEE-loh, AHN-dert-hahlp KEE-loh, eyn HAHL-bes KEE-loh, dahs PFOONT, 500 GRAHM",
+    audioText: "das Kilo, zwei Kilo, anderthalb Kilo, ein Kilo, ein halbes Kilo, fünfhundert Gramm, das Pfund, zweihundertfünfzig Gramm. Ich möchte ein halbes Kilo Äpfel kaufen.",
+    category: "measurements",
+    badge: "Weight Measurements • Slides 14-16",
+    icon: "⚖️",
+    kenyanAnalogy: "Two vital German secrets: 1. 'anderthalb' means 'one and a half' (1.5 kg)! 2. In German markets, 'ein Pfund' is exactly 500 grams (half a kilo)!",
+    memoryTrick: "anderthalb = 1.5 | 1 Pfund = 500 Gramm (half a kilo)!",
+    imageType: "weight-scale"
+  },
+  {
+    id: "l47-measurements-liter",
+    german: "Mengenangaben (Flüssigkeiten): der Liter, zwei Liter, anderthalb Liter (1,5 L), ein halber Liter (500 ml), 250 Milliliter",
+    english: "Liquid Measurements: liter, 2 liters, 1.5 liters, half a liter (500 ml), 250 ml",
+    pronunciation: "dair LEE-ter, AHN-dert-hahlp LEE-ter, eyn HAHL-ber LEE-ter, 500 mil-lee-LEE-ter",
+    audioText: "der Liter, zwei Liter, anderthalb Liter, ein Liter, fünfhundert Milliliter, ein halber Liter, zweihundertfünfzig Milliliter.",
+    category: "measurements",
+    badge: "Liquid Volumes • Slide 17",
+    icon: "🧃",
+    kenyanAnalogy: "Ordering milk, water, or juices: 'zwei Liter Wasser', 'anderthalb Liter Saft' (1.5 L), or 'ein halber Liter' (500 ml)!",
+    memoryTrick: "ein halber Liter = 500 ml | anderthalb Liter = 1.5 L!",
+    imageType: "liquid-bottles"
+  },
+  {
+    id: "l47-ask-where-item",
+    german: "Entschuldigen Sie, wo finde ich hier Chips? ➔ Chips finden Sie beim Knabberzeug.",
+    english: "Excuse me, where will I find chips here? ➔ You will find chips in the snacks section.",
+    pronunciation: "ent-SHOOL-dee-gen ZEE, voh FIN-deh ikh heer CHIPS? CHIPS FIN-den ZEE bym KNAHB-ber-tsoyg",
+    audioText: "Entschuldigen Sie, wo finde ich hier Chips? Chips finden Sie beim Knabberzeug.",
+    category: "aisle-dialogue",
+    badge: "Asking for Items • Slide 18",
+    icon: "🥨",
+    kenyanAnalogy: "When searching for an ingredient, ask any staff member politely: 'Entschuldigen Sie, wo finde ich...?' They will guide you directly to the correct aisle using 'beim' or 'bei'!",
+    memoryTrick: "Entschuldigen Sie, wo finde ich [Produkt]? ➔ [Produkt] finden Sie bei...",
+    imageType: "asking-staff"
+  },
+  {
+    id: "l47-aisles-snacks-drinks-dairy",
+    german: "beim Knabberzeug, bei den Getränken, bei Obst und Gemüse, bei Milch und Milchprodukten",
+    english: "in the snacks section, in the beverages aisle, in fruits & vegetables, in dairy products",
+    pronunciation: "bym KNAHB-ber-tsoyg, by dayn ge-TREN-ken, by OPST oont ge-MEW-zeh, by MILKH oont MILKH-pro-dook-ten",
+    audioText: "beim Knabberzeug, bei den Getränken, bei Obst und Gemüse, bei Milch und Milchprodukten.",
+    category: "aisles",
+    badge: "Aisles 1 (Snacks & Produce) • Slides 19-20",
+    icon: "🍎",
+    kenyanAnalogy: "Notice the dative combinations: 'das Knabberzeug' ➔ 'beim' (bei + dem), 'die Getränke' (plural) ➔ 'bei den Getränken', while fresh produce is simply 'bei Obst und Gemüse'!",
+    memoryTrick: "beim Knabberzeug (neuter) | bei den Getränken (plural)!",
+    imageType: "produce-dairy"
+  },
+  {
+    id: "l47-aisles-bakery-cereal-meat",
+    german: "beim Getreide, bei der Fleischtheke, beim Waschmittel, bei den Backwaren",
+    english: "in the cereals section, at the meat counter, in cleaning supplies, in the bakery section",
+    pronunciation: "bym ge-TRY-deh, by dair FLYSH-tay-keh, bym VAHSH-mit-tel, by dayn BAHK-vah-ren",
+    audioText: "beim Getreide, bei der Fleischtheke, beim Waschmittel, bei den Backwaren.",
+    category: "aisles",
+    badge: "Aisles 2 (Meat & Bakery) • Slides 21-22",
+    icon: "🥖",
+    kenyanAnalogy: "Fresh loaves and pretzels at the bakery counter ('bei den Backwaren'), beef and sausages at the butchery counter ('bei der Fleischtheke' - die Theke ➔ bei der), and cereals ('beim Getreide')!",
+    memoryTrick: "die Fleischtheke ➔ bei der Fleischtheke (fem Dativ) | die Backwaren ➔ bei den Backwaren!",
+    imageType: "bakery-meat"
+  },
+  {
+    id: "l47-aisles-sweets-frozen-spices",
+    german: "bei den Süßwaren, bei der Tiefkühlkost, bei den Gewürzen, bei den Fleischwaren",
+    english: "in the confectionery section, in frozen foods, in the spices section, in the meats section",
+    pronunciation: "by dayn ZEWS-vah-ren, by dair TEEF-kewl-kost, by dayn ge-VEWR-tsen, by dayn FLYSH-vah-ren",
+    audioText: "bei den Süßwaren, bei der Tiefkühlkost, bei den Gewürzen, bei den Fleischwaren.",
+    category: "aisles",
+    badge: "Aisles 3 (Frozen & Spices) • Slide 23",
+    icon: "🧊",
+    kenyanAnalogy: "Looking for ice cream and frozen pizza? Head to 'bei der Tiefkühlkost' (die Kost ➔ bei der)! Looking for sweets and candies? Go to 'bei den Süßwaren'!",
+    memoryTrick: "Tiefkühlkost (frozen items) | Gewürze (spices) | Süßwaren (sweets)!",
+    imageType: "frozen-spices"
+  },
+  {
+    id: "l47-aisles-pastry-delicacy-drugstore",
+    german: "beim Gebäck, bei der Feinkost, bei der Drogerie",
+    english: "in the cookies/pastry section, in delicacies/gourmet, in health & beauty/drugstore section",
+    pronunciation: "bym ge-BEHK, by dair FYN-kost, by dair dro-ge-REE",
+    audioText: "beim Gebäck, bei der Feinkost, bei der Drogerie.",
+    category: "aisles",
+    badge: "Aisles 4 (Gourmet & Drogerie) • Slide 23",
+    icon: "🧴",
+    kenyanAnalogy: "Treating yourself to cookies ('beim Gebäck'), imported cheeses and gourmet olives ('bei der Feinkost'), or shampoo and skincare ('bei der Drogerie')!",
+    memoryTrick: "das Gebäck ➔ beim Gebäck | die Drogerie ➔ bei der Drogerie!",
+    imageType: "gourmet-drogerie"
+  },
+  {
+    id: "l47-checkout-greeting-amount",
+    german: "Guten Tag! / Hallo! ➔ Das macht €25,10 bitte! (fünfundzwanzig Euro zehn)",
+    english: "Good day! / Hello! ➔ That comes to €25.10 please!",
+    pronunciation: "GOO-ten TAHK! / HAH-loh! ➔ dahs MAHKHT fewnf-oont-TSVAHN-tsikh OY-roh TSEEN BIT-teh!",
+    audioText: "Guten Tag! Hallo! Das macht fünfundzwanzig Euro zehn bitte!",
+    category: "checkout",
+    badge: "Checkout Step 1 • Slides 24-26",
+    icon: "💶",
+    kenyanAnalogy: "Arriving at the conveyor belt: the cashier greets you warmly and rings up your groceries rapidly. They announce the total using 'Das macht ... bitte!' (That makes ... please!).",
+    memoryTrick: "Saying price: 25,10 € = 'fünfundzwanzig Euro zehn'!",
+    imageType: "checkout-cashier"
+  },
+  {
+    id: "l47-checkout-payment-handover",
+    german: "Hier bitte! ➔ Danke! Einen schönen Tag!",
+    english: "Here you go! ➔ Thank you! Have a nice day!",
+    pronunciation: "HEER BIT-teh! ➔ DAHN-keh! EYE-nen SHOE-nen TAHK!",
+    audioText: "Hier bitte! Danke! Einen schönen Tag!",
+    category: "checkout",
+    badge: "Checkout Step 2 • Slide 26",
+    icon: "💳",
+    kenyanAnalogy: "Handing over your cash or tapping your EC card: you say 'Hier bitte!' (Here you are). The cashier hands you your receipt ('Kassenbon') with a polite wish: 'Einen schönen Tag!'",
+    memoryTrick: "Hier bitte! (Here you are!) | Einen schönen Tag! (Have a nice day!)",
+    imageType: "paying-card"
+  },
+  {
+    id: "l47-checkout-farewell-ebenso",
+    german: "Danke, ebenso! / Bitte schön! / Vielen Dank!",
+    english: "Thank you, same to you (likewise)! / You are welcome! / Thank you very much!",
+    pronunciation: "DAHN-keh, AY-ben-zoh! / BIT-teh SHOEN! / FEE-len DAHNK!",
+    audioText: "Danke, ebenso! Bitte schön! Vielen Dank! an der Kasse.",
+    category: "checkout",
+    badge: "The Polite Farewell • Slides 24-26",
+    icon: "👋",
+    kenyanAnalogy: "The magic German reply: when someone wishes you a nice day ('Einen schönen Tag!'), reply instantly with 'Danke, ebenso!' (Thanks, same to you / likewise!). It's the most polite and natural response in German society!",
+    memoryTrick: "Danke, ebenso! = Thanks, same to you / likewise!",
+    imageType: "happy-farewell"
+  }
+];
+
+export const LESSON_47_SCENARIOS = [
+  {
+    scenario: "In Slide 10–12, how do you express the 3 stages: 'I am going TO the supermarket', 'I am IN the supermarket', and 'I am coming FROM the supermarket'?",
+    hint: "Use the preposition trio: zum, im, vom.",
+    options: [
+      { text: "1. Ich gehe zum Supermarkt | 2. Ich bin im Supermarkt | 3. Ich komme vom Supermarkt", correct: true, explain: "Genau! zu + dem = zum (direction), in + dem = im (location), von + dem = vom (origin)!" },
+      { text: "1. Ich gehe an Supermarkt | 2. Ich bin auf Supermarkt | 3. Ich komme aus Supermarkt", correct: false, explain: "Standard supermarket prepositions are zum, im, and vom." },
+      { text: "1. Ich gehe nach Supermarkt | 2. Ich bin bei Supermarkt | 3. Ich komme zu Supermarkt", correct: false, explain: "'nach' is for cities and countries, not the local supermarket." }
+    ]
+  },
+  {
+    scenario: "In Slide 13, look at the packaging units. Which container matches: 1. Cola, 2. Schokolade, 3. Joghurt?",
+    hint: "Dose (can), Tafel (bar), Becher (tub/cup).",
+    options: [
+      { text: "1. eine Dose Cola | 2. eine Tafel Schokolade | 3. einen Becher Joghurt", correct: true, explain: "Ausgezeichnet! Cans are 'Dose', chocolate bars are 'Tafel', and yogurt tubs are 'Becher' (masculine Akkusativ: einen Becher)!" },
+      { text: "1. ein Glas Cola | 2. eine Flasche Schokolade | 3. ein Stück Joghurt", correct: false, explain: "Chocolate is in a 'Tafel' and cola is in a 'Dose'." },
+      { text: "1. eine Packung Cola | 2. eine Dose Schokolade | 3. eine Flasche Joghurt", correct: false, explain: "Cola is in a 'Dose' and chocolate is in a 'Tafel'." }
+    ]
+  },
+  {
+    scenario: "In Slide 14 & 15, how much is 'ein Pfund' and 'anderthalb Kilo' in Germany?",
+    hint: "1 Pfund = 500 grams (half a kilo), anderthalb = 1.5 kg (one and a half).",
+    options: [
+      { text: "ein Pfund = 500 Gramm (half a kilo) | anderthalb Kilo = 1,5 kg (one and a half kilos)", correct: true, explain: "Wunderbar! In Germany, 'ein Pfund' is always 500 grams, and 'anderthalb' means 1.5!" },
+      { text: "ein Pfund = 1000 Gramm | anderthalb Kilo = 2 kg", correct: false, explain: "1000g is 'ein Kilo', while 'ein Pfund' is 500g." },
+      { text: "ein Pfund = 250 Gramm | anderthalb Kilo = 3 kg", correct: false, explain: "250g is a quarter kilo." }
+    ]
+  },
+  {
+    scenario: "In Slide 18–20, you ask a worker: 'Excuse me, where do I find chips and fruit?' What is the correct German reply?",
+    hint: "beim Knabberzeug (neuter Dativ) & bei Obst und Gemüse.",
+    options: [
+      { text: "Chips finden Sie beim Knabberzeug und Obst finden Sie bei Obst und Gemüse.", correct: true, explain: "Perfekt! 'das Knabberzeug' becomes 'beim Knabberzeug' and produce is 'bei Obst und Gemüse'!" },
+      { text: "Chips finden Sie auf Knabberzeug und Obst an Obst und Gemüse.", correct: false, explain: "Supermarket sections use 'bei / beim', not 'auf' or 'an'." },
+      { text: "Chips finden Sie in Knabberzeug.", correct: false, explain: "The standard German idiom is 'beim Knabberzeug'." }
+    ]
+  },
+  {
+    scenario: "In Slide 21 & 22, why do we say 'bei der Fleischtheke' and 'bei den Backwaren'?",
+    hint: "die Fleischtheke is feminine Dative (bei der), die Backwaren is plural Dative (bei den).",
+    options: [
+      { text: "Because 'bei' requires the Dative case (die Fleischtheke ➔ bei der, die Backwaren ➔ bei den).", correct: true, explain: "Hervorragend! 'bei' is a strict Dative preposition: bei der Fleischtheke, bei den Backwaren, bei den Getränken!" },
+      { text: "Because they are accusative objects.", correct: false, explain: "'bei' is never accusative." },
+      { text: "Because 'Fleischtheke' is plural.", correct: false, explain: "'Fleischtheke' is feminine singular." }
+    ]
+  },
+  {
+    scenario: "In Slide 26, the cashier hands you your receipt and says: 'Danke! Einen schönen Tag!' What is the most polite and natural German reply?",
+    hint: "Use the polite return wish: 'Danke, ebenso!' (Thanks, likewise / same to you!).",
+    options: [
+      { text: "Danke, ebenso! (Thank you, same to you!)", correct: true, explain: "Brilliant! 'Danke, ebenso!' is the universal, natural way Germans return good wishes at checkout counters and cafes!" },
+      { text: "Nein, danke!", correct: false, explain: "'Nein danke' means 'No thank you', which makes no sense when someone wishes you a nice day." },
+      { text: "Ich bin fertig.", correct: false, explain: "'Ich bin fertig' means 'I am finished'." }
+    ]
+  }
+];
+
+
 
 
 
