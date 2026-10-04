@@ -10474,6 +10474,275 @@ export const LESSON_44_SCENARIOS = [
   }
 ];
 
+export const LESSON_45_ITEMS = [
+  {
+    id: "l45-blueprint-overview",
+    german: "Die 4 Partizip II Baupläne: Regelmäßig, Unregelmäßig, Trennbar & Untrennbar",
+    english: "The 4 Partizip II Blueprints: Regular, Irregular, Separable & Inseparable",
+    pronunciation: "dee FEER par-tee-TSEEP tsvey BOW-pleh-neh",
+    audioText: "Die vier Baupläne für das Partizip zwei: regelmäßig, unregelmäßig, trennbar und untrennbar.",
+    category: "blueprint-overview",
+    badge: "Master Blueprint • Slides 2 & 8",
+    icon: "🏭",
+    kenyanAnalogy: "Think of Partizip II formation like assembling Lego building blocks: [ge- / no ge-] + [Verb stem with or without vowel shift] + [Ending -t, -et, or -en]. Once you know which of the 4 buckets a verb belongs to, building the past participle is completely effortless!",
+    memoryTrick: "4 categories: 1. Regular (ge-...-t), 2. Irregular (ge-...-en), 3. Separable (prefix-ge-...-t/en), 4. Inseparable (prefix-...-t/en NO ge)!",
+    imageType: "construction-blueprint"
+  },
+  {
+    id: "l45-reg-machen",
+    german: "machen ➔ hat gemacht: Ich habe die Hausaufgabe gemacht.",
+    english: "machen ➔ hat gemacht: I have done the homework.",
+    pronunciation: "ge-MAHKHT: Ikh HAH-beh dee HOWS-owf-gah-beh ge-MAHKHT",
+    audioText: "machen, hat gemacht. Ich habe die Hausaufgabe gemacht.",
+    category: "regular",
+    badge: "Regular Blueprint • Slides 9-11",
+    icon: "📝",
+    kenyanAnalogy: "The standard regular recipe: Attach 'ge-' to the front, take the stem 'mach', and add '-t' at the end ➔ 'gemacht'. Place 'habe' in Position 2 and throw 'gemacht' all the way to the sentence caboose!",
+    memoryTrick: "Formula: ge- + Stamm (mach) + -t = gemacht!",
+    imageType: "doing-homework"
+  },
+  {
+    id: "l45-reg-spielen-lernen",
+    german: "spielen (hat gespielt) & lernen (hat gelernt): Wie lange hast du gestern Musik gespielt? / Ich habe die neuen Wörter schon gelernt.",
+    english: "spielen & lernen: How long did you play music yesterday? / I have already learnt the new words.",
+    pronunciation: "ge-SPEELT & ge-LEHRNT",
+    audioText: "spielen, hat gespielt. Wie lange hast du gestern Musik gespielt? lernen, hat gelernt. Ich habe die neuen Wörter schon gelernt.",
+    category: "regular",
+    badge: "Regular Examples • Slides 12-13",
+    icon: "🎸",
+    kenyanAnalogy: "Whether strumming guitar chords ('gespielt') or memorizing flashcards ('gelernt'), regular verbs follow the identical clean rhythm: ge- + spiel + -t and ge- + lern + -t.",
+    memoryTrick: "ge- + spiel + -t = gespielt | ge- + lern + -t = gelernt!",
+    imageType: "guitar-music"
+  },
+  {
+    id: "l45-reg-arbeiten",
+    german: "arbeiten ➔ hat gearbeitet: Ich habe auch am Sonntag gearbeitet.",
+    english: "arbeiten ➔ hat gearbeitet: I worked on Sunday also.",
+    pronunciation: "ge-ar-BY-tet: Ikh HAH-beh OWKH ahm ZON-tahk ge-ar-BY-tet",
+    audioText: "arbeiten, hat gearbeitet. Ich habe auch am Sonntag gearbeitet.",
+    category: "regular",
+    badge: "Breathing Cushion -et • Slide 14",
+    icon: "💼",
+    kenyanAnalogy: "Because the stem ends in 't' (arbeit-), smashing another 't' right onto it would sound like a stutter ('arbeit-t'). German adds an 'e' breathing cushion: ge- + arbeit + -et ➔ 'gearbeitet'!",
+    memoryTrick: "Stems ending in -d or -t get the '-et' breathing cushion!",
+    imageType: "sunday-work"
+  },
+  {
+    id: "l45-ieren-studieren-fotografieren",
+    german: "-ieren Verben (studieren ➔ hat studiert / fotografieren ➔ hat fotografiert)",
+    english: "Verbs ending in '-ieren': Martin studied Mathematics at the University. / How long did you photograph the tourists?",
+    pronunciation: "shtoo-DEERT & fo-to-grah-FEERT",
+    audioText: "studieren, hat studiert. Martin hat an der Uni Mathe studiert. fotografieren, hat fotografiert. Wie lange hast du die Touristen fotografiert?",
+    category: "ieren-verbs",
+    badge: "VIP -ieren Rule (NO ge-) • Slides 6, 15-16",
+    icon: "🎓",
+    kenyanAnalogy: "Fancy French-origin verbs ending in '-ieren' act like VIPs: they refuse to wear the 'ge-' uniform! Just take the stem and snap on '-t': studier + t ➔ studiert, fotografier + t ➔ fotografiert!",
+    memoryTrick: "-ieren verbs NEVER take 'ge-': studiert, fotografiert, telefoniert, repariert!",
+    imageType: "math-study"
+  },
+  {
+    id: "l45-irreg-schreiben",
+    german: "schreiben ➔ hat geschrieben: Petra hat mir einen Brief geschrieben.",
+    english: "schreiben ➔ hat geschrieben: Petra has written a letter to me.",
+    pronunciation: "ge-SHREE-ben: PAY-trah hat meer EYE-nen BREEF ge-SHREE-ben",
+    audioText: "schreiben, hat geschrieben. Petra hat mir einen Brief geschrieben.",
+    category: "irregular",
+    badge: "Irregular Vowel Flip (ei ➔ ie) • Slides 19-20",
+    icon: "✉️",
+    kenyanAnalogy: "Irregular verbs change their stem vowel and finish with '-en'! Notice how 'ei' in schreiben flips to 'ie' in geschrieben: ge- + schrieb + -en!",
+    memoryTrick: "schreiben ➔ hat geschrieben (ei flips to ie + -en ending)!",
+    imageType: "writing-letter"
+  },
+  {
+    id: "l45-irreg-finden-kommen",
+    german: "finden (hat gefunden) & kommen (ist gekommen): Wir haben den Film sehr langweilig gefunden. / Er ist spät nach Hause gekommen.",
+    english: "finden & kommen: We found the movie very boring. / He came home late.",
+    pronunciation: "ge-FOON-den & ge-KOM-men",
+    audioText: "finden, hat gefunden. Wir haben den Film sehr langweilig gefunden. kommen, ist gekommen. Er ist spät nach Hause gekommen.",
+    category: "irregular",
+    badge: "Irregular Patterns • Slides 21-22",
+    icon: "🍿",
+    kenyanAnalogy: "Notice the vowel shift: finden (i) flips to gefunden (u). For kommen, the stem stays identical (gekommen), but since coming home is movement from A to B, it takes 'ist' instead of 'hat'!",
+    memoryTrick: "finden ➔ hat gefunden (i ➔ u) | kommen ➔ ist gekommen (movement)!",
+    imageType: "movie-cinema"
+  },
+  {
+    id: "l45-irreg-denken-bringen",
+    german: "denken (hat gedacht) & bringen (hat gebracht): The Mixed Irregulars",
+    english: "denken ➔ hat gedacht (to think) / bringen ➔ hat gebracht (to bring)",
+    pronunciation: "ge-DAHKHT & ge-BRAHKHT",
+    audioText: "denken, hat gedacht. bringen, hat gebracht.",
+    category: "irregular",
+    badge: "Mixed Irregular Rebels • Slides 18 & 23",
+    icon: "💡",
+    kenyanAnalogy: "A special superhero category called 'mixed verbs': their stem vowel transforms (denk ➔ dach, bring ➔ brach), but they finish with a regular '-t' instead of '-en'!",
+    memoryTrick: "denken ➔ hat gedacht | bringen ➔ hat gebracht!",
+    imageType: "thought-bubble"
+  },
+  {
+    id: "l45-irreg-master-table",
+    german: "Die 8 Unregelmäßigen Königsverben: essen, fahren, gehen, geben, bringen, helfen, trinken, nehmen",
+    english: "The 8 Royal Irregular Verbs: gegessen, gefahren, gegangen, gegeben, gebracht, geholfen, getrunken, genommen",
+    pronunciation: "ge-GES-sen, ge-FAH-ren, ge-GANG-en, ge-GAY-ben, ge-BRAHKHT, ge-HOL-fen, ge-TROON-ken, ge-NOM-men",
+    audioText: "essen, hat gegessen. fahren, ist gefahren. gehen, ist gegangen. geben, hat gegeben. bringen, hat gebracht. helfen, hat geholfen. trinken, hat getrunken. nehmen, hat genommen.",
+    category: "irregular-table",
+    badge: "Master Table • Slide 23",
+    icon: "👑",
+    kenyanAnalogy: "The 8 powerhouse verbs from Slide 23. Notice the auxiliary anchors: 'fahren' and 'gehen' take 'ist' (movement), while all others take 'hat'!",
+    memoryTrick: "Movement: ist gefahren, ist gegangen. Rest: hat gegessen, hat gegeben, hat geholfen, hat getrunken, hat genommen, hat gebracht!",
+    imageType: "royal-table"
+  },
+  {
+    id: "l45-sep-einkaufen",
+    german: "einkaufen ➔ hat eingekauft: Hast du gestern viel eingekauft?",
+    english: "einkaufen ➔ hat eingekauft: Did you shop a lot yesterday?",
+    pronunciation: "EYEN-ge-kowft: HAST doo GES-tern FEEL EYEN-ge-kowft?",
+    audioText: "einkaufen, hat eingekauft. Hast du gestern viel eingekauft?",
+    category: "separable",
+    badge: "The 'ge-' Sandwich • Slides 25-27",
+    icon: "🛍️",
+    kenyanAnalogy: "The classic German 'ge-' Sandwich! In separable verbs, the 'ge-' jumps right into the middle between the separable prefix ('ein-') and the base participle ('gekauft') ➔ 'ein-ge-kauft'!",
+    memoryTrick: "Formula: Präfix (ein) + ge- + Stamm (kauf) + -t = eingekauft!",
+    imageType: "shopping-bags"
+  },
+  {
+    id: "l45-sep-aufstehen",
+    german: "aufstehen ➔ ist aufgestanden: Matthias ist heute spät aufgestanden.",
+    english: "aufstehen ➔ ist aufgestanden: Matthias woke up / got up late today.",
+    pronunciation: "OWF-ge-shtahn-den: mah-TEE-ahs IST HOY-teh SHPEHT OWF-ge-shtahn-den",
+    audioText: "aufstehen, ist aufgestanden. Matthias ist heute spät aufgestanden.",
+    category: "separable",
+    badge: "Separable + Irregular • Slides 28-29",
+    icon: "⏰",
+    kenyanAnalogy: "A separable verb with an irregular base (stehen ➔ gestanden). The 'ge-' sits comfortably in the middle: auf + ge + standen = aufgestanden. Because getting out of bed is a change of state, it takes 'ist'!",
+    memoryTrick: "auf + gestanden = aufgestanden (Takes 'ist' for state change)!",
+    imageType: "waking-alarm"
+  },
+  {
+    id: "l45-sep-master-table",
+    german: "Trennbare Verben: zumachen (hat zugemacht), mitkommen (ist mitgekommen), fernsehen (hat ferngesehen), anfangen (hat angefangen)",
+    english: "Separable Verbs Master Table: zugemacht, mitkommen, ferngesehen, angefangen",
+    pronunciation: "TSOO-ge-mahkht, MIT-ge-kom-men, FERN-ge-zay-en, AHN-ge-fahng-en",
+    audioText: "zumachen, hat zugemacht. mitkommen, ist mitgekommen. fernsehen, hat ferngesehen. anfangen, hat angefangen.",
+    category: "separable-table",
+    badge: "Master Separable Table • Slide 30",
+    icon: "📺",
+    kenyanAnalogy: "Every separable verb sandwiches 'ge-' inside: zu-ge-macht (closed), mit-ge-kommen (came along), fern-ge-sehen (watched TV), an-ge-fangen (started)!",
+    memoryTrick: "Always tuck 'ge-' between the prefix and the verb!",
+    imageType: "tv-living-room"
+  },
+  {
+    id: "l45-insep-erklaeren",
+    german: "erklären ➔ hat erklärt: Meine Lehrerin hat das Thema gut erklärt.",
+    english: "erklären ➔ hat erklärt: My teacher explained the topic very well.",
+    pronunciation: "er-KLEHRT: MY-neh LEH-reh-rin HAT dahs TAY-mah GOOT er-KLEHRT",
+    audioText: "erklären, hat erklärt. Meine Lehrerin hat das Thema gut erklärt.",
+    category: "inseparable",
+    badge: "Inseparable (NO ge-) • Slides 31-33",
+    icon: "👩‍🏫",
+    kenyanAnalogy: "Inseparable prefixes (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) are strict Superglue Bodyguards. They NEVER let 'ge-' enter! Just keep the prefix 'er-' and add '-t' at the end: er + klär + t ➔ erklärt!",
+    memoryTrick: "Inseparable rule: NO 'ge-' allowed! er- + klär + -t = erklärt!",
+    imageType: "teacher-chalkboard"
+  },
+  {
+    id: "l45-insep-verstehen",
+    german: "verstehen ➔ hat verstanden: Ich habe heute alles verstanden.",
+    english: "verstehen ➔ hat verstanden: Today I have understood everything.",
+    pronunciation: "fer-SHTAHN-den: Ikh HAH-beh HOY-teh AHL-les fer-SHTAHN-den",
+    audioText: "verstehen, hat verstanden. Ich habe heute alles verstanden.",
+    category: "inseparable",
+    badge: "Inseparable + Irregular • Slide 34",
+    icon: "🧠",
+    kenyanAnalogy: "With 'verstehen', the bodyguard 'ver-' blocks 'ge-', while the irregular base changes to 'standen' ➔ 'verstanden'. Celebrate saying: 'Ich habe heute alles verstanden!' (I understood everything today!).",
+    memoryTrick: "ver- + stand + -en = verstanden (NO ge-!)",
+    imageType: "student-reading"
+  },
+  {
+    id: "l45-insep-master-table",
+    german: "Untrennbare Verben: bekommen (hat bekommen), gefallen (hat gefallen), erzählen (hat erzählt), entscheiden (hat entschieden)",
+    english: "Inseparable Master Table: bekommen, gefallen, erzählt, entschieden",
+    pronunciation: "be-KOM-men, ge-FAHL-len, er-TSEHLT, ent-SHEE-den",
+    audioText: "bekommen, hat bekommen. gefallen, hat gefallen. erzählen, hat erzählt. entscheiden, hat entschieden.",
+    category: "inseparable-table",
+    badge: "Master Inseparable Table • Slide 35",
+    icon: "🛡️",
+    kenyanAnalogy: "Look at Slide 35's 4 superverbs: bekommen (stem unchanged), gefallen (already has ge- prefix), erzählen (regular -t), and entscheiden (vowel shift ei ➔ ie). NONE of them take an extra 'ge-'!",
+    memoryTrick: "be-, ge-, er-, ent- prefixes = 100% zero extra 'ge-' in Partizip II!",
+    imageType: "shield-guard"
+  },
+  {
+    id: "l45-kochen-fahren-recap",
+    german: "kochen (hat gekocht) vs. fahren (ist gefahren): Action vs. Travel Recap",
+    english: "kochen (hat gekocht) vs. fahren (ist gefahren): Cooking vs. Driving across town",
+    pronunciation: "ge-KOKHT vs. ge-FAH-ren",
+    audioText: "kochen, hat gekocht. Ich habe gestern lange gekocht. fahren, ist gefahren. Wir sind gestern in die Innenstadt gefahren.",
+    category: "recap",
+    badge: "Opening Anchor • Slides 4-5",
+    icon: "🍲",
+    kenyanAnalogy: "Slide 4 shows long cooking at home ('Ich habe gestern lange gekocht' - haben + regular gemacht/gekocht) while Slide 5 shows driving into the city center ('Wir sind gestern in die Innenstadt gefahren' - sein + irregular gefahren).",
+    memoryTrick: "kochen ➔ hat gekocht | fahren ➔ ist gefahren!",
+    imageType: "chef-cooking"
+  }
+];
+
+export const LESSON_45_SCENARIOS = [
+  {
+    scenario: "In Slide 8, 9, & 10, what is the golden formula for forming the Partizip II of a regular verb like 'machen'?",
+    hint: "ge- + verb stem (mach) + -t.",
+    options: [
+      { text: "ge- + Verbstamm + -t (ge + mach + t = gemacht)", correct: true, explain: "Genau! Regular verbs simply take 'ge-' in front, the unchanged stem, and '-t' at the end!" },
+      { text: "Verbstamm + -en (machen)", correct: false, explain: "'machen' is the infinitive, not the Partizip II." },
+      { text: "ge- + Verbstamm + -en (gemachen)", correct: false, explain: "'-en' is for irregular verbs, regular verbs take '-t'!" }
+    ]
+  },
+  {
+    scenario: "In Slide 14, why does 'arbeiten' become 'gearbeitet' instead of 'gearbeitt'?",
+    hint: "Because the stem ends in 't', it needs a pronunciation breathing cushion.",
+    options: [
+      { text: "Because verb stems ending in -d or -t insert an '-e-' breathing cushion before the '-t' ending (ge-arbeit-et).", correct: true, explain: "Ausgezeichnet! Stems ending in -d or -t (arbeiten, warten, antworten) add '-et' so you don't stutter double consonants!" },
+      { text: "Because 'arbeiten' is an irregular verb.", correct: false, explain: "'arbeiten' is regular; the '-e-' is purely a phonetic cushion." },
+      { text: "Because it is a separable verb.", correct: false, explain: "'arbeiten' has no prefix." }
+    ]
+  },
+  {
+    scenario: "In Slide 15 & 16, how do verbs ending in '-ieren' (like 'studieren' and 'fotografieren') form their Partizip II?",
+    hint: "VIP rule: They refuse to take 'ge-'.",
+    options: [
+      { text: "They NEVER take 'ge-'; they just add '-t' to the stem (studieren ➔ studiert, fotografieren ➔ fotografiert).", correct: true, explain: "Perfekt! Verbs ending in '-ieren' drop 'ge-' entirely: Martin hat Mathe studiert!" },
+      { text: "They take double 'ge-' (gestudiert).", correct: false, explain: "Never say 'gestudiert'! It is strictly 'studiert'." },
+      { text: "They take '-en' at the end (studieren).", correct: false, explain: "They end in '-t' (studiert)." }
+    ]
+  },
+  {
+    scenario: "In Slide 19 & 20, look at the irregular verb 'schreiben'. What happens in its Partizip II 'geschrieben'?",
+    hint: "Notice the stem vowel flip from 'ei' to 'ie' and the ending '-en'.",
+    options: [
+      { text: "It adds 'ge-', changes the vowel from 'ei' to 'ie' (schrieb), and ends in '-en' (geschrieben).", correct: true, explain: "Wunderbar! Irregular verbs typically change their stem vowel and end with '-en' (geschrieben, getrunken, geholfen)!" },
+      { text: "It remains completely regular (geschreibt).", correct: false, explain: "'geschreibt' does not exist in German." },
+      { text: "It drops the 'ge-' prefix (schrieben).", correct: false, explain: "Standard irregular verbs still keep 'ge-'." }
+    ]
+  },
+  {
+    scenario: "In Slide 25 & 28, how do separable verbs (like 'einkaufen' and 'aufstehen') place the 'ge-' in their Partizip II?",
+    hint: "The 'ge-' Sandwich: Prefix + ge- + Stem + ending.",
+    options: [
+      { text: "The 'ge-' is sandwiched in the middle between the prefix and the verb (ein-ge-kauft, auf-ge-standen).", correct: true, explain: "Hervorragend! In separable verbs, 'ge-' jumps right into the center sandwich: einkaufen ➔ eingekauft, aufstehen ➔ aufgestanden!" },
+      { text: "The 'ge-' is placed before the prefix (geeinkauft).", correct: false, explain: "'geeinkauft' is incorrect." },
+      { text: "The 'ge-' is placed after the ending (einkaufenge).", correct: false, explain: "'ge-' never goes to the very end of the word." }
+    ]
+  },
+  {
+    scenario: "In Slide 31, 33, & 34, why do inseparable verbs like 'erklären' and 'verstehen' have NO 'ge-' in 'erklärt' and 'verstanden'?",
+    hint: "Inseparable bodyguard prefixes (be-, ver-, er-, ent-, etc.) strictly ban 'ge-'.",
+    options: [
+      { text: "Inseparable prefixes (be-, ver-, er-, ent-, etc.) strictly block 'ge-', so the Partizip II has no 'ge-' (hat erklärt, hat verstanden).", correct: true, explain: "Brilliant! Inseparable prefixes are superglue bodyguards that reject 'ge-': Meine Lehrerin hat das Thema gut erklärt & Ich habe alles verstanden!" },
+      { text: "Because they are secretly English verbs.", correct: false, explain: "They are classic German inseparable verbs." },
+      { text: "Because they already have 4 syllables.", correct: false, explain: "The number of syllables is irrelevant; the inseparable prefix is what bans 'ge-'." }
+    ]
+  }
+];
+
+
 
 
 

@@ -94,6 +94,8 @@ import Lesson43PerfektStudio from './components/Lesson43PerfektStudio';
 import Lesson43Game from './components/Lesson43Game';
 import Lesson44HabenSeinStudio from './components/Lesson44HabenSeinStudio';
 import Lesson44Game from './components/Lesson44Game';
+import Lesson45PartizipStudio from './components/Lesson45PartizipStudio';
+import Lesson45Game from './components/Lesson45Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -138,11 +140,12 @@ import {
   LESSON_41_ITEMS,
   LESSON_42_ITEMS,
   LESSON_43_ITEMS,
-  LESSON_44_ITEMS
+  LESSON_44_ITEMS,
+  LESSON_45_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(44); // Default to Lesson 44 as requested, easy switch to 1-43
+  const [currentLesson, setCurrentLesson] = useState(45); // Default to Lesson 45 as requested, easy switch to 1-44
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -190,6 +193,7 @@ export default function App() {
   if (currentLesson === 42) activeItems = LESSON_42_ITEMS;
   if (currentLesson === 43) activeItems = LESSON_43_ITEMS;
   if (currentLesson === 44) activeItems = LESSON_44_ITEMS;
+  if (currentLesson === 45) activeItems = LESSON_45_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -235,7 +239,8 @@ export default function App() {
     if (currentLesson === 41) return "Lesson 41: Untrennbare Verben (German Inseparable Verbs - The 8 Superglue Bodyguards & Sentence Positions)";
     if (currentLesson === 42) return "Lesson 42: krank sein (Health, Illnesses, Pains, wehtun & Medical Advice)";
     if (currentLesson === 43) return "Lesson 43: das Perfekt Teil 1 (Present Perfect Tense - Satzklammer & Partizip II Formations)";
-    return "Lesson 44: das Perfekt Teil 2 (haben vs. sein Selection Rules, Movement, State Change & Chameleon Verbs)";
+    if (currentLesson === 44) return "Lesson 44: das Perfekt Teil 2 (haben vs. sein Selection Rules, Movement, State Change & Chameleon Verbs)";
+    return "Lesson 45: das Perfekt Teil 3 (The 4 Partizip II Blueprints - Regular, Irregular, Separable Sandwich & Inseparable Superglue)";
   };
 
   const getLessonDesc = () => {
@@ -368,7 +373,10 @@ export default function App() {
     if (currentLesson === 43) {
       return "Master the German spoken past tense (das Perfekt - Teil 1)! Discover the 2-Pillar Sentence Bracket (Satzklammer: Position 2 helping verb + Satzende Partizip II), when to use haben vs. sein (movement from A to B), the 4 Partizip II patterns (gespielt, gegessen, studiert, angerufen), and interactive sentence unscrambler drills.";
     }
-    return "Master auxiliary verb selection in the German past tense (das Perfekt - Teil 2: haben vs. sein)! Discover the 85% haben majority rule vs. the 3 sein categories (Movement A ➔ B, State Change & 4 Rebel Exceptions: bleiben, sein, passieren, werden), plus the Chameleon 'fahren' rule!";
+    if (currentLesson === 44) {
+      return "Master auxiliary verb selection in the German past tense (das Perfekt - Teil 2: haben vs. sein)! Discover the 85% haben majority rule vs. the 3 sein categories (Movement A ➔ B, State Change & 4 Rebel Exceptions: bleiben, sein, passieren, werden), plus the Chameleon 'fahren' rule!";
+    }
+    return "Master the 4 Partizip II blueprints in German (das Perfekt - Teil 3)! Discover the Lego building blocks: Regular (ge-...-t), Irregular (ge-...-en), Separable Sandwich (ein-ge-kauft, auf-ge-standen), and Inseparable Superglue (erklärt, verstanden strictly NO ge-), plus the VIP -ieren rule!";
   };
 
   return (
@@ -801,6 +809,15 @@ export default function App() {
 
         {currentLesson === 44 && activeTab === 'game44' && (
           <Lesson44Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 45 Specific Modules */}
+        {currentLesson === 45 && activeTab === 'studio45' && (
+          <Lesson45PartizipStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 45 && activeTab === 'game45' && (
+          <Lesson45Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
