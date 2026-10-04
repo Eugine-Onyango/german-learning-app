@@ -90,6 +90,8 @@ import Lesson41InseparableStudio from './components/Lesson41InseparableStudio';
 import Lesson41Game from './components/Lesson41Game';
 import Lesson42HealthStudio from './components/Lesson42HealthStudio';
 import Lesson42Game from './components/Lesson42Game';
+import Lesson43PerfektStudio from './components/Lesson43PerfektStudio';
+import Lesson43Game from './components/Lesson43Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -132,11 +134,12 @@ import {
   LESSON_39_ITEMS,
   LESSON_40_ITEMS,
   LESSON_41_ITEMS,
-  LESSON_42_ITEMS
+  LESSON_42_ITEMS,
+  LESSON_43_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(42); // Default to Lesson 42 as requested, easy switch to 1-41
+  const [currentLesson, setCurrentLesson] = useState(43); // Default to Lesson 43 as requested, easy switch to 1-42
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -182,6 +185,7 @@ export default function App() {
   if (currentLesson === 40) activeItems = LESSON_40_ITEMS;
   if (currentLesson === 41) activeItems = LESSON_41_ITEMS;
   if (currentLesson === 42) activeItems = LESSON_42_ITEMS;
+  if (currentLesson === 43) activeItems = LESSON_43_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -225,7 +229,8 @@ export default function App() {
     if (currentLesson === 39) return "Lesson 39: Wegbeschreibung (Giving & Asking for Directions - Landmarks, zum vs. zur, Turns & Dialogues)";
     if (currentLesson === 40) return "Lesson 40: war / hatte (Simple Past of sein & haben - The Mirror Twin Rule & Time Travel)";
     if (currentLesson === 41) return "Lesson 41: Untrennbare Verben (German Inseparable Verbs - The 8 Superglue Bodyguards & Sentence Positions)";
-    return "Lesson 42: krank sein (Health, Illnesses, Pains, wehtun & Medical Advice)";
+    if (currentLesson === 42) return "Lesson 42: krank sein (Health, Illnesses, Pains, wehtun & Medical Advice)";
+    return "Lesson 43: das Perfekt Teil 1 (Present Perfect Tense - Satzklammer & Partizip II Formations)";
   };
 
   const getLessonDesc = () => {
@@ -352,7 +357,10 @@ export default function App() {
     if (currentLesson === 41) {
       return "Master German non-separable verbs (Untrennbare Verben)! Discover the Superglue Principle (the prefix NEVER detaches!), the 8 Inseparable Bodyguards (be-emp-ent-er, ge-miss-ver-zer!), 17 core verbs, sentence positions, and modal verb brackets.";
     }
-    return "Master talking about illness and health in German (krank sein)! Discover the 3 Pain Expression Formulas (Ich habe Kopfschmerzen vs. Mir tut der Kopf weh vs. sich verletzen), all 16 core slide symptoms & illnesses (Fieber, Grippe, Erkältung, Husten), and doctor consultation advice (Gute Besserung!).";
+    if (currentLesson === 42) {
+      return "Master talking about illness and health in German (krank sein)! Discover the 3 Pain Expression Formulas (Ich habe Kopfschmerzen vs. Mir tut der Kopf weh vs. sich verletzen), all 16 core slide symptoms & illnesses (Fieber, Grippe, Erkältung, Husten), and doctor consultation advice (Gute Besserung!).";
+    }
+    return "Master the German spoken past tense (das Perfekt - Teil 1)! Discover the 2-Pillar Sentence Bracket (Satzklammer: Position 2 helping verb + Satzende Partizip II), when to use haben vs. sein (movement from A to B), the 4 Partizip II patterns (gespielt, gegessen, studiert, angerufen), and interactive sentence unscrambler drills.";
   };
 
   return (
@@ -767,6 +775,15 @@ export default function App() {
 
         {currentLesson === 42 && activeTab === 'game42' && (
           <Lesson42Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 43 Specific Modules */}
+        {currentLesson === 43 && activeTab === 'studio43' && (
+          <Lesson43PerfektStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 43 && activeTab === 'game43' && (
+          <Lesson43Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

@@ -9990,6 +9990,223 @@ export const LESSON_42_SCENARIOS = [
   }
 ];
 
+export const LESSON_43_ITEMS = [
+  {
+    id: "l43-zeiten-timeline",
+    german: "die Vergangenheit ➔ die Gegenwart ➔ die Zukunft",
+    english: "Past ➔ Present ➔ Future (The 3 German Tenses)",
+    pronunciation: "dee fair-GAHNG-en-hite ➔ dee GAY-gen-vahrt ➔ dee TSOO-koonft",
+    audioText: "die Vergangenheit, die Gegenwart, die Zukunft.",
+    category: "timeline",
+    badge: "Timeline • Slide 3",
+    icon: "⏳",
+    kenyanAnalogy: "Just like time flows: What happened yesterday in past history (Vergangenheit), what you are doing right now today (Gegenwart), and where you plan to go tomorrow (Zukunft).",
+    memoryTrick: "Vergangenheit = Past, Gegenwart = Present (now), Zukunft = Future (to come)!",
+    imageType: "timeline"
+  },
+  {
+    id: "l43-past-tenses",
+    german: "die 3 Vergangenheitsformen: Plusquamperfekt | Präteritum | Perfekt",
+    english: "The 3 Past Tenses in German (Perfekt is the Spoken King!)",
+    pronunciation: "PLOOS-kvahm-pair-fekt, pray-TAY-ree-toom, PAIR-fekt",
+    audioText: "Plusquamperfekt, Präteritum, Perfekt.",
+    category: "tenses",
+    badge: "3 Past Tenses • Slide 4 & 5",
+    icon: "👑",
+    kenyanAnalogy: "While English has simple past and present perfect, German uses 'Perfekt' for almost all spoken everyday chitchat, phone calls, and WhatsApp messages with family!",
+    memoryTrick: "Perfekt is the conversational past tense you use every single day!",
+    imageType: "crown-tenses"
+  },
+  {
+    id: "l43-perfekt-formula",
+    german: "Perfekt = haben / sein (Pos. 2) + ... + Partizip II (am Ende)",
+    english: "The Master Perfekt Formula (The 2-Pillar Bracket)",
+    pronunciation: "PAIR-fekt ist HAH-ben oder ZINE plus pahr-tee-TSEEP TSVYE",
+    audioText: "Perfekt ist haben oder sein auf Position 2, und Partizip 2 am Ende.",
+    category: "formula",
+    badge: "Golden Formula • Slide 10 & 14",
+    icon: "🏗️",
+    kenyanAnalogy: "Think of two bookends holding your books together: Pillar 1 is the conjugated helping verb (habe/hast/hat/sind) in Position 2, and Pillar 2 is the past participle (gegessen/gefahren) frozen at the very end of the sentence!",
+    memoryTrick: "Helping verb in Position 2, Partizip II at the very end (Satzende)!",
+    imageType: "bracket-pillars"
+  },
+  {
+    id: "l43-essen-perfekt",
+    german: "Ich esse einen Salat. ➔ Ich habe einen Salat gegessen.",
+    english: "I eat a salad. ➔ I have eaten / ate a salad.",
+    pronunciation: "IKH ES-seh EYE-nen zah-LAHT ➔ IKH HAH-beh EYE-nen zah-LAHT ge-GES-sen",
+    audioText: "Ich esse einen Salat. Ich habe einen Salat gegessen.",
+    category: "contrast",
+    badge: "Present vs. Past • Slide 6 & 15",
+    icon: "🥗",
+    kenyanAnalogy: "Present: 'I am eating lunch now.' Past: 'I already finished eating my salad.' 'haben' conjugates to 'habe', and 'essen' transforms to 'gegessen' at the end!",
+    memoryTrick: "essen ➔ hat gegessen (ge- + gess + -en)!",
+    imageType: "salad-meal"
+  },
+  {
+    id: "l43-fahren-perfekt",
+    german: "Wir fahren nach Paris. ➔ Wir sind letzte Woche nach Paris gefahren.",
+    english: "We travel to Paris. ➔ Last week we travelled to Paris.",
+    pronunciation: "VEER FAH-ren nahkh pah-REES ➔ VEER ZINT LETS-teh VOKH-eh nahkh pah-REES ge-FAH-ren",
+    audioText: "Wir fahren nach Paris. Wir sind letzte Woche nach Paris gefahren.",
+    category: "contrast",
+    badge: "Movement with sein • Slide 7 & 15",
+    icon: "🚗",
+    kenyanAnalogy: "When moving from Point A to Point B (driving a car, traveling, flying), German uses 'sein' (wir sind) as the helping verb instead of 'haben'!",
+    memoryTrick: "Movement from A to B = use sein! Wir sind gefahren!",
+    imageType: "car-travel"
+  },
+  {
+    id: "l43-spielen-perfekt",
+    german: "Er spielt mit seinem Hund. ➔ Er hat mit seinem Hund gespielt.",
+    english: "He plays with his dog. ➔ He played / has played with his dog.",
+    pronunciation: "AIR SHPEELT mit ZY-nem HOONT ➔ AIR HAHT mit ZY-nem HOONT ge-SHPEELT",
+    audioText: "Er spielt mit seinem Hund. Er hat mit seinem Hund gespielt.",
+    category: "contrast",
+    badge: "Regular ge-...-t • Slide 8 & 15",
+    icon: "🐕",
+    kenyanAnalogy: "For regular verbs like 'spielen', Partizip II is built simply: ge- + spiel + -t = gespielt! 'Er hat mit seinem Hund gespielt.'",
+    memoryTrick: "Regular verb recipe: ge- + Stem + -t (spielen ➔ gespielt, machen ➔ gemacht)!",
+    imageType: "playing-dog"
+  },
+  {
+    id: "l43-studieren-perfekt",
+    german: "Sie studiert Philosophie. ➔ Sie hat Philosophie studiert.",
+    english: "She studies philosophy. ➔ She has studied philosophy.",
+    pronunciation: "ZEE shtoo-DEERT fee-lo-zo-FEE ➔ ZEE HAHT fee-lo-zo-FEE shtoo-DEERT",
+    audioText: "Sie studiert Philosophie. Sie hat Philosophie studiert.",
+    category: "contrast",
+    badge: "-ieren Rule • Slide 9 & 15",
+    icon: "📚",
+    kenyanAnalogy: "Golden Secret for verbs ending in '-ieren' (studieren, telefonieren, fotografieren): They NEVER take 'ge-'! Just add '-t' at the end: studiert!",
+    memoryTrick: "-ieren verbs reject 'ge-'! studieren ➔ studiert (NOT gestudiert)!",
+    imageType: "studying-book"
+  },
+  {
+    id: "l43-machen-perfekt",
+    german: "Was machst du? ➔ Was hast du gestern gemacht?",
+    english: "What are you doing? ➔ What did you do yesterday?",
+    pronunciation: "VAHS MAHKHST DOO ➔ VAHS HAHST DOO GES-tairn ge-MAHKHT",
+    audioText: "Was machst du? Was hast du gestern gemacht?",
+    category: "question",
+    badge: "W-Frage • Slide 11 & 15",
+    icon: "❓",
+    kenyanAnalogy: "Asking a buddy how their weekend was: 'Was hast du gestern gemacht?' (What did you do yesterday?). Question word (Was) + helping verb (hast) in Pos. 2 + gemacht at the end!",
+    memoryTrick: "machen ➔ hat gemacht. 'Was hast du gestern gemacht?'",
+    imageType: "questioning-chat"
+  },
+  {
+    id: "l43-anrufen-perfekt",
+    german: "Tanja ruft ihren Freund an. ➔ Tanja hat ihren Freund angerufen.",
+    english: "Tanja calls her boyfriend. ➔ Tanja called her boyfriend.",
+    pronunciation: "TAHN-yah ROOFT EE-ren FROYNT AHN ➔ TAHN-yah HAHT EE-ren FROYNT AHN-ge-roo-fen",
+    audioText: "Tanja ruft ihren Freund an. Tanja hat ihren Freund angerufen.",
+    category: "separable",
+    badge: "Separable Perfekt • Slide 12 & 15",
+    icon: "📱",
+    kenyanAnalogy: "In separable verbs (anrufen, einkaufen, aufstehen), the 'ge-' jumps into the middle sandwich: an-ge-rufen! 'Tanja hat ihren Freund angerufen.'",
+    memoryTrick: "Prefix + ge + stem + en = an-ge-rufen!",
+    imageType: "phone-call"
+  },
+  {
+    id: "l43-ja-nein-frage",
+    german: "Hast du gestern etwas gegessen? / Hast du deine Hausaufgabe gemacht?",
+    english: "Did you eat something yesterday? / Did you do your homework?",
+    pronunciation: "HAHST DOO GES-tairn ET-vahs ge-GES-sen / HAHST DOO DY-neh HOWS-owf-gah-beh ge-MAHKHT",
+    audioText: "Hast du gestern etwas gegessen? Hast du deine Hausaufgabe gemacht?",
+    category: "question",
+    badge: "Ja/Nein-Frage • Slide 11 & 17",
+    icon: "📝",
+    kenyanAnalogy: "In Yes/No questions, the helping verb (Hast) leaps to Position 1, the subject follows in Position 2, and the Partizip II stays anchored at the very end!",
+    memoryTrick: "Yes/No Question: Hast (Pos 1) + du (Pos 2) + ... + gemacht (Ende)?",
+    imageType: "homework-check"
+  },
+  {
+    id: "l43-schlafen-perfekt",
+    german: "Ich habe nur 3 Stunden geschlafen.",
+    english: "I only slept 3 hours.",
+    pronunciation: "IKH HAH-beh NOOR DRY SHTOON-den ge-SHLAH-fen",
+    audioText: "Ich habe nur 3 Stunden geschlafen.",
+    category: "sentence",
+    badge: "Exercise Puzzle • Slide 18",
+    icon: "😴",
+    kenyanAnalogy: "When you stayed up all night cramming for exams or watching movies and only caught 3 hours of sleep. schlafen ➔ hat geschlafen!",
+    memoryTrick: "schlafen ➔ geschlafen (ge- + schlaf + -en)!",
+    imageType: "sleepy-alarm"
+  },
+  {
+    id: "l43-inversion-perfekt",
+    german: "Am Freitag sind wir ins Kino gegangen. = Wir sind am Freitag ins Kino gegangen.",
+    english: "On Friday we went to the cinema. (Inversion & Standard Order)",
+    pronunciation: "AHM FRY-tahk ZINT VEER INS KEE-no ge-GAHNG-en",
+    audioText: "Am Freitag sind wir ins Kino gegangen. Wir sind am Freitag ins Kino gegangen.",
+    category: "inversion",
+    badge: "Inversion Rule • Slide 19 & 20",
+    icon: "🍿",
+    kenyanAnalogy: "When starting a sentence with a time phrase ('Am Freitag'), the helping verb 'sind' stays locked in Position 2, the subject 'wir' flips behind it, and 'gegangen' stays at the very end!",
+    memoryTrick: "Time in Pos 1 ➔ Helping verb in Pos 2 ➔ Subject in Pos 3 ➔ Partizip II at Satzende!",
+    imageType: "cinema-popcorn"
+  }
+];
+
+export const LESSON_43_SCENARIOS = [
+  {
+    scenario: "In Slide 5, which past tense is by far the most commonly used in everyday spoken German and informal messages?",
+    hint: "Think of: Plusquamperfekt, Präteritum, or Perfekt.",
+    options: [
+      { text: "Das Perfekt (Present Perfect)", correct: true, explain: "Perfekt! In daily spoken German and informal writing, 'das Perfekt' (haben/sein + Partizip II) is used about 95% of the time!" },
+      { text: "Das Präteritum (Simple Past)", correct: false, explain: "Präteritum is mostly used in written stories, newspapers, and for sein/haben/modal verbs." },
+      { text: "Das Plusquamperfekt (Past Perfect)", correct: false, explain: "Plusquamperfekt is only used for events that happened before another past event." }
+    ]
+  },
+  {
+    scenario: "In Slide 10 & 14, how is a German sentence in the Perfekt tense constructed (The Sentence Bracket / Satzklammer)?",
+    hint: "Helping verb (haben/sein) in Position 2 + Partizip II at the very end.",
+    options: [
+      { text: "Helping verb (haben/sein) in Position 2 + Partizip II at the very end of the sentence.", correct: true, explain: "Ausgezeichnet! The Satzklammer holds the sentence together: 'Ich [habe] einen Salat [gegessen]'!" },
+      { text: "Partizip II in Position 1 + Helping verb in Position 2.", correct: false, explain: "Partizip II must go to the very end of the sentence (Satzende)!" },
+      { text: "Both verbs sit right next to each other in Position 2.", correct: false, explain: "In German, the Partizip II is separated and sent to the very end of the sentence." }
+    ]
+  },
+  {
+    scenario: "In Slide 7, why does the sentence 'Wir sind letzte Woche nach Paris gefahren' use 'sind' instead of 'haben'?",
+    hint: "'fahren' is a verb of movement/travel from Point A to Point B.",
+    options: [
+      { text: "'fahren' expresses movement from one location to another, so it takes 'sein'.", correct: true, explain: "Genau! Verbs of movement (fahren, gehen, fliegen, reisen) and change of state take 'sein' as their helping verb!" },
+      { text: "Because Paris is in France.", correct: false, explain: "The location does not determine the helping verb; movement does!" },
+      { text: "'haben' can never be used in the Perfekt.", correct: false, explain: "'haben' is used for most stationary verbs (essen, spielen, machen, studieren)." }
+    ]
+  },
+  {
+    scenario: "In Slide 9 & 15, what is the special rule for verbs ending in '-ieren' (like 'studieren', 'telefonieren') when forming the Partizip II?",
+    hint: "They do NOT take the 'ge-' prefix. They simply end in '-t'.",
+    options: [
+      { text: "They NEVER take 'ge-'; they just end with '-t' (studieren ➔ studiert).", correct: true, explain: "Wunderbar! Verbs ending in '-ieren' never take 'ge-': studiert, telefoniert, repariert, fotografiert!" },
+      { text: "They take 'ge-' and end with '-en' (gestudieren).", correct: false, explain: "'gestudiert' or 'gestudieren' is incorrect German!" },
+      { text: "They cannot be used in the past tense.", correct: false, explain: "All verbs can be used in the past tense." }
+    ]
+  },
+  {
+    scenario: "In Slide 12, look at the separable verb 'anrufen' (Tanja ruft ihren Freund an). How does 'anrufen' form its Partizip II?",
+    hint: "'ge-' gets sandwiched in the middle between the prefix 'an-' and the stem 'rufen'.",
+    options: [
+      { text: "angerufen (Tanja hat ihren Freund angerufen.)", correct: true, explain: "Hervorragend! For separable verbs, 'ge-' slips right between the prefix and the stem: an-ge-rufen, ein-ge-kauft, auf-ge-standen!" },
+      { text: "geangeruft (Tanja hat ihren Freund geangeruft.)", correct: false, explain: "'ge-' cannot go before the separable prefix." },
+      { text: "angeruft (Tanja hat ihren Freund angeruft.)", correct: false, explain: "'anrufen' is an irregular verb and ends in '-en': angerufen." }
+    ]
+  },
+  {
+    scenario: "In Slide 17, unscramble the words to form a correct Yes/No question in the Perfekt: (deine Hausaufgabe) (Hast) (gemacht?) (du)",
+    hint: "Helping verb in Position 1: 'Hast du... gemacht?'",
+    options: [
+      { text: "Hast du deine Hausaufgabe gemacht?", correct: true, explain: "Brilliant! In Ja/Nein-Fragen, the helping verb 'Hast' takes Position 1, followed by the subject 'du', and 'gemacht?' at the end!" },
+      { text: "Gemacht hast du deine Hausaufgabe?", correct: false, explain: "The participle 'gemacht' must go to the end, not the beginning." },
+      { text: "Du hast gemacht deine Hausaufgabe?", correct: false, explain: "In questions, the verb must come first ('Hast du...'), and the participle belongs at the end." }
+    ]
+  }
+];
+
+
 
 
 
