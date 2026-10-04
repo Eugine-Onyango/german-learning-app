@@ -52,6 +52,7 @@ export default function Header({
     if (currentLesson === 38) msg = "Der Imperativ: Komm! Kommt! Kommen Sie bitte! Haben Sie bitte Geduld! Seien Sie bitte leise! Fahr doch jetzt!";
     if (currentLesson === 39) msg = "Wegbeschreibung: Wie komme ich zum Hauptbahnhof? Gehen Sie geradeaus, biegen Sie links ab, und an der Kreuzung ist der Bahnhof an der Ecke!";
     if (currentLesson === 40) msg = "Das Präteritum: Gestern war ich müde, aber heute bin ich munter! Letztes Jahr hatte ich kein Auto, heute habe ich ein Auto. Wir hatten einen Hund und waren im Unterricht!";
+    if (currentLesson === 41) msg = "Untrennbare Verben: be-emp-ent-er, ge-miss-ver-zer! Er versteht mich gut. Wir bekommen bald eine neue Lehrerin. Kannst du bezahlen?";
     speakGerman(msg, isSlowMode);
   };
 
@@ -378,6 +379,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson41NavItems = [
+    { id: 'cards', label: '📖 Lesson 41 Cards', sub: 'The 8 Prefixes & Superglue Rule' },
+    { id: 'studio41', label: '🛡️ Inseparable Verbs Studio', sub: 'Bodyguards, Rocket Contrast & Forge' },
+    { id: 'game41', label: '🎮 Superglue Quiz', sub: 'Prefixes & Positions Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -418,6 +427,7 @@ export default function Header({
   if (currentLesson === 38) navItems = lesson38NavItems;
   if (currentLesson === 39) navItems = lesson39NavItems;
   if (currentLesson === 40) navItems = lesson40NavItems;
+  if (currentLesson === 41) navItems = lesson41NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -460,6 +470,7 @@ export default function Header({
     { num: 38, label: "📣 38: Der Imperativ", activeClass: "bg-red-700 ring-red-400", hoverBorder: "hover:bg-red-100 border-red-300" },
     { num: 39, label: "🗺️ 39: Wegbeschreibung", activeClass: "bg-blue-700 ring-blue-400", hoverBorder: "hover:bg-blue-100 border-blue-300" },
     { num: 40, label: "⏳ 40: war / hatte (Past)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 41, label: "🛡️ 41: Untrennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
   ];
 
   return (

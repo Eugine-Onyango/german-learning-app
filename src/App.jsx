@@ -86,6 +86,8 @@ import Lesson39DirectionsStudio from './components/Lesson39DirectionsStudio';
 import Lesson39Game from './components/Lesson39Game';
 import Lesson40WarHatteStudio from './components/Lesson40WarHatteStudio';
 import Lesson40Game from './components/Lesson40Game';
+import Lesson41InseparableStudio from './components/Lesson41InseparableStudio';
+import Lesson41Game from './components/Lesson41Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -126,11 +128,12 @@ import {
   LESSON_37_ITEMS,
   LESSON_38_ITEMS,
   LESSON_39_ITEMS,
-  LESSON_40_ITEMS
+  LESSON_40_ITEMS,
+  LESSON_41_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(40); // Default to Lesson 40 as requested, easy switch to 1-39
+  const [currentLesson, setCurrentLesson] = useState(41); // Default to Lesson 41 as requested, easy switch to 1-40
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -174,6 +177,7 @@ export default function App() {
   if (currentLesson === 38) activeItems = LESSON_38_ITEMS;
   if (currentLesson === 39) activeItems = LESSON_39_ITEMS;
   if (currentLesson === 40) activeItems = LESSON_40_ITEMS;
+  if (currentLesson === 41) activeItems = LESSON_41_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -215,7 +219,8 @@ export default function App() {
     if (currentLesson === 37) return "Lesson 37: Der Tagesablauf (German Daily Routine - From Morning Alarm to Sleep & The Inversion Rule)";
     if (currentLesson === 38) return "Lesson 38: Der Imperativ (German Commands, Requests & Advice - du, ihr, Sie & Rebel Verbs)";
     if (currentLesson === 39) return "Lesson 39: Wegbeschreibung (Giving & Asking for Directions - Landmarks, zum vs. zur, Turns & Dialogues)";
-    return "Lesson 40: war / hatte (Simple Past of sein & haben - The Mirror Twin Rule & Time Travel)";
+    if (currentLesson === 40) return "Lesson 40: war / hatte (Simple Past of sein & haben - The Mirror Twin Rule & Time Travel)";
+    return "Lesson 41: Untrennbare Verben (German Inseparable Verbs - The 8 Superglue Bodyguards & Sentence Positions)";
   };
 
   const getLessonDesc = () => {
@@ -336,7 +341,10 @@ export default function App() {
     if (currentLesson === 39) {
       return "Master asking for and giving directions in German (Wegbeschreibung)! Explore the 3 Compass Arrows (links, geradeaus, rechts), the Golden Destination Rule (zum for der/das vs. zur for die), landmark prepositions (an der Ecke, gegenüber + Dativ, an der Kreuzung), and real-world street dialogues.";
     }
-    return "Master the Simple Past (Präteritum) of sein & haben (war vs. hatte)! Explore the Time-Travel Comparison Machine (Letztes Jahr hatte ich kein Auto ➔ Heute habe ich ein Auto), the Royal Conjugators, the Mirror Twin Rule (ich = er/sie/es), and live chalkboard drills.";
+    if (currentLesson === 40) {
+      return "Master the Simple Past (Präteritum) of sein & haben (war vs. hatte)! Explore the Time-Travel Comparison Machine (Letztes Jahr hatte ich kein Auto ➔ Heute habe ich ein Auto), the Royal Conjugators, the Mirror Twin Rule (ich = er/sie/es), and live chalkboard drills.";
+    }
+    return "Master German non-separable verbs (Untrennbare Verben)! Discover the Superglue Principle (the prefix NEVER detaches!), the 8 Inseparable Bodyguards (be-emp-ent-er, ge-miss-ver-zer!), 17 core verbs, sentence positions, and modal verb brackets.";
   };
 
   return (
@@ -733,6 +741,15 @@ export default function App() {
 
         {currentLesson === 40 && activeTab === 'game40' && (
           <Lesson40Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 41 Specific Modules */}
+        {currentLesson === 41 && activeTab === 'studio41' && (
+          <Lesson41InseparableStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 41 && activeTab === 'game41' && (
+          <Lesson41Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

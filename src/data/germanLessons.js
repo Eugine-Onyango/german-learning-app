@@ -9453,6 +9453,211 @@ export const LESSON_40_SCENARIOS = [
   }
 ];
 
+export const LESSON_41_ITEMS = [
+  {
+    id: "l41-concept-untrennbar",
+    german: "Untrennbare Verben (The Superglue Non-Separable Verbs)",
+    english: "Non-Separable Verbs: Verbs where the prefix NEVER detaches or flies to the end of the sentence (e.g. 'verstehen' ➔ 'Er versteht mich gut')",
+    pronunciation: "OON-tren-bah-reh VAIR-ben",
+    audioText: "Untrennbare Verben: aufstehen trennt sich, aber verstehen trennt sich nie! Er versteht mich gut.",
+    category: "concept-superglue",
+    badge: "Slide 3: Separable vs. Inseparable 🛡️",
+    icon: "🛡️",
+    kenyanAnalogy: "Unlike Lesson 36's separable rocket verbs ('aufstehen' ➔ 'Ich stehe auf'), inseparable verbs are welded together with permanent superglue. The prefix NEVER leaves the verb trunk!",
+    memoryTrick: "Trennbar (aufstehen) = Rocket separates. Untrennbar (verstehen) = Superglue stays attached!"
+  },
+  {
+    id: "l41-the-8-prefixes",
+    german: "Die 8 untrennbaren Präfixe: be-, emp-, ent-, er-, ge-, miss-, ver-, zer-",
+    english: "The 8 Inseparable Prefixes: be-, emp-, ent-, er-, ge-, miss-, ver-, zer- (Rhyme: be-emp-ent-er, ge-miss-ver-zer!)",
+    pronunciation: "beh, emp, ent, ayr, geh, miss, fayr, tsayr",
+    audioText: "Die acht untrennbaren Präfixe: be, emp, ent, er, ge, miss, ver, zer. Be-emp-ent-er, ge-miss-ver-zer!",
+    category: "the-8-bodyguards",
+    badge: "Slide 24: The 8 Superglue Prefixes 👑",
+    icon: "👑",
+    kenyanAnalogy: "The 8 Bodyguards of German Grammar: Whenever a verb starts with one of these 8 prefixes, you can be 100% confident it will NEVER separate!",
+    memoryTrick: "Memorize the golden rhyme: 'be-emp-ent-er, ge-miss-ver-zer!' (8 prefixes, 0 separations)."
+  },
+  {
+    id: "l41-sentence-positions",
+    german: "Satzpositionen: Er versteht mich gut. / Verstehst du mich? / Ich kann dich verstehen.",
+    english: "Sentence Positions: Main statement (Pos. 2: Er versteht mich gut) | Yes/No Question (Pos. 1: Verstehst du mich?) | Modal bracket (End: Ich kann dich verstehen)",
+    pronunciation: "ayr fayr-SHTAYT mikh goot. fayr-SHTAYST doo mikh? ikh kahn dikh fayr-SHTAY-en.",
+    audioText: "Er versteht mich gut. Warum verstehst du mich nicht? Verstehst du mich? Ich kann dich verstehen.",
+    category: "sentence-positions",
+    badge: "Slides 4–6: Sentence Anatomy 🚂",
+    icon: "🚂",
+    kenyanAnalogy: "The whole verb stays in its normal place: Position 2 in statements ('Er versteht'), Position 1 in Yes/No questions ('Verstehst du?'), and whole infinitive at the end with modal verbs ('kann... verstehen')!",
+    memoryTrick: "Nothing ever splits to the end! The verb acts just like an ordinary single verb."
+  },
+  {
+    id: "l41-be-verbs",
+    german: "Präfix be-: bekommen (to get) & bezahlen (to pay)",
+    english: "be- Verbs: bekommen (to get / receive) | bezahlen (to pay)",
+    pronunciation: "beh-KOM-men (to get) / beh-TSAH-len (to pay)",
+    audioText: "Wir bekommen bald eine neue Lehrerin. Kannst du bitte heute bezahlen? Ich habe kein Geld.",
+    category: "prefix-be",
+    badge: "Slides 8 & 9: be- Family 💳",
+    icon: "💳",
+    kenyanAnalogy: "Shopping & schooling: 'Wir bekommen bald eine neue Lehrerin' (Soon we'll get a new teacher) and 'Kannst du bitte bezahlen?' (Can you please pay?).",
+    memoryTrick: "be- is ALWAYS inseparable: 'ich bezahle' (NOT 'ich zahle be')."
+  },
+  {
+    id: "l41-emp-verbs",
+    german: "Präfix emp-: empfehlen (to recommend) & empfangen (to receive / welcome)",
+    english: "emp- Verbs: empfehlen (to recommend) | empfangen (to receive / welcome guests)",
+    pronunciation: "emp-FAY-len (to recommend) / emp-FAHNG-en (to receive)",
+    audioText: "Herr Ober, was empfehlen Sie mir heute? Der Schulleiter empfängt seine Gäste herzlich.",
+    category: "prefix-emp",
+    badge: "Slides 10 & 11: emp- Family 🍽️",
+    icon: "🍽️",
+    kenyanAnalogy: "Dining & hospitality: Asking a waiter 'Was empfehlen Sie mir?' (What do you recommend?) or the school principal welcoming visitors warmly ('empfängt seine Gäste herzlich')!",
+    memoryTrick: "empfehlen (du empfiehlst / er empfiehlt) & empfangen (er empfängt) have regular vowel shifts but NEVER separate!"
+  },
+  {
+    id: "l41-ent-verbs",
+    german: "Präfix ent-: entdecken (to discover) & entleeren (to empty)",
+    english: "ent- Verbs: entdecken (to discover) | entleeren (to empty the trash)",
+    pronunciation: "ent-DEK-ken (to discover) / ent-LAY-ren (to empty)",
+    audioText: "Mein Sohn entdeckt jeden Tag etwas Neues. Am Montag müssen wir die Mülltonne entleeren.",
+    category: "prefix-ent",
+    badge: "Slides 12 & 13: ent- Family 🔍",
+    icon: "🔍",
+    kenyanAnalogy: "Exploring and chores: 'Mein Sohn entdeckt jeden Tag etwas Neues' (discovers something new) and 'die Mülltonne entleeren' (empty the wheelie bin)!",
+    memoryTrick: "ent- often signifies discovery or removal (entdecken = uncover/discover, entleeren = empty out)."
+  },
+  {
+    id: "l41-er-verbs",
+    german: "Präfix er-: erzählen (to tell / narrate) & erkennen (to recognize)",
+    english: "er- Verbs: erzählen (to tell stories) | erkennen (to recognize someone in a photo)",
+    pronunciation: "ayr-TSAY-len (to narrate) / ayr-KEN-nen (to recognize)",
+    audioText: "Mein Großvater erzählt interessante Geschichten. Kannst du mich auf diesem Foto erkennen?",
+    category: "prefix-er",
+    badge: "Slides 14 & 15: er- Family 👴",
+    icon: "👴",
+    kenyanAnalogy: "Grandpa's fireside stories: 'Mein Großvater erzählt Geschichten' (tells stories) and spotting friends: 'Kannst du mich erkennen?' (Can you recognize me?)!",
+    memoryTrick: "er- is inseparable: 'Er erzählt...' (never 'Er zählt er')."
+  },
+  {
+    id: "l41-ge-verbs",
+    german: "Präfix ge-: gehören (to belong to) & gefallen (to please / like)",
+    english: "ge- Verbs: gehören (to belong to + Dativ) | gefallen (to please / appeal to + Dativ)",
+    pronunciation: "geh-HEU-ren (belong) / geh-FAHL-len (please)",
+    audioText: "Die Uhr gehört mir. Mir gefällt dein neues Haus. Gefällt dir das?",
+    category: "prefix-ge",
+    badge: "Slides 16 & 17: ge- Family ⌚",
+    icon: "⌚",
+    kenyanAnalogy: "Ownership and appreciation: 'Die Uhr gehört mir' (The watch belongs to me) and 'Mir gefällt dein neues Haus' (I like your new house)!",
+    memoryTrick: "Both gehören and gefallen trigger the Dative case (mir, dir, ihm, ihr)!"
+  },
+  {
+    id: "l41-miss-verbs",
+    german: "Präfix miss-: missbrauchen (to misuse / betray) & missverstehen (to misunderstand)",
+    english: "miss- Verbs: missbrauchen (to misuse / betray trust) | missverstehen (to misunderstand instructions)",
+    pronunciation: "MISS-brow-khen (misuse) / MISS-fayr-shtay-en (misunderstand)",
+    audioText: "Tom kann nie mein Vertrauen missbrauchen. Im Unterricht kann man die Anweisungen manchmal missverstehen.",
+    category: "prefix-miss",
+    badge: "Slides 18 & 19: miss- Family 🤝",
+    icon: "🤝",
+    kenyanAnalogy: "Trust and communication: 'Tom kann nie mein Vertrauen missbrauchen' (never betray trust) and misunderstanding teacher instructions in class ('missverstehen')!",
+    memoryTrick: "miss- corresponds exactly to English 'mis-' (misuse, misunderstand, mislead)!"
+  },
+  {
+    id: "l41-ver-verbs",
+    german: "Präfix ver-: verkaufen (to sell), verlieren (to lose) & verstehen (to understand)",
+    english: "ver- Verbs: verkaufen (to sell a house) | verlieren (to lose a chess match) | verstehen (to understand)",
+    pronunciation: "fayr-KOW-fen (sell) / fayr-LEE-ren (lose) / fayr-SHTAY-en (understand)",
+    audioText: "Er verkauft sein altes Haus. Wenn ich Schach spiele, verliere ich immer. Ich verstehe alles.",
+    category: "prefix-ver",
+    badge: "Slides 20 & 21: ver- Family 🏡",
+    icon: "🏡",
+    kenyanAnalogy: "Real estate and board games: 'Er verkauft sein Haus' (selling his house) and 'Wenn ich Schach spiele, verliere ich immer' (I always lose at chess)!",
+    memoryTrick: "ver- is one of the most common German prefixes and NEVER separates!"
+  },
+  {
+    id: "l41-zer-verbs",
+    german: "Präfix zer-: zerkleinern (to chop / shred) & zerstören (to destroy)",
+    english: "zer- Verbs: zerkleinern (to chop/shred vegetables) | zerstören (to destroy / smash)",
+    pronunciation: "tsayr-KLYE-nern (chop) / tsayr-SHTEU-ren (destroy)",
+    audioText: "Man zerkleinert erstmal alle Gemüsesorten. Die Bombe zerstört die Stadt.",
+    category: "prefix-zer",
+    badge: "Slides 22–24: zer- Family 🥕",
+    icon: "🥕",
+    kenyanAnalogy: "Cooking in the kitchen: Chopping vegetables into tiny bits on a cutting board: 'Man zerkleinert erstmal alle Gemüsesorten'!",
+    memoryTrick: "zer- indicates breaking into pieces or crushing (klein ➔ zerkleinern = make into small pieces)!"
+  },
+  {
+    id: "l41-verstehen-conjugation",
+    german: "verstehen: verstehe, verstehst, versteht, verstehen, versteht, verstehen",
+    english: "Full Conjugation of 'verstehen': ich verstehe, du verstehst, er/sie/es versteht, wir verstehen, ihr versteht, Sie/sie verstehen",
+    pronunciation: "fayr-SHTAY-eh, fayr-SHTAYST, fayr-SHTAYT, fayr-SHTAY-en, fayr-SHTAYT, fayr-SHTAY-en",
+    audioText: "ich verstehe, du verstehst, er versteht, sie versteht, es versteht, wir verstehen, ihr versteht, Sie verstehen, sie verstehen.",
+    category: "conjugation-table",
+    badge: "Slide 7: verstehen Table 📋",
+    icon: "📋",
+    kenyanAnalogy: "Conjugating an inseparable verb is as easy as an ordinary regular verb — just keep 'ver-' and dress up the end with standard endings (-e, -st, -t, -en, -t, -en)!",
+    memoryTrick: "Prefix 'ver-' stays frozen at the front; only the ending '-en' changes!"
+  }
+];
+
+export const LESSON_41_SCENARIOS = [
+  {
+    scenario: "In Slide 3, look at the two verbs: 'aufstehen' (to get up) and 'verstehen' (to understand). Why is 'verstehen' an UNTRENNBARES Verb?",
+    hint: "'ver-' is one of the 8 inseparable prefixes (be-emp-ent-er, ge-miss-ver-zer) that never detaches.",
+    options: [
+      { text: "'ver-' is an inseparable prefix that remains glued to the verb in all sentence positions.", correct: true, explain: "Perfekt! Verbs starting with 'ver-' (verstehen, verkaufen, verlieren) never separate: 'Er versteht mich gut' (NOT 'Er steht mich ver')!" },
+      { text: "'ver-' always flies to the very end of the sentence.", correct: false, explain: "That is true for separable verbs (like 'aufstehen' ➔ 'stehe auf'), NOT for inseparable verbs!" },
+      { text: "'verstehen' can only be used with modal verbs.", correct: false, explain: "'verstehen' can be used as a main verb, in questions, or with modal verbs." }
+    ]
+  },
+  {
+    scenario: "In Slide 4, you want to say in German: 'He understands me well.' (Verb: verstehen). What is the correct sentence?",
+    hint: "'verstehen' is inseparable. 'er' takes ending '-t' (versteht).",
+    options: [
+      { text: "Er versteht mich gut.", correct: true, explain: "Ausgezeichnet! The verb stays in Position 2 as a single unit: 'Er versteht mich gut'!" },
+      { text: "Er steht mich gut ver.", correct: false, explain: "'verstehen' never separates! 'ver-' must stay glued to the verb." },
+      { text: "Er verstehe mich gut.", correct: false, explain: "'verstehe' is for 'ich'. For 'er', the ending is '-t' (versteht)." }
+    ]
+  },
+  {
+    scenario: "In Slide 8, you want to express: 'Soon we will get a new teacher.' (Verb: bekommen). How is 'bekommen' used?",
+    hint: "'bekommen' is inseparable (be-). With 'wir', it is 'Wir bekommen...'.",
+    options: [
+      { text: "Wir bekommen bald eine neue Lehrerin.", correct: true, explain: "Wunderbar! 'bekommen' stays together in Position 2: 'Wir bekommen bald eine neue Lehrerin'." },
+      { text: "Wir kommen bald eine neue Lehrerin be.", correct: false, explain: "'be-' is an inseparable prefix and never detaches to the end." },
+      { text: "Wir be-kommen bald eine neue Lehrerin an.", correct: false, explain: "'bekommen' does not take additional prefixes like 'an'." }
+    ]
+  },
+  {
+    scenario: "In Slide 16, look at the sentence: 'Die Uhr ______ mir.' (The watch belongs to me). Which inseparable verb fits?",
+    hint: "'gehören' means to belong to (+ Dativ: mir).",
+    options: [
+      { text: "gehört (Die Uhr gehört mir.)", correct: true, explain: "Genau! 'gehören' (prefix ge-) means 'to belong to' and takes Dative: 'Die Uhr gehört mir'!" },
+      { text: "hört (Die Uhr hört mir.)", correct: false, explain: "'hören' means to hear/listen, not to belong." },
+      { text: "hört mir ge.", correct: false, explain: "'gehören' is inseparable and never splits into 'hört... ge'." }
+    ]
+  },
+  {
+    scenario: "Which of the following is the complete list of the 8 German INSEPARABLE prefixes from Slide 24?",
+    hint: "Think of the golden rhyme: 'be-emp-ent-er, ge-miss-ver-zer!'",
+    options: [
+      { text: "be-, emp-, ent-, er-, ge-, miss-, ver-, zer-", correct: true, explain: "Hervorragend! These 8 prefixes (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) NEVER separate from their root verbs!" },
+      { text: "ab-, an-, auf-, aus-, ein-, mit-, vor-, zu-", correct: false, explain: "These are SEPARABLE prefixes from Lesson 36 (they detach to the end of the sentence)!" },
+      { text: "der-, die-, das-, ein-, eine-, kein-, mein-, dein-", correct: false, explain: "These are articles and possessives, not verb prefixes." }
+    ]
+  },
+  {
+    scenario: "In Slide 6, you combine a modal verb with an inseparable verb: 'I can understand you.' (können + verstehen). How is the sentence structured?",
+    hint: "Modal verb in Position 2 ('kann'), full inseparable verb in infinitive at the end ('verstehen').",
+    options: [
+      { text: "Ich kann dich verstehen.", correct: true, explain: "Brilliant! The modal verb 'kann' sits in Position 2, and the full inseparable infinitive 'verstehen' sits at the very end!" },
+      { text: "Ich kann dich stehen ver.", correct: false, explain: "'verstehen' stays whole as an infinitive at the end." },
+      { text: "Ich verstehe dich können.", correct: false, explain: "The conjugated modal verb must be in Position 2 ('kann'), not at the end." }
+    ]
+  }
+];
+
+
 
 
 
