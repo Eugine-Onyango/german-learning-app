@@ -9249,6 +9249,211 @@ export const LESSON_39_SCENARIOS = [
   }
 ];
 
+export const LESSON_40_ITEMS = [
+  {
+    id: "l40-concept-war-hatte",
+    german: "war (was / were) & hatte (had) - Das Präteritum",
+    english: "The Simple Past of the Two Royal Verbs: 'war' comes from 'sein' (to be) | 'hatte' comes from 'haben' (to have)",
+    pronunciation: "vahr (was) / HAHT-teh (had)",
+    audioText: "war und hatte: Ich war in Berlin. Ich hatte keine Zeit. Gestern war das Wetter schön. Letztes Jahr hatte ich ein Auto.",
+    category: "past-concept",
+    badge: "Slides 1, 3, 9, 16: Past Foundations ⏳",
+    icon: "⏳",
+    kenyanAnalogy: "Like talking about yesterday vs. today: In the present you say 'I am' (ich bin) and 'I have' (ich habe). In the past you simply switch to 'I was' (ich war) and 'I had' (ich hatte)!",
+    memoryTrick: "sein ➔ war (was). haben ➔ hatte (had). Simple and instant!"
+  },
+  {
+    id: "l40-time-triggers-past",
+    german: "gestern, vorgestern, vor ein paar Tagen, letzte Woche, letztes Jahr",
+    english: "Past Time Triggers: yesterday (gestern), day before yesterday (vorgestern), a few days ago (vor ein paar Tagen), last week (letzte Woche), last year (letztes Jahr)",
+    pronunciation: "GES-tern, FOR-ges-tern, for ayn pahr TAH-gen, LETS-teh VOKH-eh, LETS-tes YAHR",
+    audioText: "Zeitwörter der Vergangenheit: gestern, vorgestern, vor ein paar Tagen, vor ein paar Jahren, letzte Woche, letztes Jahr.",
+    category: "time-markers",
+    badge: "Slides 2 & 4: Past Triggers 🗓️",
+    icon: "🗓️",
+    kenyanAnalogy: "Calendar time stamps that catapult your sentence into the past: When starting with 'Gestern...', remember the Golden Inversion Rule puts the verb in Position 2!",
+    memoryTrick: "gestern = yesterday. vorgestern = pre-yesterday (day before yesterday). letzte/letztes = last!"
+  },
+  {
+    id: "l40-haben-past-conjugation",
+    german: "haben im Präteritum: hatte, hattest, hatte, hatten, hattet, hatten",
+    english: "Conjugation of 'haben' (had): ich hatte, du hattest, er/sie/es hatte, wir hatten, ihr hattet, Sie/sie hatten",
+    pronunciation: "HAHT-teh, HAHT-test, HAHT-teh, HAHT-ten, HAHT-tet, HAHT-ten",
+    audioText: "haben in der Vergangenheit: ich hatte, du hattest, er hatte, sie hatte, es hatte, wir hatten, ihr hattet, Sie hatten, sie hatten.",
+    category: "haben-conjugation",
+    badge: "Slide 10: haben Table 👑",
+    icon: "🧳",
+    kenyanAnalogy: "Expressing things you owned or experienced in the past: 'Ich hatte ein Auto' (I had a car), 'Wir hatten kein Geld' (We had no money)!",
+    memoryTrick: "Take the stem 'hat-' and add the past uniform: -te, -test, -te, -ten, -tet, -ten!"
+  },
+  {
+    id: "l40-sein-past-conjugation",
+    german: "sein im Präteritum: war, warst, war, waren, wart, waren",
+    english: "Conjugation of 'sein' (was/were): ich war, du warst, er/sie/es war, wir waren, ihr wart, Sie/sie waren",
+    pronunciation: "vahr, vahrst, vahr, VAH-ren, vahrt, VAH-ren",
+    audioText: "sein in der Vergangenheit: ich war, du warst, er war, sie war, es war, wir waren, ihr wart, Sie waren, sie waren.",
+    category: "sein-conjugation",
+    badge: "Slide 17: sein Table 👑",
+    icon: "🏛️",
+    kenyanAnalogy: "Describing where you were or how you felt in the past: 'Ich war müde' (I was tired), 'Wir waren in Berlin' (We were in Berlin)!",
+    memoryTrick: "Look at 'war': ich war (no ending!), du warst (+st), er/sie/es war (no ending!), wir waren (+en), ihr wart (+t), Sie waren (+en)!"
+  },
+  {
+    id: "l40-mirror-twin-rule",
+    german: "Die Zwillings-Regel: ich hatte = er/sie/es hatte | ich war = er/sie/es war",
+    english: "The Mirror Twin Rule: 'ich' and 'er/sie/es' are ALWAYS 100% identical in the German past tense!",
+    pronunciation: "ikh HAHT-teh = ayr HAHT-teh | ikh vahr = ayr vahr",
+    audioText: "Die Zwillings-Regel: ich war, er war, sie war, es war. Ich hatte, er hatte, sie hatte, es hatte. Absolut identisch!",
+    category: "grammar-golden-rule",
+    badge: "Slides 10 & 17: Mirror Twins 👥",
+    icon: "🪞",
+    kenyanAnalogy: "The ultimate learner relief shortcut! You never need to learn a separate form for 'he/she/it' — whatever you say for yourself ('ich war', 'ich hatte'), you say the exact same for him/her ('er war', 'sie hatte')!",
+    memoryTrick: "ich = er/sie/es (Identical twins in Präteritum with zero exceptions)!"
+  },
+  {
+    id: "l40-contrast-car-money",
+    german: "Letztes Jahr hatte ich kein Auto. Heute habe ich ein Auto.",
+    english: "Last year I had no car. Today I have a car. (Vor ein paar Jahren hatten wir kein Geld. Heute haben wir viel Geld.)",
+    pronunciation: "LETS-tes YAHR HAHT-teh ikh kayn OW-toh. HOY-teh HAH-beh ikh ayn OW-toh.",
+    audioText: "Letztes Jahr hatte ich kein Auto. Heute habe ich ein Auto. Vor ein paar Jahren hatten wir kein Geld. Heute haben wir viel Geld.",
+    category: "contrast-sentences",
+    badge: "Slides 6 & 7: Car & Money 🚗💰",
+    icon: "🚗",
+    kenyanAnalogy: "Comparing your past life circumstances with the present: 'Last year I had no car ➔ Today I have a car!'",
+    memoryTrick: "hatte = past possession. habe/haben = present possession!"
+  },
+  {
+    id: "l40-contrast-time-maria",
+    german: "Gestern hatte Maria keine Zeit. Heute hat sie viel Zeit.",
+    english: "Yesterday Maria had no time. Today she has a lot of time.",
+    pronunciation: "GES-tern HAHT-teh mah-REE-ah KYE-neh TSYTE. HOY-teh haht zee feel TSYTE.",
+    audioText: "Gestern hatte Maria keine Zeit. Heute hat sie viel Zeit.",
+    category: "contrast-sentences",
+    badge: "Slides 8 & 9: Time Contrast ⏱️",
+    icon: "⏱️",
+    kenyanAnalogy: "Explaining busyness: 'Yesterday Maria had no time (hatte keine Zeit) ➔ Today she has plenty of time (hat sie viel Zeit)!'",
+    memoryTrick: "Notice the Inversion: 'Gestern' (Pos. 1) + 'hatte' (Pos. 2 Verb) + 'Maria' (Pos. 3 Subject)!"
+  },
+  {
+    id: "l40-contrast-weather",
+    german: "Gestern war das Wetter schlecht. Heute ist das Wetter schön.",
+    english: "Yesterday the weather was bad. Today the weather is beautiful.",
+    pronunciation: "GES-tern vahr dahs VET-ter shlekht. HOY-teh ist dahs VET-ter sheun.",
+    audioText: "Gestern war das Wetter schlecht. Heute ist das Wetter schön.",
+    category: "contrast-sentences",
+    badge: "Slide 12: Weather Contrast ☀️🌧️",
+    icon: "🌤️",
+    kenyanAnalogy: "Small talk about the weather: 'Yesterday the weather was stormy and terrible (war schlecht), but today it is sunny and pleasant (ist schön)!'",
+    memoryTrick: "war = was. ist = is!"
+  },
+  {
+    id: "l40-contrast-energy-mood",
+    german: "Vorgestern war er müde. Heute ist er munter.",
+    english: "The day before yesterday he was tired. Today he is lively / cheerful.",
+    pronunciation: "FOR-ges-tern vahr ayr MYOO-deh. HOY-teh ist ayr MOON-ter.",
+    audioText: "Vorgestern war er müde. Heute ist er munter.",
+    category: "contrast-sentences",
+    badge: "Slide 13: Energy & Mood 😴😃",
+    icon: "😃",
+    kenyanAnalogy: "Describing how someone felt: 'Two days ago he was exhausted (war müde), but today he is full of energy (ist munter)!'",
+    memoryTrick: "munter = alert, awake, lively!"
+  },
+  {
+    id: "l40-contrast-location-travel",
+    german: "Letzte Woche waren wir in Berlin. Heute sind wir in London.",
+    english: "Last week we were in Berlin. Today we are in London.",
+    pronunciation: "LETS-teh VOKH-eh VAH-ren veer in bayr-LEEN. HOY-teh zint veer in LON-don.",
+    audioText: "Letzte Woche waren wir in Berlin. Heute sind wir in London.",
+    category: "contrast-sentences",
+    badge: "Slide 14: Travel & Cities ✈️",
+    icon: "✈️",
+    kenyanAnalogy: "Talking about travel itineraries: 'Last week we were (waren wir) in Berlin, today we are (sind wir) in London!'",
+    memoryTrick: "waren wir = we were. sind wir = we are!"
+  },
+  {
+    id: "l40-contrast-punctuality",
+    german: "Gestern war Robert spät. Heute ist er pünktlich.",
+    english: "Yesterday Robert was late. Today he is punctual.",
+    pronunciation: "GES-tern vahr ROH-bert shpayt. HOY-teh ist ayr PYOONGKT-likh.",
+    audioText: "Gestern war Robert spät. Heute ist er pünktlich.",
+    category: "contrast-sentences",
+    badge: "Slides 15 & 16: Punctuality ⏰",
+    icon: "⏰",
+    kenyanAnalogy: "Arriving for an appointment: 'Yesterday Robert was delayed and late (war spät), but today he is right on time (ist pünktlich)!'",
+    memoryTrick: "spät = late. pünktlich = punctual (on the dot)!"
+  },
+  {
+    id: "l40-chalkboard-exercises",
+    german: "Die 4 Tafel-Übungen: hatten, waren, hatte, war",
+    english: "The 4 Classic Slide Exercises: 1. Wir hatten einen Hund (had). 2. Vorgestern waren wir im Unterricht (were). 3. Gestern hatte Peter Fieber (had). 4. Letzte Woche war ich sehr müde (was).",
+    pronunciation: "veer HAHT-ten ayn-en HOONT. FOR-ges-tern VAH-ren veer im OON-ter-rikht. GES-tern HAHT-teh PAY-ter FEE-ber. LETS-teh VOKH-eh vahr ikh zayr MYOO-deh.",
+    audioText: "Wir hatten einen Hund. Vorgestern waren wir im Unterricht. Gestern hatte Peter Fieber. Letzte Woche war ich sehr müde.",
+    category: "classroom-exercises",
+    badge: "Slides 18–23: Chalkboard Drill 📝",
+    icon: "📝",
+    kenyanAnalogy: "Mastering the decision rule: If it is a pet, possession, illness, or fever ➔ use HATTE/HATTEN. If it is a location, condition, fatigue, or time ➔ use WAR/WAREN!",
+    memoryTrick: "Possession/Fever = hatte. Location/State = war!"
+  }
+];
+
+export const LESSON_40_SCENARIOS = [
+  {
+    scenario: "In Slide 20, look at the sentence: 'Wir ______ einen Hund.' (We had a dog). Should you fill in 'hatten' or 'waren'?",
+    hint: "A dog is a pet/possession that you 'have' (haben ➔ hatten), not a state of being.",
+    options: [
+      { text: "Wir hatten einen Hund.", correct: true, explain: "Perfekt! Dogs and pets are possessions (haben), so in the past with 'wir' it is 'Wir hatten einen Hund' (We had a dog)!" },
+      { text: "Wir waren einen Hund.", correct: false, explain: "'Wir waren einen Hund' would mean 'We were a dog', which is incorrect!" },
+      { text: "Wir haben einen Hund.", correct: false, explain: "'Wir haben' is present tense ('We have a dog'), but this exercise tests the past form 'hatten'." }
+    ]
+  },
+  {
+    scenario: "In Slide 21, look at the sentence: 'Vorgestern ______ wir im Unterricht.' (The day before yesterday we were in class). Which past verb fits?",
+    hint: "Being at a place or class is a location/state (sein ➔ waren), not a possession.",
+    options: [
+      { text: "Vorgestern waren wir im Unterricht.", correct: true, explain: "Ausgezeichnet! Being in class is a location/condition (sein), so with 'wir' you say 'Vorgestern waren wir im Unterricht' (We were in class)!" },
+      { text: "Vorgestern hatten wir im Unterricht.", correct: false, explain: "'hatten' means 'had'. You cannot 'have in class'." },
+      { text: "Vorgestern war wir im Unterricht.", correct: false, explain: "'wir' requires the plural ending '-en': 'waren wir', not 'war wir'." }
+    ]
+  },
+  {
+    scenario: "In Slide 22, look at the sentence: 'Gestern ______ Peter Fieber.' (Yesterday Peter had a fever). Which verb is correct?",
+    hint: "In German, medical conditions like fever, headache, or pain are 'had' (Fieber haben ➔ hatte).",
+    options: [
+      { text: "Gestern hatte Peter Fieber.", correct: true, explain: "Wunderbar! Illnesses and fever in German use 'haben' (Fieber haben), so in the past: 'Gestern hatte Peter Fieber' (Peter had a fever)!" },
+      { text: "Gestern war Peter Fieber.", correct: false, explain: "'Peter war Fieber' would mean Peter literally was a fever!" },
+      { text: "Gestern hattet Peter Fieber.", correct: false, explain: "Peter is 3rd person singular (er), which takes 'hatte', not 'hattet' (ihr)." }
+    ]
+  },
+  {
+    scenario: "In Slide 23, look at the sentence: 'Letzte Woche ______ ich sehr müde.' (Last week I was very tired). Which verb is correct?",
+    hint: "Tiredness is a physical condition/feeling (sein ➔ war), not something in your pocket.",
+    options: [
+      { text: "Letzte Woche war ich sehr müde.", correct: true, explain: "Genau! Being tired is a state of being (müde sein), so with 'ich' you say 'Letzte Woche war ich sehr müde' (Last week I was very tired)!" },
+      { text: "Letzte Woche hatte ich sehr müde.", correct: false, explain: "'hatte' means had. You are tired (sein), you don't 'have tired'." },
+      { text: "Letzte Woche warst ich sehr müde.", correct: false, explain: "'warst' is for 'du' ('du warst'). For 'ich', it is simply 'war'!" }
+    ]
+  },
+  {
+    scenario: "In Slides 10 & 17, what is the 'Mirror Twin Rule' for the German Präteritum (Simple Past)?",
+    hint: "'ich' and 'er/sie/es' ALWAYS have the exact same verb form in the past tense.",
+    options: [
+      { text: "'ich' and 'er/sie/es' are always 100% identical (ich war = er war / ich hatte = sie hatte).", correct: true, explain: "Hervorragend! In German Präteritum, 1st person singular (ich) and 3rd person singular (er/sie/es) ALWAYS share the exact same form with zero exceptions!" },
+      { text: "'ich' takes -e and 'er' takes -t in the past tense.", correct: false, explain: "That is present tense (Präsens). In Präteritum, 'ich' and 'er/sie/es' are identical!" },
+      { text: "'du' and 'wir' are always identical.", correct: false, explain: "'du' takes -st (du warst/hattest) while 'wir' takes -en (wir waren/hatten)." }
+    ]
+  },
+  {
+    scenario: "In Slide 14, how do you express: 'Last week we were in Berlin, today we are in London'?",
+    hint: "Watch verb position 2: 'Letzte Woche waren wir...' and 'Heute sind wir...'.",
+    options: [
+      { text: "Letzte Woche waren wir in Berlin. Heute sind wir in London.", correct: true, explain: "Brilliant! 'waren wir' is past tense with inversion, and 'sind wir' is present tense with inversion!" },
+      { text: "Letzte Woche hatten wir in Berlin. Heute haben wir in London.", correct: false, explain: "Being in a city uses 'sein' (waren / sind), not 'haben'." },
+      { text: "Letzte Woche wir waren in Berlin. Heute wir sind in London.", correct: false, explain: "When starting with a time expression ('Letzte Woche', 'Heute'), the verb MUST stay in Position 2!" }
+    ]
+  }
+];
+
+
 
 
 
