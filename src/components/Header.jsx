@@ -55,6 +55,7 @@ export default function Header({
     if (currentLesson === 41) msg = "Untrennbare Verben: be-emp-ent-er, ge-miss-ver-zer! Er versteht mich gut. Wir bekommen bald eine neue Lehrerin. Kannst du bezahlen?";
     if (currentLesson === 42) msg = "krank sein: Ich bin krank. Ich fühle mich nicht wohl. Mir geht es nicht gut. Ich habe Kopfschmerzen, Fieber und eine Grippe. Mir tut der Hals weh. Gute Besserung!";
     if (currentLesson === 43) msg = "Das Perfekt: Was hast du gestern gemacht? Ich habe einen Salat gegessen und wir sind nach Paris gefahren. Tanja hat ihren Freund angerufen!";
+    if (currentLesson === 44) msg = "haben oder sein im Perfekt: Maria hat mir geholfen, aber wir sind nach London geflogen! Wo bist du geblieben? Und was ist passiert?";
     speakGerman(msg, isSlowMode);
   };
 
@@ -405,6 +406,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson44NavItems = [
+    { id: 'cards', label: '📖 Lesson 44 Cards', sub: 'haben vs. sein Selection Rules' },
+    { id: 'studio44', label: '👑 Auxiliary Throne', sub: 'Decision Matrix, Matrix & Drills' },
+    { id: 'game44', label: '🎮 Auxiliary Quiz Challenge', sub: 'haben vs. sein Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -448,6 +457,7 @@ export default function Header({
   if (currentLesson === 41) navItems = lesson41NavItems;
   if (currentLesson === 42) navItems = lesson42NavItems;
   if (currentLesson === 43) navItems = lesson43NavItems;
+  if (currentLesson === 44) navItems = lesson44NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -493,6 +503,7 @@ export default function Header({
     { num: 41, label: "🛡️ 41: Untrennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 42, label: "🏥 42: krank sein (Health)", activeClass: "bg-rose-700 ring-rose-400", hoverBorder: "hover:bg-rose-100 border-rose-300" },
     { num: 43, label: "⏳ 43: das Perfekt (Teil 1)", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
+    { num: 44, label: "👑 44: haben vs. sein (Perfekt)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (

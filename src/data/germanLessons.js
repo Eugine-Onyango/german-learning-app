@@ -10206,6 +10206,275 @@ export const LESSON_43_SCENARIOS = [
   }
 ];
 
+export const LESSON_44_ITEMS = [
+  {
+    id: "l44-haben-vs-sein",
+    german: "haben vs. sein als Hilfsverb im Perfekt",
+    english: "haben vs. sein as Auxiliary Verbs (The Selection Master Rules)",
+    pronunciation: "HAH-ben FOHR-zoos ZINE ahls HILFS-vairb im PAIR-fekt",
+    audioText: "haben und sein als Hilfsverb im Perfekt. Ich habe eine Pizza gegessen. Ich bin gestern nach Berlin gefahren.",
+    category: "rule",
+    badge: "Master Selection • Slide 3 & 4",
+    icon: "⚖️",
+    kenyanAnalogy: "Like sorting your travel gear: About 85% of normal everyday actions take 'haben' (eating pizza, buying a car, drinking tea). But whenever you physically travel from Point A to Point B, change your physical state (falling asleep), or use special rebel verbs (bleiben, sein, passieren, werden), you must switch to 'sein'!",
+    memoryTrick: "haben = general actions & objects. sein = Movement A ➔ B + Change of State + Special Rebels!",
+    imageType: "scales-balance"
+  },
+  {
+    id: "l44-haben-conjugation",
+    german: "haben + gegessen: habe, hast, hat, haben, habt, haben",
+    english: "Full Conjugation of 'haben' + Partizip II (essen ➔ hat gegessen)",
+    pronunciation: "HAH-beh, HAHST, HAHT, HAH-ben, HAHBT, HAH-ben ge-GES-sen",
+    audioText: "ich habe gegessen, du hast gegessen, er hat gegessen, sie hat gegessen, es hat gegessen, wir haben gegessen, ihr habt gegessen, Sie haben gegessen, sie haben gegessen.",
+    category: "conjugation",
+    badge: "Conjugation Table • Slide 5 & 6",
+    icon: "📋",
+    kenyanAnalogy: "Notice how the Partizip II 'gegessen' stays 100% frozen like an ice sculpture at the end, while only 'haben' changes its coat for each person!",
+    memoryTrick: "Partizip II NEVER conjugates! Only the helping verb 'haben' changes.",
+    imageType: "clipboard-table"
+  },
+  {
+    id: "l44-sein-conjugation",
+    german: "sein + gefahren: bin, bist, ist, sind, seid, sind",
+    english: "Full Conjugation of 'sein' + Partizip II (fahren ➔ ist gefahren)",
+    pronunciation: "BIN, BIST, IST, ZINT, ZYT, ZINT ge-FAH-ren",
+    audioText: "ich bin gefahren, du bist gefahren, er ist gefahren, sie ist gefahren, es ist gefahren, wir sind gefahren, ihr seid gefahren, Sie sind gefahren, sie sind gefahren.",
+    category: "conjugation",
+    badge: "Conjugation Table • Slide 7",
+    icon: "🚗",
+    kenyanAnalogy: "When traveling, 'sein' dresses up: ich bin, du bist, er ist, wir sind, ihr seid, sie sind — and 'gefahren' stays locked at the very end of the sentence!",
+    memoryTrick: "Movement: ich bin gefahren, wir sind gefahren!",
+    imageType: "car-conjugation"
+  },
+  {
+    id: "l44-kaufen-haben",
+    german: "kaufen ➔ hat gekauft / Er hat ein neues Auto gekauft.",
+    english: "to buy ➔ bought / He bought a new car.",
+    pronunciation: "KOW-fen ➔ HAHT ge-KOWFT / AIR HAHT EYE-nes NOY-es OW-to ge-KOWFT",
+    audioText: "kaufen. hat gekauft. Er hat ein neues Auto gekauft.",
+    category: "haben-verb",
+    badge: "haben: Actions • Slide 9 & 12",
+    icon: "🚘",
+    kenyanAnalogy: "Buying a car at a showroom involves exchanging money for a physical possession. All verbs with direct accusative objects take 'haben'!",
+    memoryTrick: "kaufen ➔ hat gekauft (takes haben)!",
+    imageType: "buying-car"
+  },
+  {
+    id: "l44-trinken-haben",
+    german: "trinken ➔ hat getrunken / Sabine hat heute viel Kaffee getrunken.",
+    english: "to drink ➔ drank / Sabine drank a lot of coffee today.",
+    pronunciation: "TRING-ken ➔ HAHT ge-TROONG-ken / zah-BEE-neh HAHT HOY-teh FEEL KAH-feh ge-TROONG-ken",
+    audioText: "trinken. hat getrunken. Sabine hat heute viel Kaffee getrunken.",
+    category: "haben-verb",
+    badge: "haben: Food & Drink • Slide 10 & 12",
+    icon: "☕",
+    kenyanAnalogy: "Sipping rich spiced tea or hot coffee at a cafe is a stationary action. In German: 'Sabine hat heute viel Kaffee getrunken.'",
+    memoryTrick: "trinken ➔ hat getrunken (takes haben)!",
+    imageType: "coffee-drink"
+  },
+  {
+    id: "l44-regnen-haben",
+    german: "regnen ➔ hat geregnet / Es hat wieder geregnet.",
+    english: "to rain ➔ rained / It rained again.",
+    pronunciation: "RAYG-nen ➔ HAHT ge-RAYG-net / ES HAHT VEE-der ge-RAYG-net",
+    audioText: "regnen. hat geregnet. Es hat wieder geregnet.",
+    category: "haben-verb",
+    badge: "haben: Weather • Slide 11",
+    icon: "🌧️",
+    kenyanAnalogy: "Heavy tropical afternoon downpours. Weather events (regnen, schneien, donnern) take 'haben' with impersonal 'Es'!",
+    memoryTrick: "Weather takes haben: Es hat geregnet!",
+    imageType: "rain-clouds"
+  },
+  {
+    id: "l44-fliegen-sein",
+    german: "fliegen ➔ ist geflogen / Meine Eltern sind gestern nach London geflogen.",
+    english: "to fly ➔ flew / My parents flew to London yesterday.",
+    pronunciation: "FLEE-gen ➔ IST ge-FLOH-gen / MY-neh EL-tairn ZINT GES-tairn nahkh LON-don ge-FLOH-gen",
+    audioText: "fliegen. ist geflogen. Meine Eltern sind gestern nach London geflogen.",
+    category: "movement",
+    badge: "sein: Movement A ➔ B • Slide 15 & 17",
+    icon: "✈️",
+    kenyanAnalogy: "Boarding a Kenya Airways flight at JKIA and landing in London. Since you moved from Point A to Point B, you MUST use 'sein' (sind geflogen)!",
+    memoryTrick: "Point A ➔ Point B travel = sein! sind geflogen!",
+    imageType: "airplane-flight"
+  },
+  {
+    id: "l44-gehen-sein",
+    german: "gehen ➔ ist gegangen / Er ist mit Miriam ins Kino gegangen.",
+    english: "to go / walk ➔ went / He went to the cinema with Miriam.",
+    pronunciation: "GAY-en ➔ IST ge-GAHNG-en / AIR IST mit MEER-yahm INS KEE-no ge-GAHNG-en",
+    audioText: "gehen. ist gegangen. Er ist mit Miriam ins Kino gegangen.",
+    category: "movement",
+    badge: "sein: Movement A ➔ B • Slide 16 & 17",
+    icon: "🚶‍♂️",
+    kenyanAnalogy: "Walking with a friend on foot to the movie theater. Physical change of location requires 'sein' (ist gegangen)!",
+    memoryTrick: "gehen ➔ ist gegangen (movement takes sein)!",
+    imageType: "cinema-friends"
+  },
+  {
+    id: "l44-ort-movement-table",
+    german: "Verben mit Ortsveränderung: fahren, kommen, springen, reisen, schwimmen, losgehen, laufen, wandern",
+    english: "Verbs of Place Change (All Take 'sein'!)",
+    pronunciation: "FAH-ren, KOM-men, SHPRING-en, RYE-zen, SHVIM-men, LOHS-gay-en, LOW-fen, VAHN-dairn",
+    audioText: "ist gefahren, ist gekommen, ist gesprungen, ist gereist, ist geschwommen, ist losgegangen, ist gelaufen, ist gewandert.",
+    category: "movement-table",
+    badge: "Master Movement Table • Slide 17",
+    icon: "🏃‍♂️",
+    kenyanAnalogy: "Whether you run (laufen), swim (schwimmen), hike in the mountains (wandern), jump (springen), or travel on safari (reisen), every movement verb pairs with 'sein'!",
+    memoryTrick: "All 8 movement verbs from Slide 17 take 'sein'!",
+    imageType: "running-hiking"
+  },
+  {
+    id: "l44-sterben-zustand",
+    german: "sterben ➔ ist gestorben / Letzte Woche ist sein Vater gestorben.",
+    english: "to die ➔ died / His father died last week.",
+    pronunciation: "SHTAIR-ben ➔ IST ge-SHTOR-ben / LETS-teh VOKH-eh IST ZINE FAH-ter ge-SHTOR-ben",
+    audioText: "sterben. ist gestorben. Letzte Woche ist sein Vater gestorben.",
+    category: "state-change",
+    badge: "sein: Change of State • Slide 19",
+    icon: "⚰️",
+    kenyanAnalogy: "A profound, permanent transition from living to dead. Because it represents a complete change of state, German assigns 'sein' (ist gestorben)!",
+    memoryTrick: "Life to death = change of state = sein!",
+    imageType: "grave-respect"
+  },
+  {
+    id: "l44-einschlafen-zustand",
+    german: "einschlafen ➔ ist eingeschlafen / Maria ist im Unterricht eingeschlafen.",
+    english: "to fall asleep ➔ fell asleep / Maria fell asleep in class.",
+    pronunciation: "EYEN-shlah-fen ➔ IST EYN-ge-shlah-fen / mah-REE-ah IST IM OON-ter-rikht EYN-ge-shlah-fen",
+    audioText: "einschlafen. ist eingeschlafen. Maria ist im Unterricht eingeschlafen.",
+    category: "state-change",
+    badge: "sein: Change of State • Slide 20 & 21",
+    icon: "😴",
+    kenyanAnalogy: "Nodding off during a boring afternoon lecture. Notice the transition: Awake ➔ Asleep (einschlafen takes 'sein'!). But sleeping peacefully all night (schlafen) takes 'haben'!",
+    memoryTrick: "Transitioning to sleep (einschlafen) = sein! Just sleeping (schlafen) = haben!",
+    imageType: "sleeping-desk"
+  },
+  {
+    id: "l44-zustand-table",
+    german: "Zustandsveränderung: aufwachen (ist aufgewacht), wachsen (ist gewachsen), aufstehen (ist aufgestanden)",
+    english: "State Change Verbs: wake up, grow, get up (All Take 'sein'!)",
+    pronunciation: "OWF-vah-khen, VAHK-sen, OWF-shtay-en",
+    audioText: "ist aufgewacht, ist gewachsen, ist aufgestanden.",
+    category: "state-change-table",
+    badge: "Master State Table • Slide 21",
+    icon: "🌱",
+    kenyanAnalogy: "A baby growing taller (wachsen), opening your eyes at dawn (aufwachen), or getting out of bed on two feet (aufstehen). All transition verbs take 'sein'!",
+    memoryTrick: "Change of state = ALWAYS sein!",
+    imageType: "growing-plant"
+  },
+  {
+    id: "l44-bleiben-sein",
+    german: "bleiben ➔ ist geblieben / Ich bin letzte Woche in Spanien geblieben.",
+    english: "to stay / remain ➔ stayed / Last week I stayed in Spain.",
+    pronunciation: "BLY-ben ➔ IST ge-BLEE-ben / IKH BIN LETS-teh VOKH-eh IN SHPAH-nyen ge-BLEE-ben",
+    audioText: "bleiben. ist geblieben. Ich bin letzte Woche in Spanien geblieben.",
+    category: "exception",
+    badge: "Famous Rebel Exception • Slide 23",
+    icon: "🏨",
+    kenyanAnalogy: "The famous German rebel! Even though you did NOT move anywhere and stayed peacefully in your hotel, 'bleiben' ALWAYS takes 'sein' (Ich bin geblieben)!",
+    memoryTrick: "Rebel Rule: 'bleiben' stays in place, but STILL takes 'sein'!",
+    imageType: "hotel-stay"
+  },
+  {
+    id: "l44-sein-gewesen",
+    german: "sein ➔ ist gewesen / Wo bist du gestern gewesen?",
+    english: "to be ➔ was / been / Where were you yesterday?",
+    pronunciation: "ZINE ➔ IST ge-VAY-zen / VOH BIST DOO GES-tairn ge-VAY-zen",
+    audioText: "sein. ist gewesen. Wo bist du gestern gewesen?",
+    category: "exception",
+    badge: "Famous Rebel Exception • Slide 24",
+    icon: "📍",
+    kenyanAnalogy: "Asking a colleague where they were all day: 'Wo bist du gestern gewesen?' The verb 'sein' uses itself as its own helping verb (bist gewesen)!",
+    memoryTrick: "sein uses sein! 'Wo bist du gewesen?'",
+    imageType: "location-pin"
+  },
+  {
+    id: "l44-passieren-werden",
+    german: "passieren (ist passiert) | werden (ist geworden)",
+    english: "to happen (happened) | to become / turn age (became / turned)",
+    pronunciation: "pah-SEE-ren (IST pah-SEERT) | VAIR-den (IST ge-VOR-den)",
+    audioText: "Was ist passiert? Oma ist heute 70 geworden.",
+    category: "exception",
+    badge: "Special Verbs • Slide 25 & 26",
+    icon: "🎂",
+    kenyanAnalogy: "Shocked seeing a crowd on the street: 'Was ist passiert?' (What happened?). Celebrating grandmother's milestone 70th birthday: 'Oma ist heute 70 geworden!'",
+    memoryTrick: "passieren (ist passiert) & werden (ist geworden) ALWAYS take sein!",
+    imageType: "birthday-cake"
+  },
+  {
+    id: "l44-fahren-double",
+    german: "fahren: Ich bin nach Köln gefahren (sein) VS. Ich habe mein neues Auto gefahren (haben)",
+    english: "The Chameleon 'fahren': Destination (sein) vs. Direct Object Car (haben)",
+    pronunciation: "IKH BIN nahkh KOELN ge-FAH-ren VS. IKH HAH-beh MYN NOY-es OW-to ge-FAH-ren",
+    audioText: "Ich bin nach Köln gefahren. Ich habe mein neues Auto gefahren.",
+    category: "double-verb",
+    badge: "Double Chameleon • Slide 28",
+    icon: "🚘",
+    kenyanAnalogy: "Focusing on traveling to a city (Cologne) = Movement from A to B ➔ 'Ich bin nach Köln gefahren.' But focusing on operating and driving your shiny new vehicle (direct object) ➔ 'Ich habe mein neues Auto gefahren.'",
+    memoryTrick: "Movement to a destination = sein! Operating a specific car object = haben!",
+    imageType: "driving-contrast"
+  }
+];
+
+export const LESSON_44_SCENARIOS = [
+  {
+    scenario: "In Slide 8, 9, & 10, why do verbs like 'kaufen' (to buy) and 'trinken' (to drink) use 'haben' as their helping verb in the Perfekt?",
+    hint: "Most stationary actions and actions with direct objects take 'haben'.",
+    options: [
+      { text: "Because they are standard actions involving objects with no change of location or state.", correct: true, explain: "Perfekt! Around 85% of German verbs (eating, buying, drinking, making, writing) take 'haben' as their helping verb!" },
+      { text: "Because 'kaufen' and 'trinken' are movement verbs.", correct: false, explain: "Buying and drinking are not movement from Point A to Point B." },
+      { text: "Because all verbs starting with consonants take 'haben'.", correct: false, explain: "The first letter has nothing to do with helping verb selection." }
+    ]
+  },
+  {
+    scenario: "In Slide 14–17, you tell a friend: 'My parents flew to London yesterday.' (Verb: fliegen). Which helping verb is required and why?",
+    hint: "'fliegen' is a movement from Point A to Point B (Ortsveränderung).",
+    options: [
+      { text: "'sind' (Meine Eltern sind gestern nach London geflogen.) because 'fliegen' is a change of location.", correct: true, explain: "Ausgezeichnet! All movement verbs (fliegen, fahren, gehen, laufen, schwimmen, reisen) take 'sein'!" },
+      { text: "'haben' (Meine Eltern haben gestern nach London geflogen.)", correct: false, explain: "'fliegen' to a destination is a movement verb and MUST take 'sein'." },
+      { text: "'werden' (Meine Eltern werden gestern nach London geflogen.)", correct: false, explain: "'werden' is for future tense or passive, not the active Perfekt helping verb." }
+    ]
+  },
+  {
+    scenario: "In Slide 20 & 21, what is the key difference between 'schlafen' (to sleep) and 'einschlafen' (to fall asleep)?",
+    hint: "'schlafen' is a stationary ongoing state (haben), while 'einschlafen' is a transition/change of state from awake to asleep (sein).",
+    options: [
+      { text: "'schlafen' takes 'haben' (Ich habe geschlafen), but 'einschlafen' is a change of state and takes 'sein' (Maria ist eingeschlafen).", correct: true, explain: "Genau! Ongoing sleeping takes 'haben', but the transition of drifting off to sleep (Zustandsveränderung) takes 'sein'!" },
+      { text: "Both verbs always take 'haben'.", correct: false, explain: "'einschlafen' represents a change of state and takes 'sein'!" },
+      { text: "Both verbs always take 'sein'.", correct: false, explain: "'schlafen' is stationary and takes 'haben'." }
+    ]
+  },
+  {
+    scenario: "In Slide 23, look at the rebel verb 'bleiben' (to stay). Even though you remained in one place and didn't move, which helping verb does it take?",
+    hint: "Rebel rule: 'bleiben' ALWAYS takes 'sein' (ist geblieben).",
+    options: [
+      { text: "'sein' (Ich bin letzte Woche in Spanien geblieben.)", correct: true, explain: "Wunderbar! 'bleiben' is the classic German exception: staying in one place still requires 'sein' (ist geblieben)!" },
+      { text: "'haben' (Ich habe letzte Woche in Spanien geblieben.)", correct: false, explain: "'haben geblieben' is a classic beginner mistake! 'bleiben' ALWAYS takes 'sein'." },
+      { text: "'tun' (Ich tue in Spanien geblieben.)", correct: false, explain: "'tun' is never a helping verb for Perfekt." }
+    ]
+  },
+  {
+    scenario: "In Slide 28, look at the chameleon verb 'fahren'. When does 'fahren' take 'haben' instead of 'sein'?",
+    hint: "When it has a direct accusative object (driving a specific car/bus).",
+    options: [
+      { text: "When you drive a specific direct object car: 'Ich habe mein neues Auto gefahren.'", correct: true, explain: "Hervorragend! Traveling to a city uses 'sein' (Ich bin nach Köln gefahren), but driving a specific vehicle object uses 'haben' (Ich habe das Auto gefahren)!" },
+      { text: "When you drive faster than 100 km/h.", correct: false, explain: "Speed does not affect German grammar!" },
+      { text: "'fahren' can never take 'haben'.", correct: false, explain: "When used with a direct object, 'fahren' takes 'haben'." }
+    ]
+  },
+  {
+    scenario: "In Slide 30–32, choose the correct helping verbs to complete these 3 slide exercises: 1. Maria _____ mir geholfen. 2. Wo _____ du geblieben? 3. Heute _____ ich spät aufgestanden.",
+    hint: "helfen (hat), bleiben (bist), aufstehen (bin).",
+    options: [
+      { text: "1. hat | 2. bist | 3. bin (Maria hat mir geholfen. Wo bist du geblieben? Heute bin ich spät aufgestanden.)", correct: true, explain: "Brilliant! 'helfen' takes 'hat', 'bleiben' takes 'bist', and 'aufstehen' (change of state) takes 'bin'!" },
+      { text: "1. ist | 2. hast | 3. habe", correct: false, explain: "'helfen' takes 'hat', 'bleiben' takes 'bist', and 'aufstehen' takes 'bin'." },
+      { text: "1. hat | 2. hast | 3. habe", correct: false, explain: "'bleiben' and 'aufstehen' both take 'sein'!" }
+    ]
+  }
+];
+
+
 
 
 
