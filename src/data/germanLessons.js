@@ -9657,6 +9657,340 @@ export const LESSON_41_SCENARIOS = [
   }
 ];
 
+export const LESSON_42_ITEMS = [
+  {
+    id: "krank-sein",
+    german: "krank sein / Ich bin krank.",
+    english: "to be ill / I am ill (sick).",
+    pronunciation: "KRAHNK ZINE / IKH BIN KRAHNK",
+    audioText: "krank sein. Ich bin krank.",
+    category: "state",
+    badge: "General State • Slide 1 & 4",
+    icon: "🤒",
+    kenyanAnalogy: "Like when sudden malaria or a nasty flu strikes, leaving you too weak to leave your bed or attend work/school. You simply state: 'Ich bin krank.'",
+    memoryTrick: "'krank' = sick/ill. 'sein' = to be. 'Ich bin krank' = I am sick!",
+    imageType: "sick-bed"
+  },
+  {
+    id: "fuehlen-wohl",
+    german: "Ich fühle mich nicht wohl.",
+    english: "I am not feeling well.",
+    pronunciation: "IKH FEW-leh MIKH NIKHT VOHL",
+    audioText: "Ich fühle mich nicht wohl.",
+    category: "state",
+    badge: "Reflexive Feeling • Slide 4",
+    icon: "🤢",
+    kenyanAnalogy: "When you wake up feeling dizzy, queasy, or 'off-color' before full symptoms develop. In German: 'Ich fühle mich nicht wohl' (literally: I feel myself not well).",
+    memoryTrick: "'fühlen' = to feel, 'mich' = myself, 'wohl' = well/comfortable. 'nicht wohl' = unwell!",
+    imageType: "unwell-face"
+  },
+  {
+    id: "mir-geht-es",
+    german: "Mir geht es nicht gut.",
+    english: "I am not doing well / It is not going well with me.",
+    pronunciation: "MEER GAYT ES NIKHT GOOT",
+    audioText: "Mir geht es nicht gut.",
+    category: "state",
+    badge: "Dativ Expressive • Slide 4",
+    icon: "😔",
+    kenyanAnalogy: "When someone asks 'Wie geht's?' (How are you?) and instead of 'gut', you honestly reply: 'Mir geht es nicht gut' (Things aren't going well for me health-wise).",
+    memoryTrick: "Remember Lesson 35 Dative: 'Mir' (to me). 'Mir geht es nicht gut'!",
+    imageType: "sad-health"
+  },
+  {
+    id: "die-krankheit",
+    german: "die Krankheit (Pl. die Krankheiten)",
+    english: "the illness / the disease (Pl. illnesses)",
+    pronunciation: "dee KRAHNK-hite, dee KRAHNK-hye-ten",
+    audioText: "die Krankheit. die Krankheiten.",
+    category: "vocab",
+    badge: "Feminine Noun • Slide 3",
+    icon: "🏥",
+    kenyanAnalogy: "The general German medical term for any illness, sickness, or ailment. Any noun ending in '-heit' is ALWAYS feminine ('die')!",
+    memoryTrick: "'krank' (sick) + '-heit' (-ness) = 'die Krankheit' (sickness/illness)!",
+    imageType: "hospital-clinic"
+  },
+  {
+    id: "kopfschmerzen",
+    german: "die Kopfschmerzen (Pl.) / Ich habe Kopfschmerzen.",
+    english: "headache / I have a headache.",
+    pronunciation: "dee KOPF-shmair-tsen / IKH HAH-beh KOPF-shmair-tsen",
+    audioText: "die Kopfschmerzen. Ich habe Kopfschmerzen.",
+    category: "schmerzen",
+    badge: "Headache • Slide 5 & 9",
+    icon: "🤯",
+    kenyanAnalogy: "Like the pounding throbbing headache from scorching afternoon sun in Nairobi traffic. German builds compound words: der Kopf (head) + die Schmerzen (pains) = die Kopfschmerzen!",
+    memoryTrick: "Kopf = Head. Schmerzen = Pains. Kopfschmerzen = Headaches!",
+    imageType: "headache-stress"
+  },
+  {
+    id: "rueckenschmerzen",
+    german: "die Rückenschmerzen (Pl.) / Ich habe Rückenschmerzen.",
+    english: "backache / I have a backache.",
+    pronunciation: "dee REW-ken-shmair-tsen / IKH HAH-beh REW-ken-shmair-tsen",
+    audioText: "die Rückenschmerzen. Ich habe Rückenschmerzen.",
+    category: "schmerzen",
+    badge: "Back Pain • Slide 6",
+    icon: "🧍‍♂️",
+    kenyanAnalogy: "Like lower back ache after carrying heavy bags of maize or sitting for hours on a rough bumpy road trip. der Rücken (back) + Schmerzen = Rückenschmerzen!",
+    memoryTrick: "'Rücken' = Back (rear). Rückenschmerzen = Backache!",
+    imageType: "backache"
+  },
+  {
+    id: "zahnschmerzen",
+    german: "die Zahnschmerzen (Pl.) / Ich habe Zahnschmerzen.",
+    english: "toothache / I have a toothache.",
+    pronunciation: "dee TSAHN-shmair-tsen / IKH HAH-beh TSAHN-shmair-tsen",
+    audioText: "die Zahnschmerzen. Ich habe Zahnschmerzen.",
+    category: "schmerzen",
+    badge: "Tooth Pain • Slide 7",
+    icon: "🦷",
+    kenyanAnalogy: "Sharp, pulsing tooth pain that makes it impossible to chew roasted corn (mahindi choma) and sends you rushing to the dentist.",
+    memoryTrick: "'der Zahn' = tooth (plural 'die Zähne'). Zahnschmerzen = Toothache!",
+    imageType: "toothache"
+  },
+  {
+    id: "bauchschmerzen",
+    german: "die Bauchschmerzen (Pl.) / Ich habe Bauchschmerzen.",
+    english: "stomach ache / I have stomach pain.",
+    pronunciation: "dee BOWKH-shmair-tsen / IKH HAH-beh BOWKH-shmair-tsen",
+    audioText: "die Bauchschmerzen. Ich habe Bauchschmerzen.",
+    category: "schmerzen",
+    badge: "Stomach Pain • Slide 8",
+    icon: "🤢",
+    kenyanAnalogy: "Cramping stomach pain after eating spicy food or drinking bad water. der Bauch (stomach/belly) + Schmerzen = Bauchschmerzen!",
+    memoryTrick: "'Bauch' rhymes with 'ouch'! When your tummy says ouch, you have Bauchschmerzen!",
+    imageType: "stomachache"
+  },
+  {
+    id: "ohrenschmerzen",
+    german: "die Ohrenschmerzen (Pl.) / Ich habe Ohrenschmerzen.",
+    english: "earache / I have ear pain.",
+    pronunciation: "dee OH-ren-shmair-tsen / IKH HAH-beh OH-ren-shmair-tsen",
+    audioText: "die Ohrenschmerzen. Ich habe Ohrenschmerzen.",
+    category: "schmerzen",
+    badge: "Ear Pain • Slide 8",
+    icon: "👂",
+    kenyanAnalogy: "Stinging ear pain or infection after swimming in cold water or catching a severe cold.",
+    memoryTrick: "'das Ohr' (ear) ➔ plural 'die Ohren' (ears) + Schmerzen = Ohrenschmerzen!",
+    imageType: "earache"
+  },
+  {
+    id: "halsschmerzen",
+    german: "die Halsschmerzen (Pl.) / Ich habe Halsschmerzen.",
+    english: "sore throat / I have a sore throat.",
+    pronunciation: "dee HAHLSS-shmair-tsen / IKH HAH-beh HAHLSS-shmair-tsen",
+    audioText: "die Halsschmerzen. Ich habe Halsschmerzen.",
+    category: "schmerzen",
+    badge: "Throat Pain • Slide 8",
+    icon: "🧣",
+    kenyanAnalogy: "A scratchy, burning throat that hurts every time you swallow water or tea. der Hals (neck/throat) + Schmerzen = Halsschmerzen!",
+    memoryTrick: "'Hals' = throat / neck. Wrap a warm scarf around your Hals!",
+    imageType: "sore-throat"
+  },
+  {
+    id: "nackenschmerzen",
+    german: "die Nackenschmerzen (Pl.) / Ich habe Nackenschmerzen.",
+    english: "neck pain / I have a stiff/painful neck.",
+    pronunciation: "dee NAH-ken-shmair-tsen / IKH HAH-beh NAH-ken-shmair-tsen",
+    audioText: "die Nackenschmerzen. Ich habe Nackenschmerzen.",
+    category: "schmerzen",
+    badge: "Neck Pain • Slide 8",
+    icon: "💆‍♂️",
+    kenyanAnalogy: "A stiff neck after sleeping on an awkward pillow or hunching over a laptop screen for 8 hours.",
+    memoryTrick: "'der Nacken' = back of the neck. Nackenschmerzen = neck stiffness/pain!",
+    imageType: "neck-pain"
+  },
+  {
+    id: "wehtun-verb",
+    german: "wehtun / Mir tut der Kopf weh.",
+    english: "to hurt (separable) / My head hurts (I have a headache).",
+    pronunciation: "VAY-toon / MEER TOOT DAIR KOPF VAY",
+    audioText: "wehtun. Mir tut der Kopf weh. Mir tun die Ohren weh.",
+    category: "wehtun",
+    badge: "Separable Verb • Slide 10 & 11",
+    icon: "⚡",
+    kenyanAnalogy: "Alternative way to express pain using Dative 'Mir' + verb 'wehtun' (weh-tun splits!): Singular body part takes 'tut... weh' ('Mir tut der Kopf weh'), Plural takes 'tun... weh' ('Mir tun die Ohren weh').",
+    memoryTrick: "'weh' (woe/pain) + 'tun' (to do). Pain does something to me! Singular: tut weh, Plural: tun weh!",
+    imageType: "lightning-pain"
+  },
+  {
+    id: "das-fieber",
+    german: "das Fieber / Ich habe Fieber.",
+    english: "the fever / I have a fever (high temperature).",
+    pronunciation: "dahs FEE-ber / IKH HAH-beh FEE-ber",
+    audioText: "das Fieber. Ich habe Fieber.",
+    category: "illness",
+    badge: "Neuter Noun • Slide 12 & 18",
+    icon: "🌡️",
+    kenyanAnalogy: "When your forehead burns like a hot charcoal stove and the thermometer reads 39°C. 'Ich habe Fieber.'",
+    memoryTrick: "Sounds identical to English 'fever'! das Fieber (neuter).",
+    imageType: "thermometer-fever"
+  },
+  {
+    id: "die-grippe",
+    german: "die Grippe / Ich habe eine Grippe.",
+    english: "the flu (influenza) / I have the flu.",
+    pronunciation: "dee GRIP-peh / IKH HAH-beh EYE-neh GRIP-peh",
+    audioText: "die Grippe. Ich habe eine Grippe.",
+    category: "illness",
+    badge: "Feminine Noun • Slide 13 & 18",
+    icon: "🦠",
+    kenyanAnalogy: "Full-body viral flu with chills, fatigue, shivering, and body aches. In German, it takes feminine article 'die Grippe'.",
+    memoryTrick: "Think of the flu having a tight 'grip' on your body! 'die Grippe'.",
+    imageType: "flu-virus"
+  },
+  {
+    id: "erkaeltung-schnupfen",
+    german: "die Erkältung / der Schnupfen",
+    english: "the cold / the runny nose (head cold)",
+    pronunciation: "dee air-KEL-toong / dair SHNOOP-fen",
+    audioText: "die Erkältung. Ich habe eine Erkältung. der Schnupfen. Ich habe Schnupfen.",
+    category: "illness",
+    badge: "Common Cold • Slide 14 & 19",
+    icon: "🤧",
+    kenyanAnalogy: "A typical wet cold with constant sneezing and blowing your nose into handkerchiefs on a cold July morning in Limuru. 'die Erkältung' (from kalt = cold) & 'der Schnupfen' (runny nose).",
+    memoryTrick: "'Erkältung' comes from 'kalt' (cold). 'Schnupfen' sounds like sniffing/sniffling!",
+    imageType: "sneezing-tissue"
+  },
+  {
+    id: "der-husten",
+    german: "der Husten / Ich habe Husten.",
+    english: "the cough / I have a cough.",
+    pronunciation: "dair HOO-sten / IKH HAH-beh HOO-sten",
+    audioText: "der Husten. Ich habe Husten.",
+    category: "illness",
+    badge: "Masculine Noun • Slide 15",
+    icon: "🗣️",
+    kenyanAnalogy: "A chesty, persistent dry or wet cough that interrupts your speech and requires warm herbal tea or cough syrup.",
+    memoryTrick: "Think of 'Who's standing?' -> 'Husten' = cough!",
+    imageType: "coughing-person"
+  },
+  {
+    id: "das-asthma",
+    german: "das Asthma / Ich habe Asthma.",
+    english: "asthma / I have asthma.",
+    pronunciation: "dahs AST-mah / IKH HAH-beh AST-mah",
+    audioText: "das Asthma. Ich habe Asthma.",
+    category: "illness",
+    badge: "Neuter Noun • Slide 16",
+    icon: "🫁",
+    kenyanAnalogy: "Difficulty breathing / chest tightness requiring an inhaler pump. In German, 'das Asthma' (pronounced 'Ast-ma').",
+    memoryTrick: "Spelled and pronounced almost identically to English asthma! das Asthma.",
+    imageType: "inhaler-asthma"
+  },
+  {
+    id: "der-durchfall",
+    german: "der Durchfall / Ich habe Durchfall.",
+    english: "diarrhea / I have diarrhea (loose stomach).",
+    pronunciation: "dair DOORKH-fahl / IKH HAH-beh DOORKH-fahl",
+    audioText: "der Durchfall. Ich habe Durchfall.",
+    category: "illness",
+    badge: "Masculine Noun • Slide 17",
+    icon: "🚽",
+    kenyanAnalogy: "Upset stomach with frequent bathroom rushes. German literally translates to 'through-fall' (durch = through, fall = drop/fall).",
+    memoryTrick: "durch (through) + fall (fall) = food falls right through your body = diarrhea!",
+    imageType: "stomach-upset"
+  },
+  {
+    id: "hoher-blutdruck",
+    german: "der Blutdruck / Ich habe hohen Blutdruck.",
+    english: "blood pressure / I have high blood pressure (hypertension).",
+    pronunciation: "dair BLOOT-drook / IKH HAH-beh HOH-en BLOOT-drook",
+    audioText: "der Blutdruck. Ich habe hohen Blutdruck.",
+    category: "condition",
+    badge: "Health Condition • Slide 20",
+    icon: "💓",
+    kenyanAnalogy: "When the clinic nurse wraps the arm cuff gauge and reads elevated pressure. das Blut (blood) + der Druck (pressure) = der Blutdruck. In Accusative: 'hohen Blutdruck'!",
+    memoryTrick: "Blut = Blood. Druck = Pressure (like pressing down). hohen = high (Accusative masculine).",
+    imageType: "blood-pressure-monitor"
+  },
+  {
+    id: "uebergewicht",
+    german: "das Übergewicht / Ich habe Übergewicht.",
+    english: "overweight / I am overweight (have excess weight).",
+    pronunciation: "dahs EW-ber-ge-vikht / IKH HAH-beh EW-ber-ge-vikht",
+    audioText: "das Übergewicht. Ich habe Übergewicht.",
+    category: "condition",
+    badge: "Health Condition • Slide 21",
+    icon: "⚖️",
+    kenyanAnalogy: "When the bathroom scale shows extra kilograms over your recommended healthy weight. über (over/above) + das Gewicht (weight) = das Übergewicht.",
+    memoryTrick: "über (over) + Gewicht (weight) = overweight!",
+    imageType: "weight-scale"
+  },
+  {
+    id: "sich-verletzen",
+    german: "sich verletzen / Ich habe mich verletzt.",
+    english: "to hurt/injure oneself / I hurt myself.",
+    pronunciation: "zikh fair-LET-tsen / IKH HAH-beh MIKH fair-LETST",
+    audioText: "sich verletzen. Ich habe mich verletzt. Ich habe mich am Bein verletzt. Ich habe mich an der Hand verletzt.",
+    category: "injury",
+    badge: "Reflexive Injury • Slide 22 & 23",
+    icon: "🩹",
+    kenyanAnalogy: "When a child falls while playing football and scrapes their knee, or you cut your hand while cooking. 'Ich habe mich verletzt' (I injured myself). Specific body parts use 'am' (am Bein) or 'an der' (an der Hand)!",
+    memoryTrick: "verletzen = to injure/wound. 'Ich habe mich am Bein verletzt' = I injured my leg!",
+    imageType: "bandaid-injury"
+  }
+];
+
+export const LESSON_42_SCENARIOS = [
+  {
+    scenario: "In Slide 4, you wake up feeling dizzy, weak, and unwell before heading to class. How do you express this in natural German?",
+    hint: "Think of: 'Ich bin krank' (I am ill), 'Ich fühle mich nicht wohl' (I feel unwell), or 'Mir geht es nicht gut'.",
+    options: [
+      { text: "Ich fühle mich nicht wohl. / Mir geht es nicht gut.", correct: true, explain: "Perfekt! Both 'Ich fühle mich nicht wohl' and 'Mir geht es nicht gut' are authentic German ways to say you are not feeling well!" },
+      { text: "Ich bin gesund und munter.", correct: false, explain: "'gesund und munter' means healthy and lively!" },
+      { text: "Ich habe mich gut gefühlt.", correct: false, explain: "This means 'I felt good' in past tense, not unwell." }
+    ]
+  },
+  {
+    scenario: "In Slide 5, German forms compound pain words by combining body parts with 'Schmerzen'. What is the formula for 'headache'?",
+    hint: "der Kopf + die Schmerzen = die Kopfschmerzen (Pl.)",
+    options: [
+      { text: "der Kopf + die Schmerzen = die Kopfschmerzen (Pl.)", correct: true, explain: "Ausgezeichnet! All body pain compounds take plural 'die Schmerzen': die Kopfschmerzen, die Rückenschmerzen, die Zahnschmerzen!" },
+      { text: "das Kopf + der Schmerz = das Kopfschmerz", correct: false, explain: "Kopf is masculine (der Kopf), and German commonly expresses body aches in the plural (die Kopfschmerzen)." },
+      { text: "die Kopf + die Schmerze = die Kopfschmerze", correct: false, explain: "Kopf is masculine (der Kopf) and pains is plural (die Schmerzen)." }
+    ]
+  },
+  {
+    scenario: "In Slide 10 & 11, you want to use the separable verb 'wehtun' to say your head hurts. Which sentence is grammatically correct?",
+    hint: "'wehtun' splits. 'der Kopf' is singular, so use 'tut... weh' with Dative 'Mir'.",
+    options: [
+      { text: "Mir tut der Kopf weh.", correct: true, explain: "Wunderbar! 'wehtun' separates into 'tut... weh': 'Mir tut der Kopf weh' (singular). For plural ears, it would be 'Mir tun die Ohren weh'!" },
+      { text: "Ich tue den Kopf weh.", correct: false, explain: "German uses the Dative impersonal receiver 'Mir tut...' (to me does the head pain)." },
+      { text: "Mir wehtut der Kopf.", correct: false, explain: "'wehtun' is a separable verb, so 'weh' MUST jump to the very end of the clause!" }
+    ]
+  },
+  {
+    scenario: "In Slide 12 & 18, you have a high body temperature (39°C) and shivering chills. What does the doctor say you have?",
+    hint: "das Fieber / die Grippe",
+    options: [
+      { text: "Sie haben Fieber und eine Grippe.", correct: true, explain: "Genau! 'das Fieber' (fever) and 'die Grippe' (flu) describe high body temperature and viral influenza!" },
+      { text: "Sie haben Hunger und Durst.", correct: false, explain: "Hunger and thirst are not illnesses!" },
+      { text: "Sie haben Schnupfen und sind gesund.", correct: false, explain: "'gesund' means healthy, but high fever means you are ill." }
+    ]
+  },
+  {
+    scenario: "In Slide 22 & 23, a runner tripped on a stone and scraped their knee and hand. How do they say 'I hurt my leg / my hand' in German?",
+    hint: "Reflexive past: 'Ich habe mich am Bein / an der Hand verletzt.'",
+    options: [
+      { text: "Ich habe mich am Bein / an der Hand verletzt.", correct: true, explain: "Hervorragend! 'sich verletzen' (to injure oneself): 'Ich habe mich am Bein (das Bein -> am Bein) / an der Hand (die Hand -> an der Hand) verletzt'!" },
+      { text: "Ich habe mein Bein kaputt gemacht.", correct: false, explain: "'kaputt machen' is used for broken machines or objects, not human body injuries." },
+      { text: "Ich bin mein Bein verletzt.", correct: false, explain: "'sich verletzen' forms the Perfekt with 'haben' ('Ich habe mich... verletzt')." }
+    ]
+  },
+  {
+    scenario: "In Slide 2, a friend is shivering in bed with a fever and sore throat. What is the warmest, most natural advice and recovery wish to give them?",
+    hint: "Du solltest zum Arzt gehen, viel Tee trinken, and wish them 'Gute Besserung!' (Get well soon!).",
+    options: [
+      { text: "Du solltest zum Arzt gehen, viel Tee trinken und dich ausruhen. Gute Besserung!", correct: true, explain: "Brilliant! 'Gute Besserung!' is the universal German wish for 'Get well soon!', paired with caring advice (Doctor, tea, rest)!" },
+      { text: "Geh sofort zur Arbeit und mach Sport!", correct: false, explain: "Going to work and exercising is bad advice when sick with a fever!" },
+      { text: "Herzlichen Glückwunsch zum Geburtstag!", correct: false, explain: "That means 'Happy Birthday!', not get well soon!" }
+    ]
+  }
+];
+
+
 
 
 

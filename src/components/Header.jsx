@@ -53,6 +53,7 @@ export default function Header({
     if (currentLesson === 39) msg = "Wegbeschreibung: Wie komme ich zum Hauptbahnhof? Gehen Sie geradeaus, biegen Sie links ab, und an der Kreuzung ist der Bahnhof an der Ecke!";
     if (currentLesson === 40) msg = "Das Präteritum: Gestern war ich müde, aber heute bin ich munter! Letztes Jahr hatte ich kein Auto, heute habe ich ein Auto. Wir hatten einen Hund und waren im Unterricht!";
     if (currentLesson === 41) msg = "Untrennbare Verben: be-emp-ent-er, ge-miss-ver-zer! Er versteht mich gut. Wir bekommen bald eine neue Lehrerin. Kannst du bezahlen?";
+    if (currentLesson === 42) msg = "krank sein: Ich bin krank. Ich fühle mich nicht wohl. Mir geht es nicht gut. Ich habe Kopfschmerzen, Fieber und eine Grippe. Mir tut der Hals weh. Gute Besserung!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -387,6 +388,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson42NavItems = [
+    { id: 'cards', label: '📖 Lesson 42 Cards', sub: 'Symptoms & Illnesses' },
+    { id: 'studio42', label: '🏥 Health & Clinic Studio', sub: '3 Formulas, Body Map & Advice' },
+    { id: 'game42', label: '🎮 Health & Doctor Quiz', sub: 'Symptoms & wehtun Challenge' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -428,6 +437,7 @@ export default function Header({
   if (currentLesson === 39) navItems = lesson39NavItems;
   if (currentLesson === 40) navItems = lesson40NavItems;
   if (currentLesson === 41) navItems = lesson41NavItems;
+  if (currentLesson === 42) navItems = lesson42NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -471,6 +481,7 @@ export default function Header({
     { num: 39, label: "🗺️ 39: Wegbeschreibung", activeClass: "bg-blue-700 ring-blue-400", hoverBorder: "hover:bg-blue-100 border-blue-300" },
     { num: 40, label: "⏳ 40: war / hatte (Past)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 41, label: "🛡️ 41: Untrennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 42, label: "🏥 42: krank sein (Health)", activeClass: "bg-rose-700 ring-rose-400", hoverBorder: "hover:bg-rose-100 border-rose-300" },
   ];
 
   return (
