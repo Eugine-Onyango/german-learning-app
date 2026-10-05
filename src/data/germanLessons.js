@@ -12559,6 +12559,304 @@ export const LESSON_51_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 52: Fragepronomen "welch-" (Interrogative Pronoun "Which")
+// ==========================================
+export const LESSON_52_ITEMS = [
+  {
+    id: "welch-intro",
+    german: "Fragepronomen \"welch-\"",
+    english: "Interrogative pronoun \"which\" (which one / which person / which thing)",
+    pronunciation: "FRAH-geh-proh-noh-men velkh",
+    audioText: "Fragepronomen welch. Welcher, welche, welches, welchen, welchem.",
+    category: "concept",
+    badge: "Core Concept",
+    icon: "❓",
+    kenyanAnalogy: "Like shopping at a market stall with ten different jackets or fruits and asking the vendor: 'Which one?' German 'welch-' acts like a mirror that adopts the exact ending of 'der / die / das'!",
+    memoryTrick: "The Golden Rule: 'welch-' takes the exact ending of the definite article (der -> welch-er, die -> welch-e, das -> welch-es, den -> welch-en, dem -> welch-em)!",
+    imageType: "question"
+  },
+  {
+    id: "welcher-hut-nom",
+    german: "Welcher Hut ist schicker? — Der schwarze Hut.",
+    english: "Which hat is smarter / more stylish? — The black hat.",
+    pronunciation: "VEL-kher hoot ist SHIK-er? — dair SHVAHR-tseh hoot",
+    audioText: "Welcher Hut ist schicker? Der schwarze Hut.",
+    category: "maskulin",
+    badge: "Maskulin • Nominativ",
+    icon: "🎩",
+    kenyanAnalogy: "Comparing two sharp hats on a display shelf. Since 'Hut' is masculine subject ('der Hut'), it becomes 'welch-er'!",
+    memoryTrick: "der Hut ➔ welch-ER Hut!",
+    imageType: "hat"
+  },
+  {
+    id: "welcher-stift-nom",
+    german: "Welcher Stift gehört dir? — Der rote.",
+    english: "Which pen belongs to you? — The red one.",
+    pronunciation: "VEL-kher shtift ge-HERT deer? — dair ROH-teh",
+    audioText: "Welcher Stift gehört dir? Der rote.",
+    category: "maskulin",
+    badge: "Maskulin • Nominativ",
+    icon: "🖊️",
+    kenyanAnalogy: "Spotting a blue and red pen on a meeting table: 'Which pen is yours?' -> 'The red one.'",
+    memoryTrick: "der Stift ➔ welch-ER Stift ➔ der rote!",
+    imageType: "pen"
+  },
+  {
+    id: "welchen-hut-akk",
+    german: "Welchen Hut findest du schick? — Den schwarzen finde ich schick.",
+    english: "Which hat do you find stylish? — I find the black one stylish.",
+    pronunciation: "VEL-khen hoot FIN-dest doo shik? — dain SHVAHR-tsen FIN-deh ikh shik",
+    audioText: "Welchen Hut findest du schick? Den schwarzen finde ich schick.",
+    category: "maskulin",
+    badge: "Maskulin • Akkusativ",
+    icon: "🎩",
+    kenyanAnalogy: "You are the subject choosing a hat as direct object (Akkusativ). Masculine changes to -en: 'den' ➔ 'welchen'!",
+    memoryTrick: "den Hut ➔ welch-EN Hut ➔ den schwarzen!",
+    imageType: "fashion"
+  },
+  {
+    id: "zu-welchem-hut-dat",
+    german: "Zu welchem Hut passt meine Jacke? — Zu dem schwarzen.",
+    english: "Which hat does my jacket match? — The black one.",
+    pronunciation: "tsoo VEL-khem hoot pahsst MY-neh YAH-keh? — tsoo daim SHVAHR-tsen",
+    audioText: "Zu welchem Hut passt meine Jacke? Zu dem schwarzen.",
+    category: "maskulin",
+    badge: "Maskulin • Dativ",
+    icon: "🎩",
+    kenyanAnalogy: "The preposition 'zu' ALWAYS triggers Dativ! In Dativ masculine, 'dem' ➔ 'welchem'!",
+    memoryTrick: "dem Hut ➔ zu welch-EM Hut ➔ zu dem schwarzen!",
+    imageType: "match"
+  },
+  {
+    id: "welche-frau-nom",
+    german: "Welche Frau ist deine Kollegin? — Die linke.",
+    english: "Which woman is your colleague? — The left one (the one on the left).",
+    pronunciation: "VEL-kheh frow ist DY-neh ko-LAY-gin? — dee LING-keh",
+    audioText: "Welche Frau ist deine Kollegin? Die linke.",
+    category: "feminin",
+    badge: "Feminin • Nominativ",
+    icon: "👩",
+    kenyanAnalogy: "Pointing out two colleagues in the office lobby: 'Which lady is your coworker?' -> 'The one on the left.'",
+    memoryTrick: "die Frau ➔ welch-E Frau ➔ die linke!",
+    imageType: "woman"
+  },
+  {
+    id: "welche-frau-akk",
+    german: "Welche Frau hast du gesucht? — Die linke habe ich gesucht.",
+    english: "Which woman were you looking for? — I was looking for the one on the left.",
+    pronunciation: "VEL-kheh frow hahst doo ge-ZOOKHT? — dee LING-keh HAH-beh ikh ge-ZOOKHT",
+    audioText: "Welche Frau hast du gesucht? Die linke habe ich gesucht.",
+    category: "feminin",
+    badge: "Feminin • Akkusativ",
+    icon: "🔍",
+    kenyanAnalogy: "Feminine Akkusativ direct object is easy because 'die' stays 'die' — so 'welche' stays 'welche'!",
+    memoryTrick: "die Frau ➔ welch-E Frau ➔ die linke!",
+    imageType: "search"
+  },
+  {
+    id: "mit-welcher-frau-dat",
+    german: "Mit welcher Frau hast du gesprochen? — Mit der linken.",
+    english: "With which woman did you speak? — With the one on the left.",
+    pronunciation: "mit VEL-kher frow hahst doo ge-SHPRO-khen? — mit dair LING-ken",
+    audioText: "Mit welcher Frau hast du gesprochen? Mit der linken.",
+    category: "feminin",
+    badge: "Feminin • Dativ",
+    icon: "🗣️",
+    kenyanAnalogy: "Preposition 'mit' ALWAYS demands Dativ! Feminine Dativ flips 'die' ➔ 'der', so 'welche' ➔ 'welcher'!",
+    memoryTrick: "der Frau ➔ mit welch-ER Frau ➔ mit der linken!",
+    imageType: "chat"
+  },
+  {
+    id: "welches-buch-nom",
+    german: "Welches Buch ist interessanter? — Das blaue.",
+    english: "Which book is more interesting? — The blue one.",
+    pronunciation: "VEL-khes bookh ist in-te-re-SAHN-ter? — dahs BLOW-eh",
+    audioText: "Welches Buch ist interessanter? Das blaue.",
+    category: "neutrum",
+    badge: "Neutrum • Nominativ",
+    icon: "📖",
+    kenyanAnalogy: "Comparing two books on a shelf: 'Which book is more interesting?' -> 'The blue one.'",
+    memoryTrick: "das Buch ➔ welch-ES Buch ➔ das blaue!",
+    imageType: "book"
+  },
+  {
+    id: "welches-kleid-akk",
+    german: "Welches Kleid findest du schön? — Das schwarze Kleid.",
+    english: "Which dress do you find beautiful? — The black dress.",
+    pronunciation: "VEL-khes klyt FIN-dest doo shern? — dahs SHVAHR-tseh klyt",
+    audioText: "Welches Kleid findest du schön? Das schwarze Kleid.",
+    category: "neutrum",
+    badge: "Neutrum • Akkusativ",
+    icon: "👗",
+    kenyanAnalogy: "Asking your shopping buddy's verdict on a dress: 'Which dress do you like?'",
+    memoryTrick: "das Kleid ➔ welch-ES Kleid ➔ das schwarze Kleid!",
+    imageType: "dress"
+  },
+  {
+    id: "welches-buch-akk",
+    german: "Welches Buch findest du interessant? — Das blaue.",
+    english: "Which book do you find interesting? — The blue one.",
+    pronunciation: "VEL-khes bookh FIN-dest doo in-te-re-SAHNT? — dahs BLOW-eh",
+    audioText: "Welches Buch findest du interessant? Das blaue.",
+    category: "neutrum",
+    badge: "Neutrum • Akkusativ",
+    icon: "📘",
+    kenyanAnalogy: "Neuter Akkusativ stays identical to Nominative (das -> welches). No surprises!",
+    memoryTrick: "das Buch ➔ welch-ES Buch ➔ das blaue!",
+    imageType: "book_blue"
+  },
+  {
+    id: "in-welchem-buch-dat",
+    german: "In welchem Buch kann man über Dinosaurier lesen? — In dem blauen.",
+    english: "In which book can you read about dinosaurs? — In the blue one.",
+    pronunciation: "in VEL-khem bookh kahn mahn OO-ber dee-noh-ZOW-ree-er LAY-zen? — in daim BLOW-en",
+    audioText: "In welchem Buch kann man über Dinosaurier lesen? In dem blauen.",
+    category: "neutrum",
+    badge: "Neutrum • Dativ",
+    icon: "🦖",
+    kenyanAnalogy: "'In' (location / where) triggers Dativ. Neuter Dativ is 'dem', so 'welch-' becomes 'welchem'!",
+    memoryTrick: "dem Buch ➔ in welch-EM Buch ➔ in dem blauen!",
+    imageType: "dinosaur"
+  },
+  {
+    id: "in-welchem-haus-dat",
+    german: "In welchem Haus wohnst du? — In dem linken.",
+    english: "In which house do you live? — In the left one.",
+    pronunciation: "in VEL-khem hows vohnst doo? — in daim LING-ken",
+    audioText: "In welchem Haus wohnst du? In dem linken.",
+    category: "neutrum",
+    badge: "Neutrum • Dativ",
+    icon: "🏡",
+    kenyanAnalogy: "Giving directions in an estate with similar-looking houses: 'In which house do you stay?' -> 'In the left one.'",
+    memoryTrick: "dem Haus ➔ in welch-EM Haus ➔ in dem linken!",
+    imageType: "house"
+  },
+  {
+    id: "welche-blumen-nom",
+    german: "Welche Blumen gefallen dir? — Die gelben Blumen. / Die gelben.",
+    english: "Which flowers do you like? — The yellow flowers. / The yellow ones.",
+    pronunciation: "VEL-kheh BLOO-men ge-FAHL-en deer? — dee GEL-ben BLOO-men / dee GEL-ben",
+    audioText: "Welche Blumen gefallen dir? Die gelben Blumen. Die gelben.",
+    category: "plural",
+    badge: "Plural • Nominativ",
+    icon: "💐",
+    kenyanAnalogy: "Picking fresh bouquets at the florist: 'Which flowers catch your eye?' -> 'The yellow ones.'",
+    memoryTrick: "die Blumen (plural) ➔ welch-E Blumen ➔ die gelben!",
+    imageType: "flowers"
+  },
+  {
+    id: "welche-blumen-akk",
+    german: "Welche Blumen möchtest du kaufen? — Die gelben.",
+    english: "Which flowers would you like to buy? — The yellow ones.",
+    pronunciation: "VEL-kheh BLOO-men MERKH-test doo KOW-fen? — dee GEL-ben",
+    audioText: "Welche Blumen möchtest du kaufen? Die gelben.",
+    category: "plural",
+    badge: "Plural • Akkusativ",
+    icon: "🌻",
+    kenyanAnalogy: "Buying flowers as a gift (Akkusativ direct object). Plural 'die' stays 'die', so 'welche' stays 'welche'!",
+    memoryTrick: "die Blumen (Akk) ➔ welch-E Blumen ➔ die gelben!",
+    imageType: "flowers_buy"
+  },
+  {
+    id: "von-welchen-blumen-dat",
+    german: "Von welchen Blumen sprichst du? — Von den gelben.",
+    english: "Which flowers are you talking about? — About the yellow ones.",
+    pronunciation: "fon VEL-khen BLOO-men SHPRIKHST doo? — fon dain GEL-ben",
+    audioText: "Von welchen Blumen sprichst du? Von den gelben.",
+    category: "plural",
+    badge: "Plural • Dativ",
+    icon: "🌷",
+    kenyanAnalogy: "Preposition 'von' ALWAYS takes Dativ! Plural Dativ is 'den', so 'welch-' becomes 'welch-en'!",
+    memoryTrick: "den Blumen ➔ von welch-EN Blumen ➔ von den gelben!",
+    imageType: "flowers_talk"
+  },
+  {
+    id: "den-kindern-welchen-kindern",
+    german: "den Kindern ➔ welchen Kindern",
+    english: "the children ➔ which children (Plural Dative)",
+    pronunciation: "dain KIN-dairn ➔ VEL-khen KIN-dairn",
+    audioText: "den Kindern, welchen Kindern. Mit welchen Kindern spielt er?",
+    category: "plural",
+    badge: "Plural Dativ Rule",
+    icon: "👶",
+    kenyanAnalogy: "Remember the Dative plural extra '-n' on nouns? The article 'den' matches 'welchen' + 'Kindern'!",
+    memoryTrick: "den ...-n ➔ welch-EN ...-n!",
+    imageType: "children"
+  },
+  {
+    id: "welch-master-table",
+    german: "Welcher (m), Welche (f), Welches (n), Welche (pl) — Der Artikel-Zwilling!",
+    english: "Which (m), Which (f), Which (n), Which (pl) — The Definite Article Twin!",
+    pronunciation: "VEL-kher, VEL-kheh, VEL-khes, VEL-kheh",
+    audioText: "Nominativ: welcher, welche, welches, welche. Akkusativ: welchen, welche, welches, welche. Dativ: welchem, welcher, welchem, welchen.",
+    category: "concept",
+    badge: "Master Table (Slide 37)",
+    icon: "📊",
+    kenyanAnalogy: "Zero new memory strain! If you know 'der, die, das, den, dem', you already know 100% of 'welch-'!",
+    memoryTrick: "Replace 'd-' with 'welch-' and you get the exact right question word every time!",
+    imageType: "table"
+  }
+];
+
+export const LESSON_52_SCENARIOS = [
+  {
+    scenario: "In Slide 7 & 8, you want to ask your friend which hat (der Hut, masculine subject) is smarter. What is the correct question and reply?",
+    hint: "Welcher Hut ist schicker? — Der schwarze Hut.",
+    options: [
+      { text: "Welcher Hut ist schicker? — Der schwarze Hut.", correct: true, explain: "Perfekt! Since 'Hut' is masculine in Nominativ ('der Hut'), the question is 'Welcher Hut' and the answer is 'Der schwarze Hut'." },
+      { text: "Welches Hut ist schicker? — Das schwarze.", correct: false, explain: "Hut is masculine (der Hut), not neuter (das)." },
+      { text: "Welche Hut ist schicker? — Die schwarze.", correct: false, explain: "Hut is masculine, not feminine." }
+    ]
+  },
+  {
+    scenario: "In Slide 9 & 10, you are shopping for a hat as a direct object (Akkusativ). Which question asks 'Which hat do you find stylish?'?",
+    hint: "Welchen Hut findest du schick? (den Hut -> welchen Hut)",
+    options: [
+      { text: "Welchen Hut findest du schick? — Den schwarzen finde ich schick.", correct: true, explain: "Ausgezeichnet! In Akkusativ masculine, 'der' becomes 'den', so 'welch-' becomes 'welchen'!" },
+      { text: "Welchem Hut findest du schick?", correct: false, explain: "Welchem is Dativ, but 'finden' takes an Akkusativ direct object." },
+      { text: "Welches Hut findest du schick?", correct: false, explain: "Welches is neuter." }
+    ]
+  },
+  {
+    scenario: "In Slide 19 & 20, you ask with the preposition 'mit' (which triggers Dativ): 'With which woman (die Frau) did you speak?'",
+    hint: "Mit welcher Frau hast du gesprochen? — Mit der linken.",
+    options: [
+      { text: "Mit welcher Frau hast du gesprochen? — Mit der linken.", correct: true, explain: "Hervorragend! In Dativ feminine, 'die Frau' becomes 'der Frau', so 'welch-' becomes 'welcher Frau'!" },
+      { text: "Mit welche Frau hast du gesprochen?", correct: false, explain: "'Mit' requires Dativ, so feminine 'die' changes to 'der/welcher'." },
+      { text: "Mit welchem Frau hast du gesprochen?", correct: false, explain: "'Welchem' is masculine/neuter Dativ, not feminine." }
+    ]
+  },
+  {
+    scenario: "In Slide 26 & 27, you ask about reading in a book (das Buch, neuter Dative with 'in'): 'In which book can you read about dinosaurs?'",
+    hint: "In welchem Buch kann man über Dinosaurier lesen? — In dem blauen.",
+    options: [
+      { text: "In welchem Buch kann man über Dinosaurier lesen? — In dem blauen.", correct: true, explain: "Wunderbar! Neuter Dativ is 'dem Buch', so 'in welchem Buch' with answer 'In dem blauen' is 100% correct!" },
+      { text: "In welches Buch kann man über Dinosaurier lesen?", correct: false, explain: "'In' indicating location requires Dativ (dem -> welchem)." },
+      { text: "In welcher Buch kann man über Dinosaurier lesen?", correct: false, explain: "Buch is neuter (das Buch), not feminine." }
+    ]
+  },
+  {
+    scenario: "In Slide 29–31, you ask someone which flowers (die Blumen, plural) they like. What is the correct German phrase?",
+    hint: "Welche Blumen gefallen dir? — Die gelben Blumen.",
+    options: [
+      { text: "Welche Blumen gefallen dir? — Die gelben Blumen.", correct: true, explain: "Genau! In Plural Nominativ, 'die Blumen' matches 'welche Blumen'!" },
+      { text: "Welcher Blumen gefallen dir?", correct: false, explain: "'Welcher' is masculine singular Nominativ, not plural." },
+      { text: "Welches Blumen gefallen dir?", correct: false, explain: "'Welches' is neuter singular, not plural." }
+    ]
+  },
+  {
+    scenario: "In Slide 34 & 36, you ask with 'von' (Dativ): 'Which flowers are you talking about?' (Von ... Blumen sprichst du?)",
+    hint: "Von welchen Blumen sprichst du? — Von den gelben.",
+    options: [
+      { text: "Von welchen Blumen sprichst du? — Von den gelben.", correct: true, explain: "Fantastisch! Plural Dativ is 'den Blumen', so the question uses 'von welchen Blumen' and reply 'Von den gelben'!" },
+      { text: "Von welche Blumen sprichst du?", correct: false, explain: "'Von' triggers Dativ, so plural takes '-en' ('welchen Blumen')." },
+      { text: "Von welchem Blumen sprichst du?", correct: false, explain: "'Welchem' is singular, but flowers are plural." }
+    ]
+  }
+];
+
+
 
 
 

@@ -108,6 +108,8 @@ import Lesson50EinladungStudio from './components/Lesson50EinladungStudio';
 import Lesson50Game from './components/Lesson50Game';
 import Lesson51FashionOpinionStudio from './components/Lesson51FashionOpinionStudio';
 import Lesson51Game from './components/Lesson51Game';
+import Lesson52WelchStudio from './components/Lesson52WelchStudio';
+import Lesson52Game from './components/Lesson52Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -159,11 +161,12 @@ import {
   LESSON_48_ITEMS,
   LESSON_49_ITEMS,
   LESSON_50_ITEMS,
-  LESSON_51_ITEMS
+  LESSON_51_ITEMS,
+  LESSON_52_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(51); // Default to Lesson 51 as requested, easy switch to 1-50
+  const [currentLesson, setCurrentLesson] = useState(52); // Default to Lesson 52 as requested, easy switch to 1-51
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -218,6 +221,7 @@ export default function App() {
   if (currentLesson === 49) activeItems = LESSON_49_ITEMS;
   if (currentLesson === 50) activeItems = LESSON_50_ITEMS;
   if (currentLesson === 51) activeItems = LESSON_51_ITEMS;
+  if (currentLesson === 52) activeItems = LESSON_52_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -270,7 +274,8 @@ export default function App() {
     if (currentLesson === 48) return "Lesson 48: Wie ist das Wetter? (German Weather Vocab, Temperatures, Noun-to-Adjective Blueprints & Forecast Dialogues)";
     if (currentLesson === 49) return "Lesson 49: Verabredungen (Making Meetup Invitations, Availability Checks, Polite Excuses, Acceptances & Meeting Logistics)";
     if (currentLesson === 50) return "Lesson 50: Die Einladung (Writing Invitations, 3-Part Letter Anatomy, RSVPs, Potluck & Polite Declines)";
-    return "Lesson 51: Gefallen und Missfallen ausdrücken (Expressing Likes & Dislikes / Taste & Opinions)";
+    if (currentLesson === 51) return "Lesson 51: Gefallen und Missfallen ausdrücken (Expressing Likes & Dislikes / Taste & Opinions)";
+    return "Lesson 52: Das Fragepronomen \"welch-\" (Which? Across Nominativ, Akkusativ & Dativ)";
   };
 
   const getLessonDesc = () => {
@@ -424,7 +429,10 @@ export default function App() {
     if (currentLesson === 50) {
       return "Master writing invitations and RSVPs in German (Die Einladung)! Discover the 3-Part Letter Anatomy (Anrede, Textteil, Grußformel und Unterschrift), party occasions (Geburtstag, Fest, Hochzeitstag, Essen), venue & starting times (Treffpunkt bei uns zu Hause, Party beginnt um 18 Uhr), potluck requests (einen Salat / Kuchen mitbringen), accepting with joy (Zusagen: Ich freue mich auf Samstag) & plus-one requests, and polite declines with well-wishes (Absagen: Es tut mir leid, aber ich kann leider nicht kommen)!";
     }
-    return "Master expressing your taste, praising style, rating experiences, and voicing dislikes in German (Gefallen und Missfallen ausdrücken)! Discover 'gefallen + Dativ' (Das Auto gefällt mir / Das gefällt mir sehr gut / gar nicht / überhaupt nicht), 'finden + Adjektiv' (Wie findest du mein Kleid? Das/Die finde ich total schön / echt klasse / hässlich / schlecht), event excitement (Ich hatte viel Spaß! Es war super / klasse / toll), and interactive fashion critique dialogues!";
+    if (currentLesson === 51) {
+      return "Master expressing your taste, praising style, rating experiences, and voicing dislikes in German (Gefallen und Missfallen ausdrücken)! Discover 'gefallen + Dativ' (Das Auto gefällt mir / Das gefällt mir sehr gut / gar nicht / überhaupt nicht), 'finden + Adjektiv' (Wie findest du mein Kleid? Das/Die finde ich total schön / echt klasse / hässlich / schlecht), event excitement (Ich hatte viel Spaß! Es war super / klasse / toll), and interactive fashion critique dialogues!";
+    }
+    return "Master the interrogative pronoun \"welch-\" (Which?) across all genders and cases in German! Discover the golden secret: \"welch-\" has ZERO new endings to learn because it simply mirrors the definite articles (der ➔ welcher, den ➔ welchen, dem ➔ welchem, die ➔ welche, das ➔ welches)! Explore the Slide 37 Master Matrix, object choosing dialogues (Hüte, Frauen, Bücher, Blumen), and adjective ending response patterns!";
   };
 
   return (
@@ -920,6 +928,15 @@ export default function App() {
 
         {currentLesson === 51 && activeTab === 'game51' && (
           <Lesson51Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 52 Specific Modules */}
+        {currentLesson === 52 && activeTab === 'studio52' && (
+          <Lesson52WelchStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 52 && activeTab === 'game52' && (
+          <Lesson52Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
