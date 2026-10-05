@@ -12856,6 +12856,291 @@ export const LESSON_52_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 53: Demonstrativpronomen "dies-" (Demonstrative Pronoun "This / These")
+// ==========================================
+export const LESSON_53_ITEMS = [
+  {
+    id: "dies-intro",
+    german: "Demonstrativpronomen / Demonstrativartikel \"dies-\"",
+    english: "Demonstrative pronoun / article \"this / these\" (pointing to specific items)",
+    pronunciation: "deh-mon-strah-TEEF-proh-noh-men dees",
+    audioText: "Demonstrativpronomen dies. Dieser, diese, dieses, diesen, diesem.",
+    category: "concept",
+    badge: "Core Concept",
+    icon: "👉",
+    kenyanAnalogy: "Like pointing your finger directly at an item in a boutique or market: 'THIS exact one right here!' In German, 'dies-' takes the exact same endings as 'der / die / das' and 'welch-'!",
+    memoryTrick: "The Exact Mirror: Just take 'dies-' and add the definite article endings (-er, -e, -es, -en, -em)!",
+    imageType: "pointing"
+  },
+  {
+    id: "dieses-kleid-schoen",
+    german: "Ich finde dieses Kleid sehr schön.",
+    english: "I find this dress very pretty. / I think this dress is beautiful.",
+    pronunciation: "ikh FIN-deh DEE-zes klyt zair shern",
+    audioText: "Ich finde dieses Kleid sehr schön.",
+    category: "neutrum",
+    badge: "Neutrum • Akkusativ",
+    icon: "👗",
+    kenyanAnalogy: "Giving direct feedback to a dress on a boutique rack: 'I find THIS dress very pretty!'",
+    memoryTrick: "das Kleid ➔ dies-ES Kleid!",
+    imageType: "dress_red"
+  },
+  {
+    id: "mit-diesem-geld",
+    german: "Was machst du mit diesem Geld?",
+    english: "What are you doing with this money?",
+    pronunciation: "vahs MAHKHST doo mit DEE-zem gelt?",
+    audioText: "Was machst du mit diesem Geld?",
+    category: "neutrum",
+    badge: "Neutrum • Dativ",
+    icon: "💰",
+    kenyanAnalogy: "Asking a sibling holding a wad of cash from a business payout: 'What are you planning to do with THIS money?'",
+    memoryTrick: "Preposition 'mit' takes Dativ: dem Geld ➔ mit dies-EM Geld!",
+    imageType: "money"
+  },
+  {
+    id: "dieser-pullover-nom",
+    german: "Was kostet dieser Pullover?",
+    english: "How much is this sweater? / How much does this jumper cost?",
+    pronunciation: "vahs KOSS-tet DEE-zer pool-OH-ver?",
+    audioText: "Was kostet dieser Pullover?",
+    category: "maskulin",
+    badge: "Maskulin • Nominativ",
+    icon: "🧥",
+    kenyanAnalogy: "Checking price tags on a stylish wool sweater: 'How much does THIS sweater cost?'",
+    memoryTrick: "der Pullover ➔ dies-ER Pullover!",
+    imageType: "sweater_green"
+  },
+  {
+    id: "diesen-pullover-akk",
+    german: "Wie finden Sie diesen Pullover?",
+    english: "How do you like this sweater? (Formal 'Sie')",
+    pronunciation: "vee FIN-den zee DEE-zen pool-OH-ver?",
+    audioText: "Wie finden Sie diesen Pullover?",
+    category: "maskulin",
+    badge: "Maskulin • Akkusativ",
+    icon: "🤍",
+    kenyanAnalogy: "Asking a client or elder for their verdict on a hoodie: 'What do you think of THIS sweater?'",
+    memoryTrick: "den Pullover (Akk direct object) ➔ dies-EN Pullover!",
+    imageType: "hoodie_white"
+  },
+  {
+    id: "zu-diesem-pullover-dat",
+    german: "Was passt zu diesem Pullover?",
+    english: "What matches with this sweater?",
+    pronunciation: "vahs pahsst tsoo DEE-zem pool-OH-ver?",
+    audioText: "Was passt zu diesem Pullover?",
+    category: "maskulin",
+    badge: "Maskulin • Dativ",
+    icon: "👦",
+    kenyanAnalogy: "Asking a stylish friend which trousers or shoes coordinate with your new jumper: 'What goes with THIS sweater?'",
+    memoryTrick: "'zu' triggers Dativ: dem Pullover ➔ zu dies-EM Pullover!",
+    imageType: "boy"
+  },
+  {
+    id: "diese-bluse-nom",
+    german: "Diese Bluse ist wunderschön.",
+    english: "This blouse is beautiful / absolutely gorgeous.",
+    pronunciation: "DEE-zeh BLOO-zeh ist VOON-der-shern",
+    audioText: "Diese Bluse ist wunderschön.",
+    category: "feminin",
+    badge: "Feminin • Nominativ",
+    icon: "👚",
+    kenyanAnalogy: "Admiring a top on a mannequin: 'THIS blouse is utterly gorgeous!'",
+    memoryTrick: "die Bluse ➔ dies-E Bluse!",
+    imageType: "blouse_black"
+  },
+  {
+    id: "diese-bluse-akk",
+    german: "Wie findest du diese Bluse?",
+    english: "How do you like this blouse?",
+    pronunciation: "vee FIN-dest doo DEE-zeh BLOO-zeh?",
+    audioText: "Wie findest du diese Bluse?",
+    category: "feminin",
+    badge: "Feminin • Akkusativ",
+    icon: "🟣",
+    kenyanAnalogy: "Holding up a purple blouse and asking your bestie: 'How do you find THIS blouse?'",
+    memoryTrick: "die Bluse (Akk) ➔ dies-E Bluse (no change from Nominativ)!",
+    imageType: "blouse_purple"
+  },
+  {
+    id: "zu-dieser-bluse-dat",
+    german: "Was passt zu dieser Bluse?",
+    english: "What matches with this blouse?",
+    pronunciation: "vahs pahsst tsoo DEE-zer BLOO-zeh?",
+    audioText: "Was passt zu dieser Bluse?",
+    category: "feminin",
+    badge: "Feminin • Dativ",
+    icon: "👔",
+    kenyanAnalogy: "Wondering what skirt or necklace goes with your top: 'What pairs well with THIS blouse?'",
+    memoryTrick: "'zu' triggers Dativ: der Bluse ➔ zu dies-ER Bluse!",
+    imageType: "blouse_grey"
+  },
+  {
+    id: "dieses-auto-nom",
+    german: "Dieses Auto gefällt mir.",
+    english: "I like this car. / This car appeals to me.",
+    pronunciation: "DEE-zes OW-toh ge-FEHLT meer",
+    audioText: "Dieses Auto gefällt mir.",
+    category: "neutrum",
+    badge: "Neutrum • Nominativ",
+    icon: "🚗",
+    kenyanAnalogy: "Pointing at a red sports car in the showroom: 'THIS car appeals to me big time!'",
+    memoryTrick: "das Auto ➔ dies-ES Auto!",
+    imageType: "car_red"
+  },
+  {
+    id: "dieses-auto-akk",
+    german: "Wie findest du dieses Auto?",
+    english: "How do you like this car?",
+    pronunciation: "vee FIN-dest doo DEE-zes OW-toh?",
+    audioText: "Wie findest du dieses Auto?",
+    category: "neutrum",
+    badge: "Neutrum • Akkusativ",
+    icon: "🚙",
+    kenyanAnalogy: "Test driving a blue coupe and asking your passenger: 'What do you think of THIS car?'",
+    memoryTrick: "das Auto (Akk) ➔ dies-ES Auto (stays identical)!",
+    imageType: "car_blue"
+  },
+  {
+    id: "mit-diesem-auto-dat",
+    german: "Willst du mit diesem Auto fahren?",
+    english: "Do you want to drive with / in this car?",
+    pronunciation: "vilst doo mit DEE-zem OW-toh FAH-ren?",
+    audioText: "Willst du mit diesem Auto fahren?",
+    category: "neutrum",
+    badge: "Neutrum • Dativ",
+    icon: "🚘",
+    kenyanAnalogy: "Offering your keys for a road trip: 'Do you want to drive in THIS car?'",
+    memoryTrick: "'mit' triggers Dativ: dem Auto ➔ mit dies-EM Auto!",
+    imageType: "car_vintage"
+  },
+  {
+    id: "diese-schuhe-nom",
+    german: "Was kosten diese Schuhe?",
+    english: "What do these shoes cost? / How much are these shoes?",
+    pronunciation: "vahs KOSS-ten DEE-zeh SHOO-eh?",
+    audioText: "Was kosten diese Schuhe?",
+    category: "plural",
+    badge: "Plural • Nominativ",
+    icon: "👠",
+    kenyanAnalogy: "Pointing at a pair of red pumps in the window: 'How much are THESE shoes?'",
+    memoryTrick: "die Schuhe (plural) ➔ dies-E Schuhe!",
+    imageType: "shoes_red"
+  },
+  {
+    id: "diese-schuhe-akk",
+    german: "Kaufst du diese Schuhe?",
+    english: "Are you buying these shoes?",
+    pronunciation: "KOWFST doo DEE-zeh SHOO-eh?",
+    audioText: "Kaufst du diese Schuhe?",
+    category: "plural",
+    badge: "Plural • Akkusativ",
+    icon: "👟",
+    kenyanAnalogy: "Asking your shopping partner while they try on pink sneakers: 'Are you taking THESE shoes?'",
+    memoryTrick: "die Schuhe (Plural Akk) ➔ dies-E Schuhe!",
+    imageType: "shoes_sneakers"
+  },
+  {
+    id: "in-diesen-schuhen-dat",
+    german: "In diesen Schuhen siehst du elegant aus!",
+    english: "In these shoes you look elegant!",
+    pronunciation: "in DEE-zen SHOO-hen zeest doo eh-leh-GAHNT ows!",
+    audioText: "In diesen Schuhen siehst du elegant aus!",
+    category: "plural",
+    badge: "Plural • Dativ",
+    icon: "✨",
+    kenyanAnalogy: "Giving a fabulous compliment at a wedding reception: 'In THESE shoes, you look pure class!'",
+    memoryTrick: "'in' triggers Dativ: den Schuhen ➔ in dies-EN Schuh-en (+n)!",
+    imageType: "shoes_elegant"
+  },
+  {
+    id: "mit-diesen-kindern-dat",
+    german: "Mit diesen Kindern spiele ich gern.",
+    english: "I like to play with these children.",
+    pronunciation: "mit DEE-zen KIN-dairn SHPEE-leh ikh gairn",
+    audioText: "Mit diesen Kindern spiele ich gern.",
+    category: "plural",
+    badge: "Plural • Dativ",
+    icon: "🧸",
+    kenyanAnalogy: "A kindergarten teacher or fun uncle playing games in the backyard: 'I love playing with THESE kids!'",
+    memoryTrick: "'mit' + Plural Dativ: den Kindern ➔ mit dies-EN Kindern (+n)!",
+    imageType: "children_play"
+  },
+  {
+    id: "dies-master-table",
+    german: "dieser (m), diese (f), dieses (n), diese (pl) — Der Demonstrativartikel-Zwilling!",
+    english: "this (m), this (f), this (n), these (pl) — The Demonstrative Article Twin!",
+    pronunciation: "DEE-zer, DEE-zeh, DEE-zes, DEE-zeh",
+    audioText: "Nominativ: dieser, diese, dieses, diese. Akkusativ: diesen, diese, dieses, diese. Dativ: diesem, dieser, diesem, diesen.",
+    category: "concept",
+    badge: "Master Table (Slide 24)",
+    icon: "📊",
+    kenyanAnalogy: "Just like 'welch-', 'dies-' has NO new endings to memorize! It is the exact mirror of 'der, die, das, den, dem'!",
+    memoryTrick: "Replace 'd-' with 'dies-' and you get the exact demonstrative article every time!",
+    imageType: "table"
+  }
+];
+
+export const LESSON_53_SCENARIOS = [
+  {
+    scenario: "In Slide 5 & 6, you are in a clothing store asking for the price of a green sweater (der Pullover, masculine subject). What do you say?",
+    hint: "Was kostet dieser Pullover? (der Pullover -> dieser Pullover)",
+    options: [
+      { text: "Was kostet dieser Pullover?", correct: true, explain: "Perfekt! Since 'Pullover' is masculine in Nominativ ('der Pullover'), 'dies-' becomes 'dieser Pullover'!" },
+      { text: "Was kostet dieses Pullover?", correct: false, explain: "'Dieses' is for neuter words like 'das Kleid' or 'das Auto'." },
+      { text: "Was kostet diese Pullover?", correct: false, explain: "'Diese' is for feminine or plural words." }
+    ]
+  },
+  {
+    scenario: "In Slide 7, you ask a formal customer ('Sie') what they think of a sweater as a direct object (Akkusativ masculine). How do you phrase it?",
+    hint: "Wie finden Sie diesen Pullover? (den Pullover -> diesen Pullover)",
+    options: [
+      { text: "Wie finden Sie diesen Pullover?", correct: true, explain: "Ausgezeichnet! In Akkusativ masculine, 'der' changes to 'den', so 'dies-' becomes 'diesen Pullover'!" },
+      { text: "Wie finden Sie diesem Pullover?", correct: false, explain: "'Diesem' is Dativ, but 'finden' takes Akkusativ direct object." },
+      { text: "Wie finden Sie dieser Pullover?", correct: false, explain: "'Dieser' is Nominativ." }
+    ]
+  },
+  {
+    scenario: "In Slide 14, you ask what matches with a blouse (die Bluse, feminine Dative with preposition 'zu'). What is the correct phrase?",
+    hint: "Was passt zu dieser Bluse? (der Bluse -> dieser Bluse)",
+    options: [
+      { text: "Was passt zu dieser Bluse?", correct: true, explain: "Hervorragend! Preposition 'zu' requires Dativ. In feminine Dativ, 'die' becomes 'der', so 'dies-' becomes 'dieser Bluse'!" },
+      { text: "Was passt zu diese Bluse?", correct: false, explain: "'Zu' demands Dativ, so feminine 'die' must change to 'dieser'." },
+      { text: "Was passt zu diesem Bluse?", correct: false, explain: "'Diesem' is masculine/neuter Dativ." }
+    ]
+  },
+  {
+    scenario: "In Slide 16, you see a sleek red car (das Auto, neuter subject) that you really like. How do you say 'I like this car'?",
+    hint: "Dieses Auto gefällt mir. (das Auto -> dieses Auto)",
+    options: [
+      { text: "Dieses Auto gefällt mir.", correct: true, explain: "Wunderbar! Neuter Nominativ is 'das Auto', so 'dies-' becomes 'dieses Auto'!" },
+      { text: "Dieser Auto gefällt mir.", correct: false, explain: "'Dieser' is masculine, but Auto is neuter (das Auto)." },
+      { text: "Diesen Auto gefällt mir.", correct: false, explain: "'Diesen' is masculine Akkusativ or plural Dativ." }
+    ]
+  },
+  {
+    scenario: "In Slide 22, you compliment a friend telling them that in these shoes (die Schuhe, plural Dative with 'in'), they look elegant. What do you say?",
+    hint: "In diesen Schuhen siehst du elegant aus!",
+    options: [
+      { text: "In diesen Schuhen siehst du elegant aus!", correct: true, explain: "Genau! Preposition 'in' triggers Dativ, and Plural Dativ is 'den Schuhen', so 'dies-' becomes 'in diesen Schuhen' (+n)!" },
+      { text: "In diese Schuhen siehst du elegant aus!", correct: false, explain: "Dativ plural takes '-en' ('diesen')." },
+      { text: "In diesem Schuhen siehst du elegant aus!", correct: false, explain: "'Diesem' is singular Dativ, but shoes are plural." }
+    ]
+  },
+  {
+    scenario: "In Slide 23, how do you say 'I like to play with these children' (die Kinder, plural Dative with 'mit')?",
+    hint: "Mit diesen Kindern spiele ich gern.",
+    options: [
+      { text: "Mit diesen Kindern spiele ich gern.", correct: true, explain: "Fantastisch! 'Mit' takes Dativ, so 'den Kindern' becomes 'mit diesen Kindern' (+n)!" },
+      { text: "Mit dieser Kindern spiele ich gern.", correct: false, explain: "'Dieser' is feminine Dativ, not plural." },
+      { text: "Mit dieses Kindern spiele ich gern.", correct: false, explain: "'Dieses' is neuter singular." }
+    ]
+  }
+];
+
+
 
 
 

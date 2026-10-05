@@ -222,6 +222,7 @@ export default function App() {
   if (currentLesson === 50) activeItems = LESSON_50_ITEMS;
   if (currentLesson === 51) activeItems = LESSON_51_ITEMS;
   if (currentLesson === 52) activeItems = LESSON_52_ITEMS;
+  if (currentLesson === 53) activeItems = LESSON_53_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -275,7 +276,8 @@ export default function App() {
     if (currentLesson === 49) return "Lesson 49: Verabredungen (Making Meetup Invitations, Availability Checks, Polite Excuses, Acceptances & Meeting Logistics)";
     if (currentLesson === 50) return "Lesson 50: Die Einladung (Writing Invitations, 3-Part Letter Anatomy, RSVPs, Potluck & Polite Declines)";
     if (currentLesson === 51) return "Lesson 51: Gefallen und Missfallen ausdrücken (Expressing Likes & Dislikes / Taste & Opinions)";
-    return "Lesson 52: Das Fragepronomen \"welch-\" (Which? Across Nominativ, Akkusativ & Dativ)";
+    if (currentLesson === 52) return "Lesson 52: Das Fragepronomen \"welch-\" (Which? Across Nominativ, Akkusativ & Dativ)";
+    return "Lesson 53: Demonstrativartikel \"dies-\" (This / These across Nominativ, Akkusativ & Dativ)";
   };
 
   const getLessonDesc = () => {
@@ -432,7 +434,10 @@ export default function App() {
     if (currentLesson === 51) {
       return "Master expressing your taste, praising style, rating experiences, and voicing dislikes in German (Gefallen und Missfallen ausdrücken)! Discover 'gefallen + Dativ' (Das Auto gefällt mir / Das gefällt mir sehr gut / gar nicht / überhaupt nicht), 'finden + Adjektiv' (Wie findest du mein Kleid? Das/Die finde ich total schön / echt klasse / hässlich / schlecht), event excitement (Ich hatte viel Spaß! Es war super / klasse / toll), and interactive fashion critique dialogues!";
     }
-    return "Master the interrogative pronoun \"welch-\" (Which?) across all genders and cases in German! Discover the golden secret: \"welch-\" has ZERO new endings to learn because it simply mirrors the definite articles (der ➔ welcher, den ➔ welchen, dem ➔ welchem, die ➔ welche, das ➔ welches)! Explore the Slide 37 Master Matrix, object choosing dialogues (Hüte, Frauen, Bücher, Blumen), and adjective ending response patterns!";
+    if (currentLesson === 52) {
+      return "Master the interrogative pronoun \"welch-\" (Which?) across all genders and cases in German! Discover the golden secret: \"welch-\" has ZERO new endings to learn because it simply mirrors the definite articles (der ➔ welcher, den ➔ welchen, dem ➔ welchem, die ➔ welche, das ➔ welches)! Explore the Slide 37 Master Matrix, object choosing dialogues (Hüte, Frauen, Bücher, Blumen), and adjective ending response patterns!";
+    }
+    return "Master pointing to specific objects and people in German with the demonstrative article \"dies-\" (This / These)! Learn why \"dies-\" follows the exact same mirror ending rules as \"welch-\" and definite articles (dieser Pullover, diese Bluse, dieses Auto, diese Schuhe, mit diesem Geld, in diesen Schuhen)! Explore the Slide 24 Master Matrix, boutique simulator, and the natural \"welch- vs. dies-\" dialogue duet!";
   };
 
   return (
@@ -937,6 +942,15 @@ export default function App() {
 
         {currentLesson === 52 && activeTab === 'game52' && (
           <Lesson52Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 53 Specific Modules */}
+        {currentLesson === 53 && activeTab === 'studio53' && (
+          <Lesson53DiesStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 53 && activeTab === 'game53' && (
+          <Lesson53Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
