@@ -132,6 +132,8 @@ import Lesson62BankStudio from './components/Lesson62BankStudio';
 import Lesson62Game from './components/Lesson62Game';
 import Lesson63WohnungStudio from './components/Lesson63WohnungStudio';
 import Lesson63Game from './components/Lesson63Game';
+import Lesson64BahnStudio from './components/Lesson64BahnStudio';
+import Lesson64Game from './components/Lesson64Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -195,11 +197,12 @@ import {
   LESSON_60_ITEMS,
   LESSON_61_ITEMS,
   LESSON_62_ITEMS,
-  LESSON_63_ITEMS
+  LESSON_63_ITEMS,
+  LESSON_64_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(63); // Default to Lesson 63 as requested, easy switch to 1-62
+  const [currentLesson, setCurrentLesson] = useState(64); // Default to Lesson 64 as requested, easy switch to 1-63
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -266,6 +269,7 @@ export default function App() {
   if (currentLesson === 61) activeItems = LESSON_61_ITEMS;
   if (currentLesson === 62) activeItems = LESSON_62_ITEMS;
   if (currentLesson === 63) activeItems = LESSON_63_ITEMS;
+  if (currentLesson === 64) activeItems = LESSON_64_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -330,7 +334,8 @@ export default function App() {
     if (currentLesson === 60) return "Lesson 60: Touristeninformation, Reisebüro & Formulare ausfüllen (Tourist Info, Travel Agencies & Filling Official Forms)";
     if (currentLesson === 61) return "Lesson 61: Die Post (The Post Office - Letters, Stamps, Parcels, Registered Mail & Envelope Addressing)";
     if (currentLesson === 62) return "Lesson 62: Die Bank (The Bank - Accounts, Money, ATMs, Cards, SEPA Transfers & Balance)";
-    return "Lesson 63: Wohnungssuche (Apartment Hunting, Classified Ads, Decoded Acronyms & Viewing Calls)";
+    if (currentLesson === 63) return "Lesson 63: Wohnungssuche (Apartment Hunting, Classified Ads, Decoded Acronyms & Viewing Calls)";
+    return "Lesson 64: Eine Fahrkarte kaufen (Buying a Train Ticket, DB Timetables, Tracks & Counter Conversations)";
   };
 
   const getLessonDesc = () => {
@@ -520,7 +525,10 @@ export default function App() {
     if (currentLesson === 62) {
       return "Master German banking, money, accounts, and ATMs (Die Bank)! Discover financial institutions (die Bank, die Sparkasse, das Geldinstitut), movement vs. location (zur Bank gehen vs. in der Bank sein), cash & denominations (das Bargeld, der Geldschein, die Münze, das Kleingeld), essential verbs (einzahlen, abheben, überweisen, sparen, anlegen, wechseln), account types (das Girokonto, das Sparkonto, das Tagesgeldkonto), opening & closing accounts (ein Konto eröffnen / schließen), account credentials (der Kontoinhaber, die IBAN, das BIC, die BLZ), checking balances & printing statements (der Kontostand / der Saldo, der Kontoauszug, Einnahmen vs. Ausgaben, Soll vs. Haben), ATM operation (der Geldautomat / Bankomat, die Girokarte/EC-Karte, die PIN / Geheimzahl eingeben), and emergency card cancellation (die Karte sperren lassen via 116 116)!";
     }
-    return "Master apartment hunting and classified ads in German (Wohnungssuche)! Learn housing types (die Wohnung, die WG / Wohngemeinschaft, das Zimmer, das Apartment, das Ferienhaus), moving & roles (der Umzug / umziehen mit 'sein', der Vermieter / vermieten vs. der Mieter / mieten, der Makler), rental math & expenses (die Miete, Kaltmiete + Nebenkosten [NK] = Warmmiete, Kaution [KT: 2MM], Strom, Heizung, Wasser), decypher classified ad acronyms (EG, OG, DG, TG/UG, EBK, BLK, WC/Gäste-WC, m², AB, NB, ZKB, frei ab, ca.), and master confident phone calls for viewing appointments (Ist die Wohnung noch frei?, einen Besichtigungstermin vereinbaren)!";
+    if (currentLesson === 63) {
+      return "Master apartment hunting and classified ads in German (Wohnungssuche)! Learn housing types (die Wohnung, die WG / Wohngemeinschaft, das Zimmer, das Apartment, das Ferienhaus), moving & roles (der Umzug / umziehen mit 'sein', der Vermieter / vermieten vs. der Mieter / mieten, der Makler), rental math & expenses (die Miete, Kaltmiete + Nebenkosten [NK] = Warmmiete, Kaution [KT: 2MM], Strom, Heizung, Wasser), decypher classified ad acronyms (EG, OG, DG, TG/UG, EBK, BLK, WC/Gäste-WC, m², AB, NB, ZKB, frei ab, ca.), and master confident phone calls for viewing appointments (Ist die Wohnung noch frei?, einen Besichtigungstermin vereinbaren)!";
+    }
+    return "Master buying train tickets and navigating the German railway network (Eine Fahrkarte kaufen)! Learn train & transit types (U-Bahn, S-Bahn, Regionalbahn [RB], ICE - InterCity Express), stations & tracks (der Bahnhof, der Hauptbahnhof [Hbf], das Gleis, der Bahnsteig), read real Deutsche Bahn timetables (Fahrplan: Abfahrt, Ankunft, Dauer, Umstiege, Umsteigezeit), ticket tiers (das Sparangebot / Sparpreis vs. der Flexpreis), ticket types (einfach / nur Hinfahrt vs. hin und zurück, Sitzplatzreservierung), transit verbs with 'sein' (abfahren, ankommen, umsteigen), and master confident ticket counter conversations (Guten Tag, ich brauche eine Fahrkarte nach München bitte)!";
   };
 
   return (
@@ -1124,6 +1132,15 @@ export default function App() {
 
         {currentLesson === 63 && activeTab === 'game63' && (
           <Lesson63Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 64 Specific Modules */}
+        {currentLesson === 64 && activeTab === 'studio64' && (
+          <Lesson64BahnStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 64 && activeTab === 'game64' && (
+          <Lesson64Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

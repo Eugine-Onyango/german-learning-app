@@ -16083,6 +16083,250 @@ export const LESSON_63_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 64: EINE FAHRKARTE KAUFEN (Buying a Train/Transit Ticket)
+// ==========================================
+export const LESSON_64_ITEMS = [
+  {
+    german: "eine Fahrkarte kaufen",
+    english: "to buy a train / transit ticket",
+    phonetic: "EYE-nuh FAHR-kar-tuh KOW-fen",
+    layman: "The universal German phrase for getting a transport ticket (train, bus, tram, subway). In Kenya, think of walking up to the SGR ticketing counter at Syokimau or boarding a long-distance bus (Easy Coach) and buying your travel pass!",
+    analogy: "Purchasing your travel ticket either at a machine, counter, app, or online.",
+    example: "Ich möchte eine Fahrkarte nach München kaufen.",
+    exampleEnglish: "I would like to buy a ticket to Munich.",
+    category: "Action"
+  },
+  {
+    german: "der Zug (die Züge)",
+    english: "the train (trains)",
+    phonetic: "dair TSOOK (dee TSYOO-guh)",
+    layman: "The train. Germany's train network is legendary! From the local underground (U-Bahn) to suburban trains (S-Bahn), regional trains (Regionalbahn / RB), and the bullet-fast ICE (InterCity Express) running up to 300 km/h!",
+    analogy: "Like comparing a local city commuter train in Nairobi to the high-speed SGR express to Mombasa.",
+    example: "Der Zug nach Berlin fährt um 14:30 Uhr ab.",
+    exampleEnglish: "The train to Berlin departs at 14:30.",
+    category: "Transit Types"
+  },
+  {
+    german: "U-Bahn, S-Bahn, RB, ICE",
+    english: "Underground (Subway), Suburban Commuter, Regional Train, InterCity Express",
+    phonetic: "OO-bahn, ESS-bahn, AIR-BAY, EE-TSAY-AY",
+    layman: "The 4 big train categories in German transit: U-Bahn (Untergrundbahn: city subway), S-Bahn (Stadtschnellbahn: suburban commuter line), Regionalbahn / RB (stops at all towns in a state), ICE (InterCity Express: flagship bullet train connecting major German & European cities).",
+    analogy: "U-Bahn = Nairobi inner-city light rail; S-Bahn = Nairobi Metropolitan commuter; RB = Rift Valley regional train; ICE = Nairobi-Mombasa SGR Express Train!",
+    example: "Fahren wir mit dem ICE oder mit der Regionalbahn?",
+    exampleEnglish: "Are we travelling with the ICE or with the regional train?",
+    category: "Transit Types"
+  },
+  {
+    german: "der Bahnhof (die Bahnhöfe) / der Hauptbahnhof (Hbf)",
+    english: "the train station / central main station (Hbf)",
+    phonetic: "dair BAHN-hohf (dee BAHN-hur-fuh) / dair HOWPT-bahn-hohf",
+    layman: "Bahnhof = train station. Hauptbahnhof (abbreviated everywhere as 'Hbf') = Central Main Station. Almost every German city has a majestic 'Hbf' with dozens of platforms, shops, bakeries, and ticket halls.",
+    analogy: "Bahnhof is any train halt; Hauptbahnhof (Hbf) is the massive central Nairobi Terminus connecting all domestic and regional lines.",
+    example: "Wir treffen uns am Hauptbahnhof in Frankfurt.",
+    exampleEnglish: "We meet at the central main station in Frankfurt.",
+    category: "Locations"
+  },
+  {
+    german: "der Wagen (die Wagen / Wägen)",
+    english: "the wagon / train carriage / coach",
+    phonetic: "dair VAH-gen (dee VAH-gen / VAY-gen)",
+    layman: "The train car or carriage. When you reserve a seat on the ICE, your ticket says 'Wagen 7, Sitzplatz 42' (Coach 7, Seat 42). Overhead screens on the platform show where each Wagen will stop!",
+    analogy: "The specific numbered coach on the train.",
+    example: "Unser Wagen ist ganz vorne am Gleis.",
+    exampleEnglish: "Our carriage is right at the front of the track.",
+    category: "Train Parts"
+  },
+  {
+    german: "das Ticket / der Fahrschein / die Fahrkarte",
+    english: "the ticket / transit pass (synonyms)",
+    phonetic: "dahs TIK-et / dair FAHR-shyne / dee FAHR-kar-tuh",
+    layman: "All three mean travel ticket! 'Das Ticket' is international; 'die Fahrkarte' is traditional German for long journeys/trains; 'der Fahrschein' is frequently used for local buses, trams, and city transit.",
+    analogy: "Like receipt, travel voucher, and boarding pass all referring to your valid ticket.",
+    example: "Haben Sie Ihren Fahrschein dabei?",
+    exampleEnglish: "Do you have your ticket with you?",
+    category: "Tickets"
+  },
+  {
+    german: "der Fahrkartenautomat (die Fahrkartenautomaten)",
+    english: "the ticket vending machine",
+    phonetic: "dair FAHR-kar-ten-ow-toh-MAHT",
+    layman: "The big touchscreen machine on every platform and station concourse in Germany (usually bright red for DB). You can select languages, search destinations, pay with card or cash, and print your ticket on the spot.",
+    analogy: "Like an ATM, but it dispenses train and bus tickets.",
+    example: "Ich kaufe das Ticket am Fahrkartenautomaten.",
+    exampleEnglish: "I am buying the ticket at the ticket vending machine.",
+    category: "Ticketing"
+  },
+  {
+    german: "der Bus / die Bushaltestelle / der Busbahnhof (ZOB)",
+    english: "the bus / bus stop / central bus terminal (ZOB)",
+    phonetic: "dair BOOS / dee BOOS-hal-tuh-shte-luh / dair BOOS-bahn-hohf (TSOHB)",
+    layman: "Bus travel terms: 'der Bus' (the bus), 'die Bushaltestelle' (the roadside bus stop), and 'der Busbahnhof / ZOB' (Zentraler Omnibusbahnhof = long-distance coach terminal like FlixBus).",
+    analogy: "Bushaltestelle is a roadside matatu stage; ZOB is a massive bus terminal like Country Bus Station in Nairobi.",
+    example: "Der Bus wartet an der Bushaltestelle vor dem Bahnhof.",
+    exampleEnglish: "The bus is waiting at the bus stop in front of the station.",
+    category: "Bus Transit"
+  },
+  {
+    german: "die Ankunft / ankommen (ist angekommen)",
+    english: "the arrival / to arrive (verb uses 'sein'!)",
+    phonetic: "dee AHN-koonft / AHN-kom-men (ist ahn-geh-KOM-men)",
+    layman: "'Die Ankunft' is the arrival noun (seen on yellow station arrival boards). The separable verb is 'ankommen' (Der Zug kommt um 16 Uhr an). Notice that in the past tense it takes 'sein' because it involves movement: 'Er ist angekommen'!",
+    analogy: "Tracking arrival time on the schedule board.",
+    example: "Die Ankunft in Köln ist um 16 Uhr.",
+    exampleEnglish: "The arrival in Cologne is at 4 p.m.",
+    category: "Schedule & Travel"
+  },
+  {
+    german: "die Abfahrt / abfahren (ist abgefahren)",
+    english: "the departure / to depart (verb uses 'sein'!)",
+    phonetic: "dee AHP-fahrt / AHP-fah-ren (air fehrt ahp, ist ahp-geh-FAH-ren)",
+    layman: "'Die Abfahrt' is the departure noun (seen on white station departure boards). The separable verb is 'abfahren' (Der Zug fährt um 20 Uhr ab). Note the vowel change (fährt) and that it takes 'sein' in Perfekt (Der Zug ist abgefahren)!",
+    analogy: "The scheduled departure time of your journey.",
+    example: "Die Abfahrt von Berlin ist um 20 Uhr.",
+    exampleEnglish: "The departure from Berlin is at 8 p.m.",
+    category: "Schedule & Travel"
+  },
+  {
+    german: "das Gleis (die Gleise) / der Bahnsteig",
+    english: "the track / the platform",
+    phonetic: "dahs GLYSE (dee GLY-zuh) / dair BAHN-shtyke",
+    layman: "'Das Gleis' (often used with 'Gleis 4' = Track 4) is where the rails run and where the train stops. 'Der Bahnsteig' is the raised platform you stand on while waiting. In announcements, Germans say: 'Einfahrt auf Gleis 4!' (Train arriving on track 4!).",
+    analogy: "Standing on the platform (Bahnsteig) waiting for the train on Track 4 (Gleis 4).",
+    example: "Auf welchem Gleis fährt der Zug ab? - Auf Gleis 4.",
+    exampleEnglish: "On which track does the train leave? - On track 4.",
+    category: "Station Navigation"
+  },
+  {
+    german: "der Schalter / am Fahrkartenschalter",
+    english: "the ticket counter / at the ticket service counter",
+    phonetic: "dair SHAHL-ter / ahm FAHR-kar-ten-shahl-ter",
+    layman: "The in-person customer service counter inside the DB Reisezentrum (travel center). Perfect if you need complex international routing, personal advice, group tickets, or refund handling from a human clerk.",
+    analogy: "Walking up to the ticket window to talk to a human agent.",
+    example: "Diese Tickets kann man nur am Schalter kaufen.",
+    exampleEnglish: "These tickets can only be bought at the counter.",
+    category: "Ticketing"
+  },
+  {
+    german: "die Verspätung / sich verspäten",
+    english: "the delay / to be delayed (has a delay)",
+    phonetic: "dee fehr-SHPAY-toong / zikh fehr-SHPAY-ten",
+    layman: "Every train traveler's familiar companion: 'die Verspätung' (delay). You can say 'Der ICE hat eine 30-minütige Verspätung' (The ICE has a 30-min delay) or 'Der Zug hat sich verspätet' (The train got delayed).",
+    analogy: "When transit is held up in traffic or railway signaling, adding minutes to arrival.",
+    example: "Der ICE 219 hat eine 30-minütige Verspätung.",
+    exampleEnglish: "The ICE 219 has a 30-minute delay.",
+    category: "Disruptions"
+  },
+  {
+    german: "der Fahrplan (die Fahrpläne)",
+    english: "the timetable / schedule",
+    phonetic: "dair FAHR-plahn (dee FAHR-play-nuh)",
+    layman: "The timetable or itinerary chart. It shows departure time (Abfahrt), arrival time (Ankunft), total duration (Dauer), number of transfers (Umstiege), train types (Produkte: ICE/RB), and prices.",
+    analogy: "The timetable matrix showing all train departures, routes, and connections.",
+    example: "Ich schaue kurz im Fahrplan nach den Verbindungen.",
+    exampleEnglish: "I'll quickly check the timetable for connections.",
+    category: "Schedule & Travel"
+  },
+  {
+    german: "umsteigen (ist umgestiegen) / die Umsteigezeit",
+    english: "to transfer / change trains (uses 'sein'!) / transfer time",
+    phonetic: "OOM-shty-gen (ist oom-geh-SHTEE-gen) / dee OOM-shty-guh-tsyte",
+    layman: "To switch from one train or bus to another midway through your trip. 'Muss man umsteigen?' (Do I have to change?). 'Ja, einmal in Nürnberg' (Yes, once in Nuremberg). 'Die Umsteigezeit' is the buffer minutes between trains (e.g. 23 Min.).",
+    analogy: "Changing matatus at Nairobi CBD to reach your final destination.",
+    example: "Muss ich umsteigen? - Nein, Sie müssen nicht umsteigen, es ist ein direkter Zug.",
+    exampleEnglish: "Do I have to transfer? - No, you don't have to transfer, it's a direct train.",
+    category: "Routing & Actions"
+  },
+  {
+    german: "das Sparangebot (Sparpreis) vs. der Flexpreis",
+    english: "the saver/discount offer vs. flexible full-price ticket",
+    phonetic: "dahs SHPAHR-ahn-guh-boht vs. dair FLEX-prys",
+    layman: "Deutsche Bahn pricing tiers: 'Sparangebot / Sparpreis' is cheap (e.g. €73.90 or €19.90) but tied to that exact specific train (Zugbindung). 'Flexpreis' costs more (e.g. €105.00) but gives you complete flexibility to take ANY train that day!",
+    analogy: "Non-refundable early bird discount ticket vs. fully flexible open ticket.",
+    example: "Was kostet eine Fahrkarte? - 105 Euro. Im Sparangebot 73,90 Euro.",
+    exampleEnglish: "How much is a ticket? - 105 euros. On special offer 73.90 euros.",
+    category: "Pricing & Deals"
+  },
+  {
+    german: "einfach (nur Hinfahrt) vs. hin und zurück (Rückfahrt)",
+    english: "one-way (outward only) vs. round-trip (return)",
+    phonetic: "EYEN-fakh (noor HIN-fahrt) vs. hin oont tsoo-RYOOK (RYOOK-fahrt)",
+    layman: "The first question the ticket clerk or machine will ask you: 'Einfach oder hin und zurück?' (One-way or return?). If you only need to go there, reply: 'Nur Hinfahrt, bitte!' or 'Einfach, bitte!'.",
+    analogy: "Single one-way ticket vs. a round-trip ticket.",
+    example: "Ich möchte bitte eine Fahrkarte nach Berlin, einfach.",
+    exampleEnglish: "I would like a ticket to Berlin, one-way please.",
+    category: "Ticket Options"
+  },
+  {
+    german: "die Sitzplatzreservierung (mit / ohne Reservierung)",
+    english: "seat reservation (with / without reservation)",
+    phonetic: "dee ZITS-plahts-reh-zehr-VEER-oong",
+    layman: "On German long-distance trains (ICE/IC), your ticket buys you transport, but NOT a specific seat! For a small extra fee (e.g. ~€4.50 to €4.90), you add 'eine Sitzplatzreservierung' so you have a guaranteed seat reserved just for you.",
+    analogy: "Booking a designated assigned seat on the train rather than hunting for an empty one.",
+    example: "Die Fahrkarte kostet 58 Euro. Mit Sitzplatzreservierung 62,50 Euro.",
+    exampleEnglish: "The ticket costs 58 euros. With seat reservation 62.50 euros.",
+    category: "Ticket Options"
+  }
+];
+
+export const LESSON_64_SCENARIOS = [
+  {
+    scenario: "You are at the ticket counter and the clerk asks: 'Einfach oder hin und zurück?' What does this mean (Slide 37)?",
+    hint: "Einfach = one-way (outward only); hin und zurück = round-trip return.",
+    options: [
+      { text: "They are asking if you want a one-way ticket or a round-trip return ticket.", correct: true, explain: "Genau! 'Einfach' is one-way (Hinfahrt), and 'hin und zurück' is round-trip (both ways)!" },
+      { text: "They are asking if you want to pay by cash or credit card.", correct: false, explain: "That would be 'Bar oder mit Karte?'" },
+      { text: "They are asking if you want first class or second class.", correct: false, explain: "That would be 'Erste oder zweite Klasse?'" }
+    ]
+  },
+  {
+    scenario: "What is the key difference between an 'ICE' and a 'Regionalbahn (RB)' train in Germany (Slide 2)?",
+    hint: "ICE is high-speed InterCity Express; RB is regional train stopping at local stations.",
+    options: [
+      { text: "ICE is the high-speed InterCity Express connecting big cities; RB is a slower regional train stopping at smaller towns.", correct: true, explain: "Richtig! The ICE (InterCity Express) is Germany's fastest bullet train (up to 300 km/h), while Regionalbahn (RB) serves local regional routes." },
+      { text: "ICE is for cargo; RB is for passengers.", correct: false, explain: "Both carry passengers!" },
+      { text: "ICE only operates underground.", correct: false, explain: "That is the U-Bahn (subway)!" }
+    ]
+  },
+  {
+    scenario: "You look at the station departure board and see 'Gleis 4'. What does 'Gleis' mean (Slide 13 & 28)?",
+    hint: "Gleis = track / railway line where the train pulls in.",
+    options: [
+      { text: "Track (the numbered railway line where your train arrives or departs).", correct: true, explain: "Perfekt! 'Gleis' is the track number (e.g. Gleis 4). 'Bahnsteig' is the platform." },
+      { text: "The ticket price.", correct: false, explain: "Price is Preis or Fahrpreis." },
+      { text: "The seat number inside the train.", correct: false, explain: "Seat number is Sitzplatz." }
+    ]
+  },
+  {
+    scenario: "A timetable shows: 'Dauer: 3:39 | Umst.: 1'. What does 'Umst.: 1' tell you (Slide 23-24)?",
+    hint: "Umstiege = transfers / train changes.",
+    options: [
+      { text: "You must change / transfer trains once (1 Umstieg) along your route.", correct: true, explain: "Wunderbar! 'Umst.: 1' means you have to change trains once (umsteigen). 'Umst.: 0' means it is a direct train." },
+      { text: "You get 1 free snack on board.", correct: false, explain: "Umst. stands for Umstiege (transfers)!" },
+      { text: "The train stops for 1 hour at every station.", correct: false, explain: "No, it indicates 1 transfer." }
+    ]
+  },
+  {
+    scenario: "What does 'Hbf' stand for on German transit signs (Slide 30)?",
+    hint: "Hauptbahnhof = Central / Main Train Station.",
+    options: [
+      { text: "Hauptbahnhof (Central / Main Train Station).", correct: true, explain: "Super! 'Hbf' is the standard abbreviation for Hauptbahnhof, the central transit hub of a city." },
+      { text: "Halber Bahnhof (Half station).", correct: false, explain: "No such thing!" },
+      { text: "Hotel beim Flughafen.", correct: false, explain: "Hbf = Hauptbahnhof." }
+    ]
+  },
+  {
+    scenario: "What is the difference between 'Sparangebot (Sparpreis)' and 'Flexpreis' (Slide 20 & 27)?",
+    hint: "Sparangebot is a discounted saver fare; Flexpreis is flexible full-price.",
+    options: [
+      { text: "Sparangebot is a discounted saver ticket bound to a specific train; Flexpreis gives you freedom to take any train that day.", correct: true, explain: "Ausgezeichnet! Sparangebote (saver deals) save you big money if you book early, while Flexpreis gives maximum flexibility." },
+      { text: "Sparangebot is only for children.", correct: false, explain: "Sparangebote are available for all travelers!" },
+      { text: "Flexpreis is always free.", correct: false, explain: "Flexpreis is the standard full-fare ticket." }
+    ]
+  }
+];
+
+
 
 
 
