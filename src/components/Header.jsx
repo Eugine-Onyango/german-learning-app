@@ -65,6 +65,7 @@ export default function Header({
     if (currentLesson === 51) msg = "Gefallen und Missfallen: Das Kleid gefällt mir sehr gut! Wie findest du meine Schuhe? Die finde ich total klasse! Das gefällt mir überhaupt nicht.";
     if (currentLesson === 52) msg = "Fragepronomen welch: Welcher Hut ist schicker? Welchen Hut findest du schick? Zu welchem Hut passt meine Jacke? Welche Frau ist deine Kollegin? Welches Buch liest du? Welche Blumen gefallen dir?";
     if (currentLesson === 53) msg = "Demonstrativartikel dies: Was kostet dieser Pullover? Wie finden Sie diesen Pullover? Was passt zu dieser Bluse? Dieses Auto gefällt mir! In diesen Schuhen siehst du elegant aus!";
+    if (currentLesson === 54) msg = "Im Kaufhaus: Guten Tag, Sie wünschen? Ich suche eine Hose für das Büro. Welche Größe haben Sie denn? Ich trage Größe 38. Wo ist die Umkleidekabine? Gleich hier um die Ecke! Sie passt genau. Was kostet sie? Sie kostet nur 30 Euro. Auf Wiedersehen!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -495,6 +496,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson54NavItems = [
+    { id: 'cards', label: '📖 Lesson 54 Cards', sub: 'Department Store & Shopping' },
+    { id: 'studio54', label: '🏬 Kaufhaus Studio', sub: 'Floor Directory, Roleplay & Pronouns' },
+    { id: 'game54', label: '🎮 Kaufhaus Quiz', sub: 'Sales & Fitting Room Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -548,6 +557,7 @@ export default function Header({
   if (currentLesson === 51) navItems = lesson51NavItems;
   if (currentLesson === 52) navItems = lesson52NavItems;
   if (currentLesson === 53) navItems = lesson53NavItems;
+  if (currentLesson === 54) navItems = lesson54NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -603,6 +613,7 @@ export default function Header({
     { num: 51, label: "👗 51: Gefallen & Missfallen", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
     { num: 52, label: "🎩 52: welch- (Which?)", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 53, label: "👉 53: dies- (This/These)", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
+    { num: 54, label: "🏬 54: Im Kaufhaus", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
   ];
 
   return (

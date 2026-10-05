@@ -110,6 +110,10 @@ import Lesson51FashionOpinionStudio from './components/Lesson51FashionOpinionStu
 import Lesson51Game from './components/Lesson51Game';
 import Lesson52WelchStudio from './components/Lesson52WelchStudio';
 import Lesson52Game from './components/Lesson52Game';
+import Lesson53DiesStudio from './components/Lesson53DiesStudio';
+import Lesson53Game from './components/Lesson53Game';
+import Lesson54KaufhausStudio from './components/Lesson54KaufhausStudio';
+import Lesson54Game from './components/Lesson54Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -162,11 +166,13 @@ import {
   LESSON_49_ITEMS,
   LESSON_50_ITEMS,
   LESSON_51_ITEMS,
-  LESSON_52_ITEMS
+  LESSON_52_ITEMS,
+  LESSON_53_ITEMS,
+  LESSON_54_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(52); // Default to Lesson 52 as requested, easy switch to 1-51
+  const [currentLesson, setCurrentLesson] = useState(54); // Default to Lesson 54 as requested, easy switch to 1-53
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -223,6 +229,7 @@ export default function App() {
   if (currentLesson === 51) activeItems = LESSON_51_ITEMS;
   if (currentLesson === 52) activeItems = LESSON_52_ITEMS;
   if (currentLesson === 53) activeItems = LESSON_53_ITEMS;
+  if (currentLesson === 54) activeItems = LESSON_54_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -277,7 +284,8 @@ export default function App() {
     if (currentLesson === 50) return "Lesson 50: Die Einladung (Writing Invitations, 3-Part Letter Anatomy, RSVPs, Potluck & Polite Declines)";
     if (currentLesson === 51) return "Lesson 51: Gefallen und Missfallen ausdrücken (Expressing Likes & Dislikes / Taste & Opinions)";
     if (currentLesson === 52) return "Lesson 52: Das Fragepronomen \"welch-\" (Which? Across Nominativ, Akkusativ & Dativ)";
-    return "Lesson 53: Demonstrativartikel \"dies-\" (This / These across Nominativ, Akkusativ & Dativ)";
+    if (currentLesson === 53) return "Lesson 53: Demonstrativartikel \"dies-\" (This / These across Nominativ, Akkusativ & Dativ)";
+    return "Lesson 54: Im Kaufhaus (In the Department Store - Shopping, Sizing, Fitting Rooms & Slide 36 Pronouns)";
   };
 
   const getLessonDesc = () => {
@@ -437,7 +445,10 @@ export default function App() {
     if (currentLesson === 52) {
       return "Master the interrogative pronoun \"welch-\" (Which?) across all genders and cases in German! Discover the golden secret: \"welch-\" has ZERO new endings to learn because it simply mirrors the definite articles (der ➔ welcher, den ➔ welchen, dem ➔ welchem, die ➔ welche, das ➔ welches)! Explore the Slide 37 Master Matrix, object choosing dialogues (Hüte, Frauen, Bücher, Blumen), and adjective ending response patterns!";
     }
-    return "Master pointing to specific objects and people in German with the demonstrative article \"dies-\" (This / These)! Learn why \"dies-\" follows the exact same mirror ending rules as \"welch-\" and definite articles (dieser Pullover, diese Bluse, dieses Auto, diese Schuhe, mit diesem Geld, in diesen Schuhen)! Explore the Slide 24 Master Matrix, boutique simulator, and the natural \"welch- vs. dies-\" dialogue duet!";
+    if (currentLesson === 53) {
+      return "Master pointing to specific objects and people in German with the demonstrative article \"dies-\" (This / These)! Learn why \"dies-\" follows the exact same mirror ending rules as \"welch-\" and definite articles (dieser Pullover, diese Bluse, dieses Auto, diese Schuhe, mit diesem Geld, in diesen Schuhen)! Explore the Slide 24 Master Matrix, boutique simulator, and the natural \"welch- vs. dies-\" dialogue duet!";
+    }
+    return "Master shopping in a German department store (Im Kaufhaus)! Explore floor directories (EG, UG, 1. OG, Männer-, Frauen-, Kinderabteilung), 5-stage boutique roleplay dialogues from greeting (Guten Tag, Sie wünschen?) to request (Ich suche / brauche / hätte gern...), size inquiries (Welche Größe haben Sie denn? ➔ Ich trage Größe 38), directions to fitting rooms (die Umkleidekabine, gleich hier um die Ecke), fit checks (passt gut / ist viel zu klein, eine Nummer größer), style critiques (zu altmodisch / zu modern), compliments (steht Ihnen gut), prices (Was kostet sie?), and the Slide 36 Pronoun Master Summary (der/er, die/sie, das/es)!";
   };
 
   return (
@@ -951,6 +962,15 @@ export default function App() {
 
         {currentLesson === 53 && activeTab === 'game53' && (
           <Lesson53Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 54 Specific Modules */}
+        {currentLesson === 54 && activeTab === 'studio54' && (
+          <Lesson54KaufhausStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 54 && activeTab === 'game54' && (
+          <Lesson54Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

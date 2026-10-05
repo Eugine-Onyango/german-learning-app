@@ -13140,6 +13140,304 @@ export const LESSON_53_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 54: Im Kaufhaus (In the Department Store)
+// ==========================================
+export const LESSON_54_ITEMS = [
+  {
+    id: "das-kaufhaus",
+    german: "das Kaufhaus (die Kaufhäuser)",
+    english: "department store (department stores)",
+    pronunciation: "dahs KOWF-hows (dee KOWF-hoy-zer)",
+    audioText: "das Kaufhaus, die Kaufhäuser",
+    category: "store-places",
+    badge: "Building & Place",
+    icon: "🏬",
+    kenyanAnalogy: "Like walking into a big multi-floor shopping mall or mega-store where fashion, kids' wear, shoes, and home goods are all under one massive roof!",
+    memoryTrick: "'Kauf' (buy) + 'Haus' (house) = A house for buying everything!",
+    imageType: "mall"
+  },
+  {
+    id: "die-abteilung",
+    german: "die Abteilung (die Abteilungen)",
+    english: "department / section (departments)",
+    pronunciation: "dee ahp-TY-loong (dee ahp-TY-loong-en)",
+    audioText: "die Abteilung, die Abteilungen",
+    category: "store-places",
+    badge: "Sections",
+    icon: "🏷️",
+    kenyanAnalogy: "Each dedicated zone on a floor — like the men's wing, ladies' section, or baby zone.",
+    memoryTrick: "'Abteilen' means to divide into parts -> 'Abteilung' is a divided section!",
+    imageType: "section"
+  },
+  {
+    id: "abteilungen-types",
+    german: "die Männerabteilung / die Frauenabteilung / die Kinderabteilung / die Babyabteilung",
+    english: "men's department / women's department / children's department / baby's department",
+    pronunciation: "dee MEN-ner-ahp-ty-loong / dee FROW-en-ahp-ty-loong / dee KIN-der-ahp-ty-loong / dee BAY-bee-ahp-ty-loong",
+    audioText: "die Männerabteilung, die Frauenabteilung, die Kinderabteilung, die Babyabteilung",
+    category: "store-places",
+    badge: "Floor Directory",
+    icon: "🗂️",
+    kenyanAnalogy: "The 4 classic clothing floors in any European department store: Men, Women, Kids, and Babies!",
+    memoryTrick: "Notice all end with '-abteilung' (feminine: die)!",
+    imageType: "directory"
+  },
+  {
+    id: "die-umkleidekabine",
+    german: "die Umkleidekabine / die Anprobe",
+    english: "the fitting room / changing cubicle",
+    pronunciation: "dee OOM-kly-deh-kah-bee-neh / dee AHN-proh-beh",
+    audioText: "die Umkleidekabine, die Anprobe",
+    category: "store-places",
+    badge: "Fitting Room",
+    icon: "🚪",
+    kenyanAnalogy: "The private curtained booth with big mirrors where you try on trousers or shirts before paying.",
+    memoryTrick: "'Umkleiden' = change clothes + 'Kabine' = cabin / booth!",
+    imageType: "fitting_room"
+  },
+  {
+    id: "etwas-anprobieren",
+    german: "etwas anprobieren",
+    english: "to try something on (clothes / shoes)",
+    pronunciation: "ET-vahs AHN-proh-bee-ren",
+    audioText: "etwas anprobieren. Möchten Sie diese Jacke anprobieren?",
+    category: "shopping-actions",
+    badge: "Separable Verb",
+    icon: "👟",
+    kenyanAnalogy: "Slipping your foot into a new shoe or trying on a jacket to test if the fit is comfortable: 'Can I try this on?'",
+    memoryTrick: "'Probieren' = to try/taste, 'an-probieren' = try ON your body!",
+    imageType: "try_on"
+  },
+  {
+    id: "verkaeufer-und-kunde",
+    german: "der Verkäufer / die Verkäuferin • der Kunde / die Kundin",
+    english: "the salesperson (m/f) • the customer (m/f)",
+    pronunciation: "dair fair-KOY-fer / dee fair-KOY-feh-rin • dair KOON-deh / dee KOON-din",
+    audioText: "der Verkäufer, die Verkäuferin, der Kunde, die Kundin",
+    category: "roles",
+    badge: "Key Roles",
+    icon: "💼",
+    kenyanAnalogy: "The shop assistant ready to assist you (Verkäufer/in) and you the shopper (Kunde/Kundin) exploring the rails.",
+    memoryTrick: "Verkäufer sells (verkaufen), Kunde buys!",
+    imageType: "roles"
+  },
+  {
+    id: "guten-tag-sie-wuenschen",
+    german: "Guten Tag, Sie wünschen? / Guten Tag, kann ich Ihnen helfen?",
+    english: "Good day, what would you like? / Good day, how can I help you?",
+    pronunciation: "GOO-ten tahk, zee VOON-shen? / GOO-ten tahk, kahn ikh EE-nen HEL-fen?",
+    audioText: "Guten Tag, Sie wünschen? Guten Tag, kann ich Ihnen helfen?",
+    category: "sales-greeting",
+    badge: "Store Greeting",
+    icon: "👋",
+    kenyanAnalogy: "The warm, professional German retail opening line when a store assistant approaches you.",
+    memoryTrick: "'Sie wünschen?' = 'What is your wish?' — polite and traditional!",
+    imageType: "greet"
+  },
+  {
+    id: "ich-suche-brauche-haette-gern",
+    german: "Ich suche... / Ich brauche... / Ich hätte gern...",
+    english: "I am looking for... / I need... / I would like to have...",
+    pronunciation: "ikh ZOO-kheh... / ikh BROW-kheh... / ikh HET-teh gairn...",
+    audioText: "Ich suche eine Hose. Ich brauche eine Jacke. Ich hätte gern ein Hemd für meinen Vater.",
+    category: "customer-request",
+    badge: "The 3 Request Keys",
+    icon: "🛍️",
+    kenyanAnalogy: "Your 3 go-to starter phrases when shopping: 'I'm looking for a pair of trousers', 'I need a jacket', or 'I'd love a shirt for my dad'!",
+    memoryTrick: "Remember: 'hätte gern' is super polite German for 'I would like'!",
+    imageType: "shopping_bag"
+  },
+  {
+    id: "shopping-items-and-occasions",
+    german: "eine Hose, einen Mantel, eine Tasche, ein Hemd, Schuhe — für das Büro / für eine Party / für eine Hochzeit",
+    english: "a pair of pants, an overcoat, a bag, a shirt, shoes — for the office / for a party / for a wedding",
+    pronunciation: "EYE-neh HOH-zeh, EYE-nen MAHN-tel, EYE-neh TAH-sheh, eye-n hemd, SHOO-eh — feer dahs BYOO-roh / feer EYE-neh PAHR-tee / feer EYE-neh HOKH-tsyt",
+    audioText: "eine Hose, einen Mantel, eine Tasche, ein Hemd, Schuhe. Für das Büro, für die Schule, für eine Party, für eine Hochzeit, für meinen Vater, für mich.",
+    category: "customer-request",
+    badge: "Items & Occasions",
+    icon: "👔",
+    kenyanAnalogy: "Explaining what you need and where you plan to wear it (work meeting, church wedding, or weekend gathering).",
+    memoryTrick: "Preposition 'für' always takes Akkusativ (für das Büro, für meinen Vater)!",
+    imageType: "wardrobe"
+  },
+  {
+    id: "gefaellt-ihnen-diese-hier",
+    german: "Gefällt Ihnen diese hier? / Wie finden Sie diese (Hose) hier?",
+    english: "Do you like this one here? / How do you like this (pair of pants) here?",
+    pronunciation: "ge-FEHLT EE-nen DEE-zeh heer? / vee FIN-den zee DEE-zeh heer?",
+    audioText: "Gefällt Ihnen diese hier? Wie finden Sie diese Hose hier? Wie gefällt Ihnen diese hier?",
+    category: "sales-suggestion",
+    badge: "Sales Recommendation",
+    icon: "👖",
+    kenyanAnalogy: "The shop assistant pulling a sleek piece off the rack and presenting it to you for your opinion.",
+    memoryTrick: "'Diese hier' = 'This one right here'!",
+    imageType: "pants_blue"
+  },
+  {
+    id: "diese-gefaellt-mir-reaktionen",
+    german: "Diese gefällt mir sehr / gut. — Diese gefällt mir leider nicht.",
+    english: "I like this one very much / well. — Unfortunately I don't like this one.",
+    pronunciation: "DEE-zeh ge-FEHLT meer zair / goot. — DEE-zeh ge-FEHLT meer LY-der nikht",
+    audioText: "Diese gefällt mir sehr gut. Diese gefällt mir leider nicht.",
+    category: "customer-opinion",
+    badge: "Reaction / Taste",
+    icon: "👍",
+    kenyanAnalogy: "Your immediate honest reaction to the item presented by the store assistant.",
+    memoryTrick: "'Leider nicht' = 'Unfortunately not' (polite and gentle).",
+    imageType: "thumbs"
+  },
+  {
+    id: "andere-farbe-altmodisch-modern",
+    german: "Die Farbe gefällt mir leider nicht. Haben Sie eine andere Farbe? Das ist zu altmodisch / zu modern.",
+    english: "I don't like the color. Do you have another color? This is too old-fashioned / too modern.",
+    pronunciation: "dee FAHR-beh ge-FEHLT meer LY-der nikht. HAH-ben zee EYE-neh AHN-deh-reh FAHR-beh? dahs ist tsoo AHLT-moh-dish / tsoo moh-DAIRN",
+    audioText: "Die Farbe gefällt mir leider nicht. Haben Sie vielleicht eine andere Farbe? Das ist zu altmodisch. Das ist mir zu modern.",
+    category: "customer-opinion",
+    badge: "Color & Style Checks",
+    icon: "🎨",
+    kenyanAnalogy: "When the cut is fine but the shade is wrong or the design looks like 1970 or futuristic: 'Do you have another color?'",
+    memoryTrick: "'Zu' + Adjektiv = 'TOO' (zu altmodisch = too old-fashioned, zu modern = too modern).",
+    imageType: "color_palette"
+  },
+  {
+    id: "welche-groesse-haben-sie",
+    german: "Welche Größe haben Sie denn? — Ich trage / habe die Größe 38.",
+    english: "What size do you have / wear? — I wear / have size 38.",
+    pronunciation: "VEL-kheh GRER-seh HAH-ben zee den? — ikh TRAH-geh / HAH-beh dee GRER-seh AHKHT-oont-dry-sikh",
+    audioText: "Welche Größe haben Sie denn? Ich trage die Größe 38. Ich habe die Größe 38.",
+    category: "size-fitting",
+    badge: "Size Check",
+    icon: "📏",
+    kenyanAnalogy: "The sizing check before trying anything on: 'What size are you?' -> 'I wear size 38.'",
+    memoryTrick: "'Tragen' = to wear (Ich trage Größe...)",
+    imageType: "size_tape"
+  },
+  {
+    id: "anprobieren-umkleidekabine-weg",
+    german: "Möchten Sie diese anprobieren? — Ja gern. Wo ist die Umkleidekabine? — Gleich hier um die Ecke! / Da hinten rechts.",
+    english: "Would you like to try them on? — Yes please. Where is the fitting room? — Right around the corner! / Back there to the right.",
+    pronunciation: "MERKH-ten zee DEE-zeh AHN-proh-bee-ren? — yah gairn. voh ist dee OOM-kly-deh-kah-bee-neh? — glykh heer oom dee EK-keh / dah HIN-ten REKHTS",
+    audioText: "Hier ist Ihre Größe. Möchten Sie diese denn anprobieren? Ja gern. Wo ist die Umkleidekabine? Gleich hier um die Ecke. Hier. Da hinten rechts. Ok, danke.",
+    category: "size-fitting",
+    badge: "Fitting Room Dialogue",
+    icon: "📍",
+    kenyanAnalogy: "Holding the item and getting guided to the fitting cubicles around the corner.",
+    memoryTrick: "'Um die Ecke' = around the corner, 'da hinten rechts' = back there on the right.",
+    imageType: "directions_store"
+  },
+  {
+    id: "passt-sitzt-bequem",
+    german: "Und passt die gut? / Sitzt die gut? / Ist sie bequem? — Sie passt gut / genau / richtig. Ich nehme diese.",
+    english: "And does it fit well? / Does it sit well? / Is it comfortable? — It fits well / exactly / correctly. I'll take this one.",
+    pronunciation: "oont pahsst dee goot? zitst dee goot? ist zee beh-KVAYM? — zee pahsst goot / ge-NOW / RIKH-tikh. ikh NAY-meh DEE-zeh",
+    audioText: "Und passt die gut? Sitzt die gut? Ist sie bequem? Sie passt gut, genau, richtig. Ich nehme diese.",
+    category: "fitting-feedback",
+    badge: "Perfect Fit & Decision",
+    icon: "👌",
+    kenyanAnalogy: "Stepping out of the fitting room with a smile: 'It sits perfectly, feels comfortable, I'm buying this one!'",
+    memoryTrick: "'Sitzen' = to sit/fit on the body, 'Ich nehme diese' = I'll take this one!",
+    imageType: "mirror_check"
+  },
+  {
+    id: "zu-klein-nummer-groesser",
+    german: "Es ist viel zu klein / groß. Haben Sie eine Nummer größer / kleiner?",
+    english: "It is much too small / big. Do you have a size bigger / smaller?",
+    pronunciation: "es ist feel tsoo klyn / grohs. HAH-ben zee EYE-neh NOOM-mer GRER-ser / KLY-ner?",
+    audioText: "Es ist viel zu klein. Es ist viel zu groß. Haben Sie eine Nummer größer? Haben Sie eine Nummer kleiner?",
+    category: "fitting-feedback",
+    badge: "Size Adjustments",
+    icon: "🔄",
+    kenyanAnalogy: "When trousers are pinching tight or hanging loose: 'Do you have one size larger / smaller?'",
+    memoryTrick: "'Nummer größer' = size bigger, 'Nummer kleiner' = size smaller!",
+    imageType: "size_swap"
+  },
+  {
+    id: "steht-ihnen-gut-preis-beenden",
+    german: "Die Hose steht Ihnen auch gut. — Was kostet sie? — Sie kostet nur 30 Euro. — Danke schön. Auf Wiedersehen!",
+    english: "The pants also suit you very well. — What does it cost? — It costs only 30 Euro. — Thank you. Goodbye!",
+    pronunciation: "dee HOH-zeh shtayt EE-nen owkh goot. — vahs KOSS-tet zee? — zee KOSS-tet noor DRY-sikh OY-roh. — DAHN-keh shern. owf VEE-der-zay-en!",
+    audioText: "Sehr schön. Die Hose steht Ihnen auch gut. Danke. Was kostet sie? Sie kostet nur 30 Euro. Ok, danke schön. Auf Wiedersehen!",
+    category: "checkout-farewell",
+    badge: "Checkout & Goodbye",
+    icon: "💶",
+    kenyanAnalogy: "Complimenting the shopper ('It suits you so well!'), stating the great price, and wrapping up with a polite farewell!",
+    memoryTrick: "'Steht Ihnen gut' = it suits you / looks handsome on you!",
+    imageType: "checkout"
+  },
+  {
+    id: "kaufhaus-pronoun-master",
+    german: "die Hose (die/sie), der Pullover (der/er), das Hemd (das/es), die Schuhe (die/sie)",
+    english: "the pants (she/it), the sweater (he/it), the shirt (it), the shoes (they/plural)",
+    pronunciation: "dee HOH-zeh, dair pool-OH-ver, dahs hemd, dee SHOO-eh",
+    audioText: "die Hose: Gefällt Ihnen diese? Ja, die gefällt mir. der Pullover: Gefällt Ihnen dieser? Ja, der gefällt mir. das Hemd: Gefällt Ihnen dieses? Ja, das gefällt mir. die Schuhe: Gefallen Ihnen diese? Ja, die gefallen mir.",
+    category: "roles",
+    badge: "Pronoun Summary (Slide 36)",
+    icon: "🌟",
+    kenyanAnalogy: "In German, replace clothing items with their gender pronoun: Hose ➔ sie/die, Pullover ➔ er/der, Hemd ➔ es/das, Schuhe ➔ sie/die!",
+    memoryTrick: "Look at Slide 36: Der, Die, Das, and Plural Die govern all responses!",
+    imageType: "table"
+  }
+];
+
+export const LESSON_54_SCENARIOS = [
+  {
+    scenario: "In Slide 12–16, a salesperson in a department store greets you politely: 'Guten Tag, kann ich Ihnen helfen?' You want to say you are looking for a shirt for your father. What do you say?",
+    hint: "Ja, ich hätte gern ein Hemd für meinen Vater. / Ich suche ein Hemd für meinen Vater.",
+    options: [
+      { text: "Ja, ich hätte gern ein Hemd für meinen Vater.", correct: true, explain: "Perfekt! 'Ich hätte gern ein Hemd für meinen Vater' is polite, accurate, and uses the correct Akkusativ masculine (meinen Vater)!" },
+      { text: "Ich bin der Verkäufer.", correct: false, explain: "You are the customer, not the salesperson." },
+      { text: "Das Wetter ist neblig.", correct: false, explain: "That describes the weather." }
+    ]
+  },
+  {
+    scenario: "In Slide 28 & 29, the salesperson shows you a jacket, but you dislike the color and want to ask if they have another color. What do you say?",
+    hint: "Die Farbe gefällt mir leider nicht. Haben Sie vielleicht eine andere Farbe?",
+    options: [
+      { text: "Die Farbe gefällt mir leider nicht. Haben Sie vielleicht eine andere Farbe?", correct: true, explain: "Ausgezeichnet! 'Die Farbe gefällt mir leider nicht' states your polite taste, and 'Haben Sie vielleicht eine andere Farbe?' asks for alternatives!" },
+      { text: "Ich trage Größe 38.", correct: false, explain: "That states your size." },
+      { text: "Wo ist die U-Bahn?", correct: false, explain: "That asks for the subway." }
+    ]
+  },
+  {
+    scenario: "In Slide 31, the salesperson asks: 'Welche Größe haben Sie denn?' How do you answer that you wear size 38?",
+    hint: "Ich trage die Größe 38. / Ich habe die Größe 38.",
+    options: [
+      { text: "Ich trage die Größe 38.", correct: true, explain: "Hervorragend! 'Ich trage die Größe 38' or 'Ich habe die Größe 38' is the standard German response for clothing sizes!" },
+      { text: "Es ist 18 Uhr.", correct: false, explain: "That tells the time." },
+      { text: "Ich nehme ein Kilo Äpfel.", correct: false, explain: "That's ordering apples at the supermarket." }
+    ]
+  },
+  {
+    scenario: "You try on a pair of jeans in the fitting room and they are much too tight and small. How do you ask for a bigger size?",
+    hint: "Es ist viel zu klein. Haben Sie eine Nummer größer?",
+    options: [
+      { text: "Es ist viel zu klein. Haben Sie eine Nummer größer?", correct: true, explain: "Wunderbar! 'Viel zu klein' (much too small) and 'eine Nummer größer' (a size bigger) is the exact phrase from Slide 33!" },
+      { text: "Sie passt genau.", correct: false, explain: "That means it fits exactly." },
+      { text: "Das ist zu modern.", correct: false, explain: "That critiques the style, not the size." }
+    ]
+  },
+  {
+    scenario: "The salesperson sees you in the new outfit and gives you a nice compliment: 'Die Hose steht Ihnen gut!' How do you ask what it costs and say you will take it?",
+    hint: "Danke. Was kostet sie? — Ich nehme diese.",
+    options: [
+      { text: "Danke. Was kostet sie? Ich nehme diese.", correct: true, explain: "Genau! 'Was kostet sie?' asks the price (referring to die Hose with 'sie'), and 'Ich nehme diese' confirms the purchase!" },
+      { text: "Ich suche die Männerabteilung.", correct: false, explain: "That asks for the men's department." },
+      { text: "Es tut mir leid, ich kann nicht kommen.", correct: false, explain: "That declines a party invitation." }
+    ]
+  },
+  {
+    scenario: "In Slide 36, how do you reply to: 'Gefällt Ihnen dieser Pullover?' (der Pullover, masculine)",
+    hint: "Ja, der / er gefällt mir.",
+    options: [
+      { text: "Ja, der gefällt mir. / Ja, er gefällt mir.", correct: true, explain: "Fantastisch! Since 'Pullover' is masculine, we use 'der' or 'er' ('Ja, der/er gefällt mir')!" },
+      { text: "Ja, die gefällt mir.", correct: false, explain: "'Die' is for feminine or plural words like die Hose / die Schuhe." },
+      { text: "Ja, das gefällt mir.", correct: false, explain: "'Das' is for neuter words like das Hemd." }
+    ]
+  }
+];
+
+
 
 
 
