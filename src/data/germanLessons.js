@@ -11278,6 +11278,391 @@ export const LESSON_47_SCENARIOS = [
   }
 ];
 
+export const LESSON_48_ITEMS = [
+  {
+    id: "wetter-core-question",
+    german: "Wie ist das Wetter?",
+    english: "How is the weather?",
+    pronunciation: "vee ist dahs VET-ter",
+    audioText: "Wie ist das Wetter? Wie ist das Wetter heute?",
+    category: "weather-questions",
+    badge: "Slide 1 & 12: Core Question",
+    icon: "🌦️",
+    kenyanAnalogy: "Like asking someone in Nairobi: 'Hali ya hewa ikoje leo?' (How's the weather today?). It opens every German conversation!",
+    memoryTrick: "Wie (How) + ist (is) + das Wetter (the weather)?"
+  },
+  {
+    id: "wetter-nomen-wetter",
+    german: "das Wetter (die Wetter)",
+    english: "The weather",
+    pronunciation: "dahs VET-ter (dee VET-ter)",
+    audioText: "das Wetter, die Wetter. Das Wetter ist heute sehr schön.",
+    category: "weather-nouns",
+    badge: "Slide 2: Weather Noun",
+    icon: "🌤️",
+    kenyanAnalogy: "Neutral noun ('das')! Whether it's blazing hot or pouring rain, weather in German takes 'das Wetter'.",
+    memoryTrick: "das Wetter = neuter (das). Rhymes with English 'better weather'!"
+  },
+  {
+    id: "wetter-nomen-sonne",
+    german: "die Sonne (die Sonnen)",
+    english: "The sun (the suns)",
+    pronunciation: "dee ZON-neh (dee ZON-nen)",
+    audioText: "die Sonne, die Sonnen. Die Sonne scheint hell am Himmel.",
+    category: "weather-nouns",
+    badge: "Slide 3: Sun",
+    icon: "☀️",
+    kenyanAnalogy: "Like the warm midday sunshine in Mombasa. In German, the Sun is feminine: 'die Sonne'!",
+    memoryTrick: "die Sonne is feminine (die). S sounds like Z in English ('Zon-neh')!"
+  },
+  {
+    id: "wetter-nomen-regen",
+    german: "der Regen (die Regen)",
+    english: "The rain",
+    pronunciation: "dair REH-gen (dee REH-gen)",
+    audioText: "der Regen, die Regen. Der Regen fällt vom Himmel.",
+    category: "weather-nouns",
+    badge: "Slide 4: Rain",
+    icon: "🌧️",
+    kenyanAnalogy: "Like heavy April showers in Kisumu! Rain is masculine: 'der Regen'.",
+    memoryTrick: "der Regen (masculine). Notice: 'Regen' is the noun, 'regnen' is the verb ('es regnet')!"
+  },
+  {
+    id: "wetter-nomen-schnee",
+    german: "der Schnee",
+    english: "The snow",
+    pronunciation: "dair SHNAY",
+    audioText: "der Schnee. Im Winter liegt viel Schnee auf den Bergen.",
+    category: "weather-nouns",
+    badge: "Slide 5: Snow",
+    icon: "❄️",
+    kenyanAnalogy: "Like the snowy white peak atop Mount Kenya! Snow is masculine in German: 'der Schnee'.",
+    memoryTrick: "der Schnee = masculine. 'Sch' sounds like 'sh' ('Shnay')!"
+  },
+  {
+    id: "wetter-nomen-gewitter",
+    german: "das Gewitter (die Gewitter)",
+    english: "The thunderstorm",
+    pronunciation: "dahs geh-VIT-ter (dee geh-VIT-ter)",
+    audioText: "das Gewitter, die Gewitter. Es gibt ein starkes Gewitter mit Blitz und Donner.",
+    category: "weather-nouns",
+    badge: "Slide 6: Thunderstorm",
+    icon: "⛈️",
+    kenyanAnalogy: "Like an intense tropical storm with flashes in the dark sky! Neuter noun: 'das Gewitter'.",
+    memoryTrick: "das Gewitter (neuter). Contains 'Wetter' inside it with a 'Ge-' prefix!"
+  },
+  {
+    id: "wetter-nomen-regenbogen",
+    german: "der Regenbogen (die Regenbogen)",
+    english: "The rainbow",
+    pronunciation: "dair REH-gen-boh-gen (dee REH-gen-boh-gen)",
+    audioText: "der Regenbogen, die Regenbogen. Nach dem Regen sehen wir einen bunten Regenbogen.",
+    category: "weather-nouns",
+    badge: "Slide 7: Rainbow",
+    icon: "🌈",
+    kenyanAnalogy: "Compound word: 'Regen' (rain) + 'Bogen' (arch/bow) = Rain-bow! Takes masculine 'der Regenbogen'.",
+    memoryTrick: "der Regen + der Bogen = der Regenbogen!"
+  },
+  {
+    id: "wetter-nomen-wolke",
+    german: "die Wolke (die Wolken)",
+    english: "The cloud (clouds)",
+    pronunciation: "dee VOL-keh (dee VOL-ken)",
+    audioText: "die Wolke, die Wolken. Am Himmel sind viele weiße Wolken.",
+    category: "weather-nouns",
+    badge: "Slide 8: Cloud",
+    icon: "☁️",
+    kenyanAnalogy: "Feminine noun ending in -e: 'die Wolke'. Fluffy clouds floating across the Rift Valley.",
+    memoryTrick: "die Wolke (singular) ➔ die Wolken (plural). W sounds like V ('Volke')!"
+  },
+  {
+    id: "wetter-nomen-blitz-sturm-wind",
+    german: "der Blitz / der Sturm / der Wind",
+    english: "The lightning / the storm / the wind",
+    pronunciation: "dair BLITS / dair SHTOORM / dair VINT",
+    audioText: "der Blitz, die Blitze. Der Sturm, die Stürme. Der Wind, die Winde.",
+    category: "weather-nouns",
+    badge: "Slides 9, 10, 11: Storm Trio",
+    icon: "⚡",
+    kenyanAnalogy: "The 3 violent forces of nature are all masculine: der Blitz (flash), der Sturm (violent storm), der Wind (breeze/gust)!",
+    memoryTrick: "All 3 are masculine: der Blitz, der Sturm, der Wind!"
+  },
+  {
+    id: "wetter-phrase-schoen-wunderschoen",
+    german: "Es ist schönes Wetter. / Es ist wunderschönes Wetter.",
+    english: "It is nice weather. / It is beautiful weather.",
+    pronunciation: "es ist SHURN-es VET-ter / es ist VOON-der-shurn-es VET-ter",
+    audioText: "Es ist schönes Wetter. Es ist wunderschönes Wetter heute!",
+    category: "weather-phrases",
+    badge: "Slide 13: Beautiful Weather",
+    icon: "🌞",
+    kenyanAnalogy: "A perfect 24°C weekend morning in Naivasha! 'wunderschön' is literally 'wonder-beautiful'.",
+    memoryTrick: "wunderschön = wonder (Wunder) + beautiful (schön)!"
+  },
+  {
+    id: "wetter-phrase-schlecht-schrecklich",
+    german: "Es ist schlechtes Wetter. / Es ist schreckliches Wetter.",
+    english: "It is bad weather. / It is horrible weather.",
+    pronunciation: "es ist SHLEKH-tes VET-ter / es ist SHREK-likh-es VET-ter",
+    audioText: "Es ist schlechtes Wetter. Es ist schreckliches Wetter draußen!",
+    category: "weather-phrases",
+    badge: "Slide 14: Bad Weather",
+    icon: "🌧️",
+    kenyanAnalogy: "When flash floods hit the highway and your umbrella turns inside out! 'schrecklich' means dreadful/terrible.",
+    memoryTrick: "schlecht (bad) ➔ schrecklich (horrible/terrible like Shrek in a bad mood)!"
+  },
+  {
+    id: "wetter-phrase-schoen-angenehm",
+    german: "Es ist schön. / Es ist angenehm.",
+    english: "It is nice. / It is pleasant.",
+    pronunciation: "es ist SHURN / es ist AHN-geh-naym",
+    audioText: "Es ist schön. Es ist heute sehr angenehm.",
+    category: "weather-phrases",
+    badge: "Slide 15: Pleasant",
+    icon: "🌴",
+    kenyanAnalogy: "Relaxing on a beach chair with a cool gentle sea breeze. 'angenehm' = cozy, comfortable, pleasant!",
+    memoryTrick: "angenehm = pleasant / agreeable (just like 'Angenehm!' when shaking hands)!"
+  },
+  {
+    id: "wetter-sonnig-scheint",
+    german: "Es ist sonnig. / Die Sonne scheint.",
+    english: "It is sunny. / The sun is shining.",
+    pronunciation: "es ist ZON-nikh / dee ZON-neh SHYNT",
+    audioText: "Es ist sonnig. Die Sonne scheint den ganzen Tag.",
+    category: "weather-phrases",
+    badge: "Slide 16: Sunny & Shining",
+    icon: "☀️",
+    kenyanAnalogy: "Two ways to say it: Adjective formula ('Es ist sonnig') vs. Verb formula ('Die Sonne scheint')!",
+    memoryTrick: "sonnig (adjective) vs. scheinen (verb: to shine)!"
+  },
+  {
+    id: "wetter-temp-warm-heiss",
+    german: "Es ist warm / sehr warm. / Es ist heiß (39°C).",
+    english: "It is warm / very warm. / It is hot (39°C).",
+    pronunciation: "es ist VAHRM / zair VAHRM / es ist HYS",
+    audioText: "Es ist warm. Es ist sehr warm. Heute ist es heiß, 39 Grad!",
+    category: "weather-temp",
+    badge: "Slide 17: Heat Scale",
+    icon: "🌡️",
+    kenyanAnalogy: "Warm (26°C) vs. Heiß (39°C in Lodwar or Garissa where the asphalt melts!).",
+    memoryTrick: "heiß = hot (sharp ß). Sizzling hot!"
+  },
+  {
+    id: "wetter-feucht-schwuel",
+    german: "Es ist feucht. / Es ist schwül.",
+    english: "It is humid. / It is sticky & muggy.",
+    pronunciation: "es ist FOYKT / es ist SHVOOL",
+    audioText: "Es ist feucht. Es ist sehr schwül vor dem Gewitter.",
+    category: "weather-temp",
+    badge: "Slides 18 & 19: Humidity",
+    icon: "💦",
+    kenyanAnalogy: "Stepping off a bus in Old Town Mombasa before a thunderstorm — 90% humidity sticking your shirt to your back!",
+    memoryTrick: "feucht = damp/humid ('eu' = 'oi'). schwül = sticky/muggy greenhouse air!"
+  },
+  {
+    id: "wetter-kalt-frieren-eisig",
+    german: "Es ist kalt / sehr kalt. / Ich friere. / Es ist eisig.",
+    english: "It is cold / very cold. / I am freezing. / It is freezing cold.",
+    pronunciation: "es ist KAHLT / IKH FREE-reh / es ist EYE-zikh",
+    audioText: "Es ist kalt. Es ist sehr kalt. Ich friere! Es ist eisig draußen.",
+    category: "weather-temp",
+    badge: "Slides 20, 21, 22: Cold Scale",
+    icon: "🥶",
+    kenyanAnalogy: "Limuru in July at 5 AM! 'Ich friere' (I am shivering/freezing), 'eisig' (icy like a freezer block).",
+    memoryTrick: "frieren = to freeze (Ich friere!). eisig = icy (from 'das Eis' = ice)!"
+  },
+  {
+    id: "wetter-temperatur-grad",
+    german: "die Temperatur / Es ist 10 Grad.",
+    english: "The temperature / It is 10 degrees.",
+    pronunciation: "dee tem-peh-rah-TOOR / es ist TSEHN GRAHT",
+    audioText: "die Temperatur. Wie hoch ist die Temperatur? Es ist 10 Grad.",
+    category: "weather-temp",
+    badge: "Slides 23, 24, 25: Degrees",
+    icon: "📊",
+    kenyanAnalogy: "Reporting the weather stats: 'Grad' means degrees Celsius. In Germany, 10 Grad is sweater weather!",
+    memoryTrick: "Grad never changes in plural: 'Es ist 1 Grad', 'Es ist 10 Grad', 'Es ist 25 Grad'!"
+  },
+  {
+    id: "wetter-bewoelkt-bedeckt",
+    german: "Es ist leicht bewölkt. / Es ist bewölkt / bedeckt.",
+    english: "It is slightly cloudy. / It is cloudy / overcast.",
+    pronunciation: "es ist LYKHT beh-VURLKT / es ist beh-VURLKT / beh-DEKT",
+    audioText: "Es ist leicht bewölkt. Es ist bewölkt. Der Himmel ist bedeckt.",
+    category: "weather-sky",
+    badge: "Slide 26: Clouds & Overcast",
+    icon: "⛅",
+    kenyanAnalogy: "'leicht bewölkt' = sunny with a few scattered clouds. 'bedeckt' = thick blanket of clouds completely covering the sky!",
+    memoryTrick: "bedeckt comes from 'decken' (to cover with a blanket/roof)!"
+  },
+  {
+    id: "wetter-windig-stuermisch",
+    german: "Es ist windig. / Es ist stürmisch.",
+    english: "It is windy. / It is stormy.",
+    pronunciation: "es ist VIN-dikh / es ist SHTOOR-mish",
+    audioText: "Es ist windig. Es ist stürmisch heute!",
+    category: "weather-sky",
+    badge: "Slide 27: Wind & Storm",
+    icon: "💨",
+    kenyanAnalogy: "'windig' = kites flying in the air. 'stürmisch' = gale winds knocking tree branches down!",
+    memoryTrick: "Wind ➔ windig (-ig adjective ending). Sturm ➔ stürmisch (-isch with Umlaut ü)!"
+  },
+  {
+    id: "wetter-regnerisch-regnet",
+    german: "Es ist regnerisch. / Es regnet.",
+    english: "It is rainy. / It is raining.",
+    pronunciation: "es ist REG-neh-rish / es REG-net",
+    audioText: "Es ist regnerisch. Nimm einen Regenschirm mit, es regnet!",
+    category: "weather-sky",
+    badge: "Slide 28: Rainy & Raining",
+    icon: "☔",
+    kenyanAnalogy: "'Es ist regnerisch' (The day is rainy in general) vs. 'Es regnet' (Look out the window right now, water is dropping!).",
+    memoryTrick: "regnerisch = adjective (rainy). regnet = verb from 'regnen' (it rains)!"
+  },
+  {
+    id: "wetter-blitzt-donnert-gewitter",
+    german: "Es blitzt und donnert. / der Donner / Es gibt ein Gewitter.",
+    english: "It's lightning and thundering. / thunder / There is a thunderstorm.",
+    pronunciation: "es BLITST oont DON-nert / dair DON-ner / es GIBT ayn geh-VIT-ter",
+    audioText: "Es blitzt und donnert. Hörst du den Donner? Es gibt ein Gewitter.",
+    category: "weather-sky",
+    badge: "Slides 29 & 30: Lightning & Thunder",
+    icon: "🌩️",
+    kenyanAnalogy: "Flash first ('es blitzt'), loud boom second ('es donnert')! 'Es gibt ein Gewitter' = There's a thunderstorm brewing.",
+    memoryTrick: "blitzen = to flash. donnern = to rumble/thunder. der Donner = the thunder!"
+  },
+  {
+    id: "wetter-neblig-schneit",
+    german: "Es ist neblig. / Es gibt Schnee / Es schneit.",
+    english: "It is foggy. / There is snow / It is snowing.",
+    pronunciation: "es ist NAY-blikh / es GIBT SHNAY / es SHNYT",
+    audioText: "Es ist neblig, man sieht fast nichts. Es gibt Schnee und es schneit!",
+    category: "weather-sky",
+    badge: "Slide 31: Fog & Snow",
+    icon: "🌫️",
+    kenyanAnalogy: "Driving through misty fog in the tea hills of Kericho ('es ist neblig')! 'Es schneit' = white snowflakes falling.",
+    memoryTrick: "der Nebel ➔ neblig. der Schnee ➔ es schneit (from 'schneien')!"
+  },
+  {
+    id: "wetter-vergleich-gestern",
+    german: "Heute ist es nicht mehr so schön wie gestern!",
+    english: "Today it is not as nice as yesterday!",
+    pronunciation: "HOY-teh ist es nikht mair zoh shurn vee GES-tern",
+    audioText: "Heute ist es nicht mehr so schön wie gestern!",
+    category: "weather-chat",
+    badge: "Slide 32: Weather Comparison",
+    icon: "📅",
+    kenyanAnalogy: "Classic German small talk when Sunday was sunny but Monday turned damp and cold: 'Nicht mehr so schön wie gestern!'",
+    memoryTrick: "nicht mehr (no longer) + so... wie... (as... as...) + gestern (yesterday)!"
+  },
+  {
+    id: "wetter-ziemlich-grau-windig",
+    german: "Es ist ziemlich grau heute! / Es ist ziemlich windig heute!",
+    english: "It's pretty gray today! / It's pretty windy today!",
+    pronunciation: "es ist TSEEM-likh GROW HOY-teh / es ist TSEEM-likh VIN-dikh HOY-teh",
+    audioText: "Es ist ziemlich grau heute! Es ist ziemlich windig heute!",
+    category: "weather-chat",
+    badge: "Slides 33 & 34: Pretty Gray / Windy",
+    icon: "🌫️",
+    kenyanAnalogy: "'ziemlich' means 'quite / rather / pretty'. 'grau' is the gray overcast blanket across Berlin in autumn!",
+    memoryTrick: "ziemlich = pretty/quite. grau = gray (cloudy without sun)!"
+  },
+  {
+    id: "wetter-traumhaft-superwetter",
+    german: "Heute ist das Wetter traumhaft! / Ein Superwetter haben wir heute!",
+    english: "Today the weather is fantastic/dreamlike! / We have fantastic weather today!",
+    pronunciation: "HOY-teh ist dahs VET-ter TROW-m-hahft / ayn ZOO-per-vet-ter HAH-ben veer HOY-teh",
+    audioText: "der Traum. traumhaft. Heute ist das Wetter traumhaft! Ein Superwetter haben wir heute!",
+    category: "weather-chat",
+    badge: "Slides 35-38: Fantastic Weather",
+    icon: "🏖️",
+    kenyanAnalogy: "When the skies are blue and conditions are 100% paradise! 'der Traum' (dream) ➔ 'traumhaft' (dreamlike).",
+    memoryTrick: "der Traum (dream) + -haft = traumhaft (dreamlike / marvelous)!"
+  },
+  {
+    id: "wetter-himmel-klar",
+    german: "Der Himmel ist klar!",
+    english: "The sky is clear!",
+    pronunciation: "dair HIM-mel ist KLAHR",
+    audioText: "Der Himmel ist klar! Keine einzige Wolke am Himmel.",
+    category: "weather-chat",
+    badge: "Slide 39: Clear Sky",
+    icon: "🌌",
+    kenyanAnalogy: "Crystal-clear sky without a single cloud, revealing mountains or star-filled night skies!",
+    memoryTrick: "der Himmel (masculine) = sky/heaven. klar = clear!"
+  },
+  {
+    id: "wetter-nomen-adjektiv-transformer",
+    german: "Nomen ➔ Adjektiv: Sonne ➔ sonnig | Regen ➔ regnerisch | Wolke ➔ bewölkt | Wind ➔ windig | Sturm ➔ stürmisch | Nebel ➔ neblig",
+    english: "Noun ➔ Adjective Blueprint: Sun ➔ sunny, Rain ➔ rainy, Cloud ➔ cloudy, Wind ➔ windy, Storm ➔ stormy, Fog ➔ foggy",
+    pronunciation: "dee ZON-neh ➔ ZON-nikh, dair REH-gen ➔ REG-neh-rish, dee VOL-keh ➔ beh-VURLKT, dair VINT ➔ VIN-dikh, dair SHTOORM ➔ SHTOOR-mish, dair NAY-bel ➔ NAY-blikh",
+    audioText: "die Sonne, sonnig. Der Regen, regnerisch. Die Wolke, bewölkt. Der Wind, windig. Der Sturm, stürmisch. Der Nebel, neblig.",
+    category: "weather-transformer",
+    badge: "Slide 40: The 6 Noun-to-Adjective Pairs",
+    icon: "⚙️",
+    kenyanAnalogy: "Like adding '-y' in English (sun ➔ sunny, wind ➔ windy)! German uses endings like -ig, -isch, or ge-...-t prefixes like bewölkt.",
+    memoryTrick: "Slide 40 Master Chart: die Sonne ➔ sonnig | der Regen ➔ regnerisch | die Wolke ➔ bewölkt | der Wind ➔ windig | der Sturm ➔ stürmisch | der Nebel ➔ neblig!"
+  }
+];
+
+export const LESSON_48_SCENARIOS = [
+  {
+    scenario: "In Slide 16 & 28, what is the difference between the adjective and verb ways of describing weather?",
+    hint: "Adjective: 'Es ist sonnig / regnerisch' vs. Verb: 'Die Sonne scheint / Es regnet'.",
+    options: [
+      { text: "Adjectives describe state ('Es ist sonnig / regnerisch') while verbs describe active action ('Die Sonne scheint / Es regnet').", correct: true, explain: "Wunderbar! German lets you describe weather with adjectives (Es ist sonnig/regnerisch) or active verbs (Die Sonne scheint / Es regnet)!" },
+      { text: "There is no verb form for weather in German.", correct: false, explain: "German has rich weather verbs like regnen, schneien, scheinen, blitzen, donnern!" },
+      { text: "'Es ist sonnig' means it is snowing.", correct: false, explain: "'sonnig' means sunny!" }
+    ]
+  },
+  {
+    scenario: "In Slide 17 & 20, what is the difference between 'warm', 'heiß', 'kalt', and 'eisig'?",
+    hint: "warm (pleasant heat) ➔ heiß (extreme 39°C) | kalt (chilly) ➔ eisig (freezing icy).",
+    options: [
+      { text: "warm = warm | heiß = hot (39°C) | kalt = cold | eisig = freezing icy (sub-zero).", correct: true, explain: "Perfekt! German has precise gradations: warm ➔ heiß (burning hot), and kalt ➔ eisig (freezing cold like ice)!" },
+      { text: "warm and kalt mean the exact same temperature.", correct: false, explain: "warm is warm and kalt is cold!" },
+      { text: "eisig means it is humid.", correct: false, explain: "eisig comes from 'Eis' (ice) meaning freezing cold." }
+    ]
+  },
+  {
+    scenario: "In Slide 18 & 19, how do you express humid and sticky/muggy greenhouse weather in German?",
+    hint: "feucht (humid/damp) & schwül (sticky/muggy air before a storm).",
+    options: [
+      { text: "Es ist feucht (humid) und es ist schwül (sticky/muggy).", correct: true, explain: "Ausgezeichnet! 'feucht' is humid/damp, while 'schwül' is that heavy, sticky, suffocating mugginess before a storm!" },
+      { text: "Es ist sonnig und es ist klar.", correct: false, explain: "'sonnig und klar' means sunny and clear." },
+      { text: "Es ist windig und stürmisch.", correct: false, explain: "That means windy and stormy." }
+    ]
+  },
+  {
+    scenario: "In Slide 29 & 30, you see bright flashes followed by roaring thunder. How do you say this in German?",
+    hint: "Es blitzt und donnert. Es gibt ein Gewitter.",
+    options: [
+      { text: "Es blitzt und donnert. Es gibt ein Gewitter. (It's lightning and thundering. There is a thunderstorm.)", correct: true, explain: "Hervorragend! 'blitzen' is lightning flashing, 'donnern' is thunder rumbling, and 'das Gewitter' is the thunderstorm!" },
+      { text: "Die Sonne scheint und der Himmel ist klar.", correct: false, explain: "That means sunny with clear skies." },
+      { text: "Es schneit und es ist neblig.", correct: false, explain: "That means snowing and foggy." }
+    ]
+  },
+  {
+    scenario: "In Slide 35–37, what does 'Heute ist das Wetter traumhaft!' mean?",
+    hint: "der Traum = dream ➔ traumhaft = dreamlike / fantastic.",
+    options: [
+      { text: "Today the weather is dreamlike / fantastic!", correct: true, explain: "Superb! 'der Traum' (dream) + '-haft' (like) = 'traumhaft' (dreamlike, heavenly, fantastic weather)!" },
+      { text: "Today the weather is dreadful and horrible.", correct: false, explain: "That would be 'schrecklich' or 'schlecht'." },
+      { text: "Today it is foggy and dark.", correct: false, explain: "That would be 'neblig und dunkel'." }
+    ]
+  },
+  {
+    scenario: "According to the Slide 40 Blueprint Table, what are the matching adjectives for 'die Wolke', 'der Wind', and 'der Nebel'?",
+    hint: "die Wolke ➔ bewölkt | der Wind ➔ windig | der Nebel ➔ neblig.",
+    options: [
+      { text: "die Wolke ➔ bewölkt | der Wind ➔ windig | der Nebel ➔ neblig", correct: true, explain: "Fantastisch! Slide 40 sets the standard: die Wolke ➔ bewölkt, der Wind ➔ windig, der Nebel ➔ neblig!" },
+      { text: "die Wolke ➔ wolklich | der Wind ➔ gewindet | der Nebel ➔ nebeln", correct: false, explain: "The standard German adjectives from Slide 40 are bewölkt, windig, and neblig." },
+      { text: "die Wolke ➔ sonnig | der Wind ➔ heiß | der Nebel ➔ kalt", correct: false, explain: "Those are mismatched meanings." }
+    ]
+  }
+];
+
+
 
 
 

@@ -59,6 +59,7 @@ export default function Header({
     if (currentLesson === 45) msg = "das Perfekt Teil 3: Die vier Baupläne für das Partizip zwei: regelmäßig, unregelmäßig, trennbar und untrennbar! Ich habe heute alles verstanden!";
     if (currentLesson === 46) msg = "Was hast du im Urlaub gemacht? Im Urlaub war ich in Spanien, habe Sehenswürdigkeiten besichtigt und mich erholt!";
     if (currentLesson === 47) msg = "Im Supermarkt: Ich gehe zum Supermarkt, kaufe ein Kilo Äpfel, eine Flasche Öl und bezahle an der Kasse. Das macht fünfundzwanzig Euro zehn bitte!";
+    if (currentLesson === 48) msg = "Wie ist das Wetter? Heute ist das Wetter traumhaft! Die Sonne scheint, der Himmel ist klar und es ist fünfundzwanzig Grad warm!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -441,6 +442,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson48NavItems = [
+    { id: 'cards', label: '📖 Lesson 48 Cards', sub: 'Weather Nouns & Adjectives' },
+    { id: 'studio48', label: '🌦️ Wetter Studio', sub: 'Station, Thermometer & Forecast' },
+    { id: 'game48', label: '🎮 Wetter Quiz', sub: 'Forecast & Weather Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -488,6 +497,7 @@ export default function Header({
   if (currentLesson === 45) navItems = lesson45NavItems;
   if (currentLesson === 46) navItems = lesson46NavItems;
   if (currentLesson === 47) navItems = lesson47NavItems;
+  if (currentLesson === 48) navItems = lesson48NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -537,6 +547,7 @@ export default function Header({
     { num: 45, label: "🏭 45: Partizip II Blueprints", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 46, label: "🏖️ 46: Urlaub & Ferien", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 47, label: "🛒 47: Im Supermarkt", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
+    { num: 48, label: "🌦️ 48: Wie ist das Wetter?", activeClass: "bg-sky-700 ring-sky-300", hoverBorder: "hover:bg-sky-100 border-sky-300" },
   ];
 
   return (
