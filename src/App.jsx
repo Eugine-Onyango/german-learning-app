@@ -130,6 +130,8 @@ import Lesson61PostStudio from './components/Lesson61PostStudio';
 import Lesson61Game from './components/Lesson61Game';
 import Lesson62BankStudio from './components/Lesson62BankStudio';
 import Lesson62Game from './components/Lesson62Game';
+import Lesson63WohnungStudio from './components/Lesson63WohnungStudio';
+import Lesson63Game from './components/Lesson63Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -192,11 +194,12 @@ import {
   LESSON_59_ITEMS,
   LESSON_60_ITEMS,
   LESSON_61_ITEMS,
-  LESSON_62_ITEMS
+  LESSON_62_ITEMS,
+  LESSON_63_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(62); // Default to Lesson 62 as requested, easy switch to 1-61
+  const [currentLesson, setCurrentLesson] = useState(63); // Default to Lesson 63 as requested, easy switch to 1-62
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -262,6 +265,7 @@ export default function App() {
   if (currentLesson === 60) activeItems = LESSON_60_ITEMS;
   if (currentLesson === 61) activeItems = LESSON_61_ITEMS;
   if (currentLesson === 62) activeItems = LESSON_62_ITEMS;
+  if (currentLesson === 63) activeItems = LESSON_63_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -325,7 +329,8 @@ export default function App() {
     if (currentLesson === 59) return "Lesson 59: Hotelreservierung (Hotel Booking, EZ / DZ, Meal Plans & Formal Reservation Letters)";
     if (currentLesson === 60) return "Lesson 60: Touristeninformation, Reisebüro & Formulare ausfüllen (Tourist Info, Travel Agencies & Filling Official Forms)";
     if (currentLesson === 61) return "Lesson 61: Die Post (The Post Office - Letters, Stamps, Parcels, Registered Mail & Envelope Addressing)";
-    return "Lesson 62: Die Bank (The Bank - Accounts, Money, ATMs, Cards, SEPA Transfers & Balance)";
+    if (currentLesson === 62) return "Lesson 62: Die Bank (The Bank - Accounts, Money, ATMs, Cards, SEPA Transfers & Balance)";
+    return "Lesson 63: Wohnungssuche (Apartment Hunting, Classified Ads, Decoded Acronyms & Viewing Calls)";
   };
 
   const getLessonDesc = () => {
@@ -512,7 +517,10 @@ export default function App() {
     if (currentLesson === 61) {
       return "Master navigating the German postal system (Die Post) and shipping mail with Deutsche Post and DHL! Learn essential locations & staff (das Postamt, die Poststelle, der Schalter, der Briefträger, der Paketbote), letter & parcel essentials (die Briefmarke aufkleben, der Briefumschlag / das Kuvert, das Paket vs. das Päckchen packen, der Briefkasten, einen Brief einwerfen), the strict German envelope layout rule (Absender oben links, Empfänger unten rechts, Marke oben rechts), registered certified mail (per Einschreiben) with tracking numbers (die Sendungsnummer), and polite counter dialogues (Ich hätte gern..., Wieviel kostet dieser Brief / dieses Paket nach London?, Wie lange braucht es?)!";
     }
-    return "Master German banking, money, accounts, and ATMs (Die Bank)! Discover financial institutions (die Bank, die Sparkasse, das Geldinstitut), movement vs. location (zur Bank gehen vs. in der Bank sein), cash & denominations (das Bargeld, der Geldschein, die Münze, das Kleingeld), essential verbs (einzahlen, abheben, überweisen, sparen, anlegen, wechseln), account types (das Girokonto, das Sparkonto, das Tagesgeldkonto), opening & closing accounts (ein Konto eröffnen / schließen), account credentials (der Kontoinhaber, die IBAN, das BIC, die BLZ), checking balances & printing statements (der Kontostand / der Saldo, der Kontoauszug, Einnahmen vs. Ausgaben, Soll vs. Haben), ATM operation (der Geldautomat / Bankomat, die Girokarte/EC-Karte, die PIN / Geheimzahl eingeben), and emergency card cancellation (die Karte sperren lassen via 116 116)!";
+    if (currentLesson === 62) {
+      return "Master German banking, money, accounts, and ATMs (Die Bank)! Discover financial institutions (die Bank, die Sparkasse, das Geldinstitut), movement vs. location (zur Bank gehen vs. in der Bank sein), cash & denominations (das Bargeld, der Geldschein, die Münze, das Kleingeld), essential verbs (einzahlen, abheben, überweisen, sparen, anlegen, wechseln), account types (das Girokonto, das Sparkonto, das Tagesgeldkonto), opening & closing accounts (ein Konto eröffnen / schließen), account credentials (der Kontoinhaber, die IBAN, das BIC, die BLZ), checking balances & printing statements (der Kontostand / der Saldo, der Kontoauszug, Einnahmen vs. Ausgaben, Soll vs. Haben), ATM operation (der Geldautomat / Bankomat, die Girokarte/EC-Karte, die PIN / Geheimzahl eingeben), and emergency card cancellation (die Karte sperren lassen via 116 116)!";
+    }
+    return "Master apartment hunting and classified ads in German (Wohnungssuche)! Learn housing types (die Wohnung, die WG / Wohngemeinschaft, das Zimmer, das Apartment, das Ferienhaus), moving & roles (der Umzug / umziehen mit 'sein', der Vermieter / vermieten vs. der Mieter / mieten, der Makler), rental math & expenses (die Miete, Kaltmiete + Nebenkosten [NK] = Warmmiete, Kaution [KT: 2MM], Strom, Heizung, Wasser), decypher classified ad acronyms (EG, OG, DG, TG/UG, EBK, BLK, WC/Gäste-WC, m², AB, NB, ZKB, frei ab, ca.), and master confident phone calls for viewing appointments (Ist die Wohnung noch frei?, einen Besichtigungstermin vereinbaren)!";
   };
 
   return (
@@ -1107,6 +1115,15 @@ export default function App() {
 
         {currentLesson === 62 && activeTab === 'game62' && (
           <Lesson62Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 63 Specific Modules */}
+        {currentLesson === 63 && activeTab === 'studio63' && (
+          <Lesson63WohnungStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 63 && activeTab === 'game63' && (
+          <Lesson63Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

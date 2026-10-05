@@ -15785,6 +15785,304 @@ export const LESSON_62_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 63: Wohnungssuche (Apartment Hunting & Ads)
+// ==========================================
+
+export const LESSON_63_ITEMS = [
+  {
+    id: "wohnungssuche-suchen",
+    german: "die Wohnungssuche / eine Wohnung suchen",
+    english: "searching for an apartment / apartment hunting",
+    pronunciation: "dee VOH-noongs-zoo-khuh / EYE-nuh VOH-noong ZOO-khen",
+    audioText: "die Wohnungssuche. Ich suche eine Wohnung in Berlin.",
+    category: "housing-core",
+    badge: "Apartment Search",
+    icon: "🔍",
+    kenyanAnalogy: "Like hunting for a vacant bedsitter, 1-bedroom, or family apartment in Kilimani, Westlands, or Roysambu by checking online listings, boards, and agents!",
+    memoryTrick: "Wohnung (apartment/flat) + Suche (search) = Wohnungssuche. Verb: suchen (to search).",
+    imageType: "house-search"
+  },
+  {
+    id: "wohnung-apartment-wg-zimmer",
+    german: "die Wohnung (Whg), das Apartment, die Wohngemeinschaft (WG) & das Zimmer (Zi)",
+    english: "apartment/flat (Whg), small studio, shared flat (WG) & room (Zi)",
+    pronunciation: "dee VOH-noong, dahs ah-PAHRT-ment, dee VOHN-guh-myne-shahft (Vay-Gay), dahs TSIM-mer",
+    audioText: "die Wohnung, das Apartment, die Wohngemeinschaft oder WG, das Zimmer",
+    category: "housing-core",
+    badge: "Housing Types & Acronyms",
+    icon: "🏢",
+    kenyanAnalogy: "A 'WG' (Wohngemeinschaft) is the ultimate German student/young professional culture: roommates sharing a 3-bedroom flat, splitting rent, kitchen, and bathroom!",
+    memoryTrick: "Wohnen (to live) + Gemeinschaft (community) = WG (Wohngemeinschaft). Whg = Wohnung. Zi = Zimmer.",
+    imageType: "wg-flatshare"
+  },
+  {
+    id: "umzug-umziehen",
+    german: "der Umzug (die Umzüge) & umziehen (ist umgezogen)",
+    english: "the relocation / move & to move to a new home",
+    pronunciation: "dair OOM-tsoog (die OOM-tsoo-guh) & OOM-tsee-en (ist oom-guh-TSO-gen)",
+    audioText: "der Umzug. Nächste Woche ziehe ich um. Er ist gestern umgezogen.",
+    category: "moving",
+    badge: "Moving & Relocating",
+    icon: "🚚",
+    kenyanAnalogy: "Packing up your mattress, sofa, and kitchen boxes into a moving pickup truck or lorry and relocating across town to a new neighborhood.",
+    memoryTrick: "Separable verb: 'umziehen' (um + ziehen). Because it's a change of location, Perfekt uses 'sein': 'Ich bin umgezogen'!",
+    imageType: "moving-truck"
+  },
+  {
+    id: "vermieter-vs-mieter",
+    german: "der Vermieter vs. der Mieter",
+    english: "the landlord (property owner) vs. the tenant (renter)",
+    pronunciation: "dair fair-MEE-ter vs. dair MEE-ter",
+    audioText: "der Vermieter und der Mieter. Das Haus gehört meinem Vermieter. Der Mieter zahlt die Miete.",
+    category: "housing-roles",
+    badge: "Landlord vs. Tenant",
+    icon: "🤝",
+    kenyanAnalogy: "Vermieter = The landlord / landlady who owns the building. Mieter = The tenant who lives there and pays monthly rent.",
+    memoryTrick: "Ver-mieter = Gives out for rent (landlord). Mieter = Rents in (tenant).",
+    imageType: "landlord-tenant"
+  },
+  {
+    id: "vermieten-vs-mieten",
+    german: "vermieten (hat vermietet) vs. mieten (hat gemietet)",
+    english: "to rent out (landlord action) vs. to rent / lease (tenant action)",
+    pronunciation: "fair-MEE-ten vs. MEE-ten",
+    audioText: "vermieten und mieten. Ich werde mein Haus vermieten. Wir haben eine Wohnung gemietet.",
+    category: "housing-actions",
+    badge: "Rent Out vs. Rent In",
+    icon: "🔑",
+    kenyanAnalogy: "Vermieter 'vermietet' (rents out to others). Mieter 'mietet' (rents the property from the owner).",
+    memoryTrick: "Add prefix 'ver-' for giving away / renting out (vermieten). Basic verb 'mieten' is renting for yourself.",
+    imageType: "keys-handover"
+  },
+  {
+    id: "der-makler",
+    german: "der Makler / die Maklerin",
+    english: "the real-estate agent / property broker",
+    pronunciation: "dair MAHK-ler / dee MAHK-luh-rin",
+    audioText: "der Makler. Ein Makler hat mir bei der Wohnungssuche in der Stadt geholfen.",
+    category: "housing-roles",
+    badge: "Real-Estate Agent",
+    icon: "🧑‍💼",
+    kenyanAnalogy: "Like the local housing agent / broker in Nairobi who shows you around different gated communities or apartment buildings for a fee.",
+    memoryTrick: "Makler = Estate agent / broker.",
+    imageType: "estate-agent"
+  },
+  {
+    id: "die-miete-kalt-warm",
+    german: "die Miete: Kaltmiete + Nebenkosten (NK) = Warmmiete",
+    english: "rent: base rent + additional utility costs (NK) = warm rent (total)",
+    pronunciation: "dee MEE-tuh: KAHLT-mee-tuh + NAY-ben-kos-ten = VAHRM-mee-tuh",
+    audioText: "die Miete. Die Kaltmiete plus Nebenkosten ist gleich die Warmmiete.",
+    category: "costs",
+    badge: "Rent Math (Kalt vs. Warm)",
+    icon: "💶",
+    kenyanAnalogy: "Kaltmiete = Just the empty house rent. Nebenkosten (NK) = Service charge (heating, water, trash collection). Warmmiete = The total monthly amount you actually transfer!",
+    memoryTrick: "Kalt (cold, without heating) + Nebenkosten (heating/water) = Warm (total warm rent!).",
+    imageType: "rent-equation"
+  },
+  {
+    id: "die-kaution-2mm",
+    german: "die Kaution (KT: 2MM / 3MM)",
+    english: "security deposit (KT: 2 months' rent deposit / 3 months' deposit)",
+    pronunciation: "dee kow-TSEE-ohn (tsvy MO-nahts-mee-ten)",
+    audioText: "die Kaution. Die Kaution beträgt zwei Monatsmieten, abgekürzt 2MM.",
+    category: "costs",
+    badge: "Security Deposit",
+    icon: "🛡️",
+    kenyanAnalogy: "Like the standard 1 or 2 months' refundable deposit you pay upfront when moving into a new rental house.",
+    memoryTrick: "Kaution = Caution / Security bond (KT). 2MM = 2 Monatsmieten (2 Months' Rent).",
+    imageType: "deposit-shield"
+  },
+  {
+    id: "nebenkosten-strom-heizung-wasser",
+    german: "die Nebenkosten (NK): der Strom, die Heizung & das Wasser",
+    english: "utility service charges (NK): electricity, heating & water",
+    pronunciation: "dee NAY-ben-kos-ten: dair SHTROHM, dee HY-tsoong, dahs VAHS-ser",
+    audioText: "die Nebenkosten: Strom, Heizung und Wasser",
+    category: "costs",
+    badge: "Utilities Breakdown",
+    icon: "💡",
+    kenyanAnalogy: "Neben (beside) + Kosten (costs) = Extra utility charges. Includes municipal water, building central heating, garbage disposal, and building caretaker.",
+    memoryTrick: "Strom = Electricity / power. Heizung = Heating. Wasser = Water.",
+    imageType: "utility-icons"
+  },
+  {
+    id: "besichtigen-besichtigungstermin",
+    german: "besichtigen (hat besichtigt) & der Besichtigungstermin",
+    english: "to view / inspect an apartment & the viewing appointment",
+    pronunciation: "buh-ZIKH-tee-gen (haht buh-ZIKH-teekt) & dair buh-ZIKH-tee-goongs-tair-meen",
+    audioText: "die Wohnung besichtigen. Gibt es einen Besichtigungstermin für die Wohnung?",
+    category: "housing-actions",
+    badge: "Apartment Viewing",
+    icon: "👀",
+    kenyanAnalogy: "Going to see the house in person with the landlord or agent to check the rooms, kitchen, and bathroom before signing the lease.",
+    memoryTrick: "Sicht (sight/vision) ➔ besichtigen (to inspect/view). Termin = Appointment ➔ Besichtigungstermin!",
+    imageType: "flat-viewing"
+  },
+  {
+    id: "anzeige-inserat-annonce",
+    german: "die Anzeige / das Inserat / die Annonce / die Wohnungsanzeige",
+    english: "classified ad / rental advertisement / property listing",
+    pronunciation: "dee AHN-tsye-guh / dahs in-zuh-RAHT / dee ah-NON-suh",
+    audioText: "die Anzeige, das Inserat, eine Anzeige aufgeben",
+    category: "classifieds",
+    badge: "Rental Ads",
+    icon: "📰",
+    kenyanAnalogy: "A rental property classified ad in the daily newspaper, on property websites, or pinned to a supermarket bulletin board.",
+    memoryTrick: "Eine Anzeige aufgeben = To place an ad in the newspaper or online.",
+    imageType: "classified-ad"
+  },
+  {
+    id: "ad-abbreviations-floors",
+    german: "EG, DG, OG, TG, UG (Geschosse / Stockwerke)",
+    english: "ground floor (EG), attic floor (DG), upper floor (OG), underground (TG/UG)",
+    pronunciation: "Ay-Gay (Erdgeschoss), Day-Gay (Dachgeschoss), Oh-Gay (Obergeschoss)",
+    audioText: "EG ist Erdgeschoss. DG ist Dachgeschoss. OG ist Obergeschoss. UG ist Untergeschoss.",
+    category: "ad-acronyms",
+    badge: "Building Floor Codes",
+    icon: "🪜",
+    kenyanAnalogy: "Floor abbreviations in German ads: EG (Earth/ground floor), OG (1st/upper floor), DG (Rooftop attic under the roof slopes), UG (Basement).",
+    memoryTrick: "Erde (earth) ➔ EG. Dach (roof) ➔ DG. Oben (above) ➔ OG. Unten (below) ➔ UG.",
+    imageType: "building-floors"
+  },
+  {
+    id: "ad-abbreviations-rooms",
+    german: "EBK, BLK, WC / Gäste-WC, WZ",
+    english: "fitted kitchen (EBK), balcony (BLK), toilet / guest toilet, living room (WZ)",
+    pronunciation: "Ay-Bay-Kah (Einbauküche), Bay-El-Kah (Balkon), Vay-Tsay",
+    audioText: "EBK ist Einbauküche. BLK ist Balkon. WC ist Toilette. WZ ist Wohnzimmer.",
+    category: "ad-acronyms",
+    badge: "Room & Feature Codes",
+    icon: "🛋️",
+    kenyanAnalogy: "EBK (Einbauküche) is crucial in Germany—many German flats come with no kitchen cabinets unless marked 'EBK'! BLK = balcony with fresh air.",
+    memoryTrick: "Einbau (built-in) + Küche (kitchen) = EBK! BLK = Balkon.",
+    imageType: "room-features"
+  },
+  {
+    id: "ad-abbreviations-buildings",
+    german: "AB (Altbau) vs. NB (Neubau) & m² (Quadratmeter)",
+    english: "historic pre-war building (AB) vs. modern new building (NB) & square meters (m²)",
+    pronunciation: "AHLT-bow vs. NOY-bow & kvah-DRAHT-may-ter",
+    audioText: "AB ist Altbau mit hohen Decken. NB ist Neubau. Quadratmeter für die Wohnfläche.",
+    category: "ad-acronyms",
+    badge: "Building Style & Area",
+    icon: "🏛️",
+    kenyanAnalogy: "Altbau (AB) = Classic charming heritage building with high ceilings and hardwood floors. Neubau (NB) = Modern insulated flat with elevator and floor heating. m² = Floor space size.",
+    memoryTrick: "Alt (old) + Bau (build) = Altbau (AB). Neu (new) + Bau = Neubau (NB).",
+    imageType: "altbau-neubau"
+  },
+  {
+    id: "ad-abbreviations-zkb",
+    german: "3ZKB = 3 Zimmer + Küche + Bad",
+    english: "3 rooms + kitchen + bathroom (e.g. 2 bedrooms + 1 living room)",
+    pronunciation: "drey Tset-Kah-Bay: drey TSIM-mer, KOO-khuh, BAHT",
+    audioText: "3ZKB bedeutet 3 Zimmer, Küche und Bad.",
+    category: "ad-acronyms",
+    badge: "ZKB Blueprint Code",
+    icon: "📐",
+    kenyanAnalogy: "In Germany, rooms count living room + bedrooms (kitchen and bathroom are listed separately). A '3ZKB' = 2 bedrooms + 1 living room + kitchen + bath!",
+    memoryTrick: "Z = Zimmer + K = Küche + B = Bad ➔ ZKB!",
+    imageType: "zkb-layout"
+  },
+  {
+    id: "phone-dialogue-interessant",
+    german: "Guten Tag, mein Name ist Schmidt. Ich finde Ihre Wohnung in Köln interessant. Ist die noch frei?",
+    english: "Hello, my name is Schmidt. I find your apartment in Cologne interesting. Is it still available?",
+    pronunciation: "GOO-ten TAHK, myne NAH-muh ist SHMITT. Ikh FIN-duh EE-ruh VOH-noong in KULN in-tuh-reh-SAHNT. Ist dee nokh FRYE?",
+    audioText: "Guten Tag, mein Name ist Schmidt. Ich finde Ihre Wohnung in Köln interessant. Ist die noch frei?",
+    category: "phone-dialogue",
+    badge: "First Phone Inquiry",
+    icon: "📞",
+    kenyanAnalogy: "The gold-standard German opening line when calling a landlord about an apartment listing you saw in the paper or online.",
+    memoryTrick: "'Ist die noch frei?' (Is it still free/available?). 'Ich finde Ihre Wohnung interessant' (I find your flat interesting).",
+    imageType: "phone-flat-call"
+  },
+  {
+    id: "phone-dialogue-besichtigung",
+    german: "Gibt es denn einen Besichtigungstermin für die Wohnung?",
+    english: "Is there a viewing appointment for the apartment?",
+    pronunciation: "GIPT es den EYE-nen buh-ZIKH-tee-goongs-tair-meen fyoor dee VOH-noong?",
+    audioText: "Gibt es denn einen Besichtigungstermin für die Wohnung?",
+    category: "phone-dialogue",
+    badge: "Asking for Viewing Date",
+    icon: "📅",
+    kenyanAnalogy: "Politely asking the landlord what date and time you can come visit the flat in person to inspect it.",
+    memoryTrick: "Gibt es (Is there) + einen Besichtigungstermin (viewing appointment in Akkusativ masculine).",
+    imageType: "calendar-viewing"
+  },
+  {
+    id: "phone-dialogue-gaeste-wc",
+    german: "Noch eine Frage: Hat die Wohnung ein Gäste-WC?",
+    english: "One more question: Does the apartment have a guest toilet?",
+    pronunciation: "NOKH EYE-nuh FRAH-guh: HAHT dee VOH-noong ein GES-tuh-vay-tsay?",
+    audioText: "Noch eine Frage: Hat die Wohnung ein Gäste-WC? Ja, im Erdgeschoss.",
+    category: "phone-dialogue",
+    badge: "Extra Questions",
+    icon: "🚽",
+    kenyanAnalogy: "Asking about practical layout perks like a separate visitor's cloakroom/washroom on the ground floor.",
+    memoryTrick: "Gäste (guests) + WC (water closet / toilet) = Gäste-WC!",
+    imageType: "guest-toilet"
+  }
+];
+
+export const LESSON_63_SCENARIOS = [
+  {
+    scenario: "You see this classified ad in the newspaper (Slide 35): 'Berlin/Mitte, schöne AB-Whg., 3ZKB, BLK, Miete: Euro 770,- + NK, KT: 2MM'. What does '3ZKB, BLK' mean?",
+    hint: "3 Zimmer, Küche, Bad and Balkon.",
+    options: [
+      { text: "3 rooms, kitchen, bathroom, and a balcony (Balkon).", correct: true, explain: "Perfekt! '3ZKB' = 3 Zimmer, Küche, Bad. 'BLK' = Balkon!" },
+      { text: "3 cars, kitchen, and 3 bathrooms.", correct: false, explain: "Z stands for Zimmer (rooms), not cars." },
+      { text: "3 bedrooms with no kitchen or bathroom.", correct: false, explain: "K and B stand for Küche and Bad." }
+    ]
+  },
+  {
+    scenario: "In an apartment ad, you read 'KT: 2MM'. What does this tell you about the security deposit (Slide 18-19)?",
+    hint: "Kaution: 2 Monatsmieten (Security deposit of 2 months' rent).",
+    options: [
+      { text: "The security deposit (Kaution) is equal to 2 months' rent (2 Monatsmieten).", correct: true, explain: "Ausgezeichnet! 'KT' = Kaution (deposit), and '2MM' = 2 Monatsmieten (2 months of basic rent)." },
+      { text: "You must pay 2 million Euros.", correct: false, explain: "2MM means 2 Monatsmieten, not million." },
+      { text: "The deposit is 2 chocolate bars.", correct: false, explain: "Incorrect." }
+    ]
+  },
+  {
+    scenario: "You are calling a landlord about an apartment listing in Cologne (Slides 36-37). How do you ask if the flat is still available?",
+    hint: "Guten Tag, mein Name ist... Ich finde Ihre Wohnung interessant. Ist die noch frei?",
+    options: [
+      { text: "Guten Tag, mein Name ist Schmidt. Ich finde Ihre Wohnung interessant. Ist die noch frei?", correct: true, explain: "Genau! This is the standard polite German phone formula for flat hunting." },
+      { text: "Hallo, ich will Ihr Haus sofort kaufen.", correct: false, explain: "That is an abrupt demand to buy the house." },
+      { text: "Haben Sie ein Flugzeug zu vermieten?", correct: false, explain: "That asks to rent an airplane." }
+    ]
+  },
+  {
+    scenario: "What is the difference between 'Kaltmiete' and 'Warmmiete' in Germany (Slide 20-21)?",
+    hint: "Warmmiete includes Nebenkosten (heating, water, utilities); Kaltmiete is just the base rent.",
+    options: [
+      { text: "Kaltmiete is the basic bare rent; Warmmiete is total rent including Nebenkosten (heating, water, service charges).", correct: true, explain: "Richtig! Kaltmiete + Nebenkosten (NK: Heizung, Strom, Wasser) = Warmmiete!" },
+      { text: "Kaltmiete is for winter; Warmmiete is for summer.", correct: false, explain: "Incorrect meaning." },
+      { text: "They are completely identical.", correct: false, explain: "Incorrect." }
+    ]
+  },
+  {
+    scenario: "What does the abbreviation 'EBK' mean in German real-estate listings (Slide 33)?",
+    hint: "Einbauküche (fitted / modular kitchen).",
+    options: [
+      { text: "Einbauküche (a fitted / built-in modular kitchen).", correct: true, explain: "Wunderbar! 'EBK' stands for 'Einbauküche'. Without an EBK, many German rental apartments come with an empty kitchen room where tenants bring their own cabinets!" },
+      { text: "Elektrisches Bett für Katzen.", correct: false, explain: "Nonsense option." },
+      { text: "Eingang beim Keller.", correct: false, explain: "Incorrect." }
+    ]
+  },
+  {
+    scenario: "You want to know on which floor an apartment is located. If the ad says 'EG', where is it (Slide 33)?",
+    hint: "Erdgeschoss (ground floor).",
+    options: [
+      { text: "Erdgeschoss (ground floor / zero level).", correct: true, explain: "Perfekt! 'EG' = Erdgeschoss (ground floor). 'OG' = Obergeschoss (upper floor), 'DG' = Dachgeschoss (attic/top floor)." },
+      { text: "Dachgeschoss (under the roof).", correct: false, explain: "That is DG." },
+      { text: "Untergeschoss (basement).", correct: false, explain: "That is UG." }
+    ]
+  }
+];
+
 
 
 
