@@ -12262,6 +12262,304 @@ export const LESSON_50_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 51: Gefallen und Missfallen ausdrücken (Expressing Likes & Dislikes)
+// ==========================================
+export const LESSON_51_ITEMS = [
+  {
+    id: "das-gefaellt-mir",
+    german: "Das gefällt mir.",
+    english: "I like it. / That appeals to me.",
+    pronunciation: "dahs ge-FEHLT meer",
+    audioText: "Das gefällt mir.",
+    category: "gefallen-positive",
+    badge: "Liking / Taste",
+    icon: "👍",
+    kenyanAnalogy: "Like seeing a fresh jacket in a boutique and nodding with genuine approval: 'I like this one!' In German, the item does the pleasing to *you* (mir).",
+    memoryTrick: "'Gefällt' looks like 'falls' — it 'falls well with me' (mir).",
+    imageType: "thumbs_up"
+  },
+  {
+    id: "er-gefaellt-mir",
+    german: "Er gefällt mir. / Das Auto gefällt mir.",
+    english: "I like him (or masculine item). / I like the car.",
+    pronunciation: "air ge-FEHLT meer / dahs OW-toh ge-FEHLT meer",
+    audioText: "Er gefällt mir. Das Auto gefällt mir.",
+    category: "gefallen-positive",
+    badge: "Specific Object/Person",
+    icon: "🚗",
+    kenyanAnalogy: "Admiring a sleek German machine or complimenting a friend's charm: 'That car appeals to me big time!'",
+    memoryTrick: "Subject is 'Das Auto' (it pleases), and 'mir' (to me) receives the positive vibe.",
+    imageType: "car"
+  },
+  {
+    id: "das-gefaellt-mir-sehr-gut",
+    german: "Das gefällt mir sehr gut!",
+    english: "I like it very much!",
+    pronunciation: "dahs ge-FEHLT meer zair goot",
+    audioText: "Das gefällt mir sehr gut!",
+    category: "gefallen-positive",
+    badge: "High Praise",
+    icon: "⭐",
+    kenyanAnalogy: "When the nyama choma or a new song hits every single spot perfectly — 'I like this very, very much!'",
+    memoryTrick: "'Sehr gut' boosts 'gefällt mir' from good to top-tier!",
+    imageType: "star"
+  },
+  {
+    id: "ich-hatte-viel-spass",
+    german: "Ich hatte viel Spaß!",
+    english: "I had a lot of fun!",
+    pronunciation: "ikh HAH-teh feel shpahss",
+    audioText: "Ich hatte viel Spaß!",
+    category: "past-experience",
+    badge: "Event Feedback",
+    icon: "🥳",
+    kenyanAnalogy: "What you text the host right after leaving an unforgettable weekend gathering: 'I had pure fun!'",
+    memoryTrick: "'Hatte' = had (past tense of haben), 'Spaß' = fun/spark!",
+    imageType: "party"
+  },
+  {
+    id: "es-ist-toll-klasse-super",
+    german: "Es ist / war toll! / klasse! / super!",
+    english: "It is / was great! / terrific! / awesome!",
+    pronunciation: "es ist / vahr toll / KLAH-seh / ZOO-pair",
+    audioText: "Es ist toll! Es war klasse! Es war super!",
+    category: "past-experience",
+    badge: "Triple Praise",
+    icon: "🎉",
+    kenyanAnalogy: "The classic trio of high energy German praise — 'toll' (great), 'klasse' (class/terrific), and 'super' (awesome)!",
+    memoryTrick: "'Klasse' = top class; 'Toll' = totally great; 'Super' = universal awesome!",
+    imageType: "celebrate"
+  },
+  {
+    id: "das-ist-ganz-toll",
+    german: "Das ist ganz toll!",
+    english: "This is really great! / Quite wonderful!",
+    pronunciation: "dahs ist gahnts toll",
+    audioText: "Das ist ganz toll!",
+    category: "finden-positive",
+    badge: "Intensifier: ganz",
+    icon: "✨",
+    kenyanAnalogy: "Looking at a brilliantly finished project or presentation: 'This is genuinely fantastic!'",
+    memoryTrick: "'Ganz' here means totally / completely / really.",
+    imageType: "sparkle"
+  },
+  {
+    id: "ich-finde-das-echt-klasse",
+    german: "Ich finde das echt klasse!",
+    english: "I think that's really terrific!",
+    pronunciation: "ikh FIN-deh dahs ekht KLAH-seh",
+    audioText: "Ich finde das echt klasse!",
+    category: "finden-positive",
+    badge: "Opinion: finden",
+    icon: "👌",
+    kenyanAnalogy: "Using 'Ich finde...' (I find/think...) to give your personal verdict: 'Personally, I find this genuinely top-class!'",
+    memoryTrick: "'Echt' means 'genuinely / really' (like English 'authentic').",
+    imageType: "thumbs_up"
+  },
+  {
+    id: "das-finde-ich-total-schoen",
+    german: "Das finde ich total schön!",
+    english: "I think that's very nice / totally beautiful!",
+    pronunciation: "dahs FIN-deh ikh toh-TAHL shern",
+    audioText: "Das finde ich total schön!",
+    category: "finden-positive",
+    badge: "Beauty & Style",
+    icon: "👗",
+    kenyanAnalogy: "Complimenting someone's brand-new tailored outfit or home décor: 'I find that totally stunning!'",
+    memoryTrick: "'Total schön' = 100% beautiful without reservation.",
+    imageType: "dress"
+  },
+  {
+    id: "ich-finde-das-wirklich-super",
+    german: "Ich finde das wirklich super!",
+    english: "I think that's really awesome!",
+    pronunciation: "ikh FIN-deh dahs VEERK-likh ZOO-pair",
+    audioText: "Ich finde das wirklich super!",
+    category: "finden-positive",
+    badge: "Intensifier: wirklich",
+    icon: "🚀",
+    kenyanAnalogy: "When someone shares great news or shows off a smart idea: 'I truly think that is super!'",
+    memoryTrick: "'Wirklich' comes from 'Wirklichkeit' (reality) — 'in truth / really'!",
+    imageType: "rocket"
+  },
+  {
+    id: "wie-findest-du-mein-kleid",
+    german: "Hi Tom! Wie findest du mein Kleid?",
+    english: "Hi Tom! How do you like my dress? (Lit: How do you find my dress?)",
+    pronunciation: "hee tom! vee FIN-dest doo myn klyt?",
+    audioText: "Hi Tom! Wie findest du mein Kleid?",
+    category: "dialogue-feedback",
+    badge: "Asking Opinion",
+    icon: "👗",
+    kenyanAnalogy: "The quintessential friend question when rocking a new outfit: 'How do you find my new dress?'",
+    memoryTrick: "Germans ask 'Wie findest du...?' (How do you find...?) to ask what you think of something.",
+    imageType: "fashion"
+  },
+  {
+    id: "das-finde-ich-echt-schoen",
+    german: "Das finde ich echt schön!",
+    english: "I think that's really nice / beautiful!",
+    pronunciation: "dahs FIN-deh ikh ekht shern",
+    audioText: "Das finde ich echt schön!",
+    category: "dialogue-feedback",
+    badge: "Compliment",
+    icon: "💖",
+    kenyanAnalogy: "Tom's immediate supportive reply: 'I genuinely think that's really lovely on you!'",
+    memoryTrick: "'Das' refers back to the dress ('das Kleid').",
+    imageType: "heart"
+  },
+  {
+    id: "und-meine-schuhe-die-finde-ich-klasse",
+    german: "Und meine Schuhe? — Die finde ich auch klasse!",
+    english: "And my shoes? — I think they are terrific, too!",
+    pronunciation: "oont MY-neh SHOO-eh? — dee FIN-deh ikh owkh KLAH-seh!",
+    audioText: "Und meine Schuhe? Die finde ich auch klasse!",
+    category: "dialogue-feedback",
+    badge: "Plural Reference",
+    icon: "👠",
+    kenyanAnalogy: "Notice how Tom switches to 'Die' (plural) because shoes are plural: 'Those, I also find terrific!'",
+    memoryTrick: "Singular neuter = 'Das finde ich...', Plural = 'Die finde ich...'!",
+    imageType: "shoes"
+  },
+  {
+    id: "das-gefaellt-mir-nicht-so-gut",
+    german: "Das gefällt mir nicht so gut.",
+    english: "I don't really like it that much.",
+    pronunciation: "dahs ge-FEHLT meer nikht zoh goot",
+    audioText: "Das gefällt mir nicht so gut.",
+    category: "missfallen-gefallen",
+    badge: "Mild Dislike",
+    icon: "🫤",
+    kenyanAnalogy: "Polite diplomatic criticism when something is just okay but not your taste: 'I don't really like it that much.'",
+    memoryTrick: "'Nicht so gut' cushions the blow politely.",
+    imageType: "neutral"
+  },
+  {
+    id: "das-gefaellt-mir-ueberhaupt-nicht",
+    german: "Das gefällt mir überhaupt nicht!",
+    english: "I don't like it at all! / Not in the slightest!",
+    pronunciation: "dahs ge-FEHLT meer OO-ber-howpt nikht",
+    audioText: "Das gefällt mir überhaupt nicht!",
+    category: "missfallen-gefallen",
+    badge: "Strong Dislike",
+    icon: "🙅‍♂️",
+    kenyanAnalogy: "Zero enthusiasm! Like tasting something completely off or seeing a design you absolutely reject.",
+    memoryTrick: "'Überhaupt nicht' = 'over the head not' -> not at all / absolutely not!",
+    imageType: "thumbs_down"
+  },
+  {
+    id: "das-finde-ich-haesslich",
+    german: "Das finde ich hässlich.",
+    english: "I find it ugly.",
+    pronunciation: "dahs FIN-deh ikh HES-likh",
+    audioText: "Das finde ich hässlich.",
+    category: "missfallen-finden",
+    badge: "Direct Criticism",
+    icon: "🙈",
+    kenyanAnalogy: "Blunt aesthetic verdict when something is truly unflattering: 'I find it ugly.'",
+    memoryTrick: "'Hässlich' connects to 'Hass' (hate) — something you hate to look at!",
+    imageType: "ugly"
+  },
+  {
+    id: "das-finde-ich-schlecht",
+    german: "Das finde ich schlecht.",
+    english: "I find it bad. / I think that's poor.",
+    pronunciation: "dahs FIN-deh ikh shlekht",
+    audioText: "Das finde ich schlecht.",
+    category: "missfallen-finden",
+    badge: "Quality Verdict",
+    icon: "👎",
+    kenyanAnalogy: "Reviewing a poorly made product or terrible service: 'I find this bad.'",
+    memoryTrick: "'Schlecht' = bad / poor quality.",
+    imageType: "bad"
+  },
+  {
+    id: "das-gefaellt-mir-gar-nicht",
+    german: "Das gefällt mir gar nicht!",
+    english: "I don't like it at all!",
+    pronunciation: "dahs ge-FEHLT meer gahr nikht",
+    audioText: "Das gefällt mir gar nicht!",
+    category: "missfallen-gefallen",
+    badge: "Total Dislike",
+    icon: "❌",
+    kenyanAnalogy: "Another super common way alongside 'überhaupt nicht' to say: 'I don't like it one bit!'",
+    memoryTrick: "'Gar nicht' = completely not / not at all.",
+    imageType: "cross"
+  },
+  {
+    id: "was-gefaellt-dir-was-nicht",
+    german: "Was gefällt dir? Was gefällt dir gar nicht?",
+    english: "What do you like? What don't you like at all?",
+    pronunciation: "vahs ge-FEHLT deer? vahs ge-FEHLT deer gahr nikht?",
+    audioText: "Was gefällt dir? Was gefällt dir gar nicht?",
+    category: "fragen-questions",
+    badge: "Conversation Starters",
+    icon: "❓",
+    kenyanAnalogy: "Asking a buddy for their raw taste while shopping or reviewing a playlist: 'What do you like? And what do you hate?'",
+    memoryTrick: "Notice 'dir' (to you in Dativ): 'Was gefällt DIR?'",
+    imageType: "question"
+  }
+];
+
+export const LESSON_51_SCENARIOS = [
+  {
+    scenario: "Your friend tries on a sharp new jacket and asks: 'Wie findest du meine Jacke?' You want to say you think it's really beautiful. What do you say?",
+    hint: "Das finde ich total schön! / echt schön!",
+    options: [
+      { text: "Das finde ich total schön!", correct: true, explain: "Ausgezeichnet! 'Das finde ich total schön!' or 'echt schön!' gives a warm, enthusiastic compliment!" },
+      { text: "Das gefällt mir überhaupt nicht!", correct: false, explain: "That means you hate it at all!" },
+      { text: "Ich muss am Samstag arbeiten.", correct: false, explain: "That is an excuse for not coming to a party." }
+    ]
+  },
+  {
+    scenario: "In Slide 4 & 5, you see a sleek new car that you like very much. How do you express this using 'gefallen'?",
+    hint: "Das Auto gefällt mir sehr gut!",
+    options: [
+      { text: "Das Auto gefällt mir sehr gut!", correct: true, explain: "Perfekt! 'Das Auto' is the subject and 'mir' is the Dativ recipient of the liking!" },
+      { text: "Das Auto findet mich.", correct: false, explain: "That means the car is finding you!" },
+      { text: "Ich bin das Auto.", correct: false, explain: "That means you are the car." }
+    ]
+  },
+  {
+    scenario: "In Slide 9, your friend asks about her shoes: 'Und meine Schuhe?' Since shoes are plural ('die Schuhe'), how do you say you think they are terrific too?",
+    hint: "Die finde ich auch klasse!",
+    options: [
+      { text: "Die finde ich auch klasse!", correct: true, explain: "Hervorragend! Because 'Schuhe' is plural, we use the pronoun 'Die' ('Die finde ich auch klasse!')." },
+      { text: "Das esse ich gern.", correct: false, explain: "That means you like eating shoes!" },
+      { text: "Er gefällt mir.", correct: false, explain: "Er is masculine singular, but shoes are plural (die Schuhe)." }
+    ]
+  },
+  {
+    scenario: "You attended a concert or party last night, had an absolute blast, and want to tell everyone it was awesome. What do you say?",
+    hint: "Ich hatte viel Spaß! Es war super / klasse / toll!",
+    options: [
+      { text: "Ich hatte viel Spaß! Es war super!", correct: true, explain: "Wunderbar! 'Ich hatte viel Spaß!' (I had a lot of fun) and 'Es war super/toll/klasse!' perfectly express event excitement." },
+      { text: "Das finde ich hässlich.", correct: false, explain: "That means 'I find it ugly.'" },
+      { text: "Guten Morgen, wie geht es Ihnen?", correct: false, explain: "That's a formal morning greeting." }
+    ]
+  },
+  {
+    scenario: "Someone shows you a paint color or shirt that you absolutely detest and dislike completely. How do you say 'I don't like it at all!'?",
+    hint: "Das gefällt mir überhaupt nicht! / Das gefällt mir gar nicht!",
+    options: [
+      { text: "Das gefällt mir überhaupt nicht!", correct: true, explain: "Genau! 'Überhaupt nicht' or 'gar nicht' means 'not at all / not in the slightest!'" },
+      { text: "Das ist ganz toll!", correct: false, explain: "That means it's really great!" },
+      { text: "Ich bringe einen Salat mit.", correct: false, explain: "That means you're bringing salad." }
+    ]
+  },
+  {
+    scenario: "How do you ask a friend what they like and what they don't like at all during a shopping trip?",
+    hint: "Was gefällt dir? Was gefällt dir gar nicht?",
+    options: [
+      { text: "Was gefällt dir? Was gefällt dir gar nicht?", correct: true, explain: "Fantastisch! 'Was gefällt dir?' asks for their likes, and 'Was gefällt dir gar nicht?' asks for their dislikes!" },
+      { text: "Wie viel kostet die Einladung?", correct: false, explain: "That asks how much the invitation costs." },
+      { text: "Wo ist die U-Bahn?", correct: false, explain: "That asks where the subway is." }
+    ]
+  }
+];
+
+
 
 
 

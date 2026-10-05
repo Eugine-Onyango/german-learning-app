@@ -106,6 +106,8 @@ import Lesson49VerabredungStudio from './components/Lesson49VerabredungStudio';
 import Lesson49Game from './components/Lesson49Game';
 import Lesson50EinladungStudio from './components/Lesson50EinladungStudio';
 import Lesson50Game from './components/Lesson50Game';
+import Lesson51FashionOpinionStudio from './components/Lesson51FashionOpinionStudio';
+import Lesson51Game from './components/Lesson51Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -156,11 +158,12 @@ import {
   LESSON_47_ITEMS,
   LESSON_48_ITEMS,
   LESSON_49_ITEMS,
-  LESSON_50_ITEMS
+  LESSON_50_ITEMS,
+  LESSON_51_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(50); // Default to Lesson 50 as requested, easy switch to 1-49
+  const [currentLesson, setCurrentLesson] = useState(51); // Default to Lesson 51 as requested, easy switch to 1-50
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -214,6 +217,7 @@ export default function App() {
   if (currentLesson === 48) activeItems = LESSON_48_ITEMS;
   if (currentLesson === 49) activeItems = LESSON_49_ITEMS;
   if (currentLesson === 50) activeItems = LESSON_50_ITEMS;
+  if (currentLesson === 51) activeItems = LESSON_51_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -265,7 +269,8 @@ export default function App() {
     if (currentLesson === 47) return "Lesson 47: Im Supermarkt (Supermarket Vocab, Packaging, Measurements, Aisle Navigation & Checkout Dialogue)";
     if (currentLesson === 48) return "Lesson 48: Wie ist das Wetter? (German Weather Vocab, Temperatures, Noun-to-Adjective Blueprints & Forecast Dialogues)";
     if (currentLesson === 49) return "Lesson 49: Verabredungen (Making Meetup Invitations, Availability Checks, Polite Excuses, Acceptances & Meeting Logistics)";
-    return "Lesson 50: Die Einladung (Writing Invitations, 3-Part Letter Anatomy, RSVPs, Potluck & Polite Declines)";
+    if (currentLesson === 50) return "Lesson 50: Die Einladung (Writing Invitations, 3-Part Letter Anatomy, RSVPs, Potluck & Polite Declines)";
+    return "Lesson 51: Gefallen und Missfallen ausdrücken (Expressing Likes & Dislikes / Taste & Opinions)";
   };
 
   const getLessonDesc = () => {
@@ -416,7 +421,10 @@ export default function App() {
     if (currentLesson === 49) {
       return "Master making appointments and arranging social meetups in German (Verabredungen)! Learn key nouns (die Verabredung vs. der Termin), the 5 invitation formulas (Wollen wir zusammen..., Willst du mit mir..., Gehen wir..., Ich möchte gern...), availability checks (Hast du etwas vor?), accepting with enthusiasm (Das passt! Abgemacht!), polite excuses & obligations (Ich habe viel zu tun, Ich muss meinen Eltern helfen), counter-proposals (Freitag geht nicht... aber Samstag?), and coordinating time and place (Wann und wo treffen wir uns?)!";
     }
-    return "Master writing invitations and RSVPs in German (Die Einladung)! Discover the 3-Part Letter Anatomy (Anrede, Textteil, Grußformel und Unterschrift), party occasions (Geburtstag, Fest, Hochzeitstag, Essen), venue & starting times (Treffpunkt bei uns zu Hause, Party beginnt um 18 Uhr), potluck requests (einen Salat / Kuchen mitbringen), accepting with joy (Zusagen: Ich freue mich auf Samstag) & plus-one requests, and polite declines with well-wishes (Absagen: Es tut mir leid, aber ich kann leider nicht kommen)!";
+    if (currentLesson === 50) {
+      return "Master writing invitations and RSVPs in German (Die Einladung)! Discover the 3-Part Letter Anatomy (Anrede, Textteil, Grußformel und Unterschrift), party occasions (Geburtstag, Fest, Hochzeitstag, Essen), venue & starting times (Treffpunkt bei uns zu Hause, Party beginnt um 18 Uhr), potluck requests (einen Salat / Kuchen mitbringen), accepting with joy (Zusagen: Ich freue mich auf Samstag) & plus-one requests, and polite declines with well-wishes (Absagen: Es tut mir leid, aber ich kann leider nicht kommen)!";
+    }
+    return "Master expressing your taste, praising style, rating experiences, and voicing dislikes in German (Gefallen und Missfallen ausdrücken)! Discover 'gefallen + Dativ' (Das Auto gefällt mir / Das gefällt mir sehr gut / gar nicht / überhaupt nicht), 'finden + Adjektiv' (Wie findest du mein Kleid? Das/Die finde ich total schön / echt klasse / hässlich / schlecht), event excitement (Ich hatte viel Spaß! Es war super / klasse / toll), and interactive fashion critique dialogues!";
   };
 
   return (
@@ -903,6 +911,15 @@ export default function App() {
 
         {currentLesson === 50 && activeTab === 'game50' && (
           <Lesson50Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 51 Specific Modules */}
+        {currentLesson === 51 && activeTab === 'studio51' && (
+          <Lesson51FashionOpinionStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 51 && activeTab === 'game51' && (
+          <Lesson51Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

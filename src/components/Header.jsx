@@ -62,6 +62,7 @@ export default function Header({
     if (currentLesson === 48) msg = "Wie ist das Wetter? Heute ist das Wetter traumhaft! Die Sonne scheint, der Himmel ist klar und es ist fünfundzwanzig Grad warm!";
     if (currentLesson === 49) msg = "Verabredungen: Wollen wir zusammen ins Kino gehen? Ja gern, das passt! Wann und wo treffen wir uns? Um sechs Uhr vor dem Kino? Abgemacht! Bis dann, tschüss!";
     if (currentLesson === 50) msg = "Einladung: Lieber Boris, ich habe am Samstag Geburtstag und möchte dich herzlich einladen! Die Party beginnt um 18 Uhr bei uns zu Hause. Hoffentlich hast du Zeit! Viele Grüße, Monika.";
+    if (currentLesson === 51) msg = "Gefallen und Missfallen: Das Kleid gefällt mir sehr gut! Wie findest du meine Schuhe? Die finde ich total klasse! Das gefällt mir überhaupt nicht.";
     speakGerman(msg, isSlowMode);
   };
 
@@ -468,6 +469,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson51NavItems = [
+    { id: 'cards', label: '📖 Lesson 51 Cards', sub: 'Likes, Dislikes & Opinions' },
+    { id: 'studio51', label: '👗 Opinion Studio', sub: 'Outfit Dialogue, Rating Scale & Reviews' },
+    { id: 'game51', label: '🎮 Opinion Quiz', sub: 'Likes, Dislikes & Taste Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -518,6 +527,7 @@ export default function Header({
   if (currentLesson === 48) navItems = lesson48NavItems;
   if (currentLesson === 49) navItems = lesson49NavItems;
   if (currentLesson === 50) navItems = lesson50NavItems;
+  if (currentLesson === 51) navItems = lesson51NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -570,6 +580,7 @@ export default function Header({
     { num: 48, label: "🌦️ 48: Wie ist das Wetter?", activeClass: "bg-sky-700 ring-sky-300", hoverBorder: "hover:bg-sky-100 border-sky-300" },
     { num: 49, label: "📅 49: Verabredungen", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 50, label: "✉️ 50: Die Einladung", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
+    { num: 51, label: "👗 51: Gefallen & Missfallen", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
   ];
 
   return (
