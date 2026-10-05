@@ -60,6 +60,7 @@ export default function Header({
     if (currentLesson === 46) msg = "Was hast du im Urlaub gemacht? Im Urlaub war ich in Spanien, habe Sehenswürdigkeiten besichtigt und mich erholt!";
     if (currentLesson === 47) msg = "Im Supermarkt: Ich gehe zum Supermarkt, kaufe ein Kilo Äpfel, eine Flasche Öl und bezahle an der Kasse. Das macht fünfundzwanzig Euro zehn bitte!";
     if (currentLesson === 48) msg = "Wie ist das Wetter? Heute ist das Wetter traumhaft! Die Sonne scheint, der Himmel ist klar und es ist fünfundzwanzig Grad warm!";
+    if (currentLesson === 49) msg = "Verabredungen: Wollen wir zusammen ins Kino gehen? Ja gern, das passt! Wann und wo treffen wir uns? Um sechs Uhr vor dem Kino? Abgemacht! Bis dann, tschüss!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -450,6 +451,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson49NavItems = [
+    { id: 'cards', label: '📖 Lesson 49 Cards', sub: 'Meetup Invitations & Excuses' },
+    { id: 'studio49', label: '📅 Verabredung Studio', sub: 'Meetup Builder, Excuses & Logistics' },
+    { id: 'game49', label: '🎮 Verabredung Quiz', sub: 'Planning & Social Meetup Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -498,6 +507,7 @@ export default function Header({
   if (currentLesson === 46) navItems = lesson46NavItems;
   if (currentLesson === 47) navItems = lesson47NavItems;
   if (currentLesson === 48) navItems = lesson48NavItems;
+  if (currentLesson === 49) navItems = lesson49NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -548,6 +558,7 @@ export default function Header({
     { num: 46, label: "🏖️ 46: Urlaub & Ferien", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 47, label: "🛒 47: Im Supermarkt", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
     { num: 48, label: "🌦️ 48: Wie ist das Wetter?", activeClass: "bg-sky-700 ring-sky-300", hoverBorder: "hover:bg-sky-100 border-sky-300" },
+    { num: 49, label: "📅 49: Verabredungen", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
   ];
 
   return (

@@ -102,6 +102,8 @@ import Lesson47SupermarktStudio from './components/Lesson47SupermarktStudio';
 import Lesson47Game from './components/Lesson47Game';
 import Lesson48WetterStudio from './components/Lesson48WetterStudio';
 import Lesson48Game from './components/Lesson48Game';
+import Lesson49VerabredungStudio from './components/Lesson49VerabredungStudio';
+import Lesson49Game from './components/Lesson49Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -150,11 +152,12 @@ import {
   LESSON_45_ITEMS,
   LESSON_46_ITEMS,
   LESSON_47_ITEMS,
-  LESSON_48_ITEMS
+  LESSON_48_ITEMS,
+  LESSON_49_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(48); // Default to Lesson 48 as requested, easy switch to 1-47
+  const [currentLesson, setCurrentLesson] = useState(49); // Default to Lesson 49 as requested, easy switch to 1-48
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -206,6 +209,7 @@ export default function App() {
   if (currentLesson === 46) activeItems = LESSON_46_ITEMS;
   if (currentLesson === 47) activeItems = LESSON_47_ITEMS;
   if (currentLesson === 48) activeItems = LESSON_48_ITEMS;
+  if (currentLesson === 49) activeItems = LESSON_49_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -255,7 +259,8 @@ export default function App() {
     if (currentLesson === 45) return "Lesson 45: das Perfekt Teil 3 (The 4 Partizip II Blueprints - Regular, Irregular, Separable Sandwich & Inseparable Superglue)";
     if (currentLesson === 46) return "Lesson 46: Was hast du im Urlaub gemacht? (Vacation Vocab, Destinations, Lodgings, Activities & Compound Past Stories)";
     if (currentLesson === 47) return "Lesson 47: Im Supermarkt (Supermarket Vocab, Packaging, Measurements, Aisle Navigation & Checkout Dialogue)";
-    return "Lesson 48: Wie ist das Wetter? (German Weather Vocab, Temperatures, Noun-to-Adjective Blueprints & Forecast Dialogues)";
+    if (currentLesson === 48) return "Lesson 48: Wie ist das Wetter? (German Weather Vocab, Temperatures, Noun-to-Adjective Blueprints & Forecast Dialogues)";
+    return "Lesson 49: Verabredungen (Making Meetup Invitations, Availability Checks, Polite Excuses, Acceptances & Meeting Logistics)";
   };
 
   const getLessonDesc = () => {
@@ -400,7 +405,10 @@ export default function App() {
     if (currentLesson === 47) {
       return "Master grocery shopping and navigating the German supermarket (Im Supermarkt)! Learn shopping essentials (der Einkaufswagen, der Einkaufszettel), exact packaging units (eine Dose, ein Stück, eine Tafel, ein Glas, ein Becher), metric weight & liquid measurements (das Pfund = 500g, anderthalb Liter), aisle navigation with Dative prepositions (beim, bei der, bei den), and the complete checkout dialogue at the Kasse!";
     }
-    return "Master talking about the weather and climate in German (Wie ist das Wetter?)! Discover weather nouns & genders (die Sonne, der Regen, der Schnee, das Gewitter, die Wolke), heat & cold scales (warm, heiß 39°C, kalt, eisig, Ich friere), active verbs vs. adjectives (Es regnet vs. Es ist regnerisch), the Slide 40 Noun-to-Adjective Blueprint chart, and realistic weather forecast dialogues!";
+    if (currentLesson === 48) {
+      return "Master talking about the weather and climate in German (Wie ist das Wetter?)! Discover weather nouns & genders (die Sonne, der Regen, der Schnee, das Gewitter, die Wolke), heat & cold scales (warm, heiß 39°C, kalt, eisig, Ich friere), active verbs vs. adjectives (Es regnet vs. Es ist regnerisch), the Slide 40 Noun-to-Adjective Blueprint chart, and realistic weather forecast dialogues!";
+    }
+    return "Master making appointments and arranging social meetups in German (Verabredungen)! Learn key nouns (die Verabredung vs. der Termin), the 5 invitation formulas (Wollen wir zusammen..., Willst du mit mir..., Gehen wir..., Ich möchte gern...), availability checks (Hast du etwas vor?), accepting with enthusiasm (Das passt! Abgemacht!), polite excuses & obligations (Ich habe viel zu tun, Ich muss meinen Eltern helfen), counter-proposals (Freitag geht nicht... aber Samstag?), and coordinating time and place (Wann und wo treffen wir uns?)!";
   };
 
   return (
@@ -869,6 +877,15 @@ export default function App() {
 
         {currentLesson === 48 && activeTab === 'game48' && (
           <Lesson48Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 49 Specific Modules */}
+        {currentLesson === 49 && activeTab === 'studio49' && (
+          <Lesson49VerabredungStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 49 && activeTab === 'game49' && (
+          <Lesson49Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

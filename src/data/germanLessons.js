@@ -11662,6 +11662,307 @@ export const LESSON_48_SCENARIOS = [
   }
 ];
 
+export const LESSON_49_ITEMS = [
+  {
+    id: "verabredung-termin-noun",
+    german: "die Verabredung (die Verabredungen) vs. der Termin (die Termine)",
+    english: "Social meetup / date vs. formal appointment (doctor / business)",
+    pronunciation: "dee fair-AHB-reh-doong (dee fair-AHB-reh-doong-en) vs dair tair-MEEN",
+    audioText: "die Verabredung, die Verabredungen. Der Termin, die Termine. Ich habe eine Verabredung mit Freunden und einen Termin beim Arzt.",
+    category: "appointment-nouns",
+    badge: "Slides 1-3: Core Meetup Nouns",
+    icon: "🤝",
+    kenyanAnalogy: "Like catching up with friends for coffee at Java ('die Verabredung') vs. a formal business meeting or doctor's visit ('der Termin')!",
+    memoryTrick: "Verabredung = social/fun date (feminine). Termin = formal/business/doctor appointment (masculine)!"
+  },
+  {
+    id: "verabredung-treffen-bestaetigen",
+    german: "eine Verabredung treffen (hat getroffen) / bestätigen (hat bestätigt)",
+    english: "To make an appointment (has made) / to confirm an appointment (has confirmed)",
+    pronunciation: "EYE-neh fair-AHB-reh-doong TREF-fen (haht geh-TROF-fen) / beh-SHTAY-tee-gen (haht beh-SHTAY-teekt)",
+    audioText: "eine Verabredung treffen. Er hat eine Verabredung getroffen. Eine Verabredung bestätigen. Sie hat die Verabredung bestätigt.",
+    category: "appointment-verbs",
+    badge: "Slides 4-7: Make & Confirm",
+    icon: "📅",
+    kenyanAnalogy: "'eine Verabredung treffen' = agreeing on a plan. 'bestätigen' = sending a quick WhatsApp text confirming 'Yes, see you tomorrow!'",
+    memoryTrick: "treffen ➔ hat getroffen (irregular Partizip II). bestätigen ➔ hat bestätigt (inseparable ge-less Partizip II)!"
+  },
+  {
+    id: "verabredung-vorschlag-machen",
+    german: "einen Vorschlag machen (hat gemacht)",
+    english: "To make a suggestion / proposal (has made)",
+    pronunciation: "EYE-nen FOR-shlahk MAH-khen (haht geh-MAKHT)",
+    audioText: "einen Vorschlag machen. Kann ich einen Vorschlag machen? Er hat einen guten Vorschlag gemacht.",
+    category: "appointment-verbs",
+    badge: "Slides 10 & 11: Make a Suggestion",
+    icon: "💡",
+    kenyanAnalogy: "Putting an idea on the table: 'Hey, what if we go for a movie?' Masculine Akkusativ: 'einen Vorschlag'!",
+    memoryTrick: "vor (forward) + Schlag (pitch/strike) = Vorschlag (suggestion/proposal)!"
+  },
+  {
+    id: "verabredung-wollen-wir-zusammen",
+    german: "Wollen wir zusammen ins Kino / in die Stadt / in den Park gehen?",
+    english: "Do we want to go together to the cinema / downtown / to the park?",
+    pronunciation: "VOL-len veer tsoo-ZAM-men ins KEE-noh / in dee SHTAHT / in dain PAHRK GAY-en",
+    audioText: "Hallo Ben! Wollen wir zusammen in die Stadt gehen? Wollen wir zusammen ins Kino gehen? Wollen wir zusammen in den Park gehen?",
+    category: "making-suggestions",
+    badge: "Slides 8, 12, 13: 'Wollen wir...' Invitations",
+    icon: "🍿",
+    kenyanAnalogy: "The standard friendly group invite: 'Wollen wir zusammen...'. Destination takes Akkusativ direction: ins Kino (das), in die Stadt (die), in den Park (der)!",
+    memoryTrick: "Wollen wir zusammen (Modal P1) + Destination + Infinitiv am Ende (gehen)!"
+  },
+  {
+    id: "verabredung-willst-du-mit-mir",
+    german: "Willst du mit mir in den Zoo gehen? / essen / tanzen / Tennis spielen?",
+    english: "Do you want to go with me to the zoo? / eat / dance / play tennis?",
+    pronunciation: "VILST doo mit meer in dain TSOH GAY-en / ES-sen / TAHN-tsen / TEN-nis SHPEE-len",
+    audioText: "Willst du mit mir in den Zoo gehen? Willst du mit mir essen? Willst du mit mir tanzen? Willst du mit mir Tennis spielen?",
+    category: "making-suggestions",
+    badge: "Slides 12, 14, 15: 'Willst du mit mir...' Invitations",
+    icon: "🦁",
+    kenyanAnalogy: "Direct 1-on-1 invitation: 'Do you want to come with me to...?'",
+    memoryTrick: "Willst du (Modal P1) + mit mir (Dativ with me) + Activity + Infinitiv am Ende!"
+  },
+  {
+    id: "verabredung-gehen-wir-zusammen",
+    german: "Gehen wir zusammen ins Kino?",
+    english: "Shall we go to the cinema together? / Let's go to the cinema together?",
+    pronunciation: "GAY-en veer tsoo-ZAM-men ins KEE-noh",
+    audioText: "Gehen wir zusammen ins Kino? Gehen wir zusammen ein Eis essen?",
+    category: "making-suggestions",
+    badge: "Slide 16: 'Gehen wir...' Starter",
+    icon: "🎬",
+    kenyanAnalogy: "Using a regular verb directly in Position 1 for a smooth, spontaneous invitation!",
+    memoryTrick: "Verb in Position 1 = Yes/No invitation question: 'Gehen wir zusammen...?'"
+  },
+  {
+    id: "verabredung-hast-du-etwas-vor",
+    german: "Hast du heute Abend etwas vor? / Hast du Zeit? / Hast du Lust auf Tennis?",
+    english: "Are you doing anything this evening? / Do you have time? / Do you feel like tennis?",
+    pronunciation: "HAHST doo HOY-teh AH-bent ET-vahs FOHR / HAHST doo TSYT / HAHST doo LOOST owf TEN-nis",
+    audioText: "Hast du heute Abend etwas vor? Hast du morgen Zeit? Hast du am Wochenende Lust auf Tennis?",
+    category: "checking-availability",
+    badge: "Slides 17 & 18: Checking Availability",
+    icon: "⏳",
+    kenyanAnalogy: "Casually testing the waters before proposing: 'Are you free tonight?' 'etwas vorhaben' = having plans.",
+    memoryTrick: "etwas vorhaben = to have plans. 'Hast du heute Abend etwas vor?'"
+  },
+  {
+    id: "verabredung-ich-moechte-gern",
+    german: "Ich möchte gern am Wochenende mit dir in die Disko gehen. Willst du vielleicht mitkommen?",
+    english: "I would like to go to the disco with you on the weekend. Do you want to come along perhaps?",
+    pronunciation: "IKH MURKH-teh gairn ahm VOKH-en-en-deh mit deer in dee DIS-koh GAY-en. VILST doo fee-LYKHT MIT-kom-men",
+    audioText: "Ich möchte gern heute Abend mit dir ins Kino gehen. Ich möchte gern am Wochenende in die Disko gehen. Willst du vielleicht mitkommen? Hast du Lust?",
+    category: "making-suggestions",
+    badge: "Slides 19-22: 'Ich möchte gern...' Proposal",
+    icon: "🪩",
+    kenyanAnalogy: "Expressing your own wish politely first, then checking if they want to join: 'Willst du vielleicht mitkommen?'",
+    memoryTrick: "Ich möchte gern (wish) + mit dir (companion) + Destination + mitkommen (come along)!"
+  },
+  {
+    id: "verabredung-vorschlag-annehmen-passt",
+    german: "den Vorschlag annehmen (hat angenommen) / Ja gern, das passt! / das geht!",
+    english: "To accept the suggestion (has accepted) / Yes gladly, that works/fits!",
+    pronunciation: "dain FOR-shlahk AHN-nay-men (haht AHN-geh-nom-men) / YAH GAIRN dahs PAHSST / dahs GAYT",
+    audioText: "den Vorschlag annehmen. Er hat den Vorschlag angenommen. Ja gern, das passt! Ja gern, das geht!",
+    category: "accepting-suggestions",
+    badge: "Slides 23-25: Accepting Suggestions",
+    icon: "✅",
+    kenyanAnalogy: "Instant green light! 'Das passt!' (that fits my schedule!) / 'Das geht!' (that works!).",
+    memoryTrick: "annehmen ➔ hat angenommen (separable: an-ge-nommen). 'Das passt!' = universal agreement phrase!"
+  },
+  {
+    id: "verabredung-freitag-ist-gut-nichts-vor",
+    german: "Ja, Freitag ist gut! Da habe ich Zeit. / Ja, da habe ich nichts vor!",
+    english: "Yes, Friday is good! I have time then. / Yes, I have nothing planned then!",
+    pronunciation: "YAH FRY-tahk ist GOOT! DAH HAH-beh ikh TSYT / YAH DAH HAH-beh ikh NIKHTS FOHR",
+    audioText: "Ja, Freitag ist gut! Da habe ich Zeit. Ja, da habe ich nichts vor! Ich habe den ganzen Abend frei.",
+    category: "accepting-suggestions",
+    badge: "Slides 26-28: Free Schedule Confirmation",
+    icon: "🟢",
+    kenyanAnalogy: "Confirming you are 100% free: 'Da habe ich nichts vor!' (My calendar is completely clear).",
+    memoryTrick: "nichts vorhaben (to have nothing planned) ➔ 'Da habe ich nichts vor!'"
+  },
+  {
+    id: "verabredung-abgemacht-gute-idee",
+    german: "Abgemacht! Freitag um 18 Uhr? / Ja, das ist eine gute Idee! Wann denn?",
+    english: "It's a deal! Friday at 6 PM? / Yes, that is a good idea! When?",
+    pronunciation: "AHP-geh-makht! FRY-tahk oom AKHT-tsayn OOR / YAH dahs ist EYE-neh GOO-teh ee-DAY! VAHN den",
+    audioText: "Abgemacht! Freitag um 18 Uhr? Ja, das ist eine gute Idee! Wann denn?",
+    category: "accepting-suggestions",
+    badge: "Slides 29 & 30: 'Abgemacht!' (It's a Deal)",
+    icon: "🤝",
+    kenyanAnalogy: "'Abgemacht!' is the German equivalent of a solid handshake: 'Tumeelewana / Deal closed!'.",
+    memoryTrick: "Abgemacht! = It is agreed / settled / It's a deal!"
+  },
+  {
+    id: "verabredung-vorschlag-ablehnen-leider",
+    german: "den Vorschlag ablehnen (hat abgelehnt) / Tut mir leid / Entschuldigung. Leider kann ich nicht.",
+    english: "To decline the suggestion (has declined) / I'm sorry. Unfortunately I can't.",
+    pronunciation: "dain FOR-shlahk AHP-lay-nen (haht AHP-geh-laynt) / TOOT meer LYT / ent-SHOOL-dee-goong. LY-der kahn ikh NIKHT",
+    audioText: "den Vorschlag ablehnen. Sie hat den Vorschlag abgelehnt. Tut mir leid! Entschuldigung. Leider kann ich nicht.",
+    category: "declining-suggestions",
+    badge: "Slides 31-34: Polite Rejection",
+    icon: "❌",
+    kenyanAnalogy: "Softening the 'no' politely so no feelings get hurt: 'Tut mir leid, leider kann ich nicht.'",
+    memoryTrick: "ablehnen ➔ hat abgelehnt. 'Leider' = unfortunately."
+  },
+  {
+    id: "verabredung-ausreden-ich-habe",
+    german: "Ich habe keine Zeit. / viel zu tun. / keine Lust. / am Freitag einen Tanzkurs.",
+    english: "I have no time. / lots to do. / no desire. / a dance class on Friday.",
+    pronunciation: "IKH HAH-beh KY-neh TSYT / FEEL tsoo TOON / KY-neh LOOST / ahm FRY-tahk EYE-nen TAHNTS-koors",
+    audioText: "Ich habe keine Zeit. Ich habe heute viel zu tun. Ich habe leider keine Lust. Ich habe am Freitag einen Tanzkurs.",
+    category: "declining-suggestions",
+    badge: "Slides 35-39, 41: 'Ich habe...' Excuses",
+    icon: "📝",
+    kenyanAnalogy: "Giving reasons why you can't make it using 'Ich habe...'.",
+    memoryTrick: "Ich habe + [keine Zeit / viel zu tun / keine Lust / einen Tanzkurs]!"
+  },
+  {
+    id: "verabredung-ausreden-ich-muss",
+    german: "Ich muss viel arbeiten. / Ich muss meinen Eltern helfen. / Da kann ich leider nicht.",
+    english: "I have to work a lot. / I have to help my parents. / Unfortunately I can't then.",
+    pronunciation: "IKH MOOS FEEL AHR-by-ten / IKH MOOS MY-nen EL-tern HEL-fen / DAH kahn ikh LY-der NIKHT",
+    audioText: "Ich muss viel arbeiten. Ich muss meinen Eltern helfen. Da kann ich leider nicht, ich muss arbeiten.",
+    category: "declining-suggestions",
+    badge: "Slides 40, 42, 43: 'Ich muss...' Excuses",
+    icon: "💼",
+    kenyanAnalogy: "Obligation excuses with modal verb 'müssen': 'I have to work' or 'I must help my folks' (meinen Eltern = Dativ!).",
+    memoryTrick: "Ich muss + Activity am Ende! 'helfen' takes Dativ: meinen Eltern helfen!"
+  },
+  {
+    id: "verabredung-schon-verabredet",
+    german: "Da bin ich schon verabredet. (verabredet sein)",
+    english: "I already have plans / I am already booked.",
+    pronunciation: "DAH bin ikh SHOHN fair-AHB-reh-det (fair-AHB-reh-det ZYN)",
+    audioText: "Da bin ich schon verabredet. Tut mir leid, an diesem Tag habe ich schon Pläne.",
+    category: "declining-suggestions",
+    badge: "Slide 44: 'Schon verabredet'",
+    icon: "🔒",
+    kenyanAnalogy: "When your schedule is already locked down with someone else: 'Niko na mpango tayari!'",
+    memoryTrick: "verabredet sein = to be already booked with an appointment!"
+  },
+  {
+    id: "verabredung-anderen-vorschlag-samstag",
+    german: "einen anderen Vorschlag machen: Freitag geht leider nicht... aber Samstag? / Vielleicht nächste Woche?",
+    english: "To make another suggestion: Friday unfortunately doesn't work... how about Saturday? / Maybe next week?",
+    pronunciation: "EYE-nen AHN-deh-ren FOR-shlahk MAH-khen: FRY-tahk GAYT LY-der NIKHT... AH-ber ZAHM-stahk? / fee-LYKHT NAYKH-steh VOKH-eh",
+    audioText: "Freitag geht leider nicht, aber Samstag? Vielleicht nächste Woche? Geht es nächste Woche?",
+    category: "counter-proposals",
+    badge: "Slides 45-47: Counter-Proposals",
+    icon: "🔄",
+    kenyanAnalogy: "When you want to meet but Friday doesn't suit: counter-offer with Saturday or next week!",
+    memoryTrick: "[Tag] geht leider nicht... aber [neuer Tag]? / Geht es nächste Woche?"
+  },
+  {
+    id: "verabredung-ort-zeit-festlegen",
+    german: "den Vorschlag zusagen (hat zugesagt) / Ort und Zeit festlegen (hat festgelegt)",
+    english: "To accept the suggestion (has accepted) / to schedule a place and time (has scheduled)",
+    pronunciation: "dain FOR-shlahk TSOO-zah-gen (haht TSOO-geh-zahkt) / OHRT oont TSYT FEST-lay-gen (haht FEST-geh-laykt)",
+    audioText: "den Vorschlag zusagen. Sie hat zugesagt. Ort und Zeit festlegen. Wir haben Ort und Zeit festgelegt.",
+    category: "fixing-details",
+    badge: "Slides 48 & 49: Confirming Details",
+    icon: "📍",
+    kenyanAnalogy: "Finalizing the logistics: 'zusagen' (saying yes) + 'festlegen' (pinning down the exact pin on Google Maps & time)!",
+    memoryTrick: "zusagen ➔ hat zugesagt. festlegen ➔ hat festgelegt. Both are separable verbs with 'ge' in the middle!"
+  },
+  {
+    id: "verabredung-wann-und-wo-treffen",
+    german: "Das ist gut. Wann und wo treffen wir uns? / Können wir uns am Donnerstag um 11 Uhr treffen?",
+    english: "That's good. When and where do we meet? / Can we meet on Thursday at 11 o'clock?",
+    pronunciation: "dahs ist GOOT. VAHN oont VOH TREF-fen veer oons? / KUR-nen veer oons ahm DON-ners-tahk oom ELF OOR TREF-fen",
+    audioText: "Das ist gut. Wann und wo treffen wir uns? Können wir uns am Donnerstag um 11 Uhr treffen?",
+    category: "fixing-details",
+    badge: "Slides 50-52: 'Wann und wo treffen wir uns?'",
+    icon: "⏰",
+    kenyanAnalogy: "The classic German coordination formula: 'Wann und wo treffen wir uns?' (When and where do we meet each other?)",
+    memoryTrick: "treffen (verb) + wir (subject) + uns (reflexive accusative 'each other')!"
+  },
+  {
+    id: "verabredung-time-and-place-options",
+    german: "Um 6 Uhr? / Am Abend? / Bei mir? / Bei dir? / Vor dem Kino? / Im Restaurant?",
+    english: "At 6 o'clock? / In the evening? / At my place? / At your place? / In front of the cinema? / In the restaurant?",
+    pronunciation: "oom ZEKS OOR / ahm AH-bent / by MEER / by DEER / fohr daim KEE-noh / im res-to-RAHNG",
+    audioText: "Um 6 Uhr? Am Abend? Um 20 Uhr? Bei mir? Bei dir? Vor dem Kino? Im Restaurant?",
+    category: "fixing-details",
+    badge: "Slides 53-55: Time & Location Options",
+    icon: "📌",
+    kenyanAnalogy: "Negotiating locations: 'Bei mir?' (at my place) vs. 'Bei dir?' (at your place) vs. 'Vor dem Kino?' (outside the cinema lobby)!",
+    memoryTrick: "bei + Dativ: bei mir / bei dir. vor + Dativ: vor dem Kino. in + Dativ: im Restaurant."
+  },
+  {
+    id: "verabredung-bis-dann-tschuess",
+    german: "Okay, dann bis morgen! / Okay, bis dann! Tschüss!",
+    english: "Okay, see you tomorrow then! / Okay, see you then! Bye!",
+    pronunciation: "oh-KAY DAHN bis MOR-gen / oh-KAY bis DAHN! TSHOOS",
+    audioText: "Okay, dann bis morgen! Okay, bis dann! Tschüss!",
+    category: "fixing-details",
+    badge: "Slides 9 & 56: Wrap-up & Goodbye",
+    icon: "👋",
+    kenyanAnalogy: "Sealing the appointment warmly: 'Sawa basi, see you tomorrow!'",
+    memoryTrick: "bis morgen = until tomorrow. bis dann = see you then!"
+  }
+];
+
+export const LESSON_49_SCENARIOS = [
+  {
+    scenario: "In Slides 2 & 3, what is the key difference between 'die Verabredung' and 'der Termin'?",
+    hint: "die Verabredung is for social meetups with friends/dates, while der Termin is for formal appointments (doctor, bank, office).",
+    options: [
+      { text: "die Verabredung = social/casual meetup or date | der Termin = formal/business/doctor appointment", correct: true, explain: "Wunderbar! 'die Verabredung' is with friends/partners, while 'der Termin' is for doctors, dentists, banks, and official business!" },
+      { text: "They mean the exact opposite: der Termin is for partying and die Verabredung is for surgery.", correct: false, explain: "No, Verabredung is social, Termin is formal." },
+      { text: "die Verabredung means grocery shopping.", correct: false, explain: "Grocery shopping is 'einkaufen'." }
+    ]
+  },
+  {
+    scenario: "In Slides 12–15, which German sentence correctly invites a friend to the zoo using the modal verb 'wollen'?",
+    hint: "Wollen wir zusammen in den Zoo gehen?",
+    options: [
+      { text: "Wollen wir zusammen in den Zoo gehen? (or: Willst du mit mir in den Zoo gehen?)", correct: true, explain: "Perfekt! 'Wollen wir zusammen in den Zoo gehen?' is the standard German invitation blueprint!" },
+      { text: "Gehen wir zoo wollen.", correct: false, explain: "Word order is scrambled and lacks prepositions." },
+      { text: "Wir gehen in Zoo gestern.", correct: false, explain: "'gestern' is yesterday and the article is missing." }
+    ]
+  },
+  {
+    scenario: "In Slides 17 & 18, what does 'Hast du heute Abend etwas vor?' mean?",
+    hint: "etwas vorhaben = to have plans / to be up to something.",
+    options: [
+      { text: "Do you have any plans this evening? / Are you doing anything tonight?", correct: true, explain: "Ausgezeichnet! 'etwas vorhaben' is the universal German way to ask if someone has plans!" },
+      { text: "Did you buy any food tonight?", correct: false, explain: "That would be 'Hast du Essen gekauft?'" },
+      { text: "Are you working tomorrow morning?", correct: false, explain: "That would be 'Arbeitest du morgen früh?'" }
+    ]
+  },
+  {
+    scenario: "In Slides 23–25 & 29, how do Germans say 'Yes gladly, that works!' and 'It's a deal!'?",
+    hint: "Ja gern, das passt! / das geht! & Abgemacht!",
+    options: [
+      { text: "Ja gern, das passt! (or: das geht!) & Abgemacht!", correct: true, explain: "Hervorragend! 'Das passt / das geht' means it works out, and 'Abgemacht!' means 'It's a deal / settled!'." },
+      { text: "Nein danke & Auf Wiedersehen.", correct: false, explain: "That means 'No thank you and goodbye'." },
+      { text: "Ich weiß nicht & Vielleicht gestern.", correct: false, explain: "That is nonsense." }
+    ]
+  },
+  {
+    scenario: "In Slides 32–43, a friend invites you to a movie on Friday, but you have work and dance class. How do you politely decline?",
+    hint: "Tut mir leid, leider kann ich nicht. Ich habe am Freitag einen Tanzkurs und muss arbeiten.",
+    options: [
+      { text: "Tut mir leid, leider kann ich nicht. Ich habe am Freitag einen Tanzkurs und ich muss viel arbeiten.", correct: true, explain: "Superb! A polite apology (Tut mir leid / leider kann ich nicht) followed by 'Ich habe...' or 'Ich muss...' is the authentic German blueprint!" },
+      { text: "Ich komme sofort ins Kino!", correct: false, explain: "That accepts instead of declining." },
+      { text: "Ich bin gesund und munter.", correct: false, explain: "That means 'I am healthy and cheerful'." }
+    ]
+  },
+  {
+    scenario: "In Slides 48–55, how do you agree, coordinate meeting details, and propose a meeting spot?",
+    hint: "Wann und wo treffen wir uns? Um 6 Uhr vor dem Kino?",
+    options: [
+      { text: "Das ist gut. Wann und wo treffen wir uns? Um 6 Uhr vor dem Kino?", correct: true, explain: "Fantastisch! 'Wann und wo treffen wir uns?' coordinates the logistics, and 'Vor dem Kino' specifies the location using Dativ!" },
+      { text: "Ich gehe alleine nach Hause.", correct: false, explain: "That means 'I go home alone'." },
+      { text: "Es ist 10 Grad und neblig.", correct: false, explain: "That describes weather, not meetup coordinates." }
+    ]
+  }
+];
+
+
 
 
 
