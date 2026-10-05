@@ -14588,6 +14588,270 @@ export const LESSON_58_SCENARIOS = [
   }
 ];
 
+export const LESSON_59_ITEMS = [
+  {
+    id: "l59-hotel-pension-herberge",
+    german: "das Hotel / die Pension / die Jugendherberge",
+    english: "the hotel / the guesthouse (B&B) / the youth hostel",
+    pronunciation: "dahs ho-TEL / dee pen-zee-OHN / dee YOO-gend-hair-bair-ge",
+    audioText: "Das Hotel, die Hotels. Die Pension, die Pensionen. Die Jugendherberge, die Jugendherbergen. Ich möchte in einem Hotel übernachten.",
+    category: "unterkunft-typen",
+    badge: "Lodging Types",
+    icon: "🏨",
+    kenyanAnalogy: "Three levels of lodging: 'Hotel' (like Sarova/Serena), 'Pension' (cozy private guesthouse/B&B), and 'Jugendherberge' (affordable youth hostel with dorm bunk beds for backpackers)!",
+    memoryTrick: "Jugend (youth) + Herberge (inn/shelter) = youth hostel! Pension = cozy family guesthouse."
+  },
+  {
+    id: "l59-reservieren-buchen",
+    german: "ein Zimmer reservieren / buchen",
+    english: "to reserve / to book a room",
+    pronunciation: "EYEN TSIM-mer ray-zair-VEE-ren / BOO-khen",
+    audioText: "Ein Zimmer reservieren. Ein Zimmer buchen. Ich möchte ein Zimmer für drei Nächte reservieren. Hast du das Hotel schon gebucht?",
+    category: "buchung-verben",
+    badge: "Action Verbs",
+    icon: "🛎️",
+    kenyanAnalogy: "Making a booking: 'reservieren (hat reserviert)' or 'buchen (hat gebucht)' – both regular verbs!",
+    memoryTrick: "buchen = to book (Perfekt: hat gebucht)! reservieren = to reserve (Perfekt: hat reserviert)!"
+  },
+  {
+    id: "l59-einzelzimmer-ez",
+    german: "das Einzelzimmer (EZ)",
+    english: "the single room (Abbreviation: EZ)",
+    pronunciation: "dahs EYN-tsel-tsim-mer (eh-tsett)",
+    audioText: "Das Einzelzimmer, die Einzelzimmer. Die Abkürzung ist EZ. Ich brauche ein Einzelzimmer mit Frühstück.",
+    category: "zimmer-kategorien",
+    badge: "Room Type: Single",
+    icon: "🛏️",
+    kenyanAnalogy: "Room with 1 single bed for solo travelers: 'das Einzelzimmer' (shortened on German booking sites as 'EZ')!",
+    memoryTrick: "Einzel (single/individual) + Zimmer (room) = Einzelzimmer (EZ)!"
+  },
+  {
+    id: "l59-doppelzimmer-dz",
+    german: "das Doppelzimmer (DZ)",
+    english: "the double room (Abbreviation: DZ)",
+    pronunciation: "dahs DOP-pel-tsim-mer (deh-tsett)",
+    audioText: "Das Doppelzimmer, die Doppelzimmer. Die Abkürzung ist DZ. Wir möchten ein Doppelzimmer für diese Zeit reservieren.",
+    category: "zimmer-kategorien",
+    badge: "Room Type: Double",
+    icon: "🛌",
+    kenyanAnalogy: "Room with 1 large double bed or twin beds for couples: 'das Doppelzimmer' (shortened on hotel listings as 'DZ')!",
+    memoryTrick: "Doppel (double) + Zimmer (room) = Doppelzimmer (DZ)!"
+  },
+  {
+    id: "l59-fruehstueck-hp-vp",
+    german: "mit Frühstück / Halbpension (HP) / Vollpension (VP)",
+    english: "with breakfast / half board (HP) / full board (VP)",
+    pronunciation: "mit FREW-shtewk / HAHLB-pen-zee-ohn (hah-peh) / FOL-pen-zee-ohn (fow-peh)",
+    audioText: "Ein Zimmer mit Frühstück. Ein Zimmer mit Halbpension, HP. Ein Zimmer mit Vollpension, VP. Was kostet ein Doppelzimmer mit Vollpension?",
+    category: "verpflegung-boards",
+    badge: "Meal Plans",
+    icon: "🍽️",
+    kenyanAnalogy: "Like safari lodge meal packages: 'mit Frühstück' = Bed & Breakfast; 'Halbpension (HP)' = Breakfast + Dinner; 'Vollpension (VP)' = All 3 meals (Breakfast + Lunch + Dinner)!",
+    memoryTrick: "Halb = Half (2 meals). Voll = Full (all 3 meals)!"
+  },
+  {
+    id: "l59-anrede-formal",
+    german: "Sehr geehrte Damen und Herren,",
+    english: "Dear Sir or Madam, (Formal letter / email salutation)",
+    pronunciation: "zair ge-AIR-te DAH-men oont HAIR-ren,",
+    audioText: "Sehr geehrte Damen und Herren, ich möchte ein Zimmer reservieren.",
+    category: "brief-aufbau",
+    badge: "Formal Salutation",
+    icon: "✉️",
+    kenyanAnalogy: "The gold-standard greeting when writing a formal email to an unknown hotel reception team: 'Sehr geehrte Damen und Herren,'.",
+    memoryTrick: "Literally 'Very honored Ladies and Gentlemen,' – always with a comma and the next sentence starts lowercase!"
+  },
+  {
+    id: "l59-ankommen-datum-uhrzeit",
+    german: "Wir kommen am 07.07. um 18 Uhr an.",
+    english: "We are arriving on 07.07. at 6 p.m.",
+    pronunciation: "veer KOM-men am ZEEB-ten ZEEB-ten oom AKHT-tsayn oor ahn.",
+    audioText: "Wir kommen am siebten Juli um 18 Uhr an. Ich komme am 31. Mai um 15 Uhr 30 mit dem Zug an.",
+    category: "ankunft-zeit",
+    badge: "Arrival Notice",
+    icon: "🚆",
+    kenyanAnalogy: "Notifying the hotel of your arrival time so they don't give away your room: 'ankommen' is separable (kommen ... an)!",
+    memoryTrick: "am + Date (am 7. Juli) + um + Time (um 18 Uhr) + ankommen!"
+  },
+  {
+    id: "l59-dauer-uebernachten",
+    german: "Wir bleiben zwei Tage. / Wir übernachten für eine Woche.",
+    english: "We are staying for two days. / We are staying overnight for one week.",
+    pronunciation: "veer BLY-ben tsvye TAH-ge. / veer ew-ber-NAHKH-ten fewr EYE-ne VOKH-e.",
+    audioText: "Wir bleiben zwei Tage. Wir übernachten für eine Woche. Wir brauchen Übernachtung für drei Nächte.",
+    category: "dauer-aufenthalt",
+    badge: "Duration of Stay",
+    icon: "🗓️",
+    kenyanAnalogy: "Stating how many nights you will sleep: 'bleiben' (to stay) or 'übernachten' (to stay overnight).",
+    memoryTrick: "über (over) + Nacht (night) + -en = übernachten!"
+  },
+  {
+    id: "l59-zeitspanne-vom-bis-zum",
+    german: "Ich bleibe vom 07.07. bis zum 09.07.",
+    english: "I will stay from 07.07. until 09.07.",
+    pronunciation: "ikh BLY-be fom ZEEB-ten ZEEB-ten bis tsoom NOYN-ten ZEEB-ten.",
+    audioText: "Ich bleibe vom siebten Juli bis zum neunten Juli. Ich möchte im August für eine Woche Wien besichtigen.",
+    category: "dauer-aufenthalt",
+    badge: "Date Range Formula",
+    icon: "📅",
+    kenyanAnalogy: "Specifying check-in to check-out dates: 'vom [Datum] bis zum [Datum]' (from ... until ...).",
+    memoryTrick: "vom (von dem) ... bis zum (bis zu dem) + ordinal date (-ten)!"
+  },
+  {
+    id: "l59-zimmerbedarf-ausdruecken",
+    german: "Ich hätte gern ein EZ. / Wir brauchen drei DZ mit Frühstück.",
+    english: "I would like a single room. / We need three double rooms with breakfast.",
+    pronunciation: "ikh HET-te gairn eyn eh-tsett. / veer BROW-khen dry deh-tsett mit FREW-shtewk.",
+    audioText: "Ich hätte gern ein Einzelzimmer mit Vollpension. Wir brauchen drei Doppelzimmer mit Frühstück. Ich möchte ein DZ für diese Zeit reservieren.",
+    category: "zimmer-kategorien",
+    badge: "Room Request",
+    icon: "🗝️",
+    kenyanAnalogy: "Ordering rooms politely: 'Ich hätte gern...' (I would like to have) or 'Wir brauchen...' (We need).",
+    memoryTrick: "hätte gern = would like to have (super polite German formula)!"
+  },
+  {
+    id: "l59-preis-pro-nacht",
+    german: "Wie viel kostet es pro Nacht? / Was kostet ein DZ?",
+    english: "How much does it cost per night? / What does a double room cost?",
+    pronunciation: "vee feel KOS-tet es pro NAHKHT? / vas KOS-tet eyn deh-tsett?",
+    audioText: "Wie viel kostet es pro Nacht? Was kostet ein DZ mit Vollpension? Haben Sie günstige Zimmer?",
+    category: "preis-anfragen",
+    badge: "Price Inquiry",
+    icon: "💶",
+    kenyanAnalogy: "Asking the daily rate before confirming: 'pro Nacht' = per night!",
+    memoryTrick: "pro = per, Nacht = night (pro Nacht = per night)!"
+  },
+  {
+    id: "l59-extrabett",
+    german: "Was kostet ein Extrabett?",
+    english: "How much does an extra bed cost?",
+    pronunciation: "vas KOS-tet eyn EKS-trah-bet?",
+    audioText: "Was kostet ein Extrabett? Wir reisen mit unserem Kind und brauchen ein Extrabett.",
+    category: "preis-anfragen",
+    badge: "Extra Bed",
+    icon: "🛏️",
+    kenyanAnalogy: "Asking for a folding rollaway bed for your child in the hotel room: 'ein Extrabett'.",
+    memoryTrick: "Extra + Bett = Extra bed!"
+  },
+  {
+    id: "l59-abholen-flughafen-bahnhof",
+    german: "Können Sie uns vom Flughafen / Bahnhof abholen?",
+    english: "Can you pick us up from the airport / train station?",
+    pronunciation: "KERN-nen zee oons fom FLOOK-hah-fen / BAHN-hohf AHP-hoh-len?",
+    audioText: "Können Sie uns vom Flughafen abholen? Können Sie uns vom Bahnhof abholen? Wir kommen um 18 Uhr am Hauptbahnhof an.",
+    category: "sonderwuensche",
+    badge: "Shuttle Service",
+    icon: "🚐",
+    kenyanAnalogy: "Requesting hotel transfer / shuttle van from SGR train terminal or JKIA airport: 'vom Bahnhof/Flughafen abholen'!",
+    memoryTrick: "abholen = to pick up (separable: holen ... ab)!"
+  },
+  {
+    id: "l59-haustiere-erlaubt",
+    german: "Sind Haustiere / Hunde erlaubt?",
+    english: "Are pets / dogs allowed?",
+    pronunciation: "zint HOWS-tee-re / HOON-de air-LOWBT?",
+    audioText: "Sind Haustiere erlaubt? Sind Hunde erlaubt? Wir möchten unseren Hund mitbringen.",
+    category: "sonderwuensche",
+    badge: "Pet Policy",
+    icon: "🐶",
+    kenyanAnalogy: "Checking hotel pet policy: 'Haus' (house) + 'Tiere' (animals) = pets; 'erlaubt' = permitted/allowed!",
+    memoryTrick: "erlaubt = allowed/permitted! Haustiere = house animals / pets."
+  },
+  {
+    id: "l59-meeresblick",
+    german: "Haben Sie ein Zimmer mit Meeresblick?",
+    english: "Do you have a room with a sea view?",
+    pronunciation: "HAH-ben zee eyn TSIM-mer mit MAY-res-blik?",
+    audioText: "Haben Sie ein Zimmer mit Meeresblick? Wir möchten den Sonnenuntergang über dem Meer sehen.",
+    category: "sonderwuensche",
+    badge: "Ocean View",
+    icon: "🌊",
+    kenyanAnalogy: "Just like booking a beach resort in Diani or Mombasa: requesting an ocean-facing balcony room: 'mit Meeresblick'!",
+    memoryTrick: "Meer (sea) + Blick (view/look) = Meeresblick!"
+  },
+  {
+    id: "l59-sehenswuerdigkeiten-info",
+    german: "Schicken Sie bitte Information über die Sehenswürdigkeiten.",
+    english: "Please send information about the tourist sights / attractions.",
+    pronunciation: "SHIK-ken zee BIT-te in-for-mah-tsee-OHN ew-ber dee ZAY-ens-vewr-dikh-kay-ten.",
+    audioText: "Schicken Sie bitte Information über die Sehenswürdigkeiten. Können Sie mir auch Information über die Stadt schicken?",
+    category: "sonderwuensche",
+    badge: "Sightseeing Info",
+    icon: "🗺️",
+    kenyanAnalogy: "Asking hotel concierge to email travel brochures and city tour spots: 'Sehenswürdigkeiten' (sights worthy of seeing)!",
+    memoryTrick: "sehen (to see) + würdig (worthy) = Sehenswürdigkeiten (sights)!"
+  },
+  {
+    id: "l59-grussformel-abschluss",
+    german: "Mit freundlichen Grüßen / Viele Grüße",
+    english: "Sincerely yours / Best regards (Formal letter closing)",
+    pronunciation: "mit FROYN-dlikh-en GREW-sen / FEE-le GREW-se",
+    audioText: "Ich bitte um Antwort! Danke und viele Grüße. Mit freundlichen Grüßen, Maria Schmidt.",
+    category: "brief-aufbau",
+    badge: "Letter Closing",
+    icon: "✍️",
+    kenyanAnalogy: "Formal German business sign-off: 'Mit freundlichen Grüßen' (With friendly greetings) + Your Full Name.",
+    memoryTrick: "freundlich = friendly, Grüße = greetings!"
+  }
+];
+
+export const LESSON_59_SCENARIOS = [
+  {
+    scenario: "In Slide 8–10, you are booking a hotel room for yourself and your spouse. Which room type abbreviation should you select?",
+    hint: "Think about single (EZ) vs. double (DZ) room!",
+    options: [
+      { text: "das Doppelzimmer (DZ)", correct: true, explain: "Genau! 'DZ' stands for 'Doppelzimmer' (double room), while 'EZ' is 'Einzelzimmer' (single room for 1 person)!" },
+      { text: "das Einzelzimmer (EZ)", correct: false, explain: "'EZ' is only for a single solo traveler." },
+      { text: "die Jugendherberge", correct: false, explain: "That is the type of youth hostel building, not the room size." }
+    ]
+  },
+  {
+    scenario: "In Slide 11 & 12, you want your hotel booking to include both breakfast and dinner (2 meals). Which board package is this?",
+    hint: "Halbpension (HP) vs. Vollpension (VP)",
+    options: [
+      { text: "die Halbpension (HP)", correct: true, explain: "Perfekt! 'Halbpension (HP)' includes breakfast and dinner (half board), whereas 'Vollpension (VP)' includes all three meals (breakfast, lunch, and dinner)!" },
+      { text: "die Vollpension (VP)", correct: false, explain: "Vollpension includes breakfast, lunch, and dinner (all 3 meals)." },
+      { text: "ohne Essen", correct: false, explain: "That means without any food." }
+    ]
+  },
+  {
+    scenario: "In Slide 13–15, how do you correctly start a formal hotel reservation email in German when you don't know the receptionist's name?",
+    hint: "Sehr geehrte Damen und Herren,",
+    options: [
+      { text: "Sehr geehrte Damen und Herren,", correct: true, explain: "Ausgezeichnet! 'Sehr geehrte Damen und Herren,' is the classic, respectful German salutation for formal business letters and bookings!" },
+      { text: "Hallo Kumpel!", correct: false, explain: "Far too casual (slang for 'Hey buddy!')." },
+      { text: "Auf Wiederhören!", correct: false, explain: "That is a telephone farewell, not an email salutation." }
+    ]
+  },
+  {
+    scenario: "In Slide 24, you want to state that you will stay from July 7th until July 9th. Which German date formula is correct?",
+    hint: "vom [Datum] bis zum [Datum]",
+    options: [
+      { text: "Ich bleibe vom 07.07. bis zum 09.07.", correct: true, explain: "Wunderbar! 'vom ... bis zum ...' is the exact German formula for specifying a stay from one calendar date to another!" },
+      { text: "Ich bleibe gestern und morgen.", correct: false, explain: "That means yesterday and tomorrow." },
+      { text: "Ich bleibe niemals im Hotel.", correct: false, explain: "That means I never stay in a hotel." }
+    ]
+  },
+  {
+    scenario: "In Slide 32, you want to bring your family dog on holiday. How do you ask the hotel if pets are permitted?",
+    hint: "Sind Haustiere / Hunde erlaubt?",
+    options: [
+      { text: "Sind Haustiere erlaubt? / Sind Hunde erlaubt?", correct: true, explain: "Hervorragend! 'Haustiere' (pets) and 'erlaubt' (allowed/permitted) is the standard polite inquiry!" },
+      { text: "Wo ist der Hundekuchen?", correct: false, explain: "That asks where the dog cake is." },
+      { text: "Ich esse keinen Hund.", correct: false, explain: "Irrelevant statement." }
+    ]
+  },
+  {
+    scenario: "In Slide 33, you are booking a seaside vacation and want a room facing the ocean. What do you ask for?",
+    hint: "Haben Sie ein Zimmer mit Meeresblick?",
+    options: [
+      { text: "Haben Sie ein Zimmer mit Meeresblick?", correct: true, explain: "Fantastisch! 'Meeresblick' means 'sea view / ocean view' (Meer = sea + Blick = view)!" },
+      { text: "Haben Sie ein Zimmer ohne Fenster?", correct: false, explain: "That asks for a room with no windows." },
+      { text: "Haben Sie ein Zimmer im Keller?", correct: false, explain: "That asks for a room in the basement." }
+    ]
+  }
+];
+
 
 
 

@@ -70,6 +70,7 @@ export default function Header({
     if (currentLesson === 56) msg = "Zeitadverbien: Montags beginnt der Unterricht um 15 Uhr. Heute kocht mein Mann. Jetzt muss ich gehen! Zuerst lesen, dann übersetzen, danach einkaufen und später Eis essen. Er kommt immer zu spät!";
     if (currentLesson === 57) msg = "Am Telefon sprechen: Guten Tag, Firma Rohrmann GmbH, Sie sprechen mit Julia Becker. Was kann ich für Sie tun? Kann ich bitte mit Herrn Schmitz sprechen? Einen Augenblick bitte, ich verbinde Sie! Er spricht gerade auf der anderen Leitung. Kann ich ihm etwas ausrichten? Könnten Sie ihm bitte sagen, er soll mich zurückrufen? Auf Wiederhören!";
     if (currentLesson === 58) msg = "Beim Arzt: Praxis Dr. Lampert, guten Tag! Was fehlt Ihnen denn? Ich fühle mich seit gestern nicht wohl, habe Rückenschmerzen, Husten und Fieber. Der Arzt misst den Blutdruck und die Temperatur. Bleiben Sie im Bett, trinken Sie Kräutertee! Hier ist Ihre Arbeitsunfähigkeitsbescheinigung. Gute Besserung!";
+    if (currentLesson === 59) msg = "Hotelreservierung: Sehr geehrte Damen und Herren, ich möchte ein Doppelzimmer mit Halbpension für drei Nächte reservieren. Wir kommen am siebten Juli mit dem Zug an. Haben Sie ein Zimmer mit Meeresblick? Sind Hunde erlaubt? Mit freundlichen Grüßen, Maria Schmidt.";
     speakGerman(msg, isSlowMode);
   };
 
@@ -540,6 +541,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson59NavItems = [
+    { id: 'cards', label: '📖 Lesson 59 Cards', sub: 'Hotel Vocab & Boards' },
+    { id: 'studio59', label: '🏨 Hotel Studio', sub: 'Room Config & Letter Composer' },
+    { id: 'game59', label: '🎮 Hotel Quiz', sub: 'Lodging & Booking Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -598,6 +607,7 @@ export default function Header({
   if (currentLesson === 56) navItems = lesson56NavItems;
   if (currentLesson === 57) navItems = lesson57NavItems;
   if (currentLesson === 58) navItems = lesson58NavItems;
+  if (currentLesson === 59) navItems = lesson59NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -658,6 +668,7 @@ export default function Header({
     { num: 56, label: "⏰ 56: Zeitadverbien", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 57, label: "📞 57: Am Telefon", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
     { num: 58, label: "🩺 58: Beim Arzt", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
+    { num: 59, label: "🏨 59: Hotelreservierung", activeClass: "bg-amber-700 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (

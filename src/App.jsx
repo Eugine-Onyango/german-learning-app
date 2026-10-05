@@ -122,6 +122,8 @@ import Lesson57TelefonStudio from './components/Lesson57TelefonStudio';
 import Lesson57Game from './components/Lesson57Game';
 import Lesson58ArztStudio from './components/Lesson58ArztStudio';
 import Lesson58Game from './components/Lesson58Game';
+import Lesson59HotelStudio from './components/Lesson59HotelStudio';
+import Lesson59Game from './components/Lesson59Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -180,11 +182,12 @@ import {
   LESSON_55_ITEMS,
   LESSON_56_ITEMS,
   LESSON_57_ITEMS,
-  LESSON_58_ITEMS
+  LESSON_58_ITEMS,
+  LESSON_59_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(58); // Default to Lesson 58 as requested, easy switch to 1-57
+  const [currentLesson, setCurrentLesson] = useState(59); // Default to Lesson 59 as requested, easy switch to 1-58
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -246,6 +249,7 @@ export default function App() {
   if (currentLesson === 56) activeItems = LESSON_56_ITEMS;
   if (currentLesson === 57) activeItems = LESSON_57_ITEMS;
   if (currentLesson === 58) activeItems = LESSON_58_ITEMS;
+  if (currentLesson === 59) activeItems = LESSON_59_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -305,7 +309,8 @@ export default function App() {
     if (currentLesson === 55) return "Lesson 55: Mit dem Taxi fahren (Taking a Taxi - Booking, Hailing, Cockpit & Fare Tipping)";
     if (currentLesson === 56) return "Lesson 56: Zeitadverbien (Adverbs of Time - Habitual Days, 3-Era Timelines, Sequence & Frequency)";
     if (currentLesson === 57) return "Lesson 57: Am Telefon sprechen (Telephone Conversations, Greetings, Messages & Clarifications)";
-    return "Lesson 58: Beim Arzt (At the Doctor's Office - Appointments, Symptoms, Vitals & AU Sick Notes)";
+    if (currentLesson === 58) return "Lesson 58: Beim Arzt (At the Doctor's Office - Appointments, Symptoms, Vitals & AU Sick Notes)";
+    return "Lesson 59: Hotelreservierung (Hotel Booking, EZ / DZ, Meal Plans & Formal Reservation Letters)";
   };
 
   const getLessonDesc = () => {
@@ -480,7 +485,10 @@ export default function App() {
     if (currentLesson === 57) {
       return "Master speaking on the telephone in German (Am Telefon sprechen)! Learn answering & identifying yourself (sich melden: Hier ist Anna! / Müller GmbH, Sie sprechen mit Sarah Schmidt), asking for people (Kann ich bitte mit Herrn Schmitz sprechen? / Könnten Sie mich verbinden?), handling unreachability (Er spricht gerade auf der anderen Leitung / ist in einer Besprechung / auf Geschäftsreise), taking & leaving messages (etwas ausrichten: Er soll mich zurückrufen / Ich bin krank / Ich werde es ausrichten), the 'I Didn't Catch That' clarification toolkit (Entschuldigung, wie bitte? / langsamer sprechen / buchstabieren), and the Golden German Phone Rule (Auf Wiederhören vs. Auf Wiedersehen)!";
     }
-    return "Master visiting the doctor and navigating medical clinics in German (Beim Arzt)! Learn booking appointments over the phone (einen Arzttermin vereinbaren), bringing your microchipped insurance card (die Versicherungskarte), expressing symptoms & complaints (Was fehlt Ihnen denn? ➔ Ich fühle mich seit gestern nicht wohl, habe Rückenschmerzen, Husten, Fieber), physical examinations (den Patienten untersuchen, Mund aufmachen, husten), measuring vitals (den Blutdruck & die Temperatur messen), medication forms & rules (die Tablette / Kapsel einnehmen, Tropfen, Salbe), doctor's modal orders (Sie dürfen nicht zur Arbeit gehen, Sie müssen im Bett bleiben), and the legendary German sick note for employers (die Arbeitsunfähigkeitsbescheinigung / AU-Bescheinigung / Krankschreibung)!";
+    if (currentLesson === 58) {
+      return "Master visiting the doctor and navigating medical clinics in German (Beim Arzt)! Learn booking appointments over the phone (einen Arzttermin vereinbaren), bringing your microchipped insurance card (die Versicherungskarte), expressing symptoms & complaints (Was fehlt Ihnen denn? ➔ Ich fühle mich seit gestern nicht wohl, habe Rückenschmerzen, Husten, Fieber), physical examinations (den Patienten untersuchen, Mund aufmachen, husten), measuring vitals (den Blutdruck & die Temperatur messen), medication forms & rules (die Tablette / Kapsel einnehmen, Tropfen, Salbe), doctor's modal orders (Sie dürfen nicht zur Arbeit gehen, Sie müssen im Bett bleiben), and the legendary German sick note for employers (die Arbeitsunfähigkeitsbescheinigung / AU-Bescheinigung / Krankschreibung)!";
+    }
+    return "Master booking hotels and holiday lodgings in German (Hotelreservierung)! Distinguish lodging types (das Hotel, die Pension, die Jugendherberge), room types (das Einzelzimmer / EZ vs. das Doppelzimmer / DZ), meal plans (mit Frühstück, Halbpension / HP, Vollpension / VP), master the formal 3-part reservation letter anatomy (Sehr geehrte Damen und Herren ➔ Arrival, duration, rooms, price & wishes ➔ Mit freundlichen Grüßen), ask for rates (Was kostet es pro Nacht?), and request special services (Flughafen-/Bahnhof-Abholung, Meeresblick, Extrabett, Haustier-Erlaubnis)!";
   };
 
   return (
@@ -1039,6 +1047,15 @@ export default function App() {
 
         {currentLesson === 58 && activeTab === 'game58' && (
           <Lesson58Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 59 Specific Modules */}
+        {currentLesson === 59 && activeTab === 'studio59' && (
+          <Lesson59HotelStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 59 && activeTab === 'game59' && (
+          <Lesson59Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
