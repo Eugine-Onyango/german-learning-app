@@ -14012,6 +14012,294 @@ export const LESSON_56_SCENARIOS = [
   }
 ];
 
+export const LESSON_57_ITEMS = [
+  {
+    id: "l57-telefonieren",
+    german: "am Telefon sprechen / telefonieren",
+    english: "to speak on the phone / to make a phone call",
+    pronunciation: "am tay-lay-FOHN SHPREKH-en / tay-lay-fo-NEER-en",
+    audioText: "Am Telefon sprechen. Ich telefoniere jeden Tag mit meinen Kollegen. Hast du schon mit dem Chef telefoniert?",
+    category: "ans-telefon-gehen",
+    badge: "Verb: telefonieren",
+    icon: "📞",
+    kenyanAnalogy: "Just like 'kupiga simu' or chatting on WhatsApp call: 'Ich telefoniere gern' (I like talking on the phone)!",
+    memoryTrick: "telefonieren = 'telephone-ing' (regular verb with -iert in Perfekt: hat telefoniert)!"
+  },
+  {
+    id: "l57-klingeln-abheben",
+    german: "Das Telefon klingelt. / ans Telefon gehen",
+    english: "The phone is ringing. / to answer the phone (pick up)",
+    pronunciation: "das tay-lay-FOHN KLING-elt / ans tay-lay-FOHN GAY-en",
+    audioText: "Das Telefon klingelt laut! Kannst du bitte ans Telefon gehen? Ich gehe ans Telefon.",
+    category: "ans-telefon-gehen",
+    badge: "Action: Answer Call",
+    icon: "📲",
+    kenyanAnalogy: "When the phone rings ('simu inalia') and you pick it up: 'ans Telefon gehen' literally means 'going onto the phone' (answering)!",
+    memoryTrick: "klingeln = ring (like a cling sound). 'ans Telefon gehen' = step up to answer the call!"
+  },
+  {
+    id: "l57-sich-melden-informell",
+    german: "Hier ist Anna! / Müller.",
+    english: "This is Anna! / Müller speaking. (Informal phone greeting)",
+    pronunciation: "heer ist AH-na! / MEW-ler.",
+    audioText: "Hallo Max, hier ist Anna! / Müller.",
+    category: "sich-melden",
+    badge: "Casual Answering",
+    icon: "👋",
+    kenyanAnalogy: "Answering a friend's call casually: instead of saying 'Mimi hapa', Germans say 'Hier ist Anna!' (Here is Anna) or simply say their last name 'Müller.'",
+    memoryTrick: "'Hier ist...' = 'Here is [Your Name]!' Short, sweet, and friendly."
+  },
+  {
+    id: "l57-sich-melden-formell",
+    german: "Müller GmbH, Sarah Schmidt am Apparat. Was kann ich für Sie tun?",
+    english: "Müller GmbH, Sarah Schmidt on the line. How can I help you? / What can I do for you?",
+    pronunciation: "MEW-ler geh-em-bay-hah, SAH-rah shmit am ah-pah-RAHT. vas kahn ikh fewr zee toon?",
+    audioText: "Guten Tag, Firma Müller GmbH, Sie sprechen mit Sarah Schmidt. Was kann ich für Sie tun?",
+    category: "sich-melden",
+    badge: "Formal Reception",
+    icon: "🏢",
+    kenyanAnalogy: "Corporate switchboard greeting: Mention Company + Your Name + 'am Apparat' (on the device) + 'Was kann ich für Sie tun?' (How may I assist you?).",
+    memoryTrick: "am Apparat = on the apparatus/line! Was kann ich für Sie tun? = What can I do for you?"
+  },
+  {
+    id: "l57-caller-identify",
+    german: "Guten Tag, hier ist Jonas Müller von Müller AG.",
+    english: "Good day, this is Jonas Müller from Müller AG.",
+    pronunciation: "GOO-ten tahk, heer ist YO-nahs MEW-ler fon MEW-ler ah-gay.",
+    audioText: "Guten Tag Frau Becker. Mein Name ist Jonas Müller von Müller AG. Guten Tag, hier ist Jonas Müller.",
+    category: "sich-melden",
+    badge: "Caller Introduction",
+    icon: "💼",
+    kenyanAnalogy: "Introducing yourself professionally on a business call: 'Hier ist [Name] von [Company]'.",
+    memoryTrick: "'von' = 'from / with' company (like 'Jonas from Müller AG')!"
+  },
+  {
+    id: "l57-nach-person-fragen",
+    german: "Kann ich bitte mit Herrn Meyer sprechen? / Ist Frau Meyer da?",
+    english: "Can I please speak with Mr. Meyer? / Is Ms. Meyer in?",
+    pronunciation: "kahn ikh BIT-te mit hairn MY-er SHPREKH-en? / ist frow MY-er dah?",
+    audioText: "Kann ich bitte mit Herrn Schmitz sprechen? Ist Frau Meyer da? Könnte ich bitte mit der Chefin sprechen?",
+    category: "nach-person-fragen",
+    badge: "Asking for Person",
+    icon: "👥",
+    kenyanAnalogy: "Asking the receptionist to speak with the manager: 'Kann ich bitte mit Herrn [X] sprechen?' (Notice: mit Herrn with -n!).",
+    memoryTrick: "mit + Dative masculine = mit HERRN (adds -n)! 'Ist Frau X da?' = Is Ms. X there/around?"
+  },
+  {
+    id: "l57-verbinden",
+    german: "Könnten Sie mich bitte verbinden? / Einen Augenblick, ich verbinde Sie.",
+    english: "Could you please connect/transfer me? / One moment, I will connect you.",
+    pronunciation: "KERN-ten zee mikh BIT-te fer-BIN-den? / EYE-nen OW-gen-blik, ikh fer-BIN-de zee.",
+    audioText: "Könnten Sie mich mit Herrn Schmitz verbinden? Einen Augenblick bitte, ich verbinde Sie.",
+    category: "verbinden",
+    badge: "Transferring Line",
+    icon: "🔄",
+    kenyanAnalogy: "Switchboard operator saying 'Hold the line, let me put you through': 'Einen Augenblick bitte. Ich verbinde Sie.'",
+    memoryTrick: "verbinden = to bind/connect lines together! Augenblick = blink of an eye (one moment)."
+  },
+  {
+    id: "l57-nicht-erreichbar-leitung",
+    german: "Er spricht gerade auf der anderen Leitung.",
+    english: "He is currently speaking on the other line.",
+    pronunciation: "air shprikht ge-RAH-de owf dair AHN-de-ren LY-toong.",
+    audioText: "Es tut mir leid, aber Herr Schmitz spricht gerade auf der anderen Leitung.",
+    category: "nicht-erreichbar",
+    badge: "Busy on Other Line",
+    icon: "📵",
+    kenyanAnalogy: "When the line is busy ('ako kwa simu nyingine'): 'auf der anderen Leitung' (on the other line/pipe).",
+    memoryTrick: "Leitung = line / wire / pipe. 'auf der anderen Leitung' = on the second call!"
+  },
+  {
+    id: "l57-nicht-erreichbar-besprechung",
+    german: "Sie ist in einer Besprechung / auf Geschäftsreise.",
+    english: "She is in a meeting / on a business trip.",
+    pronunciation: "zee ist in EYE-ner be-SHPREKH-oong / owf ge-SHEFTS-rye-ze.",
+    audioText: "Frau Becker ist leider nicht erreichbar. Sie ist in einer Besprechung und danach auf Geschäftsreise.",
+    category: "nicht-erreichbar",
+    badge: "Meeting / Business Trip",
+    icon: "🗓️",
+    kenyanAnalogy: "Explaining why someone can't pick up: 'Ako kwa meeting' (in einer Besprechung) or 'safari ya kikazi' (auf Geschäftsreise).",
+    memoryTrick: "Besprechung = meeting (discussing). Geschäftsreise = business + trip (Reise)!"
+  },
+  {
+    id: "l57-etwas-ausrichten-frage",
+    german: "Kann ich ihm / ihr etwas ausrichten?",
+    english: "Can I take a message for him / her? (pass on a message)",
+    pronunciation: "kahn ikh eem / eer ET-vas OWS-rikh-ten?",
+    audioText: "Er ist nicht da. Kann ich ihm etwas ausrichten? Kann ich Ihnen weiterhelfen?",
+    category: "etwas-ausrichten",
+    badge: "Take a Message",
+    icon: "✍️",
+    kenyanAnalogy: "The receptionist asking 'Nimwambie nini akirudi?' (What message should I deliver for him/her?): 'Kann ich ihm etwas ausrichten?'",
+    memoryTrick: "ausrichten = to direct/deliver a message outwards to someone! ihm = for him, ihr = for her."
+  },
+  {
+    id: "l57-nachricht-hinterlassen",
+    german: "Möchten Sie eine Nachricht hinterlassen?",
+    english: "Would you like to leave a message?",
+    pronunciation: "MERKH-ten zee EYE-ne NAHKH-rikht hin-ter-LAHS-sen?",
+    audioText: "Möchten Sie eine Nachricht hinterlassen? Ich kann ihm Ihre Telefonnummer geben.",
+    category: "nachricht-hinterlassen",
+    badge: "Leave a Message",
+    icon: "📝",
+    kenyanAnalogy: "Offering to note down a memo or contact number: 'Nachricht hinterlassen' = leave behind a message.",
+    memoryTrick: "hinterlassen = leave behind (hinter = behind + lassen = let/leave)!"
+  },
+  {
+    id: "l57-caller-callback-request",
+    german: "Könnten Sie ihm bitte sagen, er soll mich zurückrufen?",
+    english: "Could you please tell him to call me back?",
+    pronunciation: "KERN-ten zee eem BIT-te ZAH-gen, air zol mikh tsoo-REWK-roo-fen?",
+    audioText: "Könnten Sie ihm bitte sagen, er soll mich heute Nachmittag zurückrufen? Er möchte mich bitte zurückrufen.",
+    category: "etwas-ausrichten",
+    badge: "Request Callback",
+    icon: "🔁",
+    kenyanAnalogy: "Asking someone to call back: 'Mwambie anipigie baadaye' $\rightarrow$ 'er soll mich zurückrufen' (he should call me back).",
+    memoryTrick: "zurückrufen = call back (zurück = back + rufen = call)!"
+  },
+  {
+    id: "l57-caller-inform-absence",
+    german: "Sagen Sie ihr bitte, ich kann morgen nicht kommen.",
+    english: "Please tell her that I cannot come tomorrow.",
+    pronunciation: "ZAH-gen zee eer BIT-te, ikh kahn MOR-gen nikht KOM-men.",
+    audioText: "Sagen Sie ihr bitte, ich kann morgen nicht kommen. Ich bin heute krank und komme nicht zum Meeting.",
+    category: "etwas-ausrichten",
+    badge: "Report Absence",
+    icon: "🤒",
+    kenyanAnalogy: "Calling office reception when sick or stuck: 'Sagen Sie ihr bitte, ich bin heute krank' (Tell her please, I'm sick today).",
+    memoryTrick: "'Sagen Sie [ihm/ihr] bitte...' = 'Please tell [him/her]...'!"
+  },
+  {
+    id: "l57-ich-werde-es-ausrichten",
+    german: "Ich werde es ausrichten. / Ja, natürlich mache ich das.",
+    english: "I will pass on the message. / Yes, of course I will do that.",
+    pronunciation: "ikh VAIR-de es OWS-rikh-ten. / yah, nah-TEWR-likh MAHKH-e ikh dahs.",
+    audioText: "Ja natürlich mache ich das. Ich werde es Frau Meyer ausrichten. Auf Wiederhören!",
+    category: "etwas-ausrichten",
+    badge: "Confirmation",
+    icon: "✅",
+    kenyanAnalogy: "Reassuring the caller: 'Sawa, nitamfikishia ujumbe' $\rightarrow$ 'Ich werde es ausrichten'!",
+    memoryTrick: "'Ich werde es ausrichten' = I will deliver the message without fail!"
+  },
+  {
+    id: "l57-wie-bitte-wiederholen",
+    german: "Entschuldigung, wie bitte? / Könnten Sie das wiederholen?",
+    english: "Excuse me, pardon? / Could you please repeat that?",
+    pronunciation: "ent-SHOOL-di-goong, vee BIT-te? / KERN-ten zee dahs vee-der-HOH-len?",
+    audioText: "Entschuldigung, wie bitte? Das habe ich leider nicht verstanden. Könnten Sie das bitte noch einmal sagen?",
+    category: "nachfragen-verstehen",
+    badge: "Pardon & Repeat",
+    icon: "👂",
+    kenyanAnalogy: "When the line is crackly or they spoke too fast: 'Wie bitte?' is the polite 'Pardon? / Ati nini?' of German!",
+    memoryTrick: "'Wie bitte?' = 'How please?' (German for polite 'Excuse me, what did you say?'). Never say 'Was?' in business!"
+  },
+  {
+    id: "l57-langsamer-buchstabieren",
+    german: "Könnten Sie bitte etwas langsamer sprechen / buchstabieren?",
+    english: "Could you please speak a bit slower / spell that?",
+    pronunciation: "KERN-ten zee BIT-te ET-vas LAHNG-zah-mer SHPREKH-en / bookh-shtah-BEE-ren?",
+    audioText: "Könnten Sie bitte etwas langsamer sprechen? Könnten Sie den Namen bitte buchstabieren?",
+    category: "nachfragen-verstehen",
+    badge: "Slow Down / Spell",
+    icon: "🔤",
+    kenyanAnalogy: "Crucial for foreigners on phone calls: asking them to slow down ('langsamer') and spell their difficult German name ('buchstabieren')!",
+    memoryTrick: "langsamer = more slowly (langsam = slow). buchstabieren = spell letter by letter (Buchstabe = letter)!"
+  },
+  {
+    id: "l57-danke-auskunft",
+    german: "Danke für Ihre Auskunft / Ihre Hilfe.",
+    english: "Thank you for your information / your help.",
+    pronunciation: "DAHN-ke fewr EE-re OWS-koonft / EE-re HIL-fe.",
+    audioText: "Vielen Dank für Ihre Auskunft. Danke für Ihre Hilfe und einen schönen Tag noch!",
+    category: "gespraech-beenden",
+    badge: "Thanking",
+    icon: "🙏",
+    kenyanAnalogy: "Expressing gratitude before hanging up: 'Asante kwa usaidizi / taarifa' $\rightarrow$ 'Danke für Ihre Auskunft'!",
+    memoryTrick: "Auskunft = info / information from a service desk or operator!"
+  },
+  {
+    id: "l57-auf-wiederhoeren",
+    german: "Auf Wiederhören! (Vielen Dank, Ihnen auch.)",
+    english: "Good-bye on the phone! (Thank you very much, same to you.)",
+    pronunciation: "owf VEE-der-her-en! (FEE-len dahnk, EE-nen owkh.)",
+    audioText: "Ich wünsche Ihnen einen schönen Tag. Vielen Dank. Ihnen auch. Auf Wiederhören!",
+    category: "gespraech-beenden",
+    badge: "Phone Goodbye Rule",
+    icon: "🎯",
+    kenyanAnalogy: "GOLDEN GERMAN PHONE RULE: In person you say 'Auf WiederSEHEN' (till we SEE again). On the phone you CANNOT see each other, so you MUST say 'Auf WiederHÖREN' (till we HEAR again)!",
+    memoryTrick: "hören = to hear! 'Auf Wiederhören' = Until we HEAR each other again!"
+  },
+  {
+    id: "l57-spaeter-anrufen",
+    german: "Ich rufe Sie später / morgen nochmal an.",
+    english: "I will call you again later / tomorrow.",
+    pronunciation: "ikh ROO-fe zee SHPAY-ter / MOR-gen NOKH-mahl ahn.",
+    audioText: "Ich rufe Sie später nochmal an. Vielen Dank für Ihre Geduld. Auf Wiederhören!",
+    category: "gespraech-beenden",
+    badge: "Callback Promise",
+    icon: "⏰",
+    kenyanAnalogy: "Wrapping up without leaving a long message: 'Nitakupigia baadaye' $\rightarrow$ 'Ich rufe später nochmal an'!",
+    memoryTrick: "anrufen = separable verb (Ich rufe ... an). nochmal = once more / again!"
+  }
+];
+
+export const LESSON_57_SCENARIOS = [
+  {
+    scenario: "In Slide 30–32, you are ending a phone call with a German client. Why must you say 'Auf Wiederhören' instead of 'Auf Wiedersehen'?",
+    hint: "Think about which sense you use on a telephone call: seeing vs. hearing!",
+    options: [
+      { text: "Because you are hearing (hören) each other over the phone, not seeing (sehen)!", correct: true, explain: "Genau! In German, in-person farewell is 'Auf WiederSEHEN' (seeing), but telephone farewell is strictly 'Auf WiederHÖREN' (hearing)!" },
+      { text: "Because 'Auf Wiederhören' is only used with children.", correct: false, explain: "'Auf Wiederhören' is the standard polite telephone goodbye for everyone." },
+      { text: "Because 'Auf Wiedersehen' is forbidden in Germany.", correct: false, explain: "'Auf Wiedersehen' is used when facing someone in person." }
+    ]
+  },
+  {
+    scenario: "In Slide 9 & 10, when answering an official company line at Rohrmann GmbH as Julia Becker, what is the professional greeting?",
+    hint: "Company name + Your name + 'Was kann ich für Sie tun?' or 'Sie sprechen mit...'",
+    options: [
+      { text: "Guten Tag, hier ist Firma Rohrmann GmbH, Sie sprechen mit Julia Becker. Was kann ich für Sie tun?", correct: true, explain: "Perfekt! In formal business German, state the company name, your full name, and offer assistance courteously!" },
+      { text: "Hallo! Wer ist da?", correct: false, explain: "Too informal and unprofessional for office reception." },
+      { text: "Tschüss, ich habe keine Zeit.", correct: false, explain: "That means goodbye I have no time!" }
+    ]
+  },
+  {
+    scenario: "In Slide 13–15, you want to speak with Mr. Schmitz and ask the receptionist to transfer your call. Which question is polite and correct?",
+    hint: "Könnten Sie mich bitte mit Herrn Schmitz verbinden?",
+    options: [
+      { text: "Könnten Sie mich bitte mit Herrn Schmitz verbinden?", correct: true, explain: "Ausgezeichnet! 'verbinden' means to connect/transfer lines, and 'mit Herrn Schmitz' uses the polite Dative masculine ending!" },
+      { text: "Geben Sie mir den Mann sofort!", correct: false, explain: "Rude and aggressive demand." },
+      { text: "Ich bin Herr Schmitz.", correct: false, explain: "That says you are Mr. Schmitz, not asking to be connected to him." }
+    ]
+  },
+  {
+    scenario: "In Slide 20 & 34, the receptionist tells you Mr. Schmitz is busy on another call. She asks: 'Kann ich ihm etwas ausrichten?' What does this mean?",
+    hint: "etwas ausrichten = to pass on / take a message for someone.",
+    options: [
+      { text: "Can I take a message for him / pass on a message to him?", correct: true, explain: "Wunderbar! 'etwas ausrichten' is the classic German idiom for passing along a message or note to someone who is currently unavailable!" },
+      { text: "Can I delete his phone number?", correct: false, explain: "Incorrect meaning." },
+      { text: "Can you fix his broken telephone?", correct: false, explain: "'Ausrichten' in phone context means delivering a message." }
+    ]
+  },
+  {
+    scenario: "In Slide 25 & 34, you want the receptionist to ask Mr. Schmitz to call you back this afternoon. What do you say?",
+    hint: "er soll mich heute Nachmittag zurückrufen.",
+    options: [
+      { text: "Könnten Sie ihm bitte sagen, er soll mich heute Nachmittag zurückrufen?", correct: true, explain: "Hervorragend! 'zurückrufen' means to call back, and 'er soll mich zurückrufen' specifies he should call you back!" },
+      { text: "Er muss mir Geld schicken.", correct: false, explain: "That means he must send me money." },
+      { text: "Ich rufe nie wieder an.", correct: false, explain: "That means I will never call again." }
+    ]
+  },
+  {
+    scenario: "In Slide 27 & 28, the caller's connection is bad and they are talking too fast. How do you politely ask them to slow down and repeat?",
+    hint: "Entschuldigung, wie bitte? Könnten Sie bitte etwas langsamer sprechen?",
+    options: [
+      { text: "Entschuldigung, wie bitte? Könnten Sie bitte etwas langsamer sprechen?", correct: true, explain: "Fantastisch! 'Wie bitte?' (Pardon?) and 'etwas langsamer sprechen' (speak a bit slower) are the gold-standard polite German phrases for phone misunderstandings!" },
+      { text: "Was?! Sei still!", correct: false, explain: "Extremely rude!" },
+      { text: "Ich verstehe alles super.", correct: false, explain: "That means you understand everything great." }
+    ]
+  }
+];
+
 
 
 

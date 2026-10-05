@@ -68,6 +68,7 @@ export default function Header({
     if (currentLesson === 54) msg = "Im Kaufhaus: Guten Tag, Sie wünschen? Ich suche eine Hose für das Büro. Welche Größe haben Sie denn? Ich trage Größe 38. Wo ist die Umkleidekabine? Gleich hier um die Ecke! Sie passt genau. Was kostet sie? Sie kostet nur 30 Euro. Auf Wiedersehen!";
     if (currentLesson === 55) msg = "Mit dem Taxi fahren: Entschuldigen Sie, sind Sie frei? Können Sie mich zum Flughafen bringen? Schalten Sie bitte das Taxameter ein! Wie viel kostet das? Fünfzehn Euro fünfzig bitte. Stimmt so, der Rest ist für Sie!";
     if (currentLesson === 56) msg = "Zeitadverbien: Montags beginnt der Unterricht um 15 Uhr. Heute kocht mein Mann. Jetzt muss ich gehen! Zuerst lesen, dann übersetzen, danach einkaufen und später Eis essen. Er kommt immer zu spät!";
+    if (currentLesson === 57) msg = "Am Telefon sprechen: Guten Tag, Firma Rohrmann GmbH, Sie sprechen mit Julia Becker. Was kann ich für Sie tun? Kann ich bitte mit Herrn Schmitz sprechen? Einen Augenblick bitte, ich verbinde Sie! Er spricht gerade auf der anderen Leitung. Kann ich ihm etwas ausrichten? Könnten Sie ihm bitte sagen, er soll mich zurückrufen? Auf Wiederhören!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -522,6 +523,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson57NavItems = [
+    { id: 'cards', label: '📖 Lesson 57 Cards', sub: 'Phone Vocab & Greetings' },
+    { id: 'studio57', label: '📞 Telefon Studio', sub: 'Switchboard, Clarification & Duet' },
+    { id: 'game57', label: '🎮 Telefon Quiz', sub: 'Phone Scenarios & Etiquette' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -578,6 +587,7 @@ export default function Header({
   if (currentLesson === 54) navItems = lesson54NavItems;
   if (currentLesson === 55) navItems = lesson55NavItems;
   if (currentLesson === 56) navItems = lesson56NavItems;
+  if (currentLesson === 57) navItems = lesson57NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -636,6 +646,7 @@ export default function Header({
     { num: 54, label: "🏬 54: Im Kaufhaus", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 55, label: "🚕 55: Mit dem Taxi", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 56, label: "⏰ 56: Zeitadverbien", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
+    { num: 57, label: "📞 57: Am Telefon", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
   ];
 
   return (

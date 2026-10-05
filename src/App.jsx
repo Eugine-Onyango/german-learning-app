@@ -118,6 +118,8 @@ import Lesson55TaxiStudio from './components/Lesson55TaxiStudio';
 import Lesson55Game from './components/Lesson55Game';
 import Lesson56ZeitadverbienStudio from './components/Lesson56ZeitadverbienStudio';
 import Lesson56Game from './components/Lesson56Game';
+import Lesson57TelefonStudio from './components/Lesson57TelefonStudio';
+import Lesson57Game from './components/Lesson57Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -174,11 +176,12 @@ import {
   LESSON_53_ITEMS,
   LESSON_54_ITEMS,
   LESSON_55_ITEMS,
-  LESSON_56_ITEMS
+  LESSON_56_ITEMS,
+  LESSON_57_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(56); // Default to Lesson 56 as requested, easy switch to 1-55
+  const [currentLesson, setCurrentLesson] = useState(57); // Default to Lesson 57 as requested, easy switch to 1-56
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -238,6 +241,7 @@ export default function App() {
   if (currentLesson === 54) activeItems = LESSON_54_ITEMS;
   if (currentLesson === 55) activeItems = LESSON_55_ITEMS;
   if (currentLesson === 56) activeItems = LESSON_56_ITEMS;
+  if (currentLesson === 57) activeItems = LESSON_57_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -264,7 +268,7 @@ export default function App() {
     if (currentLesson === 22) return "Lesson 22: Inoffizielle Zeit (Zeit in Umgangssprache - Everyday Conversational Time)";
     if (currentLesson === 23) return "Lesson 23: Possessivartikel im Nominativ (Possessive Articles in the Nominative Case)";
     if (currentLesson === 24) return "Lesson 24: Die Familie (The Family, Relative Pairs & The 3-Generation Family Tree)";
-    if (currentLesson === 25) return "Lesson 25: Artikel im Akkusativ (Articles in the Accusative Case - Direct Object)";
+    if (currentLesson === 25) return "Lesson 25: Artikel im Akkusativ (Articles in the Akkusativ Case - Direct Object)";
     if (currentLesson === 26) return "Lesson 26: Possessivartikel im Akkusativ (Possessive Articles in the Accusative Case)";
     if (currentLesson === 27) return "Lesson 27: möchten (The Modal Verb 'would like to' & Sentence Brackets)";
     if (currentLesson === 28) return "Lesson 28: W-Fragen (German W-Questions - The 13 Key Question Words)";
@@ -295,7 +299,8 @@ export default function App() {
     if (currentLesson === 53) return "Lesson 53: Demonstrativartikel \"dies-\" (This / These across Nominativ, Akkusativ & Dativ)";
     if (currentLesson === 54) return "Lesson 54: Im Kaufhaus (In the Department Store - Shopping, Sizing, Fitting Rooms & Slide 36 Pronouns)";
     if (currentLesson === 55) return "Lesson 55: Mit dem Taxi fahren (Taking a Taxi - Booking, Hailing, Cockpit & Fare Tipping)";
-    return "Lesson 56: Zeitadverbien (Adverbs of Time - Habitual Days, 3-Era Timelines, Sequence & Frequency)";
+    if (currentLesson === 56) return "Lesson 56: Zeitadverbien (Adverbs of Time - Habitual Days, 3-Era Timelines, Sequence & Frequency)";
+    return "Lesson 57: Am Telefon sprechen (Telephone Conversations, Greetings, Messages & Clarifications)";
   };
 
   const getLessonDesc = () => {
@@ -464,7 +469,10 @@ export default function App() {
     if (currentLesson === 55) {
       return "Master taking a taxi in German (Mit dem Taxi fahren)! Learn essential taxi vocabulary (das Taxi, der Taxistand, die Taxizentrale, der Taxameter, die Quittung), calling dispatch (Ich hätte gern ein Taxi für morgen / sofort ein Taxi / keine Taxis verfügbar / auf dem Weg), hailing on the street (Sind Sie frei? / Könnten Sie mich zum Flughafen bringen?), in-ride controls (Wohin möchten Sie?, Taxameter einschalten, Ich habe es eilig, Fenster auf-/zumachen, Wie lange dauert es?, an der Haltestelle / am Eingang anhalten, da vorn rauslassen), asking fare (Wie viel kostet das? Das macht 15,50 Euro), paying with card (mit der Karte zahlen), requesting receipts (Quittung), and German tipping formulas (Stimmt so! / Rest ist für Sie! / Das passt!)!";
     }
-    return "Master German Adverbs of Time (Zeitadverbien)! Discover the 3 core time questions (Wann?, Wie lange?, Wie oft?), habitual weekdays & times of day with the lowercase -s rule (montags, freitags, morgens, abends, nachts), the 3-era timelines (Vergangenheit: vorgestern, gestern, früher, damals; Gegenwart: heute, jetzt, gerade, sofort, heutzutage; Zukunft: morgen, übermorgen, bald, später), chronological sequencing (vorher, zuerst ➔ dann ➔ danach ➔ später), duration (schon immer, lange), the 100% to 0% frequency ladder (immer, meistens, oft, manchmal, selten, nie), and the Golden Verb in Position 2 sentence rule (Jetzt muss ich gehen)!";
+    if (currentLesson === 56) {
+      return "Master German Adverbs of Time (Zeitadverbien)! Discover the 3 core time questions (Wann?, Wie lange?, Wie oft?), habitual weekdays & times of day with the lowercase -s rule (montags, freitags, morgens, abends, nachts), the 3-era timelines (Vergangenheit: vorgestern, gestern, früher, damals; Gegenwart: heute, jetzt, gerade, sofort, heutzutage; Zukunft: morgen, übermorgen, bald, später), chronological sequencing (vorher, zuerst ➔ dann ➔ danach ➔ später), duration (schon immer, lange), the 100% to 0% frequency ladder (immer, meistens, oft, manchmal, selten, nie), and the Golden Verb in Position 2 sentence rule (Jetzt muss ich gehen)!";
+    }
+    return "Master speaking on the telephone in German (Am Telefon sprechen)! Learn answering & identifying yourself (sich melden: Hier ist Anna! / Müller GmbH, Sie sprechen mit Sarah Schmidt), asking for people (Kann ich bitte mit Herrn Schmitz sprechen? / Könnten Sie mich verbinden?), handling unreachability (Er spricht gerade auf der anderen Leitung / ist in einer Besprechung / auf Geschäftsreise), taking & leaving messages (etwas ausrichten: Er soll mich zurückrufen / Ich bin krank / Ich werde es ausrichten), the 'I Didn't Catch That' clarification toolkit (Entschuldigung, wie bitte? / langsamer sprechen / buchstabieren), and the Golden German Phone Rule (Auf Wiederhören vs. Auf Wiedersehen)!";
   };
 
   return (
@@ -1005,6 +1013,15 @@ export default function App() {
 
         {currentLesson === 56 && activeTab === 'game56' && (
           <Lesson56Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 57 Specific Modules */}
+        {currentLesson === 57 && activeTab === 'studio57' && (
+          <Lesson57TelefonStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 57 && activeTab === 'game57' && (
+          <Lesson57Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
