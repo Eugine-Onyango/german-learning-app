@@ -120,6 +120,8 @@ import Lesson56ZeitadverbienStudio from './components/Lesson56ZeitadverbienStudi
 import Lesson56Game from './components/Lesson56Game';
 import Lesson57TelefonStudio from './components/Lesson57TelefonStudio';
 import Lesson57Game from './components/Lesson57Game';
+import Lesson58ArztStudio from './components/Lesson58ArztStudio';
+import Lesson58Game from './components/Lesson58Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -177,11 +179,12 @@ import {
   LESSON_54_ITEMS,
   LESSON_55_ITEMS,
   LESSON_56_ITEMS,
-  LESSON_57_ITEMS
+  LESSON_57_ITEMS,
+  LESSON_58_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(57); // Default to Lesson 57 as requested, easy switch to 1-56
+  const [currentLesson, setCurrentLesson] = useState(58); // Default to Lesson 58 as requested, easy switch to 1-57
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -242,6 +245,7 @@ export default function App() {
   if (currentLesson === 55) activeItems = LESSON_55_ITEMS;
   if (currentLesson === 56) activeItems = LESSON_56_ITEMS;
   if (currentLesson === 57) activeItems = LESSON_57_ITEMS;
+  if (currentLesson === 58) activeItems = LESSON_58_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -300,7 +304,8 @@ export default function App() {
     if (currentLesson === 54) return "Lesson 54: Im Kaufhaus (In the Department Store - Shopping, Sizing, Fitting Rooms & Slide 36 Pronouns)";
     if (currentLesson === 55) return "Lesson 55: Mit dem Taxi fahren (Taking a Taxi - Booking, Hailing, Cockpit & Fare Tipping)";
     if (currentLesson === 56) return "Lesson 56: Zeitadverbien (Adverbs of Time - Habitual Days, 3-Era Timelines, Sequence & Frequency)";
-    return "Lesson 57: Am Telefon sprechen (Telephone Conversations, Greetings, Messages & Clarifications)";
+    if (currentLesson === 57) return "Lesson 57: Am Telefon sprechen (Telephone Conversations, Greetings, Messages & Clarifications)";
+    return "Lesson 58: Beim Arzt (At the Doctor's Office - Appointments, Symptoms, Vitals & AU Sick Notes)";
   };
 
   const getLessonDesc = () => {
@@ -472,7 +477,10 @@ export default function App() {
     if (currentLesson === 56) {
       return "Master German Adverbs of Time (Zeitadverbien)! Discover the 3 core time questions (Wann?, Wie lange?, Wie oft?), habitual weekdays & times of day with the lowercase -s rule (montags, freitags, morgens, abends, nachts), the 3-era timelines (Vergangenheit: vorgestern, gestern, früher, damals; Gegenwart: heute, jetzt, gerade, sofort, heutzutage; Zukunft: morgen, übermorgen, bald, später), chronological sequencing (vorher, zuerst ➔ dann ➔ danach ➔ später), duration (schon immer, lange), the 100% to 0% frequency ladder (immer, meistens, oft, manchmal, selten, nie), and the Golden Verb in Position 2 sentence rule (Jetzt muss ich gehen)!";
     }
-    return "Master speaking on the telephone in German (Am Telefon sprechen)! Learn answering & identifying yourself (sich melden: Hier ist Anna! / Müller GmbH, Sie sprechen mit Sarah Schmidt), asking for people (Kann ich bitte mit Herrn Schmitz sprechen? / Könnten Sie mich verbinden?), handling unreachability (Er spricht gerade auf der anderen Leitung / ist in einer Besprechung / auf Geschäftsreise), taking & leaving messages (etwas ausrichten: Er soll mich zurückrufen / Ich bin krank / Ich werde es ausrichten), the 'I Didn't Catch That' clarification toolkit (Entschuldigung, wie bitte? / langsamer sprechen / buchstabieren), and the Golden German Phone Rule (Auf Wiederhören vs. Auf Wiedersehen)!";
+    if (currentLesson === 57) {
+      return "Master speaking on the telephone in German (Am Telefon sprechen)! Learn answering & identifying yourself (sich melden: Hier ist Anna! / Müller GmbH, Sie sprechen mit Sarah Schmidt), asking for people (Kann ich bitte mit Herrn Schmitz sprechen? / Könnten Sie mich verbinden?), handling unreachability (Er spricht gerade auf der anderen Leitung / ist in einer Besprechung / auf Geschäftsreise), taking & leaving messages (etwas ausrichten: Er soll mich zurückrufen / Ich bin krank / Ich werde es ausrichten), the 'I Didn't Catch That' clarification toolkit (Entschuldigung, wie bitte? / langsamer sprechen / buchstabieren), and the Golden German Phone Rule (Auf Wiederhören vs. Auf Wiedersehen)!";
+    }
+    return "Master visiting the doctor and navigating medical clinics in German (Beim Arzt)! Learn booking appointments over the phone (einen Arzttermin vereinbaren), bringing your microchipped insurance card (die Versicherungskarte), expressing symptoms & complaints (Was fehlt Ihnen denn? ➔ Ich fühle mich seit gestern nicht wohl, habe Rückenschmerzen, Husten, Fieber), physical examinations (den Patienten untersuchen, Mund aufmachen, husten), measuring vitals (den Blutdruck & die Temperatur messen), medication forms & rules (die Tablette / Kapsel einnehmen, Tropfen, Salbe), doctor's modal orders (Sie dürfen nicht zur Arbeit gehen, Sie müssen im Bett bleiben), and the legendary German sick note for employers (die Arbeitsunfähigkeitsbescheinigung / AU-Bescheinigung / Krankschreibung)!";
   };
 
   return (
@@ -1022,6 +1030,15 @@ export default function App() {
 
         {currentLesson === 57 && activeTab === 'game57' && (
           <Lesson57Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 58 Specific Modules */}
+        {currentLesson === 58 && activeTab === 'studio58' && (
+          <Lesson58ArztStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 58 && activeTab === 'game58' && (
+          <Lesson58Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

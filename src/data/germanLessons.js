@@ -14300,6 +14300,294 @@ export const LESSON_57_SCENARIOS = [
   }
 ];
 
+export const LESSON_58_ITEMS = [
+  {
+    id: "l58-arzt-aerztin",
+    german: "der Arzt (die Ärzte) / die Ärztin (die Ärztinnen)",
+    english: "the doctor (male) / the female doctor",
+    pronunciation: "dair ARTST (dee AIRTS-te) / dee AIRTS-tin (dee AIRTS-tin-nen)",
+    audioText: "Der Arzt, die Ärzte. Die Ärztin, die Ärztinnen. Ich muss zum Arzt gehen. Frau Dr. Lampert ist eine gute Ärztin.",
+    category: "arzt-patient",
+    badge: "Nouns: Doctor",
+    icon: "🩺",
+    kenyanAnalogy: "Like going to see Daktari at the clinic: 'der Arzt' (male) or 'die Ärztin' (female with -in)!",
+    memoryTrick: "Ärzte has umlaut in plural: der Arzt ➔ die Ärzte!"
+  },
+  {
+    id: "l58-patient-patientin",
+    german: "der Patient (die Patienten) / die Patientin (die Patientinnen)",
+    english: "the patient (male) / the female patient",
+    pronunciation: "dair pah-tsee-ENT (dee pah-tsee-EN-ten) / dee pah-tsee-EN-tin",
+    audioText: "Der Patient, die Patienten. Die Patientin, die Patientinnen. Der Arzt untersucht den Patienten.",
+    category: "arzt-patient",
+    badge: "Nouns: Patient",
+    icon: "🤒",
+    kenyanAnalogy: "The sick person seeking treatment (mgonjwa). Notice male adds -n in Akkusativ: 'den Patienten'!",
+    memoryTrick: "Patient ➔ looks almost identical to English 'patient'!"
+  },
+  {
+    id: "l58-arztpraxis",
+    german: "die Arztpraxis (die Arztpraxen)",
+    english: "the doctor's office / clinic / practice",
+    pronunciation: "dee ARTST-prahk-sis (dee ARTST-prahk-zen)",
+    audioText: "Die Arztpraxis, die Arztpraxen. Praxis Dr. Lampert, guten Tag. Ich rufe in der Arztpraxis an.",
+    category: "praxis-termin",
+    badge: "Noun: Clinic",
+    icon: "🏥",
+    kenyanAnalogy: "In Germany, doctors operate in private clinics called 'Arztpraxis' rather than huge general hospitals for normal sickness.",
+    memoryTrick: "Arzt (doctor) + Praxis (practice) = doctor's practice / clinic!"
+  },
+  {
+    id: "l58-termin-vereinbaren",
+    german: "einen Arzttermin vereinbaren",
+    english: "to schedule / book a doctor's appointment",
+    pronunciation: "EYE-nen ARTST-tair-meen fair-EYEN-bah-ren",
+    audioText: "Einen Arzttermin vereinbaren. Ich möchte gern einen Termin beim Arzt vereinbaren.",
+    category: "praxis-termin",
+    badge: "Action: Book Visit",
+    icon: "📅",
+    kenyanAnalogy: "In Germany, you can't just walk into a clinic unannounced; you must call first to 'vereinbaren einen Termin' (book an appointment slot)!",
+    memoryTrick: "Termin = appointment, vereinbaren = agree upon / schedule!"
+  },
+  {
+    id: "l58-versicherungskarte",
+    german: "die Versicherungskarte",
+    english: "the health insurance card",
+    pronunciation: "dee fair-ZIKH-e-roongs-kar-te",
+    audioText: "Die Versicherungskarte. Vergessen Sie bitte Ihre Versicherungskarte nicht!",
+    category: "praxis-termin",
+    badge: "Essential Card",
+    icon: "💳",
+    kenyanAnalogy: "Just like your NHIF / SHA insurance card: In Germany, you MUST swipe your 'Versicherungskarte' at the reception desk before seeing the doctor!",
+    memoryTrick: "Versicherung (insurance) + Karte (card) = health insurance smartcard!"
+  },
+  {
+    id: "l58-beschwerden-fragen",
+    german: "Was haben Sie für Beschwerden? / Was fehlt Ihnen denn?",
+    english: "What complaints do you have? / What's troubling you? (What's wrong?)",
+    pronunciation: "vas HAH-ben zee fewr be-SHVAIR-den? / vas FAYLT EE-nen den?",
+    audioText: "Was haben Sie für Beschwerden? Was fehlt Ihnen denn? Wie fühlen Sie sich heute?",
+    category: "beschwerden-symptome",
+    badge: "Doctor's Question",
+    icon: "❓",
+    kenyanAnalogy: "The doctor asking 'Unasikiaje? Ni nini kinakusumbua?': 'Was fehlt Ihnen denn?' literally means 'What is missing for you?'.",
+    memoryTrick: "Beschwerden = physical complaints/symptoms. fehlen = to lack/trouble!"
+  },
+  {
+    id: "l58-symptome-schmerzen",
+    german: "Ich habe Rückenschmerzen, Husten, Schnupfen und Fieber.",
+    english: "I have back pain, cough, runny nose / cold, and fever.",
+    pronunciation: "ikh HAH-be REW-ken-shmair-tsen, HOOS-ten, SHNOOP-fen oont FEE-ber.",
+    audioText: "Ich habe Rückenschmerzen und Husten. Ich habe Schnupfen und Bauchschmerzen. Mir geht es schlecht, ich habe Kopfschmerzen und hohes Fieber.",
+    category: "beschwerden-symptome",
+    badge: "Symptoms List",
+    icon: "🤧",
+    kenyanAnalogy: "Combining body parts with '-schmerzen' (pain): Rücken (back) + schmerzen, Bauch (stomach) + schmerzen, Kopf (head) + schmerzen!",
+    memoryTrick: "Schmerzen = smarts / pains! Husten = cough, Schnupfen = sniffles/runny nose, Fieber = fever."
+  },
+  {
+    id: "l58-nicht-wohl-schwach",
+    german: "Ich fühle mich seit gestern nicht wohl. / Ich fühle mich sehr schwach.",
+    english: "I haven't been feeling well since yesterday. / I feel very weak.",
+    pronunciation: "ikh FEW-le mikh zyt GES-tairn nikht vohl. / ikh FEW-le mikh zair shvahkh.",
+    audioText: "Guten Tag Herr Doktor. Ich fühle mich seit gestern nicht wohl. Ich fühle mich sehr schwach und schwindelig.",
+    category: "beschwerden-symptome",
+    badge: "Condition Description",
+    icon: "🛌",
+    kenyanAnalogy: "Expressing general body malaise ('Mwili wangu hauna nguvu / sijisikii vizuri'): 'Ich fühle mich schwach' (weak).",
+    memoryTrick: "fühlen = feel (reflexive: ich fühle mich). schwach = weak (opposite of stark!)."
+  },
+  {
+    id: "l58-patienten-untersuchen",
+    german: "den Patienten untersuchen / hat untersucht",
+    english: "to examine the patient / has examined",
+    pronunciation: "den pah-tsee-EN-ten oon-ter-ZOO-khen / hat oon-ter-ZOOKHT",
+    audioText: "Den Patienten untersuchen. Der Arzt untersucht den Patienten gründlich. Darf ich mir mal das ansehen?",
+    category: "untersuchung",
+    badge: "Verb: untersuchen",
+    icon: "🔎",
+    kenyanAnalogy: "Doctor performing physical checkup and examination (kumchunguza mgonjwa): 'Der Arzt untersucht den Patienten'.",
+    memoryTrick: "untersuchen = under-search / investigate / examine (untrennbar: hat untersucht without ge-)!"
+  },
+  {
+    id: "l58-blutdruck-temperatur-messen",
+    german: "den Blutdruck / die Temperatur messen (Der Arzt misst...)",
+    english: "to measure blood pressure / temperature (The doctor measures...)",
+    pronunciation: "den BLOOT-drook / dee tem-pe-rah-TOOR MES-sen (dair artst misst...)",
+    audioText: "Den Blutdruck messen. Der Arzt misst den Blutdruck. Ich werde Ihre Temperatur messen. Ihr Blutdruck ist normal.",
+    category: "untersuchung",
+    badge: "Action: Measure Vitals",
+    icon: "🌡️",
+    kenyanAnalogy: "Checking vitals with the cuff & thermometer: 'Blutdruck messen' (measure blood pressure) and 'Temperatur messen'.",
+    memoryTrick: "messen has irregular stem vowel change: er/sie MISST! Blut (blood) + Druck (pressure)!"
+  },
+  {
+    id: "l58-untersuchung-befehle",
+    german: "Machen Sie bitte den Mund auf! / Bitte husten Sie! / Sagen Sie aaaaa!",
+    english: "Please open your mouth! / Please cough! / Say aaaaa!",
+    pronunciation: "MAHKH-en zee BIT-te den moont owf! / BIT-te HOOS-ten zee! / ZAH-gen zee ahhhh!",
+    audioText: "Wo tut es weh? Machen Sie bitte den Mund auf. Bitte husten Sie einmal kräftig. Sagen Sie aaaaa!",
+    category: "untersuchung",
+    badge: "Doctor Instructions",
+    icon: "🗣️",
+    kenyanAnalogy: "Standard checkup commands in Imperative form: 'Fungua mdomo' (Mund aufmachen) and 'Koohoa kidogo' (Bitte husten Sie!).",
+    memoryTrick: "aufmachen = separable verb (Machen Sie ... auf = open up!)."
+  },
+  {
+    id: "l58-grippe-diagnose",
+    german: "Sie haben eine Grippe.",
+    english: "You have the flu (influenza).",
+    pronunciation: "zee HAH-ben EYE-ne GRIP-pe.",
+    audioText: "Sie haben eine Grippe. Ihre Temperatur ist ziemlich hoch. Ihr Blutdruck ist normal.",
+    category: "diagnose-behandlung",
+    badge: "Diagnosis",
+    icon: "🦠",
+    kenyanAnalogy: "The doctor delivering the diagnosis: 'Una homa kali ya mafua' $\rightarrow$ 'Sie haben eine Grippe'.",
+    memoryTrick: "Grippe = grippe / severe viral flu!"
+  },
+  {
+    id: "l58-rezept-verschreiben",
+    german: "das Rezept (die Rezepte) / Medikamente verschreiben",
+    english: "the prescription / to prescribe medicines",
+    pronunciation: "dahs ray-TSEPT (dee ray-TSEP-te) / may-dee-kah-MEN-te fair-SHRYE-ben",
+    audioText: "Das Rezept, die Rezepte. Medikamente verschreiben. Ich schreibe Ihnen ein Rezept. Ich verschreibe Ihnen Antibiotika.",
+    category: "medikamente",
+    badge: "Prescription",
+    icon: "📝",
+    kenyanAnalogy: "The doctor's official prescription slip you take to the pharmacy (Apotheke): 'ein Rezept verschreiben'!",
+    memoryTrick: "Rezept = recipe / prescription (from Latin recipere)! verschreiben = to write out a prescription."
+  },
+  {
+    id: "l58-tablette-kapsel-einnehmen",
+    german: "die Tablette / die Kapsel einnehmen (hat eingenommen)",
+    english: "to take a tablet / a capsule",
+    pronunciation: "dee tah-BLET-te / dee KAHP-sel EYN-nay-men (hat EYN-ge-nom-men)",
+    audioText: "Die Tablette, die Tabletten. Die Kapsel, die Kapseln. Nehmen Sie bitte zweimal täglich eine Tablette ein.",
+    category: "medikamente",
+    badge: "Medication Form",
+    icon: "💊",
+    kenyanAnalogy: "In German, you don't 'eat' or 'drink' pills; you use the special separable verb 'einnehmen' (literally: take in)!",
+    memoryTrick: "einnehmen = take inward (ein = into + nehmen = take). Perfekt: hat eingenommen!"
+  },
+  {
+    id: "l58-tropfen-salbe",
+    german: "die Tropfen (Pl.) / die Salbe (die Salben)",
+    english: "the drops (eye/ear/cough drops) / the ointment (cream)",
+    pronunciation: "dee TROP-fen / dee ZAHL-be (dee ZAHL-ben)",
+    audioText: "Die Tropfen, die Salbe. Nehmen Sie dreimal täglich zwanzig Tropfen. Tragen Sie diese Salbe abends auf.",
+    category: "medikamente",
+    badge: "Drops & Ointment",
+    icon: "🧴",
+    kenyanAnalogy: "Other medication forms: 'Tropfen' (liquid drops) and 'Salbe' (healing cream / jelly for skin and muscles).",
+    memoryTrick: "Tropfen = drops (like raindrops). Salbe = salve / ointment!"
+  },
+  {
+    id: "l58-aerztliche-anweisungen",
+    german: "Bleiben Sie im Bett! / Trinken Sie Kräutertee!",
+    english: "Stay in bed! / Drink herbal tea!",
+    pronunciation: "BLY-ben zee im bet! / TRING-ken zee KROY-ter-tay!",
+    audioText: "Bleiben Sie im Bett! Trinken Sie viel Kräutertee und Wasser. Essen Sie viel Obst und Gemüse! Sie müssen sich schonen.",
+    category: "diagnose-behandlung",
+    badge: "Doctor's Advice",
+    icon: "🍵",
+    kenyanAnalogy: "German doctors LOVE natural remedies: staying strictly in bed ('im Bett bleiben') and drinking lots of 'Kräutertee' (chamomile/mint herbal tea)!",
+    memoryTrick: "Kräuter = herbs, Tee = tea! Obst = fruit, Gemüse = vegetables."
+  },
+  {
+    id: "l58-nicht-arbeiten-duerfen",
+    german: "Sie dürfen nicht zur Arbeit gehen! / Sie müssen im Bett bleiben!",
+    english: "You are not allowed to go to work! / You have to stay in bed!",
+    pronunciation: "zee DEWR-fen nikht tsoor AR-byt GAY-en! / zee MEWS-sen im bet BLY-ben!",
+    audioText: "Sie dürfen nicht zur Arbeit gehen! Sie sind ansteckend. Sie müssen drei Tage im Bett bleiben und sich ausruhen.",
+    category: "diagnose-behandlung",
+    badge: "Work Ban (Modal)",
+    icon: "⛔",
+    kenyanAnalogy: "In Germany, working while sick is strictly forbidden by doctors: 'Sie dürfen nicht arbeiten' (You are not permitted to work)!",
+    memoryTrick: "dürfen nicht = forbidden / not allowed! müssen = must / have to!"
+  },
+  {
+    id: "l58-krankschreiben-au",
+    german: "Ich schreibe Sie drei Tage krank! / die Arbeitsunfähigkeitsbescheinigung",
+    english: "I am signing you off sick for 3 days! / certificate of incapacity for work (AU-Bescheinigung / Krankschreibung)",
+    pronunciation: "ikh SHRYE-be zee dry TAH-ge krahnk! / dee AR-byts-oon-fay-ikh-kayts-be-SHY-nee-goong",
+    audioText: "Ich schreibe Sie drei Tage krank. Hier ist Ihre Arbeitsunfähigkeitsbescheinigung für den Arbeitgeber. Gute Besserung!",
+    category: "diagnose-behandlung",
+    badge: "Official Sick Note",
+    icon: "📄",
+    kenyanAnalogy: "THE MOST FAMOUS GERMAN DOCUMENT: The 'AU-Bescheinigung' (or 'gelber Schein' / Krankschreibung) that you submit to your employer so you get 100% paid sick leave!",
+    memoryTrick: "Arbeit (work) + unfähig (incapable) + Bescheinigung (certificate) = Official Sick Note!"
+  },
+  {
+    id: "l58-gute-besserung",
+    german: "Vielen Dank. Auf Wiedersehen! - Bitte, und gute Besserung!",
+    english: "Thank you very much. Good-bye! - You're welcome, and get well soon!",
+    pronunciation: "FEE-len dahnk. owf VEE-der-zay-en! - BIT-te, oont GOO-te BES-se-roong!",
+    audioText: "Vielen Dank Herr Doktor. Auf Wiedersehen! Bitte, auf Wiedersehen und gute Besserung! Danke schön!",
+    category: "praxis-termin",
+    badge: "Well-Wishes",
+    icon: "💐",
+    kenyanAnalogy: "The essential German sympathy wish whenever someone is unwell: 'Gute Besserung!' (Ugua pole / Get well soon!).",
+    memoryTrick: "besser = better. 'Gute Besserung' = Wishing you a good bettering / recovery!"
+  }
+];
+
+export const LESSON_58_SCENARIOS = [
+  {
+    scenario: "In Slide 20 & 23, you call Praxis Dr. Lampert to book a doctor's appointment. What essential card does the receptionist remind you to bring?",
+    hint: "Think about the German health insurance card: die Versicherungskarte!",
+    options: [
+      { text: "Vergessen Sie bitte Ihre Versicherungskarte nicht!", correct: true, explain: "Genau! In Germany, your 'Versicherungskarte' (health insurance smartcard) is mandatory to present at every clinic reception desk!" },
+      { text: "Bringen Sie Ihre Kreditkarte für 500 Euro mit.", correct: false, explain: "Standard medical visits are covered by health insurance with your card." },
+      { text: "Bringen Sie Ihren Reisepass zum Kochen mit.", correct: false, explain: "Passport is not for cooking or normal checkups." }
+    ]
+  },
+  {
+    scenario: "In Slide 25 & 26, the doctor enters the room and asks: 'Was fehlt Ihnen denn?' How do you explain you have had back pain and a cough since yesterday?",
+    hint: "Ich habe Rückenschmerzen und Husten seit gestern.",
+    options: [
+      { text: "Ich fühle mich seit gestern nicht wohl. Ich habe Rückenschmerzen und Husten.", correct: true, explain: "Perfekt! 'nicht wohl fühlen' (not feeling well) and naming symptoms with 'Ich habe [Rückenschmerzen / Husten]' is natural and clear!" },
+      { text: "Ich bin gestern ins Kino gegangen.", correct: false, explain: "That means I went to the cinema yesterday." },
+      { text: "Ich habe kein Auto gekauft.", correct: false, explain: "That means I did not buy a car." }
+    ]
+  },
+  {
+    scenario: "In Slide 17 & 29, the doctor is about to measure your blood pressure. Which German sentence correctly describes this action?",
+    hint: "Der Arzt misst den Blutdruck.",
+    options: [
+      { text: "Der Arzt misst den Blutdruck.", correct: true, explain: "Ausgezeichnet! 'Blutdruck messen' means measuring blood pressure, and 'messen' conjugates irregularly to 'misst' for er/sie!" },
+      { text: "Der Arzt trinkt den Blutdruck.", correct: false, explain: "You cannot drink blood pressure." },
+      { text: "Der Arzt kauft den Blutdruck im Supermarkt.", correct: false, explain: "Blood pressure is not bought in a supermarket." }
+    ]
+  },
+  {
+    scenario: "In Slide 10 & 14, how do you correctly say in German that you need to take a pill or capsule?",
+    hint: "Use the specific medication verb: einnehmen (hat eingenommen)!",
+    options: [
+      { text: "Die Tablette / die Kapsel einnehmen.", correct: true, explain: "Wunderbar! In German, you do not 'eat' (essen) medication; you use 'einnehmen' (die Tablette einnehmen)!" },
+      { text: "Die Tablette backen und essen.", correct: false, explain: "Tablets are not baked like cakes." },
+      { text: "Die Kapsel im Fluss waschen.", correct: false, explain: "Nonsense option." }
+    ]
+  },
+  {
+    scenario: "In Slide 30 & 32, the doctor diagnoses you with the flu and writes you an official certificate of incapacity for work (sick note). What is this famous German document called?",
+    hint: "die Arbeitsunfähigkeitsbescheinigung (AU-Bescheinigung / Krankschreibung)",
+    options: [
+      { text: "die Arbeitsunfähigkeitsbescheinigung (AU-Bescheinigung / Krankschreibung)", correct: true, explain: "Hervorragend! 'die Arbeitsunfähigkeitsbescheinigung' is the official German certificate stating you are unfit for work due to illness!" },
+      { text: "die Speisekarte", correct: false, explain: "'die Speisekarte' is a restaurant food menu." },
+      { text: "der Führerschein", correct: false, explain: "'der Führerschein' is a driver's license." }
+    ]
+  },
+  {
+    scenario: "In Slide 31 & 32, after giving you a sick note, what medical instructions and farewell does the doctor give you?",
+    hint: "Stay in bed, drink herbal tea, and Gute Besserung!",
+    options: [
+      { text: "Bleiben Sie im Bett, trinken Sie Kräutertee, und gute Besserung!", correct: true, explain: "Fantastisch! 'Bleiben Sie im Bett', 'Kräutertee trinken', and the classic well-wish 'Gute Besserung!' (Get well soon!) are quintessential German doctor advice!" },
+      { text: "Gehen Sie sofort joggen und essen Sie Eis.", correct: false, explain: "Jogging in the cold with a flu is bad advice." },
+      { text: "Arbeiten Sie 24 Stunden ohne Pause.", correct: false, explain: "The doctor prohibits working when sick!" }
+    ]
+  }
+];
+
 
 
 
