@@ -72,6 +72,7 @@ export default function Header({
     if (currentLesson === 58) msg = "Beim Arzt: Praxis Dr. Lampert, guten Tag! Was fehlt Ihnen denn? Ich fühle mich seit gestern nicht wohl, habe Rückenschmerzen, Husten und Fieber. Der Arzt misst den Blutdruck und die Temperatur. Bleiben Sie im Bett, trinken Sie Kräutertee! Hier ist Ihre Arbeitsunfähigkeitsbescheinigung. Gute Besserung!";
     if (currentLesson === 59) msg = "Hotelreservierung: Sehr geehrte Damen und Herren, ich möchte ein Doppelzimmer mit Halbpension für drei Nächte reservieren. Wir kommen am siebten Juli mit dem Zug an. Haben Sie ein Zimmer mit Meeresblick? Sind Hunde erlaubt? Mit freundlichen Grüßen, Maria Schmidt.";
     if (currentLesson === 60) msg = "Touristeninfo und Formulare ausfüllen: Sehr geehrte Damen und Herren, wir möchten nach Wien reisen. Können Sie uns gute Hotels empfehlen? Schicken Sie uns bitte einen Stadtplan und ein Kulturprogramm! Ich fülle das Anmeldeformular aus: Familienstand verheiratet, Staatsangehörigkeit Deutsch, Geburtsdatum, Ort und Unterschrift.";
+    if (currentLesson === 61) msg = "Die Post: Guten Tag! Ich möchte gern dieses Paket nach London schicken. Wieviel kostet das und wie lange braucht es? Ich hätte gern auch zwei Briefmarken für Postkarten und möchte diesen Brief per Einschreiben verschicken. Wo ist der Briefkasten?";
     speakGerman(msg, isSlowMode);
   };
 
@@ -558,6 +559,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson61NavItems = [
+    { id: 'cards', label: '📖 Lesson 61 Cards', sub: 'Post Office & Shipping Vocab' },
+    { id: 'studio61', label: '🏤 Post Studio', sub: 'Counter Simulator & Envelope Lab' },
+    { id: 'game61', label: '🎮 Post Quiz', sub: 'Postal & Shipping Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -618,6 +627,7 @@ export default function Header({
   if (currentLesson === 58) navItems = lesson58NavItems;
   if (currentLesson === 59) navItems = lesson59NavItems;
   if (currentLesson === 60) navItems = lesson60NavItems;
+  if (currentLesson === 61) navItems = lesson61NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -680,6 +690,7 @@ export default function Header({
     { num: 58, label: "🩺 58: Beim Arzt", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
     { num: 59, label: "🏨 59: Hotelreservierung", activeClass: "bg-amber-700 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 60, label: "📝 60: Touristeninfo & Formulare", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 61, label: "🏤 61: Die Post", activeClass: "bg-amber-700 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (

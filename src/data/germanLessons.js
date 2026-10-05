@@ -15163,6 +15163,304 @@ export const LESSON_60_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 61: Die Post (Post Office & Shipping)
+// ==========================================
+
+export const LESSON_61_ITEMS = [
+  {
+    id: "die-post-postamt",
+    german: "die Post / die Poststelle / das Postamt",
+    english: "the post office / postal branch / main post office",
+    pronunciation: "dee POST / dee POST-shtel-luh / dahs POST-ahmt",
+    audioText: "die Post, die Poststelle, das Postamt",
+    category: "post-places",
+    badge: "Postal Branches",
+    icon: "🏤",
+    kenyanAnalogy: "Like GPO (General Post Office) in Nairobi or your local Posta Kenya branch where you drop off letters, buy stamps, and collect packages.",
+    memoryTrick: "'die Post' is feminine (die). 'das Postamt' is neuter (das Amt = the office). In Germany, the yellow horn logo belongs to Deutsche Post!",
+    imageType: "post-office"
+  },
+  {
+    id: "zur-post-in-der-post",
+    german: "zur Post gehen vs. in / bei / auf der Post sein",
+    english: "to go to the post office (movement) vs. to be at the post office (location)",
+    pronunciation: "tsoor POST GAY-en vs. in dair POST zyne",
+    audioText: "Wohin gehst du? Ich gehe zur Post. Wo bist du? Ich bin in der Post.",
+    category: "post-grammar",
+    badge: "Movement vs. Location",
+    icon: "🚶",
+    kenyanAnalogy: "Movement (Wohin? ➔ zur Post = zu + der Post). Location (Wo? ➔ in der Post / bei der Post). Just like saying 'I am walking to Posta' vs 'I am currently inside Posta'!",
+    memoryTrick: "Wohin? (Direction) ➔ zur Post. Wo? (Stationary) ➔ in der Post / auf der Post.",
+    imageType: "motion-vs-location"
+  },
+  {
+    id: "post-people",
+    german: "der Briefträger, der Paketbote & der Postbeamte",
+    english: "the postman (mail carrier), parcel deliverer & post office clerk",
+    pronunciation: "dair BREEF-tray-ger, dair pah-KAYT-bo-tuh, dair POST-buh-ahm-tuh",
+    audioText: "der Briefträger bringt die Briefe. Der Paketbote liefert das Paket. Der Postbeamte arbeitet am Schalter.",
+    category: "post-people",
+    badge: "Postal Staff",
+    icon: "🧑‍💼",
+    kenyanAnalogy: "The friendly mail carrier on a bicycle/e-bike (Briefträger), the DHL rider/van driver bringing your parcel (Paketbote), and the officer behind the glass counter (Postbeamte).",
+    memoryTrick: "Brief (letter) + Träger (carrier) = Briefträger. Paket (package) + Bote (messenger/courier) = Paketbote!",
+    imageType: "post-staff"
+  },
+  {
+    id: "der-schalter",
+    german: "der Schalter (die Schalter)",
+    english: "the service counter / desk window",
+    pronunciation: "dair SHAHL-ter (die SHAHL-ter)",
+    audioText: "der Schalter. Bitte gehen Sie an Schalter 3.",
+    category: "post-places",
+    badge: "Counter / Window",
+    icon: "🪟",
+    kenyanAnalogy: "Like walking up to 'Counter Number 3' at Posta or the bank teller window to weigh your parcel and buy stamps.",
+    memoryTrick: "'Schalter' means counter / switch! 'Am Schalter bedienen' (to serve at the counter).",
+    imageType: "service-counter"
+  },
+  {
+    id: "die-briefmarke-aufkleben",
+    german: "die Briefmarke (die Briefmarken) aufkleben",
+    english: "the postage stamp(s) / to stick/paste on a stamp",
+    pronunciation: "dee BREEF-mar-kuh OWF-kaly-ben (haht OWF-guh-klaypt)",
+    audioText: "die Briefmarke. Eine Briefmarke aufkleben. Ich habe die Briefmarke aufgeklebt.",
+    category: "letters",
+    badge: "Stamps & Pasting",
+    icon: "🏷️",
+    kenyanAnalogy: "Licking or peeling the postage stamp and pressing it firmly onto the top-right corner of your envelope.",
+    memoryTrick: "Brief (letter) + Marke (stamp/mark) = Briefmarke. Aufkleben is separable: 'Ich klebe die Marke auf' (hat aufgeklebt).",
+    imageType: "postage-stamp"
+  },
+  {
+    id: "briefmarkenautomat-philatelie",
+    german: "der Briefmarkenautomat & Briefmarken sammeln (Philatelie)",
+    english: "stamp vending machine & collecting stamps (philately)",
+    pronunciation: "dair BREEF-mar-ken-ow-to-MAHT",
+    audioText: "der Briefmarkenautomat. Mein Hobby ist Briefmarken sammeln.",
+    category: "letters",
+    badge: "Stamp Machine & Hobby",
+    icon: "📠",
+    kenyanAnalogy: "Like the yellow touch-screen stamp dispenser machine outside German post offices where you print custom postage 24/7!",
+    memoryTrick: "Briefmarken + Automat = Stamp vending machine. Philatelie = The art and hobby of stamp collecting!",
+    imageType: "vending-machine"
+  },
+  {
+    id: "brief-umschlag-kuvert",
+    german: "der Umschlag (die Umschläge) / das Kuvert",
+    english: "the envelope / mailing sleeve",
+    pronunciation: "dair OOM-shlahk / dahs koo-VAIR",
+    audioText: "der Briefumschlag, das Kuvert. Den Brief in den Umschlag tun.",
+    category: "letters",
+    badge: "Envelopes",
+    icon: "✉️",
+    kenyanAnalogy: "A white or brown paper envelope. In Germany, 'der Briefumschlag' is standard; in Austria and southern Germany, people also say 'das Kuvert'.",
+    memoryTrick: "Umschlag comes from 'umschlagen' (to wrap around). Plural: die Umschläge!",
+    imageType: "envelope-paper"
+  },
+  {
+    id: "brief-abschicken-verschicken",
+    german: "einen Brief abschicken / verschicken",
+    english: "to post / send / mail a letter",
+    pronunciation: "EYE-nen BREEF AHP-shik-ken / fair-SHIK-ken",
+    audioText: "einen Brief abschicken. Ich habe den Brief gestern abgeschickt.",
+    category: "letters",
+    badge: "Mailing Verbs",
+    icon: "📬",
+    kenyanAnalogy: "Handing over the sealed letter or dropping it into the postbox to begin its journey to Mombasa, Eldoret, or Berlin.",
+    memoryTrick: "Both mean to send off mail! 'abschicken' (hat abgeschickt - separable) and 'verschicken' (hat verschickt - inseparable).",
+    imageType: "mail-send"
+  },
+  {
+    id: "briefkasten-einwerfen",
+    german: "der Briefkasten & einen Brief einwerfen",
+    english: "the mailbox / postbox & to drop/post a letter into the box",
+    pronunciation: "dair BREEF-kahs-ten (die BREEF-kess-ten) / EYE-nen BREEF EYN-vair-fen",
+    audioText: "der Briefkasten. Einen Brief einwerfen. Ich werfe den Brief in den Briefkasten ein.",
+    category: "letters",
+    badge: "Mailbox Drop",
+    icon: "📮",
+    kenyanAnalogy: "Dropping your stamped envelope through the narrow metal slot of the bright yellow Deutsche Post street pillar box.",
+    memoryTrick: "Brief (letter) + Kasten (box) = Briefkasten! Einwerfen = to throw in (ein + werfen; hat eingeworfen).",
+    imageType: "yellow-postbox"
+  },
+  {
+    id: "paket-paeckchen-packen",
+    german: "das Paket (die Pakete) vs. das Päckchen",
+    english: "the parcel/package vs. the small parcel (< 2kg)",
+    pronunciation: "dahs pah-KAYT (die pah-KAY-tuh) vs. dahs PEK-hyen",
+    audioText: "das Paket, das Päckchen. Ein Paket packen.",
+    category: "parcels",
+    badge: "Parcels & Boxes",
+    icon: "📦",
+    kenyanAnalogy: "'Päckchen' is a small, lightweight box up to 2 kg (cheaper, no tracking by default). 'Paket' is a heavier insured box with tracking!",
+    memoryTrick: "The '-chen' ending makes it smaller and cute: Paket ➔ Päckchen (small package)! Verb: 'ein Paket packen' (to pack a box).",
+    imageType: "parcel-boxes"
+  },
+  {
+    id: "absender-vs-empfaenger",
+    german: "der Absender (oben links) vs. der Empfänger (unten rechts)",
+    english: "the sender (top left) vs. the receiver / recipient (bottom right)",
+    pronunciation: "dair AHP-zen-der vs. dair emp-FENG-er",
+    audioText: "der Absender oben links. Der Empfänger unten rechts.",
+    category: "addressing",
+    badge: "German Envelope Rules",
+    icon: "📐",
+    kenyanAnalogy: "Strict German postal rule: Your return name & address (Absender) MUST be in the TOP-LEFT corner. The recipient (Empfänger) MUST be in the BOTTOM-RIGHT!",
+    memoryTrick: "Absender = Person sending (absenden). Empfänger = Person receiving (empfangen).",
+    imageType: "envelope-layout"
+  },
+  {
+    id: "paketaufkleber",
+    german: "der Paketaufkleber (DHL Paketschein)",
+    english: "the parcel address label / shipping sticker",
+    pronunciation: "dair pah-KAYT-owf-klay-ber",
+    audioText: "der Paketaufkleber für DHL Paket und Päckchen",
+    category: "addressing",
+    badge: "Shipping Label",
+    icon: "🏷️",
+    kenyanAnalogy: "The famous yellow-and-white DHL sticky label where you write the sender details on the left and destination on the right.",
+    memoryTrick: "Paket (parcel) + Aufkleber (sticker/adhesive label) = Paketaufkleber!",
+    imageType: "shipping-label"
+  },
+  {
+    id: "einschreiben-sendungsnummer",
+    german: "das Einschreiben & die Sendungsnummer",
+    english: "registered / certified mail & tracking number",
+    pronunciation: "dahs EYN-shrye-ben oont dee ZEN-doongs-noom-mer",
+    audioText: "das Einschreiben. Einen Brief per Einschreiben schicken. Die Sendungsnummer.",
+    category: "services",
+    badge: "Certified Mail & Tracking",
+    icon: "🔒",
+    kenyanAnalogy: "Like sending your KCSE certificate or title deed via Registered Post Kenya where the recipient must sign upon delivery, and you get a tracking number (Sendungsnummer)!",
+    memoryTrick: "Ein + schreiben = To write in (recorded in the official register). Sendung (shipment) + Nummer (number) = Sendungsnummer (Tracking code)!",
+    imageType: "tracking-receipt"
+  },
+  {
+    id: "postkarte",
+    german: "die Postkarte (die Postkarten)",
+    english: "the postcard(s)",
+    pronunciation: "dee POST-kahr-tuh (die POST-kahr-ten)",
+    audioText: "die Postkarte. Ich schreibe eine Postkarte aus dem Urlaub.",
+    category: "letters",
+    badge: "Holiday Postcard",
+    icon: "🌄",
+    kenyanAnalogy: "A colorful picture postcard with a photo of Mount Kenya or Diani Beach on one side, and a handwritten greeting + stamp on the other.",
+    memoryTrick: "Post + Karte = Postcard!",
+    imageType: "scenic-postcard"
+  },
+  {
+    id: "counter-briefmarken-bitte",
+    german: "Ich hätte gern zwei Briefmarken / einen Briefumschlag.",
+    english: "I would like two stamps / an envelope.",
+    pronunciation: "Ikh HET-tuh gairn tsvye BREEF-mar-ken / EYE-nen BREEF-oom-shlahk.",
+    audioText: "Ich hätte gern zwei Briefmarken und einen Briefumschlag.",
+    category: "dialogue",
+    badge: "Polite Request at Counter",
+    icon: "💬",
+    kenyanAnalogy: "Polite magic phrase at the counter: 'Ich hätte gern...' (I would like to have...). Much more polite than 'Ich will'!",
+    memoryTrick: "Ich hätte gern + Akkusativ: 'zwei Briefmarken', 'einen Briefumschlag' (der Umschlag ➔ einen Umschlag).",
+    imageType: "counter-ask"
+  },
+  {
+    id: "counter-paket-schicken",
+    german: "Ich möchte gern dieses Paket nach London / Kenia schicken.",
+    english: "I would like to send this parcel to London / Kenya.",
+    pronunciation: "Ikh MUKH-tuh gairn DEE-zes pah-KAYT nahkh LON-don SHIK-ken.",
+    audioText: "Ich möchte gern dieses Paket nach London schicken.",
+    category: "dialogue",
+    badge: "Sending Parcel Inquiries",
+    icon: "🌍",
+    kenyanAnalogy: "Placing your box on the scale at the counter and telling the clerk where in the world you want it delivered.",
+    memoryTrick: "Modal verb 'möchte' at position 2 + action verb 'schicken' at the very end of the sentence!",
+    imageType: "world-shipping"
+  },
+  {
+    id: "counter-wieviel-kostet",
+    german: "Wieviel kostet dieser Brief / dieses Paket nach London?",
+    english: "How much does this letter / parcel to London cost?",
+    pronunciation: "VEE-feel KOS-tet DEE-zer BREEF / DEE-zes pah-KAYT nahkh LON-don?",
+    audioText: "Wieviel kostet dieser Brief nach London? Wieviel kostet dieses Paket nach Kenia?",
+    category: "dialogue",
+    badge: "Price Inquiry",
+    icon: "💶",
+    kenyanAnalogy: "Asking the clerk for the exact postal tariff before you pay with cash (bar) or EC-card/Kreditkarte.",
+    memoryTrick: "Wieviel kostet + Subject in Nominativ: 'dieser Brief' (masculine) / 'dieses Paket' (neuter).",
+    imageType: "price-tag"
+  },
+  {
+    id: "counter-wie-lange-dauert",
+    german: "Wie lange braucht ein Paket nach London?",
+    english: "How long does a package take to London? (Delivery time)",
+    pronunciation: "VEE LAHNG-uh BROWKHT ein pah-KAYT nahkh LON-don?",
+    audioText: "Wie lange braucht ein Paket nach London? Das dauert etwa drei bis fünf Werktage.",
+    category: "dialogue",
+    badge: "Delivery Duration",
+    icon: "⏱️",
+    kenyanAnalogy: "Asking the expected transit time: 'How many days will it take to arrive at the destination address?'",
+    memoryTrick: "'brauchen' is used here colloquially for transit time! (Literally: 'How long does a package need?'). Or: 'Wie lange dauert es?'",
+    imageType: "delivery-clock"
+  }
+];
+
+export const LESSON_61_SCENARIOS = [
+  {
+    scenario: "You are standing in front of the post office clerk at the counter and want to buy two postage stamps for domestic letters in Germany. What do you politely say?",
+    hint: "Ich hätte gern zwei Briefmarken.",
+    options: [
+      { text: "Ich hätte gern zwei Briefmarken, bitte.", correct: true, explain: "Perfekt! 'Ich hätte gern' (I would like to have) is the most polite formula at any German counter." },
+      { text: "Gib mir jetzt zwei Autos.", correct: false, explain: "That asks for two cars rudely." },
+      { text: "Ich esse die Poststelle.", correct: false, explain: "That means 'I eat the post office'." }
+    ]
+  },
+  {
+    scenario: "In Slide 20, how MUST you address a German envelope properly so Deutsche Post can deliver it without error?",
+    hint: "Absender (Sender) in the top-left corner; Empfänger (Recipient) in the bottom-right corner.",
+    options: [
+      { text: "Der Absender (Sender) goes top-left; der Empfänger (Receiver) goes bottom-right.", correct: true, explain: "Ausgezeichnet! In Germany, return address (Absender) is top-left, delivery address (Empfänger) is bottom-right, and stamp is top-right!" },
+      { text: "You write the receiver on the inside of the envelope only.", correct: false, explain: "The machine cannot read the inside of an envelope." },
+      { text: "Sender and receiver are written on top of each other in the center.", correct: false, explain: "Incorrect layout." }
+    ]
+  },
+  {
+    scenario: "You are sending an important legal contract or university diploma and need official proof and signature when the recipient gets it. How do you ask to send it?",
+    hint: "Ich möchte gern diesen Brief per Einschreiben schicken.",
+    options: [
+      { text: "Ich möchte gern diesen Brief per Einschreiben schicken.", correct: true, explain: "Genau! 'per Einschreiben' means by registered / certified mail, which gives you a tracking number (Sendungsnummer) and signed delivery proof." },
+      { text: "Ich möchte diesen Brief in den Müll werfen.", correct: false, explain: "That means throw it in the trash." },
+      { text: "Ich möchte diesen Brief ohne Adresse verschicken.", correct: false, explain: "That means send without an address." }
+    ]
+  },
+  {
+    scenario: "What is the difference in German postal services between 'das Paket' and 'das Päckchen' (Slides 14 & 21)?",
+    hint: "Päckchen is a small parcel up to 2kg; Paket is a standard parcel with tracking & insurance.",
+    options: [
+      { text: "Ein Päckchen is a small package (up to 2 kg); ein Paket is a larger, trackable parcel.", correct: true, explain: "Richtig! The diminutive '-chen' makes 'Päckchen' smaller (up to 2 kg). 'Paket' is larger, insured, and comes with a tracking number (Sendungsnummer)." },
+      { text: "A Päckchen is only for letters; a Paket is only for pizzas.", correct: false, explain: "Incorrect." },
+      { text: "They are completely identical with zero difference.", correct: false, explain: "Incorrect." }
+    ]
+  },
+  {
+    scenario: "Someone calls you and asks: 'Wohin gehst du?' (Where are you heading to?). You are on your way to the post office. How do you answer?",
+    hint: "Ich gehe zur Post.",
+    options: [
+      { text: "Ich gehe zur Post.", correct: true, explain: "Wunderbar! Movement/direction towards the post office uses 'zur Post' (zu + der Post = zur Post). If you were already inside, you'd say 'Ich bin in der Post'." },
+      { text: "Ich bin gestern im Bett.", correct: false, explain: "That talks about being in bed yesterday." },
+      { text: "Ich kaufe einen Briefkasten.", correct: false, explain: "That means buying a mailbox." }
+    ]
+  },
+  {
+    scenario: "In Slide 27 & 30, you want to ask the clerk how much shipping costs to London and how many days it will take to arrive. What do you ask?",
+    hint: "Wieviel kostet dieses Paket nach London und wie lange braucht es?",
+    options: [
+      { text: "Wieviel kostet dieses Paket nach London und wie lange braucht es?", correct: true, explain: "Perfekt! 'Wieviel kostet...' asks the price, and 'wie lange braucht es?' asks how many transit days it will take." },
+      { text: "Wann schläft das Paket?", correct: false, explain: "That asks when the parcel sleeps." },
+      { text: "Warum ist London in Afrika?", correct: false, explain: "Irrelevant question." }
+    ]
+  }
+];
+
 
 
 

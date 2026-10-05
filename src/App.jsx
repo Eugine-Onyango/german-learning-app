@@ -126,6 +126,8 @@ import Lesson59HotelStudio from './components/Lesson59HotelStudio';
 import Lesson59Game from './components/Lesson59Game';
 import Lesson60FormStudio from './components/Lesson60FormStudio';
 import Lesson60Game from './components/Lesson60Game';
+import Lesson61PostStudio from './components/Lesson61PostStudio';
+import Lesson61Game from './components/Lesson61Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -186,11 +188,12 @@ import {
   LESSON_57_ITEMS,
   LESSON_58_ITEMS,
   LESSON_59_ITEMS,
-  LESSON_60_ITEMS
+  LESSON_60_ITEMS,
+  LESSON_61_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(60); // Default to Lesson 60 as requested, easy switch to 1-59
+  const [currentLesson, setCurrentLesson] = useState(61); // Default to Lesson 61 as requested, easy switch to 1-60
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -254,6 +257,7 @@ export default function App() {
   if (currentLesson === 58) activeItems = LESSON_58_ITEMS;
   if (currentLesson === 59) activeItems = LESSON_59_ITEMS;
   if (currentLesson === 60) activeItems = LESSON_60_ITEMS;
+  if (currentLesson === 61) activeItems = LESSON_61_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -315,7 +319,8 @@ export default function App() {
     if (currentLesson === 57) return "Lesson 57: Am Telefon sprechen (Telephone Conversations, Greetings, Messages & Clarifications)";
     if (currentLesson === 58) return "Lesson 58: Beim Arzt (At the Doctor's Office - Appointments, Symptoms, Vitals & AU Sick Notes)";
     if (currentLesson === 59) return "Lesson 59: Hotelreservierung (Hotel Booking, EZ / DZ, Meal Plans & Formal Reservation Letters)";
-    return "Lesson 60: Touristeninformation, Reisebüro & Formulare ausfüllen (Tourist Info, Travel Agencies & Filling Official Forms)";
+    if (currentLesson === 60) return "Lesson 60: Touristeninformation, Reisebüro & Formulare ausfüllen (Tourist Info, Travel Agencies & Filling Official Forms)";
+    return "Lesson 61: Die Post (The Post Office - Letters, Stamps, Parcels, Registered Mail & Envelope Addressing)";
   };
 
   const getLessonDesc = () => {
@@ -496,7 +501,10 @@ export default function App() {
     if (currentLesson === 59) {
       return "Master booking hotels and holiday lodgings in German (Hotelreservierung)! Distinguish lodging types (das Hotel, die Pension, die Jugendherberge), room types (das Einzelzimmer / EZ vs. das Doppelzimmer / DZ), meal plans (mit Frühstück, Halbpension / HP, Vollpension / VP), master the formal 3-part reservation letter anatomy (Sehr geehrte Damen und Herren ➔ Arrival, duration, rooms, price & wishes ➔ Mit freundlichen Grüßen), ask for rates (Was kostet es pro Nacht?), and request special services (Flughafen-/Bahnhof-Abholung, Meeresblick, Extrabett, Haustier-Erlaubnis)!";
     }
-    return "Master writing to tourist boards (an Touristeninfo / Reisebüro) and confidently filling out official German registration forms (das Formular ausfüllen)! Learn requesting city maps (Stadtplan), cultural schedules (Kulturprogramm), and hotel recommendations (empfehlen); decode official paperwork fields: Vorname vs. Nachname/Familienname, address structure (Straße, Hausnummer, PLZ, Ort, c/o), civil status (Familienstand: ledig, verheiratet, geschieden, verwitwet), gender (Geschlecht m/w), birth data (Geburtsdatum, Geburtsort, Geburtsland), travel nouns & verbs (Abflug/abfliegen, Abreise/abreisen, Ankunft/ankommen), and signing off (Ort, Datum & Unterschrift)!";
+    if (currentLesson === 60) {
+      return "Master writing to tourist boards (an Touristeninfo / Reisebüro) and confidently filling out official German registration forms (das Formular ausfüllen)! Learn requesting city maps (Stadtplan), cultural schedules (Kulturprogramm), and hotel recommendations (empfehlen); decode official paperwork fields: Vorname vs. Nachname/Familienname, address structure (Straße, Hausnummer, PLZ, Ort, c/o), civil status (Familienstand: ledig, verheiratet, geschieden, verwitwet), gender (Geschlecht m/w), birth data (Geburtsdatum, Geburtsort, Geburtsland), travel nouns & verbs (Abflug/abfliegen, Abreise/abreisen, Ankunft/ankommen), and signing off (Ort, Datum & Unterschrift)!";
+    }
+    return "Master navigating the German postal system (Die Post) and shipping mail with Deutsche Post and DHL! Learn essential locations & staff (das Postamt, die Poststelle, der Schalter, der Briefträger, der Paketbote), letter & parcel essentials (die Briefmarke aufkleben, der Briefumschlag / das Kuvert, das Paket vs. das Päckchen packen, der Briefkasten, einen Brief einwerfen), the strict German envelope layout rule (Absender oben links, Empfänger unten rechts, Marke oben rechts), registered certified mail (per Einschreiben) with tracking numbers (die Sendungsnummer), and polite counter dialogues (Ich hätte gern..., Wieviel kostet dieser Brief / dieses Paket nach London?, Wie lange braucht es?)!";
   };
 
   return (
@@ -1073,6 +1081,15 @@ export default function App() {
 
         {currentLesson === 60 && activeTab === 'game60' && (
           <Lesson60Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 61 Specific Modules */}
+        {currentLesson === 61 && activeTab === 'studio61' && (
+          <Lesson61PostStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 61 && activeTab === 'game61' && (
+          <Lesson61Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
