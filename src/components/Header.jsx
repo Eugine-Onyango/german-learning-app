@@ -1,5 +1,5 @@
-import React from 'react';
-import { Volume2, ShieldCheck, Sparkles, BookOpen } from 'lucide-react';
+import React, { useRef, useEffect } from 'react';
+import { Volume2, ShieldCheck, Sparkles, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
 import { speakGerman, playChime } from '../utils/sound';
 
 export default function Header({
@@ -10,6 +10,25 @@ export default function Header({
   isSlowMode,
   setIsSlowMode
 }) {
+  const scrollRef = useRef(null);
+  const activeBtnRef = useRef(null);
+
+  useEffect(() => {
+    if (activeBtnRef.current) {
+      activeBtnRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center'
+      });
+    }
+  }, [currentLesson]);
+
+  const scrollLessons = (offset) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: offset, behavior: 'smooth' });
+    }
+  };
+
   const handleTestAudio = () => {
     playChime('click');
     let msg = "Hallo! Guten Tag!";
@@ -785,18 +804,57 @@ export default function Header({
           </div>
         </div>
 
-        {/* Lesson Switcher Row - Single horizontal thumb swipe on phones, wrapping row on laptops */}
-        <div className="py-2 flex items-center justify-between gap-2 border-b border-amber-200/70 overflow-hidden">
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full scrollbar-none flex-nowrap lg:flex-wrap">
-            <span className="text-xs font-black text-amber-900 uppercase tracking-wide flex-shrink-0 mr-1 flex items-center gap-1">
-              <span>📚</span>
-              <span>Lesson:</span>
-            </span>
+        {/* Lesson Switcher Row - Sleek single horizontal strip with auto-center, quick dropdown selector & scroll buttons */}
+        <div className="py-2 flex items-center justify-between gap-2 border-b border-amber-200/70">
+          <div className="flex items-center gap-1.5 shrink-0">
+            {/* Quick Dropdown Picker for 1-click jump to any of the 65 lessons */}
+            <select
+              value={currentLesson}
+              onChange={(e) => {
+                setCurrentLesson(Number(e.target.value));
+                setActiveTab('cards');
+                playChime('click');
+              }}
+              className="bg-white text-stone-800 border-2 border-amber-300 rounded-xl px-2.5 py-1 text-xs font-black shadow-xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-500 hover:border-amber-400"
+              title="Jump directly to any lesson"
+            >
+              {ALL_LESSONS.map((l) => (
+                <option key={l.num} value={l.num}>
+                  {l.label}
+                </option>
+              ))}
+            </select>
+
+            {/* Scroll navigation arrows for desktop */}
+            <div className="hidden sm:flex items-center gap-1">
+              <button
+                onClick={() => scrollLessons(-280)}
+                className="w-6 h-6 rounded-full bg-white/90 hover:bg-amber-100 border border-amber-300 flex items-center justify-center text-stone-600 transition-all shadow-xs"
+                title="Scroll left"
+              >
+                <ChevronLeft className="w-3.5 h-3.5" />
+              </button>
+              <button
+                onClick={() => scrollLessons(280)}
+                className="w-6 h-6 rounded-full bg-white/90 hover:bg-amber-100 border border-amber-300 flex items-center justify-center text-stone-600 transition-all shadow-xs"
+                title="Scroll right"
+              >
+                <ChevronRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+
+          {/* Smooth horizontal scroll strip */}
+          <div
+            ref={scrollRef}
+            className="flex items-center gap-1.5 overflow-x-auto pb-0.5 max-w-full scrollbar-none flex-nowrap scroll-smooth"
+          >
             {ALL_LESSONS.map((l) => {
               const isCurrent = currentLesson === l.num;
               return (
                 <button
                   key={l.num}
+                  ref={isCurrent ? activeBtnRef : null}
                   onClick={() => {
                     setCurrentLesson(l.num);
                     setActiveTab('cards');
@@ -814,7 +872,7 @@ export default function Header({
             })}
           </div>
 
-          <span className="text-[11px] text-stone-500 italic hidden xl:inline flex-shrink-0">
+          <span className="text-[11px] text-stone-500 italic hidden 2xl:inline flex-shrink-0">
             💡 Tap speaker icon for audio
           </span>
         </div>
