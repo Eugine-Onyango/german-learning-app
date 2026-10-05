@@ -13437,6 +13437,392 @@ export const LESSON_54_SCENARIOS = [
   }
 ];
 
+export const LESSON_55_ITEMS = [
+  {
+    id: "das-taxi-taxis",
+    german: "das Taxi / der Taxi (die Taxis)",
+    english: "the taxi / cab (plural: taxis)",
+    pronunciation: "dahs / dair TAHK-see (dee TAHK-sees)",
+    audioText: "das Taxi. der Taxi. die Taxis. Mit dem Taxi fahren.",
+    category: "taxi-basics",
+    badge: "Core Vehicle",
+    icon: "🚕",
+    kenyanAnalogy: "Hopping into a yellow cab or ride hailing car to get across town swiftly without taking the bus!",
+    memoryTrick: "In German, both 'das Taxi' (most common) and 'der Taxi' are used; plural is simple with -s: die Taxis!",
+    imageType: "taxi_yellow"
+  },
+  {
+    id: "der-taxistand",
+    german: "der Taxistand (die Taxistände)",
+    english: "the taxi stand / taxi rank",
+    pronunciation: "dair TAHK-see-shtahnt (dee TAHK-see-shten-deh)",
+    audioText: "der Taxistand. Die Taxis warten am Taxistand.",
+    category: "taxi-basics",
+    badge: "Pick-up Location",
+    icon: "🚖",
+    kenyanAnalogy: "The designated taxi rank outside the airport terminal or train station where a line of cabs wait for passengers.",
+    memoryTrick: "Taxi + Stand (place to stand/wait) = der Taxistand!",
+    imageType: "taxi_rank"
+  },
+  {
+    id: "die-taxizentrale",
+    german: "die Taxizentrale (die Taxizentralen)",
+    english: "the taxi dispatch office / call center",
+    pronunciation: "dee TAHK-see-tsen-TRAH-leh",
+    audioText: "die Taxizentrale. Ich rufe die Taxizentrale an.",
+    category: "taxi-basics",
+    badge: "Dispatch Office",
+    icon: "🏢",
+    kenyanAnalogy: "The central hotline dispatch desk coordinating all drivers and bookings across the city.",
+    memoryTrick: "Zentrale = central station/headquarters. Die Taxizentrale!",
+    imageType: "dispatch_center"
+  },
+  {
+    id: "der-taxameter",
+    german: "der Taxameter / das Taxameter",
+    english: "the taximeter (fare meter)",
+    pronunciation: "dair / dahs tahk-zah-MAY-ter",
+    audioText: "der Taxameter. das Taxameter. Schalten Sie bitte das Taxameter ein!",
+    category: "taxi-basics",
+    badge: "Fare Meter",
+    icon: "📟",
+    kenyanAnalogy: "The digital meter on the dashboard that ticks the fare in Euros based on distance and minutes.",
+    memoryTrick: "Taxa (rate) + meter (counter) = der/das Taxameter!",
+    imageType: "meter"
+  },
+  {
+    id: "die-quittung",
+    german: "die Quittung (die Quittungen)",
+    english: "the receipt (for expense claims / proof of payment)",
+    pronunciation: "dee KVIT-toong (dee KVIT-toong-en)",
+    audioText: "die Quittung. Kann ich bitte eine Quittung haben?",
+    category: "taxi-basics",
+    badge: "Receipt",
+    icon: "🧾",
+    kenyanAnalogy: "The printed or handwritten receipt slip the driver gives you to claim back travel money from your employer.",
+    memoryTrick: "Quittung = receipt / payment slip (feminine: die Quittung)!",
+    imageType: "receipt"
+  },
+  {
+    id: "der-taxifahrer-die-taxifahrerin",
+    german: "der Taxifahrer / die Taxifahrerin",
+    english: "the taxi driver (male / female)",
+    pronunciation: "dair TAHK-see-fah-rer / dee TAHK-see-fah-reh-rin",
+    audioText: "der Taxifahrer. die Taxifahrerin. Der Taxifahrer kennt den schnellsten Weg.",
+    category: "roles",
+    badge: "Key Roles",
+    icon: "👨‍✈️",
+    kenyanAnalogy: "The friendly driver behind the steering wheel taking you safely through morning traffic.",
+    memoryTrick: "Fahrer = driver. Add '-in' for female driver (Taxifahrerin)!",
+    imageType: "driver"
+  },
+  {
+    id: "ein-taxi-bestellen",
+    german: "ein Taxi bestellen",
+    english: "to order / book a taxi",
+    pronunciation: "ayn TAHK-see beh-SHTEL-len",
+    audioText: "ein Taxi bestellen. Kann ich bitte ein Taxi bestellen?",
+    category: "booking",
+    badge: "Core Action",
+    icon: "📞",
+    kenyanAnalogy: "Calling up the hotline or using a booking service to dispatch a car to your doorstep.",
+    memoryTrick: "Bestellen = to order (just like ordering food in a restaurant)!",
+    imageType: "phone_call"
+  },
+  {
+    id: "am-telefon-buchen-vorbestellen",
+    german: "Ich hätte gern / brauche bitte für morgen um 16 Uhr ein Taxi in die Goethestraße 10.",
+    english: "I would like / need a taxi for tomorrow at 16:00 to Goethestraße 10.",
+    pronunciation: "ikh HET-teh gairn / BROW-kheh BIT-teh feer MOR-gen oom ZEKH-tsayn oor ayn TAHK-see in dee GUR-teh-shtrah-seh tsehn",
+    audioText: "Ich hätte gern für morgen um 16 Uhr ein Taxi in die Goethestraße 10. Ich brauche bitte für morgen um 16 Uhr ein Taxi in die Goethestraße 10.",
+    category: "booking-phone",
+    badge: "Advance Booking (Slide 10)",
+    icon: "🗓️",
+    kenyanAnalogy: "Booking a ride in advance for an important meeting or train departure tomorrow afternoon.",
+    memoryTrick: "'Ich hätte gern / brauche...' + time ('für morgen um 16 Uhr') + location ('in die Goethestraße 10')!",
+    imageType: "schedule_ride"
+  },
+  {
+    id: "kann-ich-taxi-zum-flughafen-bestellen",
+    german: "Kann ich morgen früh um 8 Uhr ein Taxi zum Flughafen bestellen?",
+    english: "Can I order a taxi to the airport tomorrow morning at 8 o'clock?",
+    pronunciation: "kahn ikh MOR-gen frew oom AHKHT oor ayn TAHK-see tsoom FLOOK-hah-fen beh-SHTEL-len?",
+    audioText: "Kann ich morgen früh um 8 Uhr ein Taxi zum Flughafen bestellen?",
+    category: "booking-phone",
+    badge: "Airport Booking (Slide 11)",
+    icon: "✈️",
+    kenyanAnalogy: "Scheduling an early morning pickup so you don't miss your flight at the international airport.",
+    memoryTrick: "'zum Flughafen' = to the airport (der Flughafen ➔ zum Flughafen)!",
+    imageType: "airport_taxi"
+  },
+  {
+    id: "ich-brauche-sofort-ein-taxi",
+    german: "Ich brauche bitte sofort ein Taxi zum Flughafen in die Goethestraße 10.",
+    english: "I need a taxi immediately to the airport at Goethestraße 10, please.",
+    pronunciation: "ikh BROW-kheh BIT-teh zoh-FORT ayn TAHK-see tsoom FLOOK-hah-fen in dee GUR-teh-shtrah-seh tsehn",
+    audioText: "Ich brauche bitte sofort ein Taxi zum Flughafen in die Goethestraße 10.",
+    category: "booking-phone",
+    badge: "Immediate Request (Slide 12)",
+    icon: "🚨",
+    kenyanAnalogy: "When you are running late and need a driver sent to your gate right away: 'sofort' = immediately!",
+    memoryTrick: "'sofort' = right now / immediately!",
+    imageType: "urgent_taxi"
+  },
+  {
+    id: "keine-taxis-verfuegbar",
+    german: "Es tut mir leid, es sind keine Taxis verfügbar. (verfügbar sein)",
+    english: "I'm sorry, there are no taxis available. (to be available)",
+    pronunciation: "es toot meer lyt, es zint KY-neh TAHK-sees fair-FEWK-bahr",
+    audioText: "Es tut mir leid, es sind keine Taxis verfügbar. verfügbar sein.",
+    category: "dispatch-replies",
+    badge: "Dispatch Reply (Slide 13-14)",
+    icon: "⚠️",
+    kenyanAnalogy: "When all drivers are busy during rush hour or heavy rain: 'Sorry, no cabs available at the moment!'",
+    memoryTrick: "'verfügbar' = available / reachable!",
+    imageType: "busy_signal"
+  },
+  {
+    id: "name-und-auf-dem-weg",
+    german: "Wie lautet Ihr Name, bitte? — Das Taxi ist auf dem Weg.",
+    english: "What is your name, please? — The taxi is on the way.",
+    pronunciation: "vee LOW-tet eer NAH-meh, BIT-teh? — dahs TAHK-see ist owf daim vayk",
+    audioText: "Wie lautet Ihr Name, bitte? Das Taxi ist auf dem Weg.",
+    category: "dispatch-replies",
+    badge: "Confirmation (Slide 15)",
+    icon: "✅",
+    kenyanAnalogy: "The dispatcher confirms your booking and announces the car has started driving toward your street.",
+    memoryTrick: "'auf dem Weg' = on the way / en route!",
+    imageType: "car_on_way"
+  },
+  {
+    id: "auf-der-strasse-sind-sie-frei",
+    german: "Entschuldigen Sie, sind Sie frei? Können Sie mich zum Bahnhof fahren?",
+    english: "Excuse me, are you free? Can you drive me to the train station?",
+    pronunciation: "ent-SHOOL-dee-gen zee, zint zee fry? KERN-nen zee mikh tsoom BAHN-hohf FAH-ren?",
+    audioText: "auf der Straße: Entschuldigen Sie, sind Sie frei? Können Sie mich zum Bahnhof fahren?",
+    category: "hailing-street",
+    badge: "Hailing on Street (Slide 17)",
+    icon: "🙋‍♂️",
+    kenyanAnalogy: "Walking up to a parked taxi on the kerb and checking if the driver is available before opening the door.",
+    memoryTrick: "'Sind Sie frei?' = Are you vacant / available?",
+    imageType: "hail_taxi"
+  },
+  {
+    id: "wuerden-sie-mich-zum-flughafen-bringen",
+    german: "Entschuldigen Sie, würden Sie / könnten Sie mich bitte zum Flughafen bringen?",
+    english: "Excuse me, would you / could you please take me to the airport?",
+    pronunciation: "ent-SHOOL-dee-gen zee, VEWR-den zee / KERN-ten zee mikh BIT-teh tsoom FLOOK-hah-fen BRING-en?",
+    audioText: "Entschuldigen Sie, würden Sie mich bitte zum Flughafen bringen? Könnten Sie mich bitte zum Flughafen bringen?",
+    category: "hailing-street",
+    badge: "Polite Request (Slide 18)",
+    icon: "🎩",
+    kenyanAnalogy: "Polite, high-respect phrasing with 'würden / könnten Sie' when requesting a trip.",
+    memoryTrick: "Würden / Könnten = Would / Could (super polite Konjunktiv II)!",
+    imageType: "polite_request"
+  },
+  {
+    id: "wohin-moechten-sie-destinationen",
+    german: "Wohin möchten Sie? — Ich möchte zum Flughafen / zum Stadtzentrum / zum Bahnhof.",
+    english: "Where do you want to go? — I want to go to the airport / city centre / train station.",
+    pronunciation: "voh-HIN MERKH-ten zee? — ikh MERKH-teh tsoom FLOOK-hah-fen / tsoom SHTAHT-tsen-troom / tsoom BAHN-hohf",
+    audioText: "im Taxi: Wohin möchten Sie? Ich möchte zum Flughafen. Ich möchte zum Stadtzentrum. Ich möchte zum Bahnhof.",
+    category: "in-ride",
+    badge: "Destination (Slide 20-21)",
+    icon: "📍",
+    kenyanAnalogy: "The driver turns around and asks your destination: 'Where to?' -> 'Take me to town / the railway station / the airport!'",
+    memoryTrick: "Notice 'zum' (zu + dem) for masculine/neuter places: zum Flughafen, zum Stadtzentrum, zum Bahnhof!",
+    imageType: "destination_pin"
+  },
+  {
+    id: "taxameter-eingeschaltet",
+    german: "Ist das Taxameter eingeschaltet? / Schalten Sie bitte das Taxameter ein!",
+    english: "Is the taximeter turned on? / Please turn on the taximeter!",
+    pronunciation: "ist dahs tahk-zah-MAY-ter AYN-ge-shahl-tet? / SHAHL-ten zee BIT-teh dahs tahk-zah-MAY-ter ayn!",
+    audioText: "Ist das Taxameter eingeschaltet? Schalten Sie bitte das Taxameter ein!",
+    category: "in-ride",
+    badge: "Meter Check (Slide 22)",
+    icon: "⏱️",
+    kenyanAnalogy: "Making sure the driver starts the official digital fare meter as soon as you pull away from the kerb.",
+    memoryTrick: "einschalten = to switch on (eingeschaltet = turned on)!",
+    imageType: "switch_meter"
+  },
+  {
+    id: "wie-lange-dauert-es-bis-dahin",
+    german: "Wie lange dauert es bis dahin? / Wie lange dauert die Fahrt bis zum Flughafen? — Etwa 20 Minuten.",
+    english: "How long will it take to get there? / How long is the ride to the airport? — About 20 minutes.",
+    pronunciation: "vee LAHNG-eh DOW-ert es bis dah-HIN? vee LAHNG-eh DOW-ert dee fahrt bis tsoom FLOOK-hah-fen? — ET-vah TSVAN-tsikh mee-NOO-ten",
+    audioText: "Wie lange dauert es bis dahin? Etwa 20 Minuten. Wie lange dauert die Fahrt bis zum Flughafen?",
+    category: "in-ride",
+    badge: "Duration & ETA (Slide 23-24)",
+    icon: "⏳",
+    kenyanAnalogy: "Checking travel time with the driver to estimate your arrival time: 'About 20 minutes!'",
+    memoryTrick: "'dauern' = to last/take time. 'Etwa' = approximately / about.",
+    imageType: "speedometer"
+  },
+  {
+    id: "ich-habe-es-eilig-schneller-fahren",
+    german: "Ich habe es eilig. Könnten (Können) Sie bitte schneller fahren?",
+    english: "I am in a hurry. Could (Can) you please drive a little faster?",
+    pronunciation: "ikh HAH-beh es EYE-likh. KERN-ten (KERN-nen) zee BIT-teh SHNEL-ler FAH-ren?",
+    audioText: "Ich habe es eilig. Könnten Sie bitte schneller fahren? Können Sie bitte schneller fahren?",
+    category: "in-ride",
+    badge: "Speed Request (Slide 25-26)",
+    icon: "💨",
+    kenyanAnalogy: "When you have a pressing appointment and ask the driver nicely to step on the gas a little.",
+    memoryTrick: "'es eilig haben' = to be in a rush/hurry! 'schneller' = faster.",
+    imageType: "hurry_ride"
+  },
+  {
+    id: "fenster-aufmachen-zumachen",
+    german: "Stört es Sie, wenn ich das Fenster zumache / aufmache?",
+    english: "Does it bother you if I close / open the window?",
+    pronunciation: "SHTURT es zee, ven ikh dahs FEN-ster TSOO-mah-kheh / OWF-mah-kheh?",
+    audioText: "Stört es Sie, wenn ich das Fenster zumache? Stört es Sie, wenn ich das Fenster aufmache?",
+    category: "in-ride",
+    badge: "Window Comfort (Slide 27)",
+    icon: "🪟",
+    kenyanAnalogy: "Politely asking permission before rolling down the passenger window for fresh air or rolling it up when it's chilly.",
+    memoryTrick: "aufmachen = to open; zumachen = to close! 'Stört es Sie?' = Does it disturb you?",
+    imageType: "window_car"
+  },
+  {
+    id: "anhalten-haltestelle-eingang-bankautomat",
+    german: "Können Sie bitte hier anhalten? / Bitte halten Sie da vorne an der Haltestelle / am Eingang / an einem Bankautomaten an.",
+    english: "Can you please stop here? / Please stop up ahead at the bus stop / at the entrance / at an ATM.",
+    pronunciation: "KERN-nen zee BIT-teh heer AHN-hahl-ten? BIT-teh HAHL-ten zee dah FOR-neh ahn dair HAHL-teh-shtel-leh / ahm AYN-gahng / ahn EYE-nem BAHN-kow-toh-MAH-ten ahn",
+    audioText: "Können Sie bitte hier anhalten? Bitte halten Sie da vorne an der Haltestelle. Bitte halten Sie am Eingang. Können Sie an einem Bankautomaten anhalten? Können Sie an einem Kiosk anhalten?",
+    category: "stopping",
+    badge: "Stop Requests (Slide 28-30)",
+    icon: "🛑",
+    kenyanAnalogy: "Telling the driver exactly where to pull over (at the main gate, bus stop, corner kiosk, or cash machine).",
+    memoryTrick: "anhalten = to pull over / stop the vehicle!",
+    imageType: "stop_sign"
+  },
+  {
+    id: "da-vorn-rauslassen",
+    german: "Können Sie mich bitte da vorn rauslassen?",
+    english: "Can you please drop me out / let me out right up there?",
+    pronunciation: "KERN-nen zee mikh BIT-teh dah forn ROWSS-lahs-sen?",
+    audioText: "Können Sie mich bitte da vorn rauslassen?",
+    category: "stopping",
+    badge: "Drop-Off Request (Slide 31)",
+    icon: "🚪",
+    kenyanAnalogy: "Asking the driver to drop you off right ahead near the curb: 'Drop me off right here please!'",
+    memoryTrick: "rauslassen = to let out / drop off!",
+    imageType: "passenger_exit"
+  },
+  {
+    id: "zahlen-wie-viel-kostet-das",
+    german: "zahlen: Wie viel kostet das? — 15,50 Euro. / Das macht dann 15,50 Euro bitte.",
+    english: "to pay: How much is it? — 15.50 Euro. / That comes to 15.50 Euro please.",
+    pronunciation: "TSAH-len: vee feel KOSS-tet dahs? — FEWNF-tsayn OY-roh FEWNF-tsikh. / dahs mahkht dahn FEWNF-tsayn OY-roh FEWNF-tsikh BIT-teh",
+    audioText: "zahlen. Wie viel kostet das? 15,50 Euro. Das macht dann 15,50 Euro bitte.",
+    category: "payment",
+    badge: "Fare & Price (Slide 32-34)",
+    icon: "💶",
+    kenyanAnalogy: "Reaching the destination and checking the final bill on the meter.",
+    memoryTrick: "zahlen = to pay. 'Das macht dann...' = That comes to...",
+    imageType: "taxi_fare"
+  },
+  {
+    id: "mit-der-karte-zahlen",
+    german: "Kann ich mit der Karte zahlen?",
+    english: "Can I pay with card? (Credit / Debit card)",
+    pronunciation: "kahn ikh mit dair KAHR-teh TSAH-len?",
+    audioText: "Kann ich mit der Karte zahlen?",
+    category: "payment",
+    badge: "Card Payment (Slide 35)",
+    icon: "💳",
+    kenyanAnalogy: "Asking if the taxi has a portable card POS terminal before tapping your debit or credit card.",
+    memoryTrick: "mit der Karte = with the card (Dativ feminine: die Karte ➔ der Karte)!",
+    imageType: "credit_card"
+  },
+  {
+    id: "quittung-fragen-und-anbieten",
+    german: "Kann ich bitte eine Quittung haben? / Möchten Sie eine Quittung?",
+    english: "Can I please have a receipt? / Would you like a receipt?",
+    pronunciation: "kahn ikh BIT-teh EYE-neh KVIT-toong HAH-ben? / MERKH-ten zee EYE-neh KVIT-toong?",
+    audioText: "Kann ich bitte eine Quittung haben? Möchten Sie eine Quittung?",
+    category: "payment",
+    badge: "Receipt Dialogue (Slide 36-37)",
+    icon: "📑",
+    kenyanAnalogy: "Asking for the official fare receipt or the driver offering one before you step out.",
+    memoryTrick: "eine Quittung (Akkusativ feminine: eine Quittung)!",
+    imageType: "give_receipt"
+  },
+  {
+    id: "trinkgeld-stimmt-so-rest-fuer-sie",
+    german: "Danke, Rest ist für Sie. / Stimmt so! / Das passt!",
+    english: "Thanks, keep the change! / That's fine, keep the rest!",
+    pronunciation: "DAHN-keh, rest ist feer zee. / SHTIMMT zoh! / dahs pahsst!",
+    audioText: "Danke, Rest ist für Sie. Stimmt so! Das passt!",
+    category: "payment",
+    badge: "Tipping Formulas (Slide 38-39)",
+    icon: "🪙",
+    kenyanAnalogy: "Handing a 20 Euro note for a 17 Euro ride and telling the driver to keep the 3 Euro balance as a tip with a warm smile!",
+    memoryTrick: "'Stimmt so!' literally means 'It is correct like this (no change needed)'!",
+    imageType: "tipping_hand"
+  }
+];
+
+export const LESSON_55_SCENARIOS = [
+  {
+    scenario: "In Slide 10 & 11, you call the taxi dispatch center (die Taxizentrale) to book a taxi tomorrow morning at 8:00 AM to the airport. What do you say?",
+    hint: "Kann ich morgen früh um 8 Uhr ein Taxi zum Flughafen bestellen?",
+    options: [
+      { text: "Kann ich morgen früh um 8 Uhr ein Taxi zum Flughafen bestellen?", correct: true, explain: "Perfekt! 'Kann ich morgen früh um 8 Uhr ein Taxi zum Flughafen bestellen?' is polite, precise, and accurately uses 'zum Flughafen'!" },
+      { text: "Ich bin der Taxifahrer.", correct: false, explain: "You are the passenger ordering a ride." },
+      { text: "Ist das Wetter heute sonnig?", correct: false, explain: "That asks about the weather." }
+    ]
+  },
+  {
+    scenario: "In Slide 13 & 14, the dispatcher answers your call during a stormy rush hour and explains no cars are currently available. What does she say?",
+    hint: "Es tut mir leid, es sind keine Taxis verfügbar.",
+    options: [
+      { text: "Es tut mir leid, es sind keine Taxis verfügbar.", correct: true, explain: "Ausgezeichnet! 'Es tut mir leid, es sind keine Taxis verfügbar' uses the key term 'verfügbar sein' (to be available) from Slide 14!" },
+      { text: "Das Taxi ist auf dem Weg.", correct: false, explain: "That means the taxi is already on the way." },
+      { text: "Wie lautet Ihre Handynummer?", correct: false, explain: "That asks for a phone number." }
+    ]
+  },
+  {
+    scenario: "In Slide 17, you see a taxi waiting at a street corner. How do you politely ask if the driver is vacant and can drive you to the train station?",
+    hint: "Entschuldigen Sie, sind Sie frei? Können Sie mich zum Bahnhof fahren?",
+    options: [
+      { text: "Entschuldigen Sie, sind Sie frei? Können Sie mich zum Bahnhof fahren?", correct: true, explain: "Hervorragend! 'Sind Sie frei?' (Are you free/available?) and 'Können Sie mich zum Bahnhof fahren?' is the standard German street-hailing formula!" },
+      { text: "Welche Größe tragen Sie?", correct: false, explain: "That asks for clothing size from Lesson 54." },
+      { text: "Ich möchte ein Kilo Äpfel.", correct: false, explain: "That's grocery shopping." }
+    ]
+  },
+  {
+    scenario: "In Slide 25 & 26, you are running late for your flight and need the taxi driver to speed up a little bit. What do you say?",
+    hint: "Ich habe es eilig. Könnten Sie bitte schneller fahren?",
+    options: [
+      { text: "Ich habe es eilig. Könnten Sie bitte schneller fahren?", correct: true, explain: "Wunderbar! 'Ich habe es eilig' (I am in a hurry) and 'Könnten Sie bitte schneller fahren?' expresses the urgency politely!" },
+      { text: "Schalten Sie bitte die Musik aus.", correct: false, explain: "That asks to turn off music." },
+      { text: "Ich suche die Männerabteilung.", correct: false, explain: "That's department store shopping." }
+    ]
+  },
+  {
+    scenario: "In Slide 31, you arrive near your building and want the driver to let you out right ahead by the entrance. What do you say?",
+    hint: "Können Sie mich bitte da vorn rauslassen?",
+    options: [
+      { text: "Können Sie mich bitte da vorn rauslassen?", correct: true, explain: "Genau! 'Können Sie mich bitte da vorn rauslassen?' (or 'halten Sie am Eingang') is the natural German phrase for dropping off!" },
+      { text: "Ist das Taxameter kaputt?", correct: false, explain: "That asks if the meter is broken." },
+      { text: "Ich brauche keine Quittung.", correct: false, explain: "That declines a receipt." }
+    ]
+  },
+  {
+    scenario: "In Slide 38 & 39, your fare is 17 Euro. You hand the driver a 20 Euro note and want to tell him to keep the change as a tip. What do you say?",
+    hint: "Danke, Rest ist für Sie. / Stimmt so! / Das passt!",
+    options: [
+      { text: "Danke, Rest ist für Sie! / Stimmt so!", correct: true, explain: "Fantastisch! 'Stimmt so!' or 'Danke, Rest ist für Sie' (or 'Das passt!') are the classic German formulas for leaving the change as a tip!" },
+      { text: "Guten Appetit!", correct: false, explain: "That means enjoy your meal." },
+      { text: "Auf Wiederhören!", correct: false, explain: "That is used on the telephone, not in person." }
+    ]
+  }
+];
+
+
 
 
 

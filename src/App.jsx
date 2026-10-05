@@ -114,6 +114,8 @@ import Lesson53DiesStudio from './components/Lesson53DiesStudio';
 import Lesson53Game from './components/Lesson53Game';
 import Lesson54KaufhausStudio from './components/Lesson54KaufhausStudio';
 import Lesson54Game from './components/Lesson54Game';
+import Lesson55TaxiStudio from './components/Lesson55TaxiStudio';
+import Lesson55Game from './components/Lesson55Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -168,11 +170,12 @@ import {
   LESSON_51_ITEMS,
   LESSON_52_ITEMS,
   LESSON_53_ITEMS,
-  LESSON_54_ITEMS
+  LESSON_54_ITEMS,
+  LESSON_55_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(54); // Default to Lesson 54 as requested, easy switch to 1-53
+  const [currentLesson, setCurrentLesson] = useState(55); // Default to Lesson 55 as requested, easy switch to 1-54
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -230,6 +233,7 @@ export default function App() {
   if (currentLesson === 52) activeItems = LESSON_52_ITEMS;
   if (currentLesson === 53) activeItems = LESSON_53_ITEMS;
   if (currentLesson === 54) activeItems = LESSON_54_ITEMS;
+  if (currentLesson === 55) activeItems = LESSON_55_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -285,7 +289,8 @@ export default function App() {
     if (currentLesson === 51) return "Lesson 51: Gefallen und Missfallen ausdrücken (Expressing Likes & Dislikes / Taste & Opinions)";
     if (currentLesson === 52) return "Lesson 52: Das Fragepronomen \"welch-\" (Which? Across Nominativ, Akkusativ & Dativ)";
     if (currentLesson === 53) return "Lesson 53: Demonstrativartikel \"dies-\" (This / These across Nominativ, Akkusativ & Dativ)";
-    return "Lesson 54: Im Kaufhaus (In the Department Store - Shopping, Sizing, Fitting Rooms & Slide 36 Pronouns)";
+    if (currentLesson === 54) return "Lesson 54: Im Kaufhaus (In the Department Store - Shopping, Sizing, Fitting Rooms & Slide 36 Pronouns)";
+    return "Lesson 55: Mit dem Taxi fahren (Taking a Taxi - Booking, Hailing, Cockpit & Fare Tipping)";
   };
 
   const getLessonDesc = () => {
@@ -448,7 +453,10 @@ export default function App() {
     if (currentLesson === 53) {
       return "Master pointing to specific objects and people in German with the demonstrative article \"dies-\" (This / These)! Learn why \"dies-\" follows the exact same mirror ending rules as \"welch-\" and definite articles (dieser Pullover, diese Bluse, dieses Auto, diese Schuhe, mit diesem Geld, in diesen Schuhen)! Explore the Slide 24 Master Matrix, boutique simulator, and the natural \"welch- vs. dies-\" dialogue duet!";
     }
-    return "Master shopping in a German department store (Im Kaufhaus)! Explore floor directories (EG, UG, 1. OG, Männer-, Frauen-, Kinderabteilung), 5-stage boutique roleplay dialogues from greeting (Guten Tag, Sie wünschen?) to request (Ich suche / brauche / hätte gern...), size inquiries (Welche Größe haben Sie denn? ➔ Ich trage Größe 38), directions to fitting rooms (die Umkleidekabine, gleich hier um die Ecke), fit checks (passt gut / ist viel zu klein, eine Nummer größer), style critiques (zu altmodisch / zu modern), compliments (steht Ihnen gut), prices (Was kostet sie?), and the Slide 36 Pronoun Master Summary (der/er, die/sie, das/es)!";
+    if (currentLesson === 54) {
+      return "Master shopping in a German department store (Im Kaufhaus)! Explore floor directories (EG, UG, 1. OG, Männer-, Frauen-, Kinderabteilung), 5-stage boutique roleplay dialogues from greeting (Guten Tag, Sie wünschen?) to request (Ich suche / brauche / hätte gern...), size inquiries (Welche Größe haben Sie denn? ➔ Ich trage Größe 38), directions to fitting rooms (die Umkleidekabine, gleich hier um die Ecke), fit checks (passt gut / ist viel zu klein, eine Nummer größer), style critiques (zu altmodisch / zu modern), compliments (steht Ihnen gut), prices (Was kostet sie?), and the Slide 36 Pronoun Master Summary (der/er, die/sie, das/es)!";
+    }
+    return "Master taking a taxi in German (Mit dem Taxi fahren)! Learn essential taxi vocabulary (das Taxi, der Taxistand, die Taxizentrale, der Taxameter, die Quittung), calling dispatch (Ich hätte gern ein Taxi für morgen / sofort ein Taxi / keine Taxis verfügbar / auf dem Weg), hailing on the street (Sind Sie frei? / Könnten Sie mich zum Flughafen bringen?), in-ride controls (Wohin möchten Sie?, Taxameter einschalten, Ich habe es eilig, Fenster auf-/zumachen, Wie lange dauert es?, an der Haltestelle / am Eingang anhalten, da vorn rauslassen), asking fare (Wie viel kostet das? Das macht 15,50 Euro), paying with card (mit der Karte zahlen), requesting receipts (Quittung), and German tipping formulas (Stimmt so! / Rest ist für Sie! / Das passt!)!";
   };
 
   return (
@@ -971,6 +979,15 @@ export default function App() {
 
         {currentLesson === 54 && activeTab === 'game54' && (
           <Lesson54Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 55 Specific Modules */}
+        {currentLesson === 55 && activeTab === 'studio55' && (
+          <Lesson55TaxiStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 55 && activeTab === 'game55' && (
+          <Lesson55Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

@@ -66,6 +66,7 @@ export default function Header({
     if (currentLesson === 52) msg = "Fragepronomen welch: Welcher Hut ist schicker? Welchen Hut findest du schick? Zu welchem Hut passt meine Jacke? Welche Frau ist deine Kollegin? Welches Buch liest du? Welche Blumen gefallen dir?";
     if (currentLesson === 53) msg = "Demonstrativartikel dies: Was kostet dieser Pullover? Wie finden Sie diesen Pullover? Was passt zu dieser Bluse? Dieses Auto gefällt mir! In diesen Schuhen siehst du elegant aus!";
     if (currentLesson === 54) msg = "Im Kaufhaus: Guten Tag, Sie wünschen? Ich suche eine Hose für das Büro. Welche Größe haben Sie denn? Ich trage Größe 38. Wo ist die Umkleidekabine? Gleich hier um die Ecke! Sie passt genau. Was kostet sie? Sie kostet nur 30 Euro. Auf Wiedersehen!";
+    if (currentLesson === 55) msg = "Mit dem Taxi fahren: Entschuldigen Sie, sind Sie frei? Können Sie mich zum Flughafen bringen? Schalten Sie bitte das Taxameter ein! Wie viel kostet das? Fünfzehn Euro fünfzig bitte. Stimmt so, der Rest ist für Sie!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -504,6 +505,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson55NavItems = [
+    { id: 'cards', label: '📖 Lesson 55 Cards', sub: 'Taxi Vocab & Ride Dialogues' },
+    { id: 'studio55', label: '🚕 Taxi Studio', sub: 'Hotline, Ride Cockpit & Tipping' },
+    { id: 'game55', label: '🎮 Taxi Quiz', sub: 'Booking, In-Ride & Fare Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -558,6 +567,7 @@ export default function Header({
   if (currentLesson === 52) navItems = lesson52NavItems;
   if (currentLesson === 53) navItems = lesson53NavItems;
   if (currentLesson === 54) navItems = lesson54NavItems;
+  if (currentLesson === 55) navItems = lesson55NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -614,6 +624,7 @@ export default function Header({
     { num: 52, label: "🎩 52: welch- (Which?)", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 53, label: "👉 53: dies- (This/These)", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
     { num: 54, label: "🏬 54: Im Kaufhaus", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
+    { num: 55, label: "🚕 55: Mit dem Taxi", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
   ];
 
   return (
