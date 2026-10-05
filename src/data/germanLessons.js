@@ -11962,6 +11962,307 @@ export const LESSON_49_SCENARIOS = [
   }
 ];
 
+export const LESSON_50_ITEMS = [
+  {
+    id: "einladung-core-nouns-verbs",
+    german: "die Einladung (die Einladungen) / eine Einladung schreiben / jemanden einladen",
+    english: "The invitation (invitations) / to write an invitation / to invite someone",
+    pronunciation: "dee EYN-lah-doong (dee EYN-lah-doong-en) / EYE-neh EYN-lah-doong SHRY-ben / YAY-mahn-den EYN-lah-den",
+    audioText: "die Einladung, die Einladungen. Eine Einladung schreiben. Jemanden einladen. Ich lade meine Freunde zu meiner Party ein.",
+    category: "invitation-basics",
+    badge: "Slides 2-5, 10: Core Nouns & Verbs",
+    icon: "✉️",
+    kenyanAnalogy: "Like creating a colorful card or WhatsApp group invite for a goat-eating bash or wedding committee! Feminine noun: 'die Einladung'.",
+    memoryTrick: "ein + laden (to load in / bring inside) = einladen (to invite). The noun ends in -ung (always feminine: die Einladung)!"
+  },
+  {
+    id: "einladung-letter-anatomy",
+    german: "Der Brief-Bauplan: 1. Anrede (Salutation), 2. Textteil (Body), 3. Grußformel und Unterschrift (Closing & Signature)",
+    english: "The 3-Part Letter Anatomy: 1. Salutation, 2. Text Body, 3. Closing & Signature",
+    pronunciation: "dair BREEF-bow-plahn: AHN-ray-deh, TEKST-tyl, GROOSS-for-mel oont OON-ter-shrift",
+    audioText: "Der Aufbau einer Einladung: Erstens: die Anrede. Zweitens: der Textteil. Drittens: Grußformel und Unterschrift.",
+    category: "invitation-structure",
+    badge: "Slide 6: The 3 Core Pillars",
+    icon: "📜",
+    kenyanAnalogy: "The classic official postcard or letter structure: Header greeting ➔ Story/details ➔ Signature!",
+    memoryTrick: "1. Anrede (Dear...) ➔ 2. Textteil (Party details) ➔ 3. Grußformel (Viele Grüße) + Name!"
+  },
+  {
+    id: "einladung-anrede-rules",
+    german: "Anrede: Lieber John, / Liebe Julia, / Hallo zusammen,",
+    english: "Salutation: Dear John (male), / Dear Julia (female), / Hello everyone (plural),",
+    pronunciation: "LEE-ber John, LEE-beh Julia, HAH-loh tsoo-ZAM-men",
+    audioText: "Lieber John, Liebe Julia, Hallo John, Hallo Julia, Hallo zusammen, Liebe Freunde,",
+    category: "invitation-structure",
+    badge: "Slides 7 & 8: Salutation Blueprint",
+    icon: "👋",
+    kenyanAnalogy: "'Lieber' for men (ends in -er like der), 'Liebe' for women (ends in -e like die). Note: After the comma, the first sentence starts with a lowercase letter!",
+    memoryTrick: "Male = Lieber (der). Female = Liebe (die). Plural = Liebe Freunde / Hallo zusammen!"
+  },
+  {
+    id: "einladung-occasions-fest-geburtstag",
+    german: "Wir machen ein Fest! / Ich habe Geburtstag! / Mein Sohn hat Geburtstag.",
+    english: "We are having a party! / It's my birthday! / It's my son's birthday.",
+    pronunciation: "veer MAH-khen ayn FEST! / ikh HAH-beh geh-BOORTS-tahk / myne ZOHN haht geh-BOORTS-tahk",
+    audioText: "Wir machen ein Fest! Ich habe am Samstag Geburtstag! Mein Sohn hat Geburtstag und wir feiern zusammen.",
+    category: "party-occasions",
+    badge: "Slides 11 & 13: Party Occasions",
+    icon: "🎉",
+    kenyanAnalogy: "Announcing the reason for the celebration: birthday bash, family milestone, or house party!",
+    memoryTrick: "ein Fest machen = to throw a celebration/party. Geburtstag haben = to have a birthday."
+  },
+  {
+    id: "einladung-hochzeitstag-essen",
+    german: "der Hochzeitstag / Ich möchte dich zum Essen einladen.",
+    english: "Wedding anniversary / I would like to invite you to dinner/a meal.",
+    pronunciation: "dair HOKH-tsyts-tahk / ikh MURKH-teh dikh tsoom ES-sen EYN-lah-den",
+    audioText: "der Hochzeitstag. Wir feiern unseren Hochzeitstag. Ich möchte dich herzlich zum Essen einladen.",
+    category: "party-occasions",
+    badge: "Slides 12 & 14: Anniversary & Dinner",
+    icon: "💍",
+    kenyanAnalogy: "Celebrating love or treating a friend to a nice restaurant meal: 'Ich möchte dich zum Essen einladen'.",
+    memoryTrick: "Hochzeit (wedding) + Tag (day) = Hochzeitstag! 'zum Essen' = to eat / for dinner."
+  },
+  {
+    id: "einladung-wir-laden-ein-dabei-haben",
+    german: "Wir laden dich / euch ein! / Wir möchten dich gerne dabei haben.",
+    english: "We invite you (sing./pl.)! / We would love to have you with us.",
+    pronunciation: "veer LAH-den dikh / oykh EYN! / veer MURKH-ten dikh GAIR-neh DAH-by HAH-ben",
+    audioText: "Wir laden dich ein! Wir laden euch herzlich ein! Ich möchte dich sehr gerne dabei haben.",
+    category: "invitation-phrases",
+    badge: "Slides 15 & 16: Heartfelt Invitations",
+    icon: "🫂",
+    kenyanAnalogy: "Warm, welcoming phrasing: 'Tungependa sana ukuwe nasi!' (We'd truly love you to be part of it).",
+    memoryTrick: "einladen is separable: 'Wir laden dich ein'. 'dabei haben' = to have someone present/along!"
+  },
+  {
+    id: "einladung-treffpunkt-location",
+    german: "Der Treffpunkt ist bei uns zu Hause. / Wir treffen uns im Restaurant Marienhof.",
+    english: "The meeting place is at our home. / We will meet in the restaurant Marienhof.",
+    pronunciation: "dair TREF-poonkt ist by oons tsoo HOW-zeh / veer TREF-fen oons im res-to-RAHNG mah-ree-en-HOHF",
+    audioText: "Der Treffpunkt ist bei uns zu Hause. Wir treffen uns im Restaurant Marienhof.",
+    category: "party-logistics",
+    badge: "Slide 17: Venue & Meeting Point",
+    icon: "🏡",
+    kenyanAnalogy: "Giving the venue pin: 'bei uns zu Hause' (at our crib/house) vs. 'im Restaurant' (at the booked eatery).",
+    memoryTrick: "der Treffpunkt = meeting point (treffen + Punkt). bei uns zu Hause = at our house!"
+  },
+  {
+    id: "einladung-start-time-beginn",
+    german: "Wir fangen um 18 Uhr an. / Die Party / Das Programm beginnt um 19 Uhr.",
+    english: "We will start at 18:00 (6 PM). / The party / program starts at 19:00 (7 PM).",
+    pronunciation: "veer FAHNG-en oom AKHT-tsayn OOR AHN / dee PAHR-tee / dahs proh-GRAHM beh-GINNT oom NOYN-tsayn OOR",
+    audioText: "Wir fangen um 18 Uhr an. Die Party beginnt um 19 Uhr. Das Programm beginnt pünktlich.",
+    category: "party-logistics",
+    badge: "Slide 18: Starting Times",
+    icon: "⏰",
+    kenyanAnalogy: "Specifying start time: 'anfangen' (separable: wir fangen... an) vs. 'beginnen' (inseparable: die Party beginnt).",
+    memoryTrick: "anfangen (wir fangen um 18 Uhr an) = beginnen (die Party beginnt um 19 Uhr)!"
+  },
+  {
+    id: "einladung-potluck-mitbringen",
+    german: "Kannst du einen Salat / einen Kuchen / Bier mitbringen?",
+    english: "Can you bring a salad / a cake / beer?",
+    pronunciation: "KAHNST doo EYE-nen zah-LAHT / EYE-nen KOO-khen / BEER MIT-bring-en",
+    audioText: "Kannst du einen Salat mitbringen? Kannst du einen leckeren Kuchen mitbringen? Kannst du vielleicht Bier mitbringen?",
+    category: "potluck-requests",
+    badge: "Slide 19: Potluck Requests",
+    icon: "🥗",
+    kenyanAnalogy: "German potluck tradition: bringing a side dish, dessert, or drinks so the host isn't overwhelmed! Notice Akkusativ: 'einen Salat', 'einen Kuchen'.",
+    memoryTrick: "mitbringen = separable verb (to bring along). Masculine direct object = einen Salat / einen Kuchen!"
+  },
+  {
+    id: "einladung-hoffentlich-zeit-viele-gruesse",
+    german: "Hoffentlich hast du Zeit! / Viele Grüße (Grußformel)",
+    english: "Hopefully you have time! / Best regards / Many greetings (Closing formula)",
+    pronunciation: "HOF-fent-likh HAHST doo TSYT! / FEEL-eh GROO-seh",
+    audioText: "Hoffentlich hast du Zeit! Ich freue mich auf dich. Viele Grüße, deine Monika.",
+    category: "invitation-structure",
+    badge: "Slides 20 & 21: Closing Formula",
+    icon: "💌",
+    kenyanAnalogy: "'Hoffentlich' = I hope so / God willing! 'Viele Grüße' is the gold-standard warm sign-off.",
+    memoryTrick: "Hoffentlich (hopefully) + Verb in P2 (hast du Zeit) + Viele Grüße (warm closing)!"
+  },
+  {
+    id: "einladung-sample-invitation-monika",
+    german: "Lieber Boris, ich habe am Samstag Geburtstag und möchte dich gerne einladen! Der Treffpunkt ist bei uns zu Hause. Die Party beginnt um 18 Uhr. Kannst du vielleicht Bier mitbringen? Hoffentlich hast du Zeit! Viele Grüße, Monika.",
+    english: "Dear Boris, it's my birthday on Saturday and I would like to invite you! The meeting place is at our home. The party starts at 6 PM. Can you perhaps bring beer? Hopefully you have time! Best regards, Monika.",
+    pronunciation: "LEE-ber Boris, ikh HAH-beh ahm ZAHM-stahk geh-BOORTS-tahk oont MURKH-teh dikh GAIR-neh EYN-lah-den... FEEL-eh GROO-seh, Monika.",
+    audioText: "Lieber Boris, ich habe am Samstag Geburtstag und möchte dich gerne einladen! Der Treffpunkt ist bei uns zu Hause. Die Party beginnt um 18 Uhr. Kannst du vielleicht Bier mitbringen? Hoffentlich hast du Zeit! Viele Grüße, Monika.",
+    category: "sample-letters",
+    badge: "Slide 22: Full Sample Invitation Letter",
+    icon: "🎂",
+    kenyanAnalogy: "The complete textbook template for writing personal invitations in German exams and real life!",
+    memoryTrick: "Anrede (Lieber Boris,) ➔ Lowercase start (ich habe...) ➔ Details ➔ Request ➔ Grußformel (Viele Grüße)!"
+  },
+  {
+    id: "einladung-reagieren-danken",
+    german: "auf eine Einladung reagieren: Vielen Dank für die Einladung! / Danke für deine Einladung!",
+    english: "To respond to an invitation: Many thanks for the invitation! / Thank you for your invitation!",
+    pronunciation: "owf EYE-neh EYN-lah-doong ray-ah-GEE-ren: FEEL-en DAHNKT foor dee EYN-lah-doong / DAHN-keh foor DY-neh EYN-lah-doong",
+    audioText: "auf eine Einladung reagieren. Vielen Dank für die Einladung! Danke für deine liebe Einladung!",
+    category: "replying-acceptance",
+    badge: "Slides 23 & 24: Thanking Host",
+    icon: "🙏",
+    kenyanAnalogy: "Rule #1 of good etiquette in Germany: ALWAYS open your reply by thanking them for thinking of you!",
+    memoryTrick: "für + Akkusativ: für die Einladung / für deine Einladung!"
+  },
+  {
+    id: "einladung-zusagen-sehr-gern",
+    german: "zusagen: Ich komme sehr gern. / Wann und wo findet die Party statt?",
+    english: "To accept: I would love to come / will gladly come. / When and where does the party take place?",
+    pronunciation: "TSOO-zah-gen: ikh KOM-meh zair GAIRN / VAHN oont VOH FIN-det dee PAHR-tee SHTAHT",
+    audioText: "zusagen. Er hat zugesagt. Ich komme sehr gern! Wann und wo findet die Party statt?",
+    category: "replying-acceptance",
+    badge: "Slides 25 & 26: Accepting & Details",
+    icon: "🥳",
+    kenyanAnalogy: "'zusagen' = confirming your attendance. 'stattfinden' = to take place (separable verb!).",
+    memoryTrick: "zusagen (to say yes / confirm). stattfinden ➔ 'Die Party findet um 18 Uhr statt'."
+  },
+  {
+    id: "einladung-vorfreude-auf-samstag",
+    german: "Ich freue mich schon auf Samstag und komme sehr gern. / Ich freue mich sehr!",
+    english: "I am already looking forward to Saturday and will gladly come. / I am very happy!",
+    pronunciation: "ikh FROY-eh mikh SHOHN owf ZAHM-stahk oont KOM-meh zair GAIRN",
+    audioText: "Ich freue mich schon auf Samstag und komme sehr gern. Ich freue mich sehr auf die Feier!",
+    category: "replying-acceptance",
+    badge: "Slide 27: Anticipation & Joy",
+    icon: "🤩",
+    kenyanAnalogy: "Expressing genuine excitement: 'Nangoja hiyo siku kwa hamu!' 'sich freuen auf' = looking forward to a future event.",
+    memoryTrick: "sich freuen auf + Akkusativ (future event): 'Ich freue mich auf Samstag'!"
+  },
+  {
+    id: "einladung-kuchen-mitbringen-anbieten",
+    german: "Ich bringe gern einen Kuchen mit. / Kann ich etwas mitbringen? Für wie viele Personen?",
+    english: "I gladly bring a cake along. / Can I bring something? For how many people?",
+    pronunciation: "ikh BRING-eh gairn EYE-nen KOO-khen MIT / KAHN ikh ET-vahs MIT-bring-en? FOOR vee FEEL-eh pair-ZOH-nen",
+    audioText: "Ich bringe gern einen Kuchen mit. Kann ich etwas mitbringen? Für wie viele Personen?",
+    category: "replying-acceptance",
+    badge: "Slide 28 & 30: Offering Food & Headcount",
+    icon: "🍰",
+    kenyanAnalogy: "Offering to contribute to the feast and asking for the headcount so you bring enough portions!",
+    memoryTrick: "Für wie viele Personen? = For how many people? ('Personen' is plural)."
+  },
+  {
+    id: "einladung-plus-one-freundin",
+    german: "Kann mein Freund / meine Freundin mitkommen? / Viele Grüße und bis Samstag!",
+    english: "Can my boyfriend / girlfriend come along? / Best wishes and see you on Saturday!",
+    pronunciation: "KAHN myne FROYNT / MY-neh FROYN-din MIT-kom-men? / FEEL-eh GROO-seh oont bis ZAHM-stahk",
+    audioText: "Kann mein Freund auch mitkommen? Kann meine Freundin mitkommen? Viele Grüße und bis Samstag!",
+    category: "replying-acceptance",
+    badge: "Slide 29: Plus-One & Sign-off",
+    icon: "👫",
+    kenyanAnalogy: "Politely asking permission to bring your partner: 'Naweza kuja na rafiki yangu / girlfriend?'",
+    memoryTrick: "mein Freund (boyfriend/male friend) vs. meine Freundin (girlfriend/female friend) + mitkommen!"
+  },
+  {
+    id: "einladung-sample-acceptance-boris",
+    german: "Liebe Monika, vielen Dank für deine Einladung. Ich freue mich schon sehr auf Samstag und komme sehr gern. Ich bringe auch Bier mit. Für wie viele Personen? Kann meine Freundin auch mitkommen? Viele Grüße und bis Samstag, Boris.",
+    english: "Dear Monika, thank you very much for your invitation. I am already looking forward to Saturday and would love to come. I will also bring beer. For how many people? Can my girlfriend also come along? Best wishes and see you Saturday, Boris.",
+    pronunciation: "LEE-beh Monika, FEEL-en DAHNKT foor DY-neh EYN-lah-doong... FEEL-eh GROO-seh oont bis ZAHM-stahk, Boris.",
+    audioText: "Liebe Monika, vielen Dank für deine Einladung. Ich freue mich schon sehr auf Samstag und komme sehr gern. Ich bringe auch Bier mit. Für wie viele Personen? Kann meine Freundin auch mitkommen? Viele Grüße und bis Samstag, Boris.",
+    category: "sample-letters",
+    badge: "Slide 30: Full Sample Acceptance Reply",
+    icon: "📬",
+    kenyanAnalogy: "The perfect blueprint for accepting an invitation: Thanks ➔ RSVP yes ➔ Potluck offer ➔ Plus-one query ➔ Sign-off!",
+    memoryTrick: "Thanks ➔ 'Ich komme sehr gern' ➔ 'Ich bringe Bier mit' ➔ 'Kann meine Freundin mitkommen?' ➔ 'Bis Samstag!'"
+  },
+  {
+    id: "einladung-absagen-leider-nicht",
+    german: "absagen: Es tut mir leid, aber ich kann nicht kommen. / Ich kann leider nicht kommen.",
+    english: "To decline: I'm sorry, but I cannot come. / Unfortunately I cannot come.",
+    pronunciation: "AHP-zah-gen: es TOOT meer LYT, AH-ber ikh kahn NIKHT KOM-men / ikh kahn LY-der NIKHT KOM-men",
+    audioText: "absagen. Er hat die Einladung abgesagt. Es tut mir leid, aber ich kann nicht kommen. Ich kann leider nicht kommen.",
+    category: "replying-decline",
+    badge: "Slides 31 & 32: Declining Politely",
+    icon: "💔",
+    kenyanAnalogy: "'absagen' = sending regrets. Softened with 'Es tut mir leid' (I'm truly sorry).",
+    memoryTrick: "absagen = to cancel / turn down (separable). 'Ich kann leider nicht kommen'!"
+  },
+  {
+    id: "einladung-absage-excuses-pruefung-arbeit",
+    german: "Ich habe am Montag eine Prüfung. / Ich habe leider keine Zeit. / Am Samstag muss ich arbeiten. / Ich bin schon verabredet.",
+    english: "I have an exam on Monday. / I unfortunately have no time. / I have to work on Saturday. / I am already booked.",
+    pronunciation: "ikh HAH-beh ahm MOHN-tahk EYE-neh PROO-foong / ikh HAH-beh LY-der KY-neh TSYT / ahm ZAHM-stahk MOOS ikh AHR-by-ten / ikh bin ahm ZAHM-stahk SHOHN fair-AHB-reh-det",
+    audioText: "Ich habe am Montag eine wichtige Prüfung. Ich habe leider keine Zeit. Am Samstag muss ich arbeiten. Ich bin am Samstag schon verabredet.",
+    category: "replying-decline",
+    badge: "Slides 33 & 34: Legitimate Excuses",
+    icon: "📚",
+    kenyanAnalogy: "Giving clear, respectful reasons: exam revision, overtime shift, or prior commitment!",
+    memoryTrick: "die Prüfung (exam) / arbeiten müssen (have to work) / schon verabredet sein (already booked)!"
+  },
+  {
+    id: "einladung-viel-spass-bis-bald",
+    german: "Ich wünsche dir / euch viel Spaß! / Viel Spaß auf der Party! / Hoffentlich sehen wir uns bald. / Viele Grüße und bis bald!",
+    english: "I wish you (sing./pl.) lots of fun! / Have fun at the party! / Hope to see you soon. / Best wishes and see you soon!",
+    pronunciation: "ikh VOON-sheh deer / oykh FEEL SHPAHSS! / FEEL SHPAHSS owf dair PAHR-tee! / HOF-fent-likh ZAY-en veer oons BAHLT",
+    audioText: "Ich wünsche dir viel Spaß! Viel Spaß auf der Party! Hoffentlich sehen wir uns bald. Viele Grüße und bis bald!",
+    category: "replying-decline",
+    badge: "Slides 35 & 36: Warm Well-Wishes",
+    icon: "🌟",
+    kenyanAnalogy: "Ending a polite decline with high positive energy: 'Enjoy the bash to the fullest, see you very soon!'",
+    memoryTrick: "jemandem viel Spaß wünschen (Dativ: dir / euch). 'Hoffentlich sehen wir uns bald!'"
+  }
+];
+
+export const LESSON_50_SCENARIOS = [
+  {
+    scenario: "According to Slide 6, what are the 3 essential structural building blocks of a German invitation letter?",
+    hint: "1. Anrede (Salutation), 2. Textteil (Body), 3. Grußformel und Unterschrift (Closing & Signature).",
+    options: [
+      { text: "1. Anrede (Salutation) | 2. Textteil (Body) | 3. Grußformel und Unterschrift (Closing & Signature)", correct: true, explain: "Wunderbar! Every German invitation letter strictly follows this 3-pillar structure: Anrede ➔ Textteil ➔ Grußformel & Unterschrift!" },
+      { text: "1. Headline | 2. Invoice | 3. Payment Receipt", correct: false, explain: "That is an invoice, not an invitation letter." },
+      { text: "1. Weather Forecast | 2. Shopping List | 3. Supermarket Aisle", correct: false, explain: "That was Lesson 47 & 48!" }
+    ]
+  },
+  {
+    scenario: "In Slides 7 & 8, which greeting is grammatically correct for a male recipient and what is the punctuation rule for the first word in the body?",
+    hint: "Lieber John, and after the comma the next sentence begins with a lowercase letter (ich habe...).",
+    options: [
+      { text: "'Lieber John,' (male) / 'Liebe Julia,' (female) and the next line begins with a lowercase letter after the comma.", correct: true, explain: "Perfekt! In German, after 'Lieber John,' or 'Liebe Julia,' the body starts with a lowercase letter (e.g. 'ich habe am Samstag Geburtstag...')!" },
+      { text: "'Lieb John' and the next line must be in all capital letters.", correct: false, explain: "'Lieb John' is incorrect German." },
+      { text: "'Herr John,' and you must write in English.", correct: false, explain: "Personal invitations use 'Lieber' or 'Liebe'." }
+    ]
+  },
+  {
+    scenario: "In Slide 18 & 19, how do you announce the starting time and politely ask a guest to bring a salad in German?",
+    hint: "Die Party beginnt um 18 Uhr. Kannst du einen Salat mitbringen?",
+    options: [
+      { text: "Die Party beginnt um 18 Uhr (or: Wir fangen um 18 Uhr an). Kannst du einen Salat mitbringen?", correct: true, explain: "Ausgezeichnet! 'beginnen' / 'anfangen' state the starting time, and 'mitbringen' with Akkusativ masculine ('einen Salat') makes the potluck request!" },
+      { text: "Die Party schläft um 18 Uhr. Nimm einen Stuhl.", correct: false, explain: "Parties do not sleep!" },
+      { text: "Wir gehen gestern in Kino.", correct: false, explain: "Grammatically incorrect." }
+    ]
+  },
+  {
+    scenario: "In Slides 24 & 27, what is the best and most natural way to accept Monika's party invitation?",
+    hint: "Vielen Dank für die Einladung! Ich freue mich schon sehr auf Samstag und komme sehr gern.",
+    options: [
+      { text: "Vielen Dank für die Einladung! Ich freue mich schon sehr auf Samstag und komme sehr gern.", correct: true, explain: "Hervorragend! Opening with gratitude (Vielen Dank für die Einladung) and expressing anticipation (Ich freue mich auf...) is the golden German formula!" },
+      { text: "Ich bleibe zu Hause im Bett.", correct: false, explain: "That is declining without politeness." },
+      { text: "Es ist 10 Grad und neblig.", correct: false, explain: "That describes weather." }
+    ]
+  },
+  {
+    scenario: "In Slide 29 & 30, you want to bring beer and check if your partner can join you. How do you ask Monika?",
+    hint: "Ich bringe auch Bier mit. Für wie viele Personen? Kann meine Freundin auch mitkommen?",
+    options: [
+      { text: "Ich bringe auch Bier mit. Für wie viele Personen? Kann meine Freundin auch mitkommen?", correct: true, explain: "Superb! 'Für wie viele Personen?' checks the headcount, and 'Kann meine Freundin mitkommen?' asks politely for a plus-one!" },
+      { text: "Ich trinke alles alleine.", correct: false, explain: "Very unfriendly!" },
+      { text: "Ich brauche den Kassenbon.", correct: false, explain: "That's checkout at the supermarket!" }
+    ]
+  },
+  {
+    scenario: "In Slides 32–36, Boris cannot attend the party because of a Monday exam. How does he decline politely and wish Monika well?",
+    hint: "Es tut mir leid, aber ich kann nicht kommen. Ich habe am Montag eine Prüfung. Ich wünsche dir viel Spaß auf der Party!",
+    options: [
+      { text: "Es tut mir leid, aber ich kann nicht kommen. Ich habe am Montag eine Prüfung. Ich wünsche dir viel Spaß auf der Party! Hoffentlich sehen wir uns bald.", correct: true, explain: "Fantastisch! Apology (Es tut mir leid) + Legitimate reason (Prüfung) + Well-wishes (Viel Spaß auf der Party) + Hope (Hoffentlich sehen wir uns bald) is the complete polite decline formula!" },
+      { text: "Deine Party ist langweilig.", correct: false, explain: "Rude and incorrect." },
+      { text: "Ich gehe zum Supermarkt.", correct: false, explain: "Irrelevant." }
+    ]
+  }
+];
+
+
 
 
 

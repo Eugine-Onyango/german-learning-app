@@ -104,6 +104,8 @@ import Lesson48WetterStudio from './components/Lesson48WetterStudio';
 import Lesson48Game from './components/Lesson48Game';
 import Lesson49VerabredungStudio from './components/Lesson49VerabredungStudio';
 import Lesson49Game from './components/Lesson49Game';
+import Lesson50EinladungStudio from './components/Lesson50EinladungStudio';
+import Lesson50Game from './components/Lesson50Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -153,11 +155,12 @@ import {
   LESSON_46_ITEMS,
   LESSON_47_ITEMS,
   LESSON_48_ITEMS,
-  LESSON_49_ITEMS
+  LESSON_49_ITEMS,
+  LESSON_50_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(49); // Default to Lesson 49 as requested, easy switch to 1-48
+  const [currentLesson, setCurrentLesson] = useState(50); // Default to Lesson 50 as requested, easy switch to 1-49
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -210,6 +213,7 @@ export default function App() {
   if (currentLesson === 47) activeItems = LESSON_47_ITEMS;
   if (currentLesson === 48) activeItems = LESSON_48_ITEMS;
   if (currentLesson === 49) activeItems = LESSON_49_ITEMS;
+  if (currentLesson === 50) activeItems = LESSON_50_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -260,7 +264,8 @@ export default function App() {
     if (currentLesson === 46) return "Lesson 46: Was hast du im Urlaub gemacht? (Vacation Vocab, Destinations, Lodgings, Activities & Compound Past Stories)";
     if (currentLesson === 47) return "Lesson 47: Im Supermarkt (Supermarket Vocab, Packaging, Measurements, Aisle Navigation & Checkout Dialogue)";
     if (currentLesson === 48) return "Lesson 48: Wie ist das Wetter? (German Weather Vocab, Temperatures, Noun-to-Adjective Blueprints & Forecast Dialogues)";
-    return "Lesson 49: Verabredungen (Making Meetup Invitations, Availability Checks, Polite Excuses, Acceptances & Meeting Logistics)";
+    if (currentLesson === 49) return "Lesson 49: Verabredungen (Making Meetup Invitations, Availability Checks, Polite Excuses, Acceptances & Meeting Logistics)";
+    return "Lesson 50: Die Einladung (Writing Invitations, 3-Part Letter Anatomy, RSVPs, Potluck & Polite Declines)";
   };
 
   const getLessonDesc = () => {
@@ -408,7 +413,10 @@ export default function App() {
     if (currentLesson === 48) {
       return "Master talking about the weather and climate in German (Wie ist das Wetter?)! Discover weather nouns & genders (die Sonne, der Regen, der Schnee, das Gewitter, die Wolke), heat & cold scales (warm, heiß 39°C, kalt, eisig, Ich friere), active verbs vs. adjectives (Es regnet vs. Es ist regnerisch), the Slide 40 Noun-to-Adjective Blueprint chart, and realistic weather forecast dialogues!";
     }
-    return "Master making appointments and arranging social meetups in German (Verabredungen)! Learn key nouns (die Verabredung vs. der Termin), the 5 invitation formulas (Wollen wir zusammen..., Willst du mit mir..., Gehen wir..., Ich möchte gern...), availability checks (Hast du etwas vor?), accepting with enthusiasm (Das passt! Abgemacht!), polite excuses & obligations (Ich habe viel zu tun, Ich muss meinen Eltern helfen), counter-proposals (Freitag geht nicht... aber Samstag?), and coordinating time and place (Wann und wo treffen wir uns?)!";
+    if (currentLesson === 49) {
+      return "Master making appointments and arranging social meetups in German (Verabredungen)! Learn key nouns (die Verabredung vs. der Termin), the 5 invitation formulas (Wollen wir zusammen..., Willst du mit mir..., Gehen wir..., Ich möchte gern...), availability checks (Hast du etwas vor?), accepting with enthusiasm (Das passt! Abgemacht!), polite excuses & obligations (Ich habe viel zu tun, Ich muss meinen Eltern helfen), counter-proposals (Freitag geht nicht... aber Samstag?), and coordinating time and place (Wann und wo treffen wir uns?)!";
+    }
+    return "Master writing invitations and RSVPs in German (Die Einladung)! Discover the 3-Part Letter Anatomy (Anrede, Textteil, Grußformel und Unterschrift), party occasions (Geburtstag, Fest, Hochzeitstag, Essen), venue & starting times (Treffpunkt bei uns zu Hause, Party beginnt um 18 Uhr), potluck requests (einen Salat / Kuchen mitbringen), accepting with joy (Zusagen: Ich freue mich auf Samstag) & plus-one requests, and polite declines with well-wishes (Absagen: Es tut mir leid, aber ich kann leider nicht kommen)!";
   };
 
   return (
@@ -886,6 +894,15 @@ export default function App() {
 
         {currentLesson === 49 && activeTab === 'game49' && (
           <Lesson49Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 50 Specific Modules */}
+        {currentLesson === 50 && activeTab === 'studio50' && (
+          <Lesson50EinladungStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 50 && activeTab === 'game50' && (
+          <Lesson50Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
