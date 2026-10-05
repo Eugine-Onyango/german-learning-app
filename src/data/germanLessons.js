@@ -13822,6 +13822,196 @@ export const LESSON_55_SCENARIOS = [
   }
 ];
 
+export const LESSON_56_ITEMS = [
+  {
+    id: "zeitadverbien-fragen-trio",
+    german: "Wann? / Wie lange? / Wie oft?",
+    english: "When? / How long? / How often? (The 3 Core Time Questions)",
+    pronunciation: "vahn? / vee LAHNG-eh? / vee oft?",
+    audioText: "Zeitadverbien. Wann? Wie lange? Wie oft? Heute, morgen, montags, immer.",
+    category: "foundations",
+    badge: "The 3 Core Questions",
+    icon: "🧭",
+    kenyanAnalogy: "The 3 fundamental time questions: 'When?' (Wann? -> today/tomorrow), 'How long?' (Wie lange? -> for hours/years), and 'How often?' (Wie oft? -> daily/always/never)!",
+    memoryTrick: "Wann = point in time, Wie lange = duration, Wie oft = frequency!",
+    imageType: "compass_time"
+  },
+  {
+    id: "wochentage-adverbien-mit-s",
+    german: "montags, dienstags, mittwochs, donnerstags, freitags, samstags, sonntags",
+    english: "on Mondays, on Tuesdays, on Wednesdays, on Thursdays, on Fridays, on Saturdays, on Sundays (every week)",
+    pronunciation: "MOHN-tahks, DEENS-tahks, MIT-vokhss, DON-ners-tahks, FRY-tahks, ZAHM-stahks, ZOHN-tahks",
+    audioText: "montags, dienstags, mittwochs, donnerstags, freitags, samstags, sonntags. Er arbeitet gern sonntags. Montags beginnt der Unterricht um 15 Uhr.",
+    category: "habitual-days",
+    badge: "Habitual Days (-s Rule)",
+    icon: "📅",
+    kenyanAnalogy: "Like saying 'I attend choir on Sundays' or 'we meet on Fridays' — adding an '-s' turns any weekday into a recurring habit!",
+    memoryTrick: "Golden Rule: Nouns are capitalized (am Montag), but adverbs have a small letter + 's' (montags)!",
+    imageType: "calendar_days"
+  },
+  {
+    id: "tageszeiten-adverbien-mit-s",
+    german: "morgens, vormittags, mittags, nachmittags, abends, nachts",
+    english: "in the morning, before noon, at noon, in the afternoon, in the evening, at night (every day)",
+    pronunciation: "MOR-gens, FOR-mit-tahks, MIT-tahks, NAHKH-mit-tahks, AH-bents, NAHKHTS",
+    audioText: "morgens, vormittags, mittags, nachmittags, abends, nachts. Abends gehen wir alle spazieren.",
+    category: "habitual-times",
+    badge: "Daily Time Blocks (-s Rule)",
+    icon: "🌅",
+    kenyanAnalogy: "Doing something habitually every evening or morning: 'Abends gehen wir alle spazieren' (In the evenings we all take a walk)!",
+    memoryTrick: "Small letter + 's' at the end = recurring daily routine (morgens, abends, nachts)!",
+    imageType: "sun_cycle"
+  },
+  {
+    id: "vergangenheit-gestern-frueher-damals",
+    german: "vorgestern, gestern, früher, damals",
+    english: "day before yesterday, yesterday, earlier/formerly, back then/at that time (Past Timeline)",
+    pronunciation: "FOR-gess-tern, GESS-tern, FREW-er, DAH-mahls",
+    audioText: "Vergangenheit: vorgestern, gestern, früher, damals. Gestern hat es bei uns geregnet. Früher habe ich kein Gemüse gegessen. Damals war ich ein kleiner Junge.",
+    category: "timeline-past",
+    badge: "Vergangenheit (Past)",
+    icon: "⏮️",
+    kenyanAnalogy: "Looking through old photo albums or talking about your childhood: 'Damals war ich ein kleiner Junge' (Back then I was a little boy)!",
+    memoryTrick: "'Früher' = in the past / formerly; 'Damals' = back then / at that historical time!",
+    imageType: "photo_album"
+  },
+  {
+    id: "gegenwart-heute-jetzt-gerade-sofort-heutzutage",
+    german: "heute, jetzt / nun, gerade, sofort, heutzutage",
+    english: "today, now, just now/at the moment, immediately/right away, nowadays (Present Timeline)",
+    pronunciation: "HOY-teh, YETST / noon, geh-RAH-deh, zoh-FORT, HOYTS-tsoo-tah-geh",
+    audioText: "Gegenwart: heute, jetzt, nun, gerade, sofort, heutzutage. Heute kocht mein Mann. Ich muss jetzt gehen. Sie telefoniert gerade. Ich bin sofort eingeschlafen. Heutzutage ist es sehr warm.",
+    category: "timeline-present",
+    badge: "Gegenwart (Present)",
+    icon: "⏱️",
+    kenyanAnalogy: "What is happening right now in the moment: 'Sie telefoniert gerade' (She's on the phone right now) and 'Heute kocht mein Mann' (Today my husband is cooking)!",
+    memoryTrick: "'gerade' = currently doing (like English -ing); 'sofort' = instantly without delay!",
+    imageType: "clock_now"
+  },
+  {
+    id: "zukunft-morgen-uebermorgen-bald-spaeter",
+    german: "morgen, übermorgen, bald, später",
+    english: "tomorrow, day after tomorrow, soon, later (Future Timeline)",
+    pronunciation: "MOR-gen, EW-ber-mor-gen, bahlt, SHPAY-ter",
+    audioText: "Zukunft: morgen, übermorgen, bald, später. Sie muss morgen verreisen. Sie bekommt bald ein Baby. Soll ich dich später anrufen?",
+    category: "timeline-future",
+    badge: "Zukunft (Future)",
+    icon: "⏭️",
+    kenyanAnalogy: "Looking forward to tomorrow's trip or upcoming good news: 'Sie bekommt bald ein Baby' (She's expecting a baby soon)!",
+    memoryTrick: "'bald' = soon; 'später' = later (like 'see you later' -> bis später)!",
+    imageType: "future_path"
+  },
+  {
+    id: "reihenfolge-zuerst-dann-danach-spaeter-vorher",
+    german: "vorher • zuerst ➔ dann ➔ danach ➔ später",
+    english: "beforehand • first ➔ then ➔ after that ➔ later (The Chronological Chain)",
+    pronunciation: "FOR-hair • tsoo-AIRHST ➔ dahn ➔ dah-NAHKH ➔ SHPAY-ter",
+    audioText: "die Reihenfolge: vorher, zuerst, dann, danach, später. Warum hast du das nicht vorher gesagt? Zuerst sollst du lesen und dann übersetzen. Danach gehen wir einkaufen und später essen wir Eis.",
+    category: "sequence",
+    badge: "Chronological Sequence",
+    icon: "🔢",
+    kenyanAnalogy: "Giving cooking or study instructions step-by-step: First read (zuerst), then translate (dann), after that shop (danach), and later eat ice cream (später)!",
+    memoryTrick: "The Sequence Train: Zuerst (1st) ➔ Dann (2nd) ➔ Danach (3rd) ➔ Später (4th)!",
+    imageType: "step_stairs"
+  },
+  {
+    id: "wie-lange-dauer-immer-lange",
+    german: "Wie lange? — immer / schon immer / lange",
+    english: "How long? (Duration) — always / since ever / for a long time",
+    pronunciation: "vee LAHNG-eh? — IM-mer / shohn IM-mer / LAHNG-eh",
+    audioText: "Wie lange? Mir gefiel schon immer ihr strahlendes Lächeln. Ich habe lange darauf gewartet, meine Tochter wiederzusehen.",
+    category: "duration",
+    badge: "Duration (Wie lange?)",
+    icon: "⏳",
+    kenyanAnalogy: "Waiting for a loved one at the arrivals gate: 'Ich habe lange darauf gewartet' (I waited a long time)!",
+    memoryTrick: "'schon immer' = for as long as I can remember / always; 'lange' = for a long time!",
+    imageType: "hourglass"
+  },
+  {
+    id: "wie-oft-100-bis-0-frequenzleiter",
+    german: "immer (100%) ➔ meistens (80%) ➔ oft/häufig (70%) ➔ manchmal/ab und zu (50%) ➔ selten (15%) ➔ nie (0%)",
+    english: "always (100%) ➔ mostly (80%) ➔ often (70%) ➔ sometimes (50%) ➔ seldom (15%) ➔ never (0%)",
+    pronunciation: "IM-mer ➔ MYS-tens ➔ oft / HOY-fikh ➔ MAHNKH-mahl / ahp oont tsoo ➔ ZEL-ten ➔ nee",
+    audioText: "Wie oft? 100% immer, fast immer, meistens, oft, häufig, manchmal, ab und zu, selten, fast nie, 0% nie. Er kommt immer zu spät. Um diese Zeit bin ich meistens schon im Bett. Er hat uns oft besucht.",
+    category: "frequency",
+    badge: "Frequency Scale (100% ➔ 0%)",
+    icon: "📊",
+    kenyanAnalogy: "The habit barometer: from doing something without fail 100% (immer) to once in a while 50% (manchmal / ab und zu) down to zero 0% (nie)!",
+    memoryTrick: "Immer (100%) -> Meistens (80%) -> Oft (70%) -> Manchmal (50%) -> Selten (15%) -> Nie (0%)!",
+    imageType: "barometer"
+  },
+  {
+    id: "satzstellung-verb-position-2",
+    german: "Ich muss jetzt gehen. ➔ Jetzt muss ich gehen. / Heute kocht mein Mann.",
+    english: "I must go now. ➔ Now I must go. (The Golden Verb in Position 2 Rule!)",
+    pronunciation: "ikh mooss yetst GAY-en. ➔ yetst mooss ikh GAY-en. / HOY-teh kokht myn mahn.",
+    audioText: "Ich muss jetzt gehen. Jetzt muss ich gehen. Heute kocht mein Mann. Manchmal habe ich Kopfschmerzen.",
+    category: "word-order",
+    badge: "Sentence Architecture",
+    icon: "🚂",
+    kenyanAnalogy: "In German, putting the time adverb at the very front is super popular, but the verb NEVER moves from Slot 2: 'Heute (1) kocht (2) mein Mann (3)'!",
+    memoryTrick: "Slot 1: Zeitadverb (Heute / Jetzt / Montags) ➔ Slot 2: VERB ➔ Slot 3: Subjekt (ich / mein Mann)!",
+    imageType: "train_cars"
+  }
+];
+
+export const LESSON_56_SCENARIOS = [
+  {
+    scenario: "In Slide 6 & 7, you want to say that you always have German class on Mondays (every Monday). Which adverb form with '-s' is correct?",
+    hint: "Think of the lowercase habitual adverb with -s: montags!",
+    options: [
+      { text: "Montags habe ich Deutschunterricht.", correct: true, explain: "Perfekt! Adding '-s' to weekdays (montags, freitags, sonntags) means 'every Monday / on Mondays' as a regular habit!" },
+      { text: "Gestern habe ich Deutschunterricht.", correct: false, explain: "'Gestern' means yesterday in the past." },
+      { text: "Nie habe ich Deutschunterricht.", correct: false, explain: "'Nie' means never (0%)." }
+    ]
+  },
+  {
+    scenario: "In Slide 9 & 13, you want to talk about something from your past childhood ('Back then / at that time I was a little boy'). Which past adverb do you use?",
+    hint: "Damals war ich ein kleiner Junge.",
+    options: [
+      { text: "Damals war ich ein kleiner Junge.", correct: true, explain: "Ausgezeichnet! 'Damals' means 'back then / at that historical time' in the past!" },
+      { text: "Morgen war ich ein kleiner Junge.", correct: false, explain: "'Morgen' means tomorrow (future)." },
+      { text: "Heute war ich ein kleiner Junge.", correct: false, explain: "'Heute' means today (present)." }
+    ]
+  },
+  {
+    scenario: "In Slide 15 & 16, look at the sentence: 'Ich muss jetzt gehen.' If you move 'Jetzt' to the very first position (Position 1), what is the correct German word order?",
+    hint: "Remember the Golden Anchor Rule: The Verb MUST stay in Position 2!",
+    options: [
+      { text: "Jetzt muss ich gehen.", correct: true, explain: "Hervorragend! In German, when a time adverb takes Position 1 ('Jetzt'), the verb stays in Position 2 ('muss') and the subject flips to Position 3 ('ich')!" },
+      { text: "Jetzt ich muss gehen.", correct: false, explain: "In German, the verb cannot sit in Position 3 in main clauses!" },
+      { text: "Gehen muss ich jetzt.", correct: false, explain: "Unnatural word order." }
+    ]
+  },
+  {
+    scenario: "In Slide 26 & 27, you are following a recipe or instruction sequence: first read (1st), then translate (2nd), and afterwards go shopping (3rd). Which sequence order is correct?",
+    hint: "Zuerst -> dann -> danach -> später",
+    options: [
+      { text: "Zuerst lesen, dann übersetzen, danach einkaufen.", correct: true, explain: "Wunderbar! 'Zuerst' (first) ➔ 'dann' (then) ➔ 'danach' (after that) is the standard German chronological chain!" },
+      { text: "Nie lesen, immer übersetzen.", correct: false, explain: "Those are frequency adverbs, not sequence steps." },
+      { text: "Gestern lesen, morgen einkaufen.", correct: false, explain: "Those are timeline markers." }
+    ]
+  },
+  {
+    scenario: "In Slide 33–35, on the frequency scale (Wie oft?), what does 'meistens' mean compared to 'immer' and 'nie'?",
+    hint: "Around 80% on the habit ladder: mostly / generally / usually!",
+    options: [
+      { text: "Mostly / Generally / Usually (~80% frequency)", correct: true, explain: "Genau! 'Immer' is 100%, 'meistens' is ~80% (mostly/usually), 'oft' is ~70%, and 'nie' is 0%!" },
+      { text: "Never (0%)", correct: false, explain: "Never is 'nie'." },
+      { text: "Yesterday morning", correct: false, explain: "'Gestern morgen' is a past time, not a frequency." }
+    ]
+  },
+  {
+    scenario: "In Slide 17, someone calls asking to speak with Sarah, but she is currently on the telephone right at this exact moment. What do you say?",
+    hint: "Sie telefoniert gerade.",
+    options: [
+      { text: "Sie telefoniert gerade.", correct: true, explain: "Fantastisch! 'gerade' expresses an action happening right now in the moment (like English -ing)!" },
+      { text: "Sie telefoniert vorgestern.", correct: false, explain: "'Vorgestern' is the day before yesterday." },
+      { text: "Sie telefoniert selten.", correct: false, explain: "That means she rarely calls, not that she is on the phone right now." }
+    ]
+  }
+];
+
 
 
 

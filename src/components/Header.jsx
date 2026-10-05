@@ -67,6 +67,7 @@ export default function Header({
     if (currentLesson === 53) msg = "Demonstrativartikel dies: Was kostet dieser Pullover? Wie finden Sie diesen Pullover? Was passt zu dieser Bluse? Dieses Auto gefällt mir! In diesen Schuhen siehst du elegant aus!";
     if (currentLesson === 54) msg = "Im Kaufhaus: Guten Tag, Sie wünschen? Ich suche eine Hose für das Büro. Welche Größe haben Sie denn? Ich trage Größe 38. Wo ist die Umkleidekabine? Gleich hier um die Ecke! Sie passt genau. Was kostet sie? Sie kostet nur 30 Euro. Auf Wiedersehen!";
     if (currentLesson === 55) msg = "Mit dem Taxi fahren: Entschuldigen Sie, sind Sie frei? Können Sie mich zum Flughafen bringen? Schalten Sie bitte das Taxameter ein! Wie viel kostet das? Fünfzehn Euro fünfzig bitte. Stimmt so, der Rest ist für Sie!";
+    if (currentLesson === 56) msg = "Zeitadverbien: Montags beginnt der Unterricht um 15 Uhr. Heute kocht mein Mann. Jetzt muss ich gehen! Zuerst lesen, dann übersetzen, danach einkaufen und später Eis essen. Er kommt immer zu spät!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -513,6 +514,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson56NavItems = [
+    { id: 'cards', label: '📖 Lesson 56 Cards', sub: 'Time Adverbs & Sentence Positions' },
+    { id: 'studio56', label: '⏰ Zeit Studio', sub: 'Habitual Days, Timelines & Frequency' },
+    { id: 'game56', label: '🎮 Zeit Quiz', sub: 'Timeline & Word Order Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -568,6 +577,7 @@ export default function Header({
   if (currentLesson === 53) navItems = lesson53NavItems;
   if (currentLesson === 54) navItems = lesson54NavItems;
   if (currentLesson === 55) navItems = lesson55NavItems;
+  if (currentLesson === 56) navItems = lesson56NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -625,6 +635,7 @@ export default function Header({
     { num: 53, label: "👉 53: dies- (This/These)", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
     { num: 54, label: "🏬 54: Im Kaufhaus", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
     { num: 55, label: "🚕 55: Mit dem Taxi", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 56, label: "⏰ 56: Zeitadverbien", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
   ];
 
   return (

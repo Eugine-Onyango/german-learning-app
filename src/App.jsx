@@ -116,6 +116,8 @@ import Lesson54KaufhausStudio from './components/Lesson54KaufhausStudio';
 import Lesson54Game from './components/Lesson54Game';
 import Lesson55TaxiStudio from './components/Lesson55TaxiStudio';
 import Lesson55Game from './components/Lesson55Game';
+import Lesson56ZeitadverbienStudio from './components/Lesson56ZeitadverbienStudio';
+import Lesson56Game from './components/Lesson56Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -171,11 +173,12 @@ import {
   LESSON_52_ITEMS,
   LESSON_53_ITEMS,
   LESSON_54_ITEMS,
-  LESSON_55_ITEMS
+  LESSON_55_ITEMS,
+  LESSON_56_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(55); // Default to Lesson 55 as requested, easy switch to 1-54
+  const [currentLesson, setCurrentLesson] = useState(56); // Default to Lesson 56 as requested, easy switch to 1-55
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -234,6 +237,7 @@ export default function App() {
   if (currentLesson === 53) activeItems = LESSON_53_ITEMS;
   if (currentLesson === 54) activeItems = LESSON_54_ITEMS;
   if (currentLesson === 55) activeItems = LESSON_55_ITEMS;
+  if (currentLesson === 56) activeItems = LESSON_56_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -290,7 +294,8 @@ export default function App() {
     if (currentLesson === 52) return "Lesson 52: Das Fragepronomen \"welch-\" (Which? Across Nominativ, Akkusativ & Dativ)";
     if (currentLesson === 53) return "Lesson 53: Demonstrativartikel \"dies-\" (This / These across Nominativ, Akkusativ & Dativ)";
     if (currentLesson === 54) return "Lesson 54: Im Kaufhaus (In the Department Store - Shopping, Sizing, Fitting Rooms & Slide 36 Pronouns)";
-    return "Lesson 55: Mit dem Taxi fahren (Taking a Taxi - Booking, Hailing, Cockpit & Fare Tipping)";
+    if (currentLesson === 55) return "Lesson 55: Mit dem Taxi fahren (Taking a Taxi - Booking, Hailing, Cockpit & Fare Tipping)";
+    return "Lesson 56: Zeitadverbien (Adverbs of Time - Habitual Days, 3-Era Timelines, Sequence & Frequency)";
   };
 
   const getLessonDesc = () => {
@@ -456,7 +461,10 @@ export default function App() {
     if (currentLesson === 54) {
       return "Master shopping in a German department store (Im Kaufhaus)! Explore floor directories (EG, UG, 1. OG, Männer-, Frauen-, Kinderabteilung), 5-stage boutique roleplay dialogues from greeting (Guten Tag, Sie wünschen?) to request (Ich suche / brauche / hätte gern...), size inquiries (Welche Größe haben Sie denn? ➔ Ich trage Größe 38), directions to fitting rooms (die Umkleidekabine, gleich hier um die Ecke), fit checks (passt gut / ist viel zu klein, eine Nummer größer), style critiques (zu altmodisch / zu modern), compliments (steht Ihnen gut), prices (Was kostet sie?), and the Slide 36 Pronoun Master Summary (der/er, die/sie, das/es)!";
     }
-    return "Master taking a taxi in German (Mit dem Taxi fahren)! Learn essential taxi vocabulary (das Taxi, der Taxistand, die Taxizentrale, der Taxameter, die Quittung), calling dispatch (Ich hätte gern ein Taxi für morgen / sofort ein Taxi / keine Taxis verfügbar / auf dem Weg), hailing on the street (Sind Sie frei? / Könnten Sie mich zum Flughafen bringen?), in-ride controls (Wohin möchten Sie?, Taxameter einschalten, Ich habe es eilig, Fenster auf-/zumachen, Wie lange dauert es?, an der Haltestelle / am Eingang anhalten, da vorn rauslassen), asking fare (Wie viel kostet das? Das macht 15,50 Euro), paying with card (mit der Karte zahlen), requesting receipts (Quittung), and German tipping formulas (Stimmt so! / Rest ist für Sie! / Das passt!)!";
+    if (currentLesson === 55) {
+      return "Master taking a taxi in German (Mit dem Taxi fahren)! Learn essential taxi vocabulary (das Taxi, der Taxistand, die Taxizentrale, der Taxameter, die Quittung), calling dispatch (Ich hätte gern ein Taxi für morgen / sofort ein Taxi / keine Taxis verfügbar / auf dem Weg), hailing on the street (Sind Sie frei? / Könnten Sie mich zum Flughafen bringen?), in-ride controls (Wohin möchten Sie?, Taxameter einschalten, Ich habe es eilig, Fenster auf-/zumachen, Wie lange dauert es?, an der Haltestelle / am Eingang anhalten, da vorn rauslassen), asking fare (Wie viel kostet das? Das macht 15,50 Euro), paying with card (mit der Karte zahlen), requesting receipts (Quittung), and German tipping formulas (Stimmt so! / Rest ist für Sie! / Das passt!)!";
+    }
+    return "Master German Adverbs of Time (Zeitadverbien)! Discover the 3 core time questions (Wann?, Wie lange?, Wie oft?), habitual weekdays & times of day with the lowercase -s rule (montags, freitags, morgens, abends, nachts), the 3-era timelines (Vergangenheit: vorgestern, gestern, früher, damals; Gegenwart: heute, jetzt, gerade, sofort, heutzutage; Zukunft: morgen, übermorgen, bald, später), chronological sequencing (vorher, zuerst ➔ dann ➔ danach ➔ später), duration (schon immer, lange), the 100% to 0% frequency ladder (immer, meistens, oft, manchmal, selten, nie), and the Golden Verb in Position 2 sentence rule (Jetzt muss ich gehen)!";
   };
 
   return (
@@ -988,6 +996,15 @@ export default function App() {
 
         {currentLesson === 55 && activeTab === 'game55' && (
           <Lesson55Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 56 Specific Modules */}
+        {currentLesson === 56 && activeTab === 'studio56' && (
+          <Lesson56ZeitadverbienStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 56 && activeTab === 'game56' && (
+          <Lesson56Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
