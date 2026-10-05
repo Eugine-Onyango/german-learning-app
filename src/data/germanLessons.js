@@ -14852,6 +14852,317 @@ export const LESSON_59_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 60: Touristeninformation, Reisebüro & Formulare ausfüllen
+// ==========================================
+
+export const LESSON_60_ITEMS = [
+  {
+    id: "touristeninfo-empfehlen",
+    german: "Können Sie uns gute Hotels empfehlen?",
+    english: "Can you recommend good hotels to us?",
+    pronunciation: "KUH-nen zee oons GOO-tuh ho-TELS emp-FAY-len?",
+    audioText: "Können Sie uns gute Hotels empfehlen?",
+    category: "tourist-info",
+    badge: "Tourist Info / Inquiry",
+    icon: "🏨",
+    kenyanAnalogy: "Like walking into the Magical Kenya tourism desk at the airport or emailing a Diani tour operator asking for the best beachfront lodges that suit your budget!",
+    memoryTrick: "'empfehlen' = to recommend! Notice the polite question starts with the modal verb 'Können Sie' (Can you) and puts 'empfehlen' at the very end.",
+    imageType: "hotel-recommend"
+  },
+  {
+    id: "stadtplan-kulturprogramm",
+    german: "Schicken Sie uns bitte einen Stadtplan und ein Kulturprogramm.",
+    english: "Please send us a city map and a cultural programme.",
+    pronunciation: "SHIK-ken zee oons BIT-tuh EYE-nen SHTAT-plahn oont ein kool-TOOR-pro-gramm.",
+    audioText: "Schicken Sie uns auch bitte einen Stadtplan und ein Kulturprogramm.",
+    category: "tourist-info",
+    badge: "Brochures / Sightseeing",
+    icon: "🗺️",
+    kenyanAnalogy: "Like asking the concierge in Nairobi for a pocket city guide showing national museum exhibits, art galleries, and Bomas of Kenya dance schedules.",
+    memoryTrick: "Stadt (city) + Plan (map) = Stadtplan! Kultur (culture) + Programm = Kulturprogramm! 'Schicken Sie' is the polite imperative command.",
+    imageType: "city-map"
+  },
+  {
+    id: "das-formular-ausfuellen",
+    german: "das Formular ausfüllen (hat ausgefüllt)",
+    english: "to fill in a form / filling up a form",
+    pronunciation: "dahs for-moo-LAHR OWS-fyool-len",
+    audioText: "das Formular ausfüllen. Ich fülle ein Anmeldeformular aus.",
+    category: "forms-core",
+    badge: "Bureaucracy & Official Forms",
+    icon: "📝",
+    kenyanAnalogy: "Like sitting down with a blue ballpoint pen to fill out an eCitizen visa form, NTSA driving license application, or hotel guest registration card.",
+    memoryTrick: "'ausfüllen' is a separable verb: 'Ich fülle das Formular aus' (I fill out the form). Das Formular ➔ Die Formulare (Plural adds -e).",
+    imageType: "fill-form"
+  },
+  {
+    id: "anmeldeformular",
+    german: "das Anmeldeformular (die Anmeldeformulare)",
+    english: "registration form / sign-up form",
+    pronunciation: "dahs AHN-mel-duh-for-moo-lahr",
+    audioText: "das Anmeldeformular für den Deutschkurs",
+    category: "forms-core",
+    badge: "Registration / Sign-up",
+    icon: "📋",
+    kenyanAnalogy: "Anmelden = to register/sign up (like enrolling at Goethe-Institut or university). Das Anmeldeformular is the official registration sheet.",
+    memoryTrick: "Anmelden (sign up) + Formular (form) = Anmeldeformular!",
+    imageType: "registration-sheet"
+  },
+  {
+    id: "steckbrief-lebenslauf",
+    german: "der Steckbrief & der Lebenslauf",
+    english: "the profile summary & the résumé / CV",
+    pronunciation: "dair SHTEK-breef oont dair LAY-bens-lowf",
+    audioText: "der Steckbrief und der Lebenslauf für die Bewerbung",
+    category: "forms-core",
+    badge: "Profile & CV",
+    icon: "📄",
+    kenyanAnalogy: "A 'Steckbrief' is a quick one-page biographical fact sheet (bio snapshot), while 'Lebenslauf' is literally 'life course'—your complete job résumé / CV!",
+    memoryTrick: "Leben (life) + Lauf (course/run) = Lebenslauf (Curriculum Vitae / CV).",
+    imageType: "cv-resume"
+  },
+  {
+    id: "vorname-nachname",
+    german: "der Vorname & der Nachname / Familienname",
+    english: "first name (given name) & surname (last name)",
+    pronunciation: "dair FOR-nah-muh oont dair NAHKH-nah-muh",
+    audioText: "der Vorname: David. Der Nachname oder Familienname: Schmidt.",
+    category: "personal-data",
+    badge: "Identity Essentials",
+    icon: "🪪",
+    kenyanAnalogy: "'Vorname' is the name that comes *before* (vor) = First name (e.g., David, Anna, Brian). 'Nachname' is the name that comes *after* (nach) = Surname / Family name.",
+    memoryTrick: "Vor = Before ➔ Vorname. Nach = After ➔ Nachname. Also called 'Familienname' (family name).",
+    imageType: "id-badge"
+  },
+  {
+    id: "adresse-plz-ort",
+    german: "die Adresse, PLZ & der Ort",
+    english: "address, postal code (PLZ) & town/city",
+    pronunciation: "dee ah-DRES-suh, Pay-El-Tset, dair ORT",
+    audioText: "die Adresse: Goethestraße 10, Postleitzahl 12345, Ort: Berlin.",
+    category: "personal-data",
+    badge: "Address & Location",
+    icon: "📮",
+    kenyanAnalogy: "In Germany, address structure is: Street + House number, then PLZ (5-digit postal code, like Kenyan 00100) + Ort (City/Town, e.g. Berlin, Nairobi).",
+    memoryTrick: "PLZ stands for Post-Leit-Zahl (Postal Routing Number). Ort = Location / Town.",
+    imageType: "german-envelope"
+  },
+  {
+    id: "telefon-laendervorwahl",
+    german: "Telefonnummer (mit Ländervorwahl) & Handynummer",
+    english: "phone number (with country dial code) & mobile number",
+    pronunciation: "tay-luh-FON-noom-mer mit LEN-der-for-vahl",
+    audioText: "Telefonnummer mit Ländervorwahl und Handynummer",
+    category: "contact-data",
+    badge: "Contact & Phone",
+    icon: "📞",
+    kenyanAnalogy: "Ländervorwahl is the country code (+49 for Germany, +254 for Kenya). 'Telefonnummer' usually refers to home/office landlines, 'Handy' is your cell phone!",
+    memoryTrick: "Land (country) + Vorwahl (area dial prefix) = Ländervorwahl!",
+    imageType: "dial-code"
+  },
+  {
+    id: "muttersprache-staatsangehoerigkeit",
+    german: "die Muttersprache & die Staatsangehörigkeit",
+    english: "native language (mother tongue) & citizenship/nationality",
+    pronunciation: "dee MOOT-ter-shprah-khuh oont SHTAHTS-ahn-guh-hur-ikh-kite",
+    audioText: "die Muttersprache ist Englisch. Die Staatsangehörigkeit ist Deutsch.",
+    category: "personal-data",
+    badge: "Language & Citizenship",
+    icon: "🌐",
+    kenyanAnalogy: "Muttersprache = The language you spoke at home from childhood. Staatsangehörigkeit = Your passport nationality (e.g. Kenianisch, Deutsch).",
+    memoryTrick: "Mutter (mother) + Sprache (language) = Muttersprache! Staat (state) + angehören (belong to) = Staatsangehörigkeit!",
+    imageType: "passport-globe"
+  },
+  {
+    id: "geburtsdaten-quad",
+    german: "Geburtsdatum, Geburtsort & Geburtsland",
+    english: "date of birth (DOB), place of birth & country of birth",
+    pronunciation: "guh-BOORTS-dah-toom, guh-BOORTS-ort, guh-BOORTS-lahnt",
+    audioText: "das Geburtsdatum: Tag, Monat, Jahr. Der Geburtsort und das Geburtsland.",
+    category: "personal-data",
+    badge: "Birth Details",
+    icon: "🎂",
+    kenyanAnalogy: "Standard passport & national ID biodata: Geburtsdatum (DD.MM.YYYY), Geburtsort (Nairobi, Mombasa, Berlin), Geburtsland (Kenya, Deutschland).",
+    memoryTrick: "All start with 'Geburt' (birth)! Datum (date), Ort (town), Land (country).",
+    imageType: "birth-cert"
+  },
+  {
+    id: "familienstand-ledig-verheiratet",
+    german: "der Familienstand: ledig / verheiratet",
+    english: "marital / civil status: single / married",
+    pronunciation: "dair fah-MEE-lyen-shtahnt: LAY-dikh / fair-HY-rah-tet",
+    audioText: "der Familienstand: ledig oder verheiratet.",
+    category: "civil-status",
+    badge: "Marital Status 1",
+    icon: "💍",
+    kenyanAnalogy: "Like ticking the 'Single' vs. 'Married' box on your tax return or insurance paperwork. 'Ledig' = single/unmarried, 'Verheiratet' = legally married.",
+    memoryTrick: "Ledig = Single / free. Verheiratet has 'Heirat' (wedding/marriage) inside!",
+    imageType: "wedding-rings"
+  },
+  {
+    id: "familienstand-verwitwet-geschieden",
+    german: "der Familienstand: verwitwet / geschieden",
+    english: "marital status: widowed / divorced",
+    pronunciation: "fair-VIT-vet / guh-SHEE-den",
+    audioText: "der Familienstand: verwitwet oder geschieden.",
+    category: "civil-status",
+    badge: "Marital Status 2",
+    icon: "📜",
+    kenyanAnalogy: "The remaining two official German civil status checkboxes: 'Verwitwet' (widowed - spouse passed away) and 'Geschieden' (legally divorced).",
+    memoryTrick: "Witwe/Witwer = widow/widower ➔ verwitwet. Scheiden = to separate/divorce ➔ geschieden.",
+    imageType: "legal-doc"
+  },
+  {
+    id: "geschlecht-maennlich-weiblich",
+    german: "das Geschlecht: männlich (m) / weiblich (w)",
+    english: "gender: male (m) / female (f)",
+    pronunciation: "dahs guh-SHLEKHT: MEN-likh / VYE-blikh",
+    audioText: "das Geschlecht: männlich oder weiblich.",
+    category: "personal-data",
+    badge: "Gender Boxes",
+    icon: "🚻",
+    kenyanAnalogy: "The classic checkbox on every form: [X] männlich (male, Mann) vs. [ ] weiblich (female, Weib/Frau).",
+    memoryTrick: "Mann ➔ männlich. Weib (archaic for woman/female) ➔ weiblich. Forms often write 'm / w'.",
+    imageType: "gender-toggle"
+  },
+  {
+    id: "reiseziel-abflug",
+    german: "das Reiseziel & der Abflug (= abfliegen)",
+    english: "the travel destination & the flight departure (= to depart by plane)",
+    pronunciation: "dahs RYE-zuh-tseel oont dair AHP-floog (= AHP-flee-gen)",
+    audioText: "das Reiseziel: München. Der Abflug um 10 Uhr. Wir fliegen morgen ab.",
+    category: "travel-verbs",
+    badge: "Travel Nouns & Verbs 1",
+    icon: "✈️",
+    kenyanAnalogy: "Reise (travel) + Ziel (target/goal) = Destination (like flight target: Mombasa or Berlin). Abflug is the flight takeoff; verb is 'abfliegen'!",
+    memoryTrick: "Noun: 'der Abflug'. Separable verb: 'abfliegen' ➔ 'Das Flugzeug fliegt um 8 Uhr ab.'",
+    imageType: "airport-takeoff"
+  },
+  {
+    id: "abreise-abfahrt",
+    german: "die Abreise (= abreisen) / die Abfahrt (= abfahren)",
+    english: "the departure (= to depart) / departure by train/vehicle (= to drive off)",
+    pronunciation: "dee AHP-rye-zuh (= AHP-rye-zen) / dee AHP-fahrt (= AHP-fah-ren)",
+    audioText: "die Abreise am 12. September. Die Abfahrt des Zuges.",
+    category: "travel-verbs",
+    badge: "Travel Nouns & Verbs 2",
+    icon: "🚆",
+    kenyanAnalogy: "When leaving the hotel on checkout day, that is your 'Abreise' (departure). When the SGR train or bus pulls out of the station, that is the 'Abfahrt'!",
+    memoryTrick: "Noun with -e: 'die Abreise'. Verb: 'abreisen'. Noun with -t: 'die Abfahrt'. Verb: 'abfahren'.",
+    imageType: "train-depart"
+  },
+  {
+    id: "ankunft-anreise",
+    german: "die Ankunft (= ankommen) / die Anreise (= anreisen)",
+    english: "the arrival (= to arrive) / trip arrival for stay (= to arrive)",
+    pronunciation: "dee AHN-koonft (= AHN-kom-men) / dee AHN-rye-zuh (= AHN-rye-zen)",
+    audioText: "die Ankunft am Flughafen. Die Anreise im Hotel.",
+    category: "travel-verbs",
+    badge: "Travel Nouns & Verbs 3",
+    icon: "🛬",
+    kenyanAnalogy: "When your flight touches down at JKIA, that is your 'Ankunft' (arrival). When you arrive at the resort to check in, that is your 'Anreise' (hotel check-in arrival date)!",
+    memoryTrick: "Noun: 'die Ankunft' (verb: ankommen). Noun: 'die Anreise' (verb: anreisen).",
+    imageType: "hotel-checkin"
+  },
+  {
+    id: "kursbeginn-pruefungstermin",
+    german: "der Kursbeginn & der Prüfungstermin",
+    english: "the course start date & the exam date",
+    pronunciation: "dair KOORS-buh-ginn oont dair PRYOO-foongs-tair-meen",
+    audioText: "der Kursbeginn ist am ersten Oktober. Der Prüfungstermin ist am 25. September.",
+    category: "school-forms",
+    badge: "Course & Exam Forms",
+    icon: "🎓",
+    kenyanAnalogy: "Key fields when signing up for German language classes at the institute: When does class kick off (Kursbeginn) and when is the Goethe-Zertifikat A1 test day (Prüfungstermin)?",
+    memoryTrick: "Kurs + Beginn = Course start! Prüfung (exam) + Termin (appointment/date) = Exam date!",
+    imageType: "exam-date"
+  },
+  {
+    id: "unterschrift-ort-datum",
+    german: "die Unterschrift, der Ort & das Datum",
+    english: "the signature, place / town & date",
+    pronunciation: "dee OON-ter-shrift, dair ORT oont dahs DAH-toom",
+    audioText: "Ort und Datum: Berlin, den 7. September. Die Unterschrift.",
+    category: "forms-core",
+    badge: "Form Footer Essentials",
+    icon: "✍️",
+    kenyanAnalogy: "The bottom line of every official document in Germany: You write the city where you are signing, today's date, and your handwritten signature (e.g. 'Nairobi, 15.10.2026' + Signature)!",
+    memoryTrick: "Unter (under) + Schrift (writing) = Signature (written underneath)! Ort = City. Datum = Date.",
+    imageType: "sign-line"
+  },
+  {
+    id: "sonderwuensche-zahlungsart",
+    german: "die Sonderwünsche & die Zahlungsart",
+    english: "special requests & payment method (bar / Kreditkarte)",
+    pronunciation: "dee ZON-der-voon-shuh oont dee TSAH-loongs-ahrt",
+    audioText: "Sonderwünsche: Ein Extrabett. Zahlungsart: Kreditkarte oder bar.",
+    category: "hotel-form",
+    badge: "Special Requests & Pay",
+    icon: "💳",
+    kenyanAnalogy: "Sonderwünsche = Extra custom wishes (extra bed for kids, high floor, quiet room). Zahlungsart = How you are settling the bill: 'bar' (cash) or 'Kreditkarte' (credit card).",
+    memoryTrick: "Sonder = Special + Wünsche = Wishes. Zahlungsart = Art (type) of Zahlung (payment)!",
+    imageType: "credit-card"
+  }
+];
+
+export const LESSON_60_SCENARIOS = [
+  {
+    scenario: "In Slide 2, Emma Braun writes to the Vienna Tourist Information asking for accommodation help and travel materials. Which sentence asks for city maps and event guides?",
+    hint: "Schicken Sie uns auch bitte einen Stadtplan und ein Kulturprogramm.",
+    options: [
+      { text: "Schicken Sie uns auch bitte einen Stadtplan und ein Kulturprogramm.", correct: true, explain: "Genau! 'Stadtplan' = city map, 'Kulturprogramm' = cultural event schedule." },
+      { text: "Können Sie uns ein Taxi kaufen?", correct: false, explain: "That asks them to buy a taxi." },
+      { text: "Wir wollen keine Sehenswürdigkeiten sehen.", correct: false, explain: "That says we don't want to see sights." }
+    ]
+  },
+  {
+    scenario: "You are filling out a German registration form (Anmeldeformular) and see the field 'Familienstand'. You are legally married. Which box do you tick?",
+    hint: "verheiratet",
+    options: [
+      { text: "verheiratet", correct: true, explain: "Ausgezeichnet! 'verheiratet' means married. (ledig = single, geschieden = divorced, verwitwet = widowed)." },
+      { text: "ledig", correct: false, explain: "'ledig' means single/unmarried." },
+      { text: "geschieden", correct: false, explain: "'geschieden' means divorced." }
+    ]
+  },
+  {
+    scenario: "On an official form, what is the difference between 'der Vorname' and 'der Nachname' (oder Familienname)?",
+    hint: "Vorname is first name, Nachname is surname.",
+    options: [
+      { text: "Vorname is your first/given name (David, Anna); Nachname is your surname/family name (Schmidt).", correct: true, explain: "Richtig! 'Vor' = before (first name), 'Nach' = after (surname/family name)." },
+      { text: "Vorname is your country of birth; Nachname is your profession.", correct: false, explain: "Incorrect meaning." },
+      { text: "Vorname is only for men; Nachname is only for women.", correct: false, explain: "Incorrect." }
+    ]
+  },
+  {
+    scenario: "In Slide 16-21, you match German travel nouns with their matching action verbs. Which pair is correctly matched?",
+    hint: "der Abflug = abfliegen | die Abreise = abreisen | die Ankunft = ankommen",
+    options: [
+      { text: "der Abflug = abfliegen, die Abreise = abreisen, die Ankunft = ankommen", correct: true, explain: "Perfekt! Every travel noun has its exact verb counterpart: Abflug ➔ abfliegen, Abreise ➔ abreisen, Abfahrt ➔ abfahren, Ankunft ➔ ankommen!" },
+      { text: "der Abflug = schlafen, die Abreise = kochen", correct: false, explain: "Those verbs mean to sleep and to cook." },
+      { text: "die Ankunft = abfliegen, der Abflug = ankommen", correct: false, explain: "These are reversed." }
+    ]
+  },
+  {
+    scenario: "In Slide 26, you are filling out the online reservation form for 'Hotel Winter Berlin' for Anja Möller, her husband, and their son. They want breakfast and an extra bed. What are the correct selections?",
+    hint: "Doppelzimmer, mit Frühstück, Sonderwünsche: Ein Extrabett, Anzahl der Gäste: 3",
+    options: [
+      { text: "Anzahl der Gäste: 3, Doppelzimmer, Verpflegung: mit Frühstück, Sonderwünsche: Ein Extrabett", correct: true, explain: "Wunderbar! 3 guests (couple + son), double room, breakfast included, and an extra bed (Extrabett) in the special requests field!" },
+      { text: "Anzahl der Gäste: 1, Einzelzimmer, Vollpension, keine Wünsche", correct: false, explain: "That is for 1 person in a single room." },
+      { text: "Anzahl der Gäste: 10, Jugendherberge, bar zahlen", correct: false, explain: "Incorrect parameters." }
+    ]
+  },
+  {
+    scenario: "At the very bottom of a German registration form or contract, what do you write under 'Ort, Datum' and 'Unterschrift'?",
+    hint: "City and date (e.g. Berlin, 12.09.2026) followed by your handwritten signature.",
+    options: [
+      { text: "You write the city where you are signing, today's date, and sign your name (e.g. 'Nairobi, 15.10.2026' + Signature).", correct: true, explain: "Genau! In German paperwork, 'Ort, Datum' always comes right beside or above the 'Unterschrift' (signature) to validate the document legally!" },
+      { text: "You write your favorite food and shoe size.", correct: false, explain: "Completely irrelevant." },
+      { text: "You only write your phone number.", correct: false, explain: "Incorrect." }
+    ]
+  }
+];
+
 
 
 
