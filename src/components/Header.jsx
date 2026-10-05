@@ -76,6 +76,7 @@ export default function Header({
     if (currentLesson === 62) msg = "Die Bank: Guten Tag! Ich möchte ein Girokonto eröffnen, 100 Euro einzahlen und etwas Bargeld am Geldautomaten abheben. Bitte geben Sie Ihre Geheimzahl ein! Meine Karte ist weg, bitte sperren Sie sofort meine Karte über die 116 116!";
     if (currentLesson === 63) msg = "Wohnungssuche: Guten Tag! Ich finde Ihre 3-Zimmer-Wohnung in Berlin interessant. Ist die noch frei und gibt es einen Besichtigungstermin? Wie hoch sind die Kaltmiete, die Nebenkosten und die Kaution? Hat die Wohnung eine Einbauküche und einen Balkon?";
     if (currentLesson === 64) msg = "Eine Fahrkarte kaufen: Guten Tag! Ich brauche eine Fahrkarte nach München bitte, einfach mit dem nächsten Zug um 16 Uhr 30 auf Gleis 4. Muss ich umsteigen? Nein, ein direkter ICE ohne Umstieg. Was kostet das? 58 Euro. Gute Reise!";
+    if (currentLesson === 65) msg = "Test A1: Guten Tag, ich heiße Alex. Hallo, wie geht es dir? Gut, und dir? Welche Sprachen sprichst du? Am Wochenende kaufen wir ein und ich bin ins Kino gegangen. Max kann sehr gut Deutsch sprechen!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -594,6 +595,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson65NavItems = [
+    { id: 'cards', label: '📖 Lesson 65 Cards', sub: 'A1 Milestone Question Bank' },
+    { id: 'studio65', label: '🎓 Test A1 Studio', sub: '20-Question Exam, Rules & Sandbox' },
+    { id: 'game65', label: '🎮 A1 Blitz Quiz', sub: 'Speed Diagnostic Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -658,6 +667,7 @@ export default function Header({
   if (currentLesson === 62) navItems = lesson62NavItems;
   if (currentLesson === 63) navItems = lesson63NavItems;
   if (currentLesson === 64) navItems = lesson64NavItems;
+  if (currentLesson === 65) navItems = lesson65NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -724,6 +734,7 @@ export default function Header({
     { num: 62, label: "🏦 62: Die Bank", activeClass: "bg-red-700 ring-red-300", hoverBorder: "hover:bg-red-100 border-red-300" },
     { num: 63, label: "🏠 63: Wohnungssuche", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 64, label: "🚆 64: Fahrkarte kaufen", activeClass: "bg-red-700 ring-red-300", hoverBorder: "hover:bg-red-100 border-red-300" },
+    { num: 65, label: "🎓 65: Test A1", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
   ];
 
   return (

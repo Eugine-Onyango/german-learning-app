@@ -134,6 +134,8 @@ import Lesson63WohnungStudio from './components/Lesson63WohnungStudio';
 import Lesson63Game from './components/Lesson63Game';
 import Lesson64BahnStudio from './components/Lesson64BahnStudio';
 import Lesson64Game from './components/Lesson64Game';
+import Lesson65ExamStudio from './components/Lesson65ExamStudio';
+import Lesson65Game from './components/Lesson65Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -198,11 +200,12 @@ import {
   LESSON_61_ITEMS,
   LESSON_62_ITEMS,
   LESSON_63_ITEMS,
-  LESSON_64_ITEMS
+  LESSON_64_ITEMS,
+  LESSON_65_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(64); // Default to Lesson 64 as requested, easy switch to 1-63
+  const [currentLesson, setCurrentLesson] = useState(65); // Default to Lesson 65 as requested, easy switch to 1-64
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -270,6 +273,7 @@ export default function App() {
   if (currentLesson === 62) activeItems = LESSON_62_ITEMS;
   if (currentLesson === 63) activeItems = LESSON_63_ITEMS;
   if (currentLesson === 64) activeItems = LESSON_64_ITEMS;
+  if (currentLesson === 65) activeItems = LESSON_65_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -335,7 +339,8 @@ export default function App() {
     if (currentLesson === 61) return "Lesson 61: Die Post (The Post Office - Letters, Stamps, Parcels, Registered Mail & Envelope Addressing)";
     if (currentLesson === 62) return "Lesson 62: Die Bank (The Bank - Accounts, Money, ATMs, Cards, SEPA Transfers & Balance)";
     if (currentLesson === 63) return "Lesson 63: Wohnungssuche (Apartment Hunting, Classified Ads, Decoded Acronyms & Viewing Calls)";
-    return "Lesson 64: Eine Fahrkarte kaufen (Buying a Train Ticket, DB Timetables, Tracks & Counter Conversations)";
+    if (currentLesson === 64) return "Lesson 64: Eine Fahrkarte kaufen (Buying a Train Ticket, DB Timetables, Tracks & Counter Conversations)";
+    return "Lesson 65: Test A1 - Master Diagnostic & Milestone Exam (20 Core Grammar Pillars & Collocations)";
   };
 
   const getLessonDesc = () => {
@@ -528,7 +533,10 @@ export default function App() {
     if (currentLesson === 63) {
       return "Master apartment hunting and classified ads in German (Wohnungssuche)! Learn housing types (die Wohnung, die WG / Wohngemeinschaft, das Zimmer, das Apartment, das Ferienhaus), moving & roles (der Umzug / umziehen mit 'sein', der Vermieter / vermieten vs. der Mieter / mieten, der Makler), rental math & expenses (die Miete, Kaltmiete + Nebenkosten [NK] = Warmmiete, Kaution [KT: 2MM], Strom, Heizung, Wasser), decypher classified ad acronyms (EG, OG, DG, TG/UG, EBK, BLK, WC/Gäste-WC, m², AB, NB, ZKB, frei ab, ca.), and master confident phone calls for viewing appointments (Ist die Wohnung noch frei?, einen Besichtigungstermin vereinbaren)!";
     }
-    return "Master buying train tickets and navigating the German railway network (Eine Fahrkarte kaufen)! Learn train & transit types (U-Bahn, S-Bahn, Regionalbahn [RB], ICE - InterCity Express), stations & tracks (der Bahnhof, der Hauptbahnhof [Hbf], das Gleis, der Bahnsteig), read real Deutsche Bahn timetables (Fahrplan: Abfahrt, Ankunft, Dauer, Umstiege, Umsteigezeit), ticket tiers (das Sparangebot / Sparpreis vs. der Flexpreis), ticket types (einfach / nur Hinfahrt vs. hin und zurück, Sitzplatzreservierung), transit verbs with 'sein' (abfahren, ankommen, umsteigen), and master confident ticket counter conversations (Guten Tag, ich brauche eine Fahrkarte nach München bitte)!";
+    if (currentLesson === 64) {
+      return "Master buying train tickets and navigating the German railway network (Eine Fahrkarte kaufen)! Learn train & transit types (U-Bahn, S-Bahn, Regionalbahn [RB], ICE - InterCity Express), stations & tracks (der Bahnhof, der Hauptbahnhof [Hbf], das Gleis, der Bahnsteig), read real Deutsche Bahn timetables (Fahrplan: Abfahrt, Ankunft, Dauer, Umstiege, Umsteigezeit), ticket tiers (das Sparangebot / Sparpreis vs. der Flexpreis), ticket types (einfach / nur Hinfahrt vs. hin und zurück, Sitzplatzreservierung), transit verbs with 'sein' (abfahren, ankommen, umsteigen), and master confident ticket counter conversations (Guten Tag, ich brauche eine Fahrkarte nach München bitte)!";
+    }
+    return "Complete A1 Level Milestone Diagnostic Exam & Mastery Studio (Test A1 - Pick up the correct answer)! Prove your German A1 fluency across all 20 essential grammar pillars: verb conjugation (-e for ich), informal vs. formal greetings (wie geht es dir? - Gut, und dir?), irregular vowel changes (sprechen ➔ du sprichst), indefinite to definite articles (eine Tasche ➔ die Tasche), adjective opposites (billig vs. teuer), Akkusativ direct objects (eine Couch, diesen Pullover), existence idiom (es gibt), exact clock times (Um 19 Uhr), sentence inversion & separable verbs (Am Wochenende kaufen wir ein), shopping formulas (Ich hätte gern...), modal bracket sentence structure (kann... sprechen), origin questions (Woher), banking & clinic collocations (Konto eröffnen, Termin haben), Dativ pronouns with pain (Mir tut der Kopf weh), Dativ prepositions (mit dem Fahrrad), permission (Darf man...), Perfekt with movement (bin gegangen), and contrast conjunctions (aber)!";
   };
 
   return (
@@ -1141,6 +1149,15 @@ export default function App() {
 
         {currentLesson === 64 && activeTab === 'game64' && (
           <Lesson64Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 65 Specific Modules */}
+        {currentLesson === 65 && activeTab === 'studio65' && (
+          <Lesson65ExamStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 65 && activeTab === 'game65' && (
+          <Lesson65Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

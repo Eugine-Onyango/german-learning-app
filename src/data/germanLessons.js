@@ -16326,6 +16326,276 @@ export const LESSON_64_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 65: TEST A1 - MASTER DIAGNOSTIC & MILESTONE EXAM
+// ==========================================
+export const LESSON_65_ITEMS = [
+  {
+    german: "Guten Tag, ich heiße Alex.",
+    english: "Good day, my name is Alex. (Verb ending -e for 'ich')",
+    phonetic: "GOO-ten tahk, ikh HY-suh AH-leks",
+    layman: "The foundation rule of German verb conjugation: 'ich' ALWAYS pairs with the ending '-e' (heißen ➔ ich heiße, wohnen ➔ ich wohne). Never say 'ich ist' or 'ich sein'!",
+    analogy: "Like matching a singular subject with its dedicated grammatical pronoun ending.",
+    example: "Guten Tag, ich heiße Alex und komme aus Kenia.",
+    exampleEnglish: "Good day, my name is Alex and I come from Kenya.",
+    category: "1. Verb Conjugation"
+  },
+  {
+    german: "Hallo, wie geht es dir? - Gut, und dir?",
+    english: "Hello, how are you? - Good, and you? (Casual response)",
+    phonetic: "HAH-loh, vee gayt es deer? - goot, oont deer?",
+    layman: "Matching social frequency: When asked with casual 'dir' (informal du), you mirror back with 'und dir?'! (If asked formal 'Ihnen', you reply 'und Ihnen?').",
+    analogy: "If a friend greets you with 'Sasa', you reply 'Poa, na wewe?', not formal elder greetings.",
+    example: "Wie geht es dir? - Danke, gut, und dir?",
+    exampleEnglish: "How are you? - Thanks, good, and you?",
+    category: "2. Redemittel & Greetings"
+  },
+  {
+    german: "Welche Sprachen sprichst du?",
+    english: "Which languages do you speak? (Vowel change: e ➔ i)",
+    phonetic: "VEL-khuh SHPRAH-khen shprikhst doo?",
+    layman: "Irregular stem-changing verbs: In 'du' and 'er/sie/es', 'sprechen' switches its vowel from 'e' to 'i' (du sprichst, er spricht).",
+    analogy: "A shapeshifting verb stem that sharpens when addressing 'du'.",
+    example: "Welche Sprachen sprichst du? - Ich spreche Englisch, Deutsch und Swahili.",
+    exampleEnglish: "Which languages do you speak? - I speak English, German, and Swahili.",
+    category: "3. Irregular Verbs"
+  },
+  {
+    german: "Das ist eine Tasche. Die Tasche kostet 10 Euro.",
+    english: "This is a bag. The bag costs 10 euros. (Feminine: eine ➔ die)",
+    phonetic: "dahs ist EYE-nuh TAH-shuh. dee TAH-shuh KOS-tet tsehn OY-ro.",
+    layman: "From Indefinite ('eine Tasche' = a bag) to Definite ('die Tasche' = the specific bag). Feminine nouns end in -e and take 'die' / 'eine'.",
+    analogy: "Introducing an item for the first time ('a bag') then specifying it ('the bag').",
+    example: "Das ist eine Tasche. Die Tasche ist sehr praktisch.",
+    exampleEnglish: "This is a bag. The bag is very practical.",
+    category: "4. Articles & Gender"
+  },
+  {
+    german: "Die Lampe ist nicht billig. Sie ist teuer.",
+    english: "The lamp is not cheap. It is expensive. (Adjective opposites)",
+    phonetic: "dee LAHM-puh ist nikht BIL-likh. zee ist TOY-er.",
+    layman: "Core adjective opposites: 'billig' (cheap/inexpensive) vs. 'teuer' (expensive). 'nicht billig' directly equals 'teuer'!",
+    analogy: "Like knowing that not cheap means expensive in price negotiations.",
+    example: "Das Auto ist nicht billig, es ist sehr teuer.",
+    exampleEnglish: "The car is not cheap, it is very expensive.",
+    category: "5. Adjectives & Opposites"
+  },
+  {
+    german: "Ich brauche eine Couch für mein Wohnzimmer.",
+    english: "I need a couch for my living room. (Accusative feminine: eine)",
+    phonetic: "ikh BROW-khuh EYE-nuh kowch feer myne VOHN-tsim-mer.",
+    layman: "Direct object in Akkusativ: Feminine ('die Couch') stays 'eine Couch' when receiving the action of 'brauchen' (only masculine changes to 'einen').",
+    analogy: "Feminine nouns stay completely calm and unchanged in the accusative case.",
+    example: "Wir brauchen eine neue Couch.",
+    exampleEnglish: "We need a new couch.",
+    category: "6. Akkusativ Articles"
+  },
+  {
+    german: "In Hamburg gibt es viele Sehenswürdigkeiten.",
+    english: "There are many sights in Hamburg. ('es gibt' = there is/are)",
+    phonetic: "in HAHM-boork GEEPT es FEE-luh ZAY-ens-vyoor-dikh-kye-ten.",
+    layman: "The immortal German existence idiom: 'es gibt' = 'there is' or 'there are'. In questions or inverted sentences: 'gibt es'. Always takes Akkusativ!",
+    analogy: "Universal phrase used to state what exists in a city or place.",
+    example: "In Berlin gibt es viele Museen und Parks.",
+    exampleEnglish: "In Berlin there are many museums and parks.",
+    category: "7. Idioms & Existence"
+  },
+  {
+    german: "Wann fängt der Unterricht an? - Um 19 Uhr.",
+    english: "When does class start? - At 7 p.m. ('Um' for clock times)",
+    phonetic: "vahn fehngt dair OON-ter-rikht ahn? - oom NOYN-tsehn OOR.",
+    layman: "The golden time preposition rule: Exact clock times ALWAYS take 'Um' (Um 19 Uhr, Um halb acht). Days take 'Am', months/seasons take 'Im'!",
+    analogy: "'Um' points like a sharp arrow directly at the clock face.",
+    example: "Der Film beginnt um 20 Uhr.",
+    exampleEnglish: "The movie starts at 8 p.m.",
+    category: "8. Time Prepositions"
+  },
+  {
+    german: "Am Wochenende kaufen wir ein.",
+    english: "On the weekend we go shopping. (Position 2 Verb + Prefix at end)",
+    phonetic: "ahm VOKH-en-en-duh KOW-fen veer EYN.",
+    layman: "The Inversion & Separable Verb Rule: When the time ('Am Wochenende') takes Position 1, the conjugated verb ('kaufen') MUST be in Position 2, and the detachable rocket prefix ('ein') blasts to the very end!",
+    analogy: "The verb is an immovable anchor at slot 2 in any German statement.",
+    example: "Heute kaufen wir im Supermarkt ein.",
+    exampleEnglish: "Today we are shopping at the supermarket.",
+    category: "9. Word Order & Separable"
+  },
+  {
+    german: "Was möchten Sie? - Ich hätte gern zwei Kilo Birnen.",
+    english: "What would you like? - I would like two kilos of pears.",
+    phonetic: "vahs MURKH-ten zee? - ikh HEH-tuh gehrn tsvye KEE-loh BEER-nen.",
+    layman: "The polite customer formula across Germany: 'Ich hätte gern...' (I would like to have...). Much more polite than 'Ich will'!",
+    analogy: "Like saying 'May I please have...' when ordering at a market or shop.",
+    example: "Ich hätte gern zwei Kilo Äpfel und ein Brot bitte.",
+    exampleEnglish: "I would like two kilos of apples and a bread please.",
+    category: "10. Shopping Dialogue"
+  },
+  {
+    german: "Das kann Max gut: Max kann gut Englisch sprechen.",
+    english: "Max can speak English well. (Modal bracket: verb at end)",
+    phonetic: "dahs kahn mahks goot: mahks kahn goot ENG-lish SHPREH-khen.",
+    layman: "The German Satzklammer (Sentence Bracket): Modal verb 'kann' occupies Position 2, and kicks the full infinitive action verb ('sprechen') to the very end of the sentence!",
+    analogy: "Modal verb opens the gate at slot 2, and the action verb closes the fence at the finish line.",
+    example: "Sarah kann sehr gut Deutsch sprechen.",
+    exampleEnglish: "Sarah can speak German very well.",
+    category: "11. Modal Verbs"
+  },
+  {
+    german: "Weißt du, woher kommt Frau Schmidt?",
+    english: "Do you know where Ms. Schmidt is from? ('Woher' for origin)",
+    phonetic: "vyste doo, VOH-hehr komt frow shmit?",
+    layman: "The 3 W-Place keys: 'Woher' = Where from? (origin / kommen aus); 'Wo' = Where at? (location / wohnen in); 'Wohin' = Where to? (destination / fahren nach).",
+    analogy: "Woher asks about the starting point / home country.",
+    example: "Woher kommen Sie? - Ich komme aus Nairobi.",
+    exampleEnglish: "Where do you come from? - I come from Nairobi.",
+    category: "12. W-Questions"
+  },
+  {
+    german: "Herr Müller geht zur Bank. Er muss ein Konto eröffnen.",
+    english: "Mr. Müller goes to the bank. He needs to open an account.",
+    phonetic: "hehr MYOOL-ler gayt tsoor bahnk. ehr moos eyn KOHN-toh ehr-URF-nen.",
+    layman: "Core banking collocation: 'ein Konto eröffnen' (to open a bank account). 'überweisen' means to transfer, 'bedienen' means to serve.",
+    analogy: "Walking into the bank specifically to open a new checking or savings account.",
+    example: "Ich möchte ein Girokonto bei der Sparkasse eröffnen.",
+    exampleEnglish: "I would like to open a checking account at Sparkasse.",
+    category: "13. Banking Vocab"
+  },
+  {
+    german: "Ich habe morgen einen Termin beim Zahnarzt.",
+    english: "I have an appointment with the dentist tomorrow. ('einen Termin')",
+    phonetic: "ikh HAH-buh MOR-gen EYE-nen TEHR-meen byme TSAHN-ahrtst.",
+    layman: "Core medical collocation: In Germany, you don't just 'walk in'; you have 'einen Termin' (an appointment) with the doctor or dentist!",
+    analogy: "Booking an official slot in the doctor's calendar.",
+    example: "Haben Sie einen Termin beim Arzt?",
+    exampleEnglish: "Do you have an appointment with the doctor?",
+    category: "14. Clinic & Medical"
+  },
+  {
+    german: "Ich bin krank. Mir tut der Kopf weh.",
+    english: "I am sick. My head hurts. ('wehtun' takes Dativ: Mir)",
+    phonetic: "ikh bin krahnk. meer toot dair kopf vay.",
+    layman: "Expressing aches: 'wehtun' (to hurt) literally means 'does woe to me'. Because it's a Dative verb, 'ich' transforms into 'mir'! (Mir tut der Kopf weh = My head hurts me).",
+    analogy: "The body part is causing pain to the beneficiary receiver (mir).",
+    example: "Mir tun die Augen weh.",
+    exampleEnglish: "My eyes hurt.",
+    category: "15. Health & Dativ"
+  },
+  {
+    german: "Saskia fährt mit dem Fahrrad zum Büro.",
+    english: "Saskia rides her bicycle to the office. ('mit + Dativ': dem)",
+    phonetic: "ZAS-kee-ah fehrt mit daym FAHR-raht tsoom BYOO-roh.",
+    layman: "The royal Dative preposition 'mit': 'mit' ALWAYS demands Dativ! Neuter 'das Fahrrad' transforms into 'mit dem Fahrrad' (just like 'mit dem Auto', 'mit dem Bus', 'mit dem Zug').",
+    analogy: "The word 'mit' acts like a transformer, instantly changing 'das' and 'der' into 'dem'.",
+    example: "Ich fahre jeden Tag mit dem Zug zur Arbeit.",
+    exampleEnglish: "I travel by train to work every day.",
+    category: "16. Dativ Prepositions"
+  },
+  {
+    german: "Darf man hier rauchen?",
+    english: "Is one allowed to smoke here? ('man' takes 3rd person: darf)",
+    phonetic: "DAHRF mahn heer ROW-khen?",
+    layman: "Impersonal 'man' (people/one): 'man' always conjugates exactly like 'er/sie/es'! Modal verb 'dürfen' (to be permitted/allowed) becomes 'darf' (Darf man hier parken / rauchen?).",
+    analogy: "Asking about official rules and permissions for general public.",
+    example: "Hier darf man nicht laut sprechen.",
+    exampleEnglish: "One is not allowed to speak loudly here.",
+    category: "17. Modal & Permission"
+  },
+  {
+    german: "Am Wochenende bin ich ins Kino gegangen.",
+    english: "On the weekend I went to the cinema. ('gehen' takes 'sein')",
+    phonetic: "ahm VOKH-en-en-duh bin ikh ins KEE-noh geh-GAHNG-en.",
+    layman: "Perfekt past tense auxiliary rule: Verbs of movement from point A to B ('gehen', 'fahren', 'fliegen', 'kommen') MUST use 'sein' (ich bin gegangen), never 'haben'!",
+    analogy: "Physical travel across space activates the 'sein' battery.",
+    example: "Gestern bin ich nach Hause gegangen.",
+    exampleEnglish: "Yesterday I went home.",
+    category: "18. Perfekt with sein"
+  },
+  {
+    german: "Wie findest du diesen Pullover?",
+    english: "How do you like this sweater? (Accusative masculine: diesen)",
+    phonetic: "vee FIN-dest doo DEE-zen pool-LOH-ver?",
+    layman: "Demonstrative article 'dies-': Masculine noun 'der Pullover' in Akkusativ direct object transforms into 'diesen Pullover' (mirroring 'den' / 'einen')!",
+    analogy: "Pointing specifically at that one masculine item in the boutique.",
+    example: "Diesen Pullover finde ich wunderschön.",
+    exampleEnglish: "I find this sweater wonderful.",
+    category: "19. Demonstratives"
+  },
+  {
+    german: "Ich verstehe diese Übung nicht, aber ich möchte versuchen.",
+    english: "I don't understand this exercise, but I want to try. ('aber')",
+    phonetic: "ikh fehr-SHTAY-uh DEE-zuh OO-boong nikht, AH-ber ikh MURKH-tuh fehr-ZOO-khen.",
+    layman: "Conjunctions: 'aber' expresses contrast ('but'), 'und' is addition ('and'), 'oder' is choice ('or'), 'denn' is reason ('because').",
+    analogy: "Weighing a challenge against determination using 'but'.",
+    example: "Deutsch ist schwer, aber es macht sehr viel Spaß!",
+    exampleEnglish: "German is difficult, but it is lots of fun!",
+    category: "20. Conjunctions"
+  }
+];
+
+export const LESSON_65_SCENARIOS = [
+  {
+    scenario: "Complete the greeting: 'Guten Tag, ich _____ Alex.' (Slide 2)",
+    hint: "Remember the ending for 'ich' (-e).",
+    options: [
+      { text: "heiße", correct: true, explain: "Richtig! 'ich' takes the verb ending '-e' (ich heiße / ich wohne / ich komme)!" },
+      { text: "ist", correct: false, explain: "'ist' is for er/sie/es (er ist Alex)." },
+      { text: "sein", correct: false, explain: "'sein' is the raw unconjugated infinitive." },
+      { text: "heißt", correct: false, explain: "'heißt' is for du/er/sie/es/ihr." }
+    ]
+  },
+  {
+    scenario: "A friend asks: 'Hallo, wie geht es dir?' What is the most natural casual response (Slide 4)?",
+    hint: "Mirror the informal 'dir' back to them!",
+    options: [
+      { text: "Gut, und dir?", correct: true, explain: "Perfekt! Since they asked you informally with 'dir', you respond with 'Gut, und dir?' (Good, and you?)." },
+      { text: "Gut, und Ihnen?", correct: false, explain: "'Ihnen' is formal (used with strangers/elders), not with friends who ask 'dir'." },
+      { text: "Bitte.", correct: false, explain: "'Bitte' means please or you're welcome, not an answer to how you are." },
+      { text: "Ich gehe gut. Und Sie?", correct: false, explain: "Never say 'Ich gehe gut' in German (say 'Mir geht es gut' or 'Gut')!" }
+    ]
+  },
+  {
+    scenario: "Complete the sentence with the correct stem-vowel change: 'Welche Sprachen _____ du?' (Slide 5)",
+    hint: "Sprechen changes e ➔ i for 'du'!",
+    options: [
+      { text: "sprichst", correct: true, explain: "Ausgezeichnet! 'sprechen' has a vowel change for 'du' (du sprichst) and 'er/sie/es' (er spricht)!" },
+      { text: "sprechen", correct: false, explain: "'sprechen' is for wir/Sie/sie." },
+      { text: "spricht", correct: false, explain: "'spricht' is for er/sie/es." },
+      { text: "sprecht", correct: false, explain: "'sprecht' is for ihr (plural you guys)." }
+    ]
+  },
+  {
+    scenario: "Which preposition must be used for exact clock times? 'Axel: Wann fängt der Unterricht an? Sabine: _____ 19 Uhr.' (Slide 10)",
+    hint: "Exact clock times always take this 2-letter word.",
+    options: [
+      { text: "Um", correct: true, explain: "Genau! Exact clock times ALWAYS take 'Um' (Um 19 Uhr, Um 16:30 Uhr). 'Am' is for days/weekends, 'Im' is for months/seasons!" },
+      { text: "Am", correct: false, explain: "'Am' is for days of the week (Am Montag) and weekends (Am Wochenende)." },
+      { text: "Von", correct: false, explain: "'Von' means 'from' (paired with 'bis')." },
+      { text: "Bis", correct: false, explain: "'Bis' means 'until'." }
+    ]
+  },
+  {
+    scenario: "Look at this inverted sentence: 'Am Wochenende _____'. Where must the conjugated verb go (Slide 11)?",
+    hint: "Verb ALWAYS goes to Position 2, separable prefix at the very end!",
+    options: [
+      { text: "kaufen wir ein.", correct: true, explain: "Wunderbar! Position 1 = 'Am Wochenende', Position 2 = 'kaufen', Subject = 'wir', and separable prefix = 'ein' at the end!" },
+      { text: "wir kaufen ein.", correct: false, explain: "Incorrect word order; the verb must be in Position 2 when time starts the sentence." },
+      { text: "einkaufen wir.", correct: false, explain: "The separable prefix cannot stay glued to the verb in a normal present-tense main clause." },
+      { text: "wir einkaufen.", correct: false, explain: "Incorrect German word order." }
+    ]
+  },
+  {
+    scenario: "Why do we use 'bin' and NOT 'habe' in: 'Am Wochenende _____ ich ins Kino gegangen.' (Slide 20)?",
+    hint: "'gehen' is a verb of physical movement/travel!",
+    options: [
+      { text: "bin (because 'gehen' is a movement verb that requires 'sein' in the Perfekt past tense).", correct: true, explain: "Super! Verbs of movement from point A to B (gehen, fahren, fliegen, kommen) ALWAYS take 'sein' (ich bin gegangen)!" },
+      { text: "habe", correct: false, explain: "Verbs of movement do not take 'haben'." },
+      { text: "hatte", correct: false, explain: "'hatte' is simple past of haben." },
+      { text: "ist", correct: false, explain: "'ist' is for er/sie/es; the subject here is 'ich', so it must be 'bin'." }
+    ]
+  }
+];
+
+
 
 
 
