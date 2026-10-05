@@ -73,6 +73,7 @@ export default function Header({
     if (currentLesson === 59) msg = "Hotelreservierung: Sehr geehrte Damen und Herren, ich möchte ein Doppelzimmer mit Halbpension für drei Nächte reservieren. Wir kommen am siebten Juli mit dem Zug an. Haben Sie ein Zimmer mit Meeresblick? Sind Hunde erlaubt? Mit freundlichen Grüßen, Maria Schmidt.";
     if (currentLesson === 60) msg = "Touristeninfo und Formulare ausfüllen: Sehr geehrte Damen und Herren, wir möchten nach Wien reisen. Können Sie uns gute Hotels empfehlen? Schicken Sie uns bitte einen Stadtplan und ein Kulturprogramm! Ich fülle das Anmeldeformular aus: Familienstand verheiratet, Staatsangehörigkeit Deutsch, Geburtsdatum, Ort und Unterschrift.";
     if (currentLesson === 61) msg = "Die Post: Guten Tag! Ich möchte gern dieses Paket nach London schicken. Wieviel kostet das und wie lange braucht es? Ich hätte gern auch zwei Briefmarken für Postkarten und möchte diesen Brief per Einschreiben verschicken. Wo ist der Briefkasten?";
+    if (currentLesson === 62) msg = "Die Bank: Guten Tag! Ich möchte ein Girokonto eröffnen, 100 Euro einzahlen und etwas Bargeld am Geldautomaten abheben. Bitte geben Sie Ihre Geheimzahl ein! Meine Karte ist weg, bitte sperren Sie sofort meine Karte über die 116 116!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -567,6 +568,14 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const lesson62NavItems = [
+    { id: 'cards', label: '📖 Lesson 62 Cards', sub: 'Bank, Money & Accounts Vocab' },
+    { id: 'studio62', label: '🏦 Bank Studio', sub: 'ATM Simulator & SEPA Transfers' },
+    { id: 'game62', label: '🎮 Bank Quiz', sub: 'Banking & Cash Mastery' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
+  ];
+
   let navItems = lesson1NavItems;
   if (currentLesson === 2) navItems = lesson2NavItems;
   if (currentLesson === 3) navItems = lesson3NavItems;
@@ -628,6 +637,7 @@ export default function Header({
   if (currentLesson === 59) navItems = lesson59NavItems;
   if (currentLesson === 60) navItems = lesson60NavItems;
   if (currentLesson === 61) navItems = lesson61NavItems;
+  if (currentLesson === 62) navItems = lesson62NavItems;
 
   const ALL_LESSONS = [
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -691,6 +701,7 @@ export default function Header({
     { num: 59, label: "🏨 59: Hotelreservierung", activeClass: "bg-amber-700 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
     { num: 60, label: "📝 60: Touristeninfo & Formulare", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
     { num: 61, label: "🏤 61: Die Post", activeClass: "bg-amber-700 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
+    { num: 62, label: "🏦 62: Die Bank", activeClass: "bg-red-700 ring-red-300", hoverBorder: "hover:bg-red-100 border-red-300" },
   ];
 
   return (

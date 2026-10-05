@@ -15461,6 +15461,330 @@ export const LESSON_61_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// LESSON 62: Die Bank (Bank Accounts, Money & ATMs)
+// ==========================================
+
+export const LESSON_62_ITEMS = [
+  {
+    id: "die-bank-sparkasse",
+    german: "die Bank (die Banken) / die Sparkasse / das Geldinstitut",
+    english: "the bank / municipal savings bank / financial institute",
+    pronunciation: "dee BAHNK (die BAHN-ken) / dee SHPAR-kas-suh / dahs GELT-in-stee-toot",
+    audioText: "die Bank, die Sparkasse, das Geldinstitut",
+    category: "bank-places",
+    badge: "Banks & Institutes",
+    icon: "🏦",
+    kenyanAnalogy: "Like KCB, Equity Bank, or Cooperative Bank in Kenya. In Germany, the red 'S' logo of Sparkasse is on almost every street corner!",
+    memoryTrick: "'die Bank' is feminine (die). Plural: die Banken. 'die Sparkasse' literally means 'savings cash-box' (sparen = to save + Kasse = cashier/box).",
+    imageType: "bank-building"
+  },
+  {
+    id: "zur-bank-in-der-bank",
+    german: "zur Bank gehen vs. in / bei / auf der Bank sein",
+    english: "to go to the bank (movement) vs. to be at the bank (location)",
+    pronunciation: "tsoor BAHNK GAY-en vs. in dair BAHNK zyne",
+    audioText: "Wohin gehst du? Ich gehe zur Bank. Wo bist du? Ich bin in der Bank.",
+    category: "bank-grammar",
+    badge: "Movement vs. Location",
+    icon: "🚶",
+    kenyanAnalogy: "Movement (Wohin? ➔ zur Bank = zu + der Bank). Location (Wo? ➔ in der Bank / auf der Bank). Just like saying 'I am walking to the bank' vs 'I am currently inside the banking hall'!",
+    memoryTrick: "Direction (Wohin?) ➔ zur Bank. Stationary (Wo?) ➔ in der Bank / bei der Bank.",
+    imageType: "motion-location"
+  },
+  {
+    id: "geldschein-muenze-kleingeld",
+    german: "das Geld, der Geldschein, die Münze & das Kleingeld",
+    english: "money, bank note (paper bill), coin & loose change",
+    pronunciation: "dahs GELT, dair GELT-shyne, dee MOON-tsuh, dahs KLYN-gelt",
+    audioText: "das Geld, der Geldschein, die Münze, das Kleingeld",
+    category: "money-types",
+    badge: "Cash & Denominations",
+    icon: "💶",
+    kenyanAnalogy: "Geldscheine = Paper notes (50€, 100€, like KES 1000 notes). Münzen = Hard metal coins (1€, 2€, like 20 bob coins). Kleingeld = Loose change in your pocket.",
+    memoryTrick: "Geld + Schein (note/voucher) = Geldschein. Klein (small) + Geld = Kleingeld (change)!",
+    imageType: "euro-notes-coins"
+  },
+  {
+    id: "bargeld-bar-zahlen",
+    german: "das Bargeld / bar zahlen",
+    english: "cash / to pay cash",
+    pronunciation: "dahs BAHR-gelt / BAHR TSAH-len",
+    audioText: "das Bargeld. Ich habe kein Bargeld. Ich möchte bar zahlen.",
+    category: "money-types",
+    badge: "Cash Culture",
+    icon: "💵",
+    kenyanAnalogy: "Cash in hand (notes and coins). Germany loves Bargeld—many bakeries, food trucks, and small kiosks still say 'Nur Barzahlung' (Cash only)!",
+    memoryTrick: "Bar = Pure / Cash. Bargeld = Cash money.",
+    imageType: "cash-notes"
+  },
+  {
+    id: "einzahlen-abheben",
+    german: "einzahlen (hat eingezahlt) vs. abheben (hat abgehoben)",
+    english: "to deposit money vs. to withdraw cash",
+    pronunciation: "EYN-tsah-len (EYN-guh-tsahlt) vs. AHP-hay-ben (AHP-guh-ho-ben)",
+    audioText: "Geld einzahlen. Ich möchte 100 Euro einzahlen. Geld abheben. Ich muss Geld abheben.",
+    category: "bank-actions",
+    badge: "Deposit vs. Withdraw",
+    icon: "🏧",
+    kenyanAnalogy: "Einzahlen = Putting money into your account (like depositing via M-Pesa agent). Abheben = Taking out cash from the ATM.",
+    memoryTrick: "Ein = In (einzahlen = pay in). Ab = Away/Off (abheben = lift out/withdraw; hat abgehoben).",
+    imageType: "deposit-withdraw"
+  },
+  {
+    id: "anlegen-sparen",
+    german: "Geld anlegen (hat angelegt) & Geld sparen (hat gespart)",
+    english: "to invest money & to save money",
+    pronunciation: "GELT AHN-lay-gen / GELT SHPAH-ren",
+    audioText: "Geld anlegen. Er möchte sein Geld in ein Haus anlegen. Er hat schon 100 Euro gespart.",
+    category: "bank-actions",
+    badge: "Invest & Save",
+    icon: "📈",
+    kenyanAnalogy: "Sparen = Putting money aside into a piggy bank or savings account. Anlegen = Investing capital into real estate, shares, or treasury bonds!",
+    memoryTrick: "Sparen = To save (like English 'spare'). Anlegen = To invest / put down capital.",
+    imageType: "piggy-invest"
+  },
+  {
+    id: "wechseln-ueberweisen",
+    german: "wechseln (hat gewechselt) & überweisen (hat überwiesen)",
+    english: "to exchange currency & to transfer money (wire/bank transfer)",
+    pronunciation: "VEKH-seln (guh-VEKH-selt) / oo-ber-VYE-zen (oo-ber-VEE-zen)",
+    audioText: "Dollar in Euro wechseln. 100 Euro auf ein anderes Konto überweisen.",
+    category: "bank-actions",
+    badge: "Exchange & Transfer",
+    icon: "💱",
+    kenyanAnalogy: "Wechseln = Forex bureau exchange (US Dollars or Kenya Shillings to Euros). Überweisen = Bank transfer (like sending money to another bank account via Paybill/wire)!",
+    memoryTrick: "Wechseln = To change / swap. Überweisen = To transfer across (über = over/across; hat überwiesen).",
+    imageType: "forex-transfer"
+  },
+  {
+    id: "girokonto-sparkonto-tagesgeld",
+    german: "das Girokonto, das Sparkonto & das Tagesgeldkonto",
+    english: "checking / current account, savings account & daily call account",
+    pronunciation: "dahs ZHEE-ro-kon-to, dahs SHPAR-kon-to, dahs TAH-ges-gelt-kon-to",
+    audioText: "das Girokonto für das Gehalt, das Sparkonto zum Sparen, das Tagesgeldkonto",
+    category: "accounts",
+    badge: "Account Types",
+    icon: "💳",
+    kenyanAnalogy: "Girokonto = Your daily checking account where salary enters and rent is paid. Sparkonto = Savings account with interest. Tagesgeld = Flexible high-yield savings.",
+    memoryTrick: "Giro comes from Italian 'giro' (circulation / money circulating). Das Konto (Plural: die Konten / die Kontos).",
+    imageType: "bank-accounts"
+  },
+  {
+    id: "konto-eroeffnen-schliessen",
+    german: "ein Konto eröffnen (hat eröffnet) vs. schließen (hat geschlossen)",
+    english: "to open a bank account vs. to close an account",
+    pronunciation: "ein KON-to air-UF-nen vs. SHLEES-sen (haht air-UF-net / haht guh-SHLOS-sen)",
+    audioText: "ein Konto eröffnen. Ich möchte ein Girokonto eröffnen. Ich möchte mein Konto schließen.",
+    category: "accounts",
+    badge: "Open & Close Account",
+    icon: "📂",
+    kenyanAnalogy: "When you arrive in Germany for studies or work, step 1 is 'Konto eröffnen'. When leaving Germany for good, you must 'Konto schließen'.",
+    memoryTrick: "Eröffnen (open) ➔ hat eröffnet. Schließen (close) ➔ hat geschlossen.",
+    imageType: "open-account"
+  },
+  {
+    id: "kontoinhaber-kontonummer",
+    german: "der Kontoinhaber & die Kontonummer",
+    english: "the account holder & the account number",
+    pronunciation: "dair KON-to-in-hah-ber oont dee KON-to-noom-mer",
+    audioText: "der Kontoinhaber: Max Mustermann. Die Kontonummer.",
+    category: "credentials",
+    badge: "Account Ownership",
+    icon: "🪪",
+    kenyanAnalogy: "Kontoinhaber is the legal name on the bank account (e.g. John Kamau). Kontonummer is your unique customer account digits.",
+    memoryTrick: "Konto + Inhaber (owner/holder) = Kontoinhaber!",
+    imageType: "account-holder"
+  },
+  {
+    id: "iban-bic-blz",
+    german: "die IBAN, das BIC & die BLZ (Bankleitzahl)",
+    english: "IBAN (DE...), BIC (SWIFT code) & German Bank Sort Code (BLZ)",
+    pronunciation: "dee EE-bahn, dahs BIK, dee Bay-El-Tset",
+    audioText: "die IBAN beginnt mit DE. Das BIC und die Bankleitzahl.",
+    category: "credentials",
+    badge: "Banking Codes",
+    icon: "🔢",
+    kenyanAnalogy: "In Europe, every account has an IBAN starting with country code (DE for Germany, e.g. DE11 5500 5500...). BIC/SWIFT code identifies the exact bank branch internationally.",
+    memoryTrick: "IBAN = International Bank Account Number. BLZ = Bank-Leit-Zahl (Bank Routing Number).",
+    imageType: "iban-code"
+  },
+  {
+    id: "die-ueberweisung",
+    german: "die Überweisung (die Überweisungen)",
+    english: "the bank transfer / electronic fund transfer (EFT)",
+    pronunciation: "dee oo-ber-VYE-zoong",
+    audioText: "die Überweisung. Ich mache eine Überweisung für die Miete.",
+    category: "bank-actions",
+    badge: "Bank Transfers",
+    icon: "📲",
+    kenyanAnalogy: "The standard German way to pay rent, tuition, and electricity bills: Filling out a SEPA Überweisung form online or via banking app.",
+    memoryTrick: "Verb: überweisen ➔ Noun: die Überweisung (-ung nouns are always feminine 'die').",
+    imageType: "sepa-transfer"
+  },
+  {
+    id: "kontoauszug-ausdrucken",
+    german: "der Kontoauszug (die Kontoauszüge) ausdrucken",
+    english: "account statement / to print the bank statement",
+    pronunciation: "dair KON-to-ows-tsoog OWS-drook-ken",
+    audioText: "der Kontoauszug. Wo kann ich den Kontoauszug ausdrucken?",
+    category: "statements",
+    badge: "Bank Statements",
+    icon: "📄",
+    kenyanAnalogy: "Like getting your monthly bank PDF statement or printing mini-statements at the bank terminal showing all deposits and debits.",
+    memoryTrick: "Auszug comes from 'ausziehen/ausdrucken' (extract). Plural: die Kontoauszüge (with Umlaut ü!).",
+    imageType: "bank-statement"
+  },
+  {
+    id: "kontostand-saldo",
+    german: "der Kontostand / der Saldo",
+    english: "the account balance / total available funds",
+    pronunciation: "dair KON-to-shtahnt / dair ZAHL-do",
+    audioText: "der Kontostand. Wie sieht mein Kontostand aus? Der Saldo ist positiv.",
+    category: "statements",
+    badge: "Balance Check",
+    icon: "💰",
+    kenyanAnalogy: "Checking your current available balance on your phone or ATM screen: 'Wie sieht mein Kontostand aus?' (What's my balance looking like?).",
+    memoryTrick: "Konto + Stand (status/level) = Account balance!",
+    imageType: "balance-check"
+  },
+  {
+    id: "einnahme-ausgabe",
+    german: "die Einnahme vs. die Ausgabe",
+    english: "income (money in) vs. expenditure / expense (money out)",
+    pronunciation: "dee EYN-nah-muh vs. dee OWS-gah-buh",
+    audioText: "die Einnahme und die Ausgabe. Meine Ausgaben sind mehr als meine Einnahmen.",
+    category: "finance",
+    badge: "Inflow vs. Outflow",
+    icon: "⚖️",
+    kenyanAnalogy: "Einnahmen = Salary, sales, gifts coming in. Ausgaben = Rent, food, fuel, bills going out.",
+    memoryTrick: "Ein = In (Einnahme = taking in). Aus = Out (Ausgabe = giving out).",
+    imageType: "income-expenses"
+  },
+  {
+    id: "soll-haben",
+    german: "das Soll vs. das Haben",
+    english: "debit (minus / charges) vs. credit (plus / assets)",
+    pronunciation: "dahs ZOLL vs. dahs HAH-ben",
+    audioText: "das Soll und das Haben auf dem Kontoauszug",
+    category: "finance",
+    badge: "Debit & Credit",
+    icon: "📊",
+    kenyanAnalogy: "Classic bookkeeping columns: 'Soll' (debit / money owed) vs 'Haben' (credit / money owned).",
+    memoryTrick: "Soll = Should be paid (debit). Haben = Have in hand (credit).",
+    imageType: "debit-credit"
+  },
+  {
+    id: "geldautomat-bankomat",
+    german: "der Geldautomat (die Geldautomaten) / der Bankomat",
+    english: "the ATM (cash machine) / Bankomat (in Austria & Switzerland)",
+    pronunciation: "dair GELT-ow-to-maht / dair bahn-ko-MAHT",
+    audioText: "der Geldautomat. Geld am Geldautomaten abheben.",
+    category: "atm-cards",
+    badge: "ATM Machines",
+    icon: "🏧",
+    kenyanAnalogy: "The 24/7 ATM wall machine where you insert your card and withdraw cash. In Austria it's called 'Bankomat', in Switzerland 'Bancomat'.",
+    memoryTrick: "Geld + Automat = Money automated machine!",
+    imageType: "atm-machine"
+  },
+  {
+    id: "ec-karte-kreditkarte",
+    german: "die EC-Karte / Girokarte & die Kreditkarte",
+    english: "the debit card (Girocard/EC) & the credit card",
+    pronunciation: "dee AY-tsay-kahr-tuh / ZHEE-ro-kahr-tuh & dee kray-DEET-kahr-tuh",
+    audioText: "die EC-Karte, die Girokarte, die Kreditkarte",
+    category: "atm-cards",
+    badge: "Payment Cards",
+    icon: "💳",
+    kenyanAnalogy: "In Germany, almost everyone carries an 'EC-Karte' (Girocard directly linked to your bank account). Visa/Mastercard is 'die Kreditkarte'.",
+    memoryTrick: "EC stands for 'Electronic Cash'. Both are feminine (die Karte).",
+    imageType: "bank-cards"
+  },
+  {
+    id: "pin-geheimzahl-eingeben",
+    german: "die PIN / die Geheimzahl eingeben",
+    english: "to enter the PIN / secret 4-digit code",
+    pronunciation: "dee PIN / dee guh-HYME-tsahl EYN-gay-ben",
+    audioText: "die Geheimzahl eingeben. Bitte geben Sie Ihre Geheimzahl ein.",
+    category: "atm-cards",
+    badge: "Security & PIN",
+    icon: "🔒",
+    kenyanAnalogy: "Punching your secret 4-digit M-Pesa or ATM PIN code into the keypad while shielding the screen with your other hand.",
+    memoryTrick: "Geheim (secret) + Zahl (number) = Geheimzahl (PIN). Eingeben = to enter / type in.",
+    imageType: "pin-keypad"
+  },
+  {
+    id: "karte-sperren-lassen",
+    german: "die Karte sperren lassen (hat sperren lassen)",
+    english: "to have the card blocked / canceled (emergency loss or theft)",
+    pronunciation: "dee KAHR-tuh SHPAIR-ren LAHS-sen",
+    audioText: "die Karte sperren lassen. Meine Karte ist weg, bitte sperren Sie meine Karte!",
+    category: "atm-cards",
+    badge: "Emergency Security",
+    icon: "🚨",
+    kenyanAnalogy: "Calling the emergency banking hotline (116 116 in Germany) immediately when your wallet is lost or stolen to freeze the card!",
+    memoryTrick: "Sperren = To block / lock / barricade. 'Ich lasse meine Karte sperren' (I am getting my card blocked).",
+    imageType: "blocked-card"
+  }
+];
+
+export const LESSON_62_SCENARIOS = [
+  {
+    scenario: "You have just arrived in Germany for work or studies. Slide 22 states: 'Wenn man neu in Deutschland ist, soll man ein Konto eröffnen.' How do you ask the banker to open a current account?",
+    hint: "Guten Tag, ich möchte ein Girokonto eröffnen.",
+    options: [
+      { text: "Guten Tag, ich möchte gern ein Girokonto eröffnen.", correct: true, explain: "Ausgezeichnet! 'ein Girokonto eröffnen' means to open a checking/current account for daily salary and rent." },
+      { text: "Guten Tag, ich möchte alle Geldautomaten stehlen.", correct: false, explain: "That means 'I want to steal all ATMs'." },
+      { text: "Ich habe kein Deutsch gelernt.", correct: false, explain: "Irrelevant statement." }
+    ]
+  },
+  {
+    scenario: "You are at the ATM (der Geldautomat) and need cash for shopping. What is the correct German verb for 'withdrawing money' (Slide 10)?",
+    hint: "Geld abheben (hat abgehoben)",
+    options: [
+      { text: "Geld abheben", correct: true, explain: "Perfekt! 'abheben' (hat abgehoben) is the exact German verb for withdrawing cash from an account or ATM." },
+      { text: "Geld anmalen", correct: false, explain: "That means 'to paint money'." },
+      { text: "Geld kochen", correct: false, explain: "That means 'to cook money'." }
+    ]
+  },
+  {
+    scenario: "You lost your wallet on the train with your Girocard inside (Slide 34). What must you immediately do?",
+    hint: "Die Karte sperren lassen (Call emergency line to block card).",
+    options: [
+      { text: "Ich muss sofort die Karte sperren lassen!", correct: true, explain: "Richtig! 'die Karte sperren lassen' means to get the card blocked/frozen to prevent unauthorized spending." },
+      { text: "Ich werfe die Karte in den Mülleimer.", correct: false, explain: "You don't have the card to throw away." },
+      { text: "Ich kaufe 100 neue Geldscheine.", correct: false, explain: "Incorrect." }
+    ]
+  },
+  {
+    scenario: "You want to pay your monthly apartment rent by transferring 500 € to your landlord's German IBAN. What is this transaction called (Slides 16 & 25)?",
+    hint: "eine Überweisung / Geld überweisen",
+    options: [
+      { text: "eine Überweisung (Geld auf ein anderes Konto überweisen)", correct: true, explain: "Wunderbar! 'eine Überweisung' is an electronic bank/wire transfer using IBAN and BIC." },
+      { text: "ein Briefkasten einwerfen", correct: false, explain: "That is dropping a letter in a mailbox." },
+      { text: "Karten spielen", correct: false, explain: "That is playing cards." }
+    ]
+  },
+  {
+    scenario: "When using an ATM, what is the secret 4-digit password you must enter called in German (Slide 32-33)?",
+    hint: "die PIN / die Geheimzahl",
+    options: [
+      { text: "die PIN oder die Geheimzahl", correct: true, explain: "Genau! 'die Geheimzahl' (secret number) or 'die PIN' is your personal 4-digit code." },
+      { text: "die Postleitzahl", correct: false, explain: "That is the postal code." },
+      { text: "die Hausnummer", correct: false, explain: "That is the house number." }
+    ]
+  },
+  {
+    scenario: "In Slide 28, how do you ask the bank teller or check on screen: 'What does my account balance look like?'",
+    hint: "Wie sieht mein Kontostand aus?",
+    options: [
+      { text: "Wie sieht mein Kontostand aus?", correct: true, explain: "Perfekt! 'der Kontostand' (or 'der Saldo') is your bank balance. 'Wie sieht mein Kontostand aus?' is the natural inquiry." },
+      { text: "Wie alt ist der Bankbeamte?", correct: false, explain: "That asks how old the banker is." },
+      { text: "Wo schläft das Geld?", correct: false, explain: "That asks where the money sleeps." }
+    ]
+  }
+];
+
 
 
 

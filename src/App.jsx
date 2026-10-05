@@ -128,6 +128,8 @@ import Lesson60FormStudio from './components/Lesson60FormStudio';
 import Lesson60Game from './components/Lesson60Game';
 import Lesson61PostStudio from './components/Lesson61PostStudio';
 import Lesson61Game from './components/Lesson61Game';
+import Lesson62BankStudio from './components/Lesson62BankStudio';
+import Lesson62Game from './components/Lesson62Game';
 import {
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
@@ -189,11 +191,12 @@ import {
   LESSON_58_ITEMS,
   LESSON_59_ITEMS,
   LESSON_60_ITEMS,
-  LESSON_61_ITEMS
+  LESSON_61_ITEMS,
+  LESSON_62_ITEMS
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(61); // Default to Lesson 61 as requested, easy switch to 1-60
+  const [currentLesson, setCurrentLesson] = useState(62); // Default to Lesson 62 as requested, easy switch to 1-61
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -258,6 +261,7 @@ export default function App() {
   if (currentLesson === 59) activeItems = LESSON_59_ITEMS;
   if (currentLesson === 60) activeItems = LESSON_60_ITEMS;
   if (currentLesson === 61) activeItems = LESSON_61_ITEMS;
+  if (currentLesson === 62) activeItems = LESSON_62_ITEMS;
 
   const getLessonTitle = () => {
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
@@ -320,7 +324,8 @@ export default function App() {
     if (currentLesson === 58) return "Lesson 58: Beim Arzt (At the Doctor's Office - Appointments, Symptoms, Vitals & AU Sick Notes)";
     if (currentLesson === 59) return "Lesson 59: Hotelreservierung (Hotel Booking, EZ / DZ, Meal Plans & Formal Reservation Letters)";
     if (currentLesson === 60) return "Lesson 60: Touristeninformation, Reisebüro & Formulare ausfüllen (Tourist Info, Travel Agencies & Filling Official Forms)";
-    return "Lesson 61: Die Post (The Post Office - Letters, Stamps, Parcels, Registered Mail & Envelope Addressing)";
+    if (currentLesson === 61) return "Lesson 61: Die Post (The Post Office - Letters, Stamps, Parcels, Registered Mail & Envelope Addressing)";
+    return "Lesson 62: Die Bank (The Bank - Accounts, Money, ATMs, Cards, SEPA Transfers & Balance)";
   };
 
   const getLessonDesc = () => {
@@ -504,7 +509,10 @@ export default function App() {
     if (currentLesson === 60) {
       return "Master writing to tourist boards (an Touristeninfo / Reisebüro) and confidently filling out official German registration forms (das Formular ausfüllen)! Learn requesting city maps (Stadtplan), cultural schedules (Kulturprogramm), and hotel recommendations (empfehlen); decode official paperwork fields: Vorname vs. Nachname/Familienname, address structure (Straße, Hausnummer, PLZ, Ort, c/o), civil status (Familienstand: ledig, verheiratet, geschieden, verwitwet), gender (Geschlecht m/w), birth data (Geburtsdatum, Geburtsort, Geburtsland), travel nouns & verbs (Abflug/abfliegen, Abreise/abreisen, Ankunft/ankommen), and signing off (Ort, Datum & Unterschrift)!";
     }
-    return "Master navigating the German postal system (Die Post) and shipping mail with Deutsche Post and DHL! Learn essential locations & staff (das Postamt, die Poststelle, der Schalter, der Briefträger, der Paketbote), letter & parcel essentials (die Briefmarke aufkleben, der Briefumschlag / das Kuvert, das Paket vs. das Päckchen packen, der Briefkasten, einen Brief einwerfen), the strict German envelope layout rule (Absender oben links, Empfänger unten rechts, Marke oben rechts), registered certified mail (per Einschreiben) with tracking numbers (die Sendungsnummer), and polite counter dialogues (Ich hätte gern..., Wieviel kostet dieser Brief / dieses Paket nach London?, Wie lange braucht es?)!";
+    if (currentLesson === 61) {
+      return "Master navigating the German postal system (Die Post) and shipping mail with Deutsche Post and DHL! Learn essential locations & staff (das Postamt, die Poststelle, der Schalter, der Briefträger, der Paketbote), letter & parcel essentials (die Briefmarke aufkleben, der Briefumschlag / das Kuvert, das Paket vs. das Päckchen packen, der Briefkasten, einen Brief einwerfen), the strict German envelope layout rule (Absender oben links, Empfänger unten rechts, Marke oben rechts), registered certified mail (per Einschreiben) with tracking numbers (die Sendungsnummer), and polite counter dialogues (Ich hätte gern..., Wieviel kostet dieser Brief / dieses Paket nach London?, Wie lange braucht es?)!";
+    }
+    return "Master German banking, money, accounts, and ATMs (Die Bank)! Discover financial institutions (die Bank, die Sparkasse, das Geldinstitut), movement vs. location (zur Bank gehen vs. in der Bank sein), cash & denominations (das Bargeld, der Geldschein, die Münze, das Kleingeld), essential verbs (einzahlen, abheben, überweisen, sparen, anlegen, wechseln), account types (das Girokonto, das Sparkonto, das Tagesgeldkonto), opening & closing accounts (ein Konto eröffnen / schließen), account credentials (der Kontoinhaber, die IBAN, das BIC, die BLZ), checking balances & printing statements (der Kontostand / der Saldo, der Kontoauszug, Einnahmen vs. Ausgaben, Soll vs. Haben), ATM operation (der Geldautomat / Bankomat, die Girokarte/EC-Karte, die PIN / Geheimzahl eingeben), and emergency card cancellation (die Karte sperren lassen via 116 116)!";
   };
 
   return (
@@ -1090,6 +1098,15 @@ export default function App() {
 
         {currentLesson === 61 && activeTab === 'game61' && (
           <Lesson61Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Lesson 62 Specific Modules */}
+        {currentLesson === 62 && activeTab === 'studio62' && (
+          <Lesson62BankStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 62 && activeTab === 'game62' && (
+          <Lesson62Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}
