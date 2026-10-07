@@ -17497,6 +17497,398 @@ export const SUMMARY_3_SCENARIOS = [
   }
 ];
 
+export const SUMMARY_4_ITEMS = [
+  // Page 1: Besondere Verben (mögen & möchten)
+  {
+    id: "s4-moegen-conjugation",
+    german: "mögen (to like / fancy): ich mag, du magst, er/es/sie mag, wir mögen, ihr mögt, sie/Sie mögen",
+    english: "mögen (to like): I like (mag), you like (magst), he likes (mag), we like (mögen), you all like (mögt), they like (mögen)",
+    pronunciation: "MEU-gen: ikh MAHK, doo MAHKST, air MAHK, veer MEU-gen, eer MEUKHT, zee MEU-gen",
+    audioText: "mögen. ich mag, du magst, er mag, es mag, sie mag, wir mögen, ihr mögt, sie mögen, Sie mögen. Ich mag Schokolade. Magst du Tee?",
+    layman: "The verb 'mögen' expresses what you like or fancy! Key rule: It acts like a modal verb — 'ich' and 'er/es/sie' are identical twins with NO ending (mag), and the vowel shifts from 'ö' to 'a' in singular!",
+    analogy: "Like expressing what you enjoy ('napenda hii'): 'Ich mag Kaffee' (I like coffee)!",
+    example: "Ich mag Tee, aber mein Bruder mag Kaffee.",
+    exampleEnglish: "I like tea, but my brother likes coffee.",
+    category: "1. Besondere Verben",
+    badge: "mögen = to like",
+    icon: "❤️"
+  },
+  {
+    id: "s4-moechten-conjugation",
+    german: "möchten (would like to): ich möchte, du möchtest, er/es/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
+    english: "möchten (would like to): I would like (möchte), you would like (möchtest), he would like (möchte), we would like (möchten), you all like (möchtet), they would like (möchten)",
+    pronunciation: "MEUKH-ten: ikh MEUKH-teh, doo MEUKH-test, air MEUKH-teh, veer MEUKH-ten, eer MEUKH-tet, zee MEUKH-ten",
+    audioText: "möchten. ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten, Sie möchten. Ich möchte einen Kaffee, bitte.",
+    layman: "The polite magic phrase for ordering and expressing wishes ('I would like')! Notice: 'ich' and 'er/es/sie' both end in '-e' (möchte), and 'du' gets an extra '-e-' cushion before '-st' (du möchtest) because the stem ends in 't'!",
+    analogy: "Ordering at a restaurant or shop politely: 'Mimi ningependa...' ('Ich möchte bitte...')!",
+    example: "Wir möchten bitte zwei Kaffee und ein Stück Kuchen.",
+    exampleEnglish: "We would like two coffees and a piece of cake, please.",
+    category: "1. Besondere Verben",
+    badge: "möchten = would like",
+    icon: "☕"
+  },
+
+  // Page 2: Verben mit Vokalwechsel (e ➔ ie / i)
+  {
+    id: "s4-lesen-vowel-shift",
+    german: "lesen (e ➔ ie): ich lese, du liest (!), er/es/sie liest (!), wir lesen, ihr lest, sie/Sie lesen",
+    english: "lesen (to read): I read (lese), you read (liest), he reads (liest), we read (lesen), you all read (lest), they read (lesen)",
+    pronunciation: "LAY-zen: ikh LAY-zeh, doo LEEST, air LEEST, veer LAY-zen, eer LAYST, zee LAY-zen",
+    audioText: "lesen. ich lese, du liest, er liest, wir lesen, ihr lest, sie lesen. Was liest du gern? Er liest ein Buch.",
+    layman: "Vowel Shift Rule: The vowel changes ONLY for 'du' and 'er/es/sie'! In 'lesen', 'e' becomes 'ie' (du liest, er liest). Notice 'du' already ends in 's' sound, so it just adds '-t'!",
+    analogy: "A magic magnifying glass that turns short 'e' into long 'ie' for your buddy (du) and him/her (er/sie)!",
+    example: "Liest du gern Romane? - Ja, ich lese jeden Abend.",
+    exampleEnglish: "Do you like reading novels? - Yes, I read every evening.",
+    category: "2. Vokalwechsel (e ➔ ie/i)",
+    badge: "lesen: e ➔ ie",
+    icon: "📖"
+  },
+  {
+    id: "s4-essen-vowel-shift",
+    german: "essen (e ➔ i): ich esse, du isst (!), er/es/sie isst (!), wir essen, ihr esst, sie/Sie essen",
+    english: "essen (to eat): I eat (esse), you eat (isst), he eats (isst), we eat (essen), you all eat (esst), they eat (essen)",
+    pronunciation: "ESS-en: ikh ESS-eh, doo IST, air IST, veer ESS-en, eer EST, zee ESS-en",
+    audioText: "essen. ich esse, du isst, er isst, wir essen, ihr esst, sie essen. Was isst du heute? Er isst einen Salat.",
+    layman: "Vowel Shift Rule: In 'essen', 'e' turns into 'i' for 'du' and 'er/es/sie' (du isst, er isst)! Double 's' stays, and because it already has 's', it adds '-t'!",
+    analogy: "Saying 'unakula nini': 'Was isst du?' (What are you eating?)!",
+    example: "Isst du gern Pizza? - Nein, ich esse lieber Pasta.",
+    exampleEnglish: "Do you like eating pizza? - No, I prefer eating pasta.",
+    category: "2. Vokalwechsel (e ➔ ie/i)",
+    badge: "essen: e ➔ i",
+    icon: "🍕"
+  },
+  {
+    id: "s4-nehmen-vowel-shift",
+    german: "nehmen (e ➔ imm): ich nehme, du nimmst (!), er/es/sie nimmt (!), wir nehmen, ihr nehmt, sie/Sie nehmen",
+    english: "nehmen (to take): I take (nehme), you take (nimmst), he takes (nimmt), we take (nehmen), you all take (nehmt), they take (nehmen)",
+    pronunciation: "NAY-men: ikh NAY-meh, doo NIMST, air NIMT, veer NAY-men, eer NAYMT, zee NAY-men",
+    audioText: "nehmen. ich nehme, du nimmst, er nimmt, wir nehmen, ihr nehmt, sie nehmen. Was nimmst du? Ich nehme den Salat.",
+    layman: "Vowel Shift Rule: In 'nehmen' (to take/order), the 'e' changes to 'i' AND the 'h' becomes double 'm' for 'du' and 'er/es/sie' (du nimmst, er nimmt)!",
+    analogy: "Crucial restaurant verb for ordering: 'Ich nehme...' (I'll take...) or 'Was nimmst du?' (What are you having?)!",
+    example: "Was nimmst du zum Frühstück? - Ich nehme ein Brötchen mit Käse.",
+    exampleEnglish: "What are you having for breakfast? - I'm taking a bread roll with cheese.",
+    category: "2. Vokalwechsel (e ➔ ie/i)",
+    badge: "nehmen: e ➔ imm",
+    icon: "🍽️"
+  },
+  {
+    id: "s4-treffen-vowel-shift",
+    german: "treffen (e ➔ iff): ich treffe, du triffst (!), er/es/sie trifft (!), wir treffen, ihr trefft, sie/Sie treffen",
+    english: "treffen (to meet): I meet (treffe), you meet (triffst), he meets (trifft), we meet (treffen), you all meet (trefft), they meet (treffen)",
+    pronunciation: "TREF-fen: ikh TREF-feh, doo TRIFST, air TRIFT, veer TREF-fen, eer TREFT, zee TREF-fen",
+    audioText: "treffen. ich treffe, du triffst, er trifft, wir treffen, ihr trefft, sie treffen. Wen triffst du heute? Ich treffe Martin.",
+    layman: "Vowel Shift Rule: In 'treffen' (to meet), 'e' shifts to 'i' for 'du' and 'er/es/sie' (du triffst, er trifft)!",
+    analogy: "Meeting up with a friend in town: 'Triffst du heute deine Freunde?' (Are you meeting your friends today?)!",
+    example: "Er trifft seine Freunde um 18 Uhr im Café.",
+    exampleEnglish: "He meets his friends at 6 PM at the café.",
+    category: "2. Vokalwechsel (e ➔ ie/i)",
+    badge: "treffen: e ➔ iff",
+    icon: "🤝"
+  },
+
+  // Page 3: Plural - unbestimmter & Negativartikel
+  {
+    id: "s4-indefinite-plural-nullartikel",
+    german: "Unbestimmter Artikel im Plural: Der NULLARTIKEL (No 'ein' in Plural!)",
+    english: "Indefinite Article in Plural: ZERO ARTICLE (- Stühle / - Bücher / - Gitarren)",
+    pronunciation: "oon-be-SHTIM-ter ar-TEE-kel im ploo-RAHL: noor ar-TEE-kel",
+    audioText: "Das ist ein Stuhl. Das sind Stühle. Das ist ein Buch. Das sind Bücher. Das ist eine Gitarre. Das sind Gitarren.",
+    layman: "Golden Plural Rule: Just like in English you say 'This is a chair' but 'These are chairs' (NOT 'a chairs'), in German you NEVER put 'ein' in plural! You use NO article (Nullartikel): 'Das sind Stühle'!",
+    analogy: "Singular = 1 item ('a banana'). Plural = multiple items ('bananas', no 'a' in front)!",
+    example: "Singular: Hier ist ein Buch. ➔ Plural: Hier sind Bücher.",
+    exampleEnglish: "Singular: Here is a book. ➔ Plural: Here are books.",
+    category: "3. Plural & Negation",
+    badge: "Plural: Nullartikel (-)",
+    icon: "🪑"
+  },
+  {
+    id: "s4-negative-plural-keine",
+    german: "Negativartikel im Plural: keine (keine Stühle / keine Bücher / keine Gitarren)",
+    english: "Negative Article in Plural: keine (no chairs / no books / no guitars)",
+    pronunciation: "KIE-neh SHTEW-leh, KIE-neh BEW-kher, KIE-neh gee-TAH-ren",
+    audioText: "Das sind keine Stühle. Das sind keine Bücher. Das sind keine Gitarren.",
+    layman: "Negative Plural Rule: While indefinite plurals have no article, NEGATIVE plurals ALWAYS use 'keine' for ALL genders! 'keine Stühle', 'keine Bücher', 'keine Gitarren'!",
+    analogy: "Saying 'hakuna viti' or 'hakuna vitabu' in one clean word: 'keine' + plural noun!",
+    example: "Hier sind keine freien Plätze mehr.",
+    exampleEnglish: "There are no free seats left here.",
+    category: "3. Plural & Negation",
+    badge: "Negativ: keine",
+    icon: "🚫"
+  },
+
+  // Page 4: Nomen - Akkusativ (der/ein/kein/mein ➔ den/einen/keinen/meinen)
+  {
+    id: "s4-akkusativ-masculine-changer",
+    german: "Akkusativ: NUR MASKULIN VERÄNDERT SICH! (der/ein/kein/mein ➔ den/einen/keinen/meinen)",
+    english: "Accusative: ONLY MASCULINE CHANGES! (der ➔ den, ein ➔ einen, kein ➔ keinen, mein ➔ meinen)",
+    pronunciation: "der SHTOOL vert tsoo dayn SHTOOL, ie-nen SHTOOL, kie-nen SHTOOL, my-nen SHTOOL",
+    audioText: "Nominativ: der Stuhl, ein Stuhl, kein Stuhl, mein Stuhl. Akkusativ: den Stuhl, einen Stuhl, keinen Stuhl, meinen Stuhl.",
+    layman: "The #1 Golden Rule of Akkusativ: ONLY masculine nouns change their article to '-en' (der ➔ den, ein ➔ einen, kein ➔ keinen, mein ➔ meinen)! Neuter (das/ein), Feminine (die/eine), and Plural (die/keine) stay 100% IDENTICAL to Nominativ!",
+    analogy: "Think of Masculine as the only actor who puts on an '-en' uniform when receiving the action!",
+    example: "Nominativ: Der Stuhl ist bequem. ➔ Akkusativ: Ich brauche den Stuhl.",
+    exampleEnglish: "Nominative: The chair is comfy. ➔ Accusative: I need the chair.",
+    category: "4. Akkusativ Transformation",
+    badge: "Maskulin: -en Danger Zone!",
+    icon: "🎯"
+  },
+  {
+    id: "s4-akkusativ-all-genders-table",
+    german: "Akkusativ Matrix: den/einen (Mask.) • das/ein (Neut.) • die/eine (Fem.) • die/keine (Plur.)",
+    english: "Accusative Matrix: den/einen/keinen/meinen (m) | das/ein/kein/mein (n) | die/eine/keine/meine (f) | die/-/keine/meine (pl)",
+    pronunciation: "dayn SHTOOL, dahs BOOKH, dee gee-TAH-reh, dee SHTEW-leh",
+    audioText: "Ich brauche den Stuhl. Ich brauche das Buch. Ich brauche die Gitarre. Ich brauche die Stühle.",
+    layman: "Side-by-side comparison: Look at neuter ('das Buch' ➔ 'das Buch'), feminine ('die Gitarre' ➔ 'die Gitarre'), and plural ('die Stühle' ➔ 'die Stühle') — they never budge! Only masculine 'der Stuhl' becomes 'den Stuhl'!",
+    analogy: "3 loyal guards who never change clothes (das, die, die) and 1 transformer (der ➔ den)!",
+    example: "Ich suche den Schlüssel (m), das Handy (n), die Tasche (f) und die Papiere (pl).",
+    exampleEnglish: "I'm looking for the key (m), the mobile phone (n), the bag (f) and the papers (pl).",
+    category: "4. Akkusativ Transformation",
+    badge: "Full Akkusativ Matrix",
+    icon: "📊"
+  },
+
+  // Page 5: Personalpronomen für Nomen (er/es/sie)
+  {
+    id: "s4-pronouns-for-nouns",
+    german: "Personalpronomen für Nomen: der Stuhl ➔ er • das Buch ➔ es • die Gitarre ➔ sie • die Stühle ➔ sie",
+    english: "Personal Pronouns replacing Nouns: der Stuhl ➔ er (it/he), das Buch ➔ es (it), die Gitarre ➔ sie (it/she), die Stühle ➔ sie (they)",
+    pronunciation: "der SHTOOL ➔ air • dahs BOOKH ➔ ess • dee gee-TAH-reh ➔ zee • dee SHTEW-leh ➔ zee",
+    audioText: "Wie viel kostet der Stuhl? Er kostet 50 Euro. Wie viel kostet das Buch? Es kostet 15 Euro. Wie viel kostet die Gitarre? Sie kostet 120 Euro. Was kosten die Stühle? Sie kosten 100 Euro.",
+    layman: "German pronouns match the GENDER of the noun, NOT whether it is a human or object! 'der Stuhl' is replaced by 'er' (he/it), 'das Buch' by 'es' (it), 'die Gitarre' by 'sie' (she/it), and plural 'die Stühle' by 'sie' (they)!",
+    analogy: "Instead of repeating 'the chair... the chair... the chair...', replace 'der Stuhl' with 'Er' ('Er kostet 50 €')!",
+    example: "Der Tisch ist schön. Er kostet 80 Euro. Das Bett ist neu. Es kostet 200 Euro.",
+    exampleEnglish: "The table is nice. It costs 80 Euros. The bed is new. It costs 200 Euros.",
+    category: "5. Pronomen für Nomen",
+    badge: "der➔er, das➔es, die➔sie",
+    icon: "🔄"
+  },
+
+  // Page 6: Verben mit Akkusativ
+  {
+    id: "s4-akkusativ-trigger-verbs",
+    german: "Verben mit Akkusativ: brauchen, haben, nehmen, kaufen, suchen, möchten",
+    english: "Direct Object Verbs: to need (brauchen), to have (haben), to take (nehmen), to buy (kaufen), to look for (suchen), would like (möchten)",
+    pronunciation: "BROW-khen, HAH-ben, NAY-men, KOW-fen, ZOO-khen, MEUKH-ten",
+    audioText: "brauchen, haben, nehmen, kaufen, suchen, möchten. Ich brauche einen Stuhl. Wir haben ein Buch. Er nimmt den Salat. Sie kauft eine Gitarre.",
+    layman: "These action verbs directly target an object (the direct object = Akkusativ)! Whenever you use these verbs with a masculine noun, remember to use 'den / einen / keinen / meinen'!",
+    analogy: "The magnet verbs that pull the masculine noun into its '-en' suit: 'Ich brauche einen Kaffee'!",
+    example: "Herr Müller kauft einen neuen Laptop und eine Tasche.",
+    exampleEnglish: "Mr. Müller is buying a new laptop (m) and a bag (f).",
+    category: "6. Akkusativ-Verben",
+    badge: "Action Object Verbs",
+    icon: "🧲"
+  },
+
+  // Page 7: Nomen - Nullartikel (Essen & Trinken)
+  {
+    id: "s4-nullartikel-uncountable-food",
+    german: "Nullartikel bei Lebensmitteln & Stoffen: Es gibt Schokoladenkuchen / Reis / Tee / Milch / Käse",
+    english: "Zero Article for Uncountable Food & Beverages: There is chocolate cake / rice / tea / milk / cheese",
+    pronunciation: "ess gip-t SHOH-koh-lah-den-koo-khen, RYS, TAY, MILKH, KAY-zeh",
+    audioText: "Es gibt Schokoladenkuchen. Es gibt Reis. Es gibt Tee. Ich mag Schokoladenkuchen. Ich trinke gern Tee. Ich esse gern Käse.",
+    layman: "Uncountable food, bulk ingredients, and drinks take NO article (Nullartikel) when mentioned in general or after 'es gibt' and 'mögen'! Say 'Ich mag Käse' (NOT 'den Käse') and 'Es gibt Reis' (NOT 'einen Reis')!",
+    analogy: "Just like saying 'I drink water' or 'We have rice' in English without 'a'!",
+    example: "Zum Frühstück esse ich gern Brot mit Butter und trinke Kaffee.",
+    exampleEnglish: "For breakfast I like eating bread with butter and drinking coffee.",
+    category: "7. Nullartikel (Food & Drinks)",
+    badge: "Food Nullartikel",
+    icon: "🍰"
+  },
+
+  // Page 8: Präpositionen temporal (um vs. von ... bis)
+  {
+    id: "s4-preposition-um-exact-time",
+    german: "Präposition \"um\": Für genaue Uhrzeiten (um halb acht / um Viertel vor neun / um 14:40 Uhr)",
+    english: "Preposition 'um': For exact clock times (at 7:30 / at 8:45 / at 14:40)",
+    pronunciation: "OOM hahlp AHKHT, OOM FEER-tel fohr NOYN, OOM feer-tsayn oor FEER-tsikh",
+    audioText: "um halb acht. um Viertel vor neun. um 14 Uhr 40. Der Film beginnt um acht Uhr. Der Zug kommt um halb zehn.",
+    layman: "Use 'um' when pointing to a single exact moment on the clock (English 'at')! 'Wann beginnt der Kurs?' ➔ 'Um 9 Uhr.'",
+    analogy: "A pinpoint dart hitting an exact second on the clock face!",
+    example: "Wir treffen uns heute um Viertel nach drei.",
+    exampleEnglish: "We are meeting today at quarter past three.",
+    category: "8. Zeit-Präpositionen",
+    badge: "um = exact time (at)",
+    icon: "⏰"
+  },
+  {
+    id: "s4-preposition-von-bis-timespan",
+    german: "Präposition \"von ... bis\": Für Zeitspannen & Zeiträume (von zwei Uhr bis drei Uhr)",
+    english: "Preposition 'von ... bis': For time spans & periods (from 2 o'clock to 3 o'clock / from 8 to 17)",
+    pronunciation: "fon tsvy oor bis dry oor, fon hahlp dry bis FEER-tel fohr feer",
+    audioText: "von zwei Uhr bis drei Uhr. von halb drei bis Viertel vor vier. Das Geschäft ist von 8 Uhr bis 18 Uhr geöffnet.",
+    layman: "Use 'von ... bis' when talking about a duration with a start and end point (English 'from ... to')! 'Wann arbeiten Sie?' ➔ 'Von 8 bis 17 Uhr.'",
+    analogy: "A bridge connecting start time to end time: 'Kazi ni kuanzia saa mbili hadi saa kumi'!",
+    example: "Die Sprechzeiten sind von Montag bis Freitag, von 9 bis 12 Uhr.",
+    exampleEnglish: "Office hours are from Monday to Friday, from 9 to 12.",
+    category: "8. Zeit-Präpositionen",
+    badge: "von ... bis = from ... to",
+    icon: "⏳"
+  },
+
+  // Page 9: Cartoon Comic - Bargain Salad
+  {
+    id: "s4-cartoon-bargain-salad",
+    german: "Cartoon: \"Sie mögen doch keinen Salat.\" - \"Aber er ist heute so billig (0,10 €)!\"",
+    english: "Cartoon: 'You don't even like salad.' - 'But it is so cheap today (only 10 cents)!'",
+    pronunciation: "ZEE MEU-gen dokh KIE-nen zah-LAHT! - AH-ber air ist HOY-teh zoh BIL-likh!",
+    audioText: "Sie mögen doch keinen Salat. Aber er ist heute so billig! Nur zehn Cent!",
+    layman: "The famous supermarket bargain comic on Page 9! Look at the grammar brilliance: 'keinen Salat' (masculine accusative: der Salat ➔ keinen Salat) and 'er ist so billig' ('der Salat' replaced by pronoun 'er')!",
+    analogy: "Buying something you don't even eat just because it is on super discount at the supermarket: 'Lakini ni bei rahisi sana leo!'",
+    example: "Warum kaufst du fünf Salate? - Sie sind heute im Angebot!",
+    exampleEnglish: "Why are you buying five salads? - They are on special offer today!",
+    category: "9. Cartoon Comic",
+    badge: "Salad Bargain Comic",
+    icon: "🥗"
+  },
+
+  // Page 10: REDEMITTEL - Wünsche & Preise
+  {
+    id: "s4-redemittel-preise-wuensche",
+    german: "Wie viel kostet...? / Was kostet...? • Es / Er / Sie kostet (nur)...",
+    english: "How much is...? / What does... cost? • It costs (only)...",
+    pronunciation: "vee feel KOS-tet...? / vahs KOS-tet...? • ess / air / zee KOS-tet (noor)...",
+    audioText: "Wie viel kostet der Tisch? Er kostet 50 Euro. Was kostet das Buch? Es kostet nur zehn Euro. Wie viel kosten die Äpfel? Sie kosten drei Euro.",
+    layman: "Essential shopping phrases: Ask 'Wie viel kostet...?' and reply with the matching pronoun: 'Er kostet...' (der Tisch), 'Es kostet...' (das Buch), 'Sie kostet...' (die Lampe) or 'Sie kosten...' (die Äpfel)!",
+    analogy: "Market bargaining essentials: 'Hii ni pesa ngapi?' ('Wie viel kostet das?')!",
+    example: "Entschuldigung, wie viel kostet der Schokoladenkuchen? - Er kostet 3 Euro 50.",
+    exampleEnglish: "Excuse me, how much is the chocolate cake? - It costs 3.50 Euros.",
+    category: "10. Redemittel Toolkit",
+    badge: "Prices & Inquiries",
+    icon: "🏷️"
+  },
+  {
+    id: "s4-redemittel-bewerten",
+    german: "Etwas bewerten: Das ist billig / günstig / teuer / lecker / schön!",
+    english: "Evaluating something: That is cheap / reasonable / expensive / delicious / beautiful!",
+    pronunciation: "dahs ist BIL-likh / GEWN-stikh / TOY-er / LEK-ker / SHEUN!",
+    audioText: "Das ist sehr billig. Das ist günstig. Das ist aber teuer! Das Essen ist lecker. Die Gitarre ist wunderschön.",
+    layman: "Express your verdict: 'billig' (cheap/bargain), 'günstig' (good value/affordable), 'teuer' (expensive/pricey), 'lecker' (delicious/tasty), 'schön' (pretty/beautiful)!",
+    analogy: "Giving instant reviews on food, prices, or clothes in German!",
+    example: "50 Euro für diesen Stuhl ist wirklich sehr billig!",
+    exampleEnglish: "50 Euros for this chair is really very cheap!",
+    category: "10. Redemittel Toolkit",
+    badge: "Ratings & Opinions",
+    icon: "⭐"
+  },
+  {
+    id: "s4-redemittel-vorlieben-essen",
+    german: "Vorlieben & Gewohnheiten: Isst / Trinkst du gern...? • Ich habe keinen Hunger / keinen Durst.",
+    english: "Preferences & Eating Habits: Do you like eating / drinking...? • I am not hungry / not thirsty.",
+    pronunciation: "ist / TRINGKST doo gairn...? • ikh HAH-beh KIE-nen HOONG-er / KIE-nen DOORST.",
+    audioText: "Isst du gern Salat? Trinkst du gern Tee? Ich esse oft Pizza. Ich trinke nicht gern Bier. Ich habe keinen Hunger. Ich habe keinen Durst.",
+    layman: "Ask about dining tastes with 'gern' (gladly/with pleasure): 'Isst du gern Fisch?' (Do you like fish?). Say 'Ich habe keinen Hunger' (I'm not hungry) or 'Ich habe keinen Durst' (I'm not thirsty) with masculine accusative 'keinen'!",
+    analogy: "Hunger (der Hunger) and Durst (der Durst) are masculine, so they take 'keinen': 'Sina njaa'!",
+    example: "Möchtest du etwas essen? - Nein danke, ich habe noch keinen Hunger.",
+    exampleEnglish: "Would you like something to eat? - No thanks, I'm not hungry yet.",
+    category: "10. Redemittel Toolkit",
+    badge: "Food Habits & Hunger",
+    icon: "🥪"
+  },
+  {
+    id: "s4-redemittel-bestellen-zahlen",
+    german: "Bestellen & Bezahlen: Ich nehme... • Wir möchten bitte bezahlen • Zusammen oder getrennt? • Stimmt so!",
+    english: "Ordering & Paying: I'll take... • We would like to pay • Together or separate? • Keep the change!",
+    pronunciation: "ikh NAY-meh... • veer MEUKH-ten BIT-teh beh-TSAH-len • tsoo-ZAHM-men OH-der geh-TRENT? • SHTIMT zoh!",
+    audioText: "Ich nehme einen Kaffee und einen Kuchen. Gibt es heute Suppe? Wir möchten bitte bezahlen. Zahlen, bitte! Zusammen oder getrennt? Getrennt, bitte. Das macht 18 Euro. Hier sind 20 Euro, stimmt so!",
+    layman: "The complete German restaurant checkout dance! 'Zusammen oder getrennt?' (Paying on one bill or splitting?). Say 'Stimmt so!' when handing cash to the waiter to mean 'Keep the change'!",
+    analogy: "The golden tip phrase: When bill is 18 € and you give 20 €, say 'Stimmt so!' (Keep the extra 2 € as tip)!",
+    example: "Kellner: \"Zusammen oder getrennt?\" - Gäste: \"Getrennt, bitte. Ich zahle den Kaffee.\"",
+    exampleEnglish: "Waiter: 'Together or separate?' - Guests: 'Separate, please. I'll pay for the coffee.'",
+    category: "10. Redemittel Toolkit",
+    badge: "Restaurant & Tipping",
+    icon: "💳"
+  },
+  {
+    id: "s4-redemittel-nuetzliche-saetze",
+    german: "Nützliche Höflichkeitssätze: Ja, gern • Vielen Dank • Guten Appetit • Bitte schön",
+    english: "Useful Polite Phrases: Yes, with pleasure • Many thanks • Enjoy your meal • You're welcome",
+    pronunciation: "yah GAIRN • FEE-len DAHNK • GOO-ten ah-peh-TEET • BIT-teh SHEUN",
+    audioText: "Ja, gern! Danke schön. Vielen Dank! Guten Appetit! Bitte schön.",
+    layman: "Polite daily essentials that warm every conversation in Germany! 'Guten Appetit!' before eating, 'Ja, gern!' when accepting an offer, and 'Vielen Dank!' for heartfelt thanks.",
+    analogy: "Saying 'Karibu chakula' (Guten Appetit!) and 'Asante sana' (Vielen Dank!)!",
+    example: "Möchten Sie noch etwas Tee? - Ja, sehr gern, vielen Dank!",
+    exampleEnglish: "Would you like some more tea? - Yes, gladly, thank you so much!",
+    category: "10. Redemittel Toolkit",
+    badge: "Polite Polishers",
+    icon: "✨"
+  }
+];
+
+export const SUMMARY_4_SCENARIOS = [
+  {
+    scenario: "Look at the verb 'mögen' (Summary 4, Page 1). What is special about the 'ich' and 'er/es/sie' conjugations?",
+    hint: "Check Page 1: ich mag, er mag.",
+    options: [
+      { text: "They have NO verb ending and have a vowel shift (ö ➔ a): 'ich mag' and 'er/es/sie mag'.", correct: true, explain: "Genau! 'mögen' acts like a modal verb: the 1st and 3rd person singular forms have no ending at all (mag) and the stem vowel changes from 'ö' to 'a'!" },
+      { text: "They end in '-st' like 'ich magst'.", correct: false, explain: "'-st' is for du (du magst)." },
+      { text: "They keep the 'ö' and take '-e': 'ich möge'.", correct: false, explain: "'ich möge' is subjunctive; standard present tense is 'ich mag'." }
+    ]
+  },
+  {
+    scenario: "In German verbs with vowel shift like 'lesen', 'essen', and 'nehmen' (Page 2), for WHICH persons does the vowel change occur?",
+    hint: "Think about who gets the transformation!",
+    options: [
+      { text: "ONLY for 'du' and 'er/es/sie' (du liest/er liest, du isst/er isst, du nimmst/er nimmt).", correct: true, explain: "Richtig! The vowel shift happens strictly in the 2nd and 3rd person singular ('du' and 'er/es/sie'). All other forms ('ich', 'wir', 'ihr', 'sie/Sie') keep their base vowel!" },
+      { text: "For all singular and plural persons equally.", correct: false, explain: "Plural persons (wir, ihr, sie) and 'ich' do not change stem vowel." },
+      { text: "Only for 'wir' and 'sie'.", correct: false, explain: "'wir' and 'sie' always keep the regular infinitive stem." }
+    ]
+  },
+  {
+    scenario: "How do you say 'These are chairs' in German without making the common beginner mistake (Page 3)?",
+    hint: "Remember the Plural Nullartikel rule!",
+    options: [
+      { text: "Das sind Stühle (Zero article / Nullartikel in plural!).", correct: true, explain: "Perfekt! In German, just like English, plural indefinite nouns take NO article (Nullartikel). You NEVER say 'eine Stühle'!" },
+      { text: "Das sind ein Stühle.", correct: false, explain: "'ein' means 'one' and can never be attached to a plural noun!" },
+      { text: "Das sind einen Stühle.", correct: false, explain: "'einen' is masculine singular accusative, not plural." }
+    ]
+  },
+  {
+    scenario: "When transforming from Nominativ to Akkusativ (Page 4), which gender is the ONLY one whose articles change?",
+    hint: "Look at the 'der ➔ den' transformer.",
+    options: [
+      { text: "MASKULIN (der ➔ den, ein ➔ einen, kein ➔ keinen, mein ➔ meinen).", correct: true, explain: "Ausgezeichnet! Masculine is the ONLY gender that changes in Akkusativ! Neuter (das/ein), Feminine (die/eine), and Plural (die/keine) stay 100% identical to Nominativ!" },
+      { text: "FEMININ (die ➔ der).", correct: false, explain: "Feminine does not change in Akkusativ (die remains die)." },
+      { text: "NEUTRUM (das ➔ des).", correct: false, explain: "Neuter stays 'das/ein' in Akkusativ." }
+    ]
+  },
+  {
+    scenario: "How do you replace the masculine noun 'der Stuhl' when talking about its price (Page 5)? 'Wie viel kostet der Stuhl?'",
+    hint: "Pronouns match noun gender: der Stuhl ➔ ...",
+    options: [
+      { text: "\"Er kostet 50 Euro.\" (der Stuhl ➔ er)", correct: true, explain: "Wunderbar! Because 'der Stuhl' is masculine, it is replaced by the masculine pronoun 'er' (he/it): 'Er kostet 50 Euro'!" },
+      { text: "\"Es kostet 50 Euro.\"", correct: false, explain: "'es' is for neuter nouns like 'das Buch'." },
+      { text: "\"Sie kostet 50 Euro.\"", correct: false, explain: "'sie' is for feminine nouns like 'die Gitarre'." }
+    ]
+  },
+  {
+    scenario: "Why do we say 'Es gibt Schokoladenkuchen' and 'Ich trinke Milch' without any article (Page 7)?",
+    hint: "Uncountable food, bulk substances and beverages.",
+    options: [
+      { text: "Because uncountable foods, drinks, and bulk substances take the Nullartikel (zero article).", correct: true, explain: "Brilliant! Food substances, drinks, and uncountable items take no article when spoken of in general or after 'es gibt' and 'mögen'!" },
+      { text: "Because the speaker forgot the article.", correct: false, explain: "It is an intentional, standard grammar rule in German." },
+      { text: "Because food nouns have no gender.", correct: false, explain: "Every German noun has a gender (der Kuchen, die Milch), but uncountable mass nouns drop the article." }
+    ]
+  },
+  {
+    scenario: "Which preposition is used for an EXACT clock time ('at 8:00'), and which for a TIME SPAN ('from 2 to 4') (Page 8)?",
+    hint: "Exact point vs. interval.",
+    options: [
+      { text: "um 8:00 Uhr (exact time) • von 2 bis 4 Uhr (time span)", correct: true, explain: "Super! 'um' marks an exact point on the clock ('um halb acht'), while 'von ... bis' defines a time interval ('von 2 bis 4')!" },
+      { text: "von 8:00 Uhr • um 2 bis 4 Uhr", correct: false, explain: "The prepositions are swapped." },
+      { text: "nach 8:00 Uhr • vor 2 bis 4 Uhr", correct: false, explain: "These indicate 'after' and 'before', not 'at' and 'from...to'." }
+    ]
+  },
+  {
+    scenario: "When the waiter asks: \"Zusammen oder getrennt?\", and you want to tell them to keep the change as a tip, what phrase do you use (Page 10)?",
+    hint: "The classic German tipping phrase!",
+    options: [
+      { text: "\"Stimmt so!\" (Keep the change / That's fine!)", correct: true, explain: "Perfekt! 'Stimmt so!' is the universal German phrase for tipping the server and letting them keep the difference!" },
+      { text: "\"Guten Appetit!\"", correct: false, explain: "'Guten Appetit' means 'Enjoy your meal'." },
+      { text: "\"Keinen Hunger!\"", correct: false, explain: "'Keinen Hunger' means 'Not hungry'." }
+    ]
+  }
+];
+
+
 
 
 
