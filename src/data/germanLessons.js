@@ -16819,6 +16819,401 @@ export const SUMMARY_1_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// SUMMARY 2: GRAMMATIK & REDEMITTEL
+// Source: A1 Visual Grammar & Communication Overview (Pages 1-8)
+// Topics: Verb Conjugation (kommen, heißen), Special Verbs (sein, haben),
+// Nouns & Articles (der/das/die, ein, kein), Temporal Preposition (am),
+// Sentence Structure (Position 2 Rule & Inversion), Negation (nicht vs kein),
+// The Magic 'Doch', Cartoon (Sie vs sie), and Complete Redemittel Toolkit.
+// ==========================================
+export const SUMMARY_2_ITEMS = [
+  {
+    id: "s2-verb-kommen",
+    german: "kommen (ich komme, du kommst, er/sie kommt, wir kommen, ihr kommt, sie/Sie kommen)",
+    english: "to come (I come, you come, he/she comes, we come, you all come, they/you formal come)",
+    pronunciation: "KOM-men (ikh KOM-meh, doo KOMST, air KOMT...)",
+    audioText: "kommen. ich komme, du kommst, er kommt, wir kommen, ihr kommt, sie kommen.",
+    layman: "The standard regular verb blueprint. Remove '-en' to get the stem 'komm-' and attach the golden endings: -e, -st, -t, -en, -t, -en!",
+    analogy: "Like putting on the right official badge depending on who is doing the action.",
+    example: "Woher kommst du? - Ich komme aus Nairobi.",
+    exampleEnglish: "Where do you come from? - I come from Nairobi.",
+    category: "1. Verben: Präsens",
+    badge: "Regular Verb Template",
+    icon: "🚶"
+  },
+  {
+    id: "s2-verb-heissen",
+    german: "heißen (ich heiße, du heißt, er/sie heißt, wir heißen, ihr heißt, sie/Sie heißen)",
+    english: "to be called / named (I am called, you are called, he/she is called...)",
+    pronunciation: "HY-sen (ikh HY-seh, doo HYST, air HYST...)",
+    audioText: "heißen. ich heiße, du heißt, er heißt, wir heißen, ihr heißt, sie heißen.",
+    layman: "CRITICAL SPECIAL RULE: Because the stem 'heiß-' already ends with a sharp S-sound ('ß'), 'du' only adds '-t' ('du heißt'), NEVER '-st' ('du heißst' is impossible)!",
+    analogy: "If a room is already full of S-sounds, you don't add another S. 'du heißt' and 'er heißt' sound identical!",
+    example: "Wie heißt du? - Ich heiße Paola.",
+    exampleEnglish: "What is your name? - I am called Paola.",
+    category: "1. Verben: Präsens",
+    badge: "ß-Ending Rule: du heißt",
+    icon: "🏷️"
+  },
+  {
+    id: "s2-verb-sein",
+    german: "sein (ich bin, du bist, er/es/sie ist, wir sind, ihr seid, sie/Sie sind)",
+    english: "to be (I am, you are, he/it/she is, we are, you all are, they/You are)",
+    pronunciation: "ZAYN (ikh bin, doo bist, air ist, veer zint, eer zayt, zee zint)",
+    audioText: "sein. ich bin, du bist, er ist, wir sind, ihr seid, sie sind.",
+    layman: "The king of irregular verbs! Completely unique forms that must be memorized like your own phone number.",
+    analogy: "Like the Swahili verb 'kuwa' (mimi ni, wewe ni, sisi ni). Essential for stating who you are, the time, and where you are located.",
+    example: "Es ist elf Uhr. Ich bin aus Kenia.",
+    exampleEnglish: "It is 11 o'clock. I am from Kenya.",
+    category: "2. Besondere Verben",
+    badge: "King Verb: sein",
+    icon: "👑"
+  },
+  {
+    id: "s2-verb-haben",
+    german: "haben (ich habe, du hast, er/es/sie hat, wir haben, ihr habt, sie/Sie haben)",
+    english: "to have (I have, you have, he/she has, we have, you all have, they/You have)",
+    pronunciation: "HAH-ben (ikh HAH-beh, doo HAST, air HAT, veer HAH-ben, eer HAPT, zee HAH-ben)",
+    audioText: "haben. ich habe, du hast, er hat, wir haben, ihr habt, sie haben.",
+    layman: "The queen of possession! Notice the subtle drop: 'du hast' and 'er hat' drop the letter 'b' from the stem 'hab-' for smooth, effortless speech!",
+    analogy: "Like saying 'I have free time' or 'I have a pencil'. 'du hast' (not habst) and 'er hat' (not habt)!",
+    example: "Hast du am Montag frei? - Ja, ich habe frei.",
+    exampleEnglish: "Do you have free time on Monday? - Yes, I am free.",
+    category: "2. Besondere Verben",
+    badge: "Queen Verb: haben",
+    icon: "💼"
+  },
+  {
+    id: "s2-art-bleistift",
+    german: "der Bleistift • ein Bleistift • kein Bleistift",
+    english: "the pencil • a pencil • no pencil (Masculine / maskulin)",
+    pronunciation: "dair BLY-shtift • ayn BLY-shtift • kayn BLY-shtift",
+    audioText: "der Bleistift. ein Bleistift. kein Bleistift.",
+    layman: "Masculine nouns take 'der' (the), 'ein' (a), and 'kein' (no / not a). Notice zero extra endings on 'ein' and 'kein' in Nominativ!",
+    analogy: "Blue color code for masculine objects: der ➔ ein ➔ kein.",
+    example: "Ist das ein Bleistift? - Nein, das ist kein Bleistift.",
+    exampleEnglish: "Is that a pencil? - No, that is not a pencil.",
+    category: "3. Nomen & Artikel",
+    badge: "Masculine: der / ein / kein",
+    icon: "✏️"
+  },
+  {
+    id: "s2-art-heft",
+    german: "das Heft • ein Heft • kein Heft",
+    english: "the notebook • a notebook • no notebook (Neuter / neutral)",
+    pronunciation: "dahs HEFT • ayn HEFT • kayn HEFT",
+    audioText: "das Heft. ein Heft. kein Heft.",
+    layman: "Neuter nouns take 'das' (the), 'ein' (a), and 'kein' (no / not a). Exactly like masculine in 'ein' and 'kein'!",
+    analogy: "Green/Yellow color code for neuter objects: das ➔ ein ➔ kein.",
+    example: "Das ist ein Heft. Das ist kein Buch.",
+    exampleEnglish: "That is an exercise book / notebook. That is not a book.",
+    category: "3. Nomen & Artikel",
+    badge: "Neuter: das / ein / kein",
+    icon: "📓"
+  },
+  {
+    id: "s2-art-lampe",
+    german: "die Lampe • eine Lampe • keine Lampe",
+    english: "the lamp • a lamp • no lamp (Feminine / feminin)",
+    pronunciation: "dee LAHM-peh • EYE-neh LAHM-peh • KY-neh LAHM-peh",
+    audioText: "die Lampe. eine Lampe. keine Lampe.",
+    layman: "Feminine nouns take 'die' (the), 'eine' (a), and 'keine' (no / not a). Notice the feminine '-e' ending added to both 'eine' and 'keine'!",
+    analogy: "Red/Pink color code for feminine objects: die ➔ eine ➔ keine (the '-e' lady rule).",
+    example: "Hier ist eine Lampe. Da ist keine Lampe.",
+    exampleEnglish: "Here is a lamp. There is no lamp there.",
+    category: "3. Nomen & Artikel",
+    badge: "Feminine: die / eine / keine",
+    icon: "💡"
+  },
+  {
+    id: "s2-prep-am",
+    german: "temporal (wann?): am Montag, am Vormittag, am Nachmittag, am Abend",
+    english: "time preposition (when?): on Monday, in the morning, in the afternoon, in the evening",
+    pronunciation: "ahm MOHN-tahk, ahm FOHR-mi-tahk, ahm NAHKH-mi-tahk, ahm AH-bent",
+    audioText: "am Montag. am Vormittag. am Nachmittag. am Abend. in der Nacht.",
+    layman: "When answering 'Wann?' (When?), ALL days of the week (am Montag, am Dienstag) and daytime parts take 'am'! The only exception is nighttime which takes 'in der Nacht'.",
+    analogy: "'am' = an + dem (on the). Think of pinning an event on the Monday calendar block.",
+    example: "Hast du am Montag frei? - Ja, am Montag habe ich frei.",
+    exampleEnglish: "Are you free on Monday? - Yes, on Monday I am free.",
+    category: "4. Präposition (temporal)",
+    badge: "Preposition: am",
+    icon: "📅"
+  },
+  {
+    id: "s2-satz-aussage",
+    german: "Aussagesatz: Ich heiße Paola Ramoni. / Es ist drei Uhr.",
+    english: "Statement: My name is Paola Ramoni. / It is three o'clock.",
+    pronunciation: "ikh HY-seh... / es ist dry oor",
+    audioText: "Ich heiße Paola Ramoni. Es ist drei Uhr.",
+    layman: "The Golden Rule of German: The conjugated verb is ALWAYS in Position 2! Position 1 can be the subject or another element.",
+    analogy: "The verb is the train locomotive fixed on track #2.",
+    example: "Ich heiße Paola Ramoni. Wir kommen aus Kenia.",
+    exampleEnglish: "My name is Paola Ramoni. We come from Kenya.",
+    category: "5. Satzstruktur (Position 2)",
+    badge: "Verb in Position 2",
+    icon: "🚂"
+  },
+  {
+    id: "s2-satz-inversion",
+    german: "Inversion: In Berlin ist es elf Uhr. / Am Montag habe ich frei.",
+    english: "Inverted Statement: In Berlin it is 11 o'clock. / On Monday I have free time.",
+    pronunciation: "in bair-LEEN ist es elf oor / ahm MOHN-tahk HAH-beh ikh fry",
+    audioText: "In Berlin ist es elf Uhr. Am Montag habe ich frei.",
+    layman: "When you put a place (In Berlin) or a time (Am Montag) in Position 1, the verb STAYS firmly in Position 2, and the subject (es / ich) moves to Position 3!",
+    analogy: "Like a dance partner stepping aside: Time/Place takes the front seat, the verb remains #2, and the pronoun steps right behind it.",
+    example: "Heute ist Montag. In Berlin ist es elf Uhr.",
+    exampleEnglish: "Today is Monday. In Berlin it is eleven o'clock.",
+    category: "5. Satzstruktur (Position 2)",
+    badge: "Inversion Rule",
+    icon: "🔄"
+  },
+  {
+    id: "s2-satz-wfrage",
+    german: "W-Frage: Wie heißen Sie? / Woher kommst du? / Wann hast du frei?",
+    english: "W-Question: What is your name? / Where do you come from? / When are you free?",
+    pronunciation: "vee HY-sen ZEE? / voh-HAIR KOMST doo? / vahn HAST doo fry?",
+    audioText: "Wie heißen Sie? Woher kommst du? Wann hast du frei?",
+    layman: "In W-questions, the question word (Wie, Woher, Wann) sits in Position 1, and the conjugated verb sits strictly in Position 2!",
+    analogy: "Question Word (#1) + Action Verb (#2) + Subject Person (#3).",
+    example: "Woher kommen Sie? - Ich komme aus Nairobi.",
+    exampleEnglish: "Where do you come from? - I come from Nairobi.",
+    category: "5. Satzstruktur (Position 2)",
+    badge: "W-Questions (Position 2)",
+    icon: "❓"
+  },
+  {
+    id: "s2-satz-janein",
+    german: "Ja/Nein-Frage: Hast du am Montag frei? / Ist das ein Heft?",
+    english: "Yes/No Question: Are you free on Monday? / Is that a notebook?",
+    pronunciation: "HAST doo ahm MOHN-tahk fry? / ist dahs ayn heft?",
+    audioText: "Hast du am Montag frei? Ist das ein Heft?",
+    layman: "In Yes/No questions with no question word, the verb jumps straight to Position 1 to ask the question directly!",
+    analogy: "Action first! Jump-starting the sentence with the verb to prompt a simple 'Ja' or 'Nein'.",
+    example: "Hast du morgen frei? - Ja, ich habe frei.",
+    exampleEnglish: "Are you free tomorrow? - Yes, I am free.",
+    category: "5. Satzstruktur (Position 2)",
+    badge: "Verb in Position 1 (Ja/Nein)",
+    icon: "⚡"
+  },
+  {
+    id: "s2-neg-nicht",
+    german: "Negation mit nicht: Ich habe frei. ➔ Ich habe nicht frei.",
+    english: "Negation with 'nicht': I am free. ➔ I am NOT free.",
+    pronunciation: "ikh HAH-beh fry ➔ ikh HAH-beh nikht fry",
+    audioText: "Ich habe frei. Ich habe nicht frei. Das ist nicht richtig.",
+    layman: "Use 'nicht' to negate verbs, adjectives, states, or entire actions (like 'frei haben', 'nicht kommen', 'nicht richtig').",
+    analogy: "Like placing 'not' before the adjective/state in English: not free, not right.",
+    example: "Nein, am Montag habe ich nicht frei.",
+    exampleEnglish: "No, on Monday I am not free.",
+    category: "6. Negation & Doch",
+    badge: "Negating with 'nicht'",
+    icon: "🚫"
+  },
+  {
+    id: "s2-neg-kein",
+    german: "Negation mit kein-: Da ist ein Bus. ➔ Da ist kein Bus.",
+    english: "Negation with 'kein-': There is a bus. ➔ There is NO bus.",
+    pronunciation: "dah ist ayn boos ➔ dah ist kayn boos",
+    audioText: "Da ist ein Bus. Da ist kein Bus. Das ist kein Bleistift.",
+    layman: "Use 'kein-' (kein, keine, kein) strictly to negate NOUNS that normally have 'ein' or no article (like no bus, no pencil, no lamp).",
+    analogy: "The Magic 'K' Rule: 'ein' becomes 'k-ein'! ein Bus ➔ kein Bus. eine Lampe ➔ keine Lampe.",
+    example: "Ist das eine Lampe? - Nein, das ist keine Lampe.",
+    exampleEnglish: "Is that a lamp? - No, that is not a lamp.",
+    category: "6. Negation & Doch",
+    badge: "Negating Nouns with 'kein-'",
+    icon: "🚏"
+  },
+  {
+    id: "s2-doch",
+    german: "Die Zauberantwort \"Doch!\": Da ist kein Bus. ➔ Doch, da ist ein Bus!",
+    english: "The Magic Word 'Doch!': There is no bus. ➔ Oh yes there is, there IS a bus!",
+    pronunciation: "dokh, dah ist ayn boos!",
+    audioText: "Da ist kein Bus. Doch, da ist ein Bus! Hast du kein Geld? Doch, ich habe Geld!",
+    layman: "German's secret superpower word! If someone makes a negative statement or asks a negative question ('There is no bus / You don't have free time'), use 'DOCH!' to contradict them and say 'On the contrary, YES there is! / YES I do!'.",
+    analogy: "Like standing up and saying 'Wapi! Kuna basi bwana!' (Contradicting a negative doubt with confidence).",
+    example: "Das ist kein Heft. - Doch, das ist ein Heft!",
+    exampleEnglish: "That's not a notebook. - On the contrary, YES it is a notebook!",
+    category: "6. Negation & Doch",
+    badge: "Superpower Word: DOCH!",
+    icon: "✨"
+  },
+  {
+    id: "s2-cartoon-sie",
+    german: "Cartoon: \"Woher kommen sie?\" - \"Nicht Sie, Herr und Frau Allakallariak!\"",
+    english: "Cartoon: 'Where do they come from?' - 'Not YOU (formal), Mr. and Mrs. Allakallariak!'",
+    pronunciation: "voh-HAIR KOM-men zee? - nikht zee...",
+    audioText: "Woher kommen sie? Ich bin aus... Nicht Sie, Herr und Frau Allakallariak!",
+    layman: "Illustrates the hilarious visual confusion in German between lowercase 'sie' (they) and capital 'Sie' (you formal). In spoken German, both sound identical ('kommen sie?'), so the neighbor thought he was being asked!",
+    analogy: "Like pointing towards the door asking about the guests, and the person standing next to you mistakenly answers for himself.",
+    example: "Woher kommen sie? - Sie kommen aus Deutschland.",
+    exampleEnglish: "Where do they come from? - They come from Germany.",
+    category: "7. Sie (formal) vs. sie (they)",
+    badge: "Capital Sie vs Lowercase sie",
+    icon: "🎨"
+  },
+  {
+    id: "s2-redemittel-andere",
+    german: "andere vorstellen: Das ist Frau ... / Herr ... Woher kommt ...? Er/Sie kommt aus ...",
+    english: "introducing others: This is Ms. ... / Mr. ... Where is ... from? He/She comes from ...",
+    pronunciation: "dahs ist frow... / hair... voh-HAIR KOMT... air/zee KOMT ows...",
+    audioText: "Das ist Frau Müller. Das ist Herr Schmidt. Er kommt aus Kenia. Sie kommt aus Deutschland.",
+    layman: "How to introduce colleagues, visitors, or friends to other people in a meeting or party.",
+    analogy: "Introducing a guest at a ceremony: 'This is Mr. Kamau, he comes from Mombasa.'",
+    example: "Das ist Herr Allakallariak. Er kommt aus Grönland.",
+    exampleEnglish: "This is Mr. Allakallariak. He comes from Greenland.",
+    category: "8. Redemittel",
+    badge: "Introducing Others",
+    icon: "👥"
+  },
+  {
+    id: "s2-redemittel-telefon",
+    german: "die Telefonnummer sagen: Wie ist die Telefonnummer von ...? Die Telefonnummer von ... ist ...",
+    english: "giving phone numbers: What is the phone number of ...? The phone number of ... is ...",
+    pronunciation: "vee ist dee tay-leh-FOHN-noom-mer fon...? dee tay-leh-FOHN-noom-mer fon... ist...",
+    audioText: "Wie ist die Telefonnummer von Maria? Die Telefonnummer von Maria ist null sieben eins zwei drei.",
+    layman: "Standard conversational inquiry for someone's contact or office phone number.",
+    analogy: "Asking for someone's M-Pesa or office phone line.",
+    example: "Wie ist die Telefonnummer von Paola? - Die Telefonnummer von Paola ist 0176 4589.",
+    exampleEnglish: "What is Paola's phone number? - Paola's phone number is 0176 4589.",
+    category: "8. Redemittel",
+    badge: "Asking Phone Numbers",
+    icon: "📞"
+  },
+  {
+    id: "s2-redemittel-uhrzeit",
+    german: "Uhrzeit & Tageszeit angeben: Wie spät ist es? Es ist neun Uhr. Es ist elf Uhr am Vormittag. Heute ist Montag.",
+    english: "giving time & days: What time is it? It is 9 o'clock. It is 11 AM in the morning. Today is Monday.",
+    pronunciation: "vee shpayt ist es? es ist noyn oor. es ist elf oor ahm FOHR-mi-tahk. HOY-teh ist MOHN-tahk.",
+    audioText: "Wie spät ist es? Es ist neun Uhr. Es ist elf Uhr am Vormittag. Heute ist Montag. Morgen ist Dienstag.",
+    layman: "Asking the clock time and stating the current hour, day part (am Vormittag), or day of the week (Heute ist Montag).",
+    analogy: "Checking your watch and telling your friend what day and hour it is.",
+    example: "Wie spät ist es? - Es ist drei Uhr.",
+    exampleEnglish: "What time is it? - It is three o'clock.",
+    category: "8. Redemittel",
+    badge: "Time & Day Talk",
+    icon: "⏰"
+  },
+  {
+    id: "s2-redemittel-frei",
+    german: "sagen, wann man frei hat: Wann hast du frei? - Ja, ich habe am Montag frei. / Nein, am Montag habe ich nicht frei.",
+    english: "talking about free time: When are you free? - Yes, I am free on Monday. / No, on Monday I am not free.",
+    pronunciation: "vahn HAST doo fry? - yah, ikh HAH-beh ahm MOHN-tahk fry. / nayn, ahm MOHN-tahk HAH-beh ikh nikht fry.",
+    audioText: "Wann hast du frei? Hast du am Montag frei? Ja, ich habe am Montag frei. Nein, am Montag habe ich nicht frei.",
+    layman: "Coordinating schedules with colleagues, bosses, or study partners.",
+    analogy: "Asking a buddy when they are off work or free for lunch.",
+    example: "Wann habt ihr frei? - Wir haben morgen frei.",
+    exampleEnglish: "When do you all have free time? - We are free tomorrow.",
+    category: "8. Redemittel",
+    badge: "Schedule & Free Time",
+    icon: "🏖️"
+  },
+  {
+    id: "s2-redemittel-bedeutung",
+    german: "nach der Bedeutung fragen: Wie heißt das auf Deutsch? Das Wort kenne ich nicht. Wie schreibt man das? Was ist das?",
+    english: "asking for meaning: What is that called in German? I don't know that word. How do you spell/write that? What is that?",
+    pronunciation: "vee HYST dahs owf DOYCH? dahs vort KEN-neh ikh nikht. vee SHRYPT mahn dahs? vahs ist dahs?",
+    audioText: "Wie heißt das auf Deutsch? Das Wort kenne ich nicht. Wie schreibt man das? Was ist das? Ich glaube, das ist ein Bleistift.",
+    layman: "The essential survival phrases in every German classroom or office! Never feel stuck when encountering an unfamiliar word or item.",
+    analogy: "Pointing at an item in a market and asking 'Hii inaitwaje kwa Kijerumani?' (What is this called in German?).",
+    example: "Wie heißt das auf Deutsch? - Das ist ein Heft.",
+    exampleEnglish: "What is that called in German? - That is a notebook.",
+    category: "8. Redemittel",
+    badge: "Classroom & Meaning Survival",
+    icon: "🤔"
+  },
+  {
+    id: "s2-redemittel-nuetzlich",
+    german: "nützliche Sätze: Tut mir leid. Das ist richtig. Das ist falsch. Entschuldigung.",
+    english: "useful courtesy phrases: I'm sorry. That is correct. That is wrong. Excuse me / Pardon.",
+    pronunciation: "toot meer LYT. dahs ist RIKH-tikh. dahs ist FAHLSH. ent-SHOOL-dee-goong.",
+    audioText: "Tut mir leid. Das ist richtig. Das ist falsch. Entschuldigung!",
+    layman: "Polite social cushions that make conversations smooth and respectful.",
+    analogy: "Saying 'Samahani' (Entschuldigung) or 'Pole sana' (Tut mir leid) in daily Kenyan life.",
+    example: "Entschuldigung! - Kein Problem, das ist richtig.",
+    exampleEnglish: "Excuse me! - No problem, that is correct.",
+    category: "8. Redemittel",
+    badge: "Social Courtesy Phrases",
+    icon: "🤝"
+  }
+];
+
+export const SUMMARY_2_SCENARIOS = [
+  {
+    scenario: "Why is the second person singular form of 'heißen' written as 'du heißt' and NOT 'du heißst' (Summary 2, Page 1)?",
+    hint: "Think about the stem ending in the sharp 'ß' sound.",
+    options: [
+      { text: "Because the stem 'heiß-' already ends in 'ß' (s-sound), so you only add '-t' (du heißt).", correct: true, explain: "Genau! In German, verb stems ending in 'ß', 's', or 'z' already have a sharp S sound, so 'du' only adds '-t' to prevent clunky pronunciation (du heißt)!" },
+      { text: "Because 'heißen' is a modal verb.", correct: false, explain: "'heißen' is a regular verb with an S-stem phonological rule." },
+      { text: "Because 'du' always takes '-e'.", correct: false, explain: "'ich' takes '-e', 'du' normally takes '-st'." }
+    ]
+  },
+  {
+    scenario: "How do you conjugate 'sein' (to be) for 'wir' (we) and 'ihr' (you all) in Präsens (Summary 2, Page 2)?",
+    hint: "Check Page 2 table for 'sein'.",
+    options: [
+      { text: "wir sind • ihr seid", correct: true, explain: "Richtig! 'wir sind' (we are) and 'ihr seid' (you all are) are the correct forms of 'sein'." },
+      { text: "wir haben • ihr habt", correct: false, explain: "Those are forms of 'haben' (to have), not 'sein' (to be)!" },
+      { text: "wir sein • ihr seint", correct: false, explain: "Those forms do not exist." }
+    ]
+  },
+  {
+    scenario: "Which set of articles correctly matches 'Bleistift' (maskulin), 'Heft' (neutral), and 'Lampe' (feminin) in Nominativ (Summary 2, Page 3)?",
+    hint: "Der, das, die / ein, ein, eine / kein, kein, keine.",
+    options: [
+      { text: "der/ein/kein Bleistift • das/ein/kein Heft • die/eine/keine Lampe", correct: true, explain: "Perfekt! Masculine takes der/ein/kein, Neuter takes das/ein/kein, and Feminine takes die/eine/keine!" },
+      { text: "die Bleistift • der Heft • das Lampe", correct: false, explain: "All genders are mixed up." },
+      { text: "der/eine Bleistift • das/eine Heft • die/ein Lampe", correct: false, explain: "Only feminine nouns take 'eine' and 'keine' in Nominativ!" }
+    ]
+  },
+  {
+    scenario: "Which temporal preposition must you use when saying 'on Monday' or 'in the morning' in German (Summary 2, Page 4 & 8)?",
+    hint: "Think of days and day parts.",
+    options: [
+      { text: "am (am Montag, am Vormittag, am Abend)", correct: true, explain: "Ausgezeichnet! All days of the week and parts of days use 'am' (an + dem). Note: only night is 'in der Nacht'!" },
+      { text: "im (im Montag)", correct: false, explain: "'im' is for months and seasons (im Juli, im Sommer), not days!" },
+      { text: "um (um Montag)", correct: false, explain: "'um' is strictly for exact clock times (um 11 Uhr)!" }
+    ]
+  },
+  {
+    scenario: "Look at the inverted sentence: 'In Berlin _____ es elf Uhr.' (Summary 2, Page 5). What is the Golden Rule for verb placement?",
+    hint: "Where must the conjugated verb ALWAYS sit in a statement?",
+    options: [
+      { text: "ist (The conjugated verb MUST ALWAYS remain in Position 2!).", correct: true, explain: "Wunderbar! Position 1 = 'In Berlin', Position 2 = 'ist', Position 3 = Subject 'es'. The verb never moves from Position 2 in main statements!" },
+      { text: "es ist (Verb goes to the end)", correct: false, explain: "In main clauses, the conjugated verb is strictly in Position 2." },
+      { text: "sein (Infinitive)", correct: false, explain: "The verb must be conjugated to 'ist'." }
+    ]
+  },
+  {
+    scenario: "Someone says: 'Da ist kein Bus.' (There is no bus). But you can clearly see the bus approaching! How do you answer in German (Summary 2, Page 6)?",
+    hint: "Use the magic German contradiction superpower word!",
+    options: [
+      { text: "Doch, da ist ein Bus!", correct: true, explain: "Brilliant! When contradicting a negative statement or negative question ('kein Bus / nicht frei'), you use 'Doch!' to mean 'On the contrary, YES there is!'." },
+      { text: "Ja, da ist kein Bus.", correct: false, explain: "'Ja' would agree that there is no bus." },
+      { text: "Nein, da ist ein Bus.", correct: false, explain: "German uses 'Doch' to reverse negatives, not 'Nein'." }
+    ]
+  },
+  {
+    scenario: "In the cartoon on Page 7, why did the neighbor mistakenly reply 'Ich bin aus...' when asked 'Woher kommen sie?'?",
+    hint: "Think about the pronunciation of formal 'Sie' vs plural 'sie'.",
+    options: [
+      { text: "Because lowercase 'sie' (they) and capital 'Sie' (you formal) sound 100% identical in speech!", correct: true, explain: "Genau! Both use the exact same verb form 'kommen sie/Sie?', so in spoken German without seeing capital letters, context is essential!" },
+      { text: "Because the neighbor did not know his own name.", correct: false, explain: "It was a hilarious linguistic misunderstanding between 'they' and 'you formal'." },
+      { text: "Because 'kommen' means to leave.", correct: false, explain: "'kommen' means to come." }
+    ]
+  },
+  {
+    scenario: "You don't know what an object on your desk is called in German. What should you ask your teacher (Summary 2, Page 8)?",
+    hint: "Check the 'nach der Bedeutung fragen' section on Page 8.",
+    options: [
+      { text: "Wie heißt das auf Deutsch? / Was ist das?", correct: true, explain: "Super! 'Wie heißt das auf Deutsch?' (What is that called in German?) and 'Was ist das?' are the golden survival questions." },
+      { text: "Wie spät ist es?", correct: false, explain: "That asks what time it is." },
+      { text: "Hast du am Montag frei?", correct: false, explain: "That asks about free time on Monday." }
+    ]
+  }
+];
+
+
 
 
 
