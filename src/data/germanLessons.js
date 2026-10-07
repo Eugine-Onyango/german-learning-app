@@ -17888,6 +17888,318 @@ export const SUMMARY_4_SCENARIOS = [
   }
 ];
 
+export const SUMMARY_5_ITEMS = [
+  // Page 1: Präsens - Modalverben
+  {
+    id: "s5-muessen-conjugation",
+    german: "müssen (must / have to): ich muss, du musst, er/es/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
+    english: "müssen (to have to / must): I must (muss), you must (musst), he must (muss), we must (müssen), you all must (müsst), they must (müssen)",
+    pronunciation: "MEW-sen: ikh MOOS, doo MOOST, air MOOS, veer MEW-sen, eer MEWST, zee MEW-sen",
+    audioText: "müssen. ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen, Sie müssen. Karin muss jeden Tag acht Stunden arbeiten.",
+    layman: "Expresses duty, rule, or unavoidable necessity ('lazima')! Modal Rule: 'ich' and 'er/es/sie' are identical twins with ZERO ending (muss), and the vowel shifts from 'ü' to 'u' in singular!",
+    analogy: "Like an urgent alarm clock: 'Lazima niamke mapema' ➔ 'Ich muss früh aufstehen'!",
+    example: "Karin muss jeden Tag acht Stunden arbeiten.",
+    exampleEnglish: "Karin has to work eight hours every day.",
+    category: "1. Modalverben",
+    badge: "müssen = must/have to",
+    icon: "⏰"
+  },
+  {
+    id: "s5-koennen-conjugation",
+    german: "können (can / to be able to): ich kann, du kannst, er/es/sie kann, wir können, ihr könnt, sie/Sie können",
+    english: "können (can / able to): I can (kann), you can (kannst), he can (kann), we can (können), you all can (könnt), they can (können)",
+    pronunciation: "KEU-nen: ikh KAHN, doo KAHNST, air KAHN, veer KEU-nen, eer KEUNT, zee KEU-nen",
+    audioText: "können. ich kann, du kannst, er kann, wir können, ihr könnt, sie können, Sie können. Karins Avatar kann Klavier spielen.",
+    layman: "Expresses ability, learned skill, or possibility ('naweza')! Modal Rule: 'ich' and 'er' have NO endings (kann), and the vowel shifts from 'ö' to 'a' in singular!",
+    analogy: "Showing off your superpowers: 'Naweza kucheza kinanda' ➔ 'Ich kann Klavier spielen'!",
+    example: "Karins Avatar kann sehr gut Klavier spielen.",
+    exampleEnglish: "Karin's avatar can play the piano very well.",
+    category: "1. Modalverben",
+    badge: "können = can/able to",
+    icon: "🎹"
+  },
+  {
+    id: "s5-wollen-conjugation",
+    german: "wollen (to want / intend): ich will, du willst, er/es/sie will, wir wollen, ihr wollt, sie/Sie wollen",
+    english: "wollen (to want): I want (will), you want (willst), he wants (will), we want (wollen), you all want (wollt), they want (wollen)",
+    pronunciation: "VOL-len: ikh VIL, doo VILST, air VIL, veer VOL-len, eer VOLT, zee VOL-len",
+    audioText: "wollen. ich will, du willst, er will, wir wollen, ihr wollt, sie wollen, Sie wollen. Jan Schmidt will nicht mehr so viel arbeiten.",
+    layman: "Expresses strong intention, plan, or desire ('nataka')! Modal Rule: 'ich' and 'er' are twin 'will' with NO endings, and the vowel shifts from 'o' to 'i' in singular!",
+    analogy: "Setting your heart's desire: 'Sitaki kufanya kazi nyingi sana' ➔ 'Ich will nicht mehr so viel arbeiten'!",
+    example: "Jan Schmidt will heute früher nach Hause gehen.",
+    exampleEnglish: "Jan Schmidt wants to go home earlier today.",
+    category: "1. Modalverben",
+    badge: "wollen = to want",
+    icon: "🎯"
+  },
+  {
+    id: "s5-duerfen-conjugation",
+    german: "dürfen (to be allowed to / may): ich darf, du darfst, er/es/sie darf, wir dürfen, ihr dürft, sie/Sie dürfen",
+    english: "dürfen (may / allowed to): I may (darf), you may (darfst), he may (darf), we may (dürfen), you all may (dürft), they may (dürfen)",
+    pronunciation: "DEUR-fen: ikh DAHRF, doo DAHRFST, air DAHRF, veer DEUR-fen, eer DEURFT, zee DEUR-fen",
+    audioText: "dürfen. ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie dürfen, Sie dürfen. Jan Schmidt darf keinen Urlaub nehmen. Man darf hier nicht rauchen.",
+    layman: "Expresses official permission or allowance ('ruhusa')! Combined with 'nicht' or 'kein', it means FORBIDDEN / NOT ALLOWED! Modal Rule: 'ich' and 'er' have NO endings (darf), and 'ü' becomes 'a' in singular!",
+    analogy: "Traffic & official signs: 'Hauruhusiwi' ➔ 'Du darfst nicht'!",
+    example: "Jan Schmidt darf keinen Urlaub nehmen.",
+    exampleEnglish: "Jan Schmidt is not allowed to take any vacation.",
+    category: "1. Modalverben",
+    badge: "dürfen = allowed to/may",
+    icon: "🚷"
+  },
+
+  // Page 2 & 3: Trennbare Verben (anziehen & Co.)
+  {
+    id: "s5-trennbar-anziehen",
+    german: "anziehen (to put on clothes): ich ziehe das Trikot an, du ziehst das Trikot an, er zieht das Trikot an",
+    english: "to put on: I put on the jersey (ziehe ... an), you put on (ziehst ... an), he puts on (zieht ... an), we put on (ziehen ... an)",
+    pronunciation: "AHN-tsee-en: ikh TSEE-eh dahs tree-KOH ahn, doo TZEEKHST dahs tree-KOH ahn, air TSEEKHT dahs tree-KOH ahn",
+    audioText: "anziehen. ich ziehe das Trikot an, du ziehst das Trikot an, er zieht das Trikot an, wir ziehen das Trikot an, ihr zieht das Trikot an, sie ziehen das Trikot an.",
+    layman: "Separable Verb Blueprint: The prefix 'an-' detaches from the verb and launches straight to the VERY END of the sentence like a rocket booster! The root verb 'ziehen' sits comfortably in Position 2!",
+    analogy: "Putting on your sports jersey: 'Ninavaa shati' ➔ 'Ich ziehe das Trikot an'!",
+    example: "Vor dem Spiel zieht Markus sein neues Trikot an.",
+    exampleEnglish: "Before the match, Markus puts on his new jersey.",
+    category: "2. Trennbare Verben",
+    badge: "anziehen: an ➔ Ende",
+    icon: "👕"
+  },
+  {
+    id: "s5-trennbar-suite",
+    german: "Trennbare Verben Suite: aufstehen, aussehen, mitspielen, zusehen",
+    english: "Separable Verbs Suite: to stand/get up (aufstehen), to look/appear (aussehen), to play along (mitspielen), to watch (zusehen)",
+    pronunciation: "OWF-shtay-en, OWS-zay-en, MIT-shpee-len, TSOO-zay-en",
+    audioText: "aufstehen, aussehen, mitspielen, zusehen. Ich stehe auf. Du siehst gut aus. Wir spielen mit. Sie sieht zu.",
+    layman: "Look at the detachable prefixes: 'auf-', 'aus-', 'mit-', 'zu-'. In a simple sentence, each prefix shoots to the end: 'Ich stehe um 6 Uhr auf', 'Du siehst super aus!', 'Spielst du mit?', 'Er sieht zu.'!",
+    analogy: "Four detachable attachments that snap off and land at the end of the sentence!",
+    example: "Karin steht jeden Tag um fünf Uhr auf.",
+    exampleEnglish: "Karin gets up at five o'clock every day.",
+    category: "2. Trennbare Verben",
+    badge: "Prefix Rocket Fleet",
+    icon: "🚀"
+  },
+
+  // Pages 5, 6, 7: Die Satzklammer (Sentence Brackets)
+  {
+    id: "s5-satzklammer-modal",
+    german: "Satzklammer (Modalverben): Markus darf (Pos 2) ... Klavier spielen (Ende - Infinitiv)",
+    english: "Sentence Bracket (Modals): Conjugated modal in Pos 2 + Action verb in INFINITIVE (-en) at the END!",
+    pronunciation: "ZAHTS-klahm-mer: MAHR-koos dahrf KLAH-feer SHPEE-len",
+    audioText: "Markus darf Klavier spielen. Markus darf nicht Klavier spielen. Darf Markus Klavier spielen? Wann darf Markus Klavier spielen?",
+    layman: "The German Sentence Bracket (Satzklammer): The modal verb ('darf') takes Position 2, hugging the whole sentence until the action verb ('spielen') lands in its complete INFINITIVE form at the very END!",
+    analogy: "Like two bookends holding books: Modal Verb leads at Position 2, Action Verb caps the end!",
+    example: "Darf Markus heute bei dir Klavier spielen?",
+    exampleEnglish: "Is Markus allowed to play piano at your place today?",
+    category: "3. Satzklammer",
+    badge: "Modal Bracket: Pos 2 + Ende",
+    icon: "🗂️"
+  },
+  {
+    id: "s5-satzklammer-trennbar",
+    german: "Satzklammer (Trennbare Verben): Ich stehe (Pos 2) ... um fünf Uhr auf (Ende - Präfix)",
+    english: "Sentence Bracket (Separable): Conjugated stem in Pos 2 + Separable prefix at the END!",
+    pronunciation: "ikh SHTAY-eh oom FEWNF oor OWF. SHTAYST doo yetst OWF? VAHN SHTAYST doo OWF?",
+    audioText: "Ich stehe um fünf Uhr auf. Stehst du jetzt auf? Wann stehst du auf?",
+    layman: "When using a separable verb on its own: The conjugated root verb ('stehe' / 'stehst') sits in Position 2 (or Pos 1 in Yes/No questions), and the prefix ('auf') travels all the way to the END!",
+    analogy: "Root verb holds the steering wheel, prefix waves from the back bumper!",
+    example: "Wann stehst du am Wochenende auf?",
+    exampleEnglish: "When do you get up on the weekend?",
+    category: "3. Satzklammer",
+    badge: "Separable Bracket: Root + Prefix",
+    icon: "🔄"
+  },
+  {
+    id: "s5-satzklammer-combo",
+    german: "Satzklammer COMBO (Modal + Trennbar): Ich will (Pos 2) ... um fünf Uhr aufstehen (Ende - united Infinitiv!)",
+    english: "Satzklammer COMBO (Modal + Separable): Modal verb conjugates at Pos 2 ➔ Separable verb stays UNITED in infinitive at the END!",
+    pronunciation: "ikh VIL oom FEWNF oor OWF-shtay-en. VILST doo oom FEWNF oor OWF-shtay-en?",
+    audioText: "Ich will um fünf Uhr aufstehen. Willst du um fünf Uhr aufstehen? Wann willst du aufstehen?",
+    layman: "The Ultimate German Power Rule (Page 7): When a modal verb ('will') enters the sentence, it commands the separable verb to STAY UNITED as one complete word ('aufstehen') at the END! No splitting!",
+    analogy: "The modal verb acts like superglue: 'auf' and 'stehen' stay welded together at the end of the sentence!",
+    example: "Ich muss morgen früh aufstehen und das Trikot anziehen.",
+    exampleEnglish: "I have to get up early tomorrow and put on the jersey.",
+    category: "3. Satzklammer",
+    badge: "Combo Superglue: United Infinitive!",
+    icon: "⚡"
+  },
+
+  // Page 8: Indefinitpronomen (man & niemand)
+  {
+    id: "s5-pronoun-man",
+    german: "Pronomen \"man\" (one / people in general): Man darf hier nicht rauchen.",
+    english: "Pronoun 'man' (general one/people): One is not allowed to smoke here / Smoking is forbidden.",
+    pronunciation: "mahn dahrf heer nikht ROW-khen",
+    audioText: "Man darf hier nicht rauchen. Hier darf man nicht parken. Wie schreibt man das? Was macht man hier?",
+    layman: "'man' (small 'm') means people in general, 'one', or 'you' in general ('watu kwa jumla')! Grammatical law: 'man' ALWAYS conjugates with the 3rd person singular (er/es/sie form: 'man darf', 'man kann', 'man muss')!",
+    analogy: "Saying 'Hapa hairuhusiwi kuvuta sigara' (Man darf hier nicht rauchen)!",
+    example: "Hier darf man keinen Alkohol trinken.",
+    exampleEnglish: "One is not allowed to drink alcohol here.",
+    category: "4. Pronomen (man & niemand)",
+    badge: "man = people in general",
+    icon: "🚭"
+  },
+  {
+    id: "s5-pronoun-niemand",
+    german: "Pronomen \"niemand\" (nobody / no one): Niemand kann einen Handstand machen.",
+    english: "Pronoun 'niemand' (nobody): Nobody can do a handstand.",
+    pronunciation: "NEE-mahnt kahn IE-nen HAHNT-shtahnt MAH-khen",
+    audioText: "Niemand kann einen Handstand machen. Niemand ist zu Hause. Niemand weiß die Antwort.",
+    layman: "'niemand' means zero people / nobody ('hakuna mtu')! Just like 'man', 'niemand' ALWAYS pairs with the 3rd person singular verb form ('niemand kann', 'niemand muss', 'niemand ist')!",
+    analogy: "Saying 'Hakuna mtu anajua' ➔ 'Niemand weiß'!",
+    example: "Niemand will am Sonntag früh aufstehen.",
+    exampleEnglish: "Nobody wants to get up early on Sunday.",
+    category: "4. Pronomen (man & niemand)",
+    badge: "niemand = nobody",
+    icon: "🤸"
+  },
+
+  // Page 9: REDEMITTEL Toolkit
+  {
+    id: "s5-redemittel-notwendigkeit",
+    german: "über Notwendigkeiten sprechen: Wann musst du aufstehen? • Ich muss acht Stunden arbeiten.",
+    english: "Talking about necessity: When do you have to get up? • I have to work eight hours.",
+    pronunciation: "vahn MOOST doo OWF-shtay-en? ikh MOOS ahkht SHTOON-den AHR-by-ten.",
+    audioText: "Wann musst du aufstehen? Wann müssen Sie arbeiten? Wie lange musst du arbeiten? Ich muss acht Stunden arbeiten. Ich muss um sechs Uhr aufstehen.",
+    layman: "Ask and explain schedules & obligations with 'müssen': 'Wann musst du aufstehen?' (When do you have to get up?), 'Ich muss um 6 Uhr aufstehen' (I have to get up at 6)!",
+    analogy: "Explaining your daily work obligations to a friend or boss!",
+    example: "Musst du am Samstag auch arbeiten? - Nein, am Samstag habe ich frei.",
+    exampleEnglish: "Do you have to work on Saturday too? - No, on Saturday I have the day off.",
+    category: "5. Redemittel Toolkit",
+    badge: "Necessity & Work Times",
+    icon: "💼"
+  },
+  {
+    id: "s5-redemittel-faehigkeiten",
+    german: "über Fähigkeiten sprechen: Kannst du Klavier spielen? • Ja, das kann ich sehr gut / Nein, nicht so gut.",
+    english: "Talking about skills & abilities: Can you play piano? • Yes, I can do that very well / No, not so well.",
+    pronunciation: "KAHNST doo KLAH-feer SHPEE-len? yah, dahs kahn ikh ZAYR goot / nayn, nikht zoh goot.",
+    audioText: "Kannst du Klavier spielen? Können Sie Deutsch sprechen? Ja, das kann ich sehr gut. Ja, aber nicht gut. Nein, das kann ich nicht. Nein, das kann ich nicht so gut.",
+    layman: "Rate your skills with 'können': 'Ja, das kann ich sehr gut' (Very well), 'Ja, aber nicht gut' (A little bit), 'Nein, das kann ich nicht so gut' (Not so well)!",
+    analogy: "Job interview or talent show confidence rating in German!",
+    example: "Kannst du gut schwimmen? - Ja, das kann ich sehr gut!",
+    exampleEnglish: "Can you swim well? - Yes, I can do that very well!",
+    category: "5. Redemittel Toolkit",
+    badge: "Skills & Talents",
+    icon: "⭐"
+  },
+  {
+    id: "s5-redemittel-befinden",
+    german: "über das Befinden sprechen: Wie geht's dir? • Gut, ich bin zufrieden / glücklich / nervös. Es geht.",
+    english: "Talking about well-being & feelings: How are you? • Good, I am content / happy / nervous. So-so.",
+    pronunciation: "vee gayt-s deer? vee gayt-s EE-nen? goot, ikh bin tsoo-FREE-den / GLEWK-likh / nair-VEUZ.",
+    audioText: "Wie geht es dir? Wie geht's dir? Wie geht's Ihnen? Gut! Ich bin zufrieden. Ich bin glücklich. Ich bin nervös. Es geht. Nicht so gut. Schlecht. Und dir? Und Ihnen? Auch gut!",
+    layman: "The complete emotional spectrum: 'zufrieden' (content/satisfied), 'glücklich' (happy/blessed), 'nervös' (nervous/excited), 'Es geht' (So-so / hanging in there), 'Nicht so gut' (Not so great)!",
+    analogy: "Checking in on a friend's state of mind: 'Hali yako vipi leo?'!",
+    example: "Wie geht es dir heute? - Sehr gut, ich bin total glücklich!",
+    exampleEnglish: "How are you today? - Very good, I am totally happy!",
+    category: "5. Redemittel Toolkit",
+    badge: "Well-being & Feelings",
+    icon: "😊"
+  },
+  {
+    id: "s5-redemittel-absichten",
+    german: "Absichten äußern: Willst du mitkommen? • Nein. / Ja. Und du? • Ich auch (nicht).",
+    english: "Expressing intentions: Do you want to come along? • No. / Yes. And you? • Me too / Neither do I.",
+    pronunciation: "VILST doo MIT-kom-men? nayn. yah. oont doo? ikh owkh nikht.",
+    audioText: "Willst du mitkommen? Wollen Sie einen Kaffee? Nein. Ja. Und du? Ich auch. Ich auch nicht.",
+    layman: "Invite and express plans with 'wollen': 'Willst du...?' (Do you want to...?). Reply 'Ich auch!' (Me too!) or 'Ich auch nicht' (Neither do I / Me neither)!",
+    analogy: "Making hangout plans with buddies after class or work!",
+    example: "Willst du heute Abend Pizza essen? - Ja gern, und du? - Ich auch!",
+    exampleEnglish: "Do you want to eat pizza tonight? - Yes gladly, and you? - Me too!",
+    category: "5. Redemittel Toolkit",
+    badge: "Intentions & Invites",
+    icon: "🍕"
+  },
+  {
+    id: "s5-redemittel-gebote-verbote",
+    german: "über Gebote & Verbote sprechen: Darf man hier parken? • Ja, kein Problem / Nein, das darf man nicht.",
+    english: "Rules & Prohibitions: Is one allowed to park here? • Yes, no problem / No, that is forbidden.",
+    pronunciation: "DAHRF mahn heer PAHR-ken? yah, dahs ist kyn proh-BLAYM / nayn, dahs dahrf mahn nikht.",
+    audioText: "Dürfen Sie hier parken? Darfst du das? Darf man hier rauchen? Ja, das ist kein Problem. Nein, das darf ich nicht. Nein, das darf man nicht.",
+    layman: "Asking about local rules: 'Darf man...?' (Is it allowed?). Positive reply: 'Ja, das ist kein Problem' (No problem!). Negative prohibition: 'Nein, das darf man nicht!' (No, that's strictly not allowed)!",
+    analogy: "Checking rules at a hotel, hospital, or public area: 'Je, inaruhusiwa kupaki hapa?'!",
+    example: "Darf man hier fotografieren? - Nein, das darf man leider nicht.",
+    exampleEnglish: "Is one allowed to take photos here? - No, unfortunately that is not allowed.",
+    category: "5. Redemittel Toolkit",
+    badge: "Rules & Prohibitions",
+    icon: "🛡️"
+  }
+];
+
+export const SUMMARY_5_SCENARIOS = [
+  {
+    scenario: "What is the universal conjugation rule for the 1st person ('ich') and 3rd person ('er/es/sie') in ALL German modal verbs (Summary 5, Page 1)?",
+    hint: "Check 'ich muss/er muss', 'ich kann/er kann', 'ich will/er will', 'ich darf/er darf'.",
+    options: [
+      { text: "They are identical twins with NO verb endings (ich muss/er muss, ich kann/er kann, ich will/er will, ich darf/er darf)!", correct: true, explain: "Genau! In all German modal verbs, 'ich' and 'er/es/sie' drop standard verb endings and share the exact same stem with a vowel shift in singular!" },
+      { text: "They always end in '-t' and '-st'.", correct: false, explain: "'-st' is for du; 'ich' and 'er' take zero ending." },
+      { text: "They keep the infinitive umlaut 'ü' and 'ö'.", correct: false, explain: "Singular modal forms shift vowels (müssen ➔ muss, können ➔ kann, dürfen ➔ darf)." }
+    ]
+  },
+  {
+    scenario: "What happens to the separable prefix 'an-' in the sentence 'Ich ziehe das Trikot an' (Summary 5, Page 2)?",
+    hint: "Think about the rocket booster rule!",
+    options: [
+      { text: "The prefix 'an-' detaches from the verb and moves to the VERY END of the sentence.", correct: true, explain: "Richtig! In a simple main clause, separable verb prefixes (an-, auf-, aus-, mit-, zu-) detach from the stem and launch to the very end of the sentence!" },
+      { text: "The prefix stays glued to the front of 'ziehe'.", correct: false, explain: "In simple present tense, separable verbs must split." },
+      { text: "The prefix disappears completely.", correct: false, explain: "The prefix is essential for the meaning and must land at the end." }
+    ]
+  },
+  {
+    scenario: "In the sentence 'Markus darf Klavier spielen' (Page 5), how does the Satzklammer (Sentence Bracket) structure work?",
+    hint: "Position 2 vs. Sentence End.",
+    options: [
+      { text: "The conjugated modal verb 'darf' is in Position 2, and the action verb 'spielen' is in INFINITIVE at the very END.", correct: true, explain: "Perfekt! The modal verb takes Position 2 (conjugated for the subject), while the second action verb is pushed to the very end in its basic infinitive form (-en)!" },
+      { text: "Both verbs are conjugated right next to each other at the front.", correct: false, explain: "German spreads them across the sentence bracket (Satzklammer)." },
+      { text: "The action verb goes to Position 1.", correct: false, explain: "In statements, subject or time goes to Pos 1, modal verb to Pos 2, action verb to end." }
+    ]
+  },
+  {
+    scenario: "What happens when a MODAL VERB meets a SEPARABLE VERB (Page 7) like in 'Ich will um fünf Uhr aufstehen'?",
+    hint: "The Golden Combo Superglue Law!",
+    options: [
+      { text: "The modal verb conjugates in Position 2 ('will'), and the separable verb stays UNITED as one complete infinitive at the END ('aufstehen')!", correct: true, explain: "Ausgezeichnet! When a modal verb is present, the separable verb does NOT split — it stays welded together in full infinitive form at the end of the sentence ('aufstehen')!" },
+      { text: "The separable verb splits into 'stehe ... auf' and pushes the modal away.", correct: false, explain: "The modal verb has priority in Position 2, keeping the infinitive intact at the end." },
+      { text: "You can never combine modal verbs with separable verbs.", correct: false, explain: "Combining them is extremely common in daily German!" }
+    ]
+  },
+  {
+    scenario: "Look at the indefinite pronoun 'man' in 'Man darf hier nicht rauchen' (Page 8). Which grammatical form does 'man' ALWAYS conjugate with?",
+    hint: "Is it singular or plural?",
+    options: [
+      { text: "3rd person singular (like 'er/es/sie': man darf, man kann, man muss).", correct: true, explain: "Wunderbar! 'man' (meaning 'people in general' or 'one') is grammatically singular and always pairs with the 3rd person singular verb form ('man darf', 'man muss', 'man kann')!" },
+      { text: "1st person plural ('wir').", correct: false, explain: "'man' never takes plural verb endings." },
+      { text: "2nd person informal ('du').", correct: false, explain: "'man' conjugates like 'er/es/sie', not 'du'." }
+    ]
+  },
+  {
+    scenario: "How do you ask someone: 'Are you content / satisfied with your work?' and how would they reply 'Yes, I am happy' (Page 9)?",
+    hint: "Check 'zufrieden' and 'glücklich'.",
+    options: [
+      { text: "\"Bist du zufrieden?\" - \"Ja, ich bin glücklich.\"", correct: true, explain: "Brilliant! 'zufrieden' means content/satisfied, and 'glücklich' means happy/blessed!" },
+      { text: "\"Bist du nervös?\" - \"Nein, ich bin Handstand.\"", correct: false, explain: "'Handstand' is not a feeling." },
+      { text: "\"Musst du rauchen?\" - \"Ja, das ist kein Problem.\"", correct: false, explain: "Does not answer the question about satisfaction." }
+    ]
+  },
+  {
+    scenario: "How do you ask if smoking is allowed in an area, and how do you state that it is strictly forbidden (Page 9)?",
+    hint: "Check 'Darf man...?' and 'Nein, das darf man nicht.'",
+    options: [
+      { text: "\"Darf man hier rauchen?\" - \"Nein, das darf man nicht.\"", correct: true, explain: "Super! 'Darf man...?' asks for permission, and 'Nein, das darf man nicht' expresses a clear rule or prohibition!" },
+      { text: "\"Will man hier rauchen?\" - \"Ja, ich will Handstand.\"", correct: false, explain: "'Darf' expresses permission, not 'will'." },
+      { text: "\"Muss man rauchen?\" - \"Ja, jeden Tag acht Stunden.\"", correct: false, explain: "'Müssen' means obligation, not permission." }
+    ]
+  },
+  {
+    scenario: "If a friend asks 'Willst du mitkommen?' (Do you want to come along?) and you also don't want to go, what is the natural reply from Page 9?",
+    hint: "Neither do I / Me neither.",
+    options: [
+      { text: "\"Ich auch nicht.\" (Me neither / Neither do I)", correct: true, explain: "Perfekt! When agreeing with a negative statement or declining together, Germans say 'Ich auch nicht' (Me neither)!" },
+      { text: "\"Stimmt so!\"", correct: false, explain: "'Stimmt so!' is for restaurant tipping." },
+      { text: "\"Guten Appetit!\"", correct: false, explain: "'Guten Appetit!' means 'Enjoy your meal'." }
+    ]
+  }
+];
+
+
 
 
 
