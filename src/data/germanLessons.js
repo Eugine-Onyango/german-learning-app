@@ -16587,13 +16587,238 @@ export const LESSON_65_SCENARIOS = [
     scenario: "Why do we use 'bin' and NOT 'habe' in: 'Am Wochenende _____ ich ins Kino gegangen.' (Slide 20)?",
     hint: "'gehen' is a verb of physical movement/travel!",
     options: [
-      { text: "bin (because 'gehen' is a movement verb that requires 'sein' in the Perfekt past tense).", correct: true, explain: "Super! Verbs of movement from point A to B (gehen, fahren, fliegen, kommen) ALWAYS take 'sein' (ich bin gegangen)!" },
-      { text: "habe", correct: false, explain: "Verbs of movement do not take 'haben'." },
-      { text: "hatte", correct: false, explain: "'hatte' is simple past of haben." },
-      { text: "ist", correct: false, explain: "'ist' is for er/sie/es; the subject here is 'ich', so it must be 'bin'." }
+      { text: "bin (because 'gehen' is movement from A to B)", correct: true, explain: "Ausgezeichnet! Verbs of physical movement/travel (gehen, fahren, fliegen) take 'sein' (bin gegangen) in the Perfekt!" },
+      { text: "habe (all past verbs take habe)", correct: false, explain: "Movement verbs take 'sein' (bin gegangen), not 'habe'!" },
+      { text: "werde (future tense)", correct: false, explain: "This is a completed past event." },
+      { text: "war (präteritum helper)", correct: false, explain: "'gegangen' requires 'bin' for the Perfekt tense." }
     ]
   }
 ];
+
+// ==========================================
+// SUMMARY 1: REDEMITTEL (Sich vorstellen, Begrüßen, Verabschieden & Nachfragen)
+// Source: A1 Textbook Visual Redemittel Overview
+// ==========================================
+export const SUMMARY_1_ITEMS = [
+  {
+    german: "sich vorstellen",
+    english: "to introduce oneself",
+    phonetic: "zikh FOHR-shte-len",
+    layman: "The category for telling people who you are. In Kenya, think of introducing yourself at a job interview, school seminar, or community gathering.",
+    analogy: "Putting on your official name tag (like 'Dana Sahin') and stating your identity.",
+    example: "Darf ich mich vorstellen? Mein Name ist Dana Sahin.",
+    exampleEnglish: "May I introduce myself? My name is Dana Sahin.",
+    category: "1. Sich vorstellen"
+  },
+  {
+    german: "Wie heißen Sie?",
+    english: "What is your name? (Formal)",
+    phonetic: "vee HY-sen zee?",
+    layman: "The polite, respectful question to ask someone's name. Use this with officials, doctors, clients, teachers, and adults you do not know well.",
+    analogy: "Formal respect like asking an elder or government officer 'What is your official name, Sir/Madam?'",
+    example: "Guten Tag, wie heißen Sie bitte?",
+    exampleEnglish: "Good day, what is your name please?",
+    category: "1. Sich vorstellen"
+  },
+  {
+    german: "Ich heiße ...",
+    english: "My name is ... / I am called ...",
+    phonetic: "ikh HY-suh ...",
+    layman: "The classic, most natural German formula for giving your name. (e.g. 'Ich heiße Dana Sahin').",
+    analogy: "Literally 'I am called...', the standard default way to introduce your name.",
+    example: "Ich heiße Dana Sahin und komme aus Berlin.",
+    exampleEnglish: "My name is Dana Sahin and I come from Berlin.",
+    category: "1. Sich vorstellen"
+  },
+  {
+    german: "Mein Name ist ...",
+    english: "My name is ...",
+    phonetic: "myne NAH-muh ist ...",
+    layman: "Clear and professional. Frequently used on the phone, at front desks, or when wearing an ID badge.",
+    analogy: "Introducing your full official name at a registration desk.",
+    example: "Guten Tag, mein Name ist Alex Mwangi.",
+    exampleEnglish: "Good day, my name is Alex Mwangi.",
+    category: "1. Sich vorstellen"
+  },
+  {
+    german: "Ich bin ...",
+    english: "I am ...",
+    phonetic: "ikh bin ...",
+    layman: "Short, crisp, and universal. Works in both casual parties and everyday casual encounters.",
+    analogy: "A quick, friendly 'I'm Alex!'.",
+    example: "Hallo, ich bin Sarah!",
+    exampleEnglish: "Hello, I am Sarah!",
+    category: "1. Sich vorstellen"
+  },
+  {
+    german: "sich begrüßen",
+    english: "to greet each other",
+    phonetic: "zikh buh-GROO-sen",
+    layman: "The category of everyday German greetings across the day from morning sunrise to sunset.",
+    analogy: "Greeting neighbors and coworkers throughout the day.",
+    example: "Die Kollegen begrüßen sich am Morgen.",
+    exampleEnglish: "The colleagues greet each other in the morning.",
+    category: "2. Sich begrüßen"
+  },
+  {
+    german: "Hallo!",
+    english: "Hello! / Hi! (Casual, anytime)",
+    phonetic: "HAH-loh!",
+    layman: "The universal friendly greeting. Used all day long with friends, colleagues, shopkeepers, and young people.",
+    analogy: "Like a friendly 'Sasa!' or 'Habari!' in Kenya.",
+    example: "Hallo Dana! Wie geht's?",
+    exampleEnglish: "Hello Dana! How are you doing?",
+    category: "2. Sich begrüßen"
+  },
+  {
+    german: "Guten Morgen.",
+    english: "Good morning. (Until ~11:00 AM)",
+    phonetic: "GOO-ten MOR-gen.",
+    layman: "Used when waking up, at breakfast, and when arriving at school or the office in the morning.",
+    analogy: "Early morning greeting as the sun rises.",
+    example: "Guten Morgen, Herr Schmidt! Haben Sie gut geschlafen?",
+    exampleEnglish: "Good morning, Mr. Schmidt! Did you sleep well?",
+    category: "2. Sich begrüßen"
+  },
+  {
+    german: "Guten Tag.",
+    english: "Good day / Hello. (Daytime, ~11:00 AM - 6:00 PM)",
+    phonetic: "GOO-ten TAHK.",
+    layman: "The king of German formal greetings! Polite, respectful, and safe to use with everyone during daytime hours.",
+    analogy: "Standard polite daytime greeting when entering a bank, shop, or office.",
+    example: "Guten Tag, wie kann ich Ihnen helfen?",
+    exampleEnglish: "Good day, how can I help you?",
+    category: "2. Sich begrüßen"
+  },
+  {
+    german: "Guten Abend.",
+    english: "Good evening. (From ~6:00 PM onwards)",
+    phonetic: "GOO-ten AH-bent.",
+    layman: "Used when meeting people at dusk, dinnertime, evening events, or walking into a restaurant at night.",
+    analogy: "Polite evening greeting when the sun has gone down.",
+    example: "Guten Abend allerseits!",
+    exampleEnglish: "Good evening everyone!",
+    category: "2. Sich begrüßen"
+  },
+  {
+    german: "sich verabschieden",
+    english: "to say goodbye / farewells",
+    phonetic: "zikh fehr-AHP-shee-den",
+    layman: "The category of saying farewell when leaving a conversation, meeting, or parting for the night.",
+    analogy: "Waving goodbye to colleagues or friends at the end of the day.",
+    example: "Wir verabschieden uns und gehen nach Hause.",
+    exampleEnglish: "We say our goodbyes and go home.",
+    category: "3. Sich verabschieden"
+  },
+  {
+    german: "Auf Wiedersehen.",
+    english: "Goodbye / Until we see each other again. (Formal)",
+    phonetic: "owf VEE-der-zay-en.",
+    layman: "The standard, polite in-person farewell in Germany. Literally means 'until we see again'.",
+    analogy: "Respectfully saying 'Kwaheri ya kuonana' when leaving an office or meeting.",
+    example: "Vielen Dank für Ihre Hilfe. Auf Wiedersehen!",
+    exampleEnglish: "Thank you very much for your help. Goodbye!",
+    category: "3. Sich verabschieden"
+  },
+  {
+    german: "Tschüs!",
+    english: "Bye! / See ya! (Casual)",
+    phonetic: "TCHOOS!",
+    layman: "The friendly, warm, casual goodbye used everywhere in Germany among friends, classmates, and colleagues.",
+    analogy: "Like a cheerful 'Baadaye!' or 'Tutaonana!' with a wave.",
+    example: "Tschüs Dana, bis morgen!",
+    exampleEnglish: "Bye Dana, see you tomorrow!",
+    category: "3. Sich verabschieden"
+  },
+  {
+    german: "Gute Nacht.",
+    english: "Good night. (Before going to sleep)",
+    phonetic: "GOO-tuh NAHKHT.",
+    layman: "CRITICAL: 'Gute Nacht' is ONLY used right before someone goes to sleep/bed! (If you are leaving a restaurant at 8 PM, you say 'Schönen Abend' or 'Auf Wiedersehen', NOT 'Gute Nacht').",
+    analogy: "Tucking someone into bed or turning off the bedroom lights with 'Lala salama'.",
+    example: "Ich bin müde. Gute Nacht und schlaf gut!",
+    exampleEnglish: "I am tired. Good night and sleep well!",
+    category: "3. Sich verabschieden"
+  },
+  {
+    german: "nachfragen",
+    english: "to ask for clarification / follow-up inquiry",
+    phonetic: "NAHKH-frah-gen",
+    layman: "The action of asking someone to repeat, clarify, or spell out information you didn't catch clearly.",
+    analogy: "Asking someone at the customer desk to clarify or spell their name.",
+    example: "Wenn Sie etwas nicht verstehen, müssen Sie nachfragen.",
+    exampleEnglish: "If you don't understand something, you have to ask for clarification.",
+    category: "4. Nachfragen"
+  },
+  {
+    german: "Buchstabieren Sie bitte.",
+    english: "Please spell that / Could you spell it please.",
+    phonetic: "bookh-shtah-BEE-ren zee BIT-tuh.",
+    layman: "The magic formula when someone has a complex or foreign name (like 'Dana Sahin' or 'Onyango') and you need them to spell it letter by letter (D-A-N-A  S-A-H-I-N).",
+    analogy: "Asking a customer at the front desk: 'Kindly spell your name for the official form.'",
+    example: "Mein Name ist Sahin. - Buchstabieren Sie bitte! - S-A-H-I-N.",
+    exampleEnglish: "My name is Sahin. - Please spell that! - S-A-H-I-N.",
+    category: "4. Nachfragen"
+  }
+];
+
+export const SUMMARY_1_SCENARIOS = [
+  {
+    scenario: "You arrive at the German embassy at 2:00 PM for an official visa appointment. Which greeting is most appropriate (Visual Summary 1)?",
+    hint: "Think about daytime formal respect.",
+    options: [
+      { text: "Guten Tag.", correct: true, explain: "Richtig! 'Guten Tag' is the standard polite daytime greeting for official and professional encounters." },
+      { text: "Gute Nacht.", correct: false, explain: "'Gute Nacht' is only said right before going to bed to sleep!" },
+      { text: "Guten Morgen.", correct: false, explain: "'Guten Morgen' is for early morning (before 11 AM), not 2:00 PM." }
+    ]
+  },
+  {
+    scenario: "A receptionist is writing down your name on an official registration form but cannot catch the spelling. What will they say (Visual Summary 1)?",
+    hint: "Buchstabieren = to spell.",
+    options: [
+      { text: "Buchstabieren Sie bitte.", correct: true, explain: "Perfekt! 'Buchstabieren Sie bitte' means 'Please spell it' so they can write your name accurately letter by letter." },
+      { text: "Gute Nacht.", correct: false, explain: "That means good night!" },
+      { text: "Wie geht es Ihnen?", correct: false, explain: "That means 'How are you?'" }
+    ]
+  },
+  {
+    scenario: "Which of the following phrases is exclusively used when going to bed / turning in for the night (Visual Summary 1)?",
+    hint: "Look at the bedtime illustration with the moon in the window!",
+    options: [
+      { text: "Gute Nacht.", correct: true, explain: "Genau! In German, 'Gute Nacht' is strictly a bedtime farewell (like 'Lala salama' in Swahili)." },
+      { text: "Guten Abend.", correct: false, explain: "'Guten Abend' is a greeting when arriving in the evening, not a bedtime farewell." },
+      { text: "Auf Wiedersehen.", correct: false, explain: "'Auf Wiedersehen' is a standard daytime goodbye." }
+    ]
+  },
+  {
+    scenario: "You want to introduce your name to a new colleague using the formula shown on Dana Sahin's badge. What can you say (Visual Summary 1)?",
+    hint: "All three standard German formulas work!",
+    options: [
+      { text: "Ich heiße Dana / Mein Name ist Dana / Ich bin Dana.", correct: true, explain: "Ausgezeichnet! All three formulas are standard and natural in German introductions." },
+      { text: "Ich habe Dana.", correct: false, explain: "'Ich habe' means 'I have', not 'My name is'." },
+      { text: "Mein Buchstabe ist Dana.", correct: false, explain: "That means 'My letter is Dana'." }
+    ]
+  },
+  {
+    scenario: "You are hanging out with friends and leaving the coffee shop. What is the most natural casual goodbye (Visual Summary 1)?",
+    hint: "Look at the casual waving group illustration.",
+    options: [
+      { text: "Tschüs!", correct: true, explain: "Wunderbar! 'Tschüs!' is the universally beloved casual goodbye among friends and peers." },
+      { text: "Guten Morgen!", correct: false, explain: "That is a morning greeting, not a goodbye!" },
+      { text: "Wie heißen Sie?", correct: false, explain: "That asks someone's name." }
+    ]
+  },
+  {
+    scenario: "What is the key difference between 'Guten Abend' and 'Gute Nacht' in German (Visual Summary 1)?",
+    hint: "One is an evening arrival greeting; the other is a bedtime parting farewell.",
+    options: [
+      { text: "'Guten Abend' is used to greet someone in the evening; 'Gute Nacht' is said only right before sleeping.", correct: true, explain: "Super! 'Guten Abend' welcomes someone from 6 PM onwards, while 'Gute Nacht' is strictly bedtime wishing someone good sleep." },
+      { text: "They mean the exact same thing and can be swapped anytime.", correct: false, explain: "Never swap them! Saying 'Gute Nacht' upon arriving at a dinner party sounds like you want to go to sleep immediately!" },
+      { text: "'Gute Nacht' is for morning.", correct: false, explain: "Morning is 'Guten Morgen'." }
+    ]
+  }
+];
+
 
 
 

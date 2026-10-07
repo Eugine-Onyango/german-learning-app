@@ -136,7 +136,10 @@ import Lesson64BahnStudio from './components/Lesson64BahnStudio';
 import Lesson64Game from './components/Lesson64Game';
 import Lesson65ExamStudio from './components/Lesson65ExamStudio';
 import Lesson65Game from './components/Lesson65Game';
+import Summary1RedemittelStudio from './components/Summary1RedemittelStudio';
+import Summary1Game from './components/Summary1Game';
 import {
+  SUMMARY_1_ITEMS,
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
   LESSON_3_ITEMS,
@@ -205,11 +208,12 @@ import {
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState(65); // Default to Lesson 65 as requested, easy switch to 1-64
+  const [currentLesson, setCurrentLesson] = useState('summary-1'); // Default to newly added Summary 1, easy switch to 1-65
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
   let activeItems = LESSON_1_ITEMS;
+  if (currentLesson === 'summary-1') activeItems = SUMMARY_1_ITEMS;
   if (currentLesson === 2) activeItems = LESSON_2_ITEMS;
   if (currentLesson === 3) activeItems = LESSON_3_ITEMS;
   if (currentLesson === 4) activeItems = LESSON_4_ITEMS;
@@ -276,6 +280,7 @@ export default function App() {
   if (currentLesson === 65) activeItems = LESSON_65_ITEMS;
 
   const getLessonTitle = () => {
+    if (currentLesson === 'summary-1') return "Summary 1: Visual Redemittel Toolkit (Sich vorstellen, begrüßen, verabschieden, nachfragen)";
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
     if (currentLesson === 2) return "Lesson 2: Häufige Redemittel (Common Everyday Phrases)";
     if (currentLesson === 3) return "Lesson 3: Zahlen 0 - 20 & Meine Handynummer (Numbers & Mobile)";
@@ -344,6 +349,9 @@ export default function App() {
   };
 
   const getLessonDesc = () => {
+    if (currentLesson === 'summary-1') {
+      return "Master the 4 core pillars of daily German social interaction: Sich vorstellen (Name badge & 3 formulas), Sich begrüßen (24-hour Sun & Time clock), Sich verabschieden (Daytime goodbye vs. Bedtime sleep), and Nachfragen (Spelling machine)!";
+    }
     if (currentLesson === 1) {
       return "German greetings made friendly, colorful, and memorable with everyday analogies. Tap any card to listen!";
     }
@@ -1158,6 +1166,15 @@ export default function App() {
 
         {currentLesson === 65 && activeTab === 'game65' && (
           <Lesson65Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Summary 1 Specific Modules */}
+        {currentLesson === 'summary-1' && activeTab === 'summary1Studio' && (
+          <Summary1RedemittelStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 'summary-1' && activeTab === 'summary1Game' && (
+          <Summary1Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

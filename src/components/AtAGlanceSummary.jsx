@@ -31,7 +31,11 @@ export default function AtAGlanceSummary({ items, lessonNumber = 1, isSlowMode }
         <div>
           <h2 className="text-2xl font-black text-amber-950 flex items-center gap-2">
             <span>📋</span>
-            <span>Lesson {lessonNumber} Summary: "At a glance"</span>
+            <span>
+              {typeof lessonNumber === 'string' && lessonNumber.startsWith('summary-')
+                ? `Summary ${lessonNumber.replace('summary-', '')}: "At a glance"`
+                : `Lesson ${lessonNumber} Summary: "At a glance"`}
+            </span>
           </h2>
           <p className="text-xs sm:text-sm text-stone-700 mt-1">
             Exact slide chalkboard replica. Click any yellow German phrase to hear natural audio pronunciation!
