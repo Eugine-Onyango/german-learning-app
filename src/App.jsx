@@ -148,6 +148,8 @@ import Summary5GrammatikStudio from './components/Summary5GrammatikStudio';
 import Summary5Game from './components/Summary5Game';
 import Summary6GrammatikStudio from './components/Summary6GrammatikStudio';
 import Summary6Game from './components/Summary6Game';
+import Summary7GrammatikStudio from './components/Summary7GrammatikStudio';
+import Summary7Game from './components/Summary7Game';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
@@ -155,6 +157,7 @@ import {
   SUMMARY_4_ITEMS,
   SUMMARY_5_ITEMS,
   SUMMARY_6_ITEMS,
+  SUMMARY_7_ITEMS,
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
   LESSON_3_ITEMS,
@@ -223,7 +226,7 @@ import {
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState('summary-6'); // Default to newly added Summary 6, easy switch to 1-65 & Summaries 1-5
+  const [currentLesson, setCurrentLesson] = useState('summary-7'); // Default to newly added Summary 7, easy switch to 1-65 & Summaries 1-6
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -234,6 +237,7 @@ export default function App() {
   if (currentLesson === 'summary-4') activeItems = SUMMARY_4_ITEMS;
   if (currentLesson === 'summary-5') activeItems = SUMMARY_5_ITEMS;
   if (currentLesson === 'summary-6') activeItems = SUMMARY_6_ITEMS;
+  if (currentLesson === 'summary-7') activeItems = SUMMARY_7_ITEMS;
   if (currentLesson === 2) activeItems = LESSON_2_ITEMS;
   if (currentLesson === 3) activeItems = LESSON_3_ITEMS;
   if (currentLesson === 4) activeItems = LESSON_4_ITEMS;
@@ -306,6 +310,7 @@ export default function App() {
     if (currentLesson === 'summary-4') return "Summary 4: Visual Grammatik & Redemittel Teil 4 (mögen/möchten, Vokalwechsel, Akkusativ, Nullartikel & Salat-Comic)";
     if (currentLesson === 'summary-5') return "Summary 5: Visual Grammatik & Redemittel Teil 5 (Modalverben, Trennbare Verben, Satzklammer, man/niemand & Toolkit)";
     if (currentLesson === 'summary-6') return "Summary 6: Visual Grammatik & Redemittel Teil 6 (Dativ-Artikel, Akkusativ-Pronomen, 9 Lokale Präpositionen, denn & Wüsten-Comic)";
+    if (currentLesson === 'summary-7') return "Summary 7: Visual Grammatik & Redemittel Teil 7 (Imperativ, Präteritum, von + Dativ, Dativ-Körperteile, deshalb & Zahnarzt-Comic)";
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
     if (currentLesson === 2) return "Lesson 2: Häufige Redemittel (Common Everyday Phrases)";
     if (currentLesson === 3) return "Lesson 3: Zahlen 0 - 20 & Meine Handynummer (Numbers & Mobile)";
@@ -391,6 +396,9 @@ export default function App() {
     }
     if (currentLesson === 'summary-6') {
       return "Master Dative definite articles (dem, dem, der, den...-n) with the Double-N plural rule, Accusative personal pronouns (mich, dich, ihn), the 9 spatial prepositions answering 'Wo?', the Position 0 connector 'denn', and the hilarious desert directions comic!";
+    }
+    if (currentLesson === 'summary-7') {
+      return "Master imperative commands across du/ihr/Sie (drop umlaut & keep e->i rules), Präteritum past tense (war & hatte twin forms), the Dativ preposition 'von' and body parts matrix (-em, -er, -en + -n), consequence sentences with 'deshalb' (Position 1), ordinal dates, the dentist comic, and clinic/letter Redemittel!";
     }
     if (currentLesson === 1) {
       return "German greetings made friendly, colorful, and memorable with everyday analogies. Tap any card to listen!";
@@ -1260,6 +1268,15 @@ export default function App() {
 
         {currentLesson === 'summary-6' && activeTab === 'summary6Game' && (
           <Summary6Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Summary 7 Specific Modules */}
+        {currentLesson === 'summary-7' && activeTab === 'summary7Studio' && (
+          <Summary7GrammatikStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 'summary-7' && activeTab === 'summary7Game' && (
+          <Summary7Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

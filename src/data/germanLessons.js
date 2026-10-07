@@ -18437,12 +18437,260 @@ export const SUMMARY_6_SCENARIOS = [
     scenario: "How do you tell someone politely that you don't know the way because you are also a stranger in town (Page 8)?",
     hint: "Check Page 8 Redemittel: 'Ich bin hier auch...'",
     options: [
-      { text: "\"Tut mir leid, das weiß ich nicht. Ich bin nicht von hier / Ich bin hier auch fremd.\"", correct: true, explain: "Perfekt! 'Tut mir leid, ich bin nicht von hier / Ich bin hier auch fremd' is the natural, polite German phrase for 'Sorry, I'm not from around here either'!" },
-      { text: "\"Zahlen, bitte!\"", correct: false, explain: "'Zahlen, bitte!' is for paying at a restaurant." },
-      { text: "\"Stimmt so!\"", correct: false, explain: "'Stimmt so!' is for giving a tip." }
+      { text: "\"Tut mir leid, das weiß ich nicht. Ich bin hier auch fremd.\"", correct: true, explain: "Ausgezeichnet! 'Ich bin hier auch fremd' (I am also a stranger here) is the standard polite German way to explain you don't know local directions!" },
+      { text: "\"Ich will dir nicht antworten.\"", correct: false, explain: "That is impolite." },
+      { text: "\"Gehen Sie nach Hause.\"", correct: false, explain: "That doesn't answer the question." }
     ]
   }
 ];
+
+export const SUMMARY_7_ITEMS = [
+  // Page 1: Verb - Imperativ (du, ihr, Sie)
+  {
+    id: "s7-imperativ-du-form",
+    german: "Imperativ (du-Form): Hol! • Fahr! • Trink! • Nimm! • Ruf an!",
+    english: "Imperative (du-Form commands): Fetch! (Hol!) • Drive! (Fahr!) • Drink! (Trink!) • Take! (Nimm!) • Call! (Ruf an!)",
+    pronunciation: "HOHL, FAHR, TRINGK, NIM, ROOF AHN",
+    audioText: "Imperativ du-Form: du holst wird Hol! du fährst wird Fahr! du trinkst wird Trink! du nimmst wird Nimm! du rufst an wird Ruf an!",
+    layman: "How to give a command to ONE friend (du): 1. Drop 'du'. 2. Drop the '-st' ending! 3. If the verb has an 'a ➔ ä' umlaut (fährst), DROP the umlaut (Fahr!). 4. If the verb has an 'e ➔ i' vowel change (nimmst), KEEP the 'i' (Nimm!)!",
+    analogy: "Giving quick snappy orders to your homeboy: 'Chukua!' ➔ 'Nimm!', 'Kunywa!' ➔ 'Trink!', 'Piga simu!' ➔ 'Ruf an!'",
+    example: "Nimm eine Tablette und trink viel Wasser!",
+    exampleEnglish: "Take a pill and drink plenty of water!",
+    category: "1. Imperativ (Befehle)",
+    badge: "du-Form (Drop du & -st)",
+    icon: "📣"
+  },
+  {
+    id: "s7-imperativ-ihr-sie-forms",
+    german: "Imperativ (ihr- & Sie-Form): Holt! / Holen Sie! • Nehmt! / Nehmen Sie! • Ruft an! / Rufen Sie an!",
+    english: "Imperative (ihr & Sie commands): Group of friends: Holt! Nehmt! • Formal: Holen Sie! Nehmen Sie!",
+    pronunciation: "HOLT / HOH-len ZEE • NAYMT / NAY-men ZEE • ROOFT AHN / ROO-fen ZEE AHN",
+    audioText: "Imperativ: ihr-Form: Holt! Nehmt! Ruft an! Sie-Form: Holen Sie! Nehmen Sie! Rufen Sie an!",
+    layman: "Group of friends (ihr): Drop 'ihr' and keep the '-t' stem (Holt! Nehmt! Ruft an!). Formal (Sie): Keep 'Sie' and swap the order so the verb comes first (Holen Sie! Nehmen Sie! Rufen Sie an!)!",
+    analogy: "Telling kids 'Kuweni makini' ➔ 'Passt auf!' vs telling an elder 'Tafadhali keti' ➔ 'Setzen Sie sich bitte!'",
+    example: "Kinder, nehmt eure Jacken! Herr Müller, nehmen Sie bitte Platz!",
+    exampleEnglish: "Kids, take your jackets! Mr. Müller, please take a seat!",
+    category: "1. Imperativ (Befehle)",
+    badge: "ihr- & Sie-Commands",
+    icon: "👥"
+  },
+
+  // Page 2: Präteritum - haben & sein
+  {
+    id: "s7-praeteritum-sein-war",
+    german: "sein im Präteritum: ich war, du warst, er/es/sie war, wir waren, ihr wart, sie/Sie waren",
+    english: "sein in Simple Past: I was (war), you were (warst), he was (war), we were (waren), you all were (wart), they were (waren)",
+    pronunciation: "VAHR, VAHRST, VAHR, VAH-ren, VAHRT, VAH-ren",
+    audioText: "sein im Präteritum: ich war, du warst, er war, sie war, es war, wir waren, ihr wart, sie waren, Sie waren. Wo warst du gestern?",
+    layman: "Expressing past state ('nilikuwa / alikuwa')! Golden Rule: 'ich' and 'er/es/sie' are identical twins with NO ending (war)! 'Wo warst du gestern?' (Where were you yesterday?).",
+    analogy: "Looking back in time: 'Nilikuwa nyumbani jana' ➔ 'Ich war gestern zu Hause'!",
+    example: "Ich war gestern krank und er war beim Arzt.",
+    exampleEnglish: "I was sick yesterday and he was at the doctor's.",
+    category: "2. Präteritum (war & hatte)",
+    badge: "sein ➔ war",
+    icon: "⏳"
+  },
+  {
+    id: "s7-praeteritum-haben-hatte",
+    german: "haben im Präteritum: ich hatte, du hattest, er/es/sie hatte, wir hatten, ihr hattet, sie/Sie hatten",
+    english: "haben in Simple Past: I had (hatte), you had (hattest), he had (hatte), we had (hatten), you all had (hattet), they had (hatten)",
+    pronunciation: "HAHT-teh, HAHT-test, HAHT-teh, HAHT-ten, HAHT-tet, HAHT-ten",
+    audioText: "haben im Präteritum: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten, Sie hatten. Ich hatte gestern Fieber.",
+    layman: "Expressing past possession, appointments, or feelings ('nilikuwa na...')! Golden Rule: 'ich' and 'er/es/sie' are identical twins ('hatte')! 'Ich hatte keine Zeit' (I had no time).",
+    analogy: "Talking about past symptoms: 'Nilikuwa na homa' ➔ 'Ich hatte Fieber'!",
+    example: "Gestern hatte ich Zahnschmerzen und keine Zeit.",
+    exampleEnglish: "Yesterday I had a toothache and no time.",
+    category: "2. Präteritum (war & hatte)",
+    badge: "haben ➔ hatte",
+    icon: "🤒"
+  },
+
+  // Page 3: Präposition von + Dativ
+  {
+    id: "s7-praeposition-von-dativ",
+    german: "Präposition \"von\" (von wem? ➔ IMMER DATIV!): der Name von seiner Exfreundin",
+    english: "Preposition 'von' (of/from whom? ➔ ALWAYS DATIVE): the name of his ex-girlfriend",
+    pronunciation: "dair NAH-meh fon ZY-ner EKS-froyn-din",
+    audioText: "der Name von seiner Exfreundin. von wem? von seiner Exfreundin. von meinem Bruder. von meiner Mutter.",
+    layman: "The preposition 'von' (of / from) ALWAYS commands the DATIVE case! For feminine nouns like 'Exfreundin' or 'Mutter', the possessive takes the '-er' Dative ending ('von seiner Exfreundin' / 'von meiner Mutter')!",
+    analogy: "Saying 'Jina la rafiki yake wa zamani' in German using 'von' + Dativ!",
+    example: "Das ist das Auto von meinem Vater und das Buch von meiner Schwester.",
+    exampleEnglish: "That is the car of my father and the book of my sister.",
+    category: "3. von + Dativ",
+    badge: "von + Dativ (von seiner...)",
+    icon: "💔"
+  },
+
+  // Page 4: Dativ - unbestimmt, Negativ & Possessiv
+  {
+    id: "s7-dativ-noun-matrix-body",
+    german: "Dativ Matrix: einem/meinem Rücken (Mask.) • einem/meinem Gesicht (Neut.) • einer/meiner Hand (Fem.) • meinen Haaren (Plur.)",
+    english: "Dative Full Matrix: einem/keinem/meinem (-em for masc/neut), einer/keiner/meiner (-er for fem), keinen/meinen ...-n for plural",
+    pronunciation: "my-nem REW-ken, my-nem geh-ZIKHT, my-ner HAHNT, my-nen HAH-ren",
+    audioText: "Dativ: meinem Rücken, meinem Gesicht, meiner Hand, meinen Haaren. Ich habe Schmerzen an meinem Rücken und an meiner Hand.",
+    layman: "Dative Endings Formula: Masculine and Neuter always take '-em' (einem / keinem / meinem), Feminine always takes '-er' (einer / keiner / meiner), and Plural takes '-en' plus adds an '-n' to the noun ('meinen Haaren')!",
+    analogy: "Describing where it hurts on your body using Dative endings: 'mgongoni' (an meinem Rücken), 'mkononi' (an meiner Hand)!",
+    example: "Die Creme hilft bei Schmerzen in meiner Hand und an meinem Rücken.",
+    exampleEnglish: "The cream helps with pain in my hand and on my back.",
+    category: "4. Dativ Matrix (Körperteile)",
+    badge: "einem, einem, einer, meinen...-n",
+    icon: "🖐️"
+  },
+
+  // Page 5: Konjunktion deshalb (Position 1)
+  {
+    id: "s7-konjunktion-deshalb-pos1",
+    german: "Konjunktion \"deshalb\" (Position 1 ➔ Verb in Pos 2!): Ich finde mein Tattoo nicht gut, deshalb (1) will (2) ich (3) es wegmachen.",
+    english: "Connector 'deshalb' (therefore / that's why - Position 1): I don't like my tattoo, therefore (1) will (2) I (3) remove it.",
+    pronunciation: "DES-hahlp: ikh FIN-deh myn tet-TOO nikht goot, DES-hahlp VIL ikh ess VEK-mah-khen.",
+    audioText: "Ich finde mein Tattoo nicht gut, deshalb will ich es wegmachen. Ich bin krank, deshalb gehe ich zum Arzt.",
+    layman: "'deshalb' expresses the consequence/result ('kwa hivyo / ndio maana')! Crucial difference from 'denn': 'deshalb' sits on POSITION 1, so the conjugated verb leaps directly to POSITION 2 ('deshalb will ich...')!",
+    analogy: "The Tattoo Regret Rule: 'Sipendi tattoo hii, ndio maana nataka kuifuta' ➔ 'deshalb will ich es wegmachen'!",
+    example: "Die Waschmaschine ist kaputt, deshalb muss ich eine neue kaufen.",
+    exampleEnglish: "The washing machine is broken, therefore I have to buy a new one.",
+    category: "5. Konjunktion deshalb (Pos 1)",
+    badge: "deshalb = Pos 1 ➔ Verb Pos 2!",
+    icon: "💉"
+  },
+
+  // Page 6: Ordinalzahlen & Datum
+  {
+    id: "s7-ordinalzahlen-datum",
+    german: "Ordinalzahlen: der erste, zweite, dritte, siebte, zwanzigste • Datum: Heute ist der 21. 4. / Am 21. 4. (am einundzwanzigsten vierten)",
+    english: "Ordinal Numbers & Dates: 1st (erste), 2nd (zweite), 3rd (dritte), 7th (siebte), 20th (zwanzigste) • Today is the 21st / On the 21st (am ...-en)",
+    pronunciation: "dair AIR-steh, TSVYT-eh, DRIT-teh, ZEEP-teh, tsvahn-TSIKH-steh • ahm ie-noont-tsvahn-tsikh-sten FEER-ten",
+    audioText: "der erste, der zweite, der dritte, der vierte, der siebte, der zwanzigste, der dreißigste. Heute ist der einundzwanzigste vierte. Am einundzwanzigsten vierten.",
+    layman: "Reading Calendar Dates: Numbers 1-19 take '-te' (der vierte, der siebte), 20+ take '-ste' (der zwanzigste). Special rebels: 1st = der erste, 3rd = der dritte, 7th = der siebte. When preceded by 'am', add '-en' (am 21. 4. = am einundzwanzigsten vierten)!",
+    analogy: "Saying dates: 'Leo ni tarehe 21' ➔ 'Heute ist der 21.' vs 'Nitakuja tarehe 21' ➔ 'Ich komme am 21.'!",
+    example: "Mein Geburtstag ist am 16. Dezember (am sechzehnten Dezember).",
+    exampleEnglish: "My birthday is on December 16th.",
+    category: "6. Ordinalzahlen & Datum",
+    badge: "Dates & Calendar Rules",
+    icon: "📅"
+  },
+
+  // Page 7: Cartoon Comic - Dentist Appointment
+  {
+    id: "s7-cartoon-zahnarzt-termin",
+    german: "Cartoon: \"Am 16. 12. hast du deinen Zahnarzttermin. Heute ist der 6.\" - \"Ich gehe aber erst im November!\"",
+    english: "Cartoon: 'On Dec 16th you have your dentist appointment. Today is the 6th.' - 'But I am only going in November!'",
+    pronunciation: "ahm ZEKH-tsayn-ten DAY-tsem-ber hahst doo... - ikh GAY-eh AH-ber airst im noh-VEM-ber!",
+    audioText: "Am 16. 12. hast du deinen Zahnarzttermin. Heute ist der 6. Ich gehe aber erst im November!",
+    layman: "The hilarious dentist appointment comic on Page 7! The wife shows him the calendar marked for December 16th, and the lazy soccer-watching husband humorously replies that he's postponing it until next November (11 months away)!",
+    analogy: "Procrastinating that scary dentist checkup as long as humanly possible: 'Nitaenda Novemba ya mwakani!'",
+    example: "Wann hast du deinen Termin? - Am sechzehnten zwölften.",
+    exampleEnglish: "When is your appointment? - On the 16th of December.",
+    category: "7. Cartoon Comic",
+    badge: "Dentist Procrastination Comic",
+    icon: "🦷"
+  },
+
+  // Page 8: REDEMITTEL Toolkit
+  {
+    id: "s7-redemittel-gesundheit-termine",
+    german: "Gesundheit & Termine: Ich habe Zahnschmerzen / Fieber • Ich möchte einen Termin • Geht es am...? • Gute Besserung!",
+    english: "Health & Appointments: I have a toothache / fever • I would like an appointment • Is ... possible? • Get well soon!",
+    pronunciation: "ikh HAH-beh TSAHN-shmair-tsen / FEE-ber • ikh MEUKH-teh IE-nen tair-MEEN • GOO-teh BES-seh-roong!",
+    audioText: "Ich bin krank. Ich habe Fieber. Ich habe Zahnschmerzen. Ich kann heute nicht arbeiten. Ich möchte einen Termin. Geht es am sechzehnten? Ja, das geht. Gute Besserung!",
+    layman: "Essential clinic & doctor phrases: Report symptoms with 'Ich habe Zahnschmerzen / Kopfschmerzen / Fieber', book with 'Ich möchte einen Termin', and wish sick friends 'Gute Besserung!' (Get well soon!).",
+    analogy: "Calling the doctor's office in Germany to book a sick appointment and excuse yourself from work!",
+    example: "Guten Tag, ich habe starke Zahnschmerzen und brauche heute einen Termin.",
+    exampleEnglish: "Hello, I have a severe toothache and need an appointment today.",
+    category: "8. Redemittel Toolkit",
+    badge: "Clinic & Appointments",
+    icon: "🩺"
+  },
+  {
+    id: "s7-redemittel-probleme-briefe",
+    german: "Probleme & Briefe: Meine Waschmaschine ist kaputt • Das ist doch kein Problem • Sehr geehrte Frau... • Mit freundlichen Grüßen",
+    english: "Breakdowns & Formal Letters: My washing machine is broken • That's no problem at all • Dear Ms... • Kind regards",
+    pronunciation: "MY-neh VAHSH-mah-shee-neh ist kah-POOT • dahs ist dokh kyn proh-BLAYM • ZAYR geh-AYR-teh frow... • mit FROYNT-likh-en GREW-sen",
+    audioText: "Meine Waschmaschine ist kaputt. Ich kann nicht mehr waschen. Das ist doch kein Problem! Sehr geehrte Frau Müller, Sehr geehrter Herr Schmidt, Mit freundlichen Grüßen, Liebe Grüße.",
+    layman: "Everyday repairs and German letter writing etiquette: 'kaputt' (broken), comforting friends with 'Das ist doch kein Problem!', starting formal emails with 'Sehr geehrte/r...' and ending with 'Mit freundlichen Grüßen'!",
+    analogy: "Writing a landlord maintenance request or formal work email in Germany!",
+    example: "Sehr geehrte Frau Bauer, meine Heizung ist kaputt. Mit freundlichen Grüßen, Alex.",
+    exampleEnglish: "Dear Ms. Bauer, my heating is broken. Kind regards, Alex.",
+    category: "8. Redemittel Toolkit",
+    badge: "Letters & Etiquette",
+    icon: "✉️"
+  }
+];
+
+export const SUMMARY_7_SCENARIOS = [
+  {
+    scenario: "How do you give an informal command to ONE friend using the verb 'holen' (to fetch) and 'nehmen' (to take) (Summary 7, Page 1)?",
+    hint: "Drop 'du' and drop '-st'. Remember 'nehmen' keeps the 'i' (e ➔ i).",
+    options: [
+      { text: "\"Hol!\" and \"Nimm!\" (du holst ➔ Hol! • du nimmst ➔ Nimm!)", correct: true, explain: "Genau! For 'du' commands: drop 'du' and drop '-st' (Hol!). For verbs with 'e ➔ i' vowel changes like 'nehmen', keep the 'i' (Nimm!)!" },
+      { text: "\"Holst du!\" and \"Nimmst du!\"", correct: false, explain: "In Imperativ, 'du' and '-st' must be dropped." },
+      { text: "\"Holen!\" and \"Nehmen!\"", correct: false, explain: "Those are infinitives, not singular informal commands." }
+    ]
+  },
+  {
+    scenario: "What happens to the umlaut 'ä' in verbs like 'fahren' (du fährst) when forming an Imperativ command for 'du' (Page 1)?",
+    hint: "Check 'du fährst ➔ ...!'",
+    options: [
+      { text: "The umlaut drops off: \"Fahr!\" (not \"Fähr!\").", correct: true, explain: "Richtig! In German imperative, verbs with an 'a ➔ ä' vowel change in the present tense DROP the umlaut in the du-command: 'Fahr!' (Drive!), 'Schlaf!' (Sleep!)!" },
+      { text: "The umlaut turns into double 'ee'.", correct: false, explain: "German simply drops the dots (ä ➔ a)." },
+      { text: "The verb becomes 'Fahren Sie'.", correct: false, explain: "'Fahren Sie' is the formal command, not the du-command." }
+    ]
+  },
+  {
+    scenario: "What is the Simple Past (Präteritum) form of 'sein' (to be) and 'haben' (to have) for 'ich' and 'er/es/sie' (Page 2)?",
+    hint: "Check 'ich war / er war' and 'ich hatte / er hatte'.",
+    options: [
+      { text: "sein ➔ war • haben ➔ hatte (1st and 3rd person singular are identical twins!)", correct: true, explain: "Perfekt! In Präteritum, 'ich' and 'er/es/sie' share identical twin forms: 'ich war / er war' and 'ich hatte / er hatte' with no extra ending!" },
+      { text: "sein ➔ bin gewesen • haben ➔ habe gehabt", correct: false, explain: "Those are Perfekt forms, not Präteritum." },
+      { text: "sein ➔ wäre • haben ➔ hätte", correct: false, explain: "Those are Konjunktiv II forms." }
+    ]
+  },
+  {
+    scenario: "Why do we say 'der Name von seiner Exfreundin' with an '-er' ending on 'seiner' (Page 3)?",
+    hint: "Preposition 'von' + Feminine Dative.",
+    options: [
+      { text: "Because the preposition 'von' strictly requires DATIV, and feminine Dative takes '-er' (seiner Exfreundin).", correct: true, explain: "Ausgezeichnet! 'von' is a strict Dative preposition: feminine singular takes '-er' ('von seiner Exfreundin' / 'von meiner Mutter')!" },
+      { text: "Because 'Exfreundin' is plural.", correct: false, explain: "'Exfreundin' is feminine singular." },
+      { text: "Because 'von' takes Akkusativ.", correct: false, explain: "'von' ALWAYS takes Dative, never Accusative." }
+    ]
+  },
+  {
+    scenario: "Look at the Dativ noun endings on Page 4: What is the correct form for 'mein Rücken' (m), 'meine Hand' (f), and 'meine Haare' (pl)?",
+    hint: "Check -em, -er, -en + -n.",
+    options: [
+      { text: "meinem Rücken • meiner Hand • meinen Haaren", correct: true, explain: "Wunderbar! Masculine/Neuter Dative takes '-em' (meinem Rücken), Feminine takes '-er' (meiner Hand), and Plural takes '-en' plus '-n' on the noun (meinen Haaren)!" },
+      { text: "meinen Rücken • meine Hand • meine Haare", correct: false, explain: "Those are Accusative forms." },
+      { text: "meines Rückens • meiner Hand • meiner Haare", correct: false, explain: "Those are Genitive forms." }
+    ]
+  },
+  {
+    scenario: "In the sentence 'Ich finde mein Tattoo nicht gut, deshalb will ich es wegmachen' (Page 5), why is 'will' right after 'deshalb'?",
+    hint: "Check the position rule for 'deshalb' vs 'denn'.",
+    options: [
+      { text: "Because 'deshalb' occupies Position 1, so the conjugated verb 'will' takes Position 2 directly after it!", correct: true, explain: "Brilliant! Unlike 'denn' (Position 0), 'deshalb' is an adverbial connector in Position 1, so the verb immediately takes Position 2 ('deshalb will ich...')!" },
+      { text: "Because 'deshalb' is a modal verb.", correct: false, explain: "'deshalb' is a connector (adverb), while 'will' is the modal verb." },
+      { text: "Because 'will' must always start every sentence.", correct: false, explain: "It's the Position 2 rule for main clauses." }
+    ]
+  },
+  {
+    scenario: "How do you say the date 'April 21st' in Nominativ ('Today is the 21. 4.') and with preposition 'am' ('On the 21. 4.') (Page 6)?",
+    hint: "Nominativ '-te/-ste' vs Dativ Preposition 'am ...-ten/-sten'.",
+    options: [
+      { text: "Heute ist der einundzwanzigste vierte • Am einundzwanzigsten vierten", correct: true, explain: "Super! In Nominativ dates take '-ste' (der einundzwanzigste), but when combined with the preposition 'am' (an + dem), they take Dative '-en' (am einundzwanzigsten vierten)!" },
+      { text: "Heute ist der 21 • Am 21", correct: false, explain: "You must pronounce the ordinal ending in German." },
+      { text: "Heute ist am einundzwanzigsten • Am der einundzwanzigste", correct: false, explain: "The endings and prepositions are mixed up." }
+    ]
+  },
+  {
+    scenario: "In the dentist cartoon on Page 7, why is the man's answer 'Ich gehe aber erst im November' funny?",
+    hint: "Look at the December calendar his wife is holding!",
+    options: [
+      { text: "Because today is December 6th, and rather than going to his appointment on December 16th, he wants to wait 11 full months until next November!", correct: true, explain: "Perfekt! The appointment is in 10 days on December 16th, but he humorously procrastinates all the way to next November to avoid the dentist!" },
+      { text: "Because November doesn't exist in Germany.", correct: false, explain: "November is the 11th month of the year." },
+      { text: "Because dentists only work on weekends.", correct: false, explain: "The humor is in his extreme procrastination." }
+    ]
+  }
+];
+
 
 
 
