@@ -8,7 +8,9 @@ export default function Header({
   activeTab,
   setActiveTab,
   isSlowMode,
-  setIsSlowMode
+  setIsSlowMode,
+  isDarkMode,
+  setIsDarkMode
 }) {
   const scrollRef = useRef(null);
   const activeBtnRef = useRef(null);
@@ -779,103 +781,120 @@ export default function Header({
   if (currentLesson === 'summary-9') navItems = summary9NavItems;
 
   const ALL_LESSONS = [
-    { num: 'summary-1', label: "📑 Summary 1: Redemittel", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
-    { num: 'summary-2', label: "📑 Summary 2: Grammatik", activeClass: "bg-indigo-600 ring-indigo-300", hoverBorder: "hover:bg-indigo-200/60 border-indigo-300" },
-    { num: 'summary-3', label: "📑 Summary 3: Grammatik II", activeClass: "bg-teal-600 ring-teal-300", hoverBorder: "hover:bg-teal-200/60 border-teal-300" },
-    { num: 'summary-4', label: "📑 Summary 4: Grammatik IV", activeClass: "bg-emerald-600 ring-emerald-300", hoverBorder: "hover:bg-emerald-200/60 border-emerald-300" },
-    { num: 'summary-5', label: "📑 Summary 5: Modal & Satzklammer", activeClass: "bg-blue-600 ring-blue-300", hoverBorder: "hover:bg-blue-200/60 border-blue-300" },
-    { num: 'summary-6', label: "📑 Summary 6: Dativ & Präpositionen", activeClass: "bg-teal-600 ring-teal-300", hoverBorder: "hover:bg-teal-200/60 border-teal-300" },
-    { num: 'summary-7', label: "📑 Summary 7: Imperativ & Präteritum", activeClass: "bg-emerald-600 ring-emerald-300", hoverBorder: "hover:bg-emerald-200/60 border-emerald-300" },
-    { num: 'summary-8', label: "📑 Summary 8: Perfekt & Präpositionen", activeClass: "bg-cyan-700 ring-cyan-300", hoverBorder: "hover:bg-cyan-200/60 border-cyan-300" },
-    { num: 'summary-9', label: "📑 Summary 9: sein, sollen, welch/dies & Zeit", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-200/60 border-indigo-300" },
-    { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
-    { num: 2, label: "💬 2: Phrases", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 3, label: "🔢 3: 0 - 20 & Handy", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 4, label: "🔄 4: 21 - 100", activeClass: "bg-purple-700 ring-purple-300", hoverBorder: "hover:bg-purple-100 border-purple-300" },
-    { num: 5, label: "🔤 5: Das Alphabet", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
-    { num: 6, label: "🤝 6: Sich Vorstellen", activeClass: "bg-sky-700 ring-sky-300", hoverBorder: "hover:bg-sky-100 border-sky-300" },
-    { num: 7, label: "💬 7: Kennenlernen", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 8, label: "🚂 8: Satzstruktur", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 9, label: "👗 9: Verb-Endungen", activeClass: "bg-emerald-600 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 10, label: "👥 10: Pronomen", activeClass: "bg-purple-700 ring-purple-300", hoverBorder: "hover:bg-purple-100 border-purple-300" },
-    { num: 11, label: "👑 11: haben & sein", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 12, label: "🌳 12: Was ist ein Verb?", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 13, label: "🧩 13: Regelmäßige Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 14, label: "⚡ 14: Unregelmäßige Verben", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-violet-300" },
-    { num: 15, label: "💯 15: Zahlen (Teil 3)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 16, label: "🎨 16: Adjektive & Gegenteile", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
-    { num: 17, label: "👥 17: Jemanden vorstellen", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 18, label: "🔴 18: der, die, das (Nominativ)", activeClass: "bg-blue-700 ring-blue-400", hoverBorder: "hover:bg-blue-100 border-blue-300" },
-    { num: 19, label: "✨ 19: ein, eine, ein", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 20, label: "🚫 20: kein, keine, kein", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 21, label: "⏰ 21: Die Uhrzeit", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 22, label: "🕰️ 22: Inoffizielle Zeit", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 23, label: "🏷️ 23: Possessivartikel", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 24, label: "👨‍👩‍👦 24: Die Familie", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 25, label: "🎯 25: Artikel im Akkusativ", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 26, label: "❤️ 26: Possessiv im Akkusativ", activeClass: "bg-rose-700 ring-rose-400", hoverBorder: "hover:bg-rose-100 border-rose-300" },
-    { num: 27, label: "☕ 27: möchten (would like to)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 28, label: "❓ 28: W-Fragen (W-Questions)", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 29, label: "🍽️ 29: Restaurant & Café", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 30, label: "🔄 30: Personalpronomen (Akk)", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 31, label: "🎁 31: Artikel im Dativ", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
-    { num: 32, label: "🥇 32: Ordinalzahlen", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 33, label: "⏰ 33: Zeit-Fragewörter", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 34, label: "🎁 34: Possessiv im Dativ", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 border-purple-300" },
-    { num: 35, label: "🎁 35: Pronomen im Dativ", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 36, label: "🚀 36: Trennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 37, label: "🌅 37: Der Tagesablauf", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 38, label: "📣 38: Der Imperativ", activeClass: "bg-red-700 ring-red-400", hoverBorder: "hover:bg-red-100 border-red-300" },
-    { num: 39, label: "🗺️ 39: Wegbeschreibung", activeClass: "bg-blue-700 ring-blue-400", hoverBorder: "hover:bg-blue-100 border-blue-300" },
-    { num: 40, label: "⏳ 40: war / hatte (Past)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 41, label: "🛡️ 41: Untrennbare Verben", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 42, label: "🏥 42: krank sein (Health)", activeClass: "bg-rose-700 ring-rose-400", hoverBorder: "hover:bg-rose-100 border-rose-300" },
-    { num: 43, label: "⏳ 43: das Perfekt (Teil 1)", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 44, label: "👑 44: haben vs. sein (Perfekt)", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 45, label: "🏭 45: Partizip II Blueprints", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 46, label: "🏖️ 46: Urlaub & Ferien", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 47, label: "🛒 47: Im Supermarkt", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 48, label: "🌦️ 48: Wie ist das Wetter?", activeClass: "bg-sky-700 ring-sky-300", hoverBorder: "hover:bg-sky-100 border-sky-300" },
-    { num: 49, label: "📅 49: Verabredungen", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 50, label: "✉️ 50: Die Einladung", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
-    { num: 51, label: "👗 51: Gefallen & Missfallen", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
-    { num: 52, label: "🎩 52: welch- (Which?)", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 53, label: "👉 53: dies- (This/These)", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
-    { num: 54, label: "🏬 54: Im Kaufhaus", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 55, label: "🚕 55: Mit dem Taxi", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 56, label: "⏰ 56: Zeitadverbien", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
-    { num: 57, label: "📞 57: Am Telefon", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
-    { num: 58, label: "🩺 58: Beim Arzt", activeClass: "bg-rose-700 ring-rose-300", hoverBorder: "hover:bg-rose-100 border-rose-300" },
-    { num: 59, label: "🏨 59: Hotelreservierung", activeClass: "bg-amber-700 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 60, label: "📝 60: Touristeninfo & Formulare", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 61, label: "🏤 61: Die Post", activeClass: "bg-amber-700 ring-amber-300", hoverBorder: "hover:bg-amber-100 border-amber-300" },
-    { num: 62, label: "🏦 62: Die Bank", activeClass: "bg-red-700 ring-red-300", hoverBorder: "hover:bg-red-100 border-red-300" },
-    { num: 63, label: "🏠 63: Wohnungssuche", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
-    { num: 64, label: "🚆 64: Fahrkarte kaufen", activeClass: "bg-red-700 ring-red-300", hoverBorder: "hover:bg-red-100 border-red-300" },
-    { num: 65, label: "🎓 65: Test A1", activeClass: "bg-teal-700 ring-teal-300", hoverBorder: "hover:bg-teal-100 border-teal-300" },
+    { num: 'summary-1', label: "📑 Summary 1: Redemittel", activeClass: "bg-rose-600 ring-rose-400", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
+    { num: 'summary-2', label: "📑 Summary 2: Grammatik", activeClass: "bg-indigo-600 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 dark:hover:bg-indigo-950 border-indigo-300 dark:border-indigo-700" },
+    { num: 'summary-3', label: "📑 Summary 3: Grammatik II", activeClass: "bg-emerald-600 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
+    { num: 'summary-4', label: "📑 Summary 4: Grammatik IV", activeClass: "bg-amber-600 ring-amber-400", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 'summary-5', label: "📑 Summary 5: Modal & Satzklammer", activeClass: "bg-sky-600 ring-sky-400", hoverBorder: "hover:bg-sky-100 dark:hover:bg-sky-950 border-sky-300 dark:border-sky-700" },
+    { num: 'summary-6', label: "📑 Summary 6: Dativ & Präpositionen", activeClass: "bg-teal-600 ring-teal-400", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 'summary-7', label: "📑 Summary 7: Imperativ & Präteritum", activeClass: "bg-purple-600 ring-purple-400", hoverBorder: "hover:bg-purple-100 dark:hover:bg-purple-950 border-purple-300 dark:border-purple-700" },
+    { num: 'summary-8', label: "📑 Summary 8: Perfekt & Präpositionen", activeClass: "bg-cyan-600 ring-cyan-400", hoverBorder: "hover:bg-cyan-100 dark:hover:bg-cyan-950 border-cyan-300 dark:border-cyan-700" },
+    { num: 'summary-9', label: "📑 Summary 9: sein, sollen, welch/dies & Zeit", activeClass: "bg-fuchsia-600 ring-fuchsia-400", hoverBorder: "hover:bg-fuchsia-100 dark:hover:bg-fuchsia-950 border-fuchsia-300 dark:border-fuchsia-700" },
+    { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-500 ring-amber-300", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 2, label: "💬 2: Phrases", activeClass: "bg-emerald-500 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
+    { num: 3, label: "🔢 3: 0 - 20 & Handy", activeClass: "bg-indigo-500 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 dark:hover:bg-indigo-950 border-indigo-300 dark:border-indigo-700" },
+    { num: 4, label: "🔄 4: 21 - 100", activeClass: "bg-violet-600 ring-violet-300", hoverBorder: "hover:bg-violet-100 dark:hover:bg-violet-950 border-violet-300 dark:border-violet-700" },
+    { num: 5, label: "🔤 5: Das Alphabet", activeClass: "bg-rose-500 ring-rose-300", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
+    { num: 6, label: "🤝 6: Sich Vorstellen", activeClass: "bg-sky-500 ring-sky-300", hoverBorder: "hover:bg-sky-100 dark:hover:bg-sky-950 border-sky-300 dark:border-sky-700" },
+    { num: 7, label: "💬 7: Kennenlernen", activeClass: "bg-teal-500 ring-teal-300", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 8, label: "🚂 8: Satzstruktur", activeClass: "bg-orange-500 ring-orange-300", hoverBorder: "hover:bg-orange-100 dark:hover:bg-orange-950 border-orange-300 dark:border-orange-700" },
+    { num: 9, label: "👗 9: Verb-Endungen", activeClass: "bg-lime-600 ring-lime-300", hoverBorder: "hover:bg-lime-100 dark:hover:bg-lime-950 border-lime-300 dark:border-lime-700" },
+    { num: 10, label: "👥 10: Pronomen", activeClass: "bg-purple-500 ring-purple-300", hoverBorder: "hover:bg-purple-100 dark:hover:bg-purple-950 border-purple-300 dark:border-purple-700" },
+    { num: 11, label: "👑 11: haben & sein", activeClass: "bg-yellow-600 ring-yellow-300", hoverBorder: "hover:bg-yellow-100 dark:hover:bg-yellow-950 border-yellow-300 dark:border-yellow-700" },
+    { num: 12, label: "🌳 12: Was ist ein Verb?", activeClass: "bg-green-600 ring-green-300", hoverBorder: "hover:bg-green-100 dark:hover:bg-green-950 border-green-300 dark:border-green-700" },
+    { num: 13, label: "🧩 13: Regelmäßige Verben", activeClass: "bg-cyan-500 ring-cyan-300", hoverBorder: "hover:bg-cyan-100 dark:hover:bg-cyan-950 border-cyan-300 dark:border-cyan-700" },
+    { num: 14, label: "⚡ 14: Unregelmäßige Verben", activeClass: "bg-fuchsia-500 ring-fuchsia-300", hoverBorder: "hover:bg-fuchsia-100 dark:hover:bg-fuchsia-950 border-fuchsia-300 dark:border-fuchsia-700" },
+    { num: 15, label: "💯 15: Zahlen (Teil 3)", activeClass: "bg-pink-500 ring-pink-300", hoverBorder: "hover:bg-pink-100 dark:hover:bg-pink-950 border-pink-300 dark:border-pink-700" },
+    { num: 16, label: "🎨 16: Adjektive & Gegenteile", activeClass: "bg-slate-600 ring-slate-300", hoverBorder: "hover:bg-slate-100 dark:hover:bg-slate-800 border-slate-300 dark:border-slate-700" },
+    { num: 17, label: "👥 17: Jemanden vorstellen", activeClass: "bg-red-600 ring-red-300", hoverBorder: "hover:bg-red-100 dark:hover:bg-red-950 border-red-300 dark:border-red-700" },
+    { num: 18, label: "🔴 18: der, die, das (Nominativ)", activeClass: "bg-blue-600 ring-blue-300", hoverBorder: "hover:bg-blue-100 dark:hover:bg-blue-950 border-blue-300 dark:border-blue-700" },
+    { num: 19, label: "✨ 19: ein, eine, ein", activeClass: "bg-teal-600 ring-teal-300", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 20, label: "🚫 20: kein, keine, kein", activeClass: "bg-emerald-700 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
+    { num: 21, label: "⏰ 21: Die Uhrzeit", activeClass: "bg-indigo-700 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 dark:hover:bg-indigo-950 border-indigo-300 dark:border-indigo-700" },
+    { num: 22, label: "🕰️ 22: Inoffizielle Zeit", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 23, label: "🏷️ 23: Possessivartikel", activeClass: "bg-lime-700 ring-lime-400", hoverBorder: "hover:bg-lime-100 dark:hover:bg-lime-950 border-lime-300 dark:border-lime-700" },
+    { num: 24, label: "👨‍👩‍👦 24: Die Familie", activeClass: "bg-pink-600 ring-pink-300", hoverBorder: "hover:bg-pink-100 dark:hover:bg-pink-950 border-pink-300 dark:border-pink-700" },
+    { num: 25, label: "🎯 25: Artikel im Akkusativ", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 26, label: "❤️ 26: Possessiv im Akkusativ", activeClass: "bg-rose-600 ring-rose-400", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
+    { num: 27, label: "☕ 27: möchten (would like to)", activeClass: "bg-orange-600 ring-orange-300", hoverBorder: "hover:bg-orange-100 dark:hover:bg-orange-950 border-orange-300 dark:border-orange-700" },
+    { num: 28, label: "❓ 28: W-Fragen (W-Questions)", activeClass: "bg-yellow-500 ring-yellow-200", hoverBorder: "hover:bg-yellow-100 dark:hover:bg-yellow-950 border-yellow-300 dark:border-yellow-700" },
+    { num: 29, label: "🍽️ 29: Restaurant & Café", activeClass: "bg-amber-700 ring-amber-400", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 30, label: "🔄 30: Personalpronomen (Akk)", activeClass: "bg-emerald-600 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
+    { num: 31, label: "🎁 31: Artikel im Dativ", activeClass: "bg-purple-700 ring-purple-400", hoverBorder: "hover:bg-purple-100 dark:hover:bg-purple-950 border-purple-300 dark:border-purple-700" },
+    { num: 32, label: "🥇 32: Ordinalzahlen", activeClass: "bg-amber-500 ring-amber-300", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 33, label: "⏰ 33: Zeit-Fragewörter", activeClass: "bg-indigo-800 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 dark:hover:bg-indigo-950 border-indigo-300 dark:border-indigo-700" },
+    { num: 34, label: "🎁 34: Possessiv im Dativ", activeClass: "bg-violet-700 ring-violet-400", hoverBorder: "hover:bg-violet-100 dark:hover:bg-violet-950 border-violet-300 dark:border-violet-700" },
+    { num: 35, label: "🎁 35: Pronomen im Dativ", activeClass: "bg-teal-800 ring-teal-400", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 36, label: "🚀 36: Trennbare Verben", activeClass: "bg-cyan-700 ring-cyan-400", hoverBorder: "hover:bg-cyan-100 dark:hover:bg-cyan-950 border-cyan-300 dark:border-cyan-700" },
+    { num: 37, label: "🌅 37: Der Tagesablauf", activeClass: "bg-orange-600 ring-orange-400", hoverBorder: "hover:bg-orange-100 dark:hover:bg-orange-950 border-orange-300 dark:border-orange-700" },
+    { num: 38, label: "📣 38: Der Imperativ", activeClass: "bg-red-700 ring-red-400", hoverBorder: "hover:bg-red-100 dark:hover:bg-red-950 border-red-300 dark:border-red-700" },
+    { num: 39, label: "🗺️ 39: Wegbeschreibung", activeClass: "bg-sky-600 ring-sky-400", hoverBorder: "hover:bg-sky-100 dark:hover:bg-sky-950 border-sky-300 dark:border-sky-700" },
+    { num: 40, label: "⏳ 40: war / hatte (Past)", activeClass: "bg-amber-800 ring-amber-400", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 41, label: "🛡️ 41: Untrennbare Verben", activeClass: "bg-slate-700 ring-slate-400", hoverBorder: "hover:bg-slate-100 dark:hover:bg-slate-800 border-slate-300 dark:border-slate-700" },
+    { num: 42, label: "🏥 42: krank sein (Health)", activeClass: "bg-rose-700 ring-rose-400", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
+    { num: 43, label: "⏳ 43: das Perfekt (Teil 1)", activeClass: "bg-blue-700 ring-blue-400", hoverBorder: "hover:bg-blue-100 dark:hover:bg-blue-950 border-blue-300 dark:border-blue-700" },
+    { num: 44, label: "👑 44: haben vs. sein (Perfekt)", activeClass: "bg-yellow-700 ring-yellow-400", hoverBorder: "hover:bg-yellow-100 dark:hover:bg-yellow-950 border-yellow-300 dark:border-yellow-700" },
+    { num: 45, label: "🏭 45: Partizip II Blueprints", activeClass: "bg-purple-800 ring-purple-400", hoverBorder: "hover:bg-purple-100 dark:hover:bg-purple-950 border-purple-300 dark:border-purple-700" },
+    { num: 46, label: "🏖️ 46: Urlaub & Ferien", activeClass: "bg-teal-500 ring-teal-300", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 47, label: "🛒 47: Im Supermarkt", activeClass: "bg-green-500 ring-green-300", hoverBorder: "hover:bg-green-100 dark:hover:bg-green-950 border-green-300 dark:border-green-700" },
+    { num: 48, label: "🌦️ 48: Wie ist das Wetter?", activeClass: "bg-sky-400 ring-sky-200", hoverBorder: "hover:bg-sky-100 dark:hover:bg-sky-950 border-sky-300 dark:border-sky-700" },
+    { num: 49, label: "📅 49: Verabredungen", activeClass: "bg-violet-500 ring-violet-300", hoverBorder: "hover:bg-violet-100 dark:hover:bg-violet-950 border-violet-300 dark:border-violet-700" },
+    { num: 50, label: "✉️ 50: Die Einladung", activeClass: "bg-fuchsia-600 ring-fuchsia-300", hoverBorder: "hover:bg-fuchsia-100 dark:hover:bg-fuchsia-950 border-fuchsia-300 dark:border-fuchsia-700" },
+    { num: 51, label: "👗 51: Gefallen & Missfallen", activeClass: "bg-pink-600 ring-pink-400", hoverBorder: "hover:bg-pink-100 dark:hover:bg-pink-950 border-pink-300 dark:border-pink-700" },
+    { num: 52, label: "🎩 52: welch- (Which?)", activeClass: "bg-indigo-600 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 dark:hover:bg-indigo-950 border-indigo-300 dark:border-indigo-700" },
+    { num: 53, label: "👉 53: dies- (This/These)", activeClass: "bg-rose-800 ring-rose-400", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
+    { num: 54, label: "🏬 54: Im Kaufhaus", activeClass: "bg-blue-800 ring-blue-400", hoverBorder: "hover:bg-blue-100 dark:hover:bg-blue-950 border-blue-300 dark:border-blue-700" },
+    { num: 55, label: "🚕 55: Mit dem Taxi", activeClass: "bg-amber-400 ring-amber-200 text-stone-900", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 56, label: "⏰ 56: Zeitadverbien", activeClass: "bg-cyan-800 ring-cyan-400", hoverBorder: "hover:bg-cyan-100 dark:hover:bg-cyan-950 border-cyan-300 dark:border-cyan-700" },
+    { num: 57, label: "📞 57: Am Telefon", activeClass: "bg-emerald-800 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
+    { num: 58, label: "🩺 58: Beim Arzt", activeClass: "bg-red-800 ring-red-400", hoverBorder: "hover:bg-red-100 dark:hover:bg-red-950 border-red-300 dark:border-red-700" },
+    { num: 59, label: "🏨 59: Hotelreservierung", activeClass: "bg-orange-700 ring-orange-400", hoverBorder: "hover:bg-orange-100 dark:hover:bg-orange-950 border-orange-300 dark:border-orange-700" },
+    { num: 60, label: "📝 60: Touristeninfo & Formulare", activeClass: "bg-teal-700 ring-teal-400", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 61, label: "🏤 61: Die Post", activeClass: "bg-yellow-600 ring-yellow-400", hoverBorder: "hover:bg-yellow-100 dark:hover:bg-yellow-950 border-yellow-300 dark:border-yellow-700" },
+    { num: 62, label: "🏦 62: Die Bank", activeClass: "bg-rose-900 ring-rose-400", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
+    { num: 63, label: "🏠 63: Wohnungssuche", activeClass: "bg-emerald-600 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
+    { num: 64, label: "🚆 64: Fahrkarte kaufen", activeClass: "bg-red-600 ring-red-400", hoverBorder: "hover:bg-red-100 dark:hover:bg-red-950 border-red-300 dark:border-red-700" },
+    { num: 65, label: "🎓 65: Test A1", activeClass: "bg-gradient-to-r from-amber-600 via-purple-600 to-emerald-600 ring-amber-300", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-amber-300 dark:border-emerald-700" },
   ];
 
   return (
-    <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 border-b-4 border-amber-300 shadow-sm sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 dark:from-slate-900 dark:via-slate-850 dark:to-slate-900 border-b-4 border-amber-300 dark:border-amber-500/60 shadow-sm sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 py-2 sm:py-3">
-        {/* Top bar with reassurance and audio settings */}
-        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-amber-200">
+        {/* Top bar with reassurance and audio / theme settings */}
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-amber-200 dark:border-slate-800">
           <div className="flex items-center gap-2">
             <span className="text-2xl sm:text-3xl animate-gentle-bounce">🇩🇪</span>
-            <span className="text-lg sm:text-2xl font-bold text-amber-900 tracking-tight">
+            <span className="text-lg sm:text-2xl font-bold text-amber-900 dark:text-amber-300 tracking-tight">
               German Made Simple
             </span>
             <span className="text-2xl sm:text-3xl animate-gentle-bounce">🇰🇪</span>
           </div>
 
           {/* Calming reassurance badge - hidden on phones to conserve screen */}
-          <div className="hidden lg:flex items-center gap-1.5 bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold shadow-xs">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
+          <div className="hidden lg:flex items-center gap-1.5 bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold shadow-xs border border-emerald-200 dark:border-emerald-800">
+            <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>Zero Jargon • Pure Layman Analogies • No Panic</span>
           </div>
 
-          {/* Audio options */}
+          {/* Controls: Slow audio, Test sound, Dark/Light Mode toggle */}
           <div className="flex items-center gap-2">
+            {/* Dark / Light Mode Toggle Button */}
+            <button
+              onClick={() => {
+                setIsDarkMode(!isDarkMode);
+                playChime('click');
+              }}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black transition-all shadow-xs cursor-pointer border ${
+                isDarkMode
+                  ? 'bg-amber-400 hover:bg-amber-300 text-slate-950 border-amber-300 ring-2 ring-amber-300/50'
+                  : 'bg-slate-800 hover:bg-slate-700 text-amber-300 border-slate-700 ring-2 ring-slate-400/30'
+              }`}
+              title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+            >
+              <span>{isDarkMode ? '☀️' : '🌙'}</span>
+              <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+            </button>
+
             <button
               onClick={() => {
                 setIsSlowMode(!isSlowMode);
@@ -884,7 +903,7 @@ export default function Header({
               className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold transition-all shadow-xs cursor-pointer ${
                 isSlowMode
                   ? 'bg-amber-500 text-white ring-2 ring-amber-300'
-                  : 'bg-white text-stone-700 border border-amber-300 hover:bg-amber-100'
+                  : 'bg-white dark:bg-slate-800 text-stone-700 dark:text-slate-200 border border-amber-300 dark:border-slate-700 hover:bg-amber-100 dark:hover:bg-slate-700'
               }`}
               title="Speak slower so you can hear each syllable clearly"
             >
@@ -904,7 +923,7 @@ export default function Header({
         </div>
 
         {/* Lesson Switcher Row - Sleek single horizontal strip with auto-center, quick dropdown selector & scroll buttons */}
-        <div className="py-2 flex items-center justify-between gap-2 border-b border-amber-200/70">
+        <div className="py-2 flex items-center justify-between gap-2 border-b border-amber-200/70 dark:border-slate-800">
           <div className="flex items-center gap-1.5 shrink-0">
             {/* Quick Dropdown Picker for 1-click jump to any lesson or summary */}
             <select
@@ -915,11 +934,11 @@ export default function Header({
                 setActiveTab('cards');
                 playChime('click');
               }}
-              className="bg-white text-stone-800 border-2 border-amber-300 rounded-xl px-2.5 py-1 text-xs font-black shadow-xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-500 hover:border-amber-400"
+              className="bg-white dark:bg-slate-800 text-stone-800 dark:text-stone-100 border-2 border-amber-300 dark:border-slate-600 rounded-xl px-2.5 py-1 text-xs font-black shadow-xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-500 hover:border-amber-400 dark:hover:border-amber-400"
               title="Jump directly to any lesson"
             >
               {ALL_LESSONS.map((l) => (
-                <option key={l.num} value={l.num}>
+                <option key={l.num} value={l.num} className="bg-white dark:bg-slate-800 text-stone-900 dark:text-stone-100">
                   {l.label}
                 </option>
               ))}
@@ -929,14 +948,14 @@ export default function Header({
             <div className="hidden sm:flex items-center gap-1">
               <button
                 onClick={() => scrollLessons(-280)}
-                className="w-6 h-6 rounded-full bg-white/90 hover:bg-amber-100 border border-amber-300 flex items-center justify-center text-stone-600 transition-all shadow-xs"
+                className="w-6 h-6 rounded-full bg-white/90 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 border border-amber-300 dark:border-slate-600 flex items-center justify-center text-stone-600 dark:text-slate-300 transition-all shadow-xs"
                 title="Scroll left"
               >
                 <ChevronLeft className="w-3.5 h-3.5" />
               </button>
               <button
                 onClick={() => scrollLessons(280)}
-                className="w-6 h-6 rounded-full bg-white/90 hover:bg-amber-100 border border-amber-300 flex items-center justify-center text-stone-600 transition-all shadow-xs"
+                className="w-6 h-6 rounded-full bg-white/90 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 border border-amber-300 dark:border-slate-600 flex items-center justify-center text-stone-600 dark:text-slate-300 transition-all shadow-xs"
                 title="Scroll right"
               >
                 <ChevronRight className="w-3.5 h-3.5" />
@@ -963,7 +982,7 @@ export default function Header({
                   className={`flex-shrink-0 px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer whitespace-nowrap ${
                     isCurrent
                       ? `${l.activeClass} text-white shadow-md scale-102 ring-2`
-                      : `bg-white text-stone-700 border ${l.hoverBorder}`
+                      : `bg-white dark:bg-slate-800 text-stone-700 dark:text-slate-200 border ${l.hoverBorder}`
                   }`}
                 >
                   {l.label}
@@ -972,7 +991,7 @@ export default function Header({
             })}
           </div>
 
-          <span className="text-[11px] text-stone-500 italic hidden 2xl:inline flex-shrink-0">
+          <span className="text-[11px] text-stone-500 dark:text-slate-400 italic hidden 2xl:inline flex-shrink-0">
             💡 Tap speaker icon for audio
           </span>
         </div>
@@ -990,12 +1009,12 @@ export default function Header({
                 }}
                 className={`flex-shrink-0 px-3 py-1.5 sm:py-2 rounded-2xl text-xs sm:text-sm font-bold transition-all duration-200 text-left cursor-pointer whitespace-nowrap ${
                   isActive
-                    ? 'bg-stone-900 text-amber-300 shadow-md scale-102 ring-2 ring-amber-400'
-                    : 'bg-white/80 text-stone-700 hover:bg-amber-200/60 border border-amber-200'
+                    ? 'bg-stone-900 dark:bg-amber-400 text-amber-300 dark:text-stone-950 shadow-md scale-102 ring-2 ring-amber-400 dark:ring-amber-300'
+                    : 'bg-white/80 dark:bg-slate-800/90 text-stone-700 dark:text-slate-200 hover:bg-amber-200/60 dark:hover:bg-slate-700 border border-amber-200 dark:border-slate-700'
                 }`}
               >
                 <div>{item.label}</div>
-                <div className={`text-[10px] ${isActive ? 'text-amber-200' : 'text-stone-500'}`}>
+                <div className={`text-[10px] ${isActive ? 'text-amber-200 dark:text-stone-800' : 'text-stone-500 dark:text-slate-400'}`}>
                   {item.sub}
                 </div>
               </button>

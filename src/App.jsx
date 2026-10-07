@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import StoryCardList from './components/StoryCardList';
 import TimeOfDayExplorer from './components/TimeOfDayExplorer';
@@ -235,6 +235,20 @@ export default function App() {
   const [currentLesson, setCurrentLesson] = useState('summary-9'); // Default to newly added Summary 9, easy switch to 1-65 & Summaries 1-8
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('german-karibu-theme');
+    return saved ? saved === 'dark' : true; // Default to Dark Mode
+  });
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('german-karibu-theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('german-karibu-theme', 'light');
+    }
+  }, [isDarkMode]);
 
   let activeItems = LESSON_1_ITEMS;
   if (currentLesson === 'summary-1') activeItems = SUMMARY_1_ITEMS;
@@ -612,7 +626,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fdfbf7] text-stone-800 flex flex-col font-sans selection:bg-amber-200">
+    <div className="min-h-screen bg-[#fdfbf7] dark:bg-[#0f172a] text-stone-800 dark:text-stone-100 flex flex-col font-sans selection:bg-amber-200 dark:selection:bg-amber-800 transition-colors duration-300">
       {/* Top Header with 5-Lesson Switcher */}
       <Header
         currentLesson={currentLesson}
@@ -621,6 +635,8 @@ export default function App() {
         setActiveTab={setActiveTab}
         isSlowMode={isSlowMode}
         setIsSlowMode={setIsSlowMode}
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
       />
 
       {/* Main Learning Content Area */}
@@ -1328,14 +1344,14 @@ export default function App() {
       </main>
 
       {/* Reassuring Footer */}
-      <footer className="bg-amber-100/60 border-t-2 border-amber-200 py-6 mt-12 text-center text-xs text-stone-600">
+      <footer className="bg-amber-100/60 dark:bg-slate-900/90 border-t-2 border-amber-200 dark:border-slate-800 py-6 mt-12 text-center text-xs text-stone-600 dark:text-slate-400 transition-colors">
         <div className="max-w-4xl mx-auto px-4 space-y-1">
-          <div className="flex items-center justify-center gap-2 font-bold text-amber-900">
+          <div className="flex items-center justify-center gap-2 font-bold text-amber-900 dark:text-amber-300">
             <span>🇰🇪</span>
             <span>German Concepts Explained in Plain Layman Terms with Everyday Relatable Analogies</span>
             <span>🇩🇪</span>
           </div>
-          <p className="text-stone-500">
+          <p className="text-stone-500 dark:text-slate-400">
             No scary academic jargon. Designed for kindergarteners, elders, and absolute beginners alike. Tap any word, letter, or number to hear live audio!
           </p>
         </div>

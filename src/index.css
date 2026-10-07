@@ -1,13 +1,20 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   body {
-    background-color: #fdfbf7;
-    color: #2d3748;
+    background-color: #0f172a;
+    color: #f1f5f9;
     font-family: 'Comic Sans MS', 'Bubblegum Sans', 'Quicksand', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html:not(.dark) body {
+    background-color: #fdfbf7;
+    color: #2d3748;
   }
 }
 
