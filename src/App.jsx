@@ -146,12 +146,15 @@ import Summary4GrammatikStudio from './components/Summary4GrammatikStudio';
 import Summary4Game from './components/Summary4Game';
 import Summary5GrammatikStudio from './components/Summary5GrammatikStudio';
 import Summary5Game from './components/Summary5Game';
+import Summary6GrammatikStudio from './components/Summary6GrammatikStudio';
+import Summary6Game from './components/Summary6Game';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
   SUMMARY_3_ITEMS,
   SUMMARY_4_ITEMS,
   SUMMARY_5_ITEMS,
+  SUMMARY_6_ITEMS,
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
   LESSON_3_ITEMS,
@@ -220,7 +223,7 @@ import {
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState('summary-5'); // Default to newly added Summary 5, easy switch to 1-65 & Summaries 1-4
+  const [currentLesson, setCurrentLesson] = useState('summary-6'); // Default to newly added Summary 6, easy switch to 1-65 & Summaries 1-5
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -230,6 +233,7 @@ export default function App() {
   if (currentLesson === 'summary-3') activeItems = SUMMARY_3_ITEMS;
   if (currentLesson === 'summary-4') activeItems = SUMMARY_4_ITEMS;
   if (currentLesson === 'summary-5') activeItems = SUMMARY_5_ITEMS;
+  if (currentLesson === 'summary-6') activeItems = SUMMARY_6_ITEMS;
   if (currentLesson === 2) activeItems = LESSON_2_ITEMS;
   if (currentLesson === 3) activeItems = LESSON_3_ITEMS;
   if (currentLesson === 4) activeItems = LESSON_4_ITEMS;
@@ -301,6 +305,7 @@ export default function App() {
     if (currentLesson === 'summary-3') return "Summary 3: Visual Grammatik & Redemittel Teil 2 (Verben auf d/t, 5 Plural-Baupläne, Possessiv, Inversion & Comic)";
     if (currentLesson === 'summary-4') return "Summary 4: Visual Grammatik & Redemittel Teil 4 (mögen/möchten, Vokalwechsel, Akkusativ, Nullartikel & Salat-Comic)";
     if (currentLesson === 'summary-5') return "Summary 5: Visual Grammatik & Redemittel Teil 5 (Modalverben, Trennbare Verben, Satzklammer, man/niemand & Toolkit)";
+    if (currentLesson === 'summary-6') return "Summary 6: Visual Grammatik & Redemittel Teil 6 (Dativ-Artikel, Akkusativ-Pronomen, 9 Lokale Präpositionen, denn & Wüsten-Comic)";
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
     if (currentLesson === 2) return "Lesson 2: Häufige Redemittel (Common Everyday Phrases)";
     if (currentLesson === 3) return "Lesson 3: Zahlen 0 - 20 & Meine Handynummer (Numbers & Mobile)";
@@ -383,6 +388,9 @@ export default function App() {
     }
     if (currentLesson === 'summary-5') {
       return "Master the 4 core modal verbs (müssen, können, wollen, dürfen), separable verbs (anziehen, aufstehen), the legendary Satzklammer sentence brackets and modal-separable combo, indefinite pronouns (man & niemand), and essential daily conversation phrases!";
+    }
+    if (currentLesson === 'summary-6') {
+      return "Master Dative definite articles (dem, dem, der, den...-n) with the Double-N plural rule, Accusative personal pronouns (mich, dich, ihn), the 9 spatial prepositions answering 'Wo?', the Position 0 connector 'denn', and the hilarious desert directions comic!";
     }
     if (currentLesson === 1) {
       return "German greetings made friendly, colorful, and memorable with everyday analogies. Tap any card to listen!";
@@ -1243,6 +1251,15 @@ export default function App() {
 
         {currentLesson === 'summary-5' && activeTab === 'summary5Game' && (
           <Summary5Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Summary 6 Specific Modules */}
+        {currentLesson === 'summary-6' && activeTab === 'summary6Studio' && (
+          <Summary6GrammatikStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 'summary-6' && activeTab === 'summary6Game' && (
+          <Summary6Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

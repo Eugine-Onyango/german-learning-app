@@ -18199,6 +18199,252 @@ export const SUMMARY_5_SCENARIOS = [
   }
 ];
 
+export const SUMMARY_6_ITEMS = [
+  // Pages 1 & 2: Dativ bestimmter Artikel
+  {
+    id: "s6-dativ-definite-articles",
+    german: "Dativ Artikel: dem Stuhl (Mask.) • dem Regal (Neut.) • der Lampe (Fem.) • den Stühlen (Plur.)",
+    english: "Dative Definite Articles: dem (-em for masc/neut), der (-er for fem), den ...-n (-en + -n for plural)",
+    pronunciation: "daym SHTOOL, daym ray-GAHL, dair LAHM-peh, dayn SHTEW-len",
+    audioText: "Dativ: dem Stuhl, dem Regal, der Lampe, den Stühlen, den Regalen, den Lampen, den Fotos.",
+    layman: "The Dative Case ('Receiver / Location Case') changes definite articles: Masculine and Neuter both turn into 'dem' (-em), Feminine turns into 'der' (-er), and Plural turns into 'den' PLUS adds an extra '-n' to the noun ('den Stühlen')!",
+    analogy: "Think of Dativ as handing a gift to someone: Masculine & Neuter wear '-em' suits, Feminine wears '-er', and Plural is the Double-N team (den + noun ends in -n)!",
+    example: "Das Buch liegt auf dem Regal (n) und der Stift liegt neben dem Stuhl (m).",
+    exampleEnglish: "The book is lying on the shelf and the pen is lying next to the chair.",
+    category: "1. Dativ Artikel",
+    badge: "dem, dem, der, den...-n",
+    icon: "🛡️"
+  },
+  {
+    id: "s6-dativ-plural-double-n",
+    german: "Dativ Plural: den + Nomen bekommt ein Extra \"-n\"! (den Stühlen / den Regalen / den Lampen)",
+    english: "Dative Plural: den + Noun gets an extra '-n' (den Stühlen / den Regalen / den Lampen) *Except plural -s: den Fotos",
+    pronunciation: "dayn SHTEW-len, dayn ray-GAH-len, dayn LAHM-pen, dayn FOH-tohs",
+    audioText: "den Stühlen. den Regalen. den Lampen. den Fotos.",
+    layman: "Dativ Plural Double-N Law: The article becomes 'den' AND the noun itself sprouts an extra '-n' at the end ('die Stühle' ➔ 'den Stühlen')! Exception: If the plural already ends in '-s', don't add an -n ('den Fotos')!",
+    analogy: "The Double-N anchor: 'den' in front, '-n' at the back!",
+    example: "Die Kinder spielen unter den Bäumen und sitzen auf den Stühlen.",
+    exampleEnglish: "The children are playing under the trees and sitting on the chairs.",
+    category: "1. Dativ Artikel",
+    badge: "Plural Double-N Rule",
+    icon: "👥"
+  },
+
+  // Page 3: Personalpronomen - Akkusativ
+  {
+    id: "s6-personalpronomen-akkusativ",
+    german: "Personalpronomen im Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie, Sie",
+    english: "Accusative Personal Pronouns: me (mich), you (dich), him (ihn), her (sie), it (es), us (uns), you all (euch), them (sie), You (Sie)",
+    pronunciation: "mikh, dikh, een, zee, ess, oons, oykh, zee, ZEE",
+    audioText: "Personalpronomen im Akkusativ: ich wird mich. du wird dich. er wird ihn. sie bleibt sie. es bleibt es. wir wird uns. ihr wird euch. sie bleibt sie. Sie bleibt Sie.",
+    layman: "When a person receives the direct action, they change into their Accusative form! Look at the superpower: 'er' becomes 'ihn' (the only 3rd person singular changer), while 'sie' (her) and 'es' (it) remain unchanged twins!",
+    analogy: "Direct object person: 'Ananiona mimi' ➔ 'Er sieht mich', 'Ninakupenda wewe' ➔ 'Ich liebe dich'!",
+    example: "Liebst du mich? - Ja, ich liebe dich! Und kennst du ihn? - Ja, ich kenne ihn.",
+    exampleEnglish: "Do you love me? - Yes, I love you! And do you know him? - Yes, I know him.",
+    category: "2. Akkusativ-Pronomen",
+    badge: "mich, dich, ihn, uns, euch",
+    icon: "🎯"
+  },
+
+  // Page 4: 9 Lokale Präpositionen (Wo? + Dativ)
+  {
+    id: "s6-lokale-praepositionen-9",
+    german: "Die 9 lokalen Präpositionen (Wo? ➔ DATIV): in, an, auf, über, unter, vor, hinter, neben, zwischen",
+    english: "The 9 Location Prepositions (Where? ➔ DATIVE): in, on (vertical), on top of (horizontal), above, under, in front of, behind, next to, between",
+    pronunciation: "in, ahn, owf, EW-ber, OON-ter, fohr, HIN-ter, NAY-ben, TSVI-shen",
+    audioText: "in, an, auf, über, unter, vor, hinter, neben, zwischen. Das Bild hängt an der Wand. Das Buch liegt auf dem Tisch. Der Hund schläft unter dem Schrank.",
+    layman: "Whenever you answer the question 'Wo?' (Where is something located?), German ALWAYS uses the DATIVE case! Master the 9 spatial prepositions with their visual positions!",
+    analogy: "A 3D GPS map showing exact physical location: inside, on top, underneath, behind, between!",
+    example: "Die Lampe steht zwischen dem Schrank und dem Bett.",
+    exampleEnglish: "The lamp is standing between the wardrobe and the bed.",
+    category: "3. Lokale Präpositionen (Wo?)",
+    badge: "9 Spatial Keys (Wo? = Dativ)",
+    icon: "🧭"
+  },
+  {
+    id: "s6-preposition-contractions-im-am",
+    german: "Verschmelzungen: in + dem = im • an + dem = am (im Schrank / am Regal / auf dem Tisch)",
+    english: "Preposition Contractions: in dem ➔ im | an dem ➔ am (in the wardrobe / at the shelf / on the table)",
+    pronunciation: "in daym vert im, ahn daym vert ahm",
+    audioText: "in dem wird im. an dem wird am. Der Mantel hängt im Schrank. Das Poster hängt am Regal.",
+    layman: "German loves speed! Instead of saying 'in dem Schrank', merge them into 'im Schrank'! Instead of 'an dem Fenster', say 'am Fenster'!",
+    analogy: "Shortcuts like English 'don't' or 'it's': in + dem = im, an + dem = am!",
+    example: "Er sitzt am Tisch und die Milch steht im Kühlschrank.",
+    exampleEnglish: "He is sitting at the table and the milk is in the fridge.",
+    category: "3. Lokale Präpositionen (Wo?)",
+    badge: "im & am Shortcuts",
+    icon: "⚡"
+  },
+
+  // Page 5: für + Akkusativ
+  {
+    id: "s6-fuer-akkusativ",
+    german: "Präposition \"für\" (für wen?): Immer mit AKKUSATIV! (für meinen Mann / für ihn • für meine Schwester / für sie)",
+    english: "Preposition 'für' (for whom?): ALWAYS with ACCUSATIVE! (for my husband / for him • for my sister / for her • for my children / for them)",
+    pronunciation: "FEWR my-nen MAHN, FEWR een • FEWR my-neh SHVES-ter, FEWR zee • FEWR my-neh KIN-der, FEWR zee",
+    audioText: "für plus Akkusativ: für meinen Mann, für ihn. für meine Schwester, für sie. für meine Kinder, für sie. Das Geschenk ist für dich.",
+    layman: "Golden Preposition Law: The word 'für' (for) is a strict 100% Akkusativ magnet! Whenever you see 'für', use 'meinen / ihn' for masculine, 'meine / sie' for feminine, and 'meine / sie' for plural!",
+    analogy: "Buying a gift: 'Zawadi hii ni kwa ajili ya...' ➔ 'Das ist für meinen Mann / für dich'!",
+    example: "Ich kaufe Blumen für meine Mutter und ein Buch für meinen Bruder.",
+    exampleEnglish: "I am buying flowers for my mother and a book for my brother.",
+    category: "4. für + Akkusativ",
+    badge: "für + Akkusativ",
+    icon: "🎁"
+  },
+
+  // Page 6: Konjunktion denn (Position 0)
+  {
+    id: "s6-konjunktion-denn-pos0",
+    german: "Konjunktion \"denn\" (Position 0): Bea Schröder kann nicht fahren, denn (0) ihr Fahrrad (1) ist (2) nicht da.",
+    english: "Connector 'denn' (because / for - Position 0): Bea can't ride home, because (0) her bike (1) is (2) not there.",
+    pronunciation: "den: bay-ah SHREU-der kahn nikht nahkh HOW-zeh FAH-ren, den eer FAHR-raht ist nikht dah.",
+    audioText: "Bea Schröder kann nicht nach Hause fahren, denn ihr Fahrrad ist nicht da. Ich lerne Deutsch, denn ich will in Berlin arbeiten.",
+    layman: "'denn' explains the REASON ('kwa sababu') without messing up word order! It sits at 'Position 0' outside the sentence count, so the second clause keeps regular order: Subject (Pos 1) + Verb (Pos 2)!",
+    analogy: "The 4 friendly bridge connectors (ADUSO: aber, denn, und, sondern, oder) that sit on Position 0 and never push the verb away!",
+    example: "Markus kommt heute nicht, denn er ist krank.",
+    exampleEnglish: "Markus isn't coming today, because he is sick.",
+    category: "5. Konjunktion denn (Pos 0)",
+    badge: "denn = Position 0!",
+    icon: "🚂"
+  },
+
+  // Page 7: Desert Directions Cartoon Comic
+  {
+    id: "s6-cartoon-desert-directions",
+    german: "Cartoon: \"Wo ist hier die nächste Stadt?\" - \"Zuerst geradeaus, nächste Woche dann nach links.\"",
+    english: "Cartoon: 'Where is the nearest city around here?' - 'First straight ahead, next week then turn left.'",
+    pronunciation: "voh ist heer dee NAYKH-steh SHTAHT? - TSOO-airkst geh-RAH-deh-ows, NAYKH-steh VOH-kheh dahn nahkh LINGKS.",
+    audioText: "Wo ist hier die nächste Stadt? Zuerst geradeaus, nächste Woche dann nach links.",
+    layman: "The hilarious Page 7 desert comic! A thirsty traveler is stranded in the vast hot desert holding a shoe and asks for directions. The cheerful local casually replies: 'First straight ahead, next week then turn left!'",
+    analogy: "Getting lost in the wilderness: Direction words in German (`geradeaus` = straight ahead, `nach links` = turn left)!",
+    example: "Entschuldigung, wie komme ich zum Bahnhof? - Gehen Sie geradeaus und dann nach links.",
+    exampleEnglish: "Excuse me, how do I get to the train station? - Go straight ahead and then turn left.",
+    category: "6. Cartoon Comic",
+    badge: "Desert Direction Comic",
+    icon: "🐪"
+  },
+
+  // Page 8: REDEMITTEL Toolkit
+  {
+    id: "s6-redemittel-weg-erklaeren",
+    german: "einen Weg erklären: Entschuldigung, wo ist hier...? • Gehen / Fahren Sie geradeaus / nach links / nach rechts.",
+    english: "Giving & Asking Directions: Excuse me, where is a...? • Go / Drive straight ahead / left / right.",
+    pronunciation: "ent-SHOOL-dee-goong, voh ist heer IE-neh...? GAY-en ZEE geh-RAH-deh-ows / nahkh LINGKS / nahkh REKHTS.",
+    audioText: "Entschuldigung, wo ist hier ein Supermarkt? Gehen Sie geradeaus, dann nach links und dann nach rechts. Tut mir leid, das weiß ich nicht. Ich bin nicht von hier. Ich bin hier auch fremd. Vielen Dank!",
+    layman: "Asking and giving street directions: Use 'geradeaus' (straight ahead), 'nach links' (to the left), 'nach rechts' (to the right). If you don't know the way, say politely: 'Tut mir leid, ich bin nicht von hier' (Sorry, I'm not from around here)!",
+    analogy: "Guiding someone in town: 'Nenda moja kwa moja, kisha kata kushoto'!",
+    example: "Wo ist die Apotheke? - Fahren Sie 200 Meter geradeaus, dann nach rechts.",
+    exampleEnglish: "Where is the pharmacy? - Drive 200 meters straight ahead, then to the right.",
+    category: "7. Redemittel Toolkit",
+    badge: "Directions & Street Guide",
+    icon: "🗺️"
+  },
+  {
+    id: "s6-redemittel-wohnung-moebel",
+    german: "die Wohnung beschreiben: Wo ist dein Schrank? - Er steht neben dem Bett / Das Bild hängt an der Wand.",
+    english: "Describing apartment & furniture: Where is your wardrobe? - It stands next to the bed / The picture hangs on the wall.",
+    pronunciation: "dahs ist myn VOHN-tsim-mer. air shtayt NAY-ben daym BET. dahs BILT hengt ahn dair VAHNT.",
+    audioText: "Das ist mein Wohnzimmer. Wo ist dein Schrank? Hier. Er steht neben dem Regal. Die Lampe steht auf dem Tisch. Das Bild hängt an der Wand. Die Schuhe stehen unter dem Bett.",
+    layman: "Describe room layouts using posture verbs: 'stehen' (standing upright: Schrank, Lampe), 'liegen' (lying flat: Teppich, Buch), 'hängen' (hanging on wall: Bild, Spiegel) paired with Dative spatial prepositions!",
+    analogy: "Giving a virtual tour of your living room or bedroom in German!",
+    example: "Mein Schreibtisch steht am Fenster und mein Bett steht neben der Tür.",
+    exampleEnglish: "My desk stands by the window and my bed stands next to the door.",
+    category: "7. Redemittel Toolkit",
+    badge: "Apartment & Furniture",
+    icon: "🛋️"
+  },
+  {
+    id: "s6-redemittel-bewerten-doch",
+    german: "etwas bewerten: Für mich ist / sind ... (nicht) wichtig. • Und für dich? - Für mich auch / Doch, für mich sind ... wichtig.",
+    english: "Evaluating importance & opinions: For me ... is (not) important. • And for you? - For me too / On the contrary, for me ... are important.",
+    pronunciation: "fewr mikh ist nikht VIKH-tikh. oont fewr dikh? fewr mikh owkh. dokh, fewr mikh zint...",
+    audioText: "Für mich ist ein Balkon sehr wichtig. Für mich ist ein Garten nicht wichtig. Und für dich? Für mich auch. Auch nicht. Doch, für mich sind viele Zimmer wichtig.",
+    layman: "Express personal priorities: 'Für mich ist [Sache] wichtig' (Important to me). If someone says it's NOT important, contradict positively with DOCH: 'Doch, für mich ist es wichtig!'",
+    analogy: "Discussing what matters most when renting an apartment (balcony, quiet area, low rent)!",
+    example: "Ein großer Balkon ist für mich sehr wichtig. Und für dich? - Für mich auch!",
+    exampleEnglish: "A large balcony is very important to me. And for you? - For me too!",
+    category: "7. Redemittel Toolkit",
+    badge: "Priorities & The Magic DOCH",
+    icon: "⭐"
+  }
+];
+
+export const SUMMARY_6_SCENARIOS = [
+  {
+    scenario: "What are the correct Dative definite articles for 'der Stuhl' (m), 'das Regal' (n), 'die Lampe' (f), and 'die Stühle' (pl) (Summary 6, Pages 1 & 2)?",
+    hint: "Check the Dative article endings: -em, -em, -er, -en + -n.",
+    options: [
+      { text: "dem Stuhl • dem Regal • der Lampe • den Stühlen", correct: true, explain: "Genau! In Dativ: Masculine and Neuter take 'dem', Feminine takes 'der', and Plural takes 'den' PLUS adds an '-n' to the noun ('den Stühlen')!" },
+      { text: "den Stuhl • das Regal • die Lampe • die Stühle", correct: false, explain: "Those are Accusative and Nominative forms, not Dative." },
+      { text: "des Stuhls • des Regals • der Lampe • der Stühle", correct: false, explain: "Those are Genitive forms." }
+    ]
+  },
+  {
+    scenario: "Look at the Dativ Plural rule on Page 2: What is the special rule for the noun in Dativ Plural (e.g. 'die Stühle' ➔ 'den Stühlen')?",
+    hint: "The Double-N rule!",
+    options: [
+      { text: "The article becomes 'den' AND the noun adds an extra '-n' at the end (den Stühlen, den Regalen, den Lampen) — except if it already ends in '-s' like 'den Fotos'.", correct: true, explain: "Richtig! In Dativ Plural, the article is always 'den' and the plural noun receives an extra '-n' at the end (unless the plural ends in '-s' like 'den Fotos')!" },
+      { text: "The noun loses all its vowels.", correct: false, explain: "Vowels remain unchanged." },
+      { text: "The article becomes 'der' with no change to the noun.", correct: false, explain: "'der' is for feminine singular in Dativ." }
+    ]
+  },
+  {
+    scenario: "In Accusative personal pronouns (Page 3), what do 'er' (he) and 'du' (you) transform into?",
+    hint: "Check 'ich ➔ mich', 'du ➔ ...', 'er ➔ ...'.",
+    options: [
+      { text: "er ➔ ihn • du ➔ dich (e.g. 'Ich kenne ihn' & 'Ich liebe dich')", correct: true, explain: "Perfekt! In Akkusativ, 'er' becomes 'ihn' (him) and 'du' becomes 'dich' (you)!" },
+      { text: "er ➔ ihm • du ➔ dir", correct: false, explain: "'ihm' and 'dir' are Dative pronouns, not Accusative." },
+      { text: "er ➔ er • du ➔ du", correct: false, explain: "Personal pronouns change in Accusative." }
+    ]
+  },
+  {
+    scenario: "Which spatial preposition and case would you use to say 'The book is lying on the shelf' (Page 4)?",
+    hint: "Horizontal surface 'auf' + Neuter Dative 'dem Regal'.",
+    options: [
+      { text: "auf dem Regal (auf + Dativ 'dem')", correct: true, explain: "Ausgezeichnet! Answering 'Wo?' (Where?) triggers Dativ: 'auf' (on top of) + neuter Dative 'dem Regal' = 'auf dem Regal'!" },
+      { text: "in das Regal", correct: false, explain: "'in das' indicates movement (Wohin?), not stationary location (Wo?)." },
+      { text: "unter den Regal", correct: false, explain: "'den' is masculine accusative, not neuter dative." }
+    ]
+  },
+  {
+    scenario: "What case does the preposition 'für' ALWAYS take (Page 5)? E.g. 'Das Geschenk ist für ______ (mein Mann)'.",
+    hint: "Check Page 5: 'für + ...'.",
+    options: [
+      { text: "AKKUSATIV (für meinen Mann / für ihn / für meine Kinder).", correct: true, explain: "Wunderbar! The preposition 'für' strictly demands the AKKUSATIV case 100% of the time: 'für meinen Mann' (m), 'für meine Schwester' (f), 'für ihn'!" },
+      { text: "DATIV (für meinem Mann).", correct: false, explain: "'für' NEVER takes Dative!" },
+      { text: "NOMINATIV (für mein Mann).", correct: false, explain: "Must take Accusative ending '-en' for masculine." }
+    ]
+  },
+  {
+    scenario: "In the sentence 'Bea Schröder kann nicht fahren, denn ihr Fahrrad ist nicht da' (Page 6), which position does 'denn' occupy?",
+    hint: "The connector that doesn't count in sentence positions!",
+    options: [
+      { text: "Position 0 (It connects clauses without moving the subject from Pos 1 and verb from Pos 2).", correct: true, explain: "Brilliant! 'denn' sits in Position 0! The following sentence maintains standard word order: Subject 'ihr Fahrrad' (Pos 1) + Verb 'ist' (Pos 2)!" },
+      { text: "Position 2.", correct: false, explain: "The conjugated verb 'ist' is in Position 2." },
+      { text: "At the end of the sentence.", correct: false, explain: "'denn' sits right at the start of the second clause." }
+    ]
+  },
+  {
+    scenario: "In the desert cartoon (Page 7), what is the funny answer to 'Wo ist hier die nächste Stadt?'?",
+    hint: "Look at the walking directions in the desert!",
+    options: [
+      { text: "\"Zuerst geradeaus, nächste Woche dann nach links.\" (Straight ahead, next week then turn left!)", correct: true, explain: "Super! The desert guide humorously tells the lost hiker to walk straight for an entire week before taking the next left turn!" },
+      { text: "\"Hier um die Ecke.\"", correct: false, explain: "They are stranded in the middle of a vast desert." },
+      { text: "\"Nehmen Sie den Bus.\"", correct: false, explain: "There are no buses in the middle of the desert dunes." }
+    ]
+  },
+  {
+    scenario: "How do you tell someone politely that you don't know the way because you are also a stranger in town (Page 8)?",
+    hint: "Check Page 8 Redemittel: 'Ich bin hier auch...'",
+    options: [
+      { text: "\"Tut mir leid, das weiß ich nicht. Ich bin nicht von hier / Ich bin hier auch fremd.\"", correct: true, explain: "Perfekt! 'Tut mir leid, ich bin nicht von hier / Ich bin hier auch fremd' is the natural, polite German phrase for 'Sorry, I'm not from around here either'!" },
+      { text: "\"Zahlen, bitte!\"", correct: false, explain: "'Zahlen, bitte!' is for paying at a restaurant." },
+      { text: "\"Stimmt so!\"", correct: false, explain: "'Stimmt so!' is for giving a tip." }
+    ]
+  }
+];
+
+
 
 
 
