@@ -235,6 +235,9 @@ export default function App() {
   const [currentLesson, setCurrentLesson] = useState('summary-9'); // Default to newly added Summary 9, easy switch to 1-65 & Summaries 1-8
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
+  const [voiceGender, setVoiceGender] = useState(() => {
+    return localStorage.getItem('german-karibu-voice-gender') || 'male';
+  });
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem('german-karibu-theme');
     return saved ? saved === 'dark' : true; // Default to Dark Mode
@@ -635,6 +638,8 @@ export default function App() {
         setActiveTab={setActiveTab}
         isSlowMode={isSlowMode}
         setIsSlowMode={setIsSlowMode}
+        voiceGender={voiceGender}
+        setVoiceGender={setVoiceGender}
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}
       />

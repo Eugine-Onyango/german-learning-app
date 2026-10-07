@@ -9,6 +9,8 @@ export default function Header({
   setActiveTab,
   isSlowMode,
   setIsSlowMode,
+  voiceGender,
+  setVoiceGender,
   isDarkMode,
   setIsDarkMode
 }) {
@@ -876,8 +878,35 @@ export default function Header({
             <span>Zero Jargon • Pure Layman Analogies • No Panic</span>
           </div>
 
-          {/* Controls: Slow audio, Test sound, Dark/Light Mode toggle */}
+          {/* Controls: Voice switcher, Slow audio, Test sound, Dark/Light Mode toggle */}
           <div className="flex items-center gap-2">
+            {/* Voice Gender Toggle: Male / Female */}
+            <button
+              onClick={() => {
+                const nextGender = voiceGender === 'male' ? 'female' : 'male';
+                setVoiceGender(nextGender);
+                playChime('click');
+                speakGerman(
+                  nextGender === 'female'
+                    ? "Hallo! Weibliche Stimme aktiviert."
+                    : "Hallo! Männliche Stimme aktiviert.",
+                  isSlowMode,
+                  null,
+                  null,
+                  nextGender
+                );
+              }}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black transition-all shadow-xs cursor-pointer border ${
+                voiceGender === 'female'
+                  ? 'bg-rose-600 hover:bg-rose-500 text-white border-rose-400 ring-2 ring-rose-400/50'
+                  : 'bg-indigo-600 hover:bg-indigo-500 text-white border-indigo-400 ring-2 ring-indigo-400/50'
+              }`}
+              title={`Currently ${voiceGender === 'male' ? 'Male Voice' : 'Female Voice'}. Tap to switch!`}
+            >
+              <span>{voiceGender === 'female' ? '👩' : '👨'}</span>
+              <span>{voiceGender === 'female' ? 'Female' : 'Male'} Voice</span>
+            </button>
+
             {/* Dark / Light Mode Toggle Button */}
             <button
               onClick={() => {

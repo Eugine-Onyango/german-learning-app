@@ -66,8 +66,64 @@ export function playChime(type = 'success') {
   }
 }
 
-// Speak German text clearly with optional slow rate
-export function speakGerman(text, isSlow = false, onStart, onEnd) {
+let currentVoiceGender = typeof window !== 'undefined'
+  ? (localStorage.getItem('german-karibu-voice-gender') || 'male')
+  : 'male';
+
+// Pre-fetch voices on load
+if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+  window.speechSynthesis.getVoices();
+  if (window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = () => {
+      window.speechSynthesis.getVoices();
+    };
+  }
+}
+
+export function setVoiceGender(gender) {
+  currentVoiceGender = gender;
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('german-karibu-voice-gender', gender);
+  }
+}
+
+export function getVoiceGender() {
+  return currentVoiceGender;
+}
+
+function findGermanVoice(gender = 'male') {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return null;
+  const voices = window.speechSynthesis.getVoices();
+  const deVoices = voices.filter(v => v.lang.startsWith('de') || v.lang.includes('DE'));
+  if (deVoices.length === 0) return null;
+
+  const femaleKeywords = ['female', 'hedda', 'katja', 'anna', 'marlene', 'vicki', 'petra', 'klara', 'gudrun', 'helena', 'gisela', 'steffi', 'amala', 'elke', 'birgit', 'louisa', 'meryem', 'google deutsch', 'zira'];
+  const maleKeywords = ['male', 'stefan', 'conrad', 'hans', 'markus', 'martin', 'yannick', 'florian', 'bernd', 'christoph', 'daniel', 'klaus', 'thorsten', 'werner', 'david'];
+
+  if (gender === 'male') {
+    const maleVoice = deVoices.find(v => {
+      const name = v.name.toLowerCase();
+      return maleKeywords.some(k => name.includes(k));
+    });
+    if (maleVoice) return maleVoice;
+    const nonFemale = deVoices.find(v => {
+      const name = v.name.toLowerCase();
+      return !femaleKeywords.some(k => name.includes(k));
+    });
+    if (nonFemale) return nonFemale;
+  } else {
+    const femaleVoice = deVoices.find(v => {
+      const name = v.name.toLowerCase();
+      return femaleKeywords.some(k => name.includes(k));
+    });
+    if (femaleVoice) return femaleVoice;
+  }
+
+  return deVoices[0];
+}
+
+// Speak German text clearly with optional slow rate and gender preference
+export function speakGerman(text, isSlow = false, onStart, onEnd, customGender) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
     console.warn('Speech synthesis not supported in this browser.');
     return;
@@ -76,19 +132,25 @@ export function speakGerman(text, isSlow = false, onStart, onEnd) {
   // Cancel any ongoing speech
   window.speechSynthesis.cancel();
 
+  const activeGender = customGender || (typeof window !== 'undefined' ? (localStorage.getItem('german-karibu-voice-gender') || currentVoiceGender) : currentVoiceGender);
+
   // Clean the text (remove brackets or exclamation marks for speech)
   const cleanText = text.replace(/[/()]/g, ' ').trim();
   const utterance = new SpeechSynthesisUtterance(cleanText);
 
-  // Look for German voice
-  const voices = window.speechSynthesis.getVoices();
-  const germanVoice = voices.find(v => v.lang.startsWith('de')) || voices.find(v => v.lang.includes('DE'));
+  // Look for preferred German voice
+  const germanVoice = findGermanVoice(activeGender);
   if (germanVoice) {
     utterance.voice = germanVoice;
   }
   utterance.lang = 'de-DE';
   utterance.rate = isSlow ? 0.65 : 0.88; // Gentle and friendly speed
-  utterance.pitch = 1.05; // Slightly warmer/friendly pitch
+
+  if (activeGender === 'female') {
+    utterance.pitch = 1.22; // Melodious and distinct feminine pitch
+  } else {
+    utterance.pitch = 0.88; // Deep, clear masculine pitch
+  }
 
   if (onStart) utterance.onstart = onStart;
   if (onEnd) utterance.onend = onEnd;
