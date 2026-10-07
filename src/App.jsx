@@ -152,6 +152,8 @@ import Summary7GrammatikStudio from './components/Summary7GrammatikStudio';
 import Summary7Game from './components/Summary7Game';
 import Summary8GrammatikStudio from './components/Summary8GrammatikStudio';
 import Summary8Game from './components/Summary8Game';
+import Summary9GrammatikStudio from './components/Summary9GrammatikStudio';
+import Summary9Game from './components/Summary9Game';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
@@ -161,6 +163,7 @@ import {
   SUMMARY_6_ITEMS,
   SUMMARY_7_ITEMS,
   SUMMARY_8_ITEMS,
+  SUMMARY_9_ITEMS,
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
   LESSON_3_ITEMS,
@@ -229,7 +232,7 @@ import {
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState('summary-8'); // Default to newly added Summary 8, easy switch to 1-65 & Summaries 1-7
+  const [currentLesson, setCurrentLesson] = useState('summary-9'); // Default to newly added Summary 9, easy switch to 1-65 & Summaries 1-8
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -242,6 +245,7 @@ export default function App() {
   if (currentLesson === 'summary-6') activeItems = SUMMARY_6_ITEMS;
   if (currentLesson === 'summary-7') activeItems = SUMMARY_7_ITEMS;
   if (currentLesson === 'summary-8') activeItems = SUMMARY_8_ITEMS;
+  if (currentLesson === 'summary-9') activeItems = SUMMARY_9_ITEMS;
   if (currentLesson === 2) activeItems = LESSON_2_ITEMS;
   if (currentLesson === 3) activeItems = LESSON_3_ITEMS;
   if (currentLesson === 4) activeItems = LESSON_4_ITEMS;
@@ -316,6 +320,7 @@ export default function App() {
     if (currentLesson === 'summary-6') return "Summary 6: Visual Grammatik & Redemittel Teil 6 (Dativ-Artikel, Akkusativ-Pronomen, 9 Lokale Präpositionen, denn & Wüsten-Comic)";
     if (currentLesson === 'summary-7') return "Summary 7: Visual Grammatik & Redemittel Teil 7 (Imperativ, Präteritum, von + Dativ, Dativ-Körperteile, deshalb & Zahnarzt-Comic)";
     if (currentLesson === 'summary-8') return "Summary 8: Visual Grammatik & Redemittel Teil 8 (werden, Perfekt mit haben, 3 Partizip-Baupläne, mit/zu/nach/bei/von & Regen-Comic)";
+    if (currentLesson === 'summary-9') return "Summary 9: Visual Grammatik & Redemittel Teil 9 (Perfekt sein, sollen, Verben mit Dativ, welch-/dies-, Zeit-Präpositionen & ohne/gegen)";
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
     if (currentLesson === 2) return "Lesson 2: Häufige Redemittel (Common Everyday Phrases)";
     if (currentLesson === 3) return "Lesson 3: Zahlen 0 - 20 & Meine Handynummer (Numbers & Mobile)";
@@ -407,6 +412,9 @@ export default function App() {
     }
     if (currentLesson === 'summary-8') {
       return "Master the chameleon verb 'werden' (du wirst / er wird), the Perfekt tense with 'haben' and Satzklammer brackets, the 3 Partizip II blueprints (regelmäßig, unregelmäßig, Mischverben), transport and directional prepositions (mit, zu, nach, bei, von), the 11-day vacation rain comic, and the hotel/travel Redemittel toolkit!";
+    }
+    if (currentLesson === 'summary-9') {
+      return "Master Perfekt with 'sein' (movement & state changes), the modal verb 'sollen' (advice & doctor's orders), special Dative verbs (gefallen, gehören, schmecken, passen), the complete Dative personal pronoun matrix (mir, dir, ihm, ihr), question & demonstrative articles (welch- / dies-), temporal prepositions (vor, nach, seit, ab + Dativ), and pure Akkusativ prepositions (ohne & gegen)!";
     }
     if (currentLesson === 1) {
       return "German greetings made friendly, colorful, and memorable with everyday analogies. Tap any card to listen!";
@@ -1294,6 +1302,15 @@ export default function App() {
 
         {currentLesson === 'summary-8' && activeTab === 'summary8Game' && (
           <Summary8Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Summary 9 Specific Modules */}
+        {currentLesson === 'summary-9' && activeTab === 'summary9Studio' && (
+          <Summary9GrammatikStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 'summary-9' && activeTab === 'summary9Game' && (
+          <Summary9Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

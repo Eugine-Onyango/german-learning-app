@@ -18982,6 +18982,210 @@ export const SUMMARY_8_SCENARIOS = [
   }
 ];
 
+export const SUMMARY_9_ITEMS = [
+  // Page 1: Verb - Perfekt mit sein & Modalverb sollen
+  {
+    id: "s9-perfekt-mit-sein",
+    german: "Perfekt mit \"sein\": ich bin gefahren • du bist gekommen • er ist geflogen • wir sind geschwommen",
+    english: "Present Perfect with 'sein': I drove/traveled, you came, he flew, we swam",
+    pronunciation: "ikh bin geh-FAH-ren, doo bist geh-KOH-men, air ist geh-FLOH-gen, veer zint geh-SHVOH-men",
+    audioText: "Perfekt mit sein: ich bin gefahren, du bist gekommen, er ist geflogen, wir sind geschwommen, sie ist geblieben.",
+    layman: "When to use 'sein' instead of 'haben' in the past: 1. Verbs of movement from point A to B (fahren, kommen, fliegen, schwimmen, gehen, laufen). 2. Change of state (aufwachen, einschlafen). 3. Special exceptions: 'sein' (ich bin gewesen) and 'bleiben' (ich bin geblieben)!",
+    analogy: "Movement verbs take 'sein': 'Nilisafiri, alikuja, waliruka kwa ndege' ➔ 'bin gefahren, ist gekommen, sind geflogen'!",
+    example: "Wir sind am Wochenende mit dem Flugzeug nach Berlin geflogen.",
+    exampleEnglish: "We flew to Berlin by airplane on the weekend.",
+    category: "1. Perfekt sein & Modal sollen",
+    badge: "sein + Bewegung / Zustandswechsel",
+    icon: "🏃"
+  },
+  {
+    id: "s9-modalverb-sollen",
+    german: "Modalverb \"sollen\" (Präsens): ich soll • du sollst • er/es/sie soll • wir sollen • ihr sollt • sie/Sie sollen",
+    english: "Modal Verb 'sollen' (should / supposed to): I should, you should, he/she/it should, we should, you all should, they/You should",
+    pronunciation: "ikh ZOHL, doo ZOHLST, air ZOHL, veer ZOH-len, eer ZOHLT, zee ZOH-len",
+    audioText: "sollen: ich soll, du sollst, er soll, wir sollen, ihr sollt, sie sollen. Der Arzt sagt, ich soll viel Tee trinken.",
+    layman: "'sollen' expresses external advice, doctor's recommendations, or duty ('unapaswa / daktari anasema...'). Crucial rule: 'ich soll' and 'er/es/sie soll' are identical twin forms with no ending!",
+    analogy: "Doctor's orders: 'Daktari anasema ulale na unywe maji mengi' ➔ 'Du sollst im Bett bleiben und viel Tee trinken'!",
+    example: "Was soll ich jetzt machen? - Du sollst die Medizin nehmen.",
+    exampleEnglish: "What should I do now? - You should take the medicine.",
+    category: "1. Perfekt sein & Modal sollen",
+    badge: "ich soll / er soll (Twins)",
+    icon: "🩺"
+  },
+
+  // Page 2: Verben mit Dativ
+  {
+    id: "s9-verben-mit-dativ",
+    german: "Verben mit Dativ: Der Hut gefällt mir • Das Buch gehört ihm • Die Pizza schmeckt uns",
+    english: "Special Dative Verbs: The hat pleases me • The book belongs to him • The pizza tastes good to us",
+    pronunciation: "dair HOOT geh-FELT meer • dahs BOOKH geh-HEURT eem • dee PEET-sah SHMEKT oons",
+    audioText: "Verben mit Dativ: Der Hut gefällt mir. Das Buch gehört ihm. Die Suppe schmeckt uns gut. Wie gefällt dir das Kleid?",
+    layman: "Special German verbs that strictly demand a Dative object: 'gefallen' (to please/appeal to), 'gehören' (to belong to), 'schmecken' (to taste good to), and 'passen' (to fit). You don't say 'it likes me' — you say 'it appeals TO me' (gefällt mir)!",
+    analogy: "Expressing tastes: 'Kofia hii inanipendeza' ➔ 'Der Hut gefällt mir'!",
+    example: "Wie schmeckt dir das Essen? - Es schmeckt mir sehr gut!",
+    exampleEnglish: "How does the food taste to you? - It tastes very good to me!",
+    category: "2. Verben mit Dativ",
+    badge: "gefallen, gehören, schmecken",
+    icon: "🎩"
+  },
+
+  // Page 3: Frageartikel welch- across Nom, Akk, Dat
+  {
+    id: "s9-frageartikel-welch",
+    german: "Frageartikel \"welch-\": welcher Ort (m/Nom) ➔ welchen Ort (m/Akk) ➔ welchem Ort (m/Dat) • welches Hobby (n) • welche CD (f) • welche/welchen Büchern (pl)",
+    english: "Question Article 'welch-' (Which?): which place, which hobby, which CD, which books across cases",
+    pronunciation: "VEL-kher ORT, VEL-khen ORT, VEL-khem ORT • VEL-khes HOB-bee • VEL-kheh SAY-DAY • VEL-khen BEW-khern",
+    audioText: "welch-: Welcher Ort gefällt dir? Welchen Ort besuchst du? An welchem Ort bist du? Welches Hobby hast du? Welche CD kaufst du? Mit welchen Büchern lernst du?",
+    layman: "'welch-' (Which?) takes the exact same endings as the definite article 'der, die, das': Masculine becomes 'welcher' (Nom), 'welchen' (Akk), 'welchem' (Dat). Neuter = 'welches' (Nom/Akk), 'welchem' (Dat). Feminine = 'welche' (Nom/Akk), 'welcher' (Dat). Plural = 'welche' (Nom/Akk), 'welchen...-n' (Dat)!",
+    analogy: "Asking 'Gani?': 'Mji gani?' ➔ 'Welcher Ort?', 'Kitabu gani?' ➔ 'Welches Buch?'!",
+    example: "Welches Kleid gefällt dir am besten? - Dieses rote Kleid!",
+    exampleEnglish: "Which dress appeals to you the most? - This red dress!",
+    category: "3. Frageartikel welch-",
+    badge: "welcher / welches / welche / welchem",
+    icon: "🔍"
+  },
+
+  // Page 4: Demonstrativartikel dies- across Nom, Akk, Dat
+  {
+    id: "s9-demonstrativartikel-dies",
+    german: "Demonstrativartikel \"dies-\": dieser Baum (m/Nom) ➔ diesen Baum (m/Akk) ➔ diesem Baum (m/Dat) • dieses Auto (n) • diese Straße (f) • diesen Geschichten (pl)",
+    english: "Demonstrative Article 'dies-' (This / These): this tree, this car, this street, these stories across cases",
+    pronunciation: "DEE-zer BOWM, DEE-zen BOWM, DEE-zem BOWM • DEE-zes OW-toh • DEE-zeh SHTRAH-seh • DEE-zen geh-SHIKH-ten",
+    audioText: "dies-: Dieser Baum ist groß. Ich sehe diesen Baum. Ich stehe unter diesem Baum. Dieses Auto ist schnell. Diese Straße ist lang. Ich höre diesen Geschichten gern zu.",
+    layman: "'dies-' (This / These) mirrors the exact same endings as 'der, das, die'! It points directly to a specific object: 'dieser' (m), 'dieses' (n), 'diese' (f), 'diese' (pl) in Nominative; 'diesen' (m) in Accusative; 'diesem / diesem / dieser / diesen...-n' in Dative!",
+    analogy: "Pointing at something close: 'Huu / Hii / Hiki' ➔ 'dieser Baum' (this tree), 'dieses Auto' (this car)!",
+    example: "Dieser Pullover gefällt mir, aber dieses Hemd ist zu teuer.",
+    exampleEnglish: "This pullover appeals to me, but this shirt is too expensive.",
+    category: "4. Demonstrativartikel dies-",
+    badge: "dieser / dieses / diese / diesem",
+    icon: "👉"
+  },
+
+  // Page 5: Personalpronomen im Dativ
+  {
+    id: "s9-personalpronomen-dativ",
+    german: "Personalpronomen im Dativ: mir • dir • ihm • ihr • ihm • uns • euch • ihnen • Ihnen",
+    english: "Dative Personal Pronouns: to/for me (mir), you (dir), him (ihm), her (ihr), it (ihm), us (uns), you all (euch), them (ihnen), You formal (Ihnen)",
+    pronunciation: "meer, deer, eem, eer, eem, oons, oykh, EE-nen, EE-nen",
+    audioText: "Dativ Pronomen: mir, dir, ihm, ihr, ihm, uns, euch, ihnen, Ihnen. Wie geht es dir? Es geht mir gut. Der Chef dankt Ihnen.",
+    layman: "The Dative Receiver Pronouns! When someone is given something, helped, or experiences a feeling: 'ich ➔ mir', 'du ➔ dir', 'er ➔ ihm', 'sie ➔ ihr', 'wir ➔ uns', 'ihr ➔ euch', 'sie ➔ ihnen', 'Sie ➔ Ihnen'!",
+    analogy: "The gift/benefit receivers: 'Kwani / Kwako / Kwake' ➔ 'mir, dir, ihm, ihr'!",
+    example: "Kannst du mir bitte helfen? - Ja, ich helfe dir sofort!",
+    exampleEnglish: "Can you please help me? - Yes, I'll help you immediately!",
+    category: "5. Personalpronomen Dativ",
+    badge: "mir, dir, ihm, ihr, uns, euch, ihnen",
+    icon: "👥"
+  },
+
+  // Page 6: Temporal-Präpositionen mit Dativ (vor, nach, seit, ab)
+  {
+    id: "s9-temporal-praepositionen-dativ",
+    german: "Temporale Präpositionen (Dativ): vor einem Monat (past) • nach einer Woche (future) • seit zwei Monaten (ongoing) • ab Montag (start)",
+    english: "Time Prepositions (+ Dative): a month ago (vor), after a week (nach), since/for two months (seit), starting from Monday (ab)",
+    pronunciation: "for IEN-em MOH-naht • nahkh IEN-er VOH-kheh • zyt tsvy MOH-nah-ten • ahp MOHN-tahk",
+    audioText: "Temporale Präpositionen mit Dativ: vor einem Monat, vor einem Jahr, vor einer Woche, nach einer Woche, seit einem Monat, seit zwei Monaten, ab Montag, ab zehnten Juni.",
+    layman: "The 4 Time Keys (ALL command Dative!): 1. 'vor' = completed past ('vor einem Jahr' = 1 year ago). 2. 'nach' = after ('nach dem Kurs' = after the class). 3. 'seit' = started in the past and STILL ONGOING ('seit drei Monaten' = for 3 months). 4. 'ab' = starting at a future point ('ab Montag' = from Monday on)!",
+    analogy: "Navigating your calendar: 'Miaka miwili iliyopita' (vor), 'Baada ya wiki' (nach), 'Tangu mwezi uliopita na bado ninaishi hapa' (seit), 'Kuanzia Jumatatu' (ab)!",
+    example: "Ich lerne seit drei Monaten Deutsch und fahre in zwei Wochen nach Berlin.",
+    exampleEnglish: "I have been learning German for three months and am traveling to Berlin in two weeks.",
+    category: "6. Temporal-Präpositionen (Dativ)",
+    badge: "vor, nach, seit, ab + Dativ",
+    icon: "⏰"
+  },
+
+  // Pages 7 & 8: ohne + Akkusativ & gegen + Akkusativ
+  {
+    id: "s9-ohne-gegen-akkusativ",
+    german: "Präpositionen mit Akkusativ: ohne den Rucksack (m) / ohne das Fahrrad (n) • gegen den Baum (m) / gegen das Haus (n)",
+    english: "Prepositions with Accusative: without the backpack / without the bicycle • against the tree / against the house",
+    pronunciation: "OH-neh dain ROOK-zahk, OH-neh dahs FAHR-raht • GAY-gen dain BOWM, GAY-gen dahs HOWS",
+    audioText: "ohne plus Akkusativ: ohne den Rucksack, ohne einen Rucksack, ohne das Fahrrad, ohne die Gitarre, ohne Fahrkarten. gegen plus Akkusativ: gegen den Baum, gegen das Haus, gegen die Tür.",
+    layman: "'ohne' (without) and 'gegen' (against / crashing into) ALWAYS strictly require the AKKUSATIV case! Masculine nouns take the classic '-en' ending: 'ohne den Rucksack', 'ohne deinen Koffer', 'gegen den Baum'!",
+    analogy: "Traveling without luggage or bumping into a tree: 'Bila begi' ➔ 'ohne den Rucksack', 'Kugonga mti' ➔ 'gegen den Baum'!",
+    example: "Er fährt ohne seinen Rucksack und das Auto ist gegen einen Baum gefahren.",
+    exampleEnglish: "He is driving without his backpack and the car drove against a tree.",
+    category: "7. ohne & gegen + Akkusativ",
+    badge: "ohne / gegen + Akkusativ (-en)",
+    icon: "🛡️"
+  }
+];
+
+export const SUMMARY_9_SCENARIOS = [
+  {
+    scenario: "Which helping verb ('haben' or 'sein') is used in Perfekt for verbs of movement like 'fahren', 'kommen', 'fliegen', and 'schwimmen' (Summary 9, Page 1)?",
+    hint: "Think about movement from Point A to Point B.",
+    options: [
+      { text: "'sein' (ich bin gefahren, du bist gekommen, er ist geflogen, wir sind geschwommen)", correct: true, explain: "Genau! Verbs indicating movement from point A to B (fahren, kommen, fliegen, schwimmen, gehen) take 'sein' in the Perfekt tense!" },
+      { text: "'haben' (ich habe gefahren, er hat geflogen)", correct: false, explain: "Movement verbs do not take 'haben' in standard German." },
+      { text: "'werden' (ich werde gefahren)", correct: false, explain: "'werden' forms the passive or future, not the active Perfekt past." }
+    ]
+  },
+  {
+    scenario: "What are the 1st person (ich) and 3rd person (er/es/sie) singular forms of the modal verb 'sollen' (Page 1)?",
+    hint: "Modal verbs have identical twin forms for 'ich' and 'er/sie/es' without endings!",
+    options: [
+      { text: "ich soll • er/es/sie soll (identical twin forms with no ending)", correct: true, explain: "Ausgezeichnet! Like all modal verbs in German, 1st person singular ('ich soll') and 3rd person singular ('er/sie/es soll') share the exact same twin stem with no ending!" },
+      { text: "ich solle • er sollt", correct: false, explain: "Modal verbs do not take regular present endings in singular." },
+      { text: "ich sollte • er sollte", correct: false, explain: "Those are Konjunktiv II / past forms, not present tense." }
+    ]
+  },
+  {
+    scenario: "How do you say 'The hat appeals to me' using the special Dative verb 'gefallen' (Page 2)?",
+    hint: "Subject is 'Der Hut' and Dative pronoun is 'mir'.",
+    options: [
+      { text: "\"Der Hut gefällt mir.\"", correct: true, explain: "Richtig! 'gefallen' requires a Dative object: 'Der Hut' (Subject) + 'gefällt' (Verb) + 'mir' (Dative receiver)!" },
+      { text: "\"Der Hut gefällt mich.\"", correct: false, explain: "'mich' is Accusative; 'gefallen' strictly demands Dative ('mir')." },
+      { text: "\"Ich gefalle den Hut.\"", correct: false, explain: "The item being liked is the grammatical Subject ('Der Hut')." }
+    ]
+  },
+  {
+    scenario: "Look at the 'welch-' question word matrix on Page 3: What are the correct forms for masculine 'Ort' in Nominativ, Akkusativ, and Dativ?",
+    hint: "Check -er, -en, -em.",
+    options: [
+      { text: "welcher Ort (Nom) • welchen Ort (Akk) • welchem Ort (Dat)", correct: true, explain: "Perfekt! Masculine takes '-er' in Nominativ (welcher), '-en' in Akkusativ (welchen), and '-em' in Dativ (welchem)!" },
+      { text: "welches Ort • welcher Ort • welchen Ort", correct: false, explain: "'Ort' is masculine (der Ort), not neuter." },
+      { text: "welche Ort • welche Ort • welcher Ort", correct: false, explain: "Those are feminine/plural endings." }
+    ]
+  },
+  {
+    scenario: "What is the Dative form of the personal pronoun 'du' (you) and 'sie' (she) on Page 5?",
+    hint: "Check 'Wie geht es...?' and 'Ich schenke...' for du and sie.",
+    options: [
+      { text: "du ➔ dir • sie ➔ ihr", correct: true, explain: "Wunderbar! In Dative, 'du' becomes 'dir' (e.g. 'Wie geht es dir?'), and feminine singular 'sie' becomes 'ihr' (e.g. 'Das Kleid gefällt ihr')!" },
+      { text: "du ➔ dich • sie ➔ sie", correct: false, explain: "Those are Accusative pronouns." },
+      { text: "du ➔ dein • sie ➔ ihr", correct: false, explain: "'dein' is a possessive article, not a personal pronoun." }
+    ]
+  },
+  {
+    scenario: "How do you say 'for three months (and still continuing)' vs 'three months ago' using temporal prepositions (Page 6)?",
+    hint: "'seit' for ongoing duration vs 'vor' for completed past.",
+    options: [
+      { text: "seit drei Monaten (ongoing) • vor drei Monaten (completed past)", correct: true, explain: "Super! 'seit + Dativ' means an action started in the past and is still ongoing today (since/for), while 'vor + Dativ' marks an event completed in the past (ago)!" },
+      { text: "nach drei Monaten • ab drei Monaten", correct: false, explain: "'nach' means after, and 'ab' marks a future start date." },
+      { text: "in drei Monaten • um drei Monaten", correct: false, explain: "'in' means in the future, and 'um' is for specific clock times." }
+    ]
+  },
+  {
+    scenario: "Why do we say 'ohne den Rucksack' and 'gegen den Baum' with an '-en' ending (Pages 7 & 8)?",
+    hint: "'ohne' and 'gegen' strictly command AKKUSATIV.",
+    options: [
+      { text: "Because 'ohne' and 'gegen' strictly demand AKKUSATIV, so masculine nouns take the '-en' ending (den Rucksack / den Baum).", correct: true, explain: "Genau! Both 'ohne' (without) and 'gegen' (against) are pure Akkusativ prepositions: masculine takes 'den / einen / deinen'!" },
+      { text: "Because 'Rucksack' and 'Baum' are Dative plural.", correct: false, explain: "Both are masculine singular nouns." },
+      { text: "Because 'ohne' takes Dative.", correct: false, explain: "'ohne' NEVER takes Dative; it always commands Accusative." }
+    ]
+  },
+  {
+    scenario: "Look at the Demonstrative 'dies-' on Page 4: How do you say 'under this tree' (Maskulin Dativ) and 'in this street' (Feminin Dativ)?",
+    hint: "Maskulin Dativ takes '-em'; Feminin Dativ takes '-er'.",
+    options: [
+      { text: "unter diesem Baum • in dieser Straße", correct: true, explain: "Ausgezeichnet! In Dative, masculine demonstrative takes '-em' (diesem Baum), and feminine takes '-er' (dieser Straße)!" },
+      { text: "unter diesen Baum • in diese Straße", correct: false, explain: "Those are Accusative endings." },
+      { text: "unter dieser Baum • in diesem Straße", correct: false, explain: "The gender endings are mixed up." }
+    ]
+  }
+];
+
+
 
 
 
