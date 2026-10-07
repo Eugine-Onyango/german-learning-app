@@ -140,9 +140,12 @@ import Summary1RedemittelStudio from './components/Summary1RedemittelStudio';
 import Summary1Game from './components/Summary1Game';
 import Summary2GrammatikStudio from './components/Summary2GrammatikStudio';
 import Summary2Game from './components/Summary2Game';
+import Summary3GrammatikStudio from './components/Summary3GrammatikStudio';
+import Summary3Game from './components/Summary3Game';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
+  SUMMARY_3_ITEMS,
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
   LESSON_3_ITEMS,
@@ -211,13 +214,14 @@ import {
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState('summary-2'); // Default to newly added Summary 2, easy switch to 1-65 & Summary 1
+  const [currentLesson, setCurrentLesson] = useState('summary-3'); // Default to newly added Summary 3, easy switch to 1-65 & Summaries 1-2
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
   let activeItems = LESSON_1_ITEMS;
   if (currentLesson === 'summary-1') activeItems = SUMMARY_1_ITEMS;
   if (currentLesson === 'summary-2') activeItems = SUMMARY_2_ITEMS;
+  if (currentLesson === 'summary-3') activeItems = SUMMARY_3_ITEMS;
   if (currentLesson === 2) activeItems = LESSON_2_ITEMS;
   if (currentLesson === 3) activeItems = LESSON_3_ITEMS;
   if (currentLesson === 4) activeItems = LESSON_4_ITEMS;
@@ -286,6 +290,7 @@ export default function App() {
   const getLessonTitle = () => {
     if (currentLesson === 'summary-1') return "Summary 1: Visual Redemittel Toolkit (Sich vorstellen, begrüßen, verabschieden, nachfragen)";
     if (currentLesson === 'summary-2') return "Summary 2: Visual Grammatik & Redemittel Toolkit (Verben, Artikel, Satzbau, Doch & Dialoge)";
+    if (currentLesson === 'summary-3') return "Summary 3: Visual Grammatik & Redemittel Teil 2 (Verben auf d/t, 5 Plural-Baupläne, Possessiv, Inversion & Comic)";
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
     if (currentLesson === 2) return "Lesson 2: Häufige Redemittel (Common Everyday Phrases)";
     if (currentLesson === 3) return "Lesson 3: Zahlen 0 - 20 & Meine Handynummer (Numbers & Mobile)";
@@ -359,6 +364,9 @@ export default function App() {
     }
     if (currentLesson === 'summary-2') {
       return "Master the 5 essential grammar pillars of A1: Verbkonjugation (kommen, heißen, sein, haben), Nomen & Artikel (der, das, die, ein, kein), Satzbau & Position 2 (Aussage, Inversion, W-Fragen, Ja/Nein), Negation & the magic DOCH!, and the complete Redemittel survival toolkit!";
+    }
+    if (currentLesson === 'summary-3') {
+      return "Master verbs ending in d/t (arbeiten, extra -e- cushion), the 5 Plural Blueprints (-(e)n, -e/¨-e, -er/¨-er, -/¨-, -s), Possessive articles & Genitiv-s (mein, dein, eure & Tims Familie), sentence inversion cross-switch, and the hilarious Ski Lift comic duet!";
     }
     if (currentLesson === 1) {
       return "German greetings made friendly, colorful, and memorable with everyday analogies. Tap any card to listen!";
@@ -1192,6 +1200,15 @@ export default function App() {
 
         {currentLesson === 'summary-2' && activeTab === 'summary2Game' && (
           <Summary2Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Summary 3 Specific Modules */}
+        {currentLesson === 'summary-3' && activeTab === 'summary3Studio' && (
+          <Summary3GrammatikStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 'summary-3' && activeTab === 'summary3Game' && (
+          <Summary3Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

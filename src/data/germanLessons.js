@@ -17213,6 +17213,290 @@ export const SUMMARY_2_SCENARIOS = [
   }
 ];
 
+// ==========================================
+// SUMMARY 3: GRAMMATIK & REDEMITTEL
+// Source: A1 Visual Grammar & Communication Overview (Pages 1-8)
+// Topics: Verbs on d/t (arbeiten, extra -e- cushion),
+// 5 Plural Blueprints (-(e)n, -e/¨-e, -er/¨-er, -/¨-, -s),
+// Possessive Articles (mein, dein, sein, ihr, unser, euer/eure, Ihr),
+// Word Formation (-in: Ärztin) & Genitive Names (Tims Familie / Marias Tante),
+// Sentence Inversion (Tennis finde ich interessant),
+// Vorlieben (gern, Lieblings-), Familie, Alter, Beruf & Ski Lift Cartoon.
+// ==========================================
+export const SUMMARY_3_ITEMS = [
+  {
+    id: "s3-verb-arbeiten",
+    german: "arbeiten (ich arbeite, du arbeitest, er/es/sie arbeitet, wir arbeiten, ihr arbeitet, sie/Sie arbeiten)",
+    english: "to work (I work, you work, he/she works, we work, you all work, they/You work)",
+    pronunciation: "AHR-by-ten (ikh AHR-by-teh, doo AHR-by-test, air AHR-by-tet...)",
+    audioText: "arbeiten. ich arbeite, du arbeitest, er arbeitet, wir arbeiten, ihr arbeitet, sie arbeiten.",
+    layman: "The Extra-E Cushion Rule! Because the stem 'arbeit-' ends in 't', German adds an extra 'e' before '-st' and '-t' (du arbeitest, er arbeitet, ihr arbeitet) so you don't break your tongue!",
+    analogy: "Like putting a soft foam cushion between two clashing consonants. 'arbeit-st' is impossible to say smoothly, so German makes it 'arbeit-e-st'!",
+    example: "Wo arbeitest du? - Ich arbeite in Nairobi.",
+    exampleEnglish: "Where do you work? - I work in Nairobi.",
+    category: "1. Verben auf d/t",
+    badge: "The Extra-E Cushion",
+    icon: "💼"
+  },
+  {
+    id: "s3-plural-en",
+    german: "Plural Blueprint 1: -(e)n (die Schwester ➔ die Schwestern • die Zahl ➔ die Zahlen)",
+    english: "Plural with -(e)n: the sister ➔ the sisters • the number ➔ the numbers",
+    pronunciation: "dee SHVES-ter ➔ dee SHVES-tern • dee TSAHL ➔ dee TSAH-len",
+    audioText: "die Schwester, die Schwestern. die Zahl, die Zahlen.",
+    layman: "Most feminine nouns and many multi-syllable nouns take '-(e)n' in the plural. The article ALWAYS turns into 'die'!",
+    analogy: "Like adding '-s' in English, German adds '-en' or '-n'.",
+    example: "Ich habe zwei Schwestern.",
+    exampleEnglish: "I have two sisters.",
+    category: "2. Plural-Baupläne",
+    badge: "Plural Group 1: -(e)n",
+    icon: "👭"
+  },
+  {
+    id: "s3-plural-e",
+    german: "Plural Blueprint 2: -e / ¨-e (das Telefon ➔ die Telefone • der Sohn ➔ die Söhne)",
+    english: "Plural with -e / Umlaut+-e: the telephone ➔ the telephones • the son ➔ the sons",
+    pronunciation: "dahs tay-lay-FOHN ➔ dee tay-lay-FOH-neh • dair ZOHN ➔ dee ZUR-neh",
+    audioText: "das Telefon, die Telefone. der Sohn, die Söhne.",
+    layman: "Many masculine and neuter nouns add '-e' in plural, often adding an Umlaut over the root vowel (o ➔ ö, a ➔ ä, u ➔ ü)!",
+    analogy: "Sohn (1 son) sprouts two dots to become Söhne (multiple sons)!",
+    example: "Wir haben zwei Söhne und drei Telefone.",
+    exampleEnglish: "We have two sons and three telephones.",
+    category: "2. Plural-Baupläne",
+    badge: "Plural Group 2: -e / ¨-e",
+    icon: "👦"
+  },
+  {
+    id: "s3-plural-er",
+    german: "Plural Blueprint 3: -er / ¨-er (das Kind ➔ die Kinder • das Buch ➔ die Bücher)",
+    english: "Plural with -er / Umlaut+-er: the child ➔ the children • the book ➔ the books",
+    pronunciation: "dahs kint ➔ dee KIN-der • dahs bookh ➔ dee BEW-kher",
+    audioText: "das Kind, die Kinder. das Buch, die Bücher.",
+    layman: "Common for neuter nouns: add '-er' at the end and add an Umlaut if possible (Buch ➔ Bücher)!",
+    analogy: "Kindergarten = children's garden (from Kind ➔ Kinder)!",
+    example: "Das sind viele Bücher für die Kinder.",
+    exampleEnglish: "Those are many books for the children.",
+    category: "2. Plural-Baupläne",
+    badge: "Plural Group 3: -er / ¨-er",
+    icon: "📚"
+  },
+  {
+    id: "s3-plural-zero",
+    german: "Plural Blueprint 4: - / ¨- (das Fenster ➔ die Fenster • der Bruder ➔ die Brüder)",
+    english: "Plural with zero change / Umlaut only: the window ➔ the windows • the brother ➔ the brothers",
+    pronunciation: "dahs FEN-ster ➔ dee FEN-ster • dair BROO-der ➔ dee BREW-der",
+    audioText: "das Fenster, die Fenster. der Bruder, die Brüder.",
+    layman: "Words ending in '-er', '-el', or '-en' often change NOTHING in the spelling (das Fenster ➔ die Fenster), or only add an Umlaut (der Bruder ➔ die Brüder)!",
+    analogy: "Look at the article to know it's plural: 'das Fenster' (1 window) vs 'die Fenster' (many windows)!",
+    example: "Zwei Fenster sind offen. Das sind meine Brüder.",
+    exampleEnglish: "Two windows are open. Those are my brothers.",
+    category: "2. Plural-Baupläne",
+    badge: "Plural Group 4: - / ¨-",
+    icon: "🪟"
+  },
+  {
+    id: "s3-plural-s",
+    german: "Plural Blueprint 5: -s (der Cousin ➔ die Cousins • das Auto ➔ die Autos)",
+    english: "Plural with -s: the cousin ➔ the cousins • the car ➔ the cars",
+    pronunciation: "dair koo-ZENG ➔ dee koo-ZENGS • dahs OW-toh ➔ dee OW-tohs",
+    audioText: "der Cousin, die Cousins. das Auto, die Autos.",
+    layman: "Loanwords and words ending in vowels (Auto, Sofa, Taxi, Cousin) take the standard English/international '-s' ending!",
+    analogy: "The easiest plural in German: just slap on an '-s'!",
+    example: "Auf der Straße sind viele Autos.",
+    exampleEnglish: "There are many cars on the street.",
+    category: "2. Plural-Baupläne",
+    badge: "Plural Group 5: -s",
+    icon: "🚗"
+  },
+  {
+    id: "s3-possessiv-base",
+    german: "Possessivartikel: ich ➔ mein, du ➔ dein, er/es ➔ sein, sie ➔ ihr, wir ➔ unser, ihr ➔ euer, sie/Sie ➔ ihr/Ihr",
+    english: "Possessive Pronouns: my, your, his/its, her, our, your group's, their/Your formal",
+    pronunciation: "myn, dyn, zyn, eer, OON-zer, OY-er, EER",
+    audioText: "mein, dein, sein, ihr, unser, euer, ihr, Ihr.",
+    layman: "The 8 family owners! Match the pronoun to its ownership word. Notice er/es share 'sein' (his/its), while sie/Sie share 'ihr/Ihr'.",
+    analogy: "The ownership stamp: Whose is it? ich ➔ mein, du ➔ dein, wir ➔ unser.",
+    example: "Das ist mein Bruder. Das ist dein Kind.",
+    exampleEnglish: "That is my brother. That is your child.",
+    category: "3. Possessivartikel",
+    badge: "The 8 Owners",
+    icon: "🏷️"
+  },
+  {
+    id: "s3-possessiv-endings",
+    german: "Possessiv-Endungen: maskulin & neutral: mein Bruder / mein Kind (no ending!) • feminin & plural: meine Tante / meine Brüder (adds -e!)",
+    english: "Possessive Endings: masculine & neuter have NO ending • feminine & plural add -e!",
+    pronunciation: "myn BROO-der / myn kint • MY-neh TAHN-teh / MY-neh BREW-der",
+    audioText: "mein Bruder, mein Kind. meine Tante, meine Brüder, meine Kinder.",
+    layman: "The Golden Ending Rule: Masculine & Neuter take NO extra ending (mein, dein, sein, unser, euer). Feminine & Plural ALWAYS add '-e' (meine, deine, seine, unsere, eure)!",
+    analogy: "The Lady & Crowd Rule: Feminine (Tante) and Plural (Kinder) demand the '-e' dress! Special spelling note: 'euer' drops the middle 'e' to become 'eure'!",
+    example: "Das ist meine Tante und das sind eure Kinder.",
+    exampleEnglish: "That is my aunt and those are your (group) children.",
+    category: "3. Possessivartikel",
+    badge: "No Ending vs. -e Ending",
+    icon: "👗"
+  },
+  {
+    id: "s3-wortbildung-in",
+    german: "Wortbildung -in: der Arzt ♂ ➔ die Ärztin ♀",
+    english: "Word Formation -in: the male doctor ➔ the female doctor (with Umlaut)",
+    pronunciation: "dair ahtst ➔ dee ERTS-tin",
+    audioText: "der Arzt, die Ärztin. der Lehrer, die Lehrerin. der Student, die Studentin.",
+    layman: "Turn any male profession or title into female by adding '-in' at the end (and adding an Umlaut if the root vowel allows: Arzt ➔ Ärztin)!",
+    analogy: "The Lady Professional Rule: Lehrer ➔ Lehrerin, Arzt ➔ Ärztin, Student ➔ Studentin.",
+    example: "Frau Becker ist Ärztin von Beruf.",
+    exampleEnglish: "Ms. Becker is a doctor by profession.",
+    category: "4. Wortbildung & Genitiv",
+    badge: "Female Suffix: -in",
+    icon: "🩺"
+  },
+  {
+    id: "s3-genitiv-names",
+    german: "Genitiv-s bei Namen: Tims Familie (= die Familie von Tim) • Marias Tante (= die Tante von Maria)",
+    english: "Genitive -s with names: Tim's family (= the family of Tim) • Maria's aunt (= the aunt of Maria)",
+    pronunciation: "tims fah-MEE-lee-eh • mah-REE-ahs TAHN-teh",
+    audioText: "Tims Familie ist die Familie von Tim. Marias Tante ist die Tante von Maria.",
+    layman: "To show that something belongs to a person by name, simply glue an 's' directly to their name with NO apostrophe (Tims Familie, Marias Tante)!",
+    analogy: "German hates floating apostrophes on names! English says Tim's, German says Tims directly.",
+    example: "Das ist Tims Bruder. Marias Tante wohnt in Berlin.",
+    exampleEnglish: "That is Tim's brother. Maria's aunt lives in Berlin.",
+    category: "4. Wortbildung & Genitiv",
+    badge: "No Apostrophe: Tims / Marias",
+    icon: "📜"
+  },
+  {
+    id: "s3-satz-inversion",
+    german: "Inversion (Cross-Switch): Ich finde Tennis interessant. ⇄ Tennis finde ich interessant.",
+    english: "Sentence Inversion: I find tennis interesting. ⇄ Tennis I find interesting.",
+    pronunciation: "ikh FIN-deh TEN-nis in-te-re-SAHNT ⇄ TEN-nis FIN-deh ikh in-te-re-SAHNT",
+    audioText: "Ich finde Tennis interessant. Tennis finde ich interessant.",
+    layman: "The Cross-Switch Machine! You can put the object ('Tennis') in Position 1 to emphasize it. The verb 'finde' stays locked in Position 2, and the subject 'ich' flips to Position 3!",
+    analogy: "Look at the X-cross arrow in Page 6: Subject and Object switch front/back seats, while the Verb stays in driver position #2!",
+    example: "Mathematik finde ich langweilig. Deutsch finde ich super!",
+    exampleEnglish: "Maths I find boring. German I find great!",
+    category: "5. Satz: Inversion",
+    badge: "The Cross-Switch",
+    icon: "🔄"
+  },
+  {
+    id: "s3-redemittel-vorlieben",
+    german: "über Vorlieben sprechen: Ich koche gern, du auch? - Ja, ich koche auch gern. / Nein, ich koche nicht gern. Was ist dein Lieblingssport? - Mein Lieblingssport ist Fußball.",
+    english: "talking about likes/hobbies: I like cooking, you too? - Yes, I like cooking too. / No, I don't like cooking. What is your favourite sport? - My favourite sport is football.",
+    pronunciation: "ikh KOKH-eh gairn, doo owkh? - yah, ikh KOKH-eh owkh gairn... myn LEEP-lings-shport ist FOOSS-bahl",
+    audioText: "Ich koche gern, du auch? Ja, ich koche auch gern. Nein, ich koche nicht gern. Was ist dein Lieblingssport? Mein Lieblingssport ist Fußball.",
+    layman: "Use 'gern' (gladly / like to) right after the verb to express what you enjoy doing. Use 'Lieblings-' in front of any noun for your favorite (Lieblingssport, Lieblingsmusik)!",
+    analogy: "gern = 'napenda kufanya'. Lieblings- = 'kile ninachokipenda zaidi'.",
+    example: "Wandern Sie gern? - Nein, aber mein Mann wandert gern!",
+    exampleEnglish: "Do you like hiking? - No, but my husband likes hiking!",
+    category: "6. Redemittel",
+    badge: "Likes & Favorites (gern / Lieblings-)",
+    icon: "⚽"
+  },
+  {
+    id: "s3-redemittel-beruf-alter",
+    german: "über Beruf & Alter sprechen: Was bist du von Beruf? - Ich arbeite als Ingenieur / Ich bin selbstständig. Wie alt bist du? - Ich bin 25 Jahre alt.",
+    english: "talking about occupation & age: What is your profession? - I work as an engineer / I am self-employed. How old are you? - I am 25 years old.",
+    pronunciation: "vahs bist doo fon beh-ROOF? ikh AHR-by-teh ahls in-zheh-NYUR. ikh bin ZELPST-shten-dikh. vee ahlt bist doo? ikh bin...",
+    audioText: "Was bist du von Beruf? Was sind Sie von Beruf? Ich arbeite als Ingenieur. Ich bin selbstständig. Wie alt bist du? Ich bin fünfundzwanzig Jahre alt.",
+    layman: "Two core life questions: State your profession with 'Ich bin [Job]' or 'Ich arbeite als [Job]' (and 'selbstständig' for freelance/self-employed), and age with 'Ich bin ... Jahre alt'.",
+    analogy: "Self-employed = 'nimejiajiri' (selbstständig: standing on your own feet!).",
+    example: "Ich bin Ärztin und ich bin 30 Jahre alt.",
+    exampleEnglish: "I am a doctor and I am 30 years old.",
+    category: "6. Redemittel",
+    badge: "Jobs & Age",
+    icon: "🧑‍💼"
+  },
+  {
+    id: "s3-cartoon-wandern",
+    german: "Cartoon: \"Wandern Sie gern?\" - \"Nein, aber mein Mann!\"",
+    english: "Cartoon: 'Do you like hiking?' - 'No, but my husband does!'",
+    pronunciation: "VAHN-dern ZEE gairn? - nayn, AH-ber myn mahn!",
+    audioText: "Wandern Sie gern? Nein, aber mein Mann!",
+    layman: "The famous Page 8 ski lift comic! The woman is relaxing on the comfortable aerial chairlift with a friendly companion while her poor husband is sweating down below hiking up the steep mountain on foot!",
+    analogy: "Riding the matatu comfortably while telling the passenger 'Mimi sipendi kutembea, lakini bwana yangu anapenda!'",
+    example: "Wandern Sie gern? - Nein, ich fahre lieber Seilbahn!",
+    exampleEnglish: "Do you like hiking? - No, I prefer taking the cable car!",
+    category: "7. Cartoon Comic",
+    badge: "Ski Lift Comic Duet",
+    icon: "🚡"
+  }
+];
+
+export const SUMMARY_3_SCENARIOS = [
+  {
+    scenario: "Why does the verb 'arbeiten' conjugate as 'du arbeitest' and 'er arbeitet' with an extra '-e-' (Summary 3, Page 1)?",
+    hint: "Think about the stem ending in 't'.",
+    options: [
+      { text: "Because the stem ends in 't', so German inserts an extra '-e-' cushion to make pronunciation smooth and effortless.", correct: true, explain: "Genau! For verb stems ending in 'd' or 't' (arbeiten, warten, finden), German adds an extra '-e-' before '-st' and '-t' (du arbeitest, er arbeitet) to prevent tongue twisters!" },
+      { text: "Because 'arbeiten' is an irregular vowel-changing verb.", correct: false, explain: "'arbeiten' is a regular verb with the phonetic 'd/t' cushion rule." },
+      { text: "Because 'arbeiten' is only used in formal speech.", correct: false, explain: "It applies to all speech levels." }
+    ]
+  },
+  {
+    scenario: "Look at the plural blueprints on Page 2: What are the correct plurals for 'das Kind' and 'das Buch' (Summary 3, Page 2)?",
+    hint: "Group 3: -er / ¨-er.",
+    options: [
+      { text: "die Kinder • die Bücher", correct: true, explain: "Richtig! 'das Kind' becomes 'die Kinder' (-er) and 'das Buch' becomes 'die Bücher' (¨-er with umlaut)!" },
+      { text: "die Kinds • die Buchs", correct: false, explain: "'-s' is for loanwords like Autos and Cousins, not Kind and Buch." },
+      { text: "die Kinden • die Buchen", correct: false, explain: "Incorrect plural group." }
+    ]
+  },
+  {
+    scenario: "Which possessive article pairs with 'wir' (we) and which pairs with 'ihr' (you all) in German (Summary 3, Page 3)?",
+    hint: "Check Page 3 base matrix.",
+    options: [
+      { text: "wir ➔ unser • ihr ➔ euer", correct: true, explain: "Perfekt! 'wir' takes 'unser' (our) and 'ihr' takes 'euer' (your group's)!" },
+      { text: "wir ➔ mein • ihr ➔ dein", correct: false, explain: "'mein' is for ich, 'dein' is for du." },
+      { text: "wir ➔ sein • ihr ➔ ihr", correct: false, explain: "'sein' is for er/es." }
+    ]
+  },
+  {
+    scenario: "What happens to possessive articles when referring to a feminine noun (e.g. 'Tante') or plural (e.g. 'Kinder') in Nominativ (Summary 3, Page 4)?",
+    hint: "The Lady & Crowd '-e' rule!",
+    options: [
+      { text: "They ALWAYS add an '-e' ending (meine Tante, unsere Kinder, eure Tanten).", correct: true, explain: "Ausgezeichnet! Masculine and neuter take no ending (mein Bruder, mein Kind), but feminine and plural always take '-e' (meine Tante, meine Kinder)!" },
+      { text: "They take no ending at all.", correct: false, explain: "Masculine and neuter take no ending, but feminine and plural add '-e'." },
+      { text: "They add '-en'.", correct: false, explain: "In Nominativ, feminine and plural add '-e'." }
+    ]
+  },
+  {
+    scenario: "How do you say 'Tim's family' in German without using an English apostrophe (Summary 3, Page 5)?",
+    hint: "Check Genitiv-s on Page 5.",
+    options: [
+      { text: "Tims Familie (or: die Familie von Tim)", correct: true, explain: "Wunderbar! In German, you add the 's' directly to the name with NO apostrophe: 'Tims Familie' or 'die Familie von Tim'!" },
+      { text: "Tim's Familie (with apostrophe)", correct: false, explain: "German names do not take apostrophes in standard genitive possessives!" },
+      { text: "Tim Familie", correct: false, explain: "You must add the 's' or use 'von Tim'." }
+    ]
+  },
+  {
+    scenario: "How does the sentence 'Ich finde Tennis interessant' transform when 'Tennis' is placed at Position 1 (Summary 3, Page 6)?",
+    hint: "Verb stays locked in Position 2!",
+    options: [
+      { text: "Tennis finde ich interessant.", correct: true, explain: "Brilliant! The conjugated verb 'finde' stays locked in Position 2, while 'ich' and 'Tennis' cross-switch positions!" },
+      { text: "Tennis ich finde interessant.", correct: false, explain: "This violates the Position 2 rule (verb is pushed to Position 3)." },
+      { text: "Tennis interessant finde ich.", correct: false, explain: "Incorrect German word order." }
+    ]
+  },
+  {
+    scenario: "If you work for yourself as a freelancer / business owner, what phrase from Page 7 describes your employment status?",
+    hint: "Standing on your own feet!",
+    options: [
+      { text: "Ich bin selbstständig.", correct: true, explain: "Super! 'selbstständig' means self-employed / freelance (literally self-standing)!" },
+      { text: "Ich bin Schüler.", correct: false, explain: "'Schüler' means school student." },
+      { text: "Ich habe nicht frei.", correct: false, explain: "That means 'I don't have free time'." }
+    ]
+  },
+  {
+    scenario: "In the ski lift cartoon on Page 8, what is the humorous punchline to 'Wandern Sie gern?'?",
+    hint: "Look at who is sweating on the mountain trail below!",
+    options: [
+      { text: "\"Nein, aber mein Mann.\" (She is riding the cable car while her husband hikes up on foot!)", correct: true, explain: "Genau! The lady enjoys the scenic lift ride while her poor husband is walking and sweating up the mountain on foot below!" },
+      { text: "\"Ja, ich liebe wandern.\"", correct: false, explain: "She explicitly said 'Nein' because she is riding the lift." },
+      { text: "\"Ich weiß es nicht.\"", correct: false, explain: "She answered 'Nein, aber mein Mann'." }
+    ]
+  }
+];
+
 
 
 

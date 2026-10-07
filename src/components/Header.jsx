@@ -98,6 +98,7 @@ export default function Header({
     if (currentLesson === 65) msg = "Test A1: Guten Tag, ich heiße Alex. Hallo, wie geht es dir? Gut, und dir? Welche Sprachen sprichst du? Am Wochenende kaufen wir ein und ich bin ins Kino gegangen. Max kann sehr gut Deutsch sprechen!";
     if (currentLesson === 'summary-1') msg = "Visual Redemittel: Guten Tag! Wie heißen Sie? Mein Name ist Dana Sahin. Ich heiße Dana Sahin. Ich bin Dana Sahin. Guten Morgen, Guten Tag, Guten Abend, Gute Nacht! Tschüs und auf Wiedersehen! Buchstabieren Sie bitte: S-A-H-I-N.";
     if (currentLesson === 'summary-2') msg = "Visual Grammatik: ich komme, du kommst, du heißt! ich bin, du bist, er ist, wir sind, ihr seid. der Bleistift, das Heft, die Lampe. In Berlin ist es elf Uhr. Da ist kein Bus. Doch, da ist ein Bus! Wie heißt das auf Deutsch?";
+    if (currentLesson === 'summary-3') msg = "Visual Grammatik Teil 2: du arbeitest, er arbeitet! die Schwestern, die Telefone, die Kinder, die Fenster, die Autos. mein Bruder, meine Tante, eure Kinder. Tims Familie und Marias Tante. Tennis finde ich interessant! Wandern Sie gern? Nein, aber mein Mann!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -113,6 +114,14 @@ export default function Header({
     { id: 'cards', label: '📖 Summary 2 Cards', sub: 'Grammar & Redemittel Cards' },
     { id: 'summary2Studio', label: '🧩 Grammatik Studio', sub: 'Verbs, Articles, Pos 2 & Doch' },
     { id: 'summary2Game', label: '🎮 Grammatik Challenge', sub: 'Grammar & Redemittel Quiz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Visual Chalkboard' },
+  ];
+
+  const summary3NavItems = [
+    { id: 'cards', label: '📖 Summary 3 Cards', sub: 'Plural & Possessive Cards' },
+    { id: 'summary3Studio', label: '🛡️ Grammatik Studio', sub: 'Verbs auf d/t, Plurals & Inversion' },
+    { id: 'summary3Game', label: '🎮 Grammatik Challenge', sub: 'Plural, Inversion & Hobbies Quiz' },
     { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
     { id: 'summary', label: '📋 At a Glance', sub: 'Visual Chalkboard' },
   ];
@@ -707,10 +716,12 @@ export default function Header({
   if (currentLesson === 65) navItems = lesson65NavItems;
   if (currentLesson === 'summary-1') navItems = summary1NavItems;
   if (currentLesson === 'summary-2') navItems = summary2NavItems;
+  if (currentLesson === 'summary-3') navItems = summary3NavItems;
 
   const ALL_LESSONS = [
     { num: 'summary-1', label: "📑 Summary 1: Redemittel", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
     { num: 'summary-2', label: "📑 Summary 2: Grammatik", activeClass: "bg-indigo-600 ring-indigo-300", hoverBorder: "hover:bg-indigo-200/60 border-indigo-300" },
+    { num: 'summary-3', label: "📑 Summary 3: Grammatik II", activeClass: "bg-teal-600 ring-teal-300", hoverBorder: "hover:bg-teal-200/60 border-teal-300" },
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
     { num: 2, label: "💬 2: Phrases", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
     { num: 3, label: "🔢 3: 0 - 20 & Handy", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
