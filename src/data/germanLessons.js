@@ -18691,6 +18691,298 @@ export const SUMMARY_7_SCENARIOS = [
   }
 ];
 
+export const SUMMARY_8_ITEMS = [
+  // Page 1: Verb - Präsens werden & Perfekt mit haben
+  {
+    id: "s8-praesens-werden",
+    german: "Verb \"werden\" (Präsens): ich werde • du wirst • er/es/sie wird • wir werden • ihr werdet • sie/Sie werden",
+    english: "Verb 'werden' (to become / will): I become, you become, he/she/it becomes, we become, you all become, they/You become",
+    pronunciation: "ikh VAIR-deh, doo VEERST, air VEERT, veer VAIR-den, eer VAIR-det, zee VAIR-den",
+    audioText: "werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Was wirst du in Zukunft werden?",
+    layman: "The key chameleon verb 'werden' (to become / to get / future auxiliary)! Notice the irregular vowel shift for 2nd and 3rd person singular: 'du wirst' and 'er/es/sie wird' (e ➔ i)!",
+    analogy: "Talking about turning older or changing: 'Mimi nitakuwa / atakuwa...' in German!",
+    example: "Er wird bald 30 Jahre alt und ich werde Arzt.",
+    exampleEnglish: "He is turning 30 soon and I am becoming a doctor.",
+    category: "1. Präsens werden & Perfekt haben",
+    badge: "du wirst / er wird (e ➔ i)",
+    icon: "🔄"
+  },
+  {
+    id: "s8-perfekt-mit-haben",
+    german: "Perfekt mit \"haben\": ich habe gesagt • du hast gesehen • er hat gebracht • wir haben gemacht",
+    english: "Present Perfect with 'haben': I said, you saw, he brought, we made",
+    pronunciation: "ikh HAH-beh geh-ZAHKT, doo HAHST geh-ZAY-en, air HAHT geh-BRAHKHT",
+    audioText: "Perfekt mit haben: ich habe gesagt, du hast gesehen, er hat gebracht, wir haben gearbeitet.",
+    layman: "The #1 past tense machine in spoken German! Formed with the conjugated helping verb 'haben' in Position 2 + the Partizip II sitting at the very end of the sentence!",
+    analogy: "Building past stories: 'Nilisema, uliona, alileta' ➔ 'habe gesagt, hast gesehen, hat gebracht'!",
+    example: "Wir haben gestern den ganzen Tag gearbeitet.",
+    exampleEnglish: "We worked the entire day yesterday.",
+    category: "1. Präsens werden & Perfekt haben",
+    badge: "haben + Partizip II",
+    icon: "⏳"
+  },
+
+  // Page 2: Partizip II Formations (3 Blueprints)
+  {
+    id: "s8-partizip-regelmaessig",
+    german: "Regelmäßige Verben (ge-...-(e)t): machen ➔ gemacht • arbeiten ➔ gearbeitet • fragen ➔ gefragt • warten ➔ gewartet",
+    english: "Regular Weak Verbs (ge-...-t): make ➔ made, work ➔ worked, ask ➔ asked, wait ➔ waited",
+    pronunciation: "geh-MAKHT, geh-AR-by-tet, geh-FRAHKT, geh-VAR-tet",
+    audioText: "Regelmäßige Verben: machen - gemacht, arbeiten - gearbeitet, fragen - gefragt, warten - gewartet.",
+    layman: "The Standard Blueprint: Add 'ge-' at the front and '-t' at the back (machen ➔ ge-mach-t). If the stem ends in -d or -t (arbeiten, warten), add a cushion '-et' (ge-arbeitet, ge-wartet)!",
+    analogy: "The classic factory formula: slap 'ge-' on front and '-t' on back!",
+    example: "Ich habe zwei Stunden auf den Bus gewartet.",
+    exampleEnglish: "I waited for the bus for two hours.",
+    category: "2. Partizip II Baupläne",
+    badge: "ge-...-(e)t (Regelmäßig)",
+    icon: "🧱"
+  },
+  {
+    id: "s8-partizip-unregelmaessig",
+    german: "Unregelmäßige Verben (ge-...-en): trinken ➔ getrunken • nehmen ➔ genommen • treffen ➔ getroffen",
+    english: "Irregular Strong Verbs (ge-...-en): drink ➔ drunk, take ➔ taken, meet ➔ met",
+    pronunciation: "geh-TROONG-ken, geh-NOH-men, geh-TROH-fen",
+    audioText: "Unregelmäßige Verben: trinken - getrunken, nehmen - genommen, treffen - getroffen.",
+    layman: "The Strong Blueprint: Verbs change their internal vowel and end with '-en' (trinken ➔ getrunken, nehmen ➔ genommen, treffen ➔ getroffen)!",
+    analogy: "Superhero verbs that change their inner DNA (vowels) and wear the '-en' cloak!",
+    example: "Wir haben gestern unsere Freunde im Café getroffen.",
+    exampleEnglish: "We met our friends at the café yesterday.",
+    category: "2. Partizip II Baupläne",
+    badge: "ge-...-en (Vokalwechsel)",
+    icon: "⚡"
+  },
+  {
+    id: "s8-partizip-mischverben",
+    german: "Mischverben (ge-...-t mit Vokalwechsel): bringen ➔ gebracht • denken ➔ gedacht",
+    english: "Mixed Verbs (vowel shift + -t ending): bring ➔ brought, think ➔ thought",
+    pronunciation: "geh-BRAHKHT, geh-DAHKHT",
+    audioText: "Mischverben: bringen - gebracht, denken - gedacht.",
+    layman: "The Hybrid / Mixed Verbs: They take a vowel change like irregular verbs (bringen ➔ gebrach-, denken ➔ gedach-) BUT take the regular ending '-t' (gebracht, gedacht)!",
+    analogy: "Hybrid electric cars: combining the vowel shift of strong verbs with the '-t' ending of weak verbs!",
+    example: "Er hat seiner Mutter Blumen mitgebracht.",
+    exampleEnglish: "He brought flowers for his mother.",
+    category: "2. Partizip II Baupläne",
+    badge: "Mischverben (ge-...-t)",
+    icon: "🧬"
+  },
+
+  // Page 3: Satzklammer im Perfekt
+  {
+    id: "s8-satzklammer-perfekt",
+    german: "Satzklammer im Perfekt: Ich (1) habe (2) gestern den Kölner Dom (Mitte) gesehen (Ende).",
+    english: "Perfect Tense Sentence Bracket: I (1) have (2) seen (End) the Cologne Cathedral yesterday.",
+    pronunciation: "ikh HAH-beh GESS-tairn dain KEUL-ner dohm geh-ZAY-en",
+    audioText: "Satzklammer: Ich habe gestern den Kölner Dom gesehen. Position 2: habe. Satzende: gesehen.",
+    layman: "The German Sentence Bracket (Satzklammer): The conjugated helping verb 'habe/hast/hat' sits in Position 2, while the Partizip II ('gesehen', 'gemacht') locks the sentence at the very end!",
+    analogy: "The Giant German Pincer Clamp: 'habe' holds Position 2, while 'gesehen' seals the end like a full-stop padlock!",
+    example: "Wir haben am Wochenende eine interessante Stadtrundfahrt gemacht.",
+    exampleEnglish: "We did an interesting city tour on the weekend.",
+    category: "3. Satzklammer im Perfekt",
+    badge: "Pos 2: haben • Ende: Partizip II",
+    icon: "🗜️"
+  },
+
+  // Page 4: Präposition modal (wie?) - mit + Dativ
+  {
+    id: "s8-mit-dativ-transport",
+    german: "Präposition \"mit + Dativ\" (wie?): mit dem Bus (m) • mit dem Taxi (n) • mit der Straßenbahn (f) • mit den Straßenbahnen (pl)",
+    english: "Preposition 'mit + Dative' (by/with how?): by bus, by taxi, by tram, by trams",
+    pronunciation: "mit daim BOOS, mit daim TAHK-see, mit dair SHTRAH-sen-bahn, mit dain SHTRAH-sen-bah-nen",
+    audioText: "mit plus Dativ: mit dem Bus, mit dem Taxi, mit der Straßenbahn, mit den Straßenbahnen, mit dem Zug, mit dem Fahrrad.",
+    layman: "Transportation Rule: 'mit' ALWAYS takes DATIVE! Masculine & Neuter = 'mit dem' (Bus, Taxi, Zug, Auto). Feminine = 'mit der' (Bahn, Straßenbahn). Plural = 'mit den' (Straßenbahnen)!",
+    analogy: "Boarding the matatu, bus or boda in Germany: 'Kusafiri kwa basi' ➔ 'mit dem Bus'!",
+    example: "Ich fahre jeden Morgen mit der Straßenbahn zur Arbeit.",
+    exampleEnglish: "I ride by tram to work every morning.",
+    category: "4. mit + Dativ (Transport)",
+    badge: "mit dem / mit der / mit den",
+    icon: "🚌"
+  },
+
+  // Page 5: Präposition lokal (wohin?) - zu + Dativ
+  {
+    id: "s8-zu-dativ-wohin",
+    german: "Präposition \"zu + Dativ\" (wohin?): zum (zu dem) Flughafen • zum Sportgeschäft • zur (zu der) Apotheke • zu den Parkplätzen • zu Julia",
+    english: "Preposition 'zu + Dative' (where to?): to the airport, to the sports shop, to the pharmacy, to the parking lots, to Julia",
+    pronunciation: "tsoom FLOOK-hah-fen, tsoom SHPORT-geh-sheft, tsoor ah-poh-TAY-keh, tsoo dain PAHRK-plets-en, tsoo YOO-lee-ah",
+    audioText: "zu plus Dativ: zum Flughafen, zum Sportgeschäft, zur Apotheke, zu den Parkplätzen, zu Julia.",
+    layman: "Direction to a specific place or person: 'zu' ALWAYS takes Dative! Contractions: 'zu + dem = zum' (zum Flughafen, zum Bahnhof), 'zu + der = zur' (zur Apotheke, zur Schule), people: 'zu Julia'!",
+    analogy: "Going to a building or person: 'Kuenda kwa daktari / duka' ➔ 'zum Arzt', 'zur Apotheke'!",
+    example: "Fährst du jetzt zum Flughafen oder zur Apotheke?",
+    exampleEnglish: "Are you driving to the airport now or to the pharmacy?",
+    category: "5. zu + Dativ (wohin?)",
+    badge: "zum / zur / zu den / zu Julia",
+    icon: "🎯"
+  },
+
+  // Page 6: nach vs bei + Dativ
+  {
+    id: "s8-nach-wohin-staedte-laender",
+    german: "Präposition \"nach\" (wohin?): nach Mannheim • nach Deutschland • nach Europa • nach Norden • nach links / rechts",
+    english: "Preposition 'nach' (where to?): to Mannheim (city), to Germany (country), to Europe, to the north, to the left/right",
+    pronunciation: "nahkh MAHN-hyme, nahkh DOYCH-lahnt, nahkh oy-ROH-pah, nahkh NOR-den, nahkh LINKS / REKHTS",
+    audioText: "nach: nach Mannheim, nach Deutschland, nach Europa, nach Norden, nach links, nach rechts.",
+    layman: "'nach' is used for travel destinations with NO article (cities like Mannheim/Nairobi, countries like Deutschland/Kenia, continents like Europa), compass directions (nach Norden), and turns (nach links/rechts)!",
+    analogy: "Flying across borders or turning at the roundabout: 'Kuenda Germany / kugeuka kushoto' ➔ 'nach Deutschland / nach links'!",
+    example: "Wir fliegen morgen nach Deutschland und fahren nach links.",
+    exampleEnglish: "We fly to Germany tomorrow and drive to the left.",
+    category: "6. nach & bei + Dativ",
+    badge: "nach + Städte / Länder / Richtungen",
+    icon: "✈️"
+  },
+  {
+    id: "s8-bei-dativ-wo",
+    german: "Präposition \"bei + Dativ\" (wo?): beim (bei dem) Arzt • beim Kind • bei der Ärztin • bei den Freunden • bei Julia / bei Siemens",
+    english: "Preposition 'bei + Dative' (at/with where?): at the doctor's, with the child, at the female doctor's, at friends', at Julia's / at Siemens",
+    pronunciation: "byme AHRTST, byme KINT, by dair AIRTS-tin, by dain FROYND-en, by YOO-lee-ah, by ZEE-mens",
+    audioText: "bei plus Dativ: beim Arzt, beim Kind, bei der Ärztin, bei den Freunden, bei Julia, bei Siemens.",
+    layman: "Location at a person, doctor, or company: 'bei' ALWAYS takes Dative! Contraction: 'bei + dem = beim' (beim Arzt, beim Friseur). Feminine: 'bei der Ärztin'. Companies & Names: 'bei Siemens', 'bei Julia'!",
+    analogy: "Saying where you are: 'Niko kwa daktari / ninafanya kazi kwa Siemens' ➔ 'beim Arzt', 'bei Siemens'!",
+    example: "Ich bin gerade beim Arzt und meine Schwester arbeitet bei Siemens.",
+    exampleEnglish: "I am currently at the doctor's and my sister works at Siemens.",
+    category: "6. nach & bei + Dativ",
+    badge: "beim / bei der / bei + Firma",
+    icon: "📍"
+  },
+
+  // Page 7: von + Dativ (woher?) & von...zu/nach
+  {
+    id: "s8-von-dativ-woher",
+    german: "Präposition \"von + Dativ\" (woher?): vom (von dem) Flughafen • vom Sportgeschäft • von der Apotheke • von den Parkplätzen",
+    english: "Preposition 'von + Dative' (from where?): from the airport, from the sports shop, from the pharmacy, from the parking lots",
+    pronunciation: "fom FLOOK-hah-fen, fom SHPORT-geh-sheft, fon dair ah-poh-TAY-keh, fon dain PAHRK-plets-en",
+    audioText: "von plus Dativ: vom Flughafen, vom Sportgeschäft, von der Apotheke, von den Parkplätzen. vom Flughafen zum Parkplatz. vom Flughafen nach München.",
+    layman: "Origin point / route: 'von' commands Dative! Contraction: 'von + dem = vom' (vom Flughafen). Route combinations: 'vom Flughafen zum Parkplatz' (from airport to parking) / 'vom Flughafen nach München' (from airport to Munich)!",
+    analogy: "Saying where you are coming from: 'Kutoka uwanja wa ndege hadi mjini' ➔ 'vom Flughafen nach München'!",
+    example: "Vom Flughafen nach München brauche ich nur 30 Minuten.",
+    exampleEnglish: "From the airport to Munich I only need 30 minutes.",
+    category: "7. von + Dativ (woher?) & Routen",
+    badge: "vom / von der / vom ... nach ...",
+    icon: "🛣️"
+  },
+
+  // Page 8: REDEMITTEL Toolkit
+  {
+    id: "s8-redemittel-hotel-reisen",
+    german: "Zimmerreservierung & Fahrplan: Möchten Sie ein Einzel- oder Doppelzimmer? • Mit Frühstück? • Wann fährt der Zug ab / kommt an?",
+    english: "Hotel Booking & Timetables: Would you like a single or double room? • With breakfast? • When does the train depart / arrive?",
+    pronunciation: "MEUKH-ten zee ein IEN-tsel oh-der DOH-pel-tsim-mer • mit FREW-shtewk • vahn FAIR-t dair TSOOK ahp",
+    audioText: "Möchten Sie ein Einzel- oder ein Doppelzimmer? Mit Bad oder ohne Bad? Wie lange möchten Sie bleiben? Zahlen Sie mit Karte oder bar? Wann fährt der Zug ab? Wann kommt das Flugzeug an?",
+    layman: "Hotel & Transit survival toolkit: Booking rooms ('Einzelzimmer' = single room, 'Doppelzimmer' = double room, 'mit Frühstück' = with breakfast), paying ('mit Karte' / 'bar' = cash), and tracking trains ('abfahren' = depart, 'ankommen' = arrive)!",
+    analogy: "Checking in at the front desk and asking for the S-Bahn train timetable!",
+    example: "Ich möchte ein Doppelzimmer mit Frühstück für drei Nächte reservieren.",
+    exampleEnglish: "I would like to reserve a double room with breakfast for three nights.",
+    category: "8. Redemittel Toolkit",
+    badge: "Hotel & Travel Timetables",
+    icon: "🏨"
+  },
+  {
+    id: "s8-redemittel-wetter-aufgaben-telefon",
+    german: "Wetter, Aufgaben & Telefon: Wie wird das Wetter morgen? • Es regnet stark • Wir müssen noch einkaufen • Was kann ich für Sie tun?",
+    english: "Weather, Tasks & Phone: How will the weather be tomorrow? • It is raining heavily • We still have to shop • What can I do for you?",
+    pronunciation: "vee veert dahs VET-ter MOR-gen • ess REKG-net SHTAHRK • veer MEWS-sen nohkh IEN-kow-fen",
+    audioText: "Wie wird das Wetter morgen? Es sind 25 Grad. Die Sonne scheint. Wir müssen noch einkaufen. Kannst du das machen? Ja, das kann ich machen. Guten Tag, was kann ich für Sie tun? Auf Wiederhören.",
+    layman: "Daily practical phrases: Checking the weather forecast ('Wie wird das Wetter?'), doing chores ('Wir müssen noch einkaufen'), and professional phone etiquette ('Was kann ich für Sie tun? - Auf Wiederhören')!",
+    analogy: "Making everyday plans and answering the office phone professionally in Germany!",
+    example: "Guten Tag, Firma Schmidt, mein Name ist Julia. Was kann ich für Sie tun?",
+    exampleEnglish: "Hello, Schmidt Company, my name is Julia. What can I do for you?",
+    category: "8. Redemittel Toolkit",
+    badge: "Weather, Tasks & Phone",
+    icon: "📞"
+  },
+
+  // Page 9: Cartoon Comic - Holiday Weather Joke
+  {
+    id: "s8-cartoon-urlaub-regen",
+    german: "Cartoon: \"Wie oft hat es in Ihrem Urlaub geregnet?\" - \"Nur zweimal, einmal fünf und einmal sechs Tage lang!\"",
+    english: "Cartoon: 'How often did it rain on your vacation?' - 'Only twice: once for five days and once for six days!'",
+    pronunciation: "vee OFT haht ess in EE-rem OOR-lowp geh-REGK-net? - noor TSWY-mahl, IEN-mahl FEWNF oont IEN-mahl ZEKS TAH-geh lahng!",
+    audioText: "Wie oft hat es in Ihrem Urlaub geregnet? Nur zweimal, einmal fünf und einmal sechs Tage lang!",
+    layman: "The hilarious holiday weather cartoon on Page 9! When asked how often it rained, the traveler dryly replies 'Only twice' — but then reveals that the first rain lasted 5 days and the second lasted 6 days (meaning 11 days of non-stop downpour during his entire trip)!",
+    analogy: "Going on holiday to the coast and it rains non-stop the entire week: 'Ilinyesha mara mbili tu: siku tano mfululizo halafu siku sita mfululizo!'",
+    example: "In meinem Urlaub hat es leider fast jeden Tag geregnet.",
+    exampleEnglish: "Unfortunately, it rained almost every day during my vacation.",
+    category: "9. Cartoon Comic",
+    badge: "11-Day Rain Comic",
+    icon: "🌧️"
+  }
+];
+
+export const SUMMARY_8_SCENARIOS = [
+  {
+    scenario: "What are the correct 2nd (du) and 3rd (er/sie/es) person singular forms of the verb 'werden' in the present tense (Summary 8, Page 1)?",
+    hint: "Notice the e ➔ i vowel change!",
+    options: [
+      { text: "du wirst • er/sie/es wird (vowel changes from 'e' to 'i')", correct: true, explain: "Genau! 'werden' is irregular in the present tense: 'du wirst' and 'er/es/sie wird' change 'e' to 'i'!" },
+      { text: "du werdest • er werdet", correct: false, explain: "Those are regular endings that do not apply to 'werden'." },
+      { text: "du wurdest • er wurde", correct: false, explain: "Those are past tense (Präteritum) forms." }
+    ]
+  },
+  {
+    scenario: "Look at the 3 Partizip II blueprints on Page 2: What is the correct past participle for 'machen' (regular), 'trinken' (irregular), and 'bringen' (mixed)?",
+    hint: "ge-...-t vs ge-...-en vs ge-...+vowel shift+-t.",
+    options: [
+      { text: "gemacht (ge-...-t) • getrunken (ge-...-en) • gebracht (ge-...-t with vowel shift)", correct: true, explain: "Ausgezeichnet! Regular verbs take 'ge-...-t' (gemacht), irregular strong verbs take 'ge-...-en' with vowel shifts (getrunken), and mixed verbs combine vowel shift with '-t' (gebracht)!" },
+      { text: "gemachen • getrinkt • gebringt", correct: false, explain: "Those forms violate German Partizip II rules." },
+      { text: "hat machen • hat trinken • hat bringen", correct: false, explain: "You need the Partizip II form, not the infinitive." }
+    ]
+  },
+  {
+    scenario: "In the sentence 'Ich habe gestern den Kölner Dom gesehen' (Page 3), where do the two verbs sit?",
+    hint: "Check the Satzklammer (Sentence Bracket) rule!",
+    options: [
+      { text: "The helping verb 'habe' sits in Position 2, and the Partizip II 'gesehen' sits at the very end of the sentence!", correct: true, explain: "Perfekt! In German Perfekt, the conjugated auxiliary verb takes Position 2, while the Partizip II is locked at the Satzende (end of the sentence) forming the Satzklammer bracket!" },
+      { text: "Both verbs sit together right at the beginning.", correct: false, explain: "In German main clauses, verbs are split across Position 2 and the sentence end." },
+      { text: "'gesehen' is in Position 2 and 'habe' is at the end.", correct: false, explain: "The conjugated auxiliary verb must come first in Position 2." }
+    ]
+  },
+  {
+    scenario: "How do you say 'by bus' (m), 'by taxi' (n), and 'by tram' (f) using the preposition 'mit' (Page 4)?",
+    hint: "'mit' strictly requires DATIV (dem, dem, der).",
+    options: [
+      { text: "mit dem Bus • mit dem Taxi • mit der Straßenbahn", correct: true, explain: "Richtig! 'mit' ALWAYS takes Dative: masculine/neuter takes 'dem' (mit dem Bus, mit dem Taxi) and feminine takes 'der' (mit der Straßenbahn)!" },
+      { text: "mit den Bus • mit das Taxi • mit die Straßenbahn", correct: false, explain: "Those are Accusative forms, but 'mit' commands Dative." },
+      { text: "nach dem Bus • zu dem Taxi • in der Straßenbahn", correct: false, explain: "'mit' is the correct preposition for means of transport." }
+    ]
+  },
+  {
+    scenario: "When traveling to a place (wohin?), when do you use 'nach' vs 'zu + Dativ' (Pages 5 & 6)?",
+    hint: "'nach' for cities/countries without article; 'zu' for local buildings/persons.",
+    options: [
+      { text: "'nach' for cities, countries and directions (nach Berlin, nach Deutschland, nach links); 'zu' for local spots and people (zum Flughafen, zur Apotheke, zu Julia).", correct: true, explain: "Wunderbar! Use 'nach' for cities, countries without articles, continents, and compass turns. Use 'zu + Dativ' (zum/zur) for local destinations, shops, and individuals!" },
+      { text: "'nach' is only for food; 'zu' is only for weather.", correct: false, explain: "Both are spatial movement prepositions." },
+      { text: "They are completely interchangeable without rules.", correct: false, explain: "German has strict rules for geographical vs local targets." }
+    ]
+  },
+  {
+    scenario: "How do you say you are 'at the doctor's' (m) and 'at Siemens' (company) using the preposition 'bei' (Page 6)?",
+    hint: "Contraction 'bei + dem = beim' vs without article for companies.",
+    options: [
+      { text: "beim Arzt (bei + dem Arzt) • bei Siemens (no article for companies)", correct: true, explain: "Super! 'bei' takes Dative: 'bei + dem Arzt' contracts to 'beim Arzt', and company names take 'bei' without any article ('bei Siemens', 'bei BMW')!" },
+      { text: "in dem Arzt • nach Siemens", correct: false, explain: "You cannot use 'nach' or 'in' for attending a professional or working at a company." },
+      { text: "zu dem Arzt • zum Siemens", correct: false, explain: "'zu' indicates movement towards (wohin?), whereas 'bei' indicates current location (wo?)." }
+    ]
+  },
+  {
+    scenario: "How do you describe a route from the airport to Munich (Page 7)?",
+    hint: "'vom ... nach ...' combination.",
+    options: [
+      { text: "vom Flughafen nach München (from local airport 'vom' to city 'nach')", correct: true, explain: "Perfekt! Origin from a local hub uses 'vom' (von + dem), and destination to a city uses 'nach' (nach München)!" },
+      { text: "aus Flughafen zu München", correct: false, explain: "Prepositions and contractions are incorrect." },
+      { text: "nach Flughafen vom München", correct: false, explain: "The direction of travel is inverted." }
+    ]
+  },
+  {
+    scenario: "In the holiday weather cartoon on Page 9, why is the answer 'Nur zweimal, einmal fünf und einmal sechs Tage lang' funny?",
+    hint: "Add 5 days + 6 days together!",
+    options: [
+      { text: "Because although he says it only rained 'twice', the two rain spells lasted 5 and 6 days respectively — meaning it rained non-stop for 11 straight days of his vacation!", correct: true, explain: "Ausgezeichnet! He pretends it rarely rained by saying 'nur zweimal' (only twice), but those two rainfalls consumed 11 whole days of his holiday!" },
+      { text: "Because it never rains in Germany.", correct: false, explain: "Rain is very common in Germany." },
+      { text: "Because he forgot his umbrella.", correct: false, explain: "The comedic punchline is the 11-day continuous downpour." }
+    ]
+  }
+];
+
+
 
 
 

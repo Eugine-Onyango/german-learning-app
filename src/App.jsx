@@ -150,6 +150,8 @@ import Summary6GrammatikStudio from './components/Summary6GrammatikStudio';
 import Summary6Game from './components/Summary6Game';
 import Summary7GrammatikStudio from './components/Summary7GrammatikStudio';
 import Summary7Game from './components/Summary7Game';
+import Summary8GrammatikStudio from './components/Summary8GrammatikStudio';
+import Summary8Game from './components/Summary8Game';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
@@ -158,6 +160,7 @@ import {
   SUMMARY_5_ITEMS,
   SUMMARY_6_ITEMS,
   SUMMARY_7_ITEMS,
+  SUMMARY_8_ITEMS,
   LESSON_1_ITEMS,
   LESSON_2_ITEMS,
   LESSON_3_ITEMS,
@@ -226,7 +229,7 @@ import {
 } from './data/germanLessons';
 
 export default function App() {
-  const [currentLesson, setCurrentLesson] = useState('summary-7'); // Default to newly added Summary 7, easy switch to 1-65 & Summaries 1-6
+  const [currentLesson, setCurrentLesson] = useState('summary-8'); // Default to newly added Summary 8, easy switch to 1-65 & Summaries 1-7
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
 
@@ -238,6 +241,7 @@ export default function App() {
   if (currentLesson === 'summary-5') activeItems = SUMMARY_5_ITEMS;
   if (currentLesson === 'summary-6') activeItems = SUMMARY_6_ITEMS;
   if (currentLesson === 'summary-7') activeItems = SUMMARY_7_ITEMS;
+  if (currentLesson === 'summary-8') activeItems = SUMMARY_8_ITEMS;
   if (currentLesson === 2) activeItems = LESSON_2_ITEMS;
   if (currentLesson === 3) activeItems = LESSON_3_ITEMS;
   if (currentLesson === 4) activeItems = LESSON_4_ITEMS;
@@ -311,6 +315,7 @@ export default function App() {
     if (currentLesson === 'summary-5') return "Summary 5: Visual Grammatik & Redemittel Teil 5 (Modalverben, Trennbare Verben, Satzklammer, man/niemand & Toolkit)";
     if (currentLesson === 'summary-6') return "Summary 6: Visual Grammatik & Redemittel Teil 6 (Dativ-Artikel, Akkusativ-Pronomen, 9 Lokale Präpositionen, denn & Wüsten-Comic)";
     if (currentLesson === 'summary-7') return "Summary 7: Visual Grammatik & Redemittel Teil 7 (Imperativ, Präteritum, von + Dativ, Dativ-Körperteile, deshalb & Zahnarzt-Comic)";
+    if (currentLesson === 'summary-8') return "Summary 8: Visual Grammatik & Redemittel Teil 8 (werden, Perfekt mit haben, 3 Partizip-Baupläne, mit/zu/nach/bei/von & Regen-Comic)";
     if (currentLesson === 1) return "Lesson 1: Begrüßungen (Greetings)";
     if (currentLesson === 2) return "Lesson 2: Häufige Redemittel (Common Everyday Phrases)";
     if (currentLesson === 3) return "Lesson 3: Zahlen 0 - 20 & Meine Handynummer (Numbers & Mobile)";
@@ -399,6 +404,9 @@ export default function App() {
     }
     if (currentLesson === 'summary-7') {
       return "Master imperative commands across du/ihr/Sie (drop umlaut & keep e->i rules), Präteritum past tense (war & hatte twin forms), the Dativ preposition 'von' and body parts matrix (-em, -er, -en + -n), consequence sentences with 'deshalb' (Position 1), ordinal dates, the dentist comic, and clinic/letter Redemittel!";
+    }
+    if (currentLesson === 'summary-8') {
+      return "Master the chameleon verb 'werden' (du wirst / er wird), the Perfekt tense with 'haben' and Satzklammer brackets, the 3 Partizip II blueprints (regelmäßig, unregelmäßig, Mischverben), transport and directional prepositions (mit, zu, nach, bei, von), the 11-day vacation rain comic, and the hotel/travel Redemittel toolkit!";
     }
     if (currentLesson === 1) {
       return "German greetings made friendly, colorful, and memorable with everyday analogies. Tap any card to listen!";
@@ -1277,6 +1285,15 @@ export default function App() {
 
         {currentLesson === 'summary-7' && activeTab === 'summary7Game' && (
           <Summary7Game isSlowMode={isSlowMode} />
+        )}
+
+        {/* Summary 8 Specific Modules */}
+        {currentLesson === 'summary-8' && activeTab === 'summary8Studio' && (
+          <Summary8GrammatikStudio isSlowMode={isSlowMode} />
+        )}
+
+        {currentLesson === 'summary-8' && activeTab === 'summary8Game' && (
+          <Summary8Game isSlowMode={isSlowMode} />
         )}
 
         {/* Shared Interactive Modules */}

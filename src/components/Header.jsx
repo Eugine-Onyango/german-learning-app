@@ -103,6 +103,7 @@ export default function Header({
     if (currentLesson === 'summary-5') msg = "Visual Grammatik Teil 5: ich muss, ich kann, ich will, ich darf! Ich ziehe das Trikot an. Ich stehe um fünf Uhr auf. Markus darf Klavier spielen. Ich will um fünf Uhr aufstehen! Man darf hier nicht rauchen. Niemand kann einen Handstand machen. Wie geht's dir? Ich bin zufrieden und glücklich!";
     if (currentLesson === 'summary-6') msg = "Visual Grammatik Teil 6: dem Stuhl, dem Regal, der Lampe, den Stühlen! mich, dich, ihn, sie, es, uns, euch. auf dem Regal, im Schrank, an der Wand. Das Geschenk ist für meinen Mann. Ich fahre mit dem Bus, denn mein Fahrrad ist nicht da. Zuerst geradeaus, nächste Woche dann nach links!";
     if (currentLesson === 'summary-7') msg = "Visual Grammatik Teil 7: Hol, Holt, Holen Sie! Fahr, Fahrt, Fahren Sie! Nimm, Nehmt, Nehmen Sie! Ich war, du warst, er war! Ich hatte, du hattest, er hatte! Der Name von seiner Exfreundin. Meinem Rücken, meiner Hand, meinen Haaren. Ich finde mein Tattoo nicht gut, deshalb will ich es wegmachen. Am 16. 12. hast du deinen Zahnarzttermin. Heute ist der 6. Ich gehe aber erst im November! Gute Besserung!";
+    if (currentLesson === 'summary-8') msg = "Visual Grammatik Teil 8: ich werde, du wirst, er wird! Ich habe gesagt, gesehen, gebracht. Ich habe den Dom gesehen. Mit dem Bus, mit dem Taxi, mit der Straßenbahn. Zum Flughafen, zur Apotheke, zu Julia. Nach Mannheim, nach Deutschland, nach links. Beim Arzt, bei Siemens. Vom Flughafen nach München. Nur zweimal geregnet, einmal fünf und einmal sechs Tage lang!";
     speakGerman(msg, isSlowMode);
   };
 
@@ -158,6 +159,14 @@ export default function Header({
     { id: 'cards', label: '📖 Summary 7 Cards', sub: 'Visual Commands, Past & Body Cards' },
     { id: 'summary7Studio', label: '🎨 Grammatik Studio VII', sub: 'Imperativ, Präteritum, deshalb & Dates' },
     { id: 'summary7Game', label: '🎮 Summary 7 Challenge', sub: 'Commands, Past, Clinic & Dates Quiz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
+    { id: 'summary', label: '📋 At a Glance', sub: 'Visual Chalkboard' },
+  ];
+
+  const summary8NavItems = [
+    { id: 'cards', label: '📖 Summary 8 Cards', sub: 'Visual werden, Perfekt & Preposition Cards' },
+    { id: 'summary8Studio', label: '🎨 Grammatik Studio VIII', sub: 'werden, 3 Partizip Blueprints & Prepositions' },
+    { id: 'summary8Game', label: '🎮 Summary 8 Challenge', sub: 'werden, Partizip, Transport & Hotel Quiz' },
     { id: 'memory', label: '🃏 Memory Match', sub: 'Flip & Match Pairs' },
     { id: 'summary', label: '📋 At a Glance', sub: 'Visual Chalkboard' },
   ];
@@ -757,6 +766,7 @@ export default function Header({
   if (currentLesson === 'summary-5') navItems = summary5NavItems;
   if (currentLesson === 'summary-6') navItems = summary6NavItems;
   if (currentLesson === 'summary-7') navItems = summary7NavItems;
+  if (currentLesson === 'summary-8') navItems = summary8NavItems;
 
   const ALL_LESSONS = [
     { num: 'summary-1', label: "📑 Summary 1: Redemittel", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
@@ -766,6 +776,7 @@ export default function Header({
     { num: 'summary-5', label: "📑 Summary 5: Modal & Satzklammer", activeClass: "bg-blue-600 ring-blue-300", hoverBorder: "hover:bg-blue-200/60 border-blue-300" },
     { num: 'summary-6', label: "📑 Summary 6: Dativ & Präpositionen", activeClass: "bg-teal-600 ring-teal-300", hoverBorder: "hover:bg-teal-200/60 border-teal-300" },
     { num: 'summary-7', label: "📑 Summary 7: Imperativ & Präteritum", activeClass: "bg-emerald-600 ring-emerald-300", hoverBorder: "hover:bg-emerald-200/60 border-emerald-300" },
+    { num: 'summary-8', label: "📑 Summary 8: Perfekt & Präpositionen", activeClass: "bg-cyan-700 ring-cyan-300", hoverBorder: "hover:bg-cyan-200/60 border-cyan-300" },
     { num: 1, label: "👋 1: Greetings", activeClass: "bg-amber-600 ring-amber-300", hoverBorder: "hover:bg-amber-200/60 border-amber-300" },
     { num: 2, label: "💬 2: Phrases", activeClass: "bg-emerald-700 ring-emerald-300", hoverBorder: "hover:bg-emerald-100 border-emerald-300" },
     { num: 3, label: "🔢 3: 0 - 20 & Handy", activeClass: "bg-indigo-700 ring-indigo-300", hoverBorder: "hover:bg-indigo-100 border-indigo-300" },
