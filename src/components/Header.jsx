@@ -3,8 +3,12 @@ import { Volume2, ShieldCheck, Sparkles, BookOpen, ChevronLeft, ChevronRight } f
 import { speakGerman, playChime } from '../utils/sound';
 
 export default function Header({
+  level = 'A1',
+  setLevel,
   currentLesson,
   setCurrentLesson,
+  currentA2Lesson = 1,
+  setCurrentA2Lesson,
   activeTab,
   setActiveTab,
   isSlowMode,
@@ -109,6 +113,19 @@ export default function Header({
     if (currentLesson === 'summary-7') msg = "Visual Grammatik Teil 7: Hol, Holt, Holen Sie! Fahr, Fahrt, Fahren Sie! Nimm, Nehmt, Nehmen Sie! Ich war, du warst, er war! Ich hatte, du hattest, er hatte! Der Name von seiner Exfreundin. Meinem Rücken, meiner Hand, meinen Haaren. Ich finde mein Tattoo nicht gut, deshalb will ich es wegmachen. Am 16. 12. hast du deinen Zahnarzttermin. Heute ist der 6. Ich gehe aber erst im November! Gute Besserung!";
     if (currentLesson === 'summary-8') msg = "Visual Grammatik Teil 8: ich werde, du wirst, er wird! Ich habe gesagt, gesehen, gebracht. Ich habe den Dom gesehen. Mit dem Bus, mit dem Taxi, mit der Straßenbahn. Zum Flughafen, zur Apotheke, zu Julia. Nach Mannheim, nach Deutschland, nach links. Beim Arzt, bei Siemens. Vom Flughafen nach München. Nur zweimal geregnet, einmal fünf und einmal sechs Tage lang!";
     if (currentLesson === 'summary-9') msg = "Visual Grammatik Teil 9: ich bin gefahren, du bist gekommen, er ist geflogen! Du sollst die Medizin nehmen. Der Hut gefällt mir, das Buch gehört ihm, die Pizza schmeckt uns. Welcher Ort, welches Hobby, welche CD. Dieser Baum, dieses Auto, diese Straße. Vor einem Jahr, nach einer Woche, seit zwei Monaten, ab Montag. Ohne den Rucksack, gegen den Baum!";
+    if (level === 'A2') {
+      if (currentA2Lesson === 5) {
+        msg = "Adjektivdeklination im Nominativ: Sandra ist schön, aber sie ist eine schöne Frau! Der nette Mann, die schöne Frau, das kleine Kind, die roten Rosen. Und das ist ein teures Buch!";
+      } else if (currentA2Lesson === 4) {
+        msg = "Kausalsätze mit weil und da: Ich lerne Deutsch, weil ich in Deutschland studieren will! Und weil ich den Zug verpasst habe, bin ich spät. Martina antwortet nicht, denn sie ist sauer!";
+      } else if (currentA2Lesson === 3) {
+        msg = "Nebensätze mit dass: Es ist wichtig, dass du jeden Tag Deutsch lernst! Ich habe gelesen, dass es morgen regnet, und es ist schön, dass du Note 1 bekommen hast!";
+      } else if (currentA2Lesson === 2) {
+        msg = "Charaktereigenschaften und Gegenteile: freundlich und unfreundlich, ruhig und unruhig, begabt und unbegabt, mutig und ängstlich, schüchtern und selbstbewusst. Tanja ist etwas arrogant, aber immer zuverlässig!";
+      } else {
+        msg = "Hallo, ich bin Martin Müller. Ich komme aus Mailand. Ich spreche etwas Deutsch. Ich arbeite bei Deutsche Bahn in München. Meine Hobbys sind fernsehen und Gitarre spielen.";
+      }
+    }
     speakGerman(msg, isSlowMode);
   };
 
@@ -707,80 +724,142 @@ export default function Header({
     { id: 'summary', label: '📋 At a Glance', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const a2Lesson1NavItems = [
+    { id: 'cards', label: '📖 A2 Cards', sub: 'Sich Vorstellen Cards' },
+    { id: 'a2Studio1', label: '🎙️ Profile Studio', sub: 'Interactive Monologue & Audio' },
+    { id: 'a2Game1', label: '📝 Worksheet Challenge', sub: 'Fill Blanks & Q&A Quiz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'A2 Vocab Pairs' },
+    { id: 'summary', label: '📋 Merkzettel', sub: 'Exact Slide Chalkboard' },
+  ];
+
+  const a2Lesson2NavItems = [
+    { id: 'cards', label: '📖 A2-2 Cards', sub: 'Charaktereigenschaften Cards' },
+    { id: 'a2Studio2', label: '🎭 Personality Studio', sub: 'Opposites, Personas & Adverbien' },
+    { id: 'a2Game2', label: '📝 Worksheet Challenge', sub: 'Schreib die Gegenteile & Blitz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Traits & Opposites Pairs' },
+    { id: 'summary', label: '📋 Merkzettel', sub: 'Exact Slide Chalkboard' },
+  ];
+
+  const a2Lesson3NavItems = [
+    { id: 'cards', label: '📖 A2-3 Cards', sub: 'Nebensätze mit dass' },
+    { id: 'a2Studio3', label: '⚽ Dass Studio', sub: 'Verb-Kicker Architecture & Sandbox' },
+    { id: 'a2Game3', label: '📝 Worksheet Challenge', sub: 'Bilde Sätze mit dass & Quiz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Dass Sentence Pairs' },
+    { id: 'summary', label: '📋 Merkzettel', sub: 'Exact Slide Chalkboard' },
+  ];
+
+  const a2Lesson4NavItems = [
+    { id: 'cards', label: '📖 A2-4 Cards', sub: 'Kausalsätze weil & da' },
+    { id: 'a2Studio4', label: '🎯 Kausal Studio', sub: 'Order A vs B, Collision & Showdown' },
+    { id: 'a2Game4', label: '📝 Worksheet Challenge', sub: 'Bilde Sätze mit weil & Blitz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Causal Sentence Pairs' },
+    { id: 'summary', label: '📋 Merkzettel', sub: 'Exact Slide Chalkboard' },
+  ];
+
+  const a2Lesson5NavItems = [
+    { id: 'cards', label: '📖 A2-5 Cards', sub: 'Adjektivendungen Nominativ' },
+    { id: 'a2Studio5', label: '🎨 Adjektiv Studio', sub: 'Generator, Matrix & Ausnahmen' },
+    { id: 'a2Game5', label: '📝 Worksheet Challenge', sub: 'Ergänze Endungen & Blitz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Adjective Ending Pairs' },
+    { id: 'summary', label: '📋 Merkzettel', sub: 'Exact Slide Chalkboard' },
+  ];
+
+  const ALL_A2_LESSONS = [
+    { num: 1, label: "🌟 A2-1: Sich vorstellen", activeClass: "bg-emerald-600 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
+    { num: 2, label: "🎭 A2-2: Charaktereigenschaften", activeClass: "bg-indigo-600 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 dark:hover:bg-indigo-950 border-indigo-300 dark:border-indigo-700" },
+    { num: 3, label: "⚽ A2-3: Nebensätze mit dass", activeClass: "bg-teal-600 ring-teal-400", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" },
+    { num: 4, label: "🎯 A2-4: Kausalsätze (weil & da)", activeClass: "bg-amber-600 ring-amber-400", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
+    { num: 5, label: "🎨 A2-5: Adjektivendungen (Nominativ)", activeClass: "bg-purple-600 ring-purple-400", hoverBorder: "hover:bg-purple-100 dark:hover:bg-purple-950 border-purple-300 dark:border-purple-700" }
+  ];
+
   let navItems = lesson1NavItems;
-  if (currentLesson === 2) navItems = lesson2NavItems;
-  if (currentLesson === 3) navItems = lesson3NavItems;
-  if (currentLesson === 4) navItems = lesson4NavItems;
-  if (currentLesson === 5) navItems = lesson5NavItems;
-  if (currentLesson === 6) navItems = lesson6NavItems;
-  if (currentLesson === 7) navItems = lesson7NavItems;
-  if (currentLesson === 8) navItems = lesson8NavItems;
-  if (currentLesson === 9) navItems = lesson9NavItems;
-  if (currentLesson === 10) navItems = lesson10NavItems;
-  if (currentLesson === 11) navItems = lesson11NavItems;
-  if (currentLesson === 12) navItems = lesson12NavItems;
-  if (currentLesson === 13) navItems = lesson13NavItems;
-  if (currentLesson === 14) navItems = lesson14NavItems;
-  if (currentLesson === 15) navItems = lesson15NavItems;
-  if (currentLesson === 16) navItems = lesson16NavItems;
-  if (currentLesson === 17) navItems = lesson17NavItems;
-  if (currentLesson === 18) navItems = lesson18NavItems;
-  if (currentLesson === 19) navItems = lesson19NavItems;
-  if (currentLesson === 20) navItems = lesson20NavItems;
-  if (currentLesson === 21) navItems = lesson21NavItems;
-  if (currentLesson === 22) navItems = lesson22NavItems;
-  if (currentLesson === 23) navItems = lesson23NavItems;
-  if (currentLesson === 24) navItems = lesson24NavItems;
-  if (currentLesson === 25) navItems = lesson25NavItems;
-  if (currentLesson === 26) navItems = lesson26NavItems;
-  if (currentLesson === 27) navItems = lesson27NavItems;
-  if (currentLesson === 28) navItems = lesson28NavItems;
-  if (currentLesson === 29) navItems = lesson29NavItems;
-  if (currentLesson === 30) navItems = lesson30NavItems;
-  if (currentLesson === 31) navItems = lesson31NavItems;
-  if (currentLesson === 32) navItems = lesson32NavItems;
-  if (currentLesson === 33) navItems = lesson33NavItems;
-  if (currentLesson === 34) navItems = lesson34NavItems;
-  if (currentLesson === 35) navItems = lesson35NavItems;
-  if (currentLesson === 36) navItems = lesson36NavItems;
-  if (currentLesson === 37) navItems = lesson37NavItems;
-  if (currentLesson === 38) navItems = lesson38NavItems;
-  if (currentLesson === 39) navItems = lesson39NavItems;
-  if (currentLesson === 40) navItems = lesson40NavItems;
-  if (currentLesson === 41) navItems = lesson41NavItems;
-  if (currentLesson === 42) navItems = lesson42NavItems;
-  if (currentLesson === 43) navItems = lesson43NavItems;
-  if (currentLesson === 44) navItems = lesson44NavItems;
-  if (currentLesson === 45) navItems = lesson45NavItems;
-  if (currentLesson === 46) navItems = lesson46NavItems;
-  if (currentLesson === 47) navItems = lesson47NavItems;
-  if (currentLesson === 48) navItems = lesson48NavItems;
-  if (currentLesson === 49) navItems = lesson49NavItems;
-  if (currentLesson === 50) navItems = lesson50NavItems;
-  if (currentLesson === 51) navItems = lesson51NavItems;
-  if (currentLesson === 52) navItems = lesson52NavItems;
-  if (currentLesson === 53) navItems = lesson53NavItems;
-  if (currentLesson === 54) navItems = lesson54NavItems;
-  if (currentLesson === 55) navItems = lesson55NavItems;
-  if (currentLesson === 56) navItems = lesson56NavItems;
-  if (currentLesson === 57) navItems = lesson57NavItems;
-  if (currentLesson === 58) navItems = lesson58NavItems;
-  if (currentLesson === 59) navItems = lesson59NavItems;
-  if (currentLesson === 60) navItems = lesson60NavItems;
-  if (currentLesson === 61) navItems = lesson61NavItems;
-  if (currentLesson === 62) navItems = lesson62NavItems;
-  if (currentLesson === 63) navItems = lesson63NavItems;
-  if (currentLesson === 64) navItems = lesson64NavItems;
-  if (currentLesson === 65) navItems = lesson65NavItems;
-  if (currentLesson === 'summary-1') navItems = summary1NavItems;
-  if (currentLesson === 'summary-2') navItems = summary2NavItems;
-  if (currentLesson === 'summary-3') navItems = summary3NavItems;
-  if (currentLesson === 'summary-4') navItems = summary4NavItems;
-  if (currentLesson === 'summary-5') navItems = summary5NavItems;
-  if (currentLesson === 'summary-6') navItems = summary6NavItems;
-  if (currentLesson === 'summary-7') navItems = summary7NavItems;
-  if (currentLesson === 'summary-8') navItems = summary8NavItems;
-  if (currentLesson === 'summary-9') navItems = summary9NavItems;
+  if (level === 'A2') {
+    if (currentA2Lesson === 5) {
+      navItems = a2Lesson5NavItems;
+    } else if (currentA2Lesson === 4) {
+      navItems = a2Lesson4NavItems;
+    } else if (currentA2Lesson === 3) {
+      navItems = a2Lesson3NavItems;
+    } else if (currentA2Lesson === 2) {
+      navItems = a2Lesson2NavItems;
+    } else {
+      navItems = a2Lesson1NavItems;
+    }
+  } else {
+    if (currentLesson === 2) navItems = lesson2NavItems;
+    if (currentLesson === 3) navItems = lesson3NavItems;
+    if (currentLesson === 4) navItems = lesson4NavItems;
+    if (currentLesson === 5) navItems = lesson5NavItems;
+    if (currentLesson === 6) navItems = lesson6NavItems;
+    if (currentLesson === 7) navItems = lesson7NavItems;
+    if (currentLesson === 8) navItems = lesson8NavItems;
+    if (currentLesson === 9) navItems = lesson9NavItems;
+    if (currentLesson === 10) navItems = lesson10NavItems;
+    if (currentLesson === 11) navItems = lesson11NavItems;
+    if (currentLesson === 12) navItems = lesson12NavItems;
+    if (currentLesson === 13) navItems = lesson13NavItems;
+    if (currentLesson === 14) navItems = lesson14NavItems;
+    if (currentLesson === 15) navItems = lesson15NavItems;
+    if (currentLesson === 16) navItems = lesson16NavItems;
+    if (currentLesson === 17) navItems = lesson17NavItems;
+    if (currentLesson === 18) navItems = lesson18NavItems;
+    if (currentLesson === 19) navItems = lesson19NavItems;
+    if (currentLesson === 20) navItems = lesson20NavItems;
+    if (currentLesson === 21) navItems = lesson21NavItems;
+    if (currentLesson === 22) navItems = lesson22NavItems;
+    if (currentLesson === 23) navItems = lesson23NavItems;
+    if (currentLesson === 24) navItems = lesson24NavItems;
+    if (currentLesson === 25) navItems = lesson25NavItems;
+    if (currentLesson === 26) navItems = lesson26NavItems;
+    if (currentLesson === 27) navItems = lesson27NavItems;
+    if (currentLesson === 28) navItems = lesson28NavItems;
+    if (currentLesson === 29) navItems = lesson29NavItems;
+    if (currentLesson === 30) navItems = lesson30NavItems;
+    if (currentLesson === 31) navItems = lesson31NavItems;
+    if (currentLesson === 32) navItems = lesson32NavItems;
+    if (currentLesson === 33) navItems = lesson33NavItems;
+    if (currentLesson === 34) navItems = lesson34NavItems;
+    if (currentLesson === 35) navItems = lesson35NavItems;
+    if (currentLesson === 36) navItems = lesson36NavItems;
+    if (currentLesson === 37) navItems = lesson37NavItems;
+    if (currentLesson === 38) navItems = lesson38NavItems;
+    if (currentLesson === 39) navItems = lesson39NavItems;
+    if (currentLesson === 40) navItems = lesson40NavItems;
+    if (currentLesson === 41) navItems = lesson41NavItems;
+    if (currentLesson === 42) navItems = lesson42NavItems;
+    if (currentLesson === 43) navItems = lesson43NavItems;
+    if (currentLesson === 44) navItems = lesson44NavItems;
+    if (currentLesson === 45) navItems = lesson45NavItems;
+    if (currentLesson === 46) navItems = lesson46NavItems;
+    if (currentLesson === 47) navItems = lesson47NavItems;
+    if (currentLesson === 48) navItems = lesson48NavItems;
+    if (currentLesson === 49) navItems = lesson49NavItems;
+    if (currentLesson === 50) navItems = lesson50NavItems;
+    if (currentLesson === 51) navItems = lesson51NavItems;
+    if (currentLesson === 52) navItems = lesson52NavItems;
+    if (currentLesson === 53) navItems = lesson53NavItems;
+    if (currentLesson === 54) navItems = lesson54NavItems;
+    if (currentLesson === 55) navItems = lesson55NavItems;
+    if (currentLesson === 56) navItems = lesson56NavItems;
+    if (currentLesson === 57) navItems = lesson57NavItems;
+    if (currentLesson === 58) navItems = lesson58NavItems;
+    if (currentLesson === 59) navItems = lesson59NavItems;
+    if (currentLesson === 60) navItems = lesson60NavItems;
+    if (currentLesson === 61) navItems = lesson61NavItems;
+    if (currentLesson === 62) navItems = lesson62NavItems;
+    if (currentLesson === 63) navItems = lesson63NavItems;
+    if (currentLesson === 64) navItems = lesson64NavItems;
+    if (currentLesson === 65) navItems = lesson65NavItems;
+    if (currentLesson === 'summary-1') navItems = summary1NavItems;
+    if (currentLesson === 'summary-2') navItems = summary2NavItems;
+    if (currentLesson === 'summary-3') navItems = summary3NavItems;
+    if (currentLesson === 'summary-4') navItems = summary4NavItems;
+    if (currentLesson === 'summary-5') navItems = summary5NavItems;
+    if (currentLesson === 'summary-6') navItems = summary6NavItems;
+    if (currentLesson === 'summary-7') navItems = summary7NavItems;
+    if (currentLesson === 'summary-8') navItems = summary8NavItems;
+    if (currentLesson === 'summary-9') navItems = summary9NavItems;
+  }
 
   const ALL_LESSONS = [
     { num: 'summary-1', label: "📑 Summary 1: Redemittel", activeClass: "bg-rose-600 ring-rose-400", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
@@ -866,16 +945,61 @@ export default function Header({
         <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-amber-200 dark:border-slate-800">
           <div className="flex items-center gap-2">
             <span className="text-2xl sm:text-3xl animate-gentle-bounce">🇩🇪</span>
-            <span className="text-lg sm:text-2xl font-bold text-amber-900 dark:text-amber-300 tracking-tight">
-              German Made Simple
-            </span>
+            <div className="flex flex-col">
+              <span className="text-lg sm:text-2xl font-bold text-amber-900 dark:text-amber-300 tracking-tight leading-none">
+                German Made Simple
+              </span>
+              <span className="text-[10px] font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mt-1">
+                {level === 'A2' ? '🚀 Elementary Level A2' : '🇩🇪 Foundation Level A1'}
+              </span>
+            </div>
             <span className="text-2xl sm:text-3xl animate-gentle-bounce">🇰🇪</span>
           </div>
 
+          {/* Level Switcher Tab / Button Group */}
+          <div className="flex items-center bg-amber-200/70 dark:bg-slate-800 p-1 rounded-2xl border-2 border-amber-300 dark:border-slate-700 shadow-xs">
+            <button
+              onClick={() => {
+                if (level !== 'A1') {
+                  setLevel('A1');
+                  setActiveTab('cards');
+                  playChime('click');
+                }
+              }}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                level === 'A1'
+                  ? 'bg-amber-600 text-white shadow-sm ring-2 ring-amber-300'
+                  : 'text-stone-700 dark:text-slate-300 hover:text-amber-800 dark:hover:text-amber-300'
+              }`}
+              title="Switch to Level A1: Beginner Foundations"
+            >
+              <span>🇩🇪 Level A1</span>
+              <span className="hidden xl:inline text-[10px] opacity-80">(1-65 & Summaries)</span>
+            </button>
+            <button
+              onClick={() => {
+                if (level !== 'A2') {
+                  setLevel('A2');
+                  setActiveTab('cards');
+                  playChime('click');
+                }
+              }}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                level === 'A2'
+                  ? 'bg-emerald-600 text-white shadow-sm ring-2 ring-emerald-300'
+                  : 'text-stone-700 dark:text-slate-300 hover:text-emerald-800 dark:hover:text-emerald-300'
+              }`}
+              title="Switch to Level A2: Elementary German"
+            >
+              <span>🚀 Level A2</span>
+              <span className="text-[9px] px-1.5 py-0.5 bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 rounded-full font-bold">New!</span>
+            </button>
+          </div>
+
           {/* Calming reassurance badge - hidden on phones to conserve screen */}
-          <div className="hidden lg:flex items-center gap-1.5 bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold shadow-xs border border-emerald-200 dark:border-emerald-800">
+          <div className="hidden 2xl:flex items-center gap-1.5 bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold shadow-xs border border-emerald-200 dark:border-emerald-800">
             <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-            <span>Zero Jargon • Pure Layman Analogies • No Panic</span>
+            <span>Zero Jargon • Pure Layman Analogies</span>
           </div>
 
           {/* Controls: Voice switcher, Slow audio, Test sound, Dark/Light Mode toggle */}
@@ -956,40 +1080,46 @@ export default function Header({
           <div className="flex items-center gap-1.5 shrink-0">
             {/* Quick Dropdown Picker for 1-click jump to any lesson or summary */}
             <select
-              value={currentLesson}
+              value={level === 'A2' ? currentA2Lesson : currentLesson}
               onChange={(e) => {
                 const val = e.target.value;
-                setCurrentLesson(isNaN(Number(val)) ? val : Number(val));
+                if (level === 'A2') {
+                  setCurrentA2Lesson(Number(val));
+                } else {
+                  setCurrentLesson(isNaN(Number(val)) ? val : Number(val));
+                }
                 setActiveTab('cards');
                 playChime('click');
               }}
               className="bg-white dark:bg-slate-800 text-stone-800 dark:text-stone-100 border-2 border-amber-300 dark:border-slate-600 rounded-xl px-2.5 py-1 text-xs font-black shadow-xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-500 hover:border-amber-400 dark:hover:border-amber-400"
               title="Jump directly to any lesson"
             >
-              {ALL_LESSONS.map((l) => (
+              {(level === 'A2' ? ALL_A2_LESSONS : ALL_LESSONS).map((l) => (
                 <option key={l.num} value={l.num} className="bg-white dark:bg-slate-800 text-stone-900 dark:text-stone-100">
                   {l.label}
                 </option>
               ))}
             </select>
 
-            {/* Scroll navigation arrows for desktop */}
-            <div className="hidden sm:flex items-center gap-1">
-              <button
-                onClick={() => scrollLessons(-280)}
-                className="w-6 h-6 rounded-full bg-white/90 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 border border-amber-300 dark:border-slate-600 flex items-center justify-center text-stone-600 dark:text-slate-300 transition-all shadow-xs"
-                title="Scroll left"
-              >
-                <ChevronLeft className="w-3.5 h-3.5" />
-              </button>
-              <button
-                onClick={() => scrollLessons(280)}
-                className="w-6 h-6 rounded-full bg-white/90 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 border border-amber-300 dark:border-slate-600 flex items-center justify-center text-stone-600 dark:text-slate-300 transition-all shadow-xs"
-                title="Scroll right"
-              >
-                <ChevronRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
+            {/* Scroll navigation arrows for desktop (only needed when many lessons are visible) */}
+            {level === 'A1' && (
+              <div className="hidden sm:flex items-center gap-1">
+                <button
+                  onClick={() => scrollLessons(-280)}
+                  className="w-6 h-6 rounded-full bg-white/90 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 border border-amber-300 dark:border-slate-600 flex items-center justify-center text-stone-600 dark:text-slate-300 transition-all shadow-xs"
+                  title="Scroll left"
+                >
+                  <ChevronLeft className="w-3.5 h-3.5" />
+                </button>
+                <button
+                  onClick={() => scrollLessons(280)}
+                  className="w-6 h-6 rounded-full bg-white/90 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 border border-amber-300 dark:border-slate-600 flex items-center justify-center text-stone-600 dark:text-slate-300 transition-all shadow-xs"
+                  title="Scroll right"
+                >
+                  <ChevronRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Smooth horizontal scroll strip */}
@@ -997,14 +1127,19 @@ export default function Header({
             ref={scrollRef}
             className="flex items-center gap-1.5 overflow-x-auto pb-0.5 max-w-full scrollbar-none flex-nowrap scroll-smooth"
           >
-            {ALL_LESSONS.map((l) => {
-              const isCurrent = currentLesson === l.num;
+            {(level === 'A2' ? ALL_A2_LESSONS : ALL_LESSONS).map((l) => {
+              const activeNum = level === 'A2' ? currentA2Lesson : currentLesson;
+              const isCurrent = activeNum === l.num;
               return (
                 <button
                   key={l.num}
                   ref={isCurrent ? activeBtnRef : null}
                   onClick={() => {
-                    setCurrentLesson(l.num);
+                    if (level === 'A2') {
+                      setCurrentA2Lesson(l.num);
+                    } else {
+                      setCurrentLesson(l.num);
+                    }
                     setActiveTab('cards');
                     playChime('click');
                   }}

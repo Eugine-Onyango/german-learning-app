@@ -34,6 +34,8 @@ export default function AtAGlanceSummary({ items, lessonNumber = 1, isSlowMode }
             <span>
               {typeof lessonNumber === 'string' && lessonNumber.startsWith('summary-')
                 ? `Summary ${lessonNumber.replace('summary-', '')}: "At a glance"`
+                : typeof lessonNumber === 'string' && lessonNumber.startsWith('A2-')
+                ? `Level A2 - Lektion ${lessonNumber.replace('A2-', '')} Merkzettel: "At a glance"`
                 : `Lesson ${lessonNumber} Summary: "At a glance"`}
             </span>
           </h2>

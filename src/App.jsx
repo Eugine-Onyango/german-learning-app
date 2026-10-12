@@ -154,6 +154,17 @@ import Summary8GrammatikStudio from './components/Summary8GrammatikStudio';
 import Summary8Game from './components/Summary8Game';
 import Summary9GrammatikStudio from './components/Summary9GrammatikStudio';
 import Summary9Game from './components/Summary9Game';
+import A2Lektion1ProfileStudio from './components/A2Lektion1ProfileStudio';
+import A2Lektion1Game from './components/A2Lektion1Game';
+import A2Lektion2TraitsStudio from './components/A2Lektion2TraitsStudio';
+import A2Lektion2Game from './components/A2Lektion2Game';
+import A2Lektion3DassStudio from './components/A2Lektion3DassStudio';
+import A2Lektion3Game from './components/A2Lektion3Game';
+import A2Lektion4KausalsatzStudio from './components/A2Lektion4KausalsatzStudio';
+import A2Lektion4Game from './components/A2Lektion4Game';
+import A2Lektion5AdjektiveStudio from './components/A2Lektion5AdjektiveStudio';
+import A2Lektion5Game from './components/A2Lektion5Game';
+import { A2_LESSON_1_ITEMS, A2_LESSON_2_ITEMS, A2_LESSON_3_ITEMS, A2_LESSON_4_ITEMS, A2_LESSON_5_ITEMS } from './data/germanLessonsA2';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
@@ -232,6 +243,10 @@ import {
 } from './data/germanLessons';
 
 export default function App() {
+  const [level, setLevel] = useState(() => {
+    return localStorage.getItem('german-karibu-level') || 'A1';
+  });
+  const [currentA2Lesson, setCurrentA2Lesson] = useState(1);
   const [currentLesson, setCurrentLesson] = useState('summary-9'); // Default to newly added Summary 9, easy switch to 1-65 & Summaries 1-8
   const [activeTab, setActiveTab] = useState('cards');
   const [isSlowMode, setIsSlowMode] = useState(false);
@@ -242,6 +257,10 @@ export default function App() {
     const saved = localStorage.getItem('german-karibu-theme');
     return saved ? saved === 'dark' : true; // Default to Dark Mode
   });
+
+  useEffect(() => {
+    localStorage.setItem('german-karibu-level', level);
+  }, [level]);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -632,8 +651,12 @@ export default function App() {
     <div className="min-h-screen bg-[#fdfbf7] dark:bg-[#0f172a] text-stone-800 dark:text-stone-100 flex flex-col font-sans selection:bg-amber-200 dark:selection:bg-amber-800 transition-colors duration-300">
       {/* Top Header with 5-Lesson Switcher */}
       <Header
+        level={level}
+        setLevel={setLevel}
         currentLesson={currentLesson}
         setCurrentLesson={setCurrentLesson}
+        currentA2Lesson={currentA2Lesson}
+        setCurrentA2Lesson={setCurrentA2Lesson}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         isSlowMode={isSlowMode}
@@ -646,6 +669,203 @@ export default function App() {
 
       {/* Main Learning Content Area */}
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6 sm:py-8">
+        {level === 'A2' ? (
+          <>
+            {/* A2 Level Header Switcher Banner */}
+            <div className="mb-6 bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50 dark:from-slate-800 dark:via-slate-850 dark:to-slate-800 p-4 sm:p-5 rounded-3xl border-2 border-emerald-300 dark:border-emerald-600 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+              <div className="flex items-center gap-3.5">
+                <div className={`w-12 h-12 rounded-2xl ${
+                  currentA2Lesson === 5 ? 'bg-purple-600' : currentA2Lesson === 4 ? 'bg-amber-600' : currentA2Lesson === 3 ? 'bg-teal-600' : currentA2Lesson === 2 ? 'bg-indigo-600' : 'bg-emerald-500'
+                } text-white flex items-center justify-center text-2xl shadow-inner shrink-0`}>
+                  {currentA2Lesson === 5 ? '🎨' : currentA2Lesson === 4 ? '🎯' : currentA2Lesson === 3 ? '⚽' : currentA2Lesson === 2 ? '🎭' : '🚀'}
+                </div>
+                <div>
+                  <div className={`text-[11px] font-black uppercase tracking-wider ${
+                    currentA2Lesson === 5 ? 'text-purple-800 dark:text-purple-300' : currentA2Lesson === 4 ? 'text-amber-800 dark:text-amber-300' : currentA2Lesson === 3 ? 'text-teal-800 dark:text-teal-300' : currentA2Lesson === 2 ? 'text-indigo-800 dark:text-indigo-300' : 'text-emerald-800 dark:text-emerald-300'
+                  }`}>
+                    Active Curriculum: Level A2 (Elementary German)
+                  </div>
+                  <div className="text-sm sm:text-base font-black text-stone-900 dark:text-white">
+                    {currentA2Lesson === 5
+                      ? 'Lektion 5: Adjektivdeklination im Nominativ (Adjective Endings in Nominative)'
+                      : currentA2Lesson === 4
+                      ? 'Lektion 4: Kausalsätze - Nebensätze mit „weil“ und „da“ (Reasons & Causes)'
+                      : currentA2Lesson === 3
+                      ? 'Lektion 3: Nebensätze mit „dass“ (Subordinate Clauses with "that")'
+                      : currentA2Lesson === 2
+                      ? 'Lektion 2: Charaktereigenschaften & Gegenteile (Character Traits & Opposites)'
+                      : 'Lektion 1: Sich vorstellen (Introducing Yourself)'}
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  setLevel('A1');
+                  setActiveTab('cards');
+                }}
+                className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-700 hover:bg-amber-100 dark:hover:bg-slate-600 text-stone-800 dark:text-white border-2 border-amber-300 dark:border-slate-500 rounded-2xl text-xs font-black shadow-xs cursor-pointer transition-all hover:scale-102 shrink-0"
+              >
+                <span>⬅️</span>
+                <span>Switch to Level A1 Course</span>
+              </button>
+            </div>
+
+            {/* A2 Story Cards */}
+            {activeTab === 'cards' && (
+              <StoryCardList
+                items={
+                  currentA2Lesson === 5
+                    ? A2_LESSON_5_ITEMS
+                    : currentA2Lesson === 4
+                    ? A2_LESSON_4_ITEMS
+                    : currentA2Lesson === 3
+                    ? A2_LESSON_3_ITEMS
+                    : currentA2Lesson === 2
+                    ? A2_LESSON_2_ITEMS
+                    : A2_LESSON_1_ITEMS
+                }
+                isSlowMode={isSlowMode}
+                lessonTitle={
+                  currentA2Lesson === 5
+                    ? "Level A2 - Lektion 5: Adjektivdeklination im Nominativ"
+                    : currentA2Lesson === 4
+                    ? "Level A2 - Lektion 4: Kausalsätze (Nebensätze mit „weil“ und „da“)"
+                    : currentA2Lesson === 3
+                    ? "Level A2 - Lektion 3: Nebensätze mit „dass“ (Subordinate Clauses with 'that')"
+                    : currentA2Lesson === 2
+                    ? "Level A2 - Lektion 2: Charaktereigenschaften (Character Traits & Opposites)"
+                    : "Level A2 - Lektion 1: Sich vorstellen (Introducing Yourself)"
+                }
+                lessonDesc={
+                  currentA2Lesson === 5
+                    ? "Master German adjective endings in the Nominative case: Predicative vs. Attributive ('Sandra ist schön' vs. 'eine schöne Frau'), the 4-article matrix (bestimmt, unbestimmt, negativ/possessiv, ohne), and spelling exceptions (teures Buch, dunkler Raum, hoher Baum, rosa/lila)."
+                    : currentA2Lesson === 4
+                    ? "Master giving reasons and causes in German with everyday Kenyan analogies: 5 'Why' questions (Warum, Wieso, Weshalb...), standard Order A (weil + Verb am Ende), inverted Order B (Weil/Da first with Verb-Verb collision), and the epic showdown between 'weil' vs. 'denn'!"
+                    : currentA2Lesson === 3
+                    ? "Master the German 'Verb-Kicker' rule in plain Kenyan layman terms: Hauptsatz (Pos 2) + Komma + dass + Nebensatz (Verb am Ende!), covering simple verbs (sind), Perfekt helper kicks (bestanden hast), re-glued separable verbs (aufstehst), and modal verbs (schreiben kannst)."
+                    : currentA2Lesson === 2
+                    ? "Master describing personality traits and their opposites in plain Kenyan layman terms: 11 Gegenteile pairs, negative prefixes (un-, -los), unique rebels (faul, ängstlich, selbstbewusst), and the 5 Slide 48 intensity adverbs (sehr, ganz, immer, ziemlich, etwas)."
+                    : "Master natural A2 self-introductions in plain layman terms with everyday Kenyan analogies: birth years (geboren), living in a shared flat (in einer WG), part-time gigs (Teilzeit), company prepositions (bei BMW), and everyday hobbies (ab und zu)."
+                }
+              />
+            )}
+
+            {/* A2 Lesson 1 Profile Studio */}
+            {activeTab === 'a2Studio1' && (
+              <A2Lektion1ProfileStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 1 Worksheet & Q&A Quiz */}
+            {activeTab === 'a2Game1' && (
+              <A2Lektion1Game isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 2 Personality Studio */}
+            {activeTab === 'a2Studio2' && (
+              <A2Lektion2TraitsStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 2 Worksheet & Blitz Quiz */}
+            {activeTab === 'a2Game2' && (
+              <A2Lektion2Game isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 3 Dass Studio */}
+            {activeTab === 'a2Studio3' && (
+              <A2Lektion3DassStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 3 Worksheet & Quiz */}
+            {activeTab === 'a2Game3' && (
+              <A2Lektion3Game isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 4 Kausalsatz Studio */}
+            {activeTab === 'a2Studio4' && (
+              <A2Lektion4KausalsatzStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 4 Worksheet & Quiz */}
+            {activeTab === 'a2Game4' && (
+              <A2Lektion4Game isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 5 Adjektive Studio */}
+            {activeTab === 'a2Studio5' && (
+              <A2Lektion5AdjektiveStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 5 Worksheet & Quiz */}
+            {activeTab === 'a2Game5' && (
+              <A2Lektion5Game isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Memory Match */}
+            {activeTab === 'memory' && (
+              <MatchingGame
+                items={
+                  currentA2Lesson === 5
+                    ? A2_LESSON_5_ITEMS
+                    : currentA2Lesson === 4
+                    ? A2_LESSON_4_ITEMS
+                    : currentA2Lesson === 3
+                    ? A2_LESSON_3_ITEMS
+                    : currentA2Lesson === 2
+                    ? A2_LESSON_2_ITEMS
+                    : A2_LESSON_1_ITEMS
+                }
+                isSlowMode={isSlowMode}
+              />
+            )}
+
+            {/* A2 Merkzettel Chalkboard */}
+            {activeTab === 'summary' && (
+              <AtAGlanceSummary
+                items={
+                  currentA2Lesson === 5
+                    ? A2_LESSON_5_ITEMS
+                    : currentA2Lesson === 4
+                    ? A2_LESSON_4_ITEMS
+                    : currentA2Lesson === 3
+                    ? A2_LESSON_3_ITEMS
+                    : currentA2Lesson === 2
+                    ? A2_LESSON_2_ITEMS
+                    : A2_LESSON_1_ITEMS
+                }
+                lessonNumber={
+                  currentA2Lesson === 5 ? "A2-5" : currentA2Lesson === 4 ? "A2-4" : currentA2Lesson === 3 ? "A2-3" : currentA2Lesson === 2 ? "A2-2" : "A2-1"
+                }
+                isSlowMode={isSlowMode}
+              />
+            )}
+          </>
+        ) : (
+          <>
+            {/* A1 Level Header Switcher Banner */}
+            <div className="mb-6 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-800 dark:via-slate-850 dark:to-slate-800 p-4 sm:p-5 rounded-3xl border-2 border-amber-200 dark:border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+              <div className="flex items-center gap-3.5">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl shadow-inner shrink-0">
+                  🎓
+                </div>
+                <div>
+                  <div className="text-[11px] font-black uppercase tracking-wider text-amber-900 dark:text-amber-300">
+                    Level A1 Foundations • 65 Lessons & 9 Summaries
+                  </div>
+                  <div className="text-sm sm:text-base font-black text-stone-900 dark:text-white">
+                    Ready for Elementary German? Jump directly into Level A2!
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  setLevel('A2');
+                  setActiveTab('cards');
+                }}
+                className="flex items-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl text-xs font-black shadow-md cursor-pointer transition-all hover:scale-102 shrink-0"
+              >
+                <span>🚀 Switch to Level A2 ➔</span>
+              </button>
+            </div>
         {/* Story Cards */}
         {activeTab === 'cards' && (
           <StoryCardList
@@ -1345,6 +1565,8 @@ export default function App() {
             lessonNumber={currentLesson}
             isSlowMode={isSlowMode}
           />
+        )}
+          </>
         )}
       </main>
 
