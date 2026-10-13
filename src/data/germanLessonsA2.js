@@ -1821,3 +1821,189 @@ export const A2_DATIV_MASTER_MATRIX = [
     ruleHint: "Always '-en' on adjective PLUS extra 'n' on noun!"
   }
 ];
+
+export const A2_LESSON_8_ITEMS = [
+  {
+    id: "a2-l8-konditional-grundregel",
+    german: "Ich komme nach Hause, wenn ich Zeit habe.",
+    english: "I will come home when / if I have time.",
+    pronunciation: "Ikh KOH-meh nahkh HOW-zeh, ven ikh TSYTE HAH-beh.",
+    audioText: "Ich komme nach Hause, wenn ich Zeit habe. Die Handlung findet nur unter einer Bedingung statt.",
+    category: "grammatik",
+    badge: "Core Architecture: Handlung + Bedingung",
+    icon: "🏠",
+    kenyanAnalogy: "Like promising a friend in Nairobi: 'Nitakuja kwako kama nikipata nafasi!' The action ('Ich komme nach Hause') only happens under one strict condition ('wenn ich Zeit habe'). 'Wenn' handles both 'when' and 'if' in everyday German!",
+    memoryTrick: "Hauptsatz (Handlung / Verb in Pos 2) + Komma + wenn + Nebensatz (Bedingung / Verb am Ende!)",
+    imageType: "homecoming"
+  },
+  {
+    id: "a2-l8-satzstellung-typ-a",
+    german: "Ich gehe spielen, wenn das Wetter schön ist.",
+    english: "I will go to play when the weather is nice.",
+    pronunciation: "Ikh GAY-eh SHPEE-len, ven dahs VET-ter shern ist.",
+    audioText: "Ich gehe spielen, wenn das Wetter schön ist. Der Nebensatz beginnt mit wenn und das Verb steht am Ende.",
+    category: "grammatik",
+    badge: "Order A: Hauptsatz First",
+    icon: "☀️",
+    kenyanAnalogy: "Order A is relaxed: Start with the main clause in normal sentence order (Ich gehe...), drop a comma, launch 'wenn', and kick the conjugated verb 'ist' all the way to the sentence goal line!",
+    memoryTrick: "[Subjekt + Verb 2] , [wenn + Subjekt + ... + VERB AM ENDE].",
+    imageType: "sunny-play"
+  },
+  {
+    id: "a2-l8-satzstellung-typ-b-collision",
+    german: "Wenn es regnet, bleibe ich zu Hause.",
+    english: "When / if it rains, I stay at home.",
+    pronunciation: "Ven es REG-net, BLY-beh ikh tsoo HOW-zeh.",
+    audioText: "Wenn es regnet, bleibe ich zu Hause. Wenn der Nebensatz zuerst steht, beginnt der Hauptsatz direkt mit dem Verb!",
+    category: "grammatik",
+    badge: "Order B: Verb-Verb Collision!",
+    icon: "🌧️",
+    kenyanAnalogy: "The famous German 'Matatu Head-On Collision at the Comma'! When you start with 'Wenn', the subclause ends with a verb ('regnet'), and the main clause MUST start immediately with its verb ('bleibe') right after the comma: '...regnet, bleibe ich...'. Two verbs crashing head-to-head!",
+    memoryTrick: "Wenn [Verb am Ende], [Verb in Pos 1] [Subjekt]! Notice: 'regnet, bleibe ich'!",
+    imageType: "rainy-day"
+  },
+  {
+    id: "a2-l8-hilfsverb-am-ende",
+    german: "Du kannst fernsehen, wenn du deine Hausaufgabe gemacht hast.",
+    english: "You can watch TV when you have done your homework.",
+    pronunciation: "Doo kahnst FAIRN-zay-en, ven doo DY-neh HOWS-owf-gah-beh geh-MAHKHT hahst.",
+    audioText: "Du kannst fernsehen, wenn du deine Hausaufgabe gemacht hast. Das Hilfsverb steht am Ende.",
+    category: "grammatik",
+    badge: "Slide 14: Perfekt in Nebensatz",
+    icon: "📺",
+    kenyanAnalogy: "Like a mom setting rules before screen time: 'Utatazama TV ukishamaliza homework!' In Perfekt or compound tenses, the Partizip II ('gemacht') comes first, and the conjugated helper verb ('hast') gets the very last seat at the table!",
+    memoryTrick: "In compound tenses: ...[Partizip II] + [konjugiertes Hilfsverb am Ende (hast/bist)]!",
+    imageType: "tv-homework"
+  },
+  {
+    id: "a2-l8-wenn-vs-falls",
+    german: "Wenn ich komme (sicher) vs. Falls ich komme (wahrscheinlich / in case).",
+    english: "When I come (sure event) vs. In case I come (hypothetical / less certain).",
+    pronunciation: "Ven ikh KOH-meh vs. Fahls ikh KOH-meh.",
+    audioText: "Wenn ich morgen komme, gehen wir einkaufen. Das ist sicher! Falls ich morgen komme, gehen wir einkaufen. Das ist wahrscheinlich.",
+    category: "vokabeln",
+    badge: "Slide 19-22: Wenn vs. Falls",
+    icon: "⚖️",
+    kenyanAnalogy: "Think of certainty levels! 'Wenn' is high certainty: 'When I arrive tomorrow' (I have already booked the bus ticket). 'Falls' is 'in case / if by chance' (I might be stuck in traffic or have other plans). Both follow the exact same Nebensatz word order!",
+    memoryTrick: "Wenn = 90-100% Sure ('When'). Falls = 50% Uncertain ('In case / Just in case').",
+    imageType: "certainty-scale"
+  },
+  {
+    id: "a2-l8-worksheet-meister",
+    german: "Wenn er krank ist, bleibt er im Bett. Wenn ich Hunger habe, esse ich eine Pizza.",
+    english: "If he is sick, he stays in bed. If I am hungry, I eat a pizza.",
+    pronunciation: "Ven air KRAHNK ist, BLYBT air im BET. Ven ikh HOONG-er HAH-beh, EH-seh ikh EYE-neh PEET-sah.",
+    audioText: "Wenn er krank ist, bleibt er im Bett. Wenn ich Hunger habe, esse ich eine Pizza. Wenn ich Deutsch lerne, bin ich sehr konzentriert.",
+    category: "beispiele",
+    badge: "Worksheet Hit Sentences",
+    icon: "🍕",
+    kenyanAnalogy: "The golden formula from your worksheet: Condition first ➔ Verb-Verb collision ➔ Result! 'Wenn ich Hunger habe (habe), esse (esse) ich eine Pizza.' Easy to remember, smooth to say!",
+    memoryTrick: "Wenn [Bedingung, VERB], [VERB Subjekt Rest]!",
+    imageType: "pizza-bed"
+  }
+];
+
+export const A2_LESSON_8_WORKSHEET_QUESTIONS = [
+  {
+    id: 1,
+    conditionClause: "Wenn es regnet,",
+    promptSentence: "Ich spiele Klavier.",
+    gapPlaceholder: "________________________________",
+    correctAnswer: "spiele ich Klavier",
+    acceptableAnswers: ["spiele ich Klavier", "spiele ich klavier", "…spiele ich Klavier", "...spiele ich Klavier"],
+    fullSentence: "Wenn es regnet, spiele ich Klavier.",
+    english: "When it rains, I play piano.",
+    verbCollision: "regnet, spiele",
+    hint: "Start immediately with the verb: 'spiele ich Klavier'!",
+    audioText: "Wenn es regnet, spiele ich Klavier."
+  },
+  {
+    id: 2,
+    conditionClause: "Wenn ich zu Hause bin,",
+    promptSentence: "Ich sehe fern.",
+    gapPlaceholder: "________________________________",
+    correctAnswer: "sehe ich fern",
+    acceptableAnswers: ["sehe ich fern", "sehe ich Fern", "…sehe ich fern", "...sehe ich fern"],
+    fullSentence: "Wenn ich zu Hause bin, sehe ich fern.",
+    english: "When I am at home, I watch TV.",
+    verbCollision: "bin, sehe",
+    hint: "Separable verb: 'sehe' comes right after the comma, 'fern' stays at the end!",
+    audioText: "Wenn ich zu Hause bin, sehe ich fern."
+  },
+  {
+    id: 3,
+    conditionClause: "Wenn er krank ist,",
+    promptSentence: "Er bleibt im Bett.",
+    gapPlaceholder: "________________________________",
+    correctAnswer: "bleibt er im Bett",
+    acceptableAnswers: ["bleibt er im Bett", "bleibt er im bett", "…bleibt er im Bett", "...bleibt er im Bett"],
+    fullSentence: "Wenn er krank ist, bleibt er im Bett.",
+    english: "When he is sick, he stays in bed.",
+    verbCollision: "ist, bleibt",
+    hint: "Verb 'bleibt' comes first right after the comma, followed by 'er im Bett'!",
+    audioText: "Wenn er krank ist, bleibt er im Bett."
+  },
+  {
+    id: 4,
+    conditionClause: "Wenn ich Hunger habe,",
+    promptSentence: "Ich esse eine Pizza.",
+    gapPlaceholder: "________________________________",
+    correctAnswer: "esse ich eine Pizza",
+    acceptableAnswers: ["esse ich eine Pizza", "esse ich eine pizza", "…esse ich eine Pizza", "...esse ich eine Pizza"],
+    fullSentence: "Wenn ich Hunger habe, esse ich eine Pizza.",
+    english: "When I am hungry, I eat a pizza.",
+    verbCollision: "habe, esse",
+    hint: "Verb 'esse' immediately after comma: 'esse ich eine Pizza'!",
+    audioText: "Wenn ich Hunger habe, esse ich eine Pizza."
+  },
+  {
+    id: 5,
+    conditionClause: "Wenn ich Deutsch lerne,",
+    promptSentence: "Ich bin sehr konzentriert.",
+    gapPlaceholder: "________________________________",
+    correctAnswer: "bin ich sehr konzentriert",
+    acceptableAnswers: ["bin ich sehr konzentriert", "bin ich sehr konzentriert.", "…bin ich sehr konzentriert", "...bin ich sehr konzentriert"],
+    fullSentence: "Wenn ich Deutsch lerne, bin ich sehr konzentriert.",
+    english: "When I learn German, I am very focused.",
+    verbCollision: "lerne, bin",
+    hint: "Verb 'bin' immediately after comma: 'bin ich sehr konzentriert'!",
+    audioText: "Wenn ich Deutsch lerne, bin ich sehr konzentriert."
+  }
+];
+
+export const A2_WENN_FALLS_COMPARISONS = [
+  {
+    id: 1,
+    pairTitle: "Shopping Trip (Einkaufen)",
+    wennSentence: "Wenn ich morgen komme, gehen wir einkaufen.",
+    wennMeaning: "When I come tomorrow, we will go shopping.",
+    wennCertainty: "100% Sicher (I will definitely come!)",
+    fallsSentence: "Falls ich morgen komme, gehen wir einkaufen.",
+    fallsMeaning: "In case I come tomorrow, we will go shopping.",
+    fallsCertainty: "50% Wahrscheinlich / Eventuell (Maybe I come, maybe not)",
+    ruleNote: "Both 'wenn' and 'falls' kick the conjugated verb to the end: 'komme'!"
+  },
+  {
+    id: 2,
+    pairTitle: "Rain & Staying Home (Regen)",
+    wennSentence: "Wenn es regnet, bleibe ich zu Hause.",
+    wennMeaning: "When it rains, I stay at home.",
+    wennCertainty: "Predictable / General habit (Whenever it rains)",
+    fallsSentence: "Falls es regnet, bleibe ich zu Hause.",
+    fallsMeaning: "In case it rains, I will stay at home.",
+    fallsCertainty: "Contingency plan (If it happens to rain today)",
+    ruleNote: "Notice the Verb-Verb collision at the comma in both: 'regnet, bleibe ich'!"
+  },
+  {
+    id: 3,
+    pairTitle: "Vacation & Time (Urlaub)",
+    wennSentence: "Wir machen einen Urlaub, wenn wir Zeit haben.",
+    wennMeaning: "We will take a vacation when we have time.",
+    wennCertainty: "We plan to do it as soon as time is available",
+    fallsSentence: "Wir machen einen Urlaub, falls wir Zeit haben.",
+    fallsMeaning: "We will take a vacation in case we have time.",
+    fallsCertainty: "Depends on whether time permits",
+    ruleNote: "Order A: Hauptsatz first (Wir machen...), Nebensatz second (wenn/falls wir Zeit haben)."
+  }
+];
+

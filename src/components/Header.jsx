@@ -114,7 +114,9 @@ export default function Header({
     if (currentLesson === 'summary-8') msg = "Visual Grammatik Teil 8: ich werde, du wirst, er wird! Ich habe gesagt, gesehen, gebracht. Ich habe den Dom gesehen. Mit dem Bus, mit dem Taxi, mit der Straßenbahn. Zum Flughafen, zur Apotheke, zu Julia. Nach Mannheim, nach Deutschland, nach links. Beim Arzt, bei Siemens. Vom Flughafen nach München. Nur zweimal geregnet, einmal fünf und einmal sechs Tage lang!";
     if (currentLesson === 'summary-9') msg = "Visual Grammatik Teil 9: ich bin gefahren, du bist gekommen, er ist geflogen! Du sollst die Medizin nehmen. Der Hut gefällt mir, das Buch gehört ihm, die Pizza schmeckt uns. Welcher Ort, welches Hobby, welche CD. Dieser Baum, dieses Auto, diese Straße. Vor einem Jahr, nach einer Woche, seit zwei Monaten, ab Montag. Ohne den Rucksack, gegen den Baum!";
     if (level === 'A2') {
-      if (currentA2Lesson === 7) {
+      if (currentA2Lesson === 8) {
+        msg = "Nebensätze mit wenn und falls: Wenn es regnet, bleibe ich zu Hause! Und wenn ich Hunger habe, esse ich eine Pizza. Wenn ich morgen komme, gehen wir einkaufen!";
+      } else if (currentA2Lesson === 7) {
         msg = "Adjektivdeklination im Dativ: Im Dativ bekommen alle Adjektive mit Artikel die Endung e n! Er fährt mit seinem neuen Auto, wir wohnen in einer kleinen Wohnung, und kannst du bitte der alten Frau helfen?";
       } else if (currentA2Lesson === 6) {
         msg = "Adjektivdeklination im Akkusativ: Im Akkusativ ist nur der Maskulin-Artikel anders! Hast du meinen neuen Computer gesehen? Wir suchen einen kleinen Hund, und ich frage den jungen Mann!";
@@ -784,6 +786,14 @@ export default function Header({
     { id: 'summary', label: '📋 Merkzettel', sub: 'Exact Slide Chalkboard' },
   ];
 
+  const a2Lesson8NavItems = [
+    { id: 'cards', label: '📖 A2-8 Cards', sub: 'Konditionalsätze mit wenn' },
+    { id: 'a2Studio8', label: '🔄 Wenn Studio', sub: 'Order A vs B, Collision & falls' },
+    { id: 'a2Game8', label: '📝 Worksheet Challenge', sub: '5 Sätze & Blitz Quiz' },
+    { id: 'memory', label: '🃏 Memory Match', sub: 'Konditional Pairs' },
+    { id: 'summary', label: '📋 Merkzettel', sub: 'Exact Slide Chalkboard' },
+  ];
+
   const ALL_A2_LESSONS = [
     { num: 1, label: "🌟 A2-1: Sich vorstellen", activeClass: "bg-emerald-600 ring-emerald-400", hoverBorder: "hover:bg-emerald-100 dark:hover:bg-emerald-950 border-emerald-300 dark:border-emerald-700" },
     { num: 2, label: "🎭 A2-2: Charaktereigenschaften", activeClass: "bg-indigo-600 ring-indigo-400", hoverBorder: "hover:bg-indigo-100 dark:hover:bg-indigo-950 border-indigo-300 dark:border-indigo-700" },
@@ -791,12 +801,15 @@ export default function Header({
     { num: 4, label: "🎯 A2-4: Kausalsätze (weil & da)", activeClass: "bg-amber-600 ring-amber-400", hoverBorder: "hover:bg-amber-100 dark:hover:bg-amber-950 border-amber-300 dark:border-amber-700" },
     { num: 5, label: "🎨 A2-5: Adjektivendungen (Nominativ)", activeClass: "bg-purple-600 ring-purple-400", hoverBorder: "hover:bg-purple-100 dark:hover:bg-purple-950 border-purple-300 dark:border-purple-700" },
     { num: 6, label: "🐕 A2-6: Adjektivendungen (Akkusativ)", activeClass: "bg-rose-600 ring-rose-400", hoverBorder: "hover:bg-rose-100 dark:hover:bg-rose-950 border-rose-300 dark:border-rose-700" },
-    { num: 7, label: "🎁 A2-7: Adjektivendungen (Dativ)", activeClass: "bg-cyan-600 ring-cyan-400", hoverBorder: "hover:bg-cyan-100 dark:hover:bg-cyan-950 border-cyan-300 dark:border-cyan-700" }
+    { num: 7, label: "🎁 A2-7: Adjektivendungen (Dativ)", activeClass: "bg-cyan-600 ring-cyan-400", hoverBorder: "hover:bg-cyan-100 dark:hover:bg-cyan-950 border-cyan-300 dark:border-cyan-700" },
+    { num: 8, label: "🌧️ A2-8: Nebensätze mit wenn", activeClass: "bg-teal-600 ring-teal-400", hoverBorder: "hover:bg-teal-100 dark:hover:bg-teal-950 border-teal-300 dark:border-teal-700" }
   ];
 
   let navItems = lesson1NavItems;
   if (level === 'A2') {
-    if (currentA2Lesson === 7) {
+    if (currentA2Lesson === 8) {
+      navItems = a2Lesson8NavItems;
+    } else if (currentA2Lesson === 7) {
       navItems = a2Lesson7NavItems;
     } else if (currentA2Lesson === 6) {
       navItems = a2Lesson6NavItems;
