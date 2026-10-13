@@ -164,7 +164,11 @@ import A2Lektion4KausalsatzStudio from './components/A2Lektion4KausalsatzStudio'
 import A2Lektion4Game from './components/A2Lektion4Game';
 import A2Lektion5AdjektiveStudio from './components/A2Lektion5AdjektiveStudio';
 import A2Lektion5Game from './components/A2Lektion5Game';
-import { A2_LESSON_1_ITEMS, A2_LESSON_2_ITEMS, A2_LESSON_3_ITEMS, A2_LESSON_4_ITEMS, A2_LESSON_5_ITEMS } from './data/germanLessonsA2';
+import A2Lektion6AkkusativStudio from './components/A2Lektion6AkkusativStudio';
+import A2Lektion6Game from './components/A2Lektion6Game';
+import A2Lektion7DativStudio from './components/A2Lektion7DativStudio';
+import A2Lektion7Game from './components/A2Lektion7Game';
+import { A2_LESSON_1_ITEMS, A2_LESSON_2_ITEMS, A2_LESSON_3_ITEMS, A2_LESSON_4_ITEMS, A2_LESSON_5_ITEMS, A2_LESSON_6_ITEMS, A2_LESSON_7_ITEMS } from './data/germanLessonsA2';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
@@ -675,18 +679,22 @@ export default function App() {
             <div className="mb-6 bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50 dark:from-slate-800 dark:via-slate-850 dark:to-slate-800 p-4 sm:p-5 rounded-3xl border-2 border-emerald-300 dark:border-emerald-600 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
               <div className="flex items-center gap-3.5">
                 <div className={`w-12 h-12 rounded-2xl ${
-                  currentA2Lesson === 5 ? 'bg-purple-600' : currentA2Lesson === 4 ? 'bg-amber-600' : currentA2Lesson === 3 ? 'bg-teal-600' : currentA2Lesson === 2 ? 'bg-indigo-600' : 'bg-emerald-500'
+                  currentA2Lesson === 7 ? 'bg-blue-600' : currentA2Lesson === 6 ? 'bg-rose-600' : currentA2Lesson === 5 ? 'bg-purple-600' : currentA2Lesson === 4 ? 'bg-amber-600' : currentA2Lesson === 3 ? 'bg-teal-600' : currentA2Lesson === 2 ? 'bg-indigo-600' : 'bg-emerald-500'
                 } text-white flex items-center justify-center text-2xl shadow-inner shrink-0`}>
-                  {currentA2Lesson === 5 ? '🎨' : currentA2Lesson === 4 ? '🎯' : currentA2Lesson === 3 ? '⚽' : currentA2Lesson === 2 ? '🎭' : '🚀'}
+                  {currentA2Lesson === 7 ? '🎁' : currentA2Lesson === 6 ? '🐕' : currentA2Lesson === 5 ? '🎨' : currentA2Lesson === 4 ? '🎯' : currentA2Lesson === 3 ? '⚽' : currentA2Lesson === 2 ? '🎭' : '🚀'}
                 </div>
                 <div>
                   <div className={`text-[11px] font-black uppercase tracking-wider ${
-                    currentA2Lesson === 5 ? 'text-purple-800 dark:text-purple-300' : currentA2Lesson === 4 ? 'text-amber-800 dark:text-amber-300' : currentA2Lesson === 3 ? 'text-teal-800 dark:text-teal-300' : currentA2Lesson === 2 ? 'text-indigo-800 dark:text-indigo-300' : 'text-emerald-800 dark:text-emerald-300'
+                    currentA2Lesson === 7 ? 'text-blue-800 dark:text-blue-300' : currentA2Lesson === 6 ? 'text-rose-800 dark:text-rose-300' : currentA2Lesson === 5 ? 'text-purple-800 dark:text-purple-300' : currentA2Lesson === 4 ? 'text-amber-800 dark:text-amber-300' : currentA2Lesson === 3 ? 'text-teal-800 dark:text-teal-300' : currentA2Lesson === 2 ? 'text-indigo-800 dark:text-indigo-300' : 'text-emerald-800 dark:text-emerald-300'
                   }`}>
                     Active Curriculum: Level A2 (Elementary German)
                   </div>
                   <div className="text-sm sm:text-base font-black text-stone-900 dark:text-white">
-                    {currentA2Lesson === 5
+                    {currentA2Lesson === 7
+                      ? 'Lektion 7: Adjektivdeklination im Dativ (Adjective Endings in Dative)'
+                      : currentA2Lesson === 6
+                      ? 'Lektion 6: Adjektivdeklination im Akkusativ (Adjective Endings in Accusative)'
+                      : currentA2Lesson === 5
                       ? 'Lektion 5: Adjektivdeklination im Nominativ (Adjective Endings in Nominative)'
                       : currentA2Lesson === 4
                       ? 'Lektion 4: Kausalsätze - Nebensätze mit „weil“ und „da“ (Reasons & Causes)'
@@ -714,7 +722,11 @@ export default function App() {
             {activeTab === 'cards' && (
               <StoryCardList
                 items={
-                  currentA2Lesson === 5
+                  currentA2Lesson === 7
+                    ? A2_LESSON_7_ITEMS
+                    : currentA2Lesson === 6
+                    ? A2_LESSON_6_ITEMS
+                    : currentA2Lesson === 5
                     ? A2_LESSON_5_ITEMS
                     : currentA2Lesson === 4
                     ? A2_LESSON_4_ITEMS
@@ -726,7 +738,11 @@ export default function App() {
                 }
                 isSlowMode={isSlowMode}
                 lessonTitle={
-                  currentA2Lesson === 5
+                  currentA2Lesson === 7
+                    ? "Level A2 - Lektion 7: Adjektivdeklination im Dativ"
+                    : currentA2Lesson === 6
+                    ? "Level A2 - Lektion 6: Adjektivdeklination im Akkusativ"
+                    : currentA2Lesson === 5
                     ? "Level A2 - Lektion 5: Adjektivdeklination im Nominativ"
                     : currentA2Lesson === 4
                     ? "Level A2 - Lektion 4: Kausalsätze (Nebensätze mit „weil“ und „da“)"
@@ -737,7 +753,11 @@ export default function App() {
                     : "Level A2 - Lektion 1: Sich vorstellen (Introducing Yourself)"
                 }
                 lessonDesc={
-                  currentA2Lesson === 5
+                  currentA2Lesson === 7
+                    ? "Master German adjective endings in the Dative case: The Universal '-en' Article Rule (dem, der, einem, einer, meinem, keinem all trigger -en!), dative plural double 'n' (den süßen Kindern), and the bare noun Nullartikel endings (-em, -er, -en)."
+                    : currentA2Lesson === 6
+                    ? "Master German adjective endings in the direct object Akkusativ case: The golden rule ('Im Akkusativ ist nur der Maskulin-Artikel anders!'), masculine universal -en endings (den/einen/meinen großen Hund), stable feminine & neuter forms, and plural rules."
+                    : currentA2Lesson === 5
                     ? "Master German adjective endings in the Nominative case: Predicative vs. Attributive ('Sandra ist schön' vs. 'eine schöne Frau'), the 4-article matrix (bestimmt, unbestimmt, negativ/possessiv, ohne), and spelling exceptions (teures Buch, dunkler Raum, hoher Baum, rosa/lila)."
                     : currentA2Lesson === 4
                     ? "Master giving reasons and causes in German with everyday Kenyan analogies: 5 'Why' questions (Warum, Wieso, Weshalb...), standard Order A (weil + Verb am Ende), inverted Order B (Weil/Da first with Verb-Verb collision), and the epic showdown between 'weil' vs. 'denn'!"
@@ -800,11 +820,35 @@ export default function App() {
               <A2Lektion5Game isSlowMode={isSlowMode} />
             )}
 
+            {/* A2 Lesson 6 Akkusativ Studio */}
+            {activeTab === 'a2Studio6' && (
+              <A2Lektion6AkkusativStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 6 Worksheet & Quiz */}
+            {activeTab === 'a2Game6' && (
+              <A2Lektion6Game isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 7 Dativ Studio */}
+            {activeTab === 'a2Studio7' && (
+              <A2Lektion7DativStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 7 Worksheet & Quiz */}
+            {activeTab === 'a2Game7' && (
+              <A2Lektion7Game isSlowMode={isSlowMode} />
+            )}
+
             {/* A2 Memory Match */}
             {activeTab === 'memory' && (
               <MatchingGame
                 items={
-                  currentA2Lesson === 5
+                  currentA2Lesson === 7
+                    ? A2_LESSON_7_ITEMS
+                    : currentA2Lesson === 6
+                    ? A2_LESSON_6_ITEMS
+                    : currentA2Lesson === 5
                     ? A2_LESSON_5_ITEMS
                     : currentA2Lesson === 4
                     ? A2_LESSON_4_ITEMS
@@ -822,7 +866,11 @@ export default function App() {
             {activeTab === 'summary' && (
               <AtAGlanceSummary
                 items={
-                  currentA2Lesson === 5
+                  currentA2Lesson === 7
+                    ? A2_LESSON_7_ITEMS
+                    : currentA2Lesson === 6
+                    ? A2_LESSON_6_ITEMS
+                    : currentA2Lesson === 5
                     ? A2_LESSON_5_ITEMS
                     : currentA2Lesson === 4
                     ? A2_LESSON_4_ITEMS
@@ -833,7 +881,7 @@ export default function App() {
                     : A2_LESSON_1_ITEMS
                 }
                 lessonNumber={
-                  currentA2Lesson === 5 ? "A2-5" : currentA2Lesson === 4 ? "A2-4" : currentA2Lesson === 3 ? "A2-3" : currentA2Lesson === 2 ? "A2-2" : "A2-1"
+                  currentA2Lesson === 7 ? "A2-7" : currentA2Lesson === 6 ? "A2-6" : currentA2Lesson === 5 ? "A2-5" : currentA2Lesson === 4 ? "A2-4" : currentA2Lesson === 3 ? "A2-3" : currentA2Lesson === 2 ? "A2-2" : "A2-1"
                 }
                 isSlowMode={isSlowMode}
               />

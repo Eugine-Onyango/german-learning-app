@@ -1414,3 +1414,410 @@ export const A2_NOMINATIV_MASTER_MATRIX = [
     ruleHint: "With article = '-en'; Without article (Nullartikel) = '-e'!"
   }
 ];
+
+
+// =========================================================================
+// A2 LEKTION 6: ADJEKTIVDEKLINATION IM AKKUSATIV (ADJECTIVE ENDINGS IN ACCUSATIVE)
+// Based on official A2 curriculum slides (31 pages) & worksheet:
+// 1. Core Rule: Im Akkusativ ist NUR der Maskulin-Artikel anders! (der ➔ den / einen / meinen / keinen)
+//    - Maskulin: Adjektiv bekommt IMMER "-en" im Akkusativ!
+//      * den großen Hund / einen großen Hund / meinen großen Hund / keinen großen Hund / großen Hund
+// 2. Feminin, Neutral & Plural mirror their Nominativ endings:
+//    - Feminin (die/eine/meine): die schwarze Katze / eine schwarze Katze / meine schwarze Katze / schwarze Katze (-e)
+//    - Neutral (das/ein/mein): das schicke Auto (-e) / ein schickes Auto (-es) / mein schickes Auto (-es) / schickes Auto (-es)
+//    - Plural: die neuen Schuhe (-en) / keine neuen Schuhe (-en) / neue Schuhe (ohne Artikel = -e!)
+// 3. Complete Worksheet: 5 fill-in-the-blank questions from official PDF.
+// =========================================================================
+
+export const A2_LESSON_6_ITEMS = [
+  {
+    id: "a2-l6-maskulin-en-rule",
+    german: "Hast du meinen neuen Computer gesehen? / Wir suchen einen kleinen Hund.",
+    english: "Have you seen my new computer? / We are looking for a small dog.",
+    pronunciation: "HAHST doo MY-nen NOY-en kawm-PYOO-ter geh-ZAY-en? / Veer ZOO-khen EYE-nen KLY-nen hoont.",
+    audioText: "Hast du meinen neuen Computer gesehen? Wir suchen einen kleinen Hund.",
+    category: "maskulin",
+    badge: "The Golden '-en' Rule",
+    icon: "🐕",
+    kenyanAnalogy: "Slides 11 & 23: The most famous rule in German! In Akkusativ, the masculine article ALWAYS ends in '-en' (den / einen / meinen / keinen). And like a loyal shadow, the masculine adjective ALWAYS takes '-en' too: einen großen Hund, meinen neuen Computer, den jungen Mann!",
+    memoryTrick: "Masculine in Akkusativ = ALWAYS '-en' across the board!",
+    imageType: "dog"
+  },
+  {
+    id: "a2-l6-feminin-neutral-mirror",
+    german: "Sie ruft eine alte Kundin an. / Wie findest du das große Haus?",
+    english: "She calls an old customer. / How do you like the big house?",
+    pronunciation: "Zee rooft EYE-neh AHL-teh KOON-din ahn. / VEE FIN-dest doo dahss GROH-seh hows?",
+    audioText: "Sie ruft eine alte Kundin an. Wie findest du das große Haus?",
+    category: "feminin-neutral",
+    badge: "The Calmer Genders",
+    icon: "🏡",
+    kenyanAnalogy: "Worksheet #4 & #5: Feminine and Neuter do NOT change their basic forms in Akkusativ! Feminine stays '-e' (eine alte Kundin, die schwarze Katze). Neuter with 'das' stays '-e' (das große Haus), and with 'ein' stays '-es' (ein schickes Auto)!",
+    memoryTrick: "Only masculine shifts to -en; feminine & neuter mirror Nominativ!",
+    imageType: "house"
+  },
+  {
+    id: "a2-l6-bestimmte-artikel-akkusativ",
+    german: "den großen Hund / die schwarze Katze / das schicke Auto / die neuen Schuhe",
+    english: "the big dog (-en) / the black cat (-e) / the fancy car (-e) / the new shoes (-en)",
+    pronunciation: "dain GROH-sen hoont / dee SHVAHR-tseh KAHT-seh / dahss SHIK-keh OW-toh / dee NOY-en SHOO-eh.",
+    audioText: "den großen Hund, die schwarze Katze, das schicke Auto, die neuen Schuhe.",
+    category: "bestimmt",
+    badge: "Definite Akkusativ (den/die/das)",
+    icon: "🚗",
+    kenyanAnalogy: "Slide 20: With definite articles: Masculine switches to 'den großen' (-en), Plural is 'die neuen' (-en), while Feminine & Neuter stay calm with '-e' (die schwarze, das schicke)!",
+    memoryTrick: "den ...-en, die ...-e, das ...-e, die ...-en!",
+    imageType: "car"
+  },
+  {
+    id: "a2-l6-unbestimmte-artikel-akkusativ",
+    german: "einen großen Hund / eine schwarze Katze / ein schickes Auto",
+    english: "a big dog (-en) / a black cat (-e) / a fancy car (-es)",
+    pronunciation: "EYE-nen GROH-sen hoont / EYE-neh SHVAHR-tseh KAHT-seh / eyn SHIK-kes OW-toh.",
+    audioText: "einen großen Hund, eine schwarze Katze, ein schickes Auto.",
+    category: "unbestimmt",
+    badge: "Indefinite Akkusativ (einen/eine/ein)",
+    icon: "🐈‍⬛",
+    kenyanAnalogy: "Slide 10: 'Ich habe einen Hund' ➔ 'Ich habe einen großen Hund'. Masculine takes '-en', feminine takes '-e', and neuter carries the missing 'das' flag with '-es' (ein schickes Auto)!",
+    memoryTrick: "einen ...-en, eine ...-e, ein ...-es!",
+    imageType: "cat"
+  },
+  {
+    id: "a2-l6-negativ-possessiv-akkusativ",
+    german: "keinen großen Hund / mein schickes Auto / meine neuen Schuhe",
+    english: "no big dog (-en) / my fancy car (-es) / my new shoes (-en)",
+    pronunciation: "KY-nen GROH-sen hoont / myn SHIK-kes OW-toh / MY-neh NOY-en SHOO-eh.",
+    audioText: "keinen großen Hund, mein schickes Auto, meine neuen Schuhe.",
+    category: "possessiv",
+    badge: "kein & mein in Akkusativ",
+    icon: "👟",
+    kenyanAnalogy: "Slides 14 & 27: Possessives (mein, dein) and negative (kein) match indefinite articles. Plural takes '-en' (keine neuen Schuhe, meine neuen Schuhe)!",
+    memoryTrick: "keinen/meinen ...-en, meine ...-en (plural)!",
+    imageType: "shoes"
+  },
+  {
+    id: "a2-l6-nullartikel-akkusativ",
+    german: "großen Hund / schwarze Katze / schickes Auto / neue Schuhe",
+    english: "big dog (-en) / black cat (-e) / fancy car (-es) / new shoes (-e)",
+    pronunciation: "GROH-sen hoont / SHVAHR-tseh KAHT-seh / SHIK-kes OW-toh / NOY-eh SHOO-eh.",
+    audioText: "großen Hund, schwarze Katze, schickes Auto, neue Schuhe.",
+    category: "nullartikel",
+    badge: "Without Article (Nullartikel)",
+    icon: "👠",
+    kenyanAnalogy: "Slides 29-31: When there is NO article: Masculine still takes '-en' (großen Hund from den), feminine takes '-e' (schwarze Katze), neuter takes '-es' (schickes Auto), and plural takes '-e' (neue Schuhe)!",
+    memoryTrick: "Plural with NO article = '-e' (neue Schuhe), but with an article = '-en' (die neuen Schuhe)!",
+    imageType: "high-heel"
+  }
+];
+
+export const A2_LESSON_6_WORKSHEET_QUESTIONS = [
+  {
+    id: 1,
+    germanStart: "1. Hast du meinen neu",
+    gapPlaceholder: "____",
+    germanEnd: "Computer gesehen?",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "neuen",
+    fullSentence: "Hast du meinen neuen Computer gesehen?",
+    english: "Have you seen my new computer?",
+    hint: "Masculine in Akkusativ (der Computer ➔ meinen): adjective ALWAYS takes '-en'!",
+    audioText: "Hast du meinen neuen Computer gesehen?"
+  },
+  {
+    id: 2,
+    germanStart: "2. Wir suchen einen klein",
+    gapPlaceholder: "____",
+    germanEnd: "Hund.",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "kleinen",
+    fullSentence: "Wir suchen einen kleinen Hund.",
+    english: "We are looking for a small dog.",
+    hint: "Masculine with 'einen' in Akkusativ (der Hund): adjective takes '-en'!",
+    audioText: "Wir suchen einen kleinen Hund."
+  },
+  {
+    id: 3,
+    germanStart: "3. Ich frage den jung",
+    gapPlaceholder: "____",
+    germanEnd: "Mann.",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "jungen",
+    fullSentence: "Ich frage den jungen Mann.",
+    english: "I ask the young man.",
+    hint: "Masculine with 'den' in Akkusativ (der Mann): adjective takes '-en'!",
+    audioText: "Ich frage den jungen Mann."
+  },
+  {
+    id: 4,
+    germanStart: "4. Sie ruft eine alt",
+    gapPlaceholder: "____",
+    germanEnd: "Kundin an.",
+    correctAnswer: "e",
+    acceptableAnswers: ["e"],
+    fullWord: "alte",
+    fullSentence: "Sie ruft eine alte Kundin an.",
+    english: "She calls an old (female) customer.",
+    hint: "Feminine with 'eine' (die Kundin): adjective takes '-e'!",
+    audioText: "Sie ruft eine alte Kundin an."
+  },
+  {
+    id: 5,
+    germanStart: "5. Wie findest du das groß",
+    gapPlaceholder: "___",
+    germanEnd: "Haus?",
+    correctAnswer: "e",
+    acceptableAnswers: ["e"],
+    fullWord: "große",
+    fullSentence: "Wie findest du das große Haus?",
+    english: "How do you like the big house?",
+    hint: "Neuter with definite article 'das' (das Haus): adjective takes '-e'!",
+    audioText: "Wie findest du das große Haus?"
+  }
+];
+
+export const A2_AKKUSATIV_MASTER_MATRIX = [
+  {
+    gender: "Maskulin (der Hund)",
+    bestimmt: "den großen Hund (-en)",
+    unbestimmt: "einen großen Hund (-en)",
+    negativPossessiv: "keinen / meinen großen Hund (-en)",
+    ohneArtikel: "großen Hund (-en)",
+    ruleHint: "100% universal '-en' across ALL article types in Akkusativ!"
+  },
+  {
+    gender: "Feminin (die Katze)",
+    bestimmt: "die schwarze Katze (-e)",
+    unbestimmt: "eine schwarze Katze (-e)",
+    negativPossessiv: "keine / meine schwarze Katze (-e)",
+    ohneArtikel: "schwarze Katze (-e)",
+    ruleHint: "100% universal '-e' across ALL article types (identical to Nominativ)!"
+  },
+  {
+    gender: "Neutral (das Auto)",
+    bestimmt: "das schicke Auto (-e)",
+    unbestimmt: "ein schickes Auto (-es)",
+    negativPossessiv: "kein / mein schickes Auto (-es)",
+    ohneArtikel: "schickes Auto (-es)",
+    ruleHint: "With 'das' = '-e'; With 'ein/mein/kein/ohne' = '-es'!"
+  },
+  {
+    gender: "Plural (die Schuhe)",
+    bestimmt: "die neuen Schuhe (-en)",
+    unbestimmt: "— (no plural ein)",
+    negativPossessiv: "keine / meine neuen Schuhe (-en)",
+    ohneArtikel: "neue Schuhe (-e!)",
+    ruleHint: "With article = '-en'; Without article (Nullartikel) = '-e'!"
+  }
+];
+
+
+// =========================================================================
+// A2 LEKTION 7: ADJEKTIVDEKLINATION IM DATIV (ADJECTIVE ENDINGS IN DATIVE)
+// Based on official A2 curriculum slides (37 pages) & worksheet:
+// 1. The Dative Golden Rule (Slides 15, 22, 25, 31):
+//    - Whenever an article is present (bestimmt, unbestimmt, negativ, possessiv),
+//      the adjective ending in Dativ is ALWAYS "-en" for ALL GENDERS AND PLURAL!
+//      * Maskulin: dem alten Mann / einem alten Mann / meinem alten Mann (-en)
+//      * Feminin: der netten Frau / einer netten Frau / meiner netten Frau (-en)
+//      * Neutral: dem kleinen Kind / einem kleinen Kind / meinem kleinen Kind (-en)
+//      * Plural: den süßen Kindern / keinen frechen Kindern / meinen süßen Kindern (-en + Noun 'n'!)
+// 2. Ohne Artikel (Nullartikel - Slides 32-37):
+//    - Adjective copies the definite article dative ending:
+//      * Maskulin: altem Mann (from dem ➔ -em)
+//      * Feminin: netter Frau (from der ➔ -er)
+//      * Neutral: kleinem Kind (from dem ➔ -em)
+//      * Plural: süßen Kindern (from den ➔ -en)
+// 3. Dativ Prepositions & Verbs in Action:
+//    - mit: Er fährt mit seinem neuen Auto / Er spricht mit einem alten Mann
+//    - aus: Was machst du aus dem blauen Stoff?
+//    - in: Wir wohnen in einer kleinen Wohnung
+//    - zu: Gehst du zu deiner netten Oma?
+//    - Dativverb helfen: Kannst du bitte der alten Frau helfen?
+// =========================================================================
+
+export const A2_LESSON_7_ITEMS = [
+  {
+    id: "a2-l7-dative-universal-en",
+    german: "Er fährt mit seinem neuen Auto. / Wir wohnen in einer kleinen Wohnung.",
+    english: "He drives with his new car (-en). / We live in a small flat (-en).",
+    pronunciation: "Air FAYRT mit ZY-nem NOY-en OW-toh. / Veer VOH-nen in EYE-nair KLY-nen VOH-noong.",
+    audioText: "Er fährt mit seinem neuen Auto. Wir wohnen in einer kleinen Wohnung.",
+    category: "universal-en",
+    badge: "The Universal '-en' Secret",
+    icon: "🚗",
+    kenyanAnalogy: "Slides 15, 22 & 31: Dativ is every German learner's best friend! Whenever there is ANY article in front (dem, der, einem, einer, meinem, seiner, keiner), the adjective ALWAYS takes '-en'! Masculine, Feminine, Neuter, and Plural all get '-en'!",
+    memoryTrick: "Has an article in Dativ? The adjective gets '-en' 100% of the time!",
+    imageType: "car"
+  },
+  {
+    id: "a2-l7-preposition-aus-dem-stoff",
+    german: "Was machst du aus dem blauen Stoff?",
+    english: "What are you making out of the blue fabric?",
+    pronunciation: "Vahs MAHKHST doo ows daim BLOW-en SHTOFF?",
+    audioText: "Was machst du aus dem blauen Stoff?",
+    category: "prepositions",
+    badge: "Worksheet #2 • aus + dem",
+    icon: "🧵",
+    kenyanAnalogy: "Like asking a tailor at Gikomba or town what outfit they're sewing from a roll of cloth! 'aus' is a pure dative preposition: aus dem + blauen Stoff (-en)!",
+    memoryTrick: "aus + dem [Adjektiv]-en [Nomen]!",
+    imageType: "cloth"
+  },
+  {
+    id: "a2-l7-dativverb-helfen",
+    german: "Kannst du bitte der alten Frau helfen?",
+    english: "Can you please help the old woman?",
+    pronunciation: "KAHNST doo BIT-teh dair AHL-ten frow HEL-fen?",
+    audioText: "Kannst du bitte der alten Frau helfen?",
+    category: "dativverb",
+    badge: "Worksheet #4 • helfen + Dativ",
+    icon: "👵",
+    kenyanAnalogy: "Slides 7-10: In German, the verb 'helfen' (to help) ALWAYS demands a Dativ object! The woman is feminine (die Frau ➔ der Frau in Dativ), and the adjective takes '-en': der alten Frau!",
+    memoryTrick: "helfen + der [Adjektiv]-en Frau!",
+    imageType: "helping-hand"
+  },
+  {
+    id: "a2-l7-preposition-zu-deiner-oma",
+    german: "Gehst du zu deiner netten Oma am Wochenende?",
+    english: "Are you going to your nice grandma on the weekend?",
+    pronunciation: "GAYST doo tsoo DY-nair NET-ten OH-mah ahm VOH-khen-en-deh?",
+    audioText: "Gehst du zu deiner netten Oma am Wochenende?",
+    category: "prepositions",
+    badge: "Worksheet #5 • zu + Dativ",
+    icon: "👵",
+    kenyanAnalogy: "Visiting family upcountry over the weekend! 'zu' always triggers Dativ: deiner + netten Oma (-en)!",
+    memoryTrick: "zu + deiner + Adjektiv-en!",
+    imageType: "family"
+  },
+  {
+    id: "a2-l7-dative-plural-double-n",
+    german: "Hilfst du bitte den süßen Kindern da? / mit meinen süßen Kindern",
+    english: "Will you please help the sweet children there? / with my sweet children",
+    pronunciation: "HILFST doo BIT-teh dain ZEW-sen KIN-dairn dah? / mit MY-nen ZEW-sen KIN-dairn.",
+    audioText: "Hilfst du bitte den süßen Kindern da? Er spielt mit keinen frechen Kindern.",
+    category: "plural",
+    badge: "The Double 'n' Plural Rule",
+    icon: "👶",
+    kenyanAnalogy: "Slides 13-14: In Dative Plural, both the adjective AND the noun get an extra 'n'! den süßen (-en) Kindern (+n on Kind)! Double 'n' harmony!",
+    memoryTrick: "Dativ Plural: Adjektiv gets '-en', Nomen gets extra '-n'!",
+    imageType: "children"
+  },
+  {
+    id: "a2-l7-nullartikel-dativ-matrix",
+    german: "altem Mann / netter Frau / kleinem Kind / süßen Kindern",
+    english: "old man (-em) / nice woman (-er) / small child (-em) / sweet children (-en)",
+    pronunciation: "AHL-tem mahn / NET-tair frow / KLY-nem kint / ZEW-sen KIN-dairn.",
+    audioText: "altem Mann, netter Frau, kleinem Kind, süßen Kindern.",
+    category: "nullartikel",
+    badge: "Without Article (Nullartikel)",
+    icon: "📋",
+    kenyanAnalogy: "Slides 33-37: If there is NO article in front, the adjective steps up to carry the definite article flags: dem ➔ altem / kleinem (-em), der ➔ netter (-er), den ➔ süßen (-en)!",
+    memoryTrick: "No article? Adjective copies dem (-em), der (-er), dem (-em), den (-en)!",
+    imageType: "clipboard"
+  }
+];
+
+export const A2_LESSON_7_WORKSHEET_QUESTIONS = [
+  {
+    id: 1,
+    germanStart: "1. Er fährt mit seinem neu",
+    gapPlaceholder: "____",
+    germanEnd: "Auto.",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "neuen",
+    fullSentence: "Er fährt mit seinem neuen Auto.",
+    english: "He drives with his new car.",
+    hint: "Dative neuter with 'seinem' (mit dem Auto ➔ mit seinem): adjective takes universal '-en'!",
+    audioText: "Er fährt mit seinem neuen Auto."
+  },
+  {
+    id: 2,
+    germanStart: "2. Was machst du aus dem blau",
+    gapPlaceholder: "____",
+    germanEnd: "Stoff?",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "blauen",
+    fullSentence: "Was machst du aus dem blauen Stoff?",
+    english: "What are you making out of the blue fabric?",
+    hint: "Dative masculine with definite article 'dem' (aus dem Stoff): adjective takes universal '-en'!",
+    audioText: "Was machst du aus dem blauen Stoff?"
+  },
+  {
+    id: 3,
+    germanStart: "3. Wir wohnen in einer klein",
+    gapPlaceholder: "____",
+    germanEnd: "Wohnung.",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "kleinen",
+    fullSentence: "Wir wohnen in einer kleinen Wohnung.",
+    english: "We live in a small flat.",
+    hint: "Dative feminine with 'einer' (in der Wohnung ➔ in einer): adjective takes universal '-en'!",
+    audioText: "Wir wohnen in einer kleinen Wohnung."
+  },
+  {
+    id: 4,
+    germanStart: "4. Kannst du bitte der alt",
+    gapPlaceholder: "____",
+    germanEnd: "Frau helfen?",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "alten",
+    fullSentence: "Kannst du bitte der alten Frau helfen?",
+    english: "Can you please help the old woman?",
+    hint: "Dative with verb 'helfen' (der Frau): adjective takes universal '-en'!",
+    audioText: "Kannst du bitte der alten Frau helfen?"
+  },
+  {
+    id: 5,
+    germanStart: "5. Gehst du zu deiner nett",
+    gapPlaceholder: "____",
+    germanEnd: "Oma am Wochenende?",
+    correctAnswer: "en",
+    acceptableAnswers: ["en"],
+    fullWord: "netten",
+    fullSentence: "Gehst du zu deiner netten Oma am Wochenende?",
+    english: "Are you going to your nice grandma on the weekend?",
+    hint: "Dative preposition 'zu' + possessive 'deiner' (zu der Oma ➔ deiner): adjective takes universal '-en'!",
+    audioText: "Gehst du zu deiner netten Oma am Wochenende?"
+  }
+];
+
+export const A2_DATIV_MASTER_MATRIX = [
+  {
+    gender: "Maskulin (der Mann / Stoff)",
+    bestimmt: "dem alten Mann (-en)",
+    unbestimmt: "einem alten Mann (-en)",
+    negativPossessiv: "keinem / meinem alten Mann (-en)",
+    ohneArtikel: "altem Mann (-em from dem)",
+    ruleHint: "With any article = 100% '-en'!"
+  },
+  {
+    gender: "Feminin (die Frau / Wohnung)",
+    bestimmt: "der netten Frau (-en)",
+    unbestimmt: "einer netten Frau (-en)",
+    negativPossessiv: "keiner / meiner netten Frau (-en)",
+    ohneArtikel: "netter Frau (-er from der)",
+    ruleHint: "With any article = 100% '-en'!"
+  },
+  {
+    gender: "Neutral (das Kind / Auto)",
+    bestimmt: "dem kleinen Kind (-en)",
+    unbestimmt: "einem kleinen Kind (-en)",
+    negativPossessiv: "keinem / meinem kleinen Kind (-en)",
+    ohneArtikel: "kleinem Kind (-em from dem)",
+    ruleHint: "With any article = 100% '-en'!"
+  },
+  {
+    gender: "Plural (die Kinder / Rosen)",
+    bestimmt: "den süßen Kindern (-en + Noun 'n')",
+    unbestimmt: "— (no plural ein)",
+    negativPossessiv: "keinen / meinen süßen Kindern (-en + Noun 'n')",
+    ohneArtikel: "süßen Kindern (-en from den)",
+    ruleHint: "Always '-en' on adjective PLUS extra 'n' on noun!"
+  }
+];
