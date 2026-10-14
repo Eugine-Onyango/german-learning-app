@@ -170,7 +170,9 @@ import A2Lektion7DativStudio from './components/A2Lektion7DativStudio';
 import A2Lektion7Game from './components/A2Lektion7Game';
 import A2Lektion8WennStudio from './components/A2Lektion8WennStudio';
 import A2Lektion8Game from './components/A2Lektion8Game';
-import { A2_LESSON_1_ITEMS, A2_LESSON_2_ITEMS, A2_LESSON_3_ITEMS, A2_LESSON_4_ITEMS, A2_LESSON_5_ITEMS, A2_LESSON_6_ITEMS, A2_LESSON_7_ITEMS, A2_LESSON_8_ITEMS } from './data/germanLessonsA2';
+import A2Lektion9GenitivStudio from './components/A2Lektion9GenitivStudio';
+import A2Lektion9Game from './components/A2Lektion9Game';
+import { A2_LESSON_1_ITEMS, A2_LESSON_2_ITEMS, A2_LESSON_3_ITEMS, A2_LESSON_4_ITEMS, A2_LESSON_5_ITEMS, A2_LESSON_6_ITEMS, A2_LESSON_7_ITEMS, A2_LESSON_8_ITEMS, A2_LESSON_9_ITEMS } from './data/germanLessonsA2';
 import {
   SUMMARY_1_ITEMS,
   SUMMARY_2_ITEMS,
@@ -681,18 +683,20 @@ export default function App() {
             <div className="mb-6 bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50 dark:from-slate-800 dark:via-slate-850 dark:to-slate-800 p-4 sm:p-5 rounded-3xl border-2 border-emerald-300 dark:border-emerald-600 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
               <div className="flex items-center gap-3.5">
                 <div className={`w-12 h-12 rounded-2xl ${
-                  currentA2Lesson === 8 ? 'bg-teal-600' : currentA2Lesson === 7 ? 'bg-blue-600' : currentA2Lesson === 6 ? 'bg-rose-600' : currentA2Lesson === 5 ? 'bg-purple-600' : currentA2Lesson === 4 ? 'bg-amber-600' : currentA2Lesson === 3 ? 'bg-teal-600' : currentA2Lesson === 2 ? 'bg-indigo-600' : 'bg-emerald-500'
+                  currentA2Lesson === 9 ? 'bg-indigo-600' : currentA2Lesson === 8 ? 'bg-teal-600' : currentA2Lesson === 7 ? 'bg-blue-600' : currentA2Lesson === 6 ? 'bg-rose-600' : currentA2Lesson === 5 ? 'bg-purple-600' : currentA2Lesson === 4 ? 'bg-amber-600' : currentA2Lesson === 3 ? 'bg-teal-600' : currentA2Lesson === 2 ? 'bg-indigo-600' : 'bg-emerald-500'
                 } text-white flex items-center justify-center text-2xl shadow-inner shrink-0`}>
-                  {currentA2Lesson === 8 ? '🌧️' : currentA2Lesson === 7 ? '🎁' : currentA2Lesson === 6 ? '🐕' : currentA2Lesson === 5 ? '🎨' : currentA2Lesson === 4 ? '🎯' : currentA2Lesson === 3 ? '⚽' : currentA2Lesson === 2 ? '🎭' : '🚀'}
+                  {currentA2Lesson === 9 ? '🔑' : currentA2Lesson === 8 ? '🌧️' : currentA2Lesson === 7 ? '🎁' : currentA2Lesson === 6 ? '🐕' : currentA2Lesson === 5 ? '🎨' : currentA2Lesson === 4 ? '🎯' : currentA2Lesson === 3 ? '⚽' : currentA2Lesson === 2 ? '🎭' : '🚀'}
                 </div>
                 <div>
                   <div className={`text-[11px] font-black uppercase tracking-wider ${
-                    currentA2Lesson === 8 ? 'text-teal-800 dark:text-teal-300' : currentA2Lesson === 7 ? 'text-blue-800 dark:text-blue-300' : currentA2Lesson === 6 ? 'text-rose-800 dark:text-rose-300' : currentA2Lesson === 5 ? 'text-purple-800 dark:text-purple-300' : currentA2Lesson === 4 ? 'text-amber-800 dark:text-amber-300' : currentA2Lesson === 3 ? 'text-teal-800 dark:text-teal-300' : currentA2Lesson === 2 ? 'text-indigo-800 dark:text-indigo-300' : 'text-emerald-800 dark:text-emerald-300'
+                    currentA2Lesson === 9 ? 'text-indigo-800 dark:text-indigo-300' : currentA2Lesson === 8 ? 'text-teal-800 dark:text-teal-300' : currentA2Lesson === 7 ? 'text-blue-800 dark:text-blue-300' : currentA2Lesson === 6 ? 'text-rose-800 dark:text-rose-300' : currentA2Lesson === 5 ? 'text-purple-800 dark:text-purple-300' : currentA2Lesson === 4 ? 'text-amber-800 dark:text-amber-300' : currentA2Lesson === 3 ? 'text-teal-800 dark:text-teal-300' : currentA2Lesson === 2 ? 'text-indigo-800 dark:text-indigo-300' : 'text-emerald-800 dark:text-emerald-300'
                   }`}>
                     Active Curriculum: Level A2 (Elementary German)
                   </div>
                   <div className="text-sm sm:text-base font-black text-stone-900 dark:text-white">
-                    {currentA2Lesson === 8
+                    {currentA2Lesson === 9
+                      ? 'Lektion 9: Der Genitiv (Possession, Wessen? & Suffix-Regeln)'
+                      : currentA2Lesson === 8
                       ? 'Lektion 8: Nebensätze mit „wenn“ und „falls“ (Conditional Clauses)'
                       : currentA2Lesson === 7
                       ? 'Lektion 7: Adjektivdeklination im Dativ (Adjective Endings in Dative)'
@@ -726,7 +730,9 @@ export default function App() {
             {activeTab === 'cards' && (
               <StoryCardList
                 items={
-                  currentA2Lesson === 8
+                  currentA2Lesson === 9
+                    ? A2_LESSON_9_ITEMS
+                    : currentA2Lesson === 8
                     ? A2_LESSON_8_ITEMS
                     : currentA2Lesson === 7
                     ? A2_LESSON_7_ITEMS
@@ -744,7 +750,9 @@ export default function App() {
                 }
                 isSlowMode={isSlowMode}
                 lessonTitle={
-                  currentA2Lesson === 8
+                  currentA2Lesson === 9
+                    ? "Level A2 - Lektion 9: Der Genitiv"
+                    : currentA2Lesson === 8
                     ? "Level A2 - Lektion 8: Nebensätze mit „wenn“ und „falls“"
                     : currentA2Lesson === 7
                     ? "Level A2 - Lektion 7: Adjektivdeklination im Dativ"
@@ -761,7 +769,9 @@ export default function App() {
                     : "Level A2 - Lektion 1: Sich vorstellen (Introducing Yourself)"
                 }
                 lessonDesc={
-                  currentA2Lesson === 8
+                  currentA2Lesson === 9
+                    ? "Master German Genitive case and possession in plain Kenyan layman terms: Answering 'Wessen?' (Whose?), the Double-S rule for masculine & neuter (des Mannes, des Kindes), the peaceful 'der' for feminine & plural (der Frau, der Kinder), suffix rules (-es vs -s), and colloquial 'von + Dativ'."
+                    : currentA2Lesson === 8
                     ? "Master German conditional clauses with plain Kenyan analogies: Order A vs Order B, the famous Verb-Verb collision at the comma ('Wenn es regnet, bleibe ich zu Hause'), compound tenses ('gemacht hast'), and the certainty gauge between 'wenn' (sure) vs 'falls' (in case)."
                     : currentA2Lesson === 7
                     ? "Master German adjective endings in the Dative case: The Universal '-en' Article Rule (dem, der, einem, einer, meinem, keinem all trigger -en!), dative plural double 'n' (den süßen Kindern), and the bare noun Nullartikel endings (-em, -er, -en)."
@@ -860,11 +870,23 @@ export default function App() {
               <A2Lektion8Game isSlowMode={isSlowMode} />
             )}
 
+            {/* A2 Lesson 9 Genitiv Studio */}
+            {activeTab === 'a2Studio9' && (
+              <A2Lektion9GenitivStudio isSlowMode={isSlowMode} />
+            )}
+
+            {/* A2 Lesson 9 Worksheet & Quiz */}
+            {activeTab === 'a2Game9' && (
+              <A2Lektion9Game isSlowMode={isSlowMode} />
+            )}
+
             {/* A2 Memory Match */}
             {activeTab === 'memory' && (
               <MatchingGame
                 items={
-                  currentA2Lesson === 8
+                  currentA2Lesson === 9
+                    ? A2_LESSON_9_ITEMS
+                    : currentA2Lesson === 8
                     ? A2_LESSON_8_ITEMS
                     : currentA2Lesson === 7
                     ? A2_LESSON_7_ITEMS
@@ -888,7 +910,9 @@ export default function App() {
             {activeTab === 'summary' && (
               <AtAGlanceSummary
                 items={
-                  currentA2Lesson === 8
+                  currentA2Lesson === 9
+                    ? A2_LESSON_9_ITEMS
+                    : currentA2Lesson === 8
                     ? A2_LESSON_8_ITEMS
                     : currentA2Lesson === 7
                     ? A2_LESSON_7_ITEMS
@@ -905,7 +929,7 @@ export default function App() {
                     : A2_LESSON_1_ITEMS
                 }
                 lessonNumber={
-                  currentA2Lesson === 8 ? "A2-8" : currentA2Lesson === 7 ? "A2-7" : currentA2Lesson === 6 ? "A2-6" : currentA2Lesson === 5 ? "A2-5" : currentA2Lesson === 4 ? "A2-4" : currentA2Lesson === 3 ? "A2-3" : currentA2Lesson === 2 ? "A2-2" : "A2-1"
+                  currentA2Lesson === 9 ? "A2-9" : currentA2Lesson === 8 ? "A2-8" : currentA2Lesson === 7 ? "A2-7" : currentA2Lesson === 6 ? "A2-6" : currentA2Lesson === 5 ? "A2-5" : currentA2Lesson === 4 ? "A2-4" : currentA2Lesson === 3 ? "A2-3" : currentA2Lesson === 2 ? "A2-2" : "A2-1"
                 }
                 isSlowMode={isSlowMode}
               />

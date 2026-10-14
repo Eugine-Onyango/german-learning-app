@@ -2007,3 +2007,182 @@ export const A2_WENN_FALLS_COMPARISONS = [
   }
 ];
 
+export const A2_LESSON_9_ITEMS = [
+  {
+    id: "a2-l9-was-ist-genitiv",
+    german: "Das ist das Haus meines Bruders. Wessen Haus ist das?",
+    english: "This is my brother's house. Whose house is that?",
+    pronunciation: "Dahs ist dahs HOWS MY-nes BROO-ders. VES-sen HOWS ist dahs?",
+    audioText: "Das ist das Haus meines Bruders. Der Genitiv zeigt Zugehörigkeit und antwortet auf die Frage: Wessen?",
+    category: "grammatik",
+    badge: "The Question: Wessen? (Whose?)",
+    icon: "🏠",
+    kenyanAnalogy: "Like asking in Sheng or Swahili: 'Hii nyumba ni ya nani?' (Whose house is this?). Genitiv connects two nouns together: Noun 1 (what is owned) + Noun 2 (the owner in Genitiv: 'meines Bruders')!",
+    memoryTrick: "Nomen 1 (Nominativ) + Nomen 2 (Genitiv / Besitzer) ➔ answers 'Wessen?' (Whose?)",
+    imageType: "brothers-house"
+  },
+  {
+    id: "a2-l9-maskulin-neutral-des",
+    german: "Das Auto des Mannes ist neu. Die Augen des Kindes sind groß.",
+    english: "The man's car is new. The child's eyes are big.",
+    pronunciation: "Dahs OW-toh des MAHN-nes ist noy. Dee OW-gen des KIN-des zint grohs.",
+    audioText: "Das Auto des Mannes ist neu. Die Augen des Kindes sind groß. Bei Maskulin und Neutrum ändern sich Artikel und Nomen!",
+    category: "grammatik",
+    badge: "Maskulin & Neutral: des + -(e)s",
+    icon: "🚗",
+    kenyanAnalogy: "The 'Double-S Bond'! In Masculine and Neuter, the article transforms into 'des' AND the noun itself puts on an '-s' or '-es' jacket (der Mann ➔ des Mannes, das Kind ➔ des Kindes). Both wear the S!",
+    memoryTrick: "der / das ➔ DES + Nomen gets -(e)s! (des Mannes, des Kindes, des Autos).",
+    imageType: "car-eyes"
+  },
+  {
+    id: "a2-l9-feminin-plural-der",
+    german: "Das Kleid der Frau ist teuer. Die Eltern der Kinder sind nett.",
+    english: "The woman's dress is expensive. The parents of the children are nice.",
+    pronunciation: "Dahs KLYT dair FROW ist TOY-er. Dee EL-tern dair KIN-der zint net.",
+    audioText: "Das Kleid der Frau ist teuer. Die Eltern der Kinder sind nett. Bei Feminin und Plural heißt der Artikel der, und das Nomen bleibt unverändert!",
+    category: "grammatik",
+    badge: "Feminin & Plural: der (No Noun Ending!)",
+    icon: "👗",
+    kenyanAnalogy: "Super relaxing rule! For Feminine ('die Frau') and Plural ('die Kinder'), the article switches to 'DER', but the noun stays completely naked—NO -s or -es allowed (der Frau, der Kinder, der Stadt)!",
+    memoryTrick: "die (fem/plural) ➔ DER + NO suffix on noun! (der Frau, der Kinder, der Stadt).",
+    imageType: "dress-parents"
+  },
+  {
+    id: "a2-l9-endung-regeln-es-vs-s",
+    german: "Einsilbig (-es): des Mannes, des Hauses, des Filmes | Mehrsilbig (-s): des Vaters, des Lebens.",
+    english: "1-syllable & hissing sounds (-es) vs. multi-syllable nouns (-s).",
+    pronunciation: "des MAHN-nes, des HOW-zes, des FIL-mes vs. des FAH-ters, des LAY-bens.",
+    audioText: "Einsilbige Nomen und Nomen auf s, ß, x oder z bekommen e s: des Mannes, des Buches, des Hauses. Mehrsilbige Nomen bekommen s: des Vaters, des Onkels.",
+    category: "grammatik",
+    badge: "Slide 25-29: The Suffix Rules",
+    icon: "📏",
+    kenyanAnalogy: "Think of breath cushions! Short 1-syllable words (Mann, Buch, Kind, Haus, Film) feel too abrupt with just an 's' ('des Manns'), so German adds an '-e-' breathing cushion: 'des Mannes', 'des Hauses'! Long multi-syllable words (Vater, Onkel, Computer) just slip on a quiet '-s'.",
+    memoryTrick: "1 Syllable or -s/-ß/-x/-z ➔ add -es! Multi-syllable (-er/-el/-en) ➔ add -s!",
+    imageType: "syllable-scale"
+  },
+  {
+    id: "a2-l9-unbestimmt-und-possessiv",
+    german: "Auf dem Dach eines Hauses. Der Hund unserer Nachbarin ist frech.",
+    english: "On the roof of a house. Our neighbor's dog is cheeky.",
+    pronunciation: "Owf dem DAHKH EYE-nes HOW-zes. Dair HOONT OON-ze-rer NAHKH-bah-rin ist frekh.",
+    audioText: "Auf dem Dach eines Hauses habe ich Tauben gesehen. Der Hund unserer Nachbarin ist frech. Das Haus meiner Eltern ist groß.",
+    category: "beispiele",
+    badge: "Worksheet Hit Examples",
+    icon: "🐕",
+    kenyanAnalogy: "Indefinite & possessive articles copy the exact same endings: 'eines / meines / unseres' for masculine and neuter (+ noun s), and 'einer / meiner / unserer' for feminine and plural!",
+    memoryTrick: "Mask/Neut: eines / meines / unseres | Fem/Plural: einer / meiner / unserer!",
+    imageType: "dog-roof"
+  },
+  {
+    id: "a2-l9-genitiv-vs-dativ-umgangssprache",
+    german: "Schriftsprache: Die Freundin meines Bruders | Umgangssprache: Die Freundin von meinem Bruder.",
+    english: "Formal / Written: My brother's girlfriend | Everyday Spoken: The girlfriend of my brother.",
+    pronunciation: "Dee FROYND-in MY-nes BROO-ders vs. Dee FROYND-in fon MY-nem BROO-der.",
+    audioText: "Die Freundin meines Bruders ist der Genitiv. In der Umgangssprache sagen viele Deutsche: Die Freundin von meinem Bruder mit Dativ!",
+    category: "kultur",
+    badge: "Slide 40-41: Genitiv vs. von + Dativ",
+    icon: "💬",
+    kenyanAnalogy: "There's a famous German proverb: 'Der Dativ ist dem Genitiv sein Tod!' (Dative is the death of Genitive!). In exams, books, and formal letters, always use Genitiv ('meines Bruders'). On the street over coffee, people often say 'von meinem Bruder'!",
+    memoryTrick: "High German (written) = Genitiv (meines Bruders). Street German (spoken) = von + Dativ (von meinem Bruder).",
+    imageType: "formal-spoken"
+  }
+];
+
+export const A2_LESSON_9_WORKSHEET_QUESTIONS = [
+  {
+    id: 1,
+    sentenceStart: "1. Das Haus",
+    options: ["meinen", "meiner", "meines"],
+    correctAnswer: "meiner",
+    sentenceEnd: "Eltern ist groß.",
+    fullSentence: "Das Haus meiner Eltern ist groß.",
+    english: "My parents' house is big.",
+    gender: "Plural (die Eltern)",
+    explanation: "Eltern is Plural. The Genitive plural possessive is 'meiner' (die Eltern ➔ meiner Eltern). No suffix on plural nouns!",
+    audioText: "Das Haus meiner Eltern ist groß."
+  },
+  {
+    id: 2,
+    sentenceStart: "2. Die Straßen",
+    options: ["des", "der", "die"],
+    correctAnswer: "der",
+    sentenceEnd: "Stadt sind sehr schmal.",
+    fullSentence: "Die Straßen der Stadt sind sehr schmal.",
+    english: "The streets of the city are very narrow.",
+    gender: "Feminin (die Stadt)",
+    explanation: "Stadt is Feminine (die Stadt). The Genitive feminine definite article is 'der' (der Stadt). Feminine nouns do not take an 's'!",
+    audioText: "Die Straßen der Stadt sind sehr schmal."
+  },
+  {
+    id: 3,
+    sentenceStart: "3. Der Hund",
+    options: ["unserem", "unserer", "unsere"],
+    correctAnswer: "unserer",
+    sentenceEnd: "Nachbarin ist frech.",
+    fullSentence: "Der Hund unserer Nachbarin ist frech.",
+    english: "Our neighbor's dog is cheeky.",
+    gender: "Feminin (die Nachbarin)",
+    explanation: "Nachbarin is Feminine (die Nachbarin). The Genitive feminine possessive is 'unserer' (unserer Nachbarin)!",
+    audioText: "Der Hund unserer Nachbarin ist frech."
+  },
+  {
+    id: 4,
+    sentenceStart: "4. Auf dem Dach",
+    options: ["eins", "einer", "eines"],
+    correctAnswer: "eines",
+    sentenceEnd: "Hauses habe ich Tauben gesehen.",
+    fullSentence: "Auf dem Dach eines Hauses habe ich Tauben gesehen.",
+    english: "On the roof of a house I saw pigeons.",
+    gender: "Neutral (das Haus)",
+    explanation: "Haus is Neuter (das Haus). The Genitive neuter indefinite article is 'eines' (eines Hauses) + noun adds '-es'!",
+    audioText: "Auf dem Dach eines Hauses habe ich Tauben gesehen."
+  },
+  {
+    id: 5,
+    sentenceStart: "5. Das Ende",
+    options: ["des", "der", "das"],
+    correctAnswer: "des",
+    sentenceEnd: "Filmes habe ich sehr langweilig gefunden.",
+    fullSentence: "Das Ende des Filmes habe ich sehr langweilig gefunden.",
+    english: "I found the end of the movie very boring.",
+    gender: "Maskulin (der Film)",
+    explanation: "Film is Masculine (der Film). The Genitive masculine definite article is 'des' (des Filmes) + noun adds '-es'!",
+    audioText: "Das Ende des Filmes habe ich sehr langweilig gefunden."
+  }
+];
+
+export const A2_GENITIV_MASTER_MATRIX = [
+  {
+    gender: "Maskulin (der Mann / Film)",
+    definite: "des Mannes / des Filmes",
+    indefinite: "eines Mannes / eines Filmes",
+    possessive: "meines / unseres Mannes",
+    nounSuffix: "-es (1-syllable) / -s (multi-syllable)",
+    rule: "Both article (des) and noun (-(e)s) change!"
+  },
+  {
+    gender: "Feminin (die Frau / Stadt)",
+    definite: "der Frau / der Stadt",
+    indefinite: "einer Frau / einer Stadt",
+    possessive: "meiner / unserer Frau",
+    nounSuffix: "Keine Endung (no suffix!)",
+    rule: "Article becomes 'der'. Noun stays unchanged!"
+  },
+  {
+    gender: "Neutral (das Kind / Haus)",
+    definite: "des Kindes / des Hauses",
+    indefinite: "eines Kindes / eines Hauses",
+    possessive: "meines / unseres Kindes",
+    nounSuffix: "-es (1-syllable) / -s (multi-syllable)",
+    rule: "Identical to Masculine: des + -(e)s on noun!"
+  },
+  {
+    gender: "Plural (die Kinder / Eltern)",
+    definite: "der Kinder / der Eltern",
+    indefinite: "— (kein Plural ein)",
+    possessive: "meiner / unserer Kinder",
+    nounSuffix: "Keine Endung (no suffix!)",
+    rule: "Identical to Feminine: article 'der', NO -s on noun!"
+  }
+];
+
