@@ -1,6 +1,8 @@
-// Web Speech API + Web Audio Synthesizer for sound effects and German speech
+// Web Speech API + Google TTS (gTTS) Female Voice + Web Audio Synthesizer for sound effects and German speech
 
 let audioCtx = null;
+let currentFemaleAudio = null;
+const femaleAudioCache = new Map();
 
 function getAudioContext() {
   if (!audioCtx && typeof window !== 'undefined') {
@@ -91,6 +93,21 @@ export function getVoiceGender() {
   return currentVoiceGender;
 }
 
+function stopCurrentAudio() {
+  if (currentFemaleAudio) {
+    try {
+      currentFemaleAudio.pause();
+      currentFemaleAudio.currentTime = 0;
+    } catch (e) {
+      // Ignore audio stop errors
+    }
+    currentFemaleAudio = null;
+  }
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+}
+
 function findGermanVoice(gender = 'male') {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return null;
   const voices = window.speechSynthesis.getVoices();
@@ -122,34 +139,24 @@ function findGermanVoice(gender = 'male') {
   return deVoices[0];
 }
 
-// Speak German text clearly with optional slow rate and gender preference
-export function speakGerman(text, isSlow = false, onStart, onEnd, customGender) {
+function speakWithWebSpeech(cleanText, isSlow, onStart, onEnd, activeGender) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    console.warn('Speech synthesis not supported in this browser.');
+    if (onEnd) onEnd();
     return;
   }
 
-  // Cancel any ongoing speech
-  window.speechSynthesis.cancel();
-
-  const activeGender = customGender || (typeof window !== 'undefined' ? (localStorage.getItem('german-karibu-voice-gender') || currentVoiceGender) : currentVoiceGender);
-
-  // Clean the text (remove brackets or exclamation marks for speech)
-  const cleanText = text.replace(/[/()]/g, ' ').trim();
   const utterance = new SpeechSynthesisUtterance(cleanText);
-
-  // Look for preferred German voice
   const germanVoice = findGermanVoice(activeGender);
   if (germanVoice) {
     utterance.voice = germanVoice;
   }
   utterance.lang = 'de-DE';
-  utterance.rate = isSlow ? 0.65 : 0.88; // Gentle and friendly speed
+  utterance.rate = isSlow ? 0.65 : 0.88;
 
   if (activeGender === 'female') {
-    utterance.pitch = 1.22; // Melodious and distinct feminine pitch
+    utterance.pitch = 1.22;
   } else {
-    utterance.pitch = 0.88; // Deep, clear masculine pitch
+    utterance.pitch = 0.88;
   }
 
   if (onStart) utterance.onstart = onStart;
@@ -160,4 +167,91 @@ export function speakGerman(text, isSlow = false, onStart, onEnd, customGender) 
   };
 
   window.speechSynthesis.speak(utterance);
+}
+
+// Play friendly human-like female voice using gTTS (same voice engine as BrendaBloomCakes welcome.mp3)
+async function speakFemaleWithGtts(cleanText, isSlow, onStart, onEnd) {
+  const applySettingsAndPlay = (audioUrl) => {
+    return new Promise((resolve, reject) => {
+      const audio = document.createElement('audio');
+      audio.referrerPolicy = 'no-referrer';
+      audio.src = audioUrl;
+      audio.volume = 0.9;
+      audio.playbackRate = isSlow ? 0.74 : 1.0;
+      if ('preservesPitch' in audio) {
+        audio.preservesPitch = true;
+      }
+
+      currentFemaleAudio = audio;
+
+      audio.onplay = () => {
+        if (onStart) onStart();
+      };
+      audio.onended = () => {
+        if (currentFemaleAudio === audio) currentFemaleAudio = null;
+        if (onEnd) onEnd();
+        resolve();
+      };
+      audio.onerror = (err) => {
+        if (currentFemaleAudio === audio) currentFemaleAudio = null;
+        reject(err);
+      };
+
+      audio.play().catch(reject);
+    });
+  };
+
+  try {
+    // 1. Check in-memory Blob cache first for instant playback
+    if (femaleAudioCache.has(cleanText)) {
+      await applySettingsAndPlay(femaleAudioCache.get(cleanText));
+      return;
+    }
+
+    // 2. Fetch from our local/Vercel gTTS endpoint (/api/tts)
+    const apiRes = await fetch(`/api/tts?q=${encodeURIComponent(cleanText)}&tl=de`);
+    if (apiRes.ok) {
+      const contentType = apiRes.headers.get('content-type') || '';
+      if (contentType.includes('audio')) {
+        const blob = await apiRes.blob();
+        const blobUrl = URL.createObjectURL(blob);
+        femaleAudioCache.set(cleanText, blobUrl);
+        await applySettingsAndPlay(blobUrl);
+        return;
+      }
+    }
+
+    // 3. Direct referrer-free Google Translate TTS stream fallback
+    const directUrl = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=de&q=${encodeURIComponent(cleanText)}`;
+    await applySettingsAndPlay(directUrl);
+  } catch (err) {
+    console.warn('gTTS female voice fallback to Web Speech:', err);
+    speakWithWebSpeech(cleanText, isSlow, onStart, onEnd, 'female');
+  }
+}
+
+// Speak German text clearly with optional slow rate and gender preference
+export function speakGerman(text, isSlow = false, onStart, onEnd, customGender) {
+  if (typeof window === 'undefined') return;
+
+  // Cancel any ongoing speech or audio playback
+  stopCurrentAudio();
+
+  const activeGender = customGender || (typeof window !== 'undefined' ? (localStorage.getItem('german-karibu-voice-gender') || currentVoiceGender) : currentVoiceGender);
+
+  // Clean the text (remove brackets or slashes for natural speech)
+  const cleanText = text.replace(/[/()]/g, ' ').trim();
+  if (!cleanText) {
+    if (onEnd) onEnd();
+    return;
+  }
+
+  // Use the natural gTTS female voice (from chat c79ea34f-31b1-4c67-9516-44871c4dc607) when female is selected
+  if (activeGender === 'female') {
+    speakFemaleWithGtts(cleanText, isSlow, onStart, onEnd);
+    return;
+  }
+
+  // Male voice uses Web Speech API
+  speakWithWebSpeech(cleanText, isSlow, onStart, onEnd, 'male');
 }
